@@ -1,36 +1,19 @@
 "use client"
 
-import type React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Clock, Shield, Star, CheckCircle, Zap, Award, MapPin, Wrench } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
+import { Phone, MapPin, Clock, Star, CheckCircle, Calendar, Zap } from "lucide-react"
 
-/**
- * Enhanced Hero Section Component
- * Professional, conversion-optimized hero with comprehensive form
- */
 export function Hero() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    service: "",
-    location: "",
-    area: "",
-    address: "",
-    message: "",
-  })
-  const [currentTestimonial, setCurrentTestimonial] = useState(0)
-  const [availableAreas, setAvailableAreas] = useState<string[]>([])
-  const { toast } = useToast()
+  const [selectedLocation, setSelectedLocation] = useState("")
+  const [selectedArea, setSelectedArea] = useState("")
 
-  // Area data for dynamic dropdown
-  const locationAreas = {
+  // Area options based on selected location
+  const areaOptions = {
     pune: [
       { value: "kothrud", label: "Kothrud" },
       { value: "baner", label: "Baner" },
@@ -50,69 +33,13 @@ export function Hero() {
     ],
   }
 
-  // Real customer testimonials for authenticity
-  const testimonials = [
-    {
-      text: "Fixed my gas stove in 20 minutes! Professional service at fair price.",
-      name: "Rajesh Kumar",
-      location: "Kothrud, Pune",
-      rating: 5,
-    },
-    {
-      text: "Emergency gas leak resolved quickly. Felt safe with their expertise.",
-      name: "Priya Sharma",
-      location: "Gachibowli, Hyderabad",
-      rating: 5,
-    },
-    {
-      text: "Best gas repair service in Pune. Highly recommend to everyone!",
-      name: "Amit Patel",
-      location: "Baner, Pune",
-      rating: 5,
-    },
-  ]
-
-  // Auto-rotate testimonials
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
-    }, 4000)
-    return () => clearInterval(interval)
-  }, [testimonials.length])
-
-  // Update available areas when location changes
-  useEffect(() => {
-    if (formData.location && locationAreas[formData.location as keyof typeof locationAreas]) {
-      setAvailableAreas(locationAreas[formData.location as keyof typeof locationAreas])
-      // Reset area when location changes
-      setFormData((prev) => ({ ...prev, area: "" }))
-    } else {
-      setAvailableAreas([])
-    }
-  }, [formData.location])
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    toast({
-      title: "Request Submitted Successfully! 🎉",
-      description: "Our gas expert will call you within 15 minutes with your free quote.",
-    })
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      service: "",
-      location: "",
-      area: "",
-      address: "",
-      message: "",
-    })
+  const handleLocationChange = (location: string) => {
+    setSelectedLocation(location)
+    setSelectedArea("") // Reset area when location changes
   }
 
-  const currentTest = testimonials[currentTestimonial]
-
   return (
-    <section className="relative bg-gradient-to-br from-orange-50 via-white to-red-50 py-12 lg:py-20 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-orange-50 via-white to-red-50 py-20 overflow-hidden">
       {/* Professional background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -124,22 +51,22 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left side - Enhanced Content */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left side - Content */}
           <div className="space-y-8">
-            {/* Trust indicators */}
+            {/* Trust badges */}
             <div className="flex flex-wrap gap-3">
-              <Badge className="bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 px-3 py-1">
-                <Shield className="w-3 h-3 mr-1" />
-                Licensed & Insured
+              <Badge className="bg-green-100 text-green-800 border border-green-200 hover:bg-green-200 px-4 py-2 text-sm">
+                <CheckCircle className="w-4 h-4 mr-1" />
+                5000+ Happy Customers
               </Badge>
-              <Badge className="bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 px-3 py-1">
-                <Award className="w-3 h-3 mr-1" />
-                10+ Years Experience
+              <Badge className="bg-blue-100 text-blue-800 border border-blue-200 hover:bg-blue-200 px-4 py-2 text-sm">
+                <Clock className="w-4 h-4 mr-1" />
+                24/7 Emergency Service
               </Badge>
-              <Badge className="bg-orange-50 text-orange-700 border border-orange-200 hover:bg-orange-100 px-3 py-1">
-                <Zap className="w-3 h-3 mr-1" />
-                Same Day Service
+              <Badge className="bg-yellow-100 text-yellow-800 border border-yellow-200 hover:bg-yellow-200 px-4 py-2 text-sm">
+                <Star className="w-4 h-4 mr-1" />
+                4.9★ Rating
               </Badge>
             </div>
 
@@ -155,13 +82,12 @@ export function Hero() {
               </h1>
 
               <div className="text-xl text-gray-700 leading-relaxed space-y-3">
-                <p className="font-semibold flex items-center">
-                  <Wrench className="w-6 h-6 text-orange-600 mr-2" />
-                  Expert Gas Stove Repair, Pipeline Installation & Safety Inspections
-                </p>
+                <p className="font-semibold">🔥 Expert Gas Stove Repair, Pipeline Installation & Emergency Services</p>
                 <p className="text-lg">
-                  <span className="bg-red-100 text-red-800 px-2 py-1 rounded font-semibold">Emergency Service:</span>{" "}
-                  15-minute response time for gas leaks and urgent repairs
+                  <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full font-semibold">
+                    Emergency Service:
+                  </span>{" "}
+                  15-30 minute response time across both cities
                 </p>
               </div>
             </div>
@@ -174,8 +100,8 @@ export function Hero() {
                     <Clock className="h-5 w-5 text-green-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900">24/7 Emergency Service</p>
-                    <p className="text-sm text-gray-600">Gas leaks & urgent repairs</p>
+                    <p className="font-semibold text-gray-900">Same Day Service</p>
+                    <p className="text-sm text-gray-600">Quick repairs & installations</p>
                   </div>
                 </div>
               </div>
@@ -183,7 +109,7 @@ export function Hero() {
               <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-blue-100 rounded-lg">
-                    <Shield className="h-5 w-5 text-blue-600" />
+                    <CheckCircle className="h-5 w-5 text-blue-600" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Licensed Technicians</p>
@@ -195,11 +121,11 @@ export function Hero() {
               <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-yellow-100 rounded-lg">
-                    <Star className="h-5 w-5 text-yellow-600" />
+                    <MapPin className="h-5 w-5 text-yellow-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900">4.9★ Customer Rating</p>
-                    <p className="text-sm text-gray-600">5000+ satisfied customers</p>
+                    <p className="font-semibold text-gray-900">All Areas Covered</p>
+                    <p className="text-sm text-gray-600">Pune & Hyderabad regions</p>
                   </div>
                 </div>
               </div>
@@ -207,34 +133,11 @@ export function Hero() {
               <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-purple-100 rounded-lg">
-                    <MapPin className="h-5 w-5 text-purple-600" />
+                    <Star className="h-5 w-5 text-purple-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900">Local Experts</p>
-                    <p className="text-sm text-gray-600">Pune & Hyderabad coverage</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Customer testimonial */}
-            <div className="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-xl border border-orange-100">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                    {currentTest.name.charAt(0)}
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center space-x-1 mb-2">
-                    {[...Array(currentTest.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 italic mb-2">"{currentTest.text}"</p>
-                  <div className="text-sm">
-                    <span className="font-semibold text-gray-900">{currentTest.name}</span>
-                    <span className="text-gray-600"> • {currentTest.location}</span>
+                    <p className="font-semibold text-gray-900">Transparent Pricing</p>
+                    <p className="text-sm text-gray-600">No hidden charges</p>
                   </div>
                 </div>
               </div>
@@ -257,7 +160,7 @@ export function Hero() {
                 variant="outline"
                 className="text-lg px-8 py-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-semibold hover:shadow-lg transition-all duration-200"
               >
-                Get Free Quote
+                WhatsApp Quote
               </Button>
             </div>
 
@@ -273,92 +176,85 @@ export function Hero() {
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-4 w-4 text-green-500" />
-                <span>Same Day Service</span>
+                <span>10+ Years Experience</span>
               </div>
             </div>
           </div>
 
-          {/* Right side - Enhanced Contact Form */}
-          <Card className="shadow-xl border-0 bg-white">
+          {/* Right side - Enhanced Booking Form */}
+          <Card className="shadow-2xl border-0 bg-white/95 backdrop-blur-sm">
             <CardContent className="p-8">
               <div className="space-y-6">
                 <div className="text-center">
                   <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <Zap className="h-4 w-4" />
-                    <span>FREE QUOTE IN 30 SECONDS</span>
+                    <span>INSTANT BOOKING - FREE QUOTE</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Get Your Free Service Quote</h3>
-                  <p className="text-gray-600">Our gas expert will call you back within 15 minutes</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Book Your Gas Service</h3>
+                  <p className="text-gray-600">Get expert technician at your doorstep today</p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  {/* Name and Phone Row */}
+                <form className="space-y-4">
+                  {/* Row 1: Name + Phone */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Input
                       placeholder="Your Full Name *"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
                       className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                      required
                     />
                     <Input
-                      placeholder="Phone Number *"
+                      placeholder="Mobile Number *"
                       type="tel"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      required
                       className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                      required
                     />
                   </div>
 
-                  {/* Email Field */}
+                  {/* Row 2: Email */}
                   <Input
                     placeholder="Email Address *"
                     type="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
                     className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                    required
                   />
 
-                  {/* Service and Location Row */}
+                  {/* Row 3: Service + Location */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <select
-                      value={formData.service}
-                      onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                      required
                       className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:outline-none bg-white"
+                      required
                     >
-                      <option value="">Select Service *</option>
+                      <option value="">Select Service Type *</option>
                       <option value="gas-stove-repair">Gas Stove Repair</option>
                       <option value="pipeline-service">Pipeline Service</option>
                       <option value="safety-inspection">Safety Inspection</option>
                       <option value="emergency-repair">Emergency Repair</option>
-                      <option value="installation">New Installation</option>
+                      <option value="new-installation">New Installation</option>
                       <option value="maintenance-contract">Maintenance Contract</option>
                     </select>
+
                     <select
-                      value={formData.location}
-                      onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                      required
                       className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:outline-none bg-white"
+                      value={selectedLocation}
+                      onChange={(e) => handleLocationChange(e.target.value)}
+                      required
                     >
-                      <option value="">Select City *</option>
+                      <option value="">Select City/Location *</option>
                       <option value="pune">Pune</option>
                       <option value="hyderabad">Hyderabad</option>
                     </select>
                   </div>
 
-                  {/* Area Selection - Only show when location is selected */}
-                  {formData.location && availableAreas.length > 0 && (
+                  {/* Row 4: Area (conditional) */}
+                  {selectedLocation && (
                     <select
-                      value={formData.area}
-                      onChange={(e) => setFormData({ ...formData, area: e.target.value })}
-                      required
                       className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:outline-none bg-white"
+                      value={selectedArea}
+                      onChange={(e) => setSelectedArea(e.target.value)}
+                      required
                     >
                       <option value="">Select Area *</option>
-                      {availableAreas.map((area) => (
+                      {areaOptions[selectedLocation as keyof typeof areaOptions]?.map((area) => (
                         <option key={area.value} value={area.value}>
                           {area.label}
                         </option>
@@ -366,20 +262,16 @@ export function Hero() {
                     </select>
                   )}
 
-                  {/* Address Field */}
+                  {/* Row 5: Address */}
                   <Input
                     placeholder="Complete Address *"
-                    value={formData.address}
-                    onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                    required
                     className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                    required
                   />
 
-                  {/* Message Field */}
+                  {/* Row 6: Message */}
                   <Textarea
                     placeholder="Describe your gas issue or requirements (Optional)"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     rows={3}
                     className="border-2 border-gray-200 focus:border-orange-500 rounded-lg"
                   />
@@ -388,7 +280,8 @@ export function Hero() {
                     type="submit"
                     className="w-full h-12 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
                   >
-                    Get My Free Quote Now
+                    <Calendar className="h-5 w-5 mr-2" />
+                    Book Service Now - FREE Quote
                   </Button>
                 </form>
 
@@ -398,12 +291,12 @@ export function Hero() {
                     <span>No Hidden Charges • Transparent Pricing</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2 text-sm text-blue-600">
-                    <Shield className="h-4 w-4" />
+                    <CheckCircle className="h-4 w-4" />
                     <span>Licensed Technicians • Insured Service</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2 text-sm text-orange-600">
                     <Clock className="h-4 w-4" />
-                    <span>15-Minute Response Time • Same Day Service</span>
+                    <span>Same Day Service Available</span>
                   </div>
                 </div>
               </div>

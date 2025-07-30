@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -16,6 +17,61 @@ import {
   Phone,
   Award,
 } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Gas Repair Services | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repaire Wale",
+  description:
+    "⭐ Complete Gas Repair Services in Pune & Hyderabad ✅ Gas Stove Repair ✅ Pipeline Installation ✅ Safety Inspections ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ Residential & Commercial. Call +91 83027 13127",
+  keywords: [
+    "gas repair services",
+    "gas stove repair",
+    "gas pipeline installation",
+    "gas safety inspection",
+    "emergency gas repair",
+    "gas appliance maintenance",
+    "residential gas services",
+    "commercial gas services",
+    "gas leak repair",
+    "gas burner repair",
+    "gas valve replacement",
+    "gas meter installation",
+    "gas connection services",
+    "professional gas technicians",
+    "licensed gas repair",
+    "gas services pune hyderabad",
+  ].join(", "),
+  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairewale.com" }],
+  creator: "Gas Repaire Wale",
+  publisher: "Gas Repaire Wale",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://gasrepairewale.com/services",
+    title: "Professional Gas Repair Services | Gas Stove Repair | Pipeline Installation",
+    description:
+      "Complete gas repair services including stove repair, pipeline installation, safety inspections, and emergency service. Licensed technicians serving Pune & Hyderabad.",
+    siteName: "Gas Repaire Wale",
+    images: [
+      {
+        url: "/services-og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gas Repaire Wale - Professional Gas Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Gas Repair Services | Gas Repaire Wale",
+    description:
+      "Complete gas repair services - stove repair, pipeline installation, safety inspections, emergency service. Licensed technicians in Pune & Hyderabad.",
+    images: ["/services-twitter-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://gasrepairewale.com/services",
+  },
+}
 
 /**
  * Enhanced Services Page Component

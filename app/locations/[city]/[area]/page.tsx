@@ -36,14 +36,72 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
+  const title = `Gas Repair Services in ${area.name}, ${area.city} | ${area.responseTime} Response | Gas Repaire Wale`
+  const description = `⭐ #1 Gas Repair Service in ${area.name}, ${area.city} ✅ ${area.customers} Happy Customers ✅ ${area.responseTime} Response Time ✅ ${area.rating}★ Rating ✅ Local Experts Since ${area.establishedYear}. Call +91 83027 13127!`
+
   return {
-    title: `Gas Repair Services in ${area.name}, ${area.city} | ${area.responseTime} Response | Gas Repaire Wale`,
-    description: `⭐ #1 Gas Repair Service in ${area.name}, ${area.city} ✅ ${area.customers} Happy Customers ✅ ${area.responseTime} Response Time ✅ ${area.rating}★ Rating ✅ Local Experts Since ${area.establishedYear}. Call +91 83027 13127!`,
-    keywords: `gas repair ${area.name.toLowerCase()}, gas stove repair ${area.name.toLowerCase()} ${area.city.toLowerCase()}, gas pipeline service ${area.name.toLowerCase()}, emergency gas service ${area.city.toLowerCase()}, ${area.pincode} gas repair, gas services ${area.name.toLowerCase()}`,
+    title,
+    description,
+    keywords: [
+      `gas repair ${area.name.toLowerCase()}`,
+      `gas stove repair ${area.name.toLowerCase()} ${area.city.toLowerCase()}`,
+      `gas pipeline service ${area.name.toLowerCase()}`,
+      `emergency gas service ${area.city.toLowerCase()}`,
+      `${area.pincode} gas repair`,
+      `gas services ${area.name.toLowerCase()}`,
+      `gas leak repair ${area.name.toLowerCase()}`,
+      `gas appliance repair ${area.city.toLowerCase()}`,
+      `licensed gas technician ${area.name.toLowerCase()}`,
+      `24/7 gas service ${area.city.toLowerCase()}`,
+      `gas safety inspection ${area.name.toLowerCase()}`,
+      `commercial gas service ${area.city.toLowerCase()}`,
+      `residential gas repair ${area.name.toLowerCase()}`,
+      `gas maintenance ${area.city.toLowerCase()}`,
+      `gas installation ${area.name.toLowerCase()}`,
+    ],
+    authors: [{ name: "Gas Repaire Wale" }],
+    creator: "Gas Repaire Wale",
+    publisher: "Gas Repaire Wale",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
-      title: `Gas Repair Services in ${area.name}, ${area.city} | Gas Repaire Wale`,
-      description: `Professional gas repair services in ${area.name} with ${area.customers} satisfied customers, ${area.responseTime} response time, and ${area.rating}★ rating.`,
+      type: "website",
+      locale: "en_IN",
       url: `https://gasrepairewale.com/locations/${params.city}/${params.area}`,
+      title,
+      description,
+      siteName: "Gas Repaire Wale",
+      images: [
+        {
+          url: "/placeholder.svg?height=630&width=1200" + area.name + " " + area.city,
+          width: 1200,
+          height: 630,
+          alt: `Gas Repair Services in ${area.name}, ${area.city}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      creator: "@gasrepairewale",
+      images: ["/placeholder.svg?height=630&width=1200" + area.name + " " + area.city],
+    },
+    alternates: {
+      canonical: `https://gasrepairewale.com/locations/${params.city}/${params.area}`,
+    },
+    other: {
+      "google-site-verification": "your-google-verification-code",
+      "msvalidate.01": "your-bing-verification-code",
     },
   }
 }

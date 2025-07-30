@@ -1,8 +1,60 @@
+import type { Metadata } from "next"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ContactCTA } from "@/components/contact-cta"
 import { Award, Users, Shield, Clock, CheckCircle, Target, Phone } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "About Gas Repaire Wale | Professional Gas Repair Company | 10+ Years Experience | Pune Hyderabad",
+  description:
+    "⭐ Learn about Gas Repaire Wale - Leading gas repair company since 2013 ✅ 5000+ Satisfied Customers ✅ Licensed Technicians ✅ 24/7 Emergency Service ✅ Serving Pune & Hyderabad ✅ 4.9★ Rating. Call +91 83027 13127",
+  keywords: [
+    "about gas repaire wale",
+    "gas repair company pune hyderabad",
+    "professional gas technicians",
+    "licensed gas repair service",
+    "gas repair company history",
+    "experienced gas technicians",
+    "gas safety experts",
+    "reliable gas repair service",
+    "gas appliance specialists",
+    "certified gas professionals",
+    "gas repair team",
+    "gas service company background",
+  ].join(", "),
+  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairewale.com" }],
+  creator: "Gas Repaire Wale",
+  publisher: "Gas Repaire Wale",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://gasrepairewale.com/about",
+    title: "About Gas Repaire Wale | Professional Gas Repair Company Since 2013",
+    description:
+      "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune & Hyderabad. 4.9★ rating, 24/7 emergency service.",
+    siteName: "Gas Repaire Wale",
+    images: [
+      {
+        url: "/about-og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Gas Repaire Wale - Professional Gas Repair Company",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Gas Repaire Wale | Professional Gas Repair Company",
+    description:
+      "Leading gas repair company since 2013 with 5000+ customers, licensed technicians, 24/7 service in Pune & Hyderabad. Call +91 83027 13127",
+    images: ["/about-twitter-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://gasrepairewale.com/about",
+  },
+}
 
 /**
  * Enhanced About Page Component
