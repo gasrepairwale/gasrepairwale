@@ -5,6 +5,7 @@ import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
+import { ScrollToTopWrapper } from "@/components/scroll-to-top-wrapper"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -83,7 +84,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gasrepairewale.com",
   },
-    generator: 'v0.dev'
 }
 
 // Enhanced Structured Data for Local Business
@@ -267,7 +267,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <link rel="canonical" href="https://gasrepairewale.com" />
@@ -293,17 +293,19 @@ export default function RootLayout({
         <meta name="business:contact_data:website" content="https://gasrepairewale.com" />
       </head>
       <body className={inter.className}>
-        {/* Main navigation header */}
-        <Header />
+        <ScrollToTopWrapper>
+          {/* Main navigation header */}
+          <Header />
 
-        {/* Page content */}
-        {children}
+          {/* Page content */}
+          {children}
 
-        {/* Footer with contact info and links */}
-        <Footer />
+          {/* Footer with contact info and links */}
+          <Footer />
 
-        {/* Toast notifications */}
-        <Toaster />
+          {/* Toast notifications */}
+          <Toaster />
+        </ScrollToTopWrapper>
       </body>
     </html>
   )
