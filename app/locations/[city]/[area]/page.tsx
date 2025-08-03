@@ -101,7 +101,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     other: {
       "google-site-verification": "your-google-verification-code",
-      "msvalidate.01": "your-bing-verification-code",
     },
   }
 }

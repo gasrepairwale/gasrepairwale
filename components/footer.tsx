@@ -17,7 +17,7 @@ export function Footer() {
               <span className="text-xl font-bold">Gas Repaire Wale</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Professional gas repair and maintenance services across Pune and Hyderabad. Your safety is our priority.
+              Professional gas repair and maintenance services across Pune and Mumbai. Your safety is our priority.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-orange-600 transition-colors">
@@ -90,7 +90,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-orange-600" />
-                <span className="text-gray-300">Pune & Hyderabad</span>
+                <span className="text-gray-300">Pune & Mumbai</span>
               </div>
             </div>
           </div>
@@ -101,10 +101,10 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Gas Repaire Wale. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/privacy" className="text-gray-400 hover:text-orange-600 text-sm">
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-orange-600 text-sm">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-orange-600 text-sm">
+              <Link href="/terms-of-service" className="text-gray-400 hover:text-orange-600 text-sm">
                 Terms of Service
               </Link>
             </div>

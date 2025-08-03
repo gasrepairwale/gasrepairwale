@@ -23,13 +23,13 @@ export function Hero() {
       { value: "warje", label: "Warje" },
       { value: "karve-nagar", label: "Karve Nagar" },
     ],
-    hyderabad: [
-      { value: "gachibowli", label: "Gachibowli" },
-      { value: "madhapur", label: "Madhapur" },
-      { value: "kondapur", label: "Kondapur" },
-      { value: "kukatpally", label: "Kukatpally" },
-      { value: "miyapur", label: "Miyapur" },
-      { value: "begumpet", label: "Begumpet" },
+    Mumbai: [
+      { value: "borivali-east-west", label: "Borivali East West" },
+      { value: "kandivali-east-west", label: "Kandivali East West" },
+      { value: "malda-east-west", label: "Malda East West" },
+      { value: "goregaon-east-west", label: "Goregaon East West" },
+      { value: "ram-mandir-east", label: "Ram Mandir East" },
+      { value: "andheri-west", label: "Andheri West" },
     ],
   }
 
@@ -78,7 +78,7 @@ export function Hero() {
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-red-400 rounded-full"></div>
                 </span>
                 <br />
-                Services in Pune & Hyderabad
+                Services in Pune & Mumbai
               </h1>
 
               <div className="text-xl text-gray-700 leading-relaxed space-y-3">
@@ -125,7 +125,7 @@ export function Hero() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">All Areas Covered</p>
-                    <p className="text-sm text-gray-600">Pune & Hyderabad regions</p>
+                    <p className="text-sm text-gray-600">Pune & Mumbai regions</p>
                   </div>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export function Hero() {
                     >
                       <option value="">Select City/Location *</option>
                       <option value="pune">Pune</option>
-                      <option value="hyderabad">Hyderabad</option>
+                      <option value="Mumbai">Mumbai</option>
                     </select>
                   </div>
 

@@ -53,7 +53,7 @@ export function ComprehensiveServices() {
       title: "Gas Pipeline Installation & Repair",
       shortDesc: "Professional gas pipeline services for residential and commercial properties",
       fullDesc:
-        "We provide complete gas pipeline solutions including new installations, repairs, maintenance, and upgrades. Our services comply with all safety standards and local regulations in Maharashtra and Telangana.",
+        "We provide complete gas pipeline solutions including new installations, repairs, maintenance, and upgrades. Our services comply with all safety standards and local regulations in Maharastra.",
       features: [
         "New pipeline installation",
         "Pipeline leak detection",
@@ -134,7 +134,7 @@ export function ComprehensiveServices() {
       title: "24/7 Emergency Gas Services",
       shortDesc: "Round-the-clock emergency response for gas-related emergencies",
       fullDesc:
-        "Gas emergencies can't wait. Our 24/7 emergency service team is always ready to respond to gas leaks, safety concerns, and urgent repairs across Pune and Hyderabad with guaranteed response times.",
+        "Gas emergencies can't wait. Our 24/7 emergency service team is always ready to respond to gas leaks, safety concerns, and urgent repairs across Pune and Mumbai with guaranteed response times.",
       features: [
         "24/7 emergency hotline",
         "15-minute response guarantee",
@@ -189,7 +189,7 @@ export function ComprehensiveServices() {
     {
       icon: Home,
       title: "Residential Gas Services",
-      description: "Complete gas solutions for homes, apartments, and residential complexes across Pune and Hyderabad",
+      description: "Complete gas solutions for homes, apartments, and residential complexes across Pune and Mumbai",
       services: [
         "Kitchen gas stove repair and maintenance",
         "Residential gas pipeline installation",
@@ -198,7 +198,7 @@ export function ComprehensiveServices() {
         "New gas connection setup",
         "Appliance installation and servicing",
       ],
-      coverage: "All residential areas in Pune & Hyderabad",
+      coverage: "All residential areas in Pune & Mumbai",
       specialties: ["Family safety priority", "Affordable pricing", "Quick response", "Trusted service"],
     },
     {
@@ -227,7 +227,7 @@ export function ComprehensiveServices() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Complete Gas Repair & Maintenance Solutions</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             From emergency gas leak repairs to routine maintenance, we provide comprehensive gas services across Pune
-            and Hyderabad. Our certified technicians ensure your safety with professional, reliable, and affordable
+            and Mumbai. Our certified technicians ensure your safety with professional, reliable, and affordable
             solutions for all your gas appliance needs.
           </p>
         </div>
@@ -384,7 +384,7 @@ export function ComprehensiveServices() {
             <h3 className="text-3xl font-bold mb-4">Gas Emergency? We're Here 24/7!</h3>
             <p className="text-xl text-red-100 mb-6 max-w-3xl mx-auto">
               Don't wait when it comes to gas safety. Our emergency response team is available round-the-clock to handle
-              gas leaks, safety concerns, and urgent repairs across Pune and Hyderabad.
+              gas leaks, safety concerns, and urgent repairs across Pune and Mumbai.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">

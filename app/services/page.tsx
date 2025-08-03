@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Gas Repair Services | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repaire Wale",
   description:
-    "⭐ Complete Gas Repair Services in Pune & Hyderabad ✅ Gas Stove Repair ✅ Pipeline Installation ✅ Safety Inspections ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ Residential & Commercial. Call +91 83027 13127",
+    "⭐ Complete Gas Repair Services in Pune & Mumbai ✅ Gas Stove Repair ✅ Pipeline Installation ✅ Safety Inspections ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ Residential & Commercial. Call +91 83027 13127",
   keywords: [
     "gas repair services",
     "gas stove repair",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "gas connection services",
     "professional gas technicians",
     "licensed gas repair",
-    "gas services pune hyderabad",
+    "gas services pune Mumbai",
   ].join(", "),
   authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairewale.com" }],
   creator: "Gas Repaire Wale",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     url: "https://gasrepairewale.com/services",
     title: "Professional Gas Repair Services | Gas Stove Repair | Pipeline Installation",
     description:
-      "Complete gas repair services including stove repair, pipeline installation, safety inspections, and emergency service. Licensed technicians serving Pune & Hyderabad.",
+      "Complete gas repair services including stove repair, pipeline installation, safety inspections, and emergency service. Licensed technicians serving Pune & Mumbai.",
     siteName: "Gas Repaire Wale",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Professional Gas Repair Services | Gas Repaire Wale",
     description:
-      "Complete gas repair services - stove repair, pipeline installation, safety inspections, emergency service. Licensed technicians in Pune & Hyderabad.",
+      "Complete gas repair services - stove repair, pipeline installation, safety inspections, emergency service. Licensed technicians in Pune & Mumbai.",
     images: ["/services-twitter-image.jpg"],
   },
   alternates: {
@@ -108,7 +108,7 @@ export default function ServicesPage() {
       pricing: "Depends on issue complexity",
       warranty: "6 months parts, 3 months labor",
       responseTime: "Same day service",
-      serviceAreas: "All areas in Pune & Hyderabad",
+      serviceAreas: "All areas in Pune & Mumbai",
     },
     {
       icon: Wrench,
@@ -116,7 +116,7 @@ export default function ServicesPage() {
       description:
         "Professional installation, repair, and maintenance of gas pipelines for residential and commercial properties.",
       detailedDescription:
-        "We provide comprehensive gas pipeline solutions including new installations, leak repairs, pressure testing, and compliance certifications. Our services comply with all safety standards and local regulations in Maharashtra and Telangana, ensuring your gas supply is safe and reliable.",
+        "We provide comprehensive gas pipeline solutions including new installations, leak repairs, pressure testing, and compliance certifications. Our services comply with all safety standards and local regulations in Maharastra, ensuring your gas supply is safe and reliable.",
       features: [
         "New pipeline installation",
         "Pipeline leak detection & repair",
@@ -203,7 +203,7 @@ export default function ServicesPage() {
       title: "24/7 Emergency Gas Services",
       description: "Round-the-clock emergency response for gas-related emergencies and urgent repairs.",
       detailedDescription:
-        "Gas emergencies can't wait. Our 24/7 emergency service team is strategically located across Pune and Hyderabad to provide rapid response to gas leaks, safety concerns, and urgent repairs with guaranteed response times and immediate safety measures.",
+        "Gas emergencies can't wait. Our 24/7 emergency service team is strategically located across Pune and Mumbai to provide rapid response to gas leaks, safety concerns, and urgent repairs with guaranteed response times and immediate safety measures.",
       features: [
         "24/7 emergency hotline",
         "15-minute response guarantee",
@@ -263,7 +263,7 @@ export default function ServicesPage() {
     {
       icon: Home,
       title: "Residential Gas Services",
-      description: "Complete gas solutions for homes, apartments, and residential complexes across Pune and Hyderabad.",
+      description: "Complete gas solutions for homes, apartments, and residential complexes across Pune and Mumbai.",
       detailedServices: [
         "Kitchen gas stove repair and maintenance for all brands",
         "Residential gas pipeline installation and upgrades",
@@ -274,7 +274,7 @@ export default function ServicesPage() {
         "Annual maintenance contracts for residential properties",
         "Gas meter installation and relocation services",
       ],
-      coverage: "All residential areas in Pune & Hyderabad",
+      coverage: "All residential areas in Pune & Mumbai",
       specialties: ["Family safety priority", "Affordable pricing", "Quick response", "Trusted local service"],
       customerBase: "3000+ residential customers",
       responseTime: "20-30 minutes average",
@@ -312,7 +312,7 @@ export default function ServicesPage() {
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
               🔥 Comprehensive gas repair and maintenance services for your home and business. Professional, safe, and
-              reliable solutions from certified technicians across <strong>Pune and Hyderabad</strong> with
+              reliable solutions from certified technicians across <strong>Pune and Mumbai</strong> with
               <strong> 5000+ satisfied customers</strong> and <strong>4.9-star rating</strong>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -345,7 +345,7 @@ export default function ServicesPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Complete Gas Solutions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               From simple repairs to complex installations, we handle all your gas appliance needs with expertise and
-              attention to safety across Pune and Hyderabad.
+              attention to safety across Pune and Mumbai.
             </p>
           </div>
 
@@ -444,7 +444,7 @@ export default function ServicesPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Residential & Commercial Solutions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We serve both residential and commercial clients with specialized solutions tailored to their unique
-              requirements across Pune and Hyderabad.
+              requirements across Pune and Mumbai.
             </p>
           </div>
 
@@ -519,7 +519,7 @@ export default function ServicesPage() {
             <h2 className="text-4xl font-bold text-white mb-4">🚨 Emergency Gas Services Available 24/7</h2>
             <p className="text-xl text-red-100 mb-8">
               Gas leaks and safety issues can't wait. Our emergency team is available round-the-clock to handle urgent
-              situations and ensure your safety across Pune and Hyderabad.
+              situations and ensure your safety across Pune and Mumbai.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">

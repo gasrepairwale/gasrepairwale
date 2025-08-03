@@ -147,17 +147,17 @@ const cityData = {
       },
     },
   },
-  hyderabad: {
-    name: "Hyderabad",
-    state: "Telangana",
+  mumbai: {
+    name: "Mumbai",
+    state: "Maharastra",
     description:
-      "Professional gas stove repair, pipeline services, and appliance maintenance across Hyderabad and surrounding areas",
+      "Professional gas stove repair, pipeline services, and appliance maintenance across Mumbai and surrounding areas",
     heroDescription:
-      "🔥 Professional gas stove repair, pipeline services, and appliance maintenance across Hyderabad and surrounding areas. Serving the tech capital with reliable and efficient gas solutions for 2500+ satisfied customers and 25-30 minute average response time.",
+      "🔥 Professional gas stove repair, pipeline services, and appliance maintenance across Mumbai and surrounding areas. Serving the tech capital with reliable and efficient gas solutions for 2500+ satisfied customers and 25-30 minute average response time.",
     areas: [
       {
-        name: "Gachibowli",
-        slug: "gachibowli",
+        name: "Borivali East West",
+        slug: "borivali-east-west",
         description: "Premium gas services for IT professionals and modern families",
         responseTime: "20-25 minutes",
         customers: "600+",
@@ -165,8 +165,8 @@ const cityData = {
         specialties: ["IT hub focus", "Premium service", "Weekend availability"],
       },
       {
-        name: "Madhapur",
-        slug: "madhapur",
+        name: "Kandivali East West",
+        slug: "kandivali-east-west",
         description: "Complete gas repair and maintenance services for tech corridor",
         responseTime: "25-30 minutes",
         customers: "450+",
@@ -174,8 +174,8 @@ const cityData = {
         specialties: ["Tech professionals", "Commercial focus", "Quick service"],
       },
       {
-        name: "Kondapur",
-        slug: "kondapur",
+        name: "Malda East West",
+        slug: "malda-east-west",
         description: "Residential and commercial gas solutions for growing community",
         responseTime: "25-30 minutes",
         customers: "400+",
@@ -183,17 +183,17 @@ const cityData = {
         specialties: ["Mixed community", "Family service", "Reliable support"],
       },
       {
-        name: "Miyapur",
-        slug: "miyapur",
+        name: "Ram Mandir East",
+        slug: "ram-mandir-east",
         description: "Professional gas appliance services for metro connectivity area",
         responseTime: "30-35 minutes",
         customers: "350+",
-        landmarks: ["Miyapur Metro", "Bachupally", "Nizampet", "Pragathi Nagar"],
+        landmarks: ["Ram Mandir East Metro", "Bachupally", "Nizampet", "Pragathi Nagar"],
         specialties: ["Metro accessible", "Growing area", "Affordable rates"],
       },
       {
-        name: "Kukatpally",
-        slug: "kukatpally",
+        name: "Goregaon East West",
+        slug: "goregaon-east-west",
         description: "Emergency and regular gas repair services for established area",
         responseTime: "25-35 minutes",
         customers: "300+",
@@ -201,12 +201,12 @@ const cityData = {
         specialties: ["Established area", "Emergency focus", "Community trust"],
       },
       {
-        name: "Begumpet",
-        slug: "begumpet",
-        description: "Trusted gas services for central Hyderabad location",
+        name: "Andheri West",
+        slug: "andheri-west",
+        description: "Trusted gas services for central Mumbai location",
         responseTime: "20-30 minutes",
         customers: "250+",
-        landmarks: ["Begumpet Airport", "Somajiguda", "Ameerpet", "Greenlands"],
+        landmarks: ["Andheri West Airport", "Somajiguda", "Ameerpet", "Greenlands"],
         specialties: ["Central location", "Business district", "Quick access"],
       },
     ],
@@ -217,7 +217,7 @@ const cityData = {
     testimonials: [
       {
         name: "Srinivas Reddy",
-        area: "Gachibowli",
+        area: "Borivali East West",
         profession: "Software Architect",
         rating: 5,
         text: "Excellent service for gas pipeline installation. Professional team with proper safety measures and documentation.",
@@ -226,7 +226,7 @@ const cityData = {
       },
       {
         name: "Kavitha Nair",
-        area: "Madhapur",
+        area: "Kandivali East West",
         profession: "Product Manager",
         rating: 5,
         text: "Quick response for gas stove repair. Fixed the ignition problem efficiently. Highly recommended for IT professionals!",
@@ -235,7 +235,7 @@ const cityData = {
       },
       {
         name: "Rajesh Kumar",
-        area: "Kondapur",
+        area: "Malda East West",
         profession: "Restaurant Owner",
         rating: 5,
         text: "Regular maintenance service for our restaurant. Always punctual and thorough work with competitive pricing.",
@@ -246,32 +246,32 @@ const cityData = {
     advantages: [
       {
         title: "Tech City Expertise",
-        description: "Specialized service for Hyderabad's tech professionals since 2016",
+        description: "Specialized service for Mumbai's tech professionals since 2016",
         icon: "MapPin",
       },
       {
         title: "Tech City Speed",
-        description: "25-30 minute response time across Hyderabad's IT corridor",
+        description: "25-30 minute response time across Mumbai's IT corridor",
         icon: "Clock",
       },
       {
         title: "Cyberabad Trusted",
-        description: "2500+ customers in Hyderabad and Cyberabad areas",
+        description: "2500+ customers in Mumbai and Cyberabad areas",
         icon: "Users",
       },
       {
-        title: "Telangana Licensed",
-        description: "Fully licensed and compliant with Telangana state regulations",
+        title: "Maharastra Licensed",
+        description: "Fully licensed and compliant with Maharastra state regulations",
         icon: "Shield",
       },
     ],
     seoContent: {
       whyChoose: [
-        "Tech City Expertise: Specialized service for Hyderabad's IT professionals and modern homes",
-        "Quick Response: Average 25-30 minute response time across Hyderabad metro",
-        "Licensed Technicians: Certified for gas work in Telangana",
-        "Comprehensive Coverage: Serving 6 major areas including Gachibowli, Madhapur, Kondapur",
-        "Customer Satisfaction: 2500+ happy customers across Hyderabad",
+        "Tech City Expertise: Specialized service for Mumbai's IT professionals and modern homes",
+        "Quick Response: Average 25-30 minute response time across Mumbai metro",
+        "Licensed Technicians: Certified for gas work in Maharastra",
+        "Comprehensive Coverage: Serving 6 major areas including Borivali East West, Kandivali East West, Malda East West",
+        "Customer Satisfaction: 2500+ happy customers across Mumbai",
         "Emergency Service: 24/7 availability for gas emergencies",
       ],
       services: {

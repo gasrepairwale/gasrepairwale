@@ -11,7 +11,7 @@ export function WhyChooseUs() {
     {
       icon: Award,
       title: "10+ Years Experience",
-      description: "Decade of expertise in gas appliance repair and maintenance services across Pune and Hyderabad.",
+      description: "Decade of expertise in gas appliance repair and maintenance services across Pune and Mumbai.",
     },
     {
       icon: Users,

@@ -18,10 +18,10 @@ export function LocationsOverview() {
       responseTime: "20-30 minutes",
     },
     {
-      city: "Hyderabad",
-      href: "/locations/hyderabad",
-      areas: ["Gachibowli", "Madhapur", "Kondapur", "Miyapur", "Kukatpally", "Begumpet"],
-      description: "Professional gas appliance services throughout Hyderabad metro area.",
+      city: "Mumbai",
+      href: "/locations/mumbai",
+      areas: ["Borivali East West", "Kandivali East West", "Malda East West", "Ram Mandir East", "Goregaon East West", "Andheri West"],
+      description: "Professional gas appliance services throughout Mumbai metro area.",
       responseTime: "25-35 minutes",
     },
   ]

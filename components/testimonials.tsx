@@ -17,7 +17,7 @@ export function Testimonials() {
     },
     {
       name: "Priya Sharma",
-      location: "Gachibowli, Hyderabad",
+      location: "Borivali East West, Mumbai",
       rating: 5,
       text: "Quick response and quality work. The technician was knowledgeable and explained everything clearly. Highly recommended!",
       service: "Gas Pipeline Service",
@@ -31,7 +31,7 @@ export function Testimonials() {
     },
     {
       name: "Sunita Reddy",
-      location: "Madhapur, Hyderabad",
+      location: "Kandivali East West, Mumbai",
       rating: 5,
       text: "Professional installation of new gas connection. Clean work, proper testing, and good follow-up service. Very satisfied!",
       service: "Installation Service",
@@ -45,7 +45,7 @@ export function Testimonials() {
     },
     {
       name: "Kavitha Nair",
-      location: "Kondapur, Hyderabad",
+      location: "Malda East West, Mumbai",
       rating: 5,
       text: "Burner was not igniting properly. They diagnosed and fixed the issue quickly. Fair pricing and excellent customer service.",
       service: "Gas Stove Repair",

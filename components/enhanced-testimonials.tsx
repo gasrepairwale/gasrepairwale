@@ -24,7 +24,7 @@ export function EnhancedTestimonials() {
     },
     {
       name: "Priya Sharma",
-      location: "Gachibowli, Hyderabad",
+      location: "Borivali East West, Mumbai",
       profession: "Marketing Manager",
       rating: 5,
       date: "November 2024",
@@ -52,7 +52,7 @@ export function EnhancedTestimonials() {
     },
     {
       name: "Sunita Reddy",
-      location: "Madhapur, Hyderabad",
+      location: "Kandivali East West, Mumbai",
       profession: "Homemaker",
       rating: 5,
       date: "September 2024",
@@ -80,7 +80,7 @@ export function EnhancedTestimonials() {
     },
     {
       name: "Kavitha Nair",
-      location: "Kondapur, Hyderabad",
+      location: "Malda East West, Mumbai",
       profession: "Teacher",
       rating: 5,
       date: "July 2024",
@@ -110,7 +110,7 @@ export function EnhancedTestimonials() {
           <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">Real Customer Experiences</Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Customers Say About Our Gas Services</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Don't just take our word for it. Read detailed reviews from real customers across Pune and Hyderabad who
+            Don't just take our word for it. Read detailed reviews from real customers across Pune and Mumbai who
             have experienced our professional gas repair and maintenance services firsthand.
           </p>
         </div>

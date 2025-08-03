@@ -13,10 +13,10 @@ export function FAQ() {
 
   const faqs = [
     {
-      question: "How quickly can you respond to gas emergencies in Pune and Hyderabad?",
+      question: "How quickly can you respond to gas emergencies in Pune and Mumbai?",
       answer:
-        "We guarantee a 15-minute response time for gas emergencies across Pune and Hyderabad. Our technicians are strategically located in key areas like Kothrud, Baner, Gachibowli, and Madhapur to ensure the fastest possible response. For non-emergency repairs, we typically arrive within 30-45 minutes.",
-      keywords: "emergency response time, gas leak repair, Pune Hyderabad service",
+        "We guarantee a 15-minute response time for gas emergencies across Pune and Mumbai. Our technicians are strategically located in key areas like Kothrud, Baner, Borivali East West, and Kandivali East West to ensure the fastest possible response. For non-emergency repairs, we typically arrive within 30-45 minutes.",
+      keywords: "emergency response time, gas leak repair, Pune Mumbai service",
     },
     {
       question: "What types of gas stove problems do you repair?",
@@ -43,10 +43,10 @@ export function FAQ() {
       keywords: "repair warranty, parts warranty, service guarantee",
     },
     {
-      question: "Which areas in Pune and Hyderabad do you cover?",
+      question: "Which areas in Pune and Mumbai do you cover?",
       answer:
-        "In Pune: Kothrud, Baner, Wakad, Hinjewadi, Karve Nagar, Warje, Aundh, Viman Nagar, Koregaon Park, and surrounding areas. In Hyderabad: Gachibowli, Madhapur, Kondapur, Miyapur, Kukatpally, Begumpet, Secunderabad, and nearby localities. We're expanding to cover more areas regularly.",
-      keywords: "service areas Pune Hyderabad, coverage areas, local service",
+        "In Pune: Kothrud, Baner, Wakad, Hinjewadi, Karve Nagar, Warje, Aundh, Viman Nagar, Koregaon Park, and surrounding areas. In Mumbai: Borivali East West, Kandivali East West, Malda East West, Ram Mandir East, Goregaon East West, Andheri West, Secunderabad, and nearby localities. We're expanding to cover more areas regularly.",
+      keywords: "service areas Pune Mumbai, coverage areas, local service",
     },
     {
       question: "Can you install new gas connections and pipelines?",
@@ -87,7 +87,7 @@ export function FAQ() {
             <span className="text-green-600">Answers!</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to know about our gas repair services in Pune and Hyderabad. Can't find your answer?
+            Everything you need to know about our gas repair services in Pune and Mumbai. Can't find your answer?
             Call us!
           </p>
         </div>

@@ -6,12 +6,12 @@ import { ContactCTA } from "@/components/contact-cta"
 import { Award, Users, Shield, Clock, CheckCircle, Target, Phone } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Gas Repaire Wale | Professional Gas Repair Company | 10+ Years Experience | Pune Hyderabad",
+  title: "About Gas Repaire Wale | Professional Gas Repair Company | 10+ Years Experience | Pune Mumbai",
   description:
-    "⭐ Learn about Gas Repaire Wale - Leading gas repair company since 2013 ✅ 5000+ Satisfied Customers ✅ Licensed Technicians ✅ 24/7 Emergency Service ✅ Serving Pune & Hyderabad ✅ 4.9★ Rating. Call +91 83027 13127",
+    "⭐ Learn about Gas Repaire Wale - Leading gas repair company since 2013 ✅ 5000+ Satisfied Customers ✅ Licensed Technicians ✅ 24/7 Emergency Service ✅ Serving Pune & Mumbai ✅ 4.9★ Rating. Call +91 83027 13127",
   keywords: [
     "about gas repaire wale",
-    "gas repair company pune hyderabad",
+    "gas repair company pune Mumbai",
     "professional gas technicians",
     "licensed gas repair service",
     "gas repair company history",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     url: "https://gasrepairewale.com/about",
     title: "About Gas Repaire Wale | Professional Gas Repair Company Since 2013",
     description:
-      "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune & Hyderabad. 4.9★ rating, 24/7 emergency service.",
+      "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune & Mumbai. 4.9★ rating, 24/7 emergency service.",
     siteName: "Gas Repaire Wale",
     images: [
       {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Gas Repaire Wale | Professional Gas Repair Company",
     description:
-      "Leading gas repair company since 2013 with 5000+ customers, licensed technicians, 24/7 service in Pune & Hyderabad. Call +91 83027 13127",
+      "Leading gas repair company since 2013 with 5000+ customers, licensed technicians, 24/7 service in Pune & Mumbai. Call +91 83027 13127",
     images: ["/about-twitter-image.jpg"],
   },
   alternates: {
@@ -102,7 +102,7 @@ export default function AboutPage() {
       role: "Founder & Lead Technician",
       experience: "15+ years",
       description:
-        "Certified gas technician with extensive experience in residential and commercial gas systems across Maharashtra and Telangana.",
+        "Certified gas technician with extensive experience in residential and commercial gas systems across Maharastra.",
       specialties: ["Gas Safety Certification", "Commercial Systems", "Emergency Response", "Team Leadership"],
       achievements: "Founded company in 2013, trained 50+ technicians, 3000+ successful repairs",
     },
@@ -120,18 +120,18 @@ export default function AboutPage() {
       role: "Customer Service Manager",
       experience: "8+ years",
       description:
-        "Ensures excellent customer experience and coordinates service operations across Pune and Hyderabad.",
+        "Ensures excellent customer experience and coordinates service operations across Pune and Mumbai.",
       specialties: ["Customer Relations", "Service Coordination", "Quality Assurance", "Training Programs"],
       achievements: "Managed 5000+ customer interactions, 4.9-star service rating, process optimization expert",
     },
     {
       name: "Srinivas Reddy",
-      role: "Senior Technician - Hyderabad",
+      role: "Senior Technician - Mumbai",
       experience: "10+ years",
       description:
-        "Expert in commercial gas systems and pipeline installations for Hyderabad's IT corridor and residential areas.",
+        "Expert in commercial gas systems and pipeline installations for Mumbai's IT corridor and residential areas.",
       specialties: ["Commercial Gas Systems", "Pipeline Services", "IT Sector Solutions", "Compliance Management"],
-      achievements: "500+ commercial installations, Telangana safety compliance expert, corporate client specialist",
+      achievements: "500+ commercial installations, Maharastra safety compliance expert, corporate client specialist",
     },
   ]
 
@@ -145,8 +145,8 @@ export default function AboutPage() {
     },
     {
       year: "2016",
-      title: "Expanded to Hyderabad",
-      description: "Opened operations in Hyderabad to serve the growing IT sector and residential communities.",
+      title: "Expanded to Mumbai",
+      description: "Opened operations in Mumbai to serve the growing IT sector and residential communities.",
       impact: "Extended service to 500+ new customers",
     },
     {
@@ -182,7 +182,7 @@ export default function AboutPage() {
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
               🔥 With over a decade of experience, we're your trusted partners in gas appliance repair and maintenance.
               Our commitment to safety, quality, and customer satisfaction has made us the preferred choice across Pune
-              and Hyderabad with <strong>5000+ satisfied customers</strong> and <strong>4.9-star rating</strong>.
+              and Mumbai with <strong>5000+ satisfied customers</strong> and <strong>4.9-star rating</strong>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -218,7 +218,7 @@ export default function AboutPage() {
                   <strong>Gas Repaire Wale</strong> was founded in 2013 with a simple yet powerful mission: to provide
                   safe, reliable, and affordable gas appliance services to homes and businesses across India. What
                   started as a small local service in Pune has grown into a trusted name across Maharashtra and
-                  Telangana.
+                  Maharastra.
                 </p>
                 <p>
                   Our founder, <strong>Rajesh Sharma</strong>, recognized the critical need for professional gas
@@ -256,7 +256,7 @@ export default function AboutPage() {
                     <CheckCircle className="h-5 w-5 text-blue-600" />
                   </div>
                   <span>
-                    <strong>2016:</strong> Expanded operations to Hyderabad's IT corridor
+                    <strong>2016:</strong> Expanded operations to Mumbai's IT corridor
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -311,7 +311,7 @@ export default function AboutPage() {
                   To provide safe, reliable, and professional gas appliance services that ensure the safety and comfort
                   of our customers' homes and businesses. We strive to exceed expectations through quality workmanship,
                   transparent pricing, exceptional customer service, and unwavering commitment to safety standards
-                  across Pune and Hyderabad.
+                  across Pune and Mumbai.
                 </p>
               </CardContent>
             </Card>
@@ -378,7 +378,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Professional Gas Experts</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our experienced and certified professionals are dedicated to providing you with the best gas repair
-              services across Pune and Hyderabad
+              services across Pune and Mumbai
             </p>
           </div>
 

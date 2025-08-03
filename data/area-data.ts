@@ -1118,15 +1118,15 @@ export const areaData = {
       },
     },
   },
-  hyderabad: {
-    gachibowli: {
-      name: "Gachibowli",
-      city: "Hyderabad",
-      state: "Telangana",
+  mumbai: {
+    "borivali-east-west": {
+      name: "Borivali East West",
+      city: "Mumbai",
+      state: "Maharastra",
       description:
-        "Premium gas services for IT professionals and families in Gachibowli - Hyderabad's Silicon Valley with corporate-grade solutions",
+        "Premium gas services for IT professionals and families in Borivali East West - Mumbai's Silicon Valley with corporate-grade solutions",
       heroDescription:
-        "🔥 Expert gas repair services in Gachibowli with 20-minute response time! Serving 600+ customers since 2016. Specialized for HITEC City professionals and premium residential complexes with tech-savvy solutions.",
+        "🔥 Expert gas repair services in Borivali East West with 20-minute response time! Serving 600+ customers since 2016. Specialized for HITEC City professionals and premium residential complexes with tech-savvy solutions.",
       responseTime: "20-25 minutes",
       customers: "600+",
       pincode: "500032",
@@ -1141,9 +1141,9 @@ export const areaData = {
         "Manikonda",
         "Tellapur",
         "Gopanpally",
-        "Gachibowli Stadium",
+        "Borivali East West Stadium",
       ],
-      nearbyAreas: ["Madhapur", "Kondapur", "Manikonda", "Nanakramguda", "Shaikpet", "Tolichowki"],
+      nearbyAreas: ["Kandivali East West", "Malda East West", "Manikonda", "Nanakramguda", "Shaikpet", "Tolichowki"],
       localBusinesses: ["IT Companies", "Tech Parks", "Premium Restaurants", "Luxury Apartments", "Corporate Offices"],
       specialServices: [
         {
@@ -1171,7 +1171,7 @@ export const areaData = {
         {
           title: "Emergency Gas Services",
           description:
-            "24/7 emergency services for gas leaks and urgent repairs in Gachibowli with priority response for IT professionals",
+            "24/7 emergency services for gas leaks and urgent repairs in Borivali East West with priority response for IT professionals",
           features: [
             "Immediate emergency response",
             "Complete safety assessment",
@@ -1187,7 +1187,7 @@ export const areaData = {
           company: "Microsoft",
           area: "HITEC City",
           rating: 5,
-          text: "Outstanding service! We moved to a new apartment in Financial District and needed complete gas pipeline installation from scratch. Gas Repaire Wale team surveyed our 3BHK apartment, designed optimal pipeline layout for modular kitchen, installed concealed pipes with proper ventilation, connected to premium imported gas stove, and provided all safety certifications. The project took 3 days, cost ₹4500 including materials, and they coordinated with apartment management for approvals. Professional team with proper safety measures - perfect for tech professionals in Gachibowli!",
+          text: "Outstanding service! We moved to a new apartment in Financial District and needed complete gas pipeline installation from scratch. Gas Repaire Wale team surveyed our 3BHK apartment, designed optimal pipeline layout for modular kitchen, installed concealed pipes with proper ventilation, connected to premium imported gas stove, and provided all safety certifications. The project took 3 days, cost ₹4500 including materials, and they coordinated with apartment management for approvals. Professional team with proper safety measures - perfect for tech professionals in Borivali East West!",
           service: "Gas Pipeline Installation",
           date: "December 2024",
           jobType: "New Installation",
@@ -1207,9 +1207,9 @@ export const areaData = {
           name: "Rajesh Kumar",
           profession: "Restaurant Owner",
           company: "Spice Garden",
-          area: "Gachibowli Main Road",
+          area: "Borivali East West Main Road",
           rating: 5,
-          text: "We run a premium restaurant in Gachibowli serving IT professionals and use Gas Repaire Wale for our commercial kitchen maintenance. They service our 6-burner commercial gas system monthly, including deep cleaning, pipeline inspection, safety valve testing, and burner calibration. Their team understands commercial requirements very well - they work during our closed hours, always carry commercial-grade spare parts, and provide detailed service reports. We have annual contract at ₹15000 which includes all maintenance, emergency support, and compliance certificates. Great support for businesses in Gachibowli!",
+          text: "We run a premium restaurant in Borivali East West serving IT professionals and use Gas Repaire Wale for our commercial kitchen maintenance. They service our 6-burner commercial gas system monthly, including deep cleaning, pipeline inspection, safety valve testing, and burner calibration. Their team understands commercial requirements very well - they work during our closed hours, always carry commercial-grade spare parts, and provide detailed service reports. We have annual contract at ₹15000 which includes all maintenance, emergency support, and compliance certificates. Great support for businesses in Borivali East West!",
           service: "Commercial Kitchen Maintenance",
           date: "January 2025",
           jobType: "Commercial Service",
@@ -1220,7 +1220,7 @@ export const areaData = {
           icon: "Award",
           title: "HITEC City Experts",
           description:
-            "Specialized services for Gachibowli's IT corridor with corporate-grade solutions, tech-savvy approach, and understanding of professional requirements since 2016.",
+            "Specialized services for Borivali East West's IT corridor with corporate-grade solutions, tech-savvy approach, and understanding of professional requirements since 2016.",
           stats: "600+ tech customers",
         },
         {
@@ -1234,25 +1234,25 @@ export const areaData = {
           icon: "Shield",
           title: "Premium Standards",
           description:
-            "High-quality service standards for Gachibowli's premium residential and commercial requirements with corporate-grade safety protocols.",
+            "High-quality service standards for Borivali East West's premium residential and commercial requirements with corporate-grade safety protocols.",
           stats: "4.9★ rating",
         },
         {
           icon: "Users",
           title: "Community Leader",
           description:
-            "Most trusted gas service in Gachibowli with 600+ customers, 1500+ successful completions, and preferred by major IT companies.",
+            "Most trusted gas service in Borivali East West with 600+ customers, 1500+ successful completions, and preferred by major IT companies.",
           stats: "1500+ jobs",
         },
       ],
       seoContent: {
         whyChoose: [
-          "IT Corridor Expertise: Specialized services for Gachibowli's tech professionals and corporate offices since 2016 with tech-savvy solutions",
+          "IT Corridor Expertise: Specialized services for Borivali East West's tech professionals and corporate offices since 2016 with tech-savvy solutions",
           "Quick Response: Guaranteed 20-25 minute response time across HITEC City, Financial District, and tech parks with priority support",
           "Corporate Solutions: Professional services for IT companies, startups, corporate cafeterias, and business establishments",
-          "Premium Service: High-end solutions for Gachibowli's luxury apartments, gated communities, and upscale residential complexes",
+          "Premium Service: High-end solutions for Borivali East West's luxury apartments, gated communities, and upscale residential complexes",
           "Tech-Savvy Approach: Digital booking, online payments, modern service delivery methods, and tech-friendly customer support",
-          "Local Knowledge: Deep understanding of Gachibowli's unique residential and commercial landscape with IT industry focus",
+          "Local Knowledge: Deep understanding of Borivali East West's unique residential and commercial landscape with IT industry focus",
         ],
         services: {
           residential: [
@@ -1273,17 +1273,17 @@ export const areaData = {
           ],
         },
         emergencyInfo:
-          "24/7 emergency gas services in Gachibowli with 20-minute response guarantee. Serving HITEC City, Financial District, and all major tech areas with immediate professional assistance for gas emergencies, safety assessments, and comprehensive problem resolution.",
+          "24/7 emergency gas services in Borivali East West with 20-minute response guarantee. Serving HITEC City, Financial District, and all major tech areas with immediate professional assistance for gas emergencies, safety assessments, and comprehensive problem resolution.",
       },
     },
-    madhapur: {
-      name: "Madhapur",
-      city: "Hyderabad",
-      state: "Telangana",
+    "kandivali-east-west": {
+      name: "Kandivali East West",
+      city: "Mumbai",
+      state: "Maharastra",
       description:
-        "Complete gas repair and maintenance services in Madhapur - Heart of Cyberabad's tech ecosystem with comprehensive commercial solutions",
+        "Complete gas repair and maintenance services in Kandivali East West - Heart of Cyberabad's tech ecosystem with comprehensive commercial solutions",
       heroDescription:
-        "🔥 Professional gas services in Madhapur with 25-minute response time! Trusted by 450+ customers since 2016. Expert solutions for Cyberabad's tech hub and premium residential areas with specialized commercial expertise.",
+        "🔥 Professional gas services in Kandivali East West with 25-minute response time! Trusted by 450+ customers since 2016. Expert solutions for Cyberabad's tech hub and premium residential areas with specialized commercial expertise.",
       responseTime: "25-30 minutes",
       customers: "450+",
       pincode: "500081",
@@ -1300,7 +1300,7 @@ export const areaData = {
         "Ayyappa Society",
         "Mindspace",
       ],
-      nearbyAreas: ["Gachibowli", "Kondapur", "Jubilee Hills", "Banjara Hills", "Kukatpally", "Miyapur"],
+      nearbyAreas: ["Borivali East West", "Malda East West", "Jubilee Hills", "Banjara Hills", "Goregaon East West", "Ram Mandir East"],
       localBusinesses: ["IT Offices", "Shopping Malls", "Fine Dining Restaurants", "Corporate Parks", "Luxury Hotels"],
       specialServices: [
         {
@@ -1328,7 +1328,7 @@ export const areaData = {
         {
           title: "Emergency Gas Services",
           description:
-            "24/7 emergency services for gas leaks and urgent repairs in Madhapur with priority response for commercial establishments",
+            "24/7 emergency services for gas leaks and urgent repairs in Kandivali East West with priority response for commercial establishments",
           features: [
             "Immediate emergency response",
             "Complete safety assessment",
@@ -1344,7 +1344,7 @@ export const areaData = {
           company: "Google",
           area: "Cyber Towers",
           rating: 5,
-          text: "Excellent corporate service for our office cafeteria serving 150+ employees. Gas Repaire Wale handled the entire gas setup professionally - installed 10-burner commercial gas system, main pipeline from road connection, distribution network, individual cooking stations, and comprehensive safety systems. They coordinated with building management, provided all compliance certificates including fire department clearance, gas safety audit, and environmental clearance. The project was completed in 1 week with minimal disruption to office operations. Perfect for corporate requirements in Madhapur IT parks!",
+          text: "Excellent corporate service for our office cafeteria serving 150+ employees. Gas Repaire Wale handled the entire gas setup professionally - installed 10-burner commercial gas system, main pipeline from road connection, distribution network, individual cooking stations, and comprehensive safety systems. They coordinated with building management, provided all compliance certificates including fire department clearance, gas safety audit, and environmental clearance. The project was completed in 1 week with minimal disruption to office operations. Perfect for corporate requirements in Kandivali East West IT parks!",
           service: "Corporate Gas Setup",
           date: "December 2024",
           jobType: "Corporate Service",
@@ -1366,7 +1366,7 @@ export const areaData = {
           company: "Inorbit Food Court",
           area: "Inorbit Mall",
           rating: 5,
-          text: "We rely on Gas Repaire Wale for our food court's gas maintenance covering 8 restaurant outlets. They provide comprehensive monthly service including all gas stoves, pipeline inspections, safety valve testing, burner cleaning, and emergency support. Their team understands commercial food court requirements - they work during mall closed hours, coordinate with multiple vendors, maintain detailed service logs, and provide mall management with safety certificates. We have annual contract at ₹25000 covering all outlets. Very reliable for commercial establishments in Madhapur. Highly recommended!",
+          text: "We rely on Gas Repaire Wale for our food court's gas maintenance covering 8 restaurant outlets. They provide comprehensive monthly service including all gas stoves, pipeline inspections, safety valve testing, burner cleaning, and emergency support. Their team understands commercial food court requirements - they work during mall closed hours, coordinate with multiple vendors, maintain detailed service logs, and provide mall management with safety certificates. We have annual contract at ₹25000 covering all outlets. Very reliable for commercial establishments in Kandivali East West. Highly recommended!",
           service: "Commercial Maintenance",
           date: "January 2025",
           jobType: "Food Court Service",
@@ -1377,37 +1377,37 @@ export const areaData = {
           icon: "Building",
           title: "Cyberabad Specialists",
           description:
-            "Expert services for Madhapur's corporate offices, IT parks, and commercial establishments with deep understanding of business requirements.",
+            "Expert services for Kandivali East West's corporate offices, IT parks, and commercial establishments with deep understanding of business requirements.",
           stats: "450+ corporate clients",
         },
         {
           icon: "Clock",
           title: "Reliable Response",
           description:
-            "Guaranteed 25-30 minute response time across Madhapur including Cyber Towers, IT parks, and commercial complexes with priority support.",
+            "Guaranteed 25-30 minute response time across Kandivali East West including Cyber Towers, IT parks, and commercial complexes with priority support.",
           stats: "25-min response",
         },
         {
           icon: "Star",
           title: "Quality Assured",
           description:
-            "Consistent quality service for Madhapur's diverse residential and commercial needs with corporate-grade standards and protocols.",
+            "Consistent quality service for Kandivali East West's diverse residential and commercial needs with corporate-grade standards and protocols.",
           stats: "4.8★ rating",
         },
         {
           icon: "Users",
           title: "Trusted Partner",
           description:
-            "Preferred gas service provider in Madhapur with 450+ customers, 1100+ completed jobs, and trusted by major corporations.",
+            "Preferred gas service provider in Kandivali East West with 450+ customers, 1100+ completed jobs, and trusted by major corporations.",
           stats: "1100+ completions",
         },
       ],
       seoContent: {
         whyChoose: [
-          "Cyberabad Expertise: Specialized services for Madhapur's IT corridor and corporate establishments since 2016 with business-focused solutions",
+          "Cyberabad Expertise: Specialized services for Kandivali East West's IT corridor and corporate establishments since 2016 with business-focused solutions",
           "Reliable Response: Guaranteed 25-30 minute response time across Cyber Towers, IT parks, and residential areas with priority support",
           "Corporate Focus: Professional solutions for IT companies, malls, commercial establishments, and business complexes",
-          "Quality Service: Consistent high-quality standards for Madhapur's diverse service requirements with corporate-grade protocols",
+          "Quality Service: Consistent high-quality standards for Kandivali East West's diverse service requirements with corporate-grade protocols",
           "Commercial Expertise: Deep experience with restaurants, food courts, retail establishments, and commercial facilities",
           "Flexible Solutions: Adaptable services for both residential and commercial gas requirements with customized contracts",
         ],
@@ -1430,17 +1430,17 @@ export const areaData = {
           ],
         },
         emergencyInfo:
-          "Emergency gas services in Madhapur available 24/7 with 25-minute response time. Covering Cyber Towers, Inorbit Mall, IT parks, and all residential areas with immediate professional emergency assistance, safety assessments, and comprehensive problem resolution.",
+          "Emergency gas services in Kandivali East West available 24/7 with 25-minute response time. Covering Cyber Towers, Inorbit Mall, IT parks, and all residential areas with immediate professional emergency assistance, safety assessments, and comprehensive problem resolution.",
       },
     },
-    kondapur: {
-      name: "Kondapur",
-      city: "Hyderabad",
-      state: "Telangana",
+    "malda-east-west": {
+      name: "Malda East West",
+      city: "Mumbai",
+      state: "Maharastra",
       description:
-        "Professional gas repair services in Kondapur - Hyderabad's thriving residential and IT hub with specialized development services",
+        "Professional gas repair services in Malda East West - Mumbai's thriving residential and IT hub with specialized development services",
       heroDescription:
-        "🔥 Expert gas repair services in Kondapur with 22-minute response time! Serving 400+ customers since 2017. Specialized solutions for Kondapur's IT professionals and growing residential communities with modern service approach.",
+        "🔥 Expert gas repair services in Malda East West with 22-minute response time! Serving 400+ customers since 2017. Specialized solutions for Malda East West's IT professionals and growing residential communities with modern service approach.",
       responseTime: "22-28 minutes",
       customers: "400+",
       pincode: "500084",
@@ -1448,16 +1448,16 @@ export const areaData = {
       rating: "4.8",
       completedJobs: "950+",
       landmarks: [
-        "Kondapur Main Road",
+        "Malda East West Main Road",
         "Botanical Garden",
         "Kothaguda",
         "Masjid Banda",
         "Lanco Hills",
         "Aparna Cyberzon",
-        "Kondapur X Roads",
+        "Malda East West X Roads",
         "Shaikpet Border",
       ],
-      nearbyAreas: ["Gachibowli", "Madhapur", "Manikonda", "Shaikpet", "Tolichowki", "Jubilee Hills"],
+      nearbyAreas: ["Borivali East West", "Kandivali East West", "Manikonda", "Shaikpet", "Tolichowki", "Jubilee Hills"],
       localBusinesses: [
         "IT Companies",
         "Residential Complexes",
@@ -1491,7 +1491,7 @@ export const areaData = {
         {
           title: "Emergency Gas Services",
           description:
-            "24/7 emergency services for gas leaks and urgent repairs in Kondapur with priority response for residential complexes",
+            "24/7 emergency services for gas leaks and urgent repairs in Malda East West with priority response for residential complexes",
           features: [
             "Immediate emergency response",
             "Complete safety assessment",
@@ -1507,7 +1507,7 @@ export const areaData = {
           company: "Accenture",
           area: "Kothaguda",
           rating: 5,
-          text: "Excellent service for gas stove repair in our apartment complex. My 4-burner gas stove suddenly developed ignition problems and one burner had very weak flame. Being an IT professional, I needed weekend service to avoid taking leave. Called Gas Repaire Wale on Saturday morning and technician Suresh arrived within 25 minutes. He diagnosed the issues as faulty ignition electrodes and blocked burner jets, explained everything clearly, and completed the repair in 1 hour using genuine parts. Charged ₹750 including parts and weekend service. Great support for IT professionals in Kondapur!",
+          text: "Excellent service for gas stove repair in our apartment complex. My 4-burner gas stove suddenly developed ignition problems and one burner had very weak flame. Being an IT professional, I needed weekend service to avoid taking leave. Called Gas Repaire Wale on Saturday morning and technician Suresh arrived within 25 minutes. He diagnosed the issues as faulty ignition electrodes and blocked burner jets, explained everything clearly, and completed the repair in 1 hour using genuine parts. Charged ₹750 including parts and weekend service. Great support for IT professionals in Malda East West!",
           service: "Gas Stove Repair",
           date: "December 2024",
           jobType: "Weekend Service",
@@ -1518,7 +1518,7 @@ export const areaData = {
           company: "IBM",
           area: "Lanco Hills",
           rating: 5,
-          text: "Professional gas pipeline installation for our new apartment in a premium complex. We needed complete gas connection from main line to kitchen including concealed piping for modular kitchen setup. Gas Repaire Wale team surveyed the apartment, designed optimal pipeline route avoiding electrical lines, installed high-quality pipes with proper ventilation, and connected to our premium gas stove. They coordinated with complex management for approvals, completed work in 2 days, and provided gas safety certificate. Total cost ₹3500 including materials. Highly recommended for Kondapur residents!",
+          text: "Professional gas pipeline installation for our new apartment in a premium complex. We needed complete gas connection from main line to kitchen including concealed piping for modular kitchen setup. Gas Repaire Wale team surveyed the apartment, designed optimal pipeline route avoiding electrical lines, installed high-quality pipes with proper ventilation, and connected to our premium gas stove. They coordinated with complex management for approvals, completed work in 2 days, and provided gas safety certificate. Total cost ₹3500 including materials. Highly recommended for Malda East West residents!",
           service: "Pipeline Installation",
           date: "November 2024",
           jobType: "New Installation",
@@ -1527,9 +1527,9 @@ export const areaData = {
           name: "Ravi Kumar",
           profession: "Restaurant Owner",
           company: "Kumar's Kitchen",
-          area: "Kondapur Main Road",
+          area: "Malda East West Main Road",
           rating: 5,
-          text: "We use Gas Repaire Wale for our restaurant's commercial kitchen serving local IT professionals. They provide monthly maintenance of our 4-burner commercial gas stove, quarterly pipeline inspections, and emergency support. Their team understands commercial requirements well - they work during our closed hours, always carry commercial spare parts, and provide detailed service reports. We have annual contract at ₹8000 which includes all maintenance, emergency support, and compliance certificates. Great team for businesses in Kondapur with reasonable pricing!",
+          text: "We use Gas Repaire Wale for our restaurant's commercial kitchen serving local IT professionals. They provide monthly maintenance of our 4-burner commercial gas stove, quarterly pipeline inspections, and emergency support. Their team understands commercial requirements well - they work during our closed hours, always carry commercial spare parts, and provide detailed service reports. We have annual contract at ₹8000 which includes all maintenance, emergency support, and compliance certificates. Great team for businesses in Malda East West with reasonable pricing!",
           service: "Commercial Kitchen Service",
           date: "January 2025",
           jobType: "Commercial Service",
@@ -1540,38 +1540,38 @@ export const areaData = {
           icon: "Zap",
           title: "IT Community Focus",
           description:
-            "Specialized services for Kondapur's growing IT professional community with flexible solutions, modern approach, and tech-friendly service",
+            "Specialized services for Malda East West's growing IT professional community with flexible solutions, modern approach, and tech-friendly service",
           stats: "400+ IT customers",
         },
         {
           icon: "Clock",
-          title: "Quick Kondapur Response",
+          title: "Quick Malda East West Response",
           description:
-            "Guaranteed 22-28 minute response time across all areas of Kondapur including Kothaguda and main road with priority support for residents.",
+            "Guaranteed 22-28 minute response time across all areas of Malda East West including Kothaguda and main road with priority support for residents.",
           stats: "22-min response",
         },
         {
           icon: "Building",
           title: "Complex Specialists",
           description:
-            "Expert in serving residential complexes and new development projects in Kondapur with comprehensive solutions and community-focused service.",
+            "Expert in serving residential complexes and new development projects in Malda East West with comprehensive solutions and community-focused service.",
           stats: "4.8★ rating",
         },
         {
           icon: "Users",
           title: "Growing Community",
           description:
-            "Trusted service provider in Kondapur with 400+ customers and 950+ completed jobs, preferred by IT professionals and families.",
+            "Trusted service provider in Malda East West with 400+ customers and 950+ completed jobs, preferred by IT professionals and families.",
           stats: "950+ completions",
         },
       ],
       seoContent: {
         whyChoose: [
-          "IT Community Focus: Specialized services for Kondapur's growing IT professional community since 2017 with flexible and modern solutions",
+          "IT Community Focus: Specialized services for Malda East West's growing IT professional community since 2017 with flexible and modern solutions",
           "Development Expertise: Expert in serving new residential complexes and commercial developments with comprehensive gas planning and installations",
           "Flexible Service: Weekend and evening appointments for busy IT professionals with digital booking and online payment options",
           "Complex Specialists: Comprehensive solutions for residential complexes and gated communities with community-focused maintenance",
-          "Quick Response: Guaranteed 22-28 minute response time across all areas of Kondapur with priority support for residents",
+          "Quick Response: Guaranteed 22-28 minute response time across all areas of Malda East West with priority support for residents",
           "Modern Solutions: Digital booking and payment options for tech-savvy customers with transparent pricing and reliable support",
         ],
         services: {
@@ -1593,17 +1593,17 @@ export const areaData = {
           ],
         },
         emergencyInfo:
-          "Emergency gas services in Kondapur available 24/7 with 22-minute response guarantee. Serving Kothaguda, Lanco Hills, main road area, and all residential complexes with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
+          "Emergency gas services in Malda East West available 24/7 with 22-minute response guarantee. Serving Kothaguda, Lanco Hills, main road area, and all residential complexes with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
       },
     },
-    kukatpally: {
-      name: "Kukatpally",
-      city: "Hyderabad",
-      state: "Telangana",
+    "goregaon-east-west": {
+      name: "Goregaon East West",
+      city: "Mumbai",
+      state: "Maharastra",
       description:
-        "Comprehensive gas repair services in Kukatpally - Hyderabad's major residential and commercial center with community-focused solutions",
+        "Comprehensive gas repair services in Goregaon East West - Mumbai's major residential and commercial center with community-focused solutions",
       heroDescription:
-        "🔥 Professional gas services in Kukatpally with 25-minute response time! Serving 500+ customers since 2015. Expert solutions for Kukatpally's diverse residential and commercial establishments with affordable pricing.",
+        "🔥 Professional gas services in Goregaon East West with 25-minute response time! Serving 500+ customers since 2015. Expert solutions for Goregaon East West's diverse residential and commercial establishments with affordable pricing.",
       responseTime: "25-30 minutes",
       customers: "500+",
       pincode: "500072",
@@ -1612,15 +1612,15 @@ export const areaData = {
       completedJobs: "1200+",
       landmarks: [
         "KPHB Colony",
-        "Kukatpally Housing Board",
+        "Goregaon East West Housing Board",
         "Balanagar",
         "Jeedimetla",
         "Pragathi Nagar",
         "Nizampet",
-        "Kukatpally Metro Station",
+        "Goregaon East West Metro Station",
         "Mallampet",
       ],
-      nearbyAreas: ["Miyapur", "Bachupally", "Nizampet", "Begumpet", "Ameerpet", "Secunderabad"],
+      nearbyAreas: ["Ram Mandir East", "Bachupally", "Nizampet", "Andheri West", "Ameerpet", "Secunderabad"],
       localBusinesses: [
         "Residential Colonies",
         "Shopping Complexes",
@@ -1632,7 +1632,7 @@ export const areaData = {
         {
           title: "Gas Stove Repair",
           description:
-            "Professional repair and maintenance for all types of gas stoves and cooktops with affordable pricing for Kukatpally families",
+            "Professional repair and maintenance for all types of gas stoves and cooktops with affordable pricing for Goregaon East West families",
           features: [
             "Expert burner repair and maintenance",
             "Advanced ignition system fixing",
@@ -1654,7 +1654,7 @@ export const areaData = {
         {
           title: "Emergency Gas Services",
           description:
-            "24/7 emergency services for gas leaks and urgent repairs in Kukatpally with immediate community response and safety measures",
+            "24/7 emergency services for gas leaks and urgent repairs in Goregaon East West with immediate community response and safety measures",
           features: [
             "Immediate emergency response",
             "Complete safety assessment",
@@ -1681,7 +1681,7 @@ export const areaData = {
           company: "Resident",
           area: "Pragathi Nagar",
           rating: 5,
-          text: "Quick and reliable gas stove repair service. The technician was very professional and completed the work efficiently. Great service for families in Kukatpally! My gas stove was not igniting properly and the flame was very low. The technician came on the same day, identified the problem as a clogged burner, cleaned it thoroughly, and adjusted the gas flow. The cost was very reasonable and the service was excellent.",
+          text: "Quick and reliable gas stove repair service. The technician was very professional and completed the work efficiently. Great service for families in Goregaon East West! My gas stove was not igniting properly and the flame was very low. The technician came on the same day, identified the problem as a clogged burner, cleaned it thoroughly, and adjusted the gas flow. The cost was very reasonable and the service was excellent.",
           service: "Gas Stove Repair",
           date: "November 2024",
           jobType: "Home Service",
@@ -1690,9 +1690,9 @@ export const areaData = {
           name: "Suresh Reddy",
           profession: "Shop Owner",
           company: "Local Business",
-          area: "Kukatpally Main Road",
+          area: "Goregaon East West Main Road",
           rating: 5,
-          text: "Professional commercial gas service for our restaurant. They understand local business needs and provide flexible solutions. Highly recommended for Kukatpally businesses! We needed a new gas connection for our restaurant and Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was prompt and the price was competitive.",
+          text: "Professional commercial gas service for our restaurant. They understand local business needs and provide flexible solutions. Highly recommended for Goregaon East West businesses! We needed a new gas connection for our restaurant and Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was prompt and the price was competitive.",
           service: "Commercial Gas Setup",
           date: "January 2025",
           jobType: "Business Service",
@@ -1703,12 +1703,12 @@ export const areaData = {
           icon: "Users",
           title: "Colony Specialists",
           description:
-            "Expert in serving Kukatpally's extensive housing board colonies and residential societies with community-focused solutions and affordable pricing.",
+            "Expert in serving Goregaon East West's extensive housing board colonies and residential societies with community-focused solutions and affordable pricing.",
           stats: "500+ colony customers",
         },
         {
           icon: "Clock",
-          title: "Reliable Kukatpally Service",
+          title: "Reliable Goregaon East West Service",
           description:
             "Guaranteed 25-30 minute response time across KPHB, Pragathi Nagar, and all major areas with priority support for colony residents.",
           stats: "25-min response",
@@ -1717,25 +1717,25 @@ export const areaData = {
           icon: "Shield",
           title: "Community Trusted",
           description:
-            "Trusted service provider for Kukatpally's diverse residential and commercial community with reliable service and transparent pricing.",
+            "Trusted service provider for Goregaon East West's diverse residential and commercial community with reliable service and transparent pricing.",
           stats: "4.7★ rating",
         },
         {
           icon: "Award",
           title: "Established Service",
           description:
-            "Serving Kukatpally since 2015 with 500+ customers and 1200+ completed jobs, preferred by housing board colonies and local businesses.",
+            "Serving Goregaon East West since 2015 with 500+ customers and 1200+ completed jobs, preferred by housing board colonies and local businesses.",
           stats: "1200+ completions",
         },
       ],
       seoContent: {
         whyChoose: [
-          "Colony Expertise: Specialized services for Kukatpally's housing board colonies and residential societies since 2015 with community-focused solutions",
-          "Community Focus: Deep understanding of Kukatpally's diverse residential and commercial needs with affordable pricing and reliable service",
+          "Colony Expertise: Specialized services for Goregaon East West's housing board colonies and residential societies since 2015 with community-focused solutions",
+          "Community Focus: Deep understanding of Goregaon East West's diverse residential and commercial needs with affordable pricing and reliable service",
           "Affordable Solutions: Competitive pricing designed for housing board colonies and local families with transparent and flexible options",
-          "Comprehensive Coverage: Serving KPHB, Pragathi Nagar, and all major areas of Kukatpally with priority support and quick response",
+          "Comprehensive Coverage: Serving KPHB, Pragathi Nagar, and all major areas of Goregaon East West with priority support and quick response",
           "Reliable Service: Consistent quality service with 25-30 minute response time and experienced technicians",
-          "Local Knowledge: Expert understanding of Kukatpally's infrastructure and community requirements with personalized solutions",
+          "Local Knowledge: Expert understanding of Goregaon East West's infrastructure and community requirements with personalized solutions",
         ],
         services: {
           residential: [
@@ -1756,17 +1756,17 @@ export const areaData = {
           ],
         },
         emergencyInfo:
-          "Emergency gas services in Kukatpally available 24/7 with 25-minute response guarantee. Serving KPHB Colony, Pragathi Nagar, and all residential colonies with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
+          "Emergency gas services in Goregaon East West available 24/7 with 25-minute response guarantee. Serving KPHB Colony, Pragathi Nagar, and all residential colonies with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
       },
     },
-    miyapur: {
-      name: "Miyapur",
-      city: "Hyderabad",
-      state: "Telangana",
+    "ram-mandir-east": {
+      name: "Ram Mandir East",
+      city: "Mumbai",
+      state: "Maharastra",
       description:
-        "Expert gas repair services in Miyapur - Hyderabad's rapidly developing residential and IT corridor with specialized new development solutions",
+        "Expert gas repair services in Ram Mandir East - Mumbai's rapidly developing residential and IT corridor with specialized new development solutions",
       heroDescription:
-        "🔥 Professional gas services in Miyapur with 28-minute response time! Serving 350+ customers since 2018. Specialized solutions for Miyapur's new developments and IT professional community with modern service approach.",
+        "🔥 Professional gas services in Ram Mandir East with 28-minute response time! Serving 350+ customers since 2018. Specialized solutions for Ram Mandir East's new developments and IT professional community with modern service approach.",
       responseTime: "28-35 minutes",
       customers: "350+",
       pincode: "500049",
@@ -1774,16 +1774,16 @@ export const areaData = {
       rating: "4.6",
       completedJobs: "800+",
       landmarks: [
-        "Miyapur Metro Station",
-        "Miyapur X Roads",
+        "Ram Mandir East Metro Station",
+        "Ram Mandir East X Roads",
         "Bachupally",
         "Lingampally",
         "Nallagandla",
         "Gajularamaram",
-        "Miyapur Housing Board",
+        "Ram Mandir East Housing Board",
         "Kompally",
       ],
-      nearbyAreas: ["Kukatpally", "Bachupally", "Nizampet", "Kompally", "Quthbullapur", "Medchal"],
+      nearbyAreas: ["Goregaon East West", "Bachupally", "Nizampet", "Kompally", "Quthbullapur", "Medchal"],
       localBusinesses: [
         "New Residential Projects",
         "IT Offices",
@@ -1817,7 +1817,7 @@ export const areaData = {
         {
           title: "Emergency Gas Services",
           description:
-            "24/7 emergency services for gas leaks and urgent repairs in Miyapur with priority response for residential complexes and new developments",
+            "24/7 emergency services for gas leaks and urgent repairs in Ram Mandir East with priority response for residential complexes and new developments",
           features: [
             "Immediate emergency response with experienced technicians and safety protocols",
             "Complete safety assessment with detailed reports and risk analysis",
@@ -1833,7 +1833,7 @@ export const areaData = {
           company: "Tech Mahindra",
           area: "Bachupally",
           rating: 5,
-          text: "Great service for gas pipeline installation in our new apartment. They handled the entire process professionally and completed all safety checks. Perfect for new residents in Miyapur! We recently moved into a new apartment in Bachupally and needed a complete gas pipeline installation. Gas Repaire Wale provided a detailed quote, completed the installation within the agreed timeframe, and ensured all safety standards were met. The technician was very knowledgeable and helpful.",
+          text: "Great service for gas pipeline installation in our new apartment. They handled the entire process professionally and completed all safety checks. Perfect for new residents in Ram Mandir East! We recently moved into a new apartment in Bachupally and needed a complete gas pipeline installation. Gas Repaire Wale provided a detailed quote, completed the installation within the agreed timeframe, and ensured all safety standards were met. The technician was very knowledgeable and helpful.",
           service: "Pipeline Installation",
           date: "December 2024",
           jobType: "New Installation",
@@ -1844,7 +1844,7 @@ export const areaData = {
           company: "Cognizant",
           area: "Nallagandla",
           rating: 5,
-          text: "Quick response for gas stove repair on weekend. They understand the needs of working professionals and provide flexible timing. Great service for IT professionals in Miyapur! My gas stove stopped working on a Saturday evening and I needed it fixed urgently. Gas Repaire Wale responded quickly and the technician arrived within an hour. He diagnosed the problem as a faulty igniter and replaced it with a new one. The service was prompt and efficient.",
+          text: "Quick response for gas stove repair on weekend. They understand the needs of working professionals and provide flexible timing. Great service for IT professionals in Ram Mandir East! My gas stove stopped working on a Saturday evening and I needed it fixed urgently. Gas Repaire Wale responded quickly and the technician arrived within an hour. He diagnosed the problem as a faulty igniter and replaced it with a new one. The service was prompt and efficient.",
           service: "Gas Stove Repair",
           date: "November 2024",
           jobType: "Weekend Service",
@@ -1853,9 +1853,9 @@ export const areaData = {
           name: "Rajesh Goud",
           profession: "Local Business Owner",
           company: "Goud Enterprises",
-          area: "Miyapur X Roads",
+          area: "Ram Mandir East X Roads",
           rating: 5,
-          text: "Professional commercial gas service for our new restaurant. They provided complete setup and all compliance certificates. Very reliable for new businesses in Miyapur area! We recently opened a new restaurant in Miyapur and needed a reliable gas service provider. Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was professional and the price was competitive.",
+          text: "Professional commercial gas service for our new restaurant. They provided complete setup and all compliance certificates. Very reliable for new businesses in Ram Mandir East area! We recently opened a new restaurant in Ram Mandir East and needed a reliable gas service provider. Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was professional and the price was competitive.",
           service: "Commercial Gas Setup",
           date: "January 2025",
           jobType: "Commercial Service",
@@ -1866,39 +1866,39 @@ export const areaData = {
           icon: "Building",
           title: "New Development Experts",
           description:
-            "Specialized in serving Miyapur's rapidly growing residential and commercial developments with expertise in new construction gas installations and bulk connections.",
+            "Specialized in serving Ram Mandir East's rapidly growing residential and commercial developments with expertise in new construction gas installations and bulk connections.",
           stats: "350+ new customers",
         },
         {
           icon: "Clock",
           title: "Metro Corridor Service",
           description:
-            "28-35 minute response time along Miyapur metro corridor and surrounding areas with priority support for new residents and IT professionals.",
+            "28-35 minute response time along Ram Mandir East metro corridor and surrounding areas with priority support for new residents and IT professionals.",
           stats: "28-min response",
         },
         {
           icon: "Zap",
           title: "Modern Solutions",
           description:
-            "Tech-friendly service approach for Miyapur's IT professionals and modern families with digital booking, online payments, and transparent communication.",
+            "Tech-friendly service approach for Ram Mandir East's IT professionals and modern families with digital booking, online payments, and transparent communication.",
           stats: "4.6★ rating",
         },
         {
           icon: "Users",
           title: "Growing Community",
           description:
-            "Trusted service provider in Miyapur with 350+ customers and 800+ completed jobs, preferred by new residents and IT professionals.",
+            "Trusted service provider in Ram Mandir East with 350+ customers and 800+ completed jobs, preferred by new residents and IT professionals.",
           stats: "800+ completions",
         },
       ],
       seoContent: {
         whyChoose: [
-          "New Development Expertise: Specialized services for Miyapur's rapidly growing residential and commercial sector since 2018 with focus on new construction",
-          "Metro Corridor Coverage: Expert service along Miyapur metro line with quick access and modern solutions for convenient and reliable service",
+          "New Development Expertise: Specialized services for Ram Mandir East's rapidly growing residential and commercial sector since 2018 with focus on new construction",
+          "Metro Corridor Coverage: Expert service along Ram Mandir East metro line with quick access and modern solutions for convenient and reliable service",
           "IT Professional Focus: Flexible scheduling and digital solutions for busy tech professionals with transparent communication and reliable support",
-          "Modern Approach: Tech-friendly service delivery matching Miyapur's developing infrastructure with digital booking and online payments",
+          "Modern Approach: Tech-friendly service delivery matching Ram Mandir East's developing infrastructure with digital booking and online payments",
           "Project Specialists: Expert in new construction gas installations and bulk connections with detailed project management and safety protocols",
-          "Growing Community: Dedicated service for Miyapur's expanding residential and commercial base with personalized solutions and community-focused approach",
+          "Growing Community: Dedicated service for Ram Mandir East's expanding residential and commercial base with personalized solutions and community-focused approach",
         ],
         services: {
           residential: [
@@ -1919,17 +1919,17 @@ export const areaData = {
           ],
         },
         emergencyInfo:
-          "Emergency gas services in Miyapur available 24/7 with 28-minute response guarantee. Serving metro corridor areas, Bachupally, Nallagandla, and all new developments with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
+          "Emergency gas services in Ram Mandir East available 24/7 with 28-minute response guarantee. Serving metro corridor areas, Bachupally, Nallagandla, and all new developments with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
       },
     },
-    begumpet: {
-      name: "Begumpet",
-      city: "Hyderabad",
-      state: "Telangana",
+    "andheri-west": {
+      name: "Andheri West",
+      city: "Mumbai",
+      state: "Maharastra",
       description:
-        "Professional gas repair services in Begumpet - Hyderabad's central business and residential district with specialized hospitality solutions",
+        "Professional gas repair services in Andheri West - Mumbai's central business and residential district with specialized hospitality solutions",
       heroDescription:
-        "🔥 Expert gas repair services in Begumpet with 20-minute response time! Serving 400+ customers since 2014. Professional solutions for Begumpet's business district and residential areas with focus on hospitality industry.",
+        "🔥 Expert gas repair services in Andheri West with 20-minute response time! Serving 400+ customers since 2014. Professional solutions for Andheri West's business district and residential areas with focus on hospitality industry.",
       responseTime: "20-25 minutes",
       customers: "400+",
       pincode: "500016",
@@ -1937,16 +1937,16 @@ export const areaData = {
       rating: "4.8",
       completedJobs: "1000+",
       landmarks: [
-        "Begumpet Airport",
+        "Andheri West Airport",
         "Prakash Nagar",
         "Greenlands",
         "Ameerpet",
         "Somajiguda",
         "Raj Bhavan Road",
         "Paradise Circle",
-        "Begumpet Railway Station",
+        "Andheri West Railway Station",
       ],
-      nearbyAreas: ["Ameerpet", "Somajiguda", "Secunderabad", "Punjagutta", "Kukatpally", "Panjagutta"],
+      nearbyAreas: ["Ameerpet", "Somajiguda", "Secunderabad", "Punjagutta", "Goregaon East West", "Panjagutta"],
       localBusinesses: ["Corporate Offices", "Hotels", "Restaurants", "Residential Apartments", "Commercial Complexes"],
       specialServices: [
         {
@@ -1974,7 +1974,7 @@ export const areaData = {
         {
           title: "Emergency Gas Services",
           description:
-            "24/7 emergency services for gas leaks and urgent repairs in Begumpet with priority response for hotels, restaurants, and commercial establishments",
+            "24/7 emergency services for gas leaks and urgent repairs in Andheri West with priority response for hotels, restaurants, and commercial establishments",
           features: [
             "Immediate emergency response with experienced technicians and safety protocols",
             "Complete safety assessment with detailed reports and risk analysis",
@@ -1990,7 +1990,7 @@ export const areaData = {
           company: "Corporate Solutions",
           area: "Prakash Nagar",
           rating: 5,
-          text: "Excellent corporate gas service for our office cafeteria. They handled the setup professionally and provided all compliance certificates. Perfect for businesses in Begumpet! We needed a new gas connection for our office cafeteria and Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was prompt and the price was competitive. The technician was very knowledgeable and helpful.",
+          text: "Excellent corporate gas service for our office cafeteria. They handled the setup professionally and provided all compliance certificates. Perfect for businesses in Andheri West! We needed a new gas connection for our office cafeteria and Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was prompt and the price was competitive. The technician was very knowledgeable and helpful.",
           service: "Corporate Gas Setup",
           date: "December 2024",
           jobType: "Corporate Service",
@@ -2001,7 +2001,7 @@ export const areaData = {
           company: "Greenlands Hotel",
           area: "Greenlands",
           rating: 5,
-          text: "Professional hotel kitchen gas maintenance service. They understand hospitality industry requirements and provide 24/7 support. Highly recommended for hotels in Begumpet! We rely on Gas Repaire Wale for our hotel kitchen gas maintenance. They provide regular inspections, safety checks, and emergency support. The service is reliable and the technicians are experienced. We have a maintenance contract with them and are very satisfied with their service.",
+          text: "Professional hotel kitchen gas maintenance service. They understand hospitality industry requirements and provide 24/7 support. Highly recommended for hotels in Andheri West! We rely on Gas Repaire Wale for our hotel kitchen gas maintenance. They provide regular inspections, safety checks, and emergency support. The service is reliable and the technicians are experienced. We have a maintenance contract with them and are very satisfied with their service.",
           service: "Hotel Kitchen Maintenance",
           date: "November 2024",
           jobType: "Hospitality Service",
@@ -2012,7 +2012,7 @@ export const areaData = {
           company: "Apartment Owner",
           area: "Somajiguda",
           rating: 5,
-          text: "Quick response for gas stove repair in our apartment. The technician was professional and completed the work efficiently. Great service for Begumpet residents! My gas stove was not working properly and I needed it fixed urgently. Gas Repaire Wale responded quickly and the technician arrived within an hour. He diagnosed the problem as a faulty burner and replaced it with a new one. The service was prompt and efficient.",
+          text: "Quick response for gas stove repair in our apartment. The technician was professional and completed the work efficiently. Great service for Andheri West residents! My gas stove was not working properly and I needed it fixed urgently. Gas Repaire Wale responded quickly and the technician arrived within an hour. He diagnosed the problem as a faulty burner and replaced it with a new one. The service was prompt and efficient.",
           service: "Gas Stove Repair",
           date: "January 2025",
           jobType: "Residential Service",
@@ -2023,38 +2023,38 @@ export const areaData = {
           icon: "Building",
           title: "Business District Experts",
           description:
-            "Specialized services for Begumpet's corporate offices and business establishments with focus on hospitality industry and regulatory compliance.",
+            "Specialized services for Andheri West's corporate offices and business establishments with focus on hospitality industry and regulatory compliance.",
           stats: "400+ business clients",
         },
         {
           icon: "Clock",
           title: "Central Location Speed",
           description:
-            "20-25 minute response time across Begumpet's central business and residential areas with priority support for commercial establishments.",
+            "20-25 minute response time across Andheri West's central business and residential areas with priority support for commercial establishments.",
           stats: "20-min response",
         },
         {
           icon: "Award",
           title: "Hospitality Specialists",
           description:
-            "Expert in serving hotels, restaurants, and hospitality industry in Begumpet with customized solutions and reliable support.",
+            "Expert in serving hotels, restaurants, and hospitality industry in Andheri West with customized solutions and reliable support.",
           stats: "4.8★ rating",
         },
         {
           icon: "Users",
           title: "Established Service",
           description:
-            "Trusted service provider in Begumpet since 2014 with 400+ customers and 1000+ jobs, preferred by corporate offices and hospitality businesses.",
+            "Trusted service provider in Andheri West since 2014 with 400+ customers and 1000+ jobs, preferred by corporate offices and hospitality businesses.",
           stats: "1000+ completions",
         },
       ],
       seoContent: {
         whyChoose: [
-          "Business District Expertise: Specialized services for Begumpet's corporate offices and business centers since 2014 with focus on hospitality industry",
-          "Central Location Advantage: Quick access and response across Begumpet's prime business and residential areas with priority support for commercial clients",
+          "Business District Expertise: Specialized services for Andheri West's corporate offices and business centers since 2014 with focus on hospitality industry",
+          "Central Location Advantage: Quick access and response across Andheri West's prime business and residential areas with priority support for commercial clients",
           "Hospitality Focus: Expert in serving hotels, restaurants, and commercial establishments with customized solutions and reliable support",
           "Corporate Solutions: Professional gas services for office cafeterias and business facilities with regulatory compliance and safety protocols",
-          "Quick Response: 20-25 minute response time across all areas of Begumpet with experienced technicians and safety measures",
+          "Quick Response: 20-25 minute response time across all areas of Andheri West with experienced technicians and safety measures",
           "Industry Experience: Deep understanding of commercial and hospitality gas requirements with personalized solutions and transparent communication",
         ],
         services: {
@@ -2076,7 +2076,7 @@ export const areaData = {
           ],
         },
         emergencyInfo:
-          "Emergency gas services in Begumpet available 24/7 with 20-minute response guarantee. Serving business district, hotels, corporate offices, and residential areas with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
+          "Emergency gas services in Andheri West available 24/7 with 20-minute response guarantee. Serving business district, hotels, corporate offices, and residential areas with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
       },
     },
   },

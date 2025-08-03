@@ -81,7 +81,7 @@ export function ContactCTA() {
                 </div>
                 <div>
                   <p className="font-semibold">Service Areas</p>
-                  <p className="text-lg">Pune & Hyderabad</p>
+                  <p className="text-lg">Pune & Mumbai</p>
                 </div>
               </div>
 

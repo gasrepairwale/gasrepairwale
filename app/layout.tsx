@@ -11,23 +11,23 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title:
-    "Gas Repair Services Pune Hyderabad | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repaire Wale",
+    "Gas Repair Services and Pune Mumbai | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repaire Wale",
   description:
-    "⭐ Professional Gas Repair Services in Pune & Hyderabad ✅ Gas Stove Repair ✅ Pipeline Installation ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ 5000+ Happy Customers ✅ Same Day Service. Call +91 83027 13127 for Expert Gas Solutions!",
+    "⭐ Professional Gas Repair Services in Pune & Mumbai ✅ Gas Stove Repair ✅ Pipeline Installation ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ 5000+ Happy Customers ✅ Same Day Service. Call +91 83027 13127 for Expert Gas Solutions!",
   keywords: [
     // Primary keywords
     "gas repair services pune",
-    "gas repair services hyderabad",
+    "gas repair services Mumbai",
     "gas stove repair pune",
-    "gas stove repair hyderabad",
+    "gas stove repair Mumbai",
     "gas pipeline installation pune",
-    "gas pipeline installation hyderabad",
+    "gas pipeline installation Mumbai",
     "emergency gas repair pune",
-    "emergency gas repair hyderabad",
+    "emergency gas repair Mumbai",
 
     // Long-tail keywords
     "professional gas stove repair services",
-    "licensed gas technician pune hyderabad",
+    "licensed gas technician pune Mumbai",
     "gas leak repair emergency service",
     "commercial gas pipeline installation",
     "residential gas appliance repair",
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
 
     // Location-specific
     "gas repair kothrud pune",
-    "gas repair gachibowli hyderabad",
+    "gas repair Borivali East West Mumbai",
     "gas repair baner pune",
-    "gas repair madhapur hyderabad",
-    "gas services maharashtra telangana",
+    "gas repair Kandivali East West Mumbai",
+    "gas services Maharastra",
 
     // Service-specific
     "gas burner repair",
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://gasrepairewale.com",
-    title: "Professional Gas Repair Services in Pune & Hyderabad | Gas Repaire Wale",
+    title: "Professional Gas Repair Services in Pune & Mumbai | Gas Repaire Wale",
     description:
-      "Expert gas stove repair, pipeline installation & emergency gas services across Pune & Hyderabad. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
+      "Expert gas stove repair, pipeline installation & emergency gas services across Pune & Mumbai. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
     siteName: "Gas Repaire Wale",
     images: [
       {
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Professional Gas Repair Services | Gas Repaire Wale",
     description:
-      "Expert gas stove repair & pipeline services in Pune & Hyderabad. Licensed technicians, emergency service, 5000+ customers. Call +91 83027 13127",
+      "Expert gas stove repair & pipeline services in Pune & Mumbai. Licensed technicians, emergency service, 5000+ customers. Call +91 83027 13127",
     images: ["/twitter-image.jpg"],
   },
   verification: {
@@ -95,12 +95,12 @@ const structuredData = {
       "@id": "https://gasrepairewale.com/#business",
       name: "Gas Repaire Wale",
       description:
-        "Professional gas stove repair, pipeline installation, and emergency gas services in Pune and Hyderabad. Licensed technicians with 10+ years experience.",
+        "Professional gas stove repair, pipeline installation, and emergency gas services in Pune and Mumbai. Licensed technicians with 10+ years experience.",
       url: "https://gasrepairewale.com",
       telephone: "+91-83027-13127",
       email: "info@gasrepairewale.com",
       priceRange: "₹₹",
-      foundingDate: "2013",
+      foundingDate: "2015",
 
       address: [
         {
@@ -112,10 +112,10 @@ const structuredData = {
         },
         {
           "@type": "PostalAddress",
-          addressLocality: "Hyderabad",
-          addressRegion: "Telangana",
+          addressLocality: "Mumbai",
+          addressRegion: "Maharastra",
           addressCountry: "IN",
-          areaServed: ["Gachibowli", "Madhapur", "Kondapur", "Miyapur", "Kukatpally", "Begumpet"],
+          areaServed: ["Borivali East West", "Kandivali East West", "Malda East West", "Ram Mandir East", "Goregaon East West", "Andheri West"],
         },
       ],
 
@@ -130,7 +130,7 @@ const structuredData = {
           "@type": "GeoCoordinates",
           latitude: 17.385,
           longitude: 78.4867,
-          address: "Hyderabad, Telangana, India",
+          address: "Mumbai, Maharastra, India",
         },
       ],
 
@@ -243,7 +243,7 @@ const structuredData = {
       "@id": "https://gasrepairewale.com/#website",
       url: "https://gasrepairewale.com",
       name: "Gas Repaire Wale",
-      description: "Professional gas repair services in Pune and Hyderabad",
+      description: "Professional gas repair services in Pune and Mumbai",
       publisher: {
         "@id": "https://gasrepairewale.com/#business",
       },
@@ -277,17 +277,17 @@ export default function RootLayout({
         {/* Additional SEO meta tags */}
         <meta name="geo.region" content="IN-MH" />
         <meta name="geo.region" content="IN-TG" />
-        <meta name="geo.placename" content="Pune, Hyderabad" />
+        <meta name="geo.placename" content="Pune, Mumbai" />
         <meta name="geo.position" content="18.5204;73.8567" />
         <meta name="geo.position" content="17.385;78.4867" />
         <meta name="ICBM" content="18.5204, 73.8567" />
         <meta name="ICBM" content="17.385, 78.4867" />
 
         {/* Business-specific meta tags */}
-        <meta name="business:contact_data:street_address" content="Pune & Hyderabad Service Areas" />
-        <meta name="business:contact_data:locality" content="Pune, Hyderabad" />
-        <meta name="business:contact_data:region" content="Maharashtra, Telangana" />
-        <meta name="business:contact_data:postal_code" content="411001, 500001" />
+        <meta name="business:contact_data:street_address" content="Pune & Mumbai Service Areas" />
+        <meta name="business:contact_data:locality" content="Pune, Mumbai" />
+        <meta name="business:contact_data:region" content="Maharashtra" />
+        <meta name="business:contact_data:postal_code" content="411001, 400001" />
         <meta name="business:contact_data:country_name" content="India" />
         <meta name="business:contact_data:phone_number" content="+91-83027-13127" />
         <meta name="business:contact_data:website" content="https://gasrepairewale.com" />

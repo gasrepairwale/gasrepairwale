@@ -23,7 +23,7 @@ export function Header() {
       label: "Locations",
       submenu: [
         { href: "/locations/pune", label: "Pune" },
-        { href: "/locations/hyderabad", label: "Hyderabad" },
+        { href: "/locations/mumbai", label: "Mumbai" },
       ],
     },
   ]

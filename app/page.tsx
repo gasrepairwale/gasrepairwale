@@ -14,23 +14,23 @@ import { SEOContentSection } from "@/components/seo-content-section"
 
 export const metadata: Metadata = {
   title:
-    "Gas Repair Services Pune Hyderabad | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repaire Wale",
+    "Gas Repair Services Pune and Mumbai | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repaire Wale",
   description:
-    "⭐ Professional Gas Repair Services in Pune & Hyderabad ✅ Gas Stove Repair ✅ Pipeline Installation ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ 5000+ Happy Customers ✅ Same Day Service. Call +91 83027 13127 for Expert Gas Solutions!",
+    "⭐ Professional Gas Repair Services in Pune & Mumbai ✅ Gas Stove Repair ✅ Pipeline Installation ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ 5000+ Happy Customers ✅ Same Day Service. Call +91 83027 13127 for Expert Gas Solutions!",
   keywords: [
     // Primary keywords
     "gas repair services pune",
-    "gas repair services hyderabad",
+    "gas repair services Mumbai",
     "gas stove repair pune",
-    "gas stove repair hyderabad",
+    "gas stove repair Mumbai",
     "gas pipeline installation pune",
-    "gas pipeline installation hyderabad",
+    "gas pipeline installation Mumbai",
     "emergency gas repair pune",
-    "emergency gas repair hyderabad",
+    "emergency gas repair Mumbai",
 
     // Long-tail keywords
     "professional gas stove repair services",
-    "licensed gas technician pune hyderabad",
+    "licensed gas technician pune Mumbai",
     "gas leak repair emergency service",
     "commercial gas pipeline installation",
     "residential gas appliance repair",
@@ -40,10 +40,10 @@ export const metadata: Metadata = {
 
     // Location-specific
     "gas repair kothrud pune",
-    "gas repair gachibowli hyderabad",
+    "gas repair Borivali East West Mumbai",
     "gas repair baner pune",
-    "gas repair madhapur hyderabad",
-    "gas services maharashtra telangana",
+    "gas repair Kandivali East West Mumbai",
+    "gas services Maharastra",
 
     // Service-specific
     "gas burner repair",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://gasrepairewale.com",
-    title: "Professional Gas Repair Services in Pune & Hyderabad | Gas Repaire Wale",
+    title: "Professional Gas Repair Services in Pune & Mumbai | Gas Repaire Wale",
     description:
-      "Expert gas stove repair, pipeline installation & emergency gas services across Pune & Hyderabad. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
+      "Expert gas stove repair, pipeline installation & emergency gas services across Pune & Mumbai. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
     siteName: "Gas Repaire Wale",
     images: [
       {
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Professional Gas Repair Services | Gas Repaire Wale",
     description:
-      "Expert gas stove repair & pipeline services in Pune & Hyderabad. Licensed technicians, emergency service, 5000+ customers. Call +91 83027 13127",
+      "Expert gas stove repair & pipeline services in Pune & Mumbai. Licensed technicians, emergency service, 5000+ customers. Call +91 83027 13127",
     images: ["/twitter-image.jpg"],
   },
   verification: {
