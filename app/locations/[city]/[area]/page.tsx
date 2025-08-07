@@ -461,7 +461,7 @@ export default function AreaPage({ params }: Props) {
                   </div>
 
                   <div className="space-y-2">
-                    <Button className="w-full bg-orange-600 hover:bg-orange-700 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600">
+                    <Button className="w-full text-white bg-orange-600 hover:bg-orange-700 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600">
                       <a href="tel:+918302713127">Book This Service</a>
                     </Button>
                     <Button

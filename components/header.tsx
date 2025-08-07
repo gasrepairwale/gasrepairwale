@@ -64,7 +64,7 @@ export function Header() {
 
         {/* Contact button and mobile menu */}
         <div className="flex items-center space-x-4">
-          <Button asChild className="hidden sm:flex bg-orange-600 hover:bg-orange-700">
+          <Button asChild className="hidden text-white sm:flex bg-orange-600 hover:bg-orange-700">
             <a href="tel:+918302713127" className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
               <span>Call Now</span>

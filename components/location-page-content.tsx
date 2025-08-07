@@ -190,7 +190,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                   </div>
 
                   <div className="flex gap-2">
-                    <Button asChild className="flex-1 bg-orange-600 hover:bg-orange-700">
+                    <Button asChild className="flex-1 text-white bg-orange-600 hover:bg-orange-700">
                       <Link href={`/locations/${citySlug}/${area.slug}`}>View Details</Link>
                     </Button>
                     <Button

@@ -158,7 +158,7 @@ export function ContactCTA() {
                     rows={4}
                   />
 
-                  <Button type="submit" className="w-full h-12 bg-orange-600 hover:bg-orange-700 text-lg">
+                  <Button type="submit" className="w-full h-12 text-white bg-orange-600 hover:bg-orange-700 text-lg">
                     Send Request
                   </Button>
                 </form>
