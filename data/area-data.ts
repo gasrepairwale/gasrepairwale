@@ -1117,6 +1117,3370 @@ export const areaData = {
           "Emergency gas services in Karve Nagar available 24/7 with 16-minute response guarantee. Serving Karve Road, educational institutes, residential societies, and all local areas with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
       },
     },
+    hadapsar: {
+      name: "Hadapsar",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Reliable gas repair services in Hadapsar – a major residential and commercial hub of Pune with growing societies and IT parks.",
+      heroDescription:
+        "🔥 Fast and reliable gas repair services in Hadapsar with 20-minute response time! Trusted by 400+ families and businesses since 2014. Specialized support for Hadapsar’s residential apartments, independent homes, and commercial kitchens.",
+      responseTime: "18-22 minutes",
+      customers: "400+",
+      pincode: "411028",
+      establishedYear: "2014",
+      rating: "4.8",
+      completedJobs: "950+",
+      landmarks: [
+        "Magarpatta City",
+        "Amanora Park Town",
+        "Hadapsar Industrial Estate",
+        "Sasane Nagar",
+        "Satyapuram",
+        "Kalepadal",
+        "Bhosale Garden",
+      ],
+      nearbyAreas: ["Kharadi", "Mundhwa", "Fatimanagar", "Camp", "Kondhwa", "Fursungi"],
+      localBusinesses: [
+        "Residential Societies",
+        "Commercial Kitchens",
+        "Retail Shops",
+        "Co-working Spaces",
+        "Educational Institutes",
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "Expert gas stove and hob repair services in Hadapsar for all brands with fast same-day support",
+          features: [
+            "Advanced burner cleaning and flame adjustment",
+            "Ignition and valve system repairs",
+            "Stove knob and pipe replacement",
+            "Complete functional testing with warranty",
+          ],
+        },
+        {
+          title: "Pipeline Installation",
+          description:
+            "End-to-end pipeline installation and modification services for apartments, bungalows, and commercial kitchens in Hadapsar",
+          features: [
+            "New apartment pipeline setup",
+            "Leak detection and pipe extension",
+            "Pressure testing and safety checks",
+            "Documentation and compliance certificate",
+          ],
+        },
+        {
+          title: "Gas Safety Inspection",
+          description:
+            "Safety audits and inspections for domestic and commercial gas systems in Hadapsar with official reports",
+          features: [
+            "Complete system check for leaks and blockages",
+            "Inspection of regulators, burners, and pipes",
+            "Risk assessment report for society compliance",
+            "Official safety certification included",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Siddharth Kulkarni",
+          profession: "Software Engineer",
+          company: "TCS",
+          area: "Magarpatta City",
+          rating: 5,
+          text: "Got pipeline installation done in our 2BHK in Magarpatta. The team from Gas Repair Wale was punctual, professional, and completed the job within 2 hours. They also gave a safety certificate. Total cost was ₹2200. Highly recommended!",
+          service: "Gas Pipeline Installation",
+          date: "March 2025",
+          jobType: "New Installation",
+        },
+        {
+          name: "Meenal Patil",
+          profession: "Teacher",
+          company: "Amanora School",
+          area: "Kalepadal",
+          rating: 5,
+          text: "My 3-burner stove had a low flame issue. The technician arrived in 25 minutes, cleaned all burners, and adjusted the gas flow. The service was smooth and affordable (₹550). Will call them again if needed.",
+          service: "Gas Stove Repair",
+          date: "January 2025",
+          jobType: "Repair Service",
+        },
+        {
+          name: "Anil Joshi",
+          profession: "Restaurant Owner",
+          company: "Hadapsar Snacks Corner",
+          area: "Sasane Nagar",
+          rating: 5,
+          text: "Their AMC service for our restaurant kitchen is excellent. They maintain our commercial gas lines, inspect monthly, and are available quickly for emergencies. Reasonable pricing and experienced staff.",
+          service: "Commercial Kitchen Maintenance",
+          date: "February 2025",
+          jobType: "Commercial Service",
+        },
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Expert Technicians",
+          description:
+            "Certified professionals with deep knowledge of gas systems, especially in Hadapsar’s mixed residential-commercial environment.",
+          stats: "950+ jobs done",
+        },
+        {
+          icon: "Clock",
+          title: "Fast Response Time",
+          description:
+            "Reach anywhere in Hadapsar including Magarpatta, Amanora, and Sasane Nagar within 20 minutes.",
+          stats: "18-22 min service",
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Safe",
+          description:
+            "All services done under certified safety protocols with proper tools and compliance documentation.",
+          stats: "4.8★ rated",
+        },
+        {
+          icon: "Users",
+          title: "Society Focused",
+          description:
+            "Specialists in working with residential societies and gated communities in Hadapsar with bulk service packages.",
+          stats: "400+ families served",
+        },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Hadapsar since 2014 with 950+ completed jobs across residential and commercial clients",
+          "Fast 18-22 minute response even during peak hours",
+          "Specialized in Magarpatta and Amanora society services",
+          "Certified safety inspections and compliance certificates",
+          "Flexible plans for both homes and business establishments",
+          "Emergency repair team ready for 24/7 support",
+        ],
+        services: {
+          residential: [
+            "Gas stove repair and servicing with same-day response",
+            "Pipeline installations for apartments and bungalows",
+            "Annual maintenance plans for residential societies",
+            "Certified gas safety inspections for home buyers",
+            "Emergency gas leak repairs and replacements",
+          ],
+          commercial: [
+            "Commercial kitchen gas setup and maintenance",
+            "Monthly inspections for restaurants and canteens",
+            "Compliance documentation for safety audits",
+            "24/7 support for emergency shutdowns",
+            "Custom AMC plans for large-scale businesses",
+          ],
+        },
+        emergencyInfo:
+          "Gas emergencies in Hadapsar handled with top priority – 20-minute average response time across Magarpatta, Amanora Park Town, Sasane Nagar, and surrounding areas. Immediate leak detection, repairs, and safety assurance included in every call.",
+      },
+    },
+    kharadi: {
+      name: "Kharadi",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Professional gas repair and installation services in Kharadi – Pune’s fastest growing IT and residential hub with high-rise societies and corporate setups.",
+      heroDescription:
+        "⚡ Fast and professional gas repair services in Kharadi with 18-minute average response time! Trusted by 500+ homes and offices since 2015. We serve luxury apartments, IT offices, and food outlets with certified installations and safety compliance.",
+      responseTime: "18-22 minutes",
+      customers: "500+",
+      pincode: "411014",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "1000+",
+      landmarks: [
+        "EON IT Park",
+        "Zensar Technologies",
+        "World Trade Center",
+        "Gera Commerzone",
+        "Riverdale",
+        "Forest County",
+        "Global Highstreet Mall"
+      ],
+      nearbyAreas: ["Hadapsar", "Viman Nagar", "Chandan Nagar", "Mundhwa", "Keshav Nagar"],
+      localBusinesses: [
+        "IT Offices",
+        "Restaurants",
+        "High-rise Residential Societies",
+        "Cloud Kitchens",
+        "Co-working Spaces"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repair",
+          description:
+            "Reliable and fast gas stove repair services in Kharadi for all brands and models used in homes and commercial kitchens.",
+          features: [
+            "Ignition and burner system repairs",
+            "Flame control and pipe adjustment",
+            "Knob and valve replacement",
+            "Same-day repair with functional testing"
+          ]
+        },
+        {
+          title: "Gas Pipeline Installation",
+          description:
+            "Certified pipeline installation for new societies, offices, and food businesses in the Kharadi area.",
+          features: [
+            "Pipeline setup for high-rise apartments",
+            "Compliance with safety and fire norms",
+            "Pressure test and leak check",
+            "Documentation and inspection reports"
+          ]
+        },
+        {
+          title: "Commercial Kitchen Maintenance",
+          description:
+            "Custom AMC plans for restaurants, cafés, and corporate cafeterias with monthly safety checks and 24/7 support.",
+          features: [
+            "Burner and regulator servicing",
+            "Leak detection and emergency repairs",
+            "Priority response support",
+            "Annual compliance certification"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Ritika Sharma",
+          profession: "Software Developer",
+          company: "Barclays",
+          area: "Forest County",
+          rating: 5,
+          text: "Booked Gas Repair Wale for pipeline setup in my 3BHK flat in Kharadi. They completed the installation with safety checks, testing, and documentation in 2 hours. Everything was neat, safe, and professional.",
+          service: "Gas Pipeline Installation",
+          date: "April 2025",
+          jobType: "New Installation"
+        },
+        {
+          name: "Amit Jadhav",
+          profession: "Chef",
+          company: "The Spice Room",
+          area: "EON Free Zone",
+          rating: 5,
+          text: "We use their AMC service for our restaurant kitchen. Their team visits every month, inspects all burners, and ensures no leaks. Emergency support is also prompt.",
+          service: "Commercial Kitchen AMC",
+          date: "February 2025",
+          jobType: "Commercial Service"
+        },
+        {
+          name: "Neha Verma",
+          profession: "Homemaker",
+          company: "Resident",
+          area: "Riverdale",
+          rating: 5,
+          text: "Quick and budget-friendly gas stove repair. Fixed burner blockage and low flame issue in one visit. Highly recommended for families in Kharadi!",
+          service: "Gas Stove Repair",
+          date: "December 2024",
+          jobType: "Repair Service"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Laptop",
+          title: "IT Hub Specialists",
+          description: "Specialized in handling pipeline and kitchen setups for offices and tech parks in Kharadi.",
+          stats: "1000+ jobs done"
+        },
+        {
+          icon: "Building",
+          title: "Society & High-rise Experts",
+          description: "Certified installations for newly constructed high-rise residential projects.",
+          stats: "500+ satisfied families"
+        },
+        {
+          icon: "Tools",
+          title: "Commercial Kitchen AMC",
+          description: "Tailored maintenance plans for cafés, restaurants, and cloud kitchens in Kharadi.",
+          stats: "24/7 support"
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Safe",
+          description: "Fully safety-compliant and government-registered gas technicians with verified documents.",
+          stats: "4.8★ Google rating"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "1000+ jobs completed in Kharadi including high-rise societies and IT offices",
+          "Certified pipeline installation for new buildings and commercial spaces",
+          "Same-day gas stove and cooktop repair with safety testing",
+          "Tailored AMC plans for food businesses and cloud kitchens",
+          "Verified technicians with compliance certifications",
+          "18-22 minute average response time across all of Kharadi"
+        ],
+        services: {
+          residential: [
+            "Gas stove repair and ignition fixing",
+            "Pipeline setup for apartments and new flats",
+            "Safety checks before home resale or rent",
+            "Cooktop replacement and flame adjustment"
+          ],
+          commercial: [
+            "Commercial kitchen gas installations",
+            "Annual safety inspection and certification",
+            "Monthly AMC plans for cloud kitchens",
+            "Quick leak repair with 24/7 response",
+            "Multi-floor gas line setup in corporate spaces"
+          ]
+        },
+        emergencyInfo:
+          "Emergency gas services in Kharadi are available 24/7. Reach anywhere from EON IT Park to Riverdale in under 22 minutes. Fast support for leaks, blockages, or stove issues with expert tools and safety checks."
+      }
+    },
+    fursungi: {
+      name: "Fursungi",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Affordable and professional gas repair services in Fursungi – a rapidly expanding residential and semi-industrial zone near Hadapsar.",
+      heroDescription:
+        "🔥 Trusted gas repair and installation services in Fursungi with 20-minute response time! Serving 250+ households, shops, and new construction sites. Ideal for budget apartments and newly built homes requiring expert gas solutions.",
+      responseTime: "20-25 minutes",
+      customers: "250+",
+      pincode: "412308",
+      establishedYear: "2016",
+      rating: "4.6",
+      completedJobs: "600+",
+      landmarks: [
+        "Solapur Highway",
+        "Fursungi Gaon",
+        "Jadhavwadi",
+        "Shewalewadi",
+        "SP Infocity",
+        "PMC Boundary",
+        "Sasane Nagar Extension"
+      ],
+      nearbyAreas: ["Hadapsar", "Phursungi", "Manjri", "Bhekrai Nagar", "Saswad Road", "Handewadi"],
+      localBusinesses: [
+        "Budget Housing Societies",
+        "New Constructions",
+        "Retail Shops",
+        "Repair Workshops",
+        "Local Eateries"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "Fast and affordable gas stove repairs in Fursungi for 2, 3, and 4-burner stoves, hobs, and cooktops",
+          features: [
+            "Stove burner cleaning and flame correction",
+            "Pipe and regulator inspection",
+            "Faulty ignition repair",
+            "Service at doorstep with quick turnaround",
+          ],
+        },
+        {
+          title: "Gas Pipeline Installation",
+          description:
+            "Professional gas pipeline setup for new flats and small shops in Fursungi at affordable prices",
+          features: [
+            "Pipeline layout planning and fitting",
+            "Leak testing and safety checks",
+            "Regulator installation with safety valve",
+            "End-to-end documentation with receipt",
+          ],
+        },
+        {
+          title: "Gas Leak Detection & Safety",
+          description:
+            "Emergency leak detection and safety services in Fursungi for homes and roadside eateries",
+          features: [
+            "High-sensitivity gas leak testing",
+            "Immediate isolation and repair",
+            "Inspection of valves, joints, and tubes",
+            "Emergency certificate and service slip",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Vaibhav Jagtap",
+          profession: "Electrician",
+          company: "Freelancer",
+          area: "Fursungi Gaon",
+          rating: 5,
+          text: "Called them for a gas stove issue — they arrived in 30 minutes and fixed it professionally. They changed the regulator and cleaned all burners. Total cost ₹500. Honest and quick service!",
+          service: "Gas Stove Repair",
+          date: "February 2025",
+          jobType: "Repair Service",
+        },
+        {
+          name: "Neha Kulkarni",
+          profession: "Teacher",
+          company: "PMC School",
+          area: "Shewalewadi",
+          rating: 5,
+          text: "We recently moved to a new flat. Gas Repair Wale team installed the complete pipeline in 2 hours, tested everything, and gave us a safety certificate. They charged ₹2000 for the full setup. Very helpful staff.",
+          service: "Pipeline Installation",
+          date: "March 2025",
+          jobType: "New Installation",
+        },
+        {
+          name: "Rohit Salunkhe",
+          profession: "Snack Shop Owner",
+          company: "Sai Snacks Center",
+          area: "Jadhavwadi",
+          rating: 5,
+          text: "There was a strong gas smell in my shop, and they reached quickly at night. Found and fixed a leakage near the joint valve and gave proper safety advice. They charged ₹300 only. Very responsive team!",
+          service: "Gas Leak Detection",
+          date: "January 2025",
+          jobType: "Emergency Service",
+        },
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Budget-Friendly Repairs",
+          description:
+            "High-quality service at affordable rates for the middle-income homes and shops in Fursungi and surrounding localities.",
+          stats: "600+ jobs completed",
+        },
+        {
+          icon: "Clock",
+          title: "Quick Rural-Urban Response",
+          description:
+            "Able to serve both dense housing clusters and rural layouts across Fursungi within 20-25 minutes on average.",
+          stats: "20-25 min reach",
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Safe",
+          description:
+            "Leak testing, inspections, and safety compliance handled with official procedures and tools by certified professionals.",
+          stats: "4.6★ Google rating",
+        },
+        {
+          icon: "Users",
+          title: "New Construction Experts",
+          description:
+            "Experienced in setting up gas systems in new apartments and semi-constructed homes across Fursungi’s rapidly growing areas.",
+          stats: "150+ installations",
+        },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Fursungi since 2016 with 600+ successful jobs in homes, shops, and construction sites",
+          "Specialized services for budget flats, roadside kitchens, and new housing societies",
+          "Fast response in rural-urban blend zones like Shewalewadi and Jadhavwadi",
+          "Certified safety inspections with leak-proof solutions",
+          "Affordable pricing with complete transparency and official receipts",
+          "Emergency team available 7 days a week, including late evening hours",
+        ],
+        services: {
+          residential: [
+            "Stove burner repair, ignition fix, and valve replacement",
+            "New apartment pipeline installations with safety documentation",
+            "Annual maintenance contracts for small societies",
+            "24/7 emergency gas leak repairs with quick detection",
+            "Safety certification for resale or rental flats",
+          ],
+          commercial: [
+            "Gas line support for roadside snack shops and messes",
+            "Leak detection and safety audit for dhabas",
+            "Commercial gas regulator installation",
+            "Monthly inspection plans for food stalls and eateries",
+            "Custom AMC plans for small commercial kitchens",
+          ],
+        },
+        emergencyInfo:
+          "Emergency gas repair services in Fursungi available 7 days a week. Areas covered include Shewalewadi, Solapur Highway, Jadhavwadi, and nearby new construction clusters. Our trained team offers fast detection, isolation, and repair with safety-first approach.",
+      },
+    },
+    undri: {
+      name: "Undri",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Trusted gas repair and installation services in Undri – a rapidly developing residential area with growing societies and modern apartments.",
+      heroDescription:
+        "🔥 Safe and fast gas repair services in Undri with 20-minute response time! Trusted by 300+ families and small businesses. We specialize in society maintenance, gas stove repair, and new pipeline installations across Undri.",
+      responseTime: "20-25 minutes",
+      customers: "300+",
+      pincode: "411060",
+      establishedYear: "2016",
+      rating: "4.7",
+      completedJobs: "720+",
+      landmarks: [
+        "Nyati County",
+        "Corinthians Club",
+        "Bizzbay Mall",
+        "Bramha Vantage",
+        "Kondhwa-Undri Road",
+        "Undri Chowk"
+      ],
+      nearbyAreas: ["Kondhwa", "Mohammadwadi", "NIBM Road", "Pisoli", "Fursungi"],
+      localBusinesses: [
+        "Apartment Societies",
+        "Standalone Homes",
+        "Restaurants",
+        "Retail Stores",
+        "Coaching Institutes"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "Expert gas stove and hob repair services in Undri with fast support and branded part replacements.",
+          features: [
+            "Flame tuning and burner cleaning",
+            "Knob, valve & ignition system fixes",
+            "Hob glass and component replacement",
+            "Complete safety testing included"
+          ]
+        },
+        {
+          title: "Pipeline Installation",
+          description:
+            "Professional gas pipeline installation for flats, bungalows, and shops in Undri with full documentation support.",
+          features: [
+            "Internal pipeline setup",
+            "Leak-proof fittings and clamps",
+            "Pressure testing and demo",
+            "Safety compliance certificate"
+          ]
+        },
+        {
+          title: "Gas Leak Detection",
+          description:
+            "Emergency leak detection and repair for residential and commercial kitchens in Undri. Call us for instant support.",
+          features: [
+            "Quick response within 25 minutes",
+            "Advanced leak test tools",
+            "Complete repair and retesting",
+            "Full safety clearance included"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Anuja Naik",
+          profession: "Interior Designer",
+          company: "Freelance",
+          area: "Nyati County",
+          rating: 5,
+          text: "The technician arrived on time and replaced the faulty valve of our hob unit. The service was smooth, and they cleaned the entire setup. Loved the professionalism.",
+          service: "Hob Repair",
+          date: "February 2025",
+          jobType: "Repair"
+        },
+        {
+          name: "Rakesh Shelar",
+          profession: "Hotel Manager",
+          company: "Undri Delight",
+          area: "Undri Chowk",
+          rating: 5,
+          text: "We needed a quick pipeline extension for our new tandoor setup. They did a great job with proper testing and paperwork. Highly recommend for commercial kitchens.",
+          service: "Pipeline Installation",
+          date: "March 2025",
+          jobType: "Commercial Setup"
+        },
+        {
+          name: "Tanvi Kulkarni",
+          profession: "Teacher",
+          company: "Orchid School",
+          area: "Bizzbay Mall Area",
+          rating: 5,
+          text: "Emergency gas leak fixed within 30 minutes. Technician explained everything clearly and ensured all safety steps. Great experience.",
+          service: "Leak Repair",
+          date: "January 2025",
+          jobType: "Emergency"
+        }
+      ],
+      advantages: [
+        {
+          icon: "ShieldCheck",
+          title: "Certified Safety Checks",
+          description:
+            "All repairs and installations come with thorough leak testing and official safety documentation.",
+          stats: "4.7★ rating"
+        },
+        {
+          icon: "Clock",
+          title: "Quick Service in Undri",
+          description:
+            "We reach all societies and bungalows in Undri including Nyati, Corinthians, and Pisoli within 25 minutes.",
+          stats: "20-25 min ETA"
+        },
+        {
+          icon: "Users",
+          title: "Society Specialists",
+          description:
+            "We provide affordable gas maintenance services to housing societies and gated apartments in Undri.",
+          stats: "300+ families served"
+        },
+        {
+          icon: "Wrench",
+          title: "Experienced Technicians",
+          description:
+            "All staff are trained, background-verified, and experienced in urban gas system handling and repair.",
+          stats: "720+ jobs completed"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Undri since 2016 with 720+ jobs completed across homes and businesses",
+          "Quick response to societies like Nyati County, Corinthians, and Undri Chowk",
+          "Certified technicians and documented safety inspections",
+          "Trusted by over 300 families and shop owners in Undri",
+          "Full service for new installations, repairs, and annual maintenance",
+          "24/7 emergency gas support available"
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repairs for 2-4 burner units",
+            "Pipeline extension and installation for flats and villas",
+            "Annual maintenance for large housing complexes",
+            "Leak detection and safety checks with certification",
+            "Gas hob glass, valve, and knob replacement"
+          ],
+          commercial: [
+            "Commercial kitchen gas pipeline setup",
+            "Inspection and AMC for food outlets and hotels",
+            "Gas tandoor and high-pressure burner support",
+            "Documentation for fire safety compliance",
+            "Emergency response and night repair service"
+          ]
+        },
+        emergencyInfo:
+          "Gas emergencies in Undri handled with fast response across Nyati County, Bizzbay Mall, Undri Chowk, and nearby. Leak repairs and safety checks done with certified tools and trained staff. Call Gas Repair Wale for quick action."
+      }
+    },
+    mohammadwadi: {
+      name: "Mohammadwadi",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Professional gas repair services in Mohammadwadi – a fast-growing residential hub near NIBM with modern townships and independent homes.",
+      heroDescription:
+        "🔥 Get fast and secure gas repair services in Mohammadwadi within 20-25 minutes! Serving 350+ families and commercial kitchens since 2015. Specialists in hob repair, gas pipeline installation, and safety inspections.",
+      responseTime: "20-25 minutes",
+      customers: "350+",
+      pincode: "411060",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "800+",
+      landmarks: [
+        "Cloud 9 Society",
+        "Dorabjee Paradise",
+        "Clover Hills Plaza",
+        "Destination Center",
+        "NIBM Annexe",
+        "Salunke Vihar Road",
+        "Bizzbay Mall"
+      ],
+      nearbyAreas: ["Undri", "NIBM Road", "Kondhwa", "Wanowrie", "Pisoli"],
+      localBusinesses: [
+        "Apartment Complexes",
+        "Independent Houses",
+        "Cafes and Restaurants",
+        "Coaching Centers",
+        "Retail Showrooms"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repair",
+          description:
+            "Reliable gas stove repair services in Mohammadwadi with quick diagnostics and branded replacement parts.",
+          features: [
+            "Low flame and burner repair",
+            "Auto-ignition system fixes",
+            "Knob and valve replacements",
+            "Complete hob glass servicing"
+          ]
+        },
+        {
+          title: "Residential Gas Pipeline Setup",
+          description:
+            "Professional internal gas pipeline setup for 1BHK to 4BHK flats and villas in Mohammadwadi with compliance certificates.",
+          features: [
+            "Leak-proof copper and steel pipeline installation",
+            "New connections and pipe rerouting",
+            "Pressure testing and demo",
+            "Documentation for society compliance"
+          ]
+        },
+        {
+          title: "Safety Inspection & Leak Detection",
+          description:
+            "Certified gas safety audits and emergency leak repair services in Mohammadwadi for homes and businesses.",
+          features: [
+            "Electronic leak detection tools",
+            "Pipe and joint inspection",
+            "Full safety audit report",
+            "Instant on-site repairs"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Rajiv Mehra",
+          profession: "IT Consultant",
+          company: "Capgemini",
+          area: "Dorabjee Paradise",
+          rating: 5,
+          text: "Excellent service. Technician came within 20 minutes and fixed my gas hob’s ignition and burner problem at a fair price. Highly professional!",
+          service: "Hob Repair",
+          date: "April 2025",
+          jobType: "Repair"
+        },
+        {
+          name: "Sneha Bhosale",
+          profession: "Lecturer",
+          company: "Local College",
+          area: "Cloud 9",
+          rating: 5,
+          text: "They installed a new pipeline when we shifted to our flat in Mohammadwadi. The work was neat, clean, and well-documented. Also issued a safety certificate. Very happy!",
+          service: "Pipeline Installation",
+          date: "March 2025",
+          jobType: "New Installation"
+        },
+        {
+          name: "Imran Shaikh",
+          profession: "Café Owner",
+          company: "Brew Buzz Café",
+          area: "Clover Hills",
+          rating: 5,
+          text: "Our café had a gas leak issue during evening hours. They responded within 25 minutes and handled the situation perfectly. Will use their AMC plan now.",
+          service: "Leak Repair",
+          date: "February 2025",
+          jobType: "Emergency Service"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Shield",
+          title: "Certified Technicians",
+          description:
+            "Trained and verified gas repair professionals with full safety protocol knowledge and society approval experience.",
+          stats: "4.8★ customer rating"
+        },
+        {
+          icon: "Clock",
+          title: "Quick Reach in Mohammadwadi",
+          description:
+            "Fastest service in all Mohammadwadi societies including Dorabjee Paradise, Cloud 9, and Clover Hills.",
+          stats: "20-25 min average time"
+        },
+        {
+          icon: "Home",
+          title: "Residential Experts",
+          description:
+            "Specializing in apartments and villas with over 350 families served. Ideal for new flats and tenant transitions.",
+          stats: "800+ jobs completed"
+        },
+        {
+          icon: "AlertTriangle",
+          title: "Emergency Leak Response",
+          description:
+            "Rapid gas leak handling with advanced equipment and certified repairs. Available on weekends too.",
+          stats: "24/7 support"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Mohammadwadi since 2015 with 800+ successful jobs",
+          "Trusted by top societies like Cloud 9, Dorabjee Paradise, and NIBM Annexe",
+          "Fast 20-25 minute doorstep service",
+          "End-to-end pipeline and stove repair with warranty",
+          "Emergency gas leak team available 24x7",
+          "Certified safety checks and documentation for compliance"
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair with flame and ignition fix",
+            "New gas line installations in flats and row houses",
+            "Internal copper pipeline setup with certificate",
+            "Gas leak detection and emergency repair",
+            "Annual maintenance services for societies"
+          ],
+          commercial: [
+            "Gas fitting for cafés and food joints in Mohammadwadi",
+            "AMC for restaurant kitchens and mess setups",
+            "Leak check and repair of commercial high-pressure lines",
+            "Support for kitchen expansion and tandoor lines",
+            "Inspection and fire compliance documentation"
+          ]
+        },
+        emergencyInfo:
+          "Facing a gas emergency in Mohammadwadi? We offer rapid-response leak repair and safety check services across Dorabjee Paradise, Cloud 9, NIBM Annexe, and Salunke Vihar. Call now – our expert technician will reach in under 25 minutes."
+      }
+    },
+    wanwadi: {
+      name: "Wanwadi",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Expert gas repair services in Wanwadi – a premium residential locality in Pune with a blend of old charm and modern apartments near Camp and Salunke Vihar.",
+      heroDescription:
+        "🔥 Fast, safe, and affordable gas repair services in Wanwadi within 18-22 minutes! Trusted by 450+ homes and restaurants. Specialists in stove repair, gas leak detection, and commercial kitchen pipeline setups.",
+      responseTime: "18-22 minutes",
+      customers: "450+",
+      pincode: "411040",
+      establishedYear: "2013",
+      rating: "4.9",
+      completedJobs: "950+",
+      landmarks: [
+        "Salunke Vihar Road",
+        "Armed Forces Medical College (AFMC)",
+        "Clover Village",
+        "Azad Nagar",
+        "Ganga Satellite",
+        "Konark Pooram",
+        "Wanowrie Bazaar"
+      ],
+      nearbyAreas: ["Camp", "Fatima Nagar", "Kondhwa", "NIBM", "Mohammadwadi"],
+      localBusinesses: [
+        "Gated Societies",
+        "Restaurants & Eateries",
+        "Home Kitchens",
+        "Government Quarters",
+        "Tiffin Services"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Burner Repair",
+          description:
+            "Same-day gas stove repair in Wanwadi for all models including 2, 3, and 4 burner systems. Fully equipped technicians for all issues.",
+          features: [
+            "Burner cleaning & alignment",
+            "Ignition button and switch repair",
+            "Knob and pipe replacement",
+            "Stove body service and polish"
+          ]
+        },
+        {
+          title: "Commercial Kitchen Pipeline Setup",
+          description:
+            "End-to-end gas line fitting for restaurants and mess kitchens in Wanwadi with safety certification and AMC packages.",
+          features: [
+            "High-pressure commercial line setup",
+            "Leak-proof joints and clamps",
+            "Regulator and safety valve setup",
+            "Inspection and approval documents"
+          ]
+        },
+        {
+          title: "Emergency Leak Detection",
+          description:
+            "24x7 emergency gas leak detection and repair support in Wanwadi with immediate dispatch of expert technicians.",
+          features: [
+            "Electronic gas detector tools",
+            "Immediate line isolation & patching",
+            "On-site repair and safety testing",
+            "Leak source documentation for landlords/societies"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Lt. Col. Arvind Rana",
+          profession: "Army Officer (Retd.)",
+          company: "Indian Army",
+          area: "Clover Village",
+          rating: 5,
+          text: "The technician arrived within 20 minutes to fix a serious leak. They handled everything professionally and even educated us about precautions. Very safe and systematic approach.",
+          service: "Emergency Leak Repair",
+          date: "March 2025",
+          jobType: "Leak Detection"
+        },
+        {
+          name: "Meenakshi Sharma",
+          profession: "Home Chef",
+          company: "Meenu's Kitchen",
+          area: "Salunke Vihar",
+          rating: 5,
+          text: "Great service! Got my gas stove repaired the same day and it works like new. Technician cleaned the burners, replaced a valve, and was very polite.",
+          service: "Gas Stove Repair",
+          date: "February 2025",
+          jobType: "Repair"
+        },
+        {
+          name: "Zubair Qureshi",
+          profession: "Restaurant Owner",
+          company: "Afghan Biryani Corner",
+          area: "Wanowrie Bazaar",
+          rating: 5,
+          text: "Gas Repair Wale team did a complete pipeline installation in our restaurant kitchen. Work was clean, certified, and completed in one day. Highly recommended for commercial setups.",
+          service: "Commercial Pipeline Installation",
+          date: "January 2025",
+          jobType: "New Setup"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Shield",
+          title: "Certified Professionals",
+          description:
+            "Every technician is verified and trained for domestic and commercial gas work under safety standards.",
+          stats: "950+ jobs completed"
+        },
+        {
+          icon: "Clock",
+          title: "Quick Response in Wanwadi",
+          description:
+            "Covering Clover Village, Salunke Vihar, Konark Pooram, and nearby zones in under 22 minutes.",
+          stats: "18-22 min service"
+        },
+        {
+          icon: "Users",
+          title: "Society Friendly",
+          description:
+            "Experienced with gated communities, societies, and government quarters in Wanwadi – full support with NOC and entry protocols.",
+          stats: "450+ families served"
+        },
+        {
+          icon: "AlertCircle",
+          title: "24/7 Emergency Support",
+          description:
+            "Emergency team for gas leaks, pipe bursts, and stove malfunctions in and around Wanwadi. Available round the clock.",
+          stats: "4.9★ rated"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Wanwadi since 2013 with 950+ successful cases",
+          "Fast service across all major societies and army quarters",
+          "Same-day gas stove and pipeline repair at affordable prices",
+          "Dedicated emergency response team available 24x7",
+          "Certified and insured technicians with society entry clearance",
+          "Expertise in restaurant kitchen and café gas systems"
+        ],
+        services: {
+          residential: [
+            "Gas stove repair for all brands with quick turnaround",
+            "Internal gas line installation in apartments and bungalows",
+            "Leak detection and immediate pipe fixes",
+            "Safety certification for landlords and buyers",
+            "Custom annual maintenance plans for societies"
+          ],
+          commercial: [
+            "Full pipeline setup for mess kitchens and restaurants",
+            "High-volume burner and tandoor gas fitting",
+            "Emergency support for restaurant downtime",
+            "Documentation support for FSSAI and fire audits",
+            "Monthly inspections for safety assurance"
+          ]
+        },
+        emergencyInfo:
+          "If you smell gas or suspect a leak in Wanwadi – don’t wait. Call us now for rapid-response emergency support across Salunke Vihar, Clover Village, AFMC area, and Ganga Satellite. Our technician will reach within 22 minutes and handle it safely."
+      }
+    },
+    kondhwa: {
+      name: "Kondhwa",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Trusted gas repair services in Kondhwa – a diverse and rapidly developing locality in South Pune known for residential societies, eateries, and high-rise apartments.",
+      heroDescription:
+        "🔥 Reliable and quick gas repair services in Kondhwa with under 25-minute response time! Trusted by 600+ households, PGs, and restaurants since 2013. From gas stove repair to commercial kitchen pipelines – we do it all, safely and affordably.",
+      responseTime: "20-25 minutes",
+      customers: "600+",
+      pincode: "411048",
+      establishedYear: "2013",
+      rating: "4.8",
+      completedJobs: "1000+",
+      landmarks: [
+        "Kausar Baugh",
+        "Nibm Road",
+        "Salunkhe Vihar Road",
+        "Clover Hills",
+        "Meetha Nagar",
+        "Kondhwa Budruk",
+        "Pisoli Phata"
+      ],
+      nearbyAreas: ["NIBM", "Wanwadi", "Mohammadwadi", "Undri", "Lullanagar", "Bibwewadi"],
+      localBusinesses: [
+        "PG Accommodations",
+        "Restaurants & Cafes",
+        "Residential Societies",
+        "Retail Stores",
+        "Cloud Kitchens"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repairs",
+          description:
+            "Same-day gas stove repair in Kondhwa for 2–5 burner units, automatic ignitions, glass-top models, and more.",
+          features: [
+            "Gas burner and valve issues fixed",
+            "Knob replacements and panel repair",
+            "Ignition switch repairs",
+            "Complete cleaning and testing"
+          ]
+        },
+        {
+          title: "Gas Line Installation",
+          description:
+            "Secure gas pipeline installation for flats, independent homes, and restaurants in Kondhwa with proper certification.",
+          features: [
+            "Concealed and open pipeline options",
+            "Leak-proof joints and testing",
+            "Connection to cylinder or piped gas",
+            "Safety valve and regulator setup"
+          ]
+        },
+        {
+          title: "Gas Leak Detection & Emergency Fix",
+          description:
+            "Quick leak detection using advanced sensors. Available for residential and commercial clients in Kondhwa 24/7.",
+          features: [
+            "Digital detector-based diagnosis",
+            "Immediate patch or pipe replacement",
+            "Pressure testing post repair",
+            "Leak report and advisory issued"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Rehan Sheikh",
+          profession: "Cloud Kitchen Owner",
+          company: "Kondhwa Biryani Hub",
+          area: "Kausar Baugh",
+          rating: 5,
+          text: "Our kitchen gas line had issues just before dinner hours. Gas Repair Wale team came within 30 mins and fixed the leak. We resumed operations safely – real lifesavers!",
+          service: "Commercial Leak Repair",
+          date: "February 2025",
+          jobType: "Emergency Repair"
+        },
+        {
+          name: "Fatima Shaikh",
+          profession: "Homemaker",
+          company: "-",
+          area: "Salunke Vihar Road",
+          rating: 5,
+          text: "Got my 3-burner hob repaired in 1 hour. Technician was polite, cleaned the system, and tested everything. Affordable and fast service.",
+          service: "Gas Stove Repair",
+          date: "January 2025",
+          jobType: "Repair Service"
+        },
+        {
+          name: "Pranay More",
+          profession: "Society Manager",
+          company: "Clover Hills Society",
+          area: "Clover Hills",
+          rating: 5,
+          text: "They helped us with AMC service for 20 flats. Routine checks, cleaning, leak testing – everything was done neatly. Recommend them for society-level work.",
+          service: "Annual Maintenance",
+          date: "March 2025",
+          jobType: "AMC"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Tool",
+          title: "Versatile Technicians",
+          description:
+            "Our team is trained to handle residential, society, and high-volume commercial jobs across Kondhwa’s mix of properties.",
+          stats: "1000+ jobs done"
+        },
+        {
+          icon: "Clock",
+          title: "Prompt Response in South Pune",
+          description:
+            "Quick access across all parts of Kondhwa including Meetha Nagar, Salunke Vihar, and Clover Hills in under 25 minutes.",
+          stats: "20-25 min service"
+        },
+        {
+          icon: "CheckCircle",
+          title: "Certified & Safe",
+          description:
+            "Work done under certified safety standards. Documentation provided for society NOC or landlord handover.",
+          stats: "4.8★ rated"
+        },
+        {
+          icon: "Building",
+          title: "Society & Commercial Experts",
+          description:
+            "We work with society committees and restaurant chains in Kondhwa regularly – professional and scalable service.",
+          stats: "600+ happy clients"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Over 1000 successful gas repair and pipeline jobs completed in Kondhwa",
+          "Fast 20–25 minute response time across high-traffic zones",
+          "Trusted by top restaurants and housing societies in the area",
+          "24/7 emergency team for leaks and urgent issues",
+          "Affordable pricing with warranty on repairs and installations",
+          "Experienced with PGs, hostels, and commercial kitchens"
+        ],
+        services: {
+          residential: [
+            "2, 3, and 4 burner gas stove repairs with spare parts",
+            "Full gas line installations in new apartments",
+            "Annual safety inspection and service for families",
+            "Gas regulator and pipe replacements",
+            "Emergency visit for gas smell or malfunction"
+          ],
+          commercial: [
+            "Restaurant kitchen gas setup and testing",
+            "Emergency repairs and inspection reports",
+            "Leak detection in high-pressure systems",
+            "Flexible AMC plans for cloud kitchens",
+            "Commercial burner and tandoor fitting"
+          ]
+        },
+        emergencyInfo:
+          "Smell gas or facing stove issues in Kondhwa? Call Gas Repair Wale now – we’ll reach anywhere in Kausar Baugh, Clover Hills, or Salunke Vihar within 25 minutes. Leak detection, repairs, and safety inspections handled on priority."
+      }
+    },
+    dhanori: {
+      name: "Dhanori",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Expert gas repair services in Dhanori – a fast-developing residential and semi-urban hub in Northeast Pune known for modern societies and peaceful living.",
+      heroDescription:
+        "🔥 Trusted gas repair and installation services in Dhanori with 20-minute response time! Serving 450+ homes and restaurants since 2015. Quick, certified, and affordable solutions for stoves, pipelines, and safety inspections.",
+      responseTime: "18-22 minutes",
+      customers: "450+",
+      pincode: "411015",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "850+",
+      landmarks: [
+        "Ganga Orchard",
+        "Mont Vert Bellbrook",
+        "Kedari Nagar",
+        "Dhanori-Lohegaon Road",
+        "Sai Chowk",
+        "Pratik Nagar",
+        "New Airport Road"
+      ],
+      nearbyAreas: ["Lohegaon", "Vishrantwadi", "Tingre Nagar", "Yerwada", "Viman Nagar", "Kalyani Nagar"],
+      localBusinesses: [
+        "Residential Apartments",
+        "Standalone Bungalows",
+        "Street Food Vendors",
+        "PG Hostels",
+        "Co-working Cafes"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repairs",
+          description:
+            "Get professional hob and stove repair in Dhanori for all brands. We fix 2-5 burner gas stoves, glass-top models, and more.",
+          features: [
+            "Burner, valve, and ignition issues resolved",
+            "Thorough cleaning and flame testing",
+            "Genuine spare parts used",
+            "Service warranty provided"
+          ]
+        },
+        {
+          title: "Gas Line Installation",
+          description:
+            "Complete LPG pipeline setup and alteration services in Dhanori for flats, row houses, and small eateries.",
+          features: [
+            "Piped LPG or cylinder connection",
+            "Leak-proof copper or steel pipelines",
+            "Regulator and valve fitting",
+            "Pressure testing and safety clearance"
+          ]
+        },
+        {
+          title: "Gas Safety Checks",
+          description:
+            "Stay safe with annual or one-time inspections for domestic and commercial kitchens in Dhanori.",
+          features: [
+            "Leak detection via digital equipment",
+            "Pipe and regulator health check",
+            "Risk advisory and preventive tips",
+            "Compliance certificate issued"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Vikas Salve",
+          profession: "Bank Employee",
+          company: "Axis Bank",
+          area: "Mont Vert Bellbrook",
+          rating: 5,
+          text: "Their technician reached within 20 mins and fixed the hob flame issue quickly. I appreciate the clean and professional service!",
+          service: "Gas Stove Repair",
+          date: "February 2025",
+          jobType: "Repair"
+        },
+        {
+          name: "Divya Wagh",
+          profession: "Home Chef",
+          company: "Tiffin Delight",
+          area: "Pratik Nagar",
+          rating: 5,
+          text: "They installed a pipeline in my kitchen and also explained safety procedures. Rates were affordable and the team was polite.",
+          service: "Gas Pipeline Installation",
+          date: "March 2025",
+          jobType: "New Installation"
+        },
+        {
+          name: "Manohar Jagtap",
+          profession: "Retired Govt Officer",
+          company: "-",
+          area: "Kedari Nagar",
+          rating: 5,
+          text: "We used their safety check service for peace of mind. It was detailed, and they gave a report. Helpful for society compliance.",
+          service: "Gas Safety Inspection",
+          date: "January 2025",
+          jobType: "Inspection"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Skilled Local Technicians",
+          description:
+            "Technicians experienced with Dhanori’s society layouts and mixed property types – reliable and trusted locally.",
+          stats: "850+ jobs done"
+        },
+        {
+          icon: "Clock",
+          title: "Fast Response in Dhanori",
+          description:
+            "Reach all parts of Dhanori and Lohegaon within 20 minutes, even during peak hours.",
+          stats: "18-22 min service"
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Compliant",
+          description:
+            "Work done under safety protocols with leak-proof material, tools, and official inspection certificates.",
+          stats: "4.8★ rated"
+        },
+        {
+          icon: "Home",
+          title: "Residential Focused",
+          description:
+            "We specialize in Dhanori’s growing societies and bungalows with tailored services and maintenance plans.",
+          stats: "450+ households served"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Dhanori since 2015 with 850+ satisfied customers",
+          "Quick 20-minute reach across Ganga Orchard, Pratik Nagar, and Sai Chowk",
+          "Expertise in handling PGs and rental flats for safety compliance",
+          "Transparent pricing and reliable post-service support",
+          "Emergency repair team on call every day",
+          "Affordable AMC plans for societies and hostels"
+        ],
+        services: {
+          residential: [
+            "Gas stove repair for all types and brands",
+            "Gas pipeline installation for 1BHK to 3BHK homes",
+            "Periodic safety inspection with certificate",
+            "Regulator and pipe replacement services",
+            "On-call leak detection and repair"
+          ],
+          commercial: [
+            "Gas setup for tiffin kitchens and cafés",
+            "Leak management and pipeline checks",
+            "AMC plans for PGs and rental kitchens",
+            "Installation support for small eateries",
+            "Inspection reports for licensing"
+          ]
+        },
+        emergencyInfo:
+          "Gas trouble in Dhanori? We’re just a call away. Reach any society or area within 20 minutes – from Ganga Orchard to Lohegaon Road. Fast leak fixes, flame issues, and pipeline problems handled with urgency and care."
+      }
+    },
+    lohegaon: {
+      name: "Lohegaon",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Trusted gas stove and pipeline repair services in Lohegaon – a growing suburb near Pune Airport with a mix of new societies and independent homes.",
+      heroDescription:
+        "🔥 Fast gas repair services in Lohegaon with 20-minute response time! Serving 400+ homes, PGs, and kitchens since 2015. Reliable solutions for all gas stove issues, pipeline installations, and gas safety checks.",
+      responseTime: "18-22 minutes",
+      customers: "400+",
+      pincode: "411047",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "800+",
+      landmarks: [
+        "Pune Airport",
+        "Bhadajvasti",
+        "Sant Nagar",
+        "Lohegaon-Wagholi Road",
+        "Datta Mandir",
+        "Sathe Wasti",
+        "Sai Chowk"
+      ],
+      nearbyAreas: ["Dhanori", "Viman Nagar", "Wagholi", "Charholi", "Tingre Nagar", "Yerwada"],
+      localBusinesses: [
+        "Residential Societies",
+        "PG Accommodations",
+        "Street Food Counters",
+        "Home-based Cloud Kitchens",
+        "Grocery & Kirana Stores"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repairs",
+          description:
+            "Same-day repair of all gas stove models in Lohegaon including burner issues, low flame, and ignition faults.",
+          features: [
+            "3- and 4-burner stove repair",
+            "Knob, pipe, and ignition system fixes",
+            "Flame and gas pressure tuning",
+            "Warranty on parts and service"
+          ]
+        },
+        {
+          title: "Pipeline Setup & Modification",
+          description:
+            "Affordable and certified LPG pipeline installations for Lohegaon’s flats, row houses, and food setups.",
+          features: [
+            "End-to-end installation and leak-proofing",
+            "Copper/stainless steel pipe fitting",
+            "Gas valve, regulator, and connector installation",
+            "Test report and safety tag provided"
+          ]
+        },
+        {
+          title: "Gas Leak & Safety Inspections",
+          description:
+            "Scheduled and emergency inspections in Lohegaon to ensure safe gas usage at home or in your business.",
+          features: [
+            "Gas leak detection using digital tools",
+            "Inspection of regulators, valves, burners",
+            "Society-approved safety certificate",
+            "Advice on safe usage and upgrades"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Snehal Patange",
+          profession: "Nurse",
+          company: "Command Hospital",
+          area: "Datta Mandir",
+          rating: 5,
+          text: "My stove flame was too low and causing trouble. The technician arrived quickly and fixed it on the spot. Great service!",
+          service: "Gas Stove Repair",
+          date: "April 2025",
+          jobType: "Repair Service"
+        },
+        {
+          name: "Ramesh V.",
+          profession: "Student Hostel Owner",
+          company: "-",
+          area: "Sathe Wasti",
+          rating: 5,
+          text: "They installed pipelines for my 12-room PG setup. Safe work, reasonable price, and they gave proper inspection certificates too.",
+          service: "Gas Pipeline Installation",
+          date: "February 2025",
+          jobType: "New Installation"
+        },
+        {
+          name: "Meera Jadhav",
+          profession: "Home Chef",
+          company: "Tasty Treats",
+          area: "Sant Nagar",
+          rating: 5,
+          text: "Very responsive team. I had a minor gas smell, and they reached in 25 minutes to fix the leak. Thankful for the help!",
+          service: "Emergency Leak Fix",
+          date: "March 2025",
+          jobType: "Emergency"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Trained Local Experts",
+          description:
+            "Lohegaon-based technicians familiar with society layouts and old/new infrastructure – guaranteed safe repairs.",
+          stats: "800+ jobs done"
+        },
+        {
+          icon: "Clock",
+          title: "Fast Service Anytime",
+          description:
+            "We reach Lohegaon’s interiors, Sai Chowk, and Airport area within 20 minutes – morning or evening.",
+          stats: "18-22 min service"
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Safe",
+          description:
+            "All work performed under safety protocols with inspection certificates and compliant materials.",
+          stats: "4.8★ rated"
+        },
+        {
+          icon: "Users",
+          title: "PG & Society Focused",
+          description:
+            "Custom service packages for hostels, PGs, and apartment complexes in Lohegaon with AMC options.",
+          stats: "400+ homes served"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Experienced gas technicians working across Lohegaon since 2015",
+          "Quick 18-22 minute reach from Pune Airport to Sathe Wasti",
+          "Pipeline setup for hostels and cloud kitchens with compliance",
+          "Transparent pricing and safety-first approach",
+          "Emergency services available even on Sundays",
+          "Trusted by 400+ households and 20+ PG kitchens"
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair for all models",
+            "Pipeline connection for apartments and bungalows",
+            "Routine gas system inspections",
+            "Pipe and valve replacement",
+            "Gas leak detection and emergency repair"
+          ],
+          commercial: [
+            "Gas line setup for tiffin centers and cloud kitchens",
+            "PG and hostel maintenance contracts",
+            "Safety certification for licensing bodies",
+            "Monthly leak inspection and burner servicing",
+            "Emergency support for commercial units"
+          ]
+        },
+        emergencyInfo:
+          "Need urgent gas repair in Lohegaon? We respond within 20 minutes across Sant Nagar, Datta Mandir, Airport area, and Bhadajvasti. Call us for leak detection, stove malfunctions, or installation support anytime."
+      }
+    },
+    "viman-nagar": {
+      name: "Viman Nagar",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Premium gas stove repair and LPG pipeline services in Viman Nagar – Pune’s vibrant urban hub with IT parks, malls, and luxury apartments.",
+      heroDescription:
+        "🔥 Quick & certified gas repair services in Viman Nagar with 15-20 minute response time! Trusted by 500+ families, cafes, and apartments since 2013. Complete support for gas stove repair, safety checks, and commercial gas pipelines.",
+      responseTime: "15-20 minutes",
+      customers: "500+",
+      pincode: "411014",
+      establishedYear: "2013",
+      rating: "4.9",
+      completedJobs: "1100+",
+      landmarks: [
+        "Phoenix Marketcity",
+        "Symbiosis College",
+        "Aga Khan Palace",
+        "Weikfield IT Park",
+        "Datta Mandir Chowk",
+        "Shivaji Nagar Metro Station (Upcoming)",
+        "Bungalow Societies"
+      ],
+      nearbyAreas: ["Koregaon Park", "Kalyani Nagar", "Lohegaon", "Dhanori", "Yerwada", "Tingre Nagar"],
+      localBusinesses: [
+        "High-Rise Residential Towers",
+        "Luxury Service Apartments",
+        "Co-Working Spaces",
+        "Restaurants & Cloud Kitchens",
+        "Student Hostels & PGs"
+      ],
+      specialServices: [
+        {
+          title: "Premium Gas Stove Repair",
+          description:
+            "Repair and servicing for modern gas stoves and hobs in Viman Nagar apartments and villas. Brands like Faber, Elica, Glen, Prestige supported.",
+          features: [
+            "Auto ignition and burner repairs",
+            "Flame adjustment and cleaning",
+            "Knob and pipe replacements",
+            "Same-day repair guarantee"
+          ]
+        },
+        {
+          title: "LPG Pipeline Installation",
+          description:
+            "Safe and certified gas pipeline fitting for societies, cafes, and apartments across Viman Nagar.",
+          features: [
+            "Copper/stainless steel pipeline setup",
+            "Leak testing and flame calibration",
+            "Compliant documentation",
+            "AMC packages for buildings"
+          ]
+        },
+        {
+          title: "Gas Safety Audits",
+          description:
+            "Annual and on-demand gas system inspection for homes and businesses in Viman Nagar with compliance certificate.",
+          features: [
+            "Complete stove & pipe check",
+            "Regulator & valve testing",
+            "Leak detection report",
+            "Safety certificate issued"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Neha Khanna",
+          profession: "Marketing Executive",
+          company: "WeWork",
+          area: "Phoenix Marketcity",
+          rating: 5,
+          text: "My hob's auto-ignition was not working. The technician from Gas Repair Wale fixed it neatly. Very professional and quick.",
+          service: "Gas Hob Repair",
+          date: "May 2025",
+          jobType: "Repair"
+        },
+        {
+          name: "Shreyas Patil",
+          profession: "Chef",
+          company: "Home Kitchen Cloud",
+          area: "Datta Mandir Road",
+          rating: 5,
+          text: "They set up a pipeline for our new cloud kitchen. Everything from fittings to compliance was managed efficiently.",
+          service: "Gas Pipeline Installation",
+          date: "March 2025",
+          jobType: "New Setup"
+        },
+        {
+          name: "Meenal Sharma",
+          profession: "PG Owner",
+          company: "PG Palace",
+          area: "Symbiosis Area",
+          rating: 5,
+          text: "They did a great job with monthly gas inspections for my 3-floor PG. Reliable and punctual team.",
+          service: "Gas Safety AMC",
+          date: "January 2025",
+          jobType: "Commercial"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Branded Stove Experts",
+          description:
+            "Expertise in handling modern kitchen gas appliances used in high-end apartments across Viman Nagar.",
+          stats: "1100+ jobs"
+        },
+        {
+          icon: "Clock",
+          title: "Ultra-Fast Response",
+          description:
+            "We reach Phoenix Marketcity, Symbiosis, and all gated communities in 15-20 minutes.",
+          stats: "15-20 min"
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Compliant",
+          description:
+            "We follow all safety norms, with documentation and leak-proofing for every job.",
+          stats: "4.9★ rating"
+        },
+        {
+          icon: "Users",
+          title: "Society & PG Specialist",
+          description:
+            "Support for hostels, service apartments, and societies with bulk service and inspection options.",
+          stats: "500+ clients"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Viman Nagar since 2013 with 1100+ completed jobs",
+          "Preferred by high-rise apartments and food businesses",
+          "Specialists in modern kitchen gas systems and installations",
+          "Quick 15-20 min response time in peak hours too",
+          "Safety inspection with every major job",
+          "Trusted by students, families, and commercial kitchens alike"
+        ],
+        services: {
+          residential: [
+            "Branded gas stove and hob repairs",
+            "Pipeline installations for apartments and duplexes",
+            "AMC plans for societies",
+            "Gas leak fixes and preventive checks",
+            "Flame tuning and burner cleaning"
+          ],
+          commercial: [
+            "Gas system setup for cloud kitchens and cafes",
+            "Leak-proof installations with test reports",
+            "Safety audit and certificate issuing",
+            "Monthly AMC for PGs and service apartments",
+            "Emergency 24x7 support"
+          ]
+        },
+        emergencyInfo:
+          "Stuck with a gas leak or low flame issue in Viman Nagar? Our team reaches Datta Mandir, Symbiosis, and Phoenix area within 20 minutes. Emergency service includes leak detection, repair, and safety verification."
+      }
+    },
+    vishrantwadi: {
+      name: "Vishrantwadi",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Affordable and efficient gas repair services in Vishrantwadi – a well-connected residential hub near the airport, popular with families and defense personnel.",
+      heroDescription:
+        "🔥 Fast & safe gas stove and pipeline repair services in Vishrantwadi! 16-20 minute response time across all societies and chawls. Trusted by 350+ homes, hostels, and shops since 2015. Certified team with emergency support.",
+      responseTime: "16-20 minutes",
+      customers: "350+",
+      pincode: "411015",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "820+",
+      landmarks: [
+        "Vishrantwadi Chowk",
+        "Airport Road",
+        "Jeevan Jyoti Hospital",
+        "Alandi Road",
+        "Hanuman Mandir",
+        "Kedarnath Society",
+        "Dhanori Road"
+      ],
+      nearbyAreas: ["Dhanori", "Yerwada", "Kalas", "Lohegaon", "Koregaon Park", "Viman Nagar"],
+      localBusinesses: [
+        "Residential Apartments & Chawls",
+        "Vegetarian Hotels",
+        "Tiffin Centers",
+        "Medical Clinics",
+        "Defence Quarters"
+      ],
+      specialServices: [
+        {
+          title: "Affordable Gas Stove Repairs",
+          description:
+            "Quick and budget-friendly repair of gas stoves, cooktops, and hobs in Vishrantwadi – same-day service guaranteed.",
+          features: [
+            "Flame issues and burner replacement",
+            "Pipe and knob fixes",
+            "Cleaning & pressure tuning",
+            "All major brands supported"
+          ]
+        },
+        {
+          title: "Domestic LPG Pipeline Setup",
+          description:
+            "New and modified LPG pipeline fitting for homes, chawls, and apartments near Alandi Road and Airport Road.",
+          features: [
+            "Copper/steel pipeline installation",
+            "Leak-proof fittings",
+            "Wall-mounted & concealed options",
+            "Free safety test included"
+          ]
+        },
+        {
+          title: "Gas Safety Audit",
+          description:
+            "One-time and regular gas safety checks for families, hostels, and tiffin centers. Reports for society compliance provided.",
+          features: [
+            "Stove, regulator, and pipe inspections",
+            "Leak detection with repair",
+            "Safety report documentation",
+            "Free post-service consultation"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Kiran Deshmukh",
+          profession: "Retired Air Force Officer",
+          company: "NA",
+          area: "Hanuman Nagar",
+          rating: 5,
+          text: "They came within 15 minutes for a gas leak issue. Very disciplined, polite, and well-trained. Fixed the pipe and ensured everything was safe.",
+          service: "Emergency Gas Leak Repair",
+          date: "July 2025",
+          jobType: "Emergency"
+        },
+        {
+          name: "Namita Joshi",
+          profession: "Homemaker",
+          company: "NA",
+          area: "Kedarnath Society",
+          rating: 5,
+          text: "The stove flame was low. The technician cleaned everything, adjusted the flow, and it was fixed in 30 minutes. Cost me only ₹500.",
+          service: "Stove Flame Repair",
+          date: "April 2025",
+          jobType: "Residential"
+        },
+        {
+          name: "Abhishek Pawar",
+          profession: "Tiffin Service Owner",
+          company: "Vishrantwadi Tiffins",
+          area: "Airport Road",
+          rating: 5,
+          text: "We got AMC for our kitchen pipeline. Monthly checks and immediate response during gas pressure drop. Good local team.",
+          service: "Commercial Gas Maintenance",
+          date: "February 2025",
+          jobType: "Commercial"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Local Area Specialists",
+          description:
+            "Serving Vishrantwadi households and small businesses with experience in narrow lane access and older building fittings.",
+          stats: "820+ jobs"
+        },
+        {
+          icon: "Clock",
+          title: "Emergency Response",
+          description:
+            "Rapid support for gas leaks, broken knobs, or stove shutdowns – reach within 16-20 minutes.",
+          stats: "15-20 min"
+        },
+        {
+          icon: "Shield",
+          title: "Safe & Certified",
+          description:
+            "Leak checks, flame calibration, and complete inspection with safety documents provided.",
+          stats: "4.8★ rated"
+        },
+        {
+          icon: "Users",
+          title: "Chawl & Society Friendly",
+          description:
+            "We understand older building pipelines and support societies, hostels, and PGs for AMC and group services.",
+          stats: "350+ families"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Specialized support for older buildings and narrow-lane chawls in Vishrantwadi",
+          "Trusted by tiffin services and PG owners along Alandi Road and Hanuman Nagar",
+          "Rapid 15-20 min emergency support – even during power cuts",
+          "Free leak check and flame tuning with every job",
+          "Affordable pricing without compromise on safety",
+          "Serving since 2015 with 820+ successful visits"
+        ],
+        services: {
+          residential: [
+            "Stove and burner repair for 2/3/4-burner gas tops",
+            "New pipeline setup in apartments and chawls",
+            "Knob, pipe, and ignition repairs",
+            "Routine inspections and safety reports",
+            "Emergency leak repair and stove revival"
+          ],
+          commercial: [
+            "Gas inspection and repair for tiffin centers",
+            "Leak-proof LPG setups for hostels and PGs",
+            "Documentation support for societies",
+            "Monthly AMC plans for local businesses",
+            "Fast response for kitchen failures"
+          ]
+        },
+        emergencyInfo:
+          "Facing gas issues in Vishrantwadi? Whether near Alandi Road or Hanuman Mandir, our certified team reaches within 20 minutes. Immediate leak detection, pipe fixes, and stove restart included with full safety check."
+      }
+    },
+    "koregaon-park": {
+      name: "Koregaon Park",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Premium gas repair services in Koregaon Park – Pune’s upscale lifestyle hub known for its elite residences, restaurants, and global community.",
+      heroDescription:
+        "🔥 Trusted gas repair services in Koregaon Park with priority support for luxury apartments, villas, cafés, and cloud kitchens. 15-18 minute response time. Over 700+ premium clients served since 2013.",
+      responseTime: "15-18 minutes",
+      customers: "700+",
+      pincode: "411001",
+      establishedYear: "2013",
+      rating: "4.9",
+      completedJobs: "1100+",
+      landmarks: [
+        "Osho Ashram",
+        "Lane 5 & 7",
+        "Westin Hotel",
+        "North Main Road",
+        "Bund Garden",
+        "German Bakery",
+        "ABC Farms"
+      ],
+      nearbyAreas: ["Mundhwa", "Kalyani Nagar", "Yerwada", "Camp", "Magarpatta", "Viman Nagar"],
+      localBusinesses: [
+        "Luxury Apartments",
+        "Cafés & Bistros",
+        "Cloud Kitchens",
+        "Boutique Hotels",
+        "Foreign Guest Houses"
+      ],
+      specialServices: [
+        {
+          title: "Premium Gas Stove Repair",
+          description:
+            "Servicing high-end gas stoves and hobs with care for imported and modular setups in Koregaon Park homes and commercial kitchens.",
+          features: [
+            "Flame tuning and precision burner cleaning",
+            "Imported part replacements",
+            "Seamless work in modular kitchens",
+            "Warranty-backed repair support"
+          ]
+        },
+        {
+          title: "Luxury Kitchen Pipeline Work",
+          description:
+            "Discreet and designer-friendly pipeline installation for luxury homes and restaurants in Koregaon Park.",
+          features: [
+            "Concealed pipeline fitting options",
+            "Leak-proof copper installations",
+            "Custom layouts for villas and duplexes",
+            "Certified technicians with finishing tools"
+          ]
+        },
+        {
+          title: "Safety Audits for Hospitality",
+          description:
+            "Routine safety checks for cafes, hotels, and bistros. Reports tailored for hospitality and compliance standards.",
+          features: [
+            "Burner, regulator & pipeline inspection",
+            "Leak test with detector tools",
+            "Restaurant-grade safety reports",
+            "Emergency compliance-ready response"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Natasha Mehra",
+          profession: "Interior Designer",
+          company: "Self-employed",
+          area: "Lane 7, Koregaon Park",
+          rating: 5,
+          text: "Our imported hob had ignition issues. Their team had the right tools and parts. Everything was handled neatly. Will recommend for premium homes.",
+          service: "Hob Repair",
+          date: "June 2025",
+          jobType: "Luxury Kitchen Repair"
+        },
+        {
+          name: "Rahul Sen",
+          profession: "Cafe Owner",
+          company: "The Bean Room",
+          area: "North Main Road",
+          rating: 5,
+          text: "We needed urgent help when our kitchen had a gas pressure issue. Gas Repair Wale reached in 15 mins and handled it professionally.",
+          service: "Commercial Gas Line Service",
+          date: "March 2025",
+          jobType: "Emergency Commercial"
+        },
+        {
+          name: "Andrea Roselli",
+          profession: "Chef",
+          company: "Private Villa",
+          area: "Koregaon Park",
+          rating: 5,
+          text: "Very smooth and respectful service. They fixed our kitchen pipeline without damaging the marble walls. Great attention to detail.",
+          service: "Pipeline Installation",
+          date: "February 2025",
+          jobType: "Premium Installation"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Premium Expertise",
+          description:
+            "We specialize in high-end appliances and modular kitchens found in Koregaon Park homes and businesses.",
+          stats: "1100+ premium jobs"
+        },
+        {
+          icon: "Clock",
+          title: "Express Service",
+          description:
+            "15-18 min arrival time across all Koregaon Park lanes, North Main Road, and nearby hotels.",
+          stats: "700+ happy clients"
+        },
+        {
+          icon: "Shield",
+          title: "Compliance & Safety",
+          description:
+            "Certified inspections for restaurants and guest houses. Fully documented repairs for insurance and audits.",
+          stats: "4.9★ rated"
+        },
+        {
+          icon: "Users",
+          title: "Hospitality-Focused",
+          description:
+            "Trusted by boutique cafes and villas for silent, clean, and compliant gas service experiences.",
+          stats: "Trusted by 50+ businesses"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Exclusive services tailored for Koregaon Park’s upscale residences and hospitality businesses",
+          "Trusted by top cafes, cloud kitchens, and villa owners since 2013",
+          "15-18 minute service window ensures minimal disruption",
+          "Experts in modular kitchen and designer fittings",
+          "All services done with minimal noise and mess",
+          "Multilingual team available for expat clients"
+        ],
+        services: {
+          residential: [
+            "Imported hob and stove repair with warranty",
+            "Pipeline installations for duplex and penthouses",
+            "Concealed copper pipeline work with certification",
+            "Leak detection and elegant flame calibration",
+            "Annual AMC for villas and gated societies"
+          ],
+          commercial: [
+            "24/7 emergency repairs for cafes and bistros",
+            "Routine safety inspections for boutique hotels",
+            "Commercial pipeline layout and maintenance",
+            "Documentation for food safety and audits",
+            "Premium AMC plans for hospitality brands"
+          ]
+        },
+        emergencyInfo:
+          "Gas emergency in Koregaon Park? Our priority crew reaches bungalows, restaurants, and guest houses within 15-18 minutes. Leak repair, ignition fix, and safe startup — all handled professionally with minimal intrusion."
+      }
+    },
+    "keshav-nagar": {
+      name: "Keshav Nagar",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Trusted gas repair services in Keshav Nagar – one of Pune’s rapidly developing residential areas with modern townships and growing family population.",
+      heroDescription:
+        "🔥 Fast and affordable gas repair services in Keshav Nagar with 20-minute average arrival. Trusted by 300+ apartment residents and home owners. Experienced in township gas systems and modular kitchen setups.",
+      responseTime: "18-22 minutes",
+      customers: "300+",
+      pincode: "411036",
+      establishedYear: "2016",
+      rating: "4.7",
+      completedJobs: "600+",
+      landmarks: [
+        "Godrej Infinity",
+        "Ganga Constella",
+        "Oxford World School",
+        "Renuka Mata Mandir",
+        "Forest County",
+        "The Gold Leaf Society",
+        "Riverview City"
+      ],
+      nearbyAreas: ["Mundhwa", "Magarpatta", "Hadapsar", "Koregaon Park", "Wagholi", "Kharadi"],
+      localBusinesses: [
+        "Residential Apartments",
+        "Independent Bungalows",
+        "Rental Homes",
+        "Early Learning Centres",
+        "Retail Food Outlets"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair & Maintenance",
+          description:
+            "Quick and efficient gas stove and hob servicing in Keshav Nagar – ideal for modern homes and societies.",
+          features: [
+            "Stove burner cleaning and flame tuning",
+            "Ignition and knob repairs",
+            "Modular kitchen-friendly work",
+            "Same-day repair with inspection report"
+          ]
+        },
+        {
+          title: "Pipeline Installation for New Homes",
+          description:
+            "End-to-end gas pipeline setup for newly built flats, societies, and individual homes in Keshav Nagar.",
+          features: [
+            "New pipeline setup with leak-proof joints",
+            "Compliance-ready pressure testing",
+            "Flexible routing for modern interiors",
+            "Safety valve and meter integration"
+          ]
+        },
+        {
+          title: "Emergency Gas Leak Repairs",
+          description:
+            "Immediate support for gas leaks or smell in homes with professional tools and certified team.",
+          features: [
+            "Leak source identification",
+            "Pipe and valve repair",
+            "Post-repair inspection",
+            "Safety checklist with documentation"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Sneha Kulkarni",
+          profession: "HR Manager",
+          company: "Capgemini",
+          area: "Godrej Infinity",
+          rating: 5,
+          text: "Our stove was leaking gas slightly. The team arrived quickly and fixed the regulator and pipe within 30 mins. They were polite and professional. Fee was also reasonable at ₹500.",
+          service: "Gas Stove Leak Repair",
+          date: "July 2025",
+          jobType: "Repair Service"
+        },
+        {
+          name: "Rakesh Nair",
+          profession: "Civil Engineer",
+          company: "Private Consultant",
+          area: "Forest County",
+          rating: 5,
+          text: "Gas Repair Wale helped install a new pipeline in my 2BHK. The technician explained everything clearly. They gave a safety certificate as well. Highly recommend for new homes.",
+          service: "Pipeline Installation",
+          date: "April 2025",
+          jobType: "New Home Setup"
+        },
+        {
+          name: "Neha Agrawal",
+          profession: "Preschool Owner",
+          company: "Kidz Corner",
+          area: "Riverview City",
+          rating: 5,
+          text: "Excellent AMC plan for our daycare kitchen. They do quarterly checks and fix anything needed. The team is background verified and safe to call repeatedly.",
+          service: "Kitchen AMC Service",
+          date: "March 2025",
+          jobType: "Annual Maintenance"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Township-Ready Expertise",
+          description:
+            "We specialize in working with gas systems in newly developed apartment clusters and gated communities.",
+          stats: "600+ jobs completed"
+        },
+        {
+          icon: "Clock",
+          title: "Prompt Local Response",
+          description:
+            "Located near Keshav Nagar, our technicians reach most societies within 18-22 minutes.",
+          stats: "Fast service every time"
+        },
+        {
+          icon: "Shield",
+          title: "Safe & Certified",
+          description:
+            "All repairs and installations done with safety certification, pressure testing, and final inspection reports.",
+          stats: "4.7★ rating"
+        },
+        {
+          icon: "Users",
+          title: "Society Friendly",
+          description:
+            "Experience with Godrej Infinity, Forest County, Ganga Constella and more. Cooperative with RWAs and society rules.",
+          stats: "300+ happy families"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local team with 20-minute reach across all of Keshav Nagar",
+          "Certified gas technicians for modern apartments and bungalows",
+          "Special support for new townships and under-construction flats",
+          "Emergency leak repair with gas safety inspection report",
+          "Background-verified staff and transparent pricing",
+          "Free post-service support within 3 days"
+        ],
+        services: {
+          residential: [
+            "Gas stove repair and flame adjustment",
+            "New gas pipeline setup with concealed layout",
+            "Annual safety audits for families",
+            "Emergency leak support with detection tools",
+            "Certified documentation for landlords and buyers"
+          ],
+          commercial: [
+            "Gas setup for small food outlets",
+            "Preschool and home-kitchen AMC plans",
+            "Pressure test and pipeline modification",
+            "Compliance support for café kitchens",
+            "Quick repairs for rental property handovers"
+          ]
+        },
+        emergencyInfo:
+          "Facing gas leakage or pressure issue in Keshav Nagar? Our technician will reach in 20 minutes with full tools. Immediate detection, sealing, and report delivery included. Call now for priority gas emergency support in Godrej Infinity, Forest County, and surrounding apartments."
+      }
+    },
+    mundhwa: {
+      name: "Mundhwa",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Professional gas repair services in Mundhwa – a fast-evolving residential and commercial locality connecting Keshav Nagar, Koregaon Park, and Magarpatta.",
+      heroDescription:
+        "⚙️ Expert gas repair in Mundhwa with 20-minute service! Trusted by 350+ homes and restaurants. We handle all residential societies, industrial kitchens, and gas pipeline setups with certified safety checks.",
+      responseTime: "18-22 minutes",
+      customers: "350+",
+      pincode: "411036",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "780+",
+      landmarks: [
+        "The Mills",
+        "Godrej Rejuve",
+        "Konark Virtue",
+        "Passport Office Kharadi",
+        "Ganga Newtown",
+        "Udaan Biodiversity Park",
+        "Keshav Nagar Junction"
+      ],
+      nearbyAreas: ["Koregaon Park", "Keshav Nagar", "Hadapsar", "Magarpatta", "Wadgaon Sheri", "Kharadi"],
+      localBusinesses: [
+        "Residential Apartments",
+        "Industrial Kitchens",
+        "Corporate Guest Houses",
+        "Shared Working Spaces",
+        "Boutique Hotels"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove and Hob Repair",
+          description:
+            "Professional stove and hob repair in Mundhwa for homes and PGs with fast same-day service.",
+          features: [
+            "Ignition repair and burner tuning",
+            "Flame adjustment and knob replacement",
+            "Gas leak detection from stove",
+            "Affordable pricing with service warranty"
+          ]
+        },
+        {
+          title: "Commercial Gas Maintenance",
+          description:
+            "Certified gas line setup and regular inspection services for restaurants and cloud kitchens in Mundhwa.",
+          features: [
+            "Monthly gas system inspections",
+            "Leak-proof pipeline modifications",
+            "Safety certificate and AMC available",
+            "Emergency team for breakdowns"
+          ]
+        },
+        {
+          title: "New Gas Pipeline Installation",
+          description:
+            "We provide pipeline layout, installation, and testing for flats, townhouses, and commercial units in Mundhwa.",
+          features: [
+            "Concealed and open pipeline installation",
+            "Pressure testing and regulator setup",
+            "Pipe extension for kitchen shifts",
+            "Society documentation and approval support"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Vikram Shinde",
+          profession: "Restaurant Manager",
+          company: "Spice Garden Eatery",
+          area: "Mundhwa Main Road",
+          rating: 5,
+          text: "Their team has been servicing our kitchen for 2 years. They are very knowledgeable and always inspect properly. Quick and trustworthy service provider.",
+          service: "Commercial Gas Maintenance",
+          date: "June 2025",
+          jobType: "AMC Service"
+        },
+        {
+          name: "Kavita Sharma",
+          profession: "Interior Designer",
+          company: "DesignCraft",
+          area: "Konark Virtue",
+          rating: 5,
+          text: "We shifted kitchen location and needed gas pipeline rework. They completed the full shift in one visit. No hidden charges, and gave proper invoice too.",
+          service: "Pipeline Modification",
+          date: "March 2025",
+          jobType: "Residential Modification"
+        },
+        {
+          name: "Ashutosh Rathi",
+          profession: "Digital Marketer",
+          company: "Remote Work Pvt. Ltd.",
+          area: "Ganga Newtown",
+          rating: 5,
+          text: "I was impressed with their punctuality. My stove was fixed in under 30 mins. They also explained gas safety tips very nicely. Great service!",
+          service: "Gas Stove Repair",
+          date: "May 2025",
+          jobType: "Repair Job"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Commercial + Residential Expertise",
+          description:
+            "From modern flats to busy kitchens, we understand the local demands of Mundhwa’s growing urban structure.",
+          stats: "780+ jobs completed"
+        },
+        {
+          icon: "Clock",
+          title: "Fast Turnaround",
+          description:
+            "Our nearest hub allows us to reach Mundhwa, New Keshav Nagar, and Magarpatta areas within 22 minutes.",
+          stats: "20-minute average"
+        },
+        {
+          icon: "Shield",
+          title: "Certified Safety Focus",
+          description:
+            "All services performed with leak detection, pressure testing, and safety documentation support for societies.",
+          stats: "4.8★ customer rating"
+        },
+        {
+          icon: "Users",
+          title: "Society + Business Friendly",
+          description:
+            "We work with RWAs and café owners alike to ensure flexible timing and transparent pricing.",
+          stats: "350+ satisfied clients"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Experience with over 780 gas repairs and installations in Mundhwa since 2015",
+          "Fast 20-minute response time even during peak hours",
+          "Expertise in both apartment and industrial kitchen gas lines",
+          "Monthly inspection support for restaurants and cafes",
+          "Certified safety audits with proper reports",
+          "Emergency services available 7 days a week"
+        ],
+        services: {
+          residential: [
+            "Flame issues and burner cleaning for household stoves",
+            "Pipeline installation in new homes and shifting setups",
+            "Leak detection in kitchens with repair service",
+            "Regulator, pipe, and knob replacements",
+            "Safety certificate for rental homes or resale inspection"
+          ],
+          commercial: [
+            "Commercial gas pipeline setup for restaurants and cloud kitchens",
+            "Monthly or quarterly maintenance contracts",
+            "Emergency gas shutdown and repair",
+            "Documentation and audit-ready safety checks",
+            "Compliance-ready services for licenses and food inspections"
+          ]
+        },
+        emergencyInfo:
+          "For urgent gas-related issues in Mundhwa – including leakage, stove malfunction, or pipeline damage – we offer 20-minute average response time. Technicians cover Ganga Newtown, Konark Virtue, and industrial zones efficiently with certified repair tools and safety gear."
+      }
+    },
+    "magarpatta-city": {
+      name: "Magarpatta City",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Gas Repair Wale offers specialized gas repair services in Magarpatta City – Pune’s premier gated township known for its tech parks, modern apartments, and high safety standards.",
+      heroDescription:
+        "🏙️ Fast, certified gas repair in Magarpatta City with 15–20 minute service time! Trusted by 500+ flats & offices. Experts in gas stove repair, pipeline setup, and compliance safety checks for residential and commercial kitchens.",
+      responseTime: "15-20 minutes",
+      customers: "500+",
+      pincode: "411013",
+      establishedYear: "2014",
+      rating: "4.9",
+      completedJobs: "1,000+",
+      landmarks: [
+        "Cybercity IT Park",
+        "Seasons Mall",
+        "Zinnia Towers",
+        "Iris Apartments",
+        "Cosmos Society",
+        "Destination Center",
+        "Aditi Garden"
+      ],
+      nearbyAreas: ["Hadapsar", "Amanora Park Town", "Mundhwa", "Kharadi", "Fatima Nagar", "Sasane Nagar"],
+      localBusinesses: [
+        "Residential Societies",
+        "Tech Office Pantries",
+        "Apartment Rental Units",
+        "Cafés and Restaurants",
+        "Service Apartments"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repair",
+          description:
+            "Same-day repair service for gas stoves and hobs in Magarpatta with branded spare parts and expert technicians.",
+          features: [
+            "Burner, ignition, and knob repairs",
+            "Low flame issue resolution",
+            "Spare part replacement with warranty",
+            "Post-repair testing and safety assurance"
+          ]
+        },
+        {
+          title: "Apartment Pipeline Setup",
+          description:
+            "End-to-end gas pipeline installation or modification for flats and penthouses inside Magarpatta societies.",
+          features: [
+            "New pipeline layout and installation",
+            "Gas meter and regulator installation",
+            "Pressure testing and leak-proofing",
+            "Society approval and documentation help"
+          ]
+        },
+        {
+          title: "Gas Safety Inspection",
+          description:
+            "Annual and one-time safety checks for residents and landlords renting out flats in Magarpatta.",
+          features: [
+            "Leak detection and pressure check",
+            "Valve, pipe, and stove inspection",
+            "Official safety certificate with report",
+            "Required for home buyers and tenants"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Anita Deshmukh",
+          profession: "Software Developer",
+          company: "Capgemini",
+          area: "Zinnia Towers",
+          rating: 5,
+          text: "Excellent service! The technician reached within 20 minutes, replaced our old pipe, and tested the setup thoroughly. Felt completely safe after the service.",
+          service: "Pipeline Replacement",
+          date: "July 2025",
+          jobType: "Residential Service"
+        },
+        {
+          name: "Pranav Bhatt",
+          profession: "IT Consultant",
+          company: "Infosys",
+          area: "Iris Society",
+          rating: 5,
+          text: "They provided a detailed safety inspection before we rented out our flat. The certificate and report helped us with society paperwork.",
+          service: "Gas Safety Inspection",
+          date: "June 2025",
+          jobType: "Pre-Rental Inspection"
+        },
+        {
+          name: "Meena Raut",
+          profession: "Café Owner",
+          company: "Daily Brew",
+          area: "Destination Center",
+          rating: 5,
+          text: "Fast and skilled staff. They resolved our stove ignition issue and checked the full pipeline system. Very professional approach.",
+          service: "Stove Repair + Safety Check",
+          date: "May 2025",
+          jobType: "Commercial Service"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Specialized for Gated Societies",
+          description:
+            "We are well-versed in society protocols and high-rise safety guidelines specific to Magarpatta City.",
+          stats: "1,000+ jobs completed"
+        },
+        {
+          icon: "Clock",
+          title: "Superfast Reach",
+          description:
+            "Our Hadapsar team reaches all towers in Magarpatta within 15–20 minutes, including Iris, Cosmos, and Zinnia.",
+          stats: "15–20 min avg"
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Insured",
+          description:
+            "All services follow housing society safety norms and include a full compliance certificate when required.",
+          stats: "4.9★ Google rating"
+        },
+        {
+          icon: "Users",
+          title: "Preferred by Residents",
+          description:
+            "Over 500+ families in Magarpatta rely on us for emergency repairs, AMC, and installations.",
+          stats: "500+ satisfied customers"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Magarpatta City since 2014 with 1,000+ successful gas services",
+          "Ultra-fast 15–20 minute response time across all towers",
+          "Expert in dealing with society rules and approval procedures",
+          "All services include official documentation and safety protocols",
+          "Preferred by working professionals and NRI landlords",
+          "Available on weekends and public holidays for urgent support"
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob servicing with genuine parts",
+            "Pipeline shifting during kitchen renovation",
+            "Safety certification for rented apartments",
+            "Emergency gas leak response",
+            "Annual gas maintenance contracts"
+          ],
+          commercial: [
+            "Pipeline setup for society cafés and office pantries",
+            "Quarterly kitchen inspection plans",
+            "Stove repairs and burner cleaning for restaurants",
+            "Regulatory compliance for FSSAI inspections",
+            "24/7 commercial kitchen emergency support"
+          ]
+        },
+        emergencyInfo:
+          "Facing a gas leak, stove malfunction, or urgent pipeline issue in Magarpatta City? Call Gas Repair Wale for a 15–20 minute response. We cover Zinnia, Cosmos, Iris, and all gated societies with certified tools and licensed technicians. Safety-first service guaranteed."
+      }
+    },
+    "amanora-park-town": {
+      name: "Amanora Park Town",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Premium gas repair and installation services in Amanora Park Town – a modern township in Pune known for its upscale apartments, green spaces, and IT professionals.",
+      heroDescription:
+        "🏢 Trusted gas repair services in Amanora Park Town with 15–20 min response! 600+ flats served since 2014. Experts in gas stove repair, pipeline fitting, and certified safety checks for residents and landlords.",
+      responseTime: "15–20 minutes",
+      customers: "600+",
+      pincode: "411028",
+      establishedYear: "2014",
+      rating: "4.9",
+      completedJobs: "1,100+",
+      landmarks: [
+        "Amanora Gateway Towers",
+        "Amanora Aspire Towers",
+        "Amanora Neo Towers",
+        "Amanora Mall",
+        "Amanora Park Town East & West",
+        "West Blok",
+        "Amanora Club"
+      ],
+      nearbyAreas: ["Magarpatta City", "Hadapsar", "Mundhwa", "Kharadi", "Fatima Nagar"],
+      localBusinesses: [
+        "Luxury Residences",
+        "Retail Showrooms",
+        "Office Kitchens",
+        "Rental Apartments",
+        "Residential Clubs"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repair",
+          description:
+            "Same-day gas stove and hob repairs in Amanora with genuine parts and warranty-backed services.",
+          features: [
+            "Ignition & burner issue repair",
+            "Knob and gas flow adjustment",
+            "Flame issue resolution",
+            "Full testing post-repair"
+          ]
+        },
+        {
+          title: "Gas Pipeline Installation",
+          description:
+            "Expert pipeline setup and alteration for all Amanora towers including new apartments and renovated kitchens.",
+          features: [
+            "Apartment-specific installation plans",
+            "Safety-compliant fittings",
+            "Leak-proof testing & certification",
+            "Society approval documentation"
+          ]
+        },
+        {
+          title: "Gas Safety Inspection",
+          description:
+            "Certified gas safety audits for landlords, home buyers, and society approvals inside Amanora Park Town.",
+          features: [
+            "System-wide leakage check",
+            "Component-level testing",
+            "Compliance documentation",
+            "Official safety report"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Ritika Sharma",
+          profession: "Product Manager",
+          company: "Accenture",
+          area: "Aspire Towers",
+          rating: 5,
+          text: "My hob was malfunctioning, and they arrived in just 18 minutes. Very professional team with proper equipment. Issue fixed in 30 mins. Highly recommended.",
+          service: "Hob Repair",
+          date: "April 2025",
+          jobType: "Residential Service"
+        },
+        {
+          name: "Ravi Malhotra",
+          profession: "Senior Analyst",
+          company: "HSBC",
+          area: "Gateway Towers",
+          rating: 5,
+          text: "Gas Repair Wale provided an inspection and safety certificate for our flat before we leased it. Society approvals went smoothly. Great service!",
+          service: "Gas Safety Inspection",
+          date: "June 2025",
+          jobType: "Inspection for Rent"
+        },
+        {
+          name: "Sonal Mehra",
+          profession: "Interior Designer",
+          company: "Freelancer",
+          area: "Neo Towers",
+          rating: 5,
+          text: "I got gas pipeline shifted during my kitchen renovation. They handled everything professionally, including society formalities. Cost-effective too.",
+          service: "Pipeline Shifting",
+          date: "May 2025",
+          jobType: "Pipeline Modification"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Wrench",
+          title: "Gated Society Experts",
+          description:
+            "We specialize in working with Amanora Park Town protocols and apartment layouts for safe and efficient service.",
+          stats: "600+ families served"
+        },
+        {
+          icon: "Clock",
+          title: "Rapid Response Team",
+          description:
+            "Located close to Hadapsar, our technicians reach any tower in 15–20 minutes with all tools and spares.",
+          stats: "15–20 min average"
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Verified",
+          description:
+            "All services are insured and certified, with safety documents for landlords and tenants available on request.",
+          stats: "4.9★ Google rated"
+        },
+        {
+          icon: "Users",
+          title: "Trusted by NRIs & Owners",
+          description:
+            "We help NRI flat owners with safety inspections and AMC plans, even in their absence.",
+          stats: "1,100+ total jobs"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Amanora Park Town since 2014 with 1,100+ completed jobs",
+          "Fast 15–20 minute service even in high-rise towers",
+          "Approved by housing society protocols for gas work",
+          "AMC and emergency support for absentee landlords & NRIs",
+          "Gas safety documentation for tenants and society records",
+          "Weekend and evening slot availability"
+        ],
+        services: {
+          residential: [
+            "Same-day stove repair with branded spare parts",
+            "Pipeline installation in Aspire, Neo, and Gateway Towers",
+            "Gas safety checks for rented flats",
+            "Kitchen pipeline shifting during renovations",
+            "Annual maintenance plans"
+          ],
+          commercial: [
+            "Gas maintenance for clubhouses and cafés",
+            "Stove servicing for small food outlets in Amanora Mall",
+            "Inspection plans for service apartments",
+            "Compliance certification for rental kitchens",
+            "Emergency repair response for corporate pantries"
+          ]
+        },
+        emergencyInfo:
+          "Facing a gas issue in Amanora Park Town? Our team covers all towers including Aspire, Gateway, and Neo with 15–20 minute emergency response. We’re certified, experienced, and available even during holidays."
+      }
+    },
+    wagholi: {
+      name: "Wagholi",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Affordable and reliable gas repair services in Wagholi – a fast-growing residential hub in Pune popular among working professionals and families.",
+      heroDescription:
+        "⚡ Quick & affordable gas repair services in Wagholi with 20–25 minute average response! Trusted by 700+ households. Certified technicians for stove repair, pipeline fitting, and gas safety checks in residential societies and stand-alone homes.",
+      responseTime: "20–25 minutes",
+      customers: "700+",
+      pincode: "412207",
+      establishedYear: "2014",
+      rating: "4.8",
+      completedJobs: "1,300+",
+      landmarks: [
+        "Ivy Estate",
+        "Pride World City",
+        "Kesnand Phata",
+        "Wagholi Jakat Naka",
+        "B U Bhandari Everglade",
+        "Vishal Nagar",
+        "Lohgaon-Wagholi Road"
+      ],
+      nearbyAreas: ["Kharadi", "Lohegaon", "Kesnand", "Charholi", "Viman Nagar"],
+      localBusinesses: [
+        "Gated Communities",
+        "Stand-alone Apartments",
+        "Rental Homes",
+        "Retail Gas Stove Dealers",
+        "Residential Kitchen Designers"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "Fast repair of gas stoves and built-in hobs in Wagholi with genuine parts and professional tools.",
+          features: [
+            "Low flame, ignition, and gas leakage issues",
+            "Knob, valve, and burner repair/replacement",
+            "Deep cleaning and performance boost",
+            "Same-day service with warranty"
+          ]
+        },
+        {
+          title: "Gas Pipeline Fitting",
+          description:
+            "Professional gas pipeline installation for apartments, homes, and new societies in Wagholi.",
+          features: [
+            "End-to-end pipeline setup",
+            "Safety valve and regulator installation",
+            "Leak testing and pressure check",
+            "Documentation for society approvals"
+          ]
+        },
+        {
+          title: "Safety Audits & Certification",
+          description:
+            "Gas safety inspection for landlords, tenants, and builders with official compliance report.",
+          features: [
+            "Leak detection and repair",
+            "Full system health check",
+            "Regulator and pipe inspection",
+            "Society and rental safety certificate"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Ramesh Pawar",
+          profession: "Software Developer",
+          company: "Infosys",
+          area: "Ivy Estate",
+          rating: 5,
+          text: "Their team was on time, fixed my hob flame issue in under an hour. Clear pricing, clean work. Will recommend to my society.",
+          service: "Gas Stove Repair",
+          date: "March 2025",
+          jobType: "Residential Service"
+        },
+        {
+          name: "Shalini Nair",
+          profession: "Freelancer",
+          company: "NA",
+          area: "Kesnand Road",
+          rating: 5,
+          text: "We needed a pipeline setup for our new flat. The technician was well-trained, followed safety protocols, and submitted documents to society himself. Good experience.",
+          service: "Gas Pipeline Installation",
+          date: "May 2025",
+          jobType: "New Apartment Fitting"
+        },
+        {
+          name: "Ajit Thorat",
+          profession: "Landlord",
+          company: "NA",
+          area: "Wagholi Jakat Naka",
+          rating: 5,
+          text: "Needed gas safety clearance for rented flat. These guys gave me a digital report and hard copy. Society approved without questions. Hassle-free process.",
+          service: "Gas Safety Check",
+          date: "February 2025",
+          jobType: "Rental Flat Certification"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Clock",
+          title: "Quick Response in Wagholi",
+          description:
+            "Technicians stationed near Kesnand Road and Ivy Estate ensure service within 20–25 minutes.",
+          stats: "700+ households served"
+        },
+        {
+          icon: "Wrench",
+          title: "Specialists in New Societies",
+          description:
+            "Experienced with gas line setups in newly built flats and societies like Pride World City and B U Bhandari.",
+          stats: "1,300+ jobs completed"
+        },
+        {
+          icon: "Shield",
+          title: "Certified Safety Checks",
+          description:
+            "We provide safety certificates and reports accepted by landlords, society offices, and tenants.",
+          stats: "4.8★ Google rated"
+        },
+        {
+          icon: "Users",
+          title: "Friendly & Affordable",
+          description:
+            "Clear pricing, friendly staff, and no hidden charges. Bulk society discounts available.",
+          stats: "Since 2014"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Trusted in Wagholi since 2014 with 1,300+ service calls",
+          "Experts in working with fast-developing townships and rental homes",
+          "Same-day gas repair for stoves, hobs, and pipelines",
+          "Leak-proof certified pipeline setups with safety tests",
+          "Rental gas safety check with official certificate",
+          "Quick service near Ivy Estate, Kesnand Phata & Vishal Nagar"
+        ],
+        services: {
+          residential: [
+            "3-burner and 4-burner gas stove repairs at home",
+            "Pipeline installation in new societies and towers",
+            "Safety audit before moving into rented apartments",
+            "AMC plans for frequent users and landlords",
+            "Weekend service availability"
+          ],
+          commercial: [
+            "Pipeline setup for small hotels or mess kitchens",
+            "Gas safety audits for café kitchens in Wagholi",
+            "Emergency gas leak detection and shutoff",
+            "Bulk repair solutions for PGs and rental clusters",
+            "Documentation support for builder approvals"
+          ]
+        },
+        emergencyInfo:
+          "Gas Repair Wale offers 20–25 min emergency support in Wagholi – covering Ivy Estate, Kesnand Road, and Jakat Naka. Our experts arrive fully equipped for gas leak repairs, shutoffs, and safety assurance."
+      }
+    },
+    yerwada: {
+      name: "Yerwada",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Trusted gas stove and pipeline repair services in Yerwada – a centrally located and densely populated residential-commercial area in Pune.",
+      heroDescription:
+        "💨 Fast & affordable gas repair services in Yerwada with 20-minute average response time! Serving apartments, chawls, shops & restaurants since 2014. Certified support for stove repair, pipeline installation, and gas leak emergencies.",
+      responseTime: "18–22 minutes",
+      customers: "850+",
+      pincode: "411006",
+      establishedYear: "2014",
+      rating: "4.8",
+      completedJobs: "1,100+",
+      landmarks: [
+        "Aga Khan Palace",
+        "Bund Garden Road",
+        "Yerwada Central Jail",
+        "Golf Course Road",
+        "Shastri Nagar",
+        "Nagar Road",
+        "Pratik Nagar"
+      ],
+      nearbyAreas: ["Kalyani Nagar", "Koregaon Park", "Viman Nagar", "Bund Garden", "Shivajinagar"],
+      localBusinesses: [
+        "Old Societies & Chawls",
+        "Shops & Restaurants",
+        "Apartment Complexes",
+        "Government Offices",
+        "Rental Accommodations"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "On-site gas stove and hob repair in Yerwada for all popular brands. Expert technicians available every day.",
+          features: [
+            "Low flame, leakage & knob issues fixed",
+            "Burner cleaning and alignment",
+            "Spare parts replacement with warranty",
+            "1-hour completion in most cases"
+          ]
+        },
+        {
+          title: "Pipeline Installation",
+          description:
+            "Complete gas pipeline fitting and extension work for homes, chawls, and small eateries in Yerwada.",
+          features: [
+            "Leak-proof copper or GI pipeline setups",
+            "Regulator and valve installation",
+            "Flexible pipe extension & modification",
+            "Safety certificate for society/landlord"
+          ]
+        },
+        {
+          title: "Emergency Gas Leak Repair",
+          description:
+            "24/7 urgent support for gas leakage complaints in Yerwada with rapid detection and secure shutdowns.",
+          features: [
+            "Emergency shutdown and valve replacement",
+            "Gas detector tool-based diagnosis",
+            "Complete repair & flame testing",
+            "Available even on weekends & holidays"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Rekha Bhujbal",
+          profession: "School Teacher",
+          company: "PMC School",
+          area: "Shastri Nagar",
+          rating: 5,
+          text: "The technician reached in 20 mins after I reported a gas smell. He found a leak in the pipe joint and fixed it quickly. Very professional and helpful.",
+          service: "Emergency Leak Repair",
+          date: "April 2025",
+          jobType: "Leak Fix"
+        },
+        {
+          name: "Aslam Sheikh",
+          profession: "Cafe Owner",
+          company: "Yerwada Tea House",
+          area: "Nagar Road",
+          rating: 5,
+          text: "Excellent work! They reinstalled the entire gas line for our cafe and added a safety valve. Clean and quick job. Fair pricing.",
+          service: "Pipeline Installation",
+          date: "February 2025",
+          jobType: "Commercial Kitchen"
+        },
+        {
+          name: "Jaya Iyer",
+          profession: "Freelancer",
+          company: "NA",
+          area: "Bund Garden Road",
+          rating: 5,
+          text: "Got my 4-burner hob repaired. They replaced the igniter and cleaned all burners. Stove is working like new now. Thank you!",
+          service: "Stove Repair",
+          date: "March 2025",
+          jobType: "Residential"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Clock",
+          title: "Quick Access in Central Pune",
+          description:
+            "Yerwada technicians available round the clock – quick reach via Nagar Road, Bund Garden & Kalyani Nagar.",
+          stats: "18–22 min response"
+        },
+        {
+          icon: "Wrench",
+          title: "Experienced in Dense Setups",
+          description:
+            "Skilled at handling old apartments and chawls with aging gas fittings and custom modifications.",
+          stats: "1,100+ jobs done"
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Trusted",
+          description:
+            "Trusted by 850+ homes & shops. All jobs come with safety check, official bill, and warranty.",
+          stats: "4.8★ customer reviews"
+        },
+        {
+          icon: "Users",
+          title: "Flexible for Rentals & Shops",
+          description:
+            "Special solutions for rental flats, tiffin centers, and commercial shops with same-day support.",
+          stats: "Since 2014"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Yerwada since 2014 with 1,100+ satisfied customers",
+          "Known for quick gas leak detection and emergency repairs",
+          "Pipeline setups for cafes, tiffin centers & old apartments",
+          "Affordable stove repair with original parts and warranty",
+          "Available daily including Sundays and public holidays",
+          "Experienced with small kitchens and congested areas"
+        ],
+        services: {
+          residential: [
+            "On-demand gas stove repair at home in Yerwada",
+            "Pipeline installations for chawls & societies",
+            "Flame setting and burner maintenance",
+            "Gas leak repair for PGs and rental units",
+            "Old kitchen pipeline renovation"
+          ],
+          commercial: [
+            "Gas line setup for tiffin centers and roadside eateries",
+            "Monthly safety inspection plans for shops",
+            "Pipeline repair for restaurants and mess kitchens",
+            "Certified reports for LPG compliance",
+            "Urgent leak repairs with 24/7 support"
+          ]
+        },
+        emergencyInfo:
+          "Gas Repair Wale provides 20-minute emergency service in Yerwada for stove leaks, gas smell complaints, and pipeline damage. Service available near Aga Khan Palace, Shastri Nagar, Nagar Road, and Bund Garden daily."
+      }
+    },
+    "bhekrai-nagar": {
+      name: "Bhekrai Nagar",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Affordable and quick gas repair services in Bhekrai Nagar – a fast-developing residential area near Hadapsar, Pune with growing demand for home and kitchen utilities.",
+      heroDescription:
+        "🛠️ Instant gas repair solutions in Bhekrai Nagar with 20-minute average response time! Trusted by over 600+ households and shops since 2014. We handle everything from gas stove repair to new pipeline setups with safety certification.",
+      responseTime: "18–22 minutes",
+      customers: "600+",
+      pincode: "412308",
+      establishedYear: "2014",
+      rating: "4.7",
+      completedJobs: "850+",
+      landmarks: [
+        "Bhekrai Nagar Bus Stop",
+        "Siddhivinayak Mandir",
+        "Bramhanand Nagar",
+        "Sai Mandir Road",
+        "Manjari Phata",
+        "Krushna Chowk",
+        "Vitthalwadi"
+      ],
+      nearbyAreas: ["Hadapsar", "Fursungi", "Manjari", "Saswad Road", "Kondhwa", "Phursungi Gaon"],
+      localBusinesses: [
+        "Residential Homes",
+        "Local Dhabas",
+        "Grocery Stores",
+        "Home Rentals",
+        "Roadside Eateries"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "Same-day repair for 2 to 4-burner gas stoves in Bhekrai Nagar – includes deep cleaning and part replacement.",
+          features: [
+            "Low flame, blocked burner & leak repairs",
+            "Valve and ignition system fixing",
+            "Knob, pipe & lighter replacements",
+            "Full testing and on-site demo"
+          ]
+        },
+        {
+          title: "Pipeline Installation",
+          description:
+            "Affordable gas pipeline installation and extension for homes, chawls, and shops in Bhekrai Nagar.",
+          features: [
+            "Copper/GI pipe setup with leak-proof fittings",
+            "Pressure testing and safety checks",
+            "Flexible pipe adjustments",
+            "Documentation for landlords or societies"
+          ]
+        },
+        {
+          title: "Emergency Leak Repair",
+          description:
+            "24/7 emergency support for gas leaks and pipe damage with fast technician dispatch across Bhekrai Nagar.",
+          features: [
+            "Leak diagnosis and gas shut-off",
+            "Immediate repairs and part replacement",
+            "Gas smell complaint handling",
+            "Service available all 7 days"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Rajesh Pawar",
+          profession: "Auto Driver",
+          company: "NA",
+          area: "Vitthalwadi",
+          rating: 5,
+          text: "My gas stove was leaking from the pipe joint. The technician came in 30 minutes and fixed it professionally. Cost was ₹450 only. Very helpful!",
+          service: "Gas Pipe Leak Repair",
+          date: "June 2025",
+          jobType: "Leak Repair"
+        },
+        {
+          name: "Sangeeta More",
+          profession: "Homemaker",
+          company: "NA",
+          area: "Sai Mandir Road",
+          rating: 5,
+          text: "They installed a new pipeline when we moved into our rented flat. Clean and neat work with a safety check. Good service!",
+          service: "Pipeline Installation",
+          date: "March 2025",
+          jobType: "New Setup"
+        },
+        {
+          name: "Naresh Gaikwad",
+          profession: "Pan Shop Owner",
+          company: "Shiv Tea Stall",
+          area: "Bramhanand Nagar",
+          rating: 5,
+          text: "I called them for emergency support at night for my tea stall. The pipe was leaking near the burner. They came and fixed it quickly. Great team!",
+          service: "Emergency Gas Repair",
+          date: "May 2025",
+          jobType: "Commercial Service"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Clock",
+          title: "Quick Service in Bhekrai Nagar",
+          description:
+            "Local technician network allows us to reach any part of Bhekrai Nagar within 20 minutes – even during peak hours.",
+          stats: "18–22 min reach"
+        },
+        {
+          icon: "Wrench",
+          title: "Experienced Technicians",
+          description:
+            "All staff are trained for small-space kitchens and older fittings common in Bhekrai Nagar chawls and homes.",
+          stats: "850+ jobs completed"
+        },
+        {
+          icon: "Shield",
+          title: "Certified & Reliable",
+          description:
+            "We provide certified safety checks and bills for every service, ideal for tenants and landlords alike.",
+          stats: "4.7★ reviews"
+        },
+        {
+          icon: "Users",
+          title: "Support for Small Businesses",
+          description:
+            "Special support plans for local tea stalls, dhabas, and snack centers in Bhekrai Nagar.",
+          stats: "Since 2014"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Bhekrai Nagar and nearby since 2014",
+          "More than 850 gas jobs completed successfully",
+          "Affordable service for daily wage workers and renters",
+          "Same-day pipeline fitting and safety inspections",
+          "24/7 emergency gas repair services available",
+          "Trusted by 600+ homes and shop owners"
+        ],
+        services: {
+          residential: [
+            "Gas stove repair and burner cleaning",
+            "New gas pipeline installation for rented flats",
+            "Gas safety checks before moving into new home",
+            "Emergency leakage fix for cylinder or stove",
+            "Pipe extension and flame adjustment"
+          ],
+          commercial: [
+            "Pipeline installation for tea stalls and hotels",
+            "Monthly maintenance plans for local eateries",
+            "Commercial gas safety audit",
+            "Emergency leak detection and shut-off",
+            "Flexible appointment slots even on weekends"
+          ]
+        },
+        emergencyInfo:
+          "Facing a gas leak or stove issue in Bhekrai Nagar? Our emergency team reaches you in 20 minutes – whether you're at Vitthalwadi, Sai Mandir Road, or Manjari Phata. Just call and get instant help!"
+      }
+    },
+    "nibm-road": {
+      name: "NIBM Road",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Trusted gas stove and pipeline repair services in NIBM Road – serving premium apartments, societies, and food businesses with fast, safe, and certified gas solutions.",
+      heroDescription:
+        "🔥 30-minute gas repair service across NIBM Road! We handle everything from gas stove issues to complete LPG pipeline setup. Trusted by 700+ homes and commercial kitchens.",
+      responseTime: "20–30 minutes",
+      customers: "700+",
+      pincode: "411048",
+      establishedYear: "2013",
+      rating: "4.8",
+      completedJobs: "950+",
+      landmarks: [
+        "Clover Hills",
+        "Cloud 9 Society",
+        "Dorabjee’s Mall",
+        "Bishop's School",
+        "Palace Orchards",
+        "Kausar Baugh",
+        "Salunke Vihar Junction"
+      ],
+      nearbyAreas: [
+        "Kondhwa",
+        "Undri",
+        "Mohammadwadi",
+        "Salunke Vihar",
+        "Wanowrie",
+        "Pisoli"
+      ],
+      localBusinesses: [
+        "Multi-cuisine Restaurants",
+        "Luxury Apartments",
+        "Service Apartments",
+        "Bakeries & Cloud Kitchens",
+        "Retail Food Chains"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "Instant repair for all types of 2 to 5 burner gas stoves used in homes and commercial kitchens around NIBM Road.",
+          features: [
+            "Fixing gas flow issues and flame adjustments",
+            "Auto-ignition and knob replacement",
+            "Brass burner and pipe maintenance",
+            "Full testing and safety verification"
+          ]
+        },
+        {
+          title: "Pipeline Installation",
+          description:
+            "Safe and hidden gas pipeline fitting for modular kitchens and high-rise societies across NIBM area.",
+          features: [
+            "Copper & steel pipeline work",
+            "Leak-proof installation with wall concealment",
+            "Pressure checks and safety certificates",
+            "Tenant-friendly and landlord approved"
+          ]
+        },
+        {
+          title: "Emergency Gas Leak Support",
+          description:
+            "Emergency technician visit within 30 minutes in case of any gas smell, leakage or stove damage.",
+          features: [
+            "Leak source detection and instant repair",
+            "Valve replacement and pipe inspection",
+            "Available 7 days a week",
+            "No hidden charges"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Aarti Naik",
+          profession: "Interior Designer",
+          area: "Cloud 9 Society",
+          rating: 5,
+          service: "Modular Kitchen Gas Setup",
+          date: "April 2025",
+          jobType: "Pipeline Installation",
+          text: "They installed concealed piping in my new modular kitchen with safety valves. Very clean work and reasonable pricing!"
+        },
+        {
+          name: "Imran Shaikh",
+          profession: "Restaurant Owner",
+          area: "Kausar Baugh",
+          rating: 5,
+          service: "Stove & Leak Repair",
+          date: "February 2025",
+          jobType: "Commercial Service",
+          text: "Fast response and professional repair. Fixed the gas leakage in our kitchen within 25 minutes. Life saver!"
+        },
+        {
+          name: "Rashmi Kulkarni",
+          profession: "Home Chef",
+          area: "Clover Hills",
+          rating: 5,
+          service: "Gas Stove Fix",
+          date: "June 2025",
+          jobType: "Residential",
+          text: "Their team resolved burner blockages and adjusted the flame perfectly. Ideal service for home kitchens!"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Shield",
+          title: "Certified Gas Safety Experts",
+          description:
+            "All services include leak testing and flame optimization, especially useful for premium societies and landlords.",
+          stats: "950+ safe setups"
+        },
+        {
+          icon: "Timer",
+          title: "Timely Service at Your Doorstep",
+          description:
+            "We cover the entire stretch from Cloud 9 to Salunke Vihar with an average reach time of 25 minutes.",
+          stats: "30 min reach"
+        },
+        {
+          icon: "Building",
+          title: "High-Rise & Luxury Society Friendly",
+          description:
+            "Expertise in installations for tower flats with modular setups and hidden pipelines.",
+          stats: "70+ buildings covered"
+        },
+        {
+          icon: "UserCheck",
+          title: "Trusted by Families & Businesses",
+          description:
+            "Our regular clients include restaurants, home chefs, cloud kitchens, and homemakers from the NIBM stretch.",
+          stats: "700+ happy clients"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving NIBM Road since 2013 with certified gas technicians",
+          "Same-day repair and installation for luxury and regular flats",
+          "Safe hidden pipelines for modular kitchen design",
+          "Emergency gas repair in Kausar Baugh and Clover Hills",
+          "Experienced team for restaurants and cloud kitchens",
+          "Flexible time slots and billing support for tenants"
+        ],
+        services: {
+          residential: [
+            "2–5 burner gas stove repair & servicing",
+            "Copper pipeline fitting for new kitchens",
+            "Leak-proof extensions and safety testing",
+            "Emergency gas leak shutdown service",
+            "Flame adjustment and low flame issues fix"
+          ],
+          commercial: [
+            "Restaurant-grade gas pipeline fitting",
+            "Duct and exhaust compatible stove repairs",
+            "Night-time emergency support for kitchens",
+            "Cloud kitchen monthly maintenance",
+            "Bulk safety audits for food businesses"
+          ]
+        },
+        emergencyInfo:
+          "Need emergency gas repair near Dorabjee’s Mall, Salunke Vihar, or Kausar Baugh? Our technicians reach you in 30 minutes with all required tools. Call now for immediate assistance!"
+      }
+    },
+    pisoli: {
+      name: "Pisoli",
+      city: "Pune",
+      state: "Maharashtra",
+      description:
+        "Reliable gas stove and LPG pipeline repair services in Pisoli – serving newly developed residential complexes, villas, and commercial kitchens with fast and certified support.",
+      heroDescription:
+        "⚡ Quick gas repair service in Pisoli with 30-minute response time! Trusted by 500+ homes and local food businesses. We specialize in gas stove repair, leak detection, and pipeline setup.",
+      responseTime: "25–30 minutes",
+      customers: "500+",
+      pincode: "411060",
+      establishedYear: "2015",
+      rating: "4.7",
+      completedJobs: "700+",
+      landmarks: [
+        "Mayfair Elixir",
+        "Kumar Palmcrest",
+        "Godrej Greens",
+        "Nyati Estate",
+        "Ganga Nakshatra",
+        "Ganga Fernhill",
+        "Pisoli Gaon"
+      ],
+      nearbyAreas: [
+        "Undri",
+        "Mohammadwadi",
+        "Kondhwa",
+        "NIBM Road",
+        "Handewadi",
+        "Yewalewadi"
+      ],
+      localBusinesses: [
+        "Residential Societies",
+        "Tiffin Centers",
+        "Commercial Kitchens",
+        "Service Apartments",
+        "Vegetarian Restaurants"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "Affordable and efficient gas stove repair service in Pisoli for 2–5 burner domestic and commercial stoves.",
+          features: [
+            "Gas leak detection and repair",
+            "Flame and ignition optimization",
+            "Knob, pipe, and burner replacement",
+            "Complete testing with warranty"
+          ]
+        },
+        {
+          title: "Pipeline Installation",
+          description:
+            "End-to-end LPG pipeline fitting for apartments, villas, and society kitchens across Pisoli.",
+          features: [
+            "New pipeline layout with copper or steel",
+            "Leak-proof joints and pressure checks",
+            "Wall concealment for modular kitchens",
+            "Documentation and safety certificate"
+          ]
+        },
+        {
+          title: "Gas Leak Emergency",
+          description:
+            "Emergency gas leak support available 7 days a week in Pisoli – 30-minute response guaranteed.",
+          features: [
+            "Leak source identification",
+            "Instant valve shutoff and part replacement",
+            "Gas sensor checks (optional)",
+            "On-spot safety clearance report"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Neha Raut",
+          profession: "HR Manager",
+          area: "Godrej Greens",
+          rating: 5,
+          service: "Stove & Ignition Repair",
+          date: "April 2025",
+          jobType: "Residential Repair",
+          text: "The technician fixed our auto-ignition issue in 20 minutes. Very professional and explained all the work before charging."
+        },
+        {
+          name: "Rajeev Malhotra",
+          profession: "Food Business Owner",
+          area: "Pisoli Gaon",
+          rating: 5,
+          service: "Leak Detection and Repair",
+          date: "March 2025",
+          jobType: "Emergency",
+          text: "They arrived in 25 minutes when we had a gas smell. Detected and fixed the issue safely. Great experience!"
+        },
+        {
+          name: "Vaishali Patil",
+          profession: "Home Baker",
+          area: "Kumar Palmcrest",
+          rating: 5,
+          service: "Pipeline Installation",
+          date: "May 2025",
+          jobType: "New Setup",
+          text: "Neat copper pipeline installation for our kitchen. No mess, and they gave us a safety certificate. Very happy!"
+        }
+      ],
+      advantages: [
+        {
+          icon: "UserCheck",
+          title: "Local Expert Technicians",
+          description:
+            "Our team knows every corner of Pisoli and reaches fast. Ideal for gated societies and villas.",
+          stats: "700+ jobs done"
+        },
+        {
+          icon: "Tool",
+          title: "Certified & Safe Service",
+          description:
+            "All repairs and installations are done under strict safety compliance with testing tools.",
+          stats: "4.7★ Google rating"
+        },
+        {
+          icon: "Home",
+          title: "Apartment-Friendly Installations",
+          description:
+            "We provide modular kitchen pipeline setups tailored to Pisoli's new societies.",
+          stats: "50+ societies served"
+        },
+        {
+          icon: "Clock",
+          title: "Fast Response",
+          description:
+            "We reach Godrej Greens, Palmcrest, Ganga Fernhill and more in just 25–30 minutes.",
+          stats: "30-min service"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Specialized in new housing societies like Godrej Greens and Ganga Fernhill",
+          "Certified pipeline installation with compliance documents",
+          "Fast repair team available even on weekends and holidays",
+          "Technicians trained in modular kitchen setups",
+          "Serving Pisoli since 2015 with over 700+ successful jobs",
+          "Emergency gas leak support with same-day resolution"
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair with replacement parts",
+            "Apartment-friendly copper pipeline installation",
+            "Gas leak checks for home safety",
+            "Service for auto-ignition issues",
+            "Annual Maintenance Plans (AMC)"
+          ],
+          commercial: [
+            "Restaurant kitchen gas line setup",
+            "Emergency leak fix and inspection",
+            "Pipe maintenance for tiffin businesses",
+            "Commercial gas pressure testing",
+            "Monthly safety audit plans"
+          ]
+        },
+        emergencyInfo:
+          "Gas Repair Wale provides fast emergency support in Pisoli including Godrej Greens, Kumar Palmcrest, and Pisoli Gaon. For urgent leak detection and repair, call now – response within 30 minutes!"
+      }
+    }
+
+
   },
   mumbai: {
     "borivali-east-west": {

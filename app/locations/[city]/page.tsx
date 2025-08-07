@@ -66,6 +66,367 @@ const cityData = {
         landmarks: ["Warje Bridge", "Bavdhan", "Residential areas"],
         specialties: ["Growing area", "New installations", "Community focus"],
       },
+      {
+        name: "Hadapsar",
+        slug: "hadapsar",
+        description: "Reliable gas repair and pipeline installation services for homes and businesses in Hadapsar",
+        responseTime: "18-22 minutes",
+        customers: "400+",
+        landmarks: ["Magarpatta City","Amanora Park Town","Sasane Nagar","Hadapsar Industrial Estate"],
+        specialties: ["High-rise residential societies","New construction pipeline setup","Certified safety inspections"],
+      },
+      {
+        name: "Kharadi",
+        slug: "kharadi",
+        description: "Expert gas stove repair and pipeline installation services for modern homes and offices in Kharadi",
+        responseTime: "18-22 minutes",
+        customers: "500+",
+        landmarks: ["EON IT Park","Zensar Technologies","World Trade Center","Riverdale","Gera Commerzone"],
+        specialties: ["IT hub & corporate kitchen support","Luxury society pipeline setup","Quick service for high-rise apartments"]
+      },
+      {
+        name: "Fursungi",
+        slug: "fursungi",
+        description: "Affordable and fast gas repair services for residential homes and new constructions in Fursungi",
+        responseTime: "20-25 minutes",
+        customers: "250+",
+        landmarks: [
+          "Fursungi Gaon",
+          "Solapur Road",
+          "Kondhwa-Fursungi Bypass",
+          "Aai Mata Mandir"
+        ],
+        specialties: [
+          "New construction pipeline installation",
+          "Society-level maintenance services",
+          "Emergency leak repair & inspection"
+        ]
+      },
+      {
+        name: "Undri",
+        slug: "undri",
+        description: "Gas repair and new pipeline installation services for premium societies and schools in Undri",
+        responseTime: "20-25 minutes",
+        customers: "300+",
+        landmarks: [
+          "Bizzbay Mall",
+          "Corinthians Club",
+          "Nyati County",
+          "Bishop’s School"
+        ],
+        specialties: [
+          "Society-wide maintenance",
+          "Pipeline installation in new flats",
+          "Emergency stove and gas leak repair"
+        ]
+      },
+      {
+        name: "Mohammadwadi",
+        slug: "mohammadwadi",
+        description: "Professional gas repair and pipeline extension services in Mohammadwadi’s growing residential zones",
+        responseTime: "20-25 minutes",
+        customers: "220+",
+        landmarks: [
+          "Destination Center",
+          "Raheja Vista",
+          "Nibm Road Extension",
+          "Kondhwa-Mohammadwadi Link Road"
+        ],
+        specialties: [
+          "Pipeline setup for new apartments",
+          "Cooktop and hob servicing",
+          "Leak detection and compliance checks"
+        ]
+      },
+      {
+        name: "Wanwadi",
+        slug: "wanwadi",
+        description: "Quick gas stove repair and safety inspections for societies and shops in Wanwadi",
+        responseTime: "18-22 minutes",
+        customers: "280+",
+        landmarks: [
+          "Salunke Vihar",
+          "Azad Nagar",
+          "Kausar Baugh",
+          "Clover Village"
+        ],
+        specialties: [
+          "Gas safety checks for old buildings",
+          "Annual maintenance for societies",
+          "Fast response for stove repairs"
+        ]
+      },
+      {
+        name: "Kondhwa",
+        slug: "kondhwa",
+        description: "Complete gas repair and certified pipeline services in the densely populated Kondhwa area",
+        responseTime: "20-25 minutes",
+        customers: "450+",
+        landmarks: [
+          "Kausar Baug",
+          "Kondhwa Khurd",
+          "Kondhwa Budruk",
+          "Meetha Nagar"
+        ],
+        specialties: [
+          "Society-level AMC services",
+          "Gas pipeline installation & repair",
+          "Flame, burner, and valve fixes"
+        ]
+      },
+      {
+        name: "Dhanori",
+        slug: "dhanori",
+        description: "Trusted gas repair and installation services for new housing projects and families in Dhanori",
+        responseTime: "20-25 minutes",
+        customers: "260+",
+        landmarks: [
+          "Goodwill Square",
+          "Dhanori-Lohegaon Road",
+          "Sathe Wasti",
+          "Kedari Nagar"
+        ],
+        specialties: [
+          "New home gas pipeline setup",
+          "Emergency leak inspections",
+          "Cooktop servicing and regulator fix"
+        ]
+      },
+      {
+        name: "Lohegaon",
+        slug: "lohegaon",
+        description: "Affordable and safe gas repair and safety inspection services for homes near Pune Airport & Lohegaon",
+        responseTime: "20-25 minutes",
+        customers: "230+",
+        landmarks: [
+          "Lohegaon Airport",
+          "Sant Nagar",
+          "Diamond Water Park",
+          "Lohegaon Bazar"
+        ],
+        specialties: [
+          "Same-day gas stove repair",
+          "Pipeline modifications for bungalows",
+          "Safety certification and compliance"
+        ]
+      },
+      {
+        name: "Viman Nagar",
+        slug: "viman-nagar",
+        description: "Premium gas repair and installation support for high-rise societies and cafes in Viman Nagar",
+        responseTime: "18-22 minutes",
+        customers: "500+",
+        landmarks: [
+          "Phoenix Marketcity",
+          "Symbiosis College",
+          "Konark Campus",
+          "Airport Road"
+        ],
+        specialties: [
+          "Certified gas pipeline setup",
+          "Stove repair for homes and cafes",
+          "Fast service for high-rise buildings"
+        ]
+      },
+      {
+        name: "Vishrantwadi",
+        slug: "vishrantwadi",
+        description: "Quick and professional gas repair and stove servicing in Vishrantwadi’s residential societies",
+        responseTime: "20-25 minutes",
+        customers: "240+",
+        landmarks: [
+          "Vishrantwadi Chowk",
+          "Airport Road",
+          "Pratik Nagar",
+          "Mohanwadi"
+        ],
+        specialties: [
+          "Same-day stove repair service",
+          "Pipeline installations in flats",
+          "Leak detection & safety audits"
+        ]
+      },
+      {
+        name: "Koregaon Park",
+        slug: "koregaon-park",
+        description: "Premium gas repair and commercial kitchen maintenance in Koregaon Park",
+        responseTime: "18-22 minutes",
+        customers: "300+",
+        landmarks: [
+          "Lane 5 & Lane 7",
+          "Osho Ashram",
+          "Westin Hotel",
+          "North Main Road"
+        ],
+        specialties: [
+          "Restaurant gas pipeline support",
+          "Cooktop & hob repairs for villas",
+          "Compliance certificates for businesses"
+        ]
+      },
+      {
+        name: "Keshav Nagar",
+        slug: "keshav-nagar",
+        description: "Certified gas pipeline and repair services in the newly developed Keshav Nagar area",
+        responseTime: "20-25 minutes",
+        customers: "280+",
+        landmarks: [
+          "Godrej Infinity",
+          "Panchshil Towers",
+          "Amanora Neo Towers",
+          "Shivanta Residency"
+        ],
+        specialties: [
+          "New society pipeline installations",
+          "Safety inspections for new buyers",
+          "AMC plans for gated communities"
+        ]
+      },
+      {
+        name: "Mundhwa",
+        slug: "mundhwa",
+        description: "Reliable gas repair and safety services for modern townships and societies in Mundhwa",
+        responseTime: "20-25 minutes",
+        customers: "260+",
+        landmarks: [
+          "The Lexicon School",
+          "Kapila Matrix",
+          "BT Kawade Road",
+          "Mundhwa Road"
+        ],
+        specialties: [
+          "New construction pipeline setup",
+          "Society-level annual maintenance",
+          "Fast emergency repair services"
+        ]
+      },
+      {
+        name: "Magarpatta City",
+        slug: "magarpatta-city",
+        description: "Expert gas repair and compliance services inside the gated Magarpatta City township",
+        responseTime: "18-22 minutes",
+        customers: "350+",
+        landmarks: [
+          "Seasons Mall",
+          "Cybercity",
+          "West Gate",
+          "Destination Center"
+        ],
+        specialties: [
+          "Society-approved technicians",
+          "Stove servicing and pipeline setup",
+          "Certified inspections with documentation"
+        ]
+      },
+      {
+        name: "Amanora Park Town",
+        slug: "amanora-park-town",
+        description: "Trusted gas stove repair and pipeline services for Amanora Park Town’s premium residents",
+        responseTime: "18-22 minutes",
+        customers: "320+",
+        landmarks: [
+          "Amanora Mall",
+          "Aspire Towers",
+          "Neo Towers",
+          "Town Center"
+        ],
+        specialties: [
+          "Luxury apartment stove repair",
+          "Pipeline connection with safety check",
+          "Quick service with community compliance"
+        ]
+      },
+      {
+        name: "Wagholi",
+        slug: "wagholi",
+        description: "Affordable and prompt gas repair services in the fast-developing Wagholi area",
+        responseTime: "20-25 minutes",
+        customers: "300+",
+        landmarks: [
+          "Wagholi Gaon",
+          "Ivy Estate",
+          "Kesnand Road",
+          "Bakori Road"
+        ],
+        specialties: [
+          "Gas pipeline setup in new flats",
+          "Society-level service contracts",
+          "Stove & regulator repair support"
+        ]
+      },
+      {
+        name: "Yerwada",
+        slug: "yerwada",
+        description: "Quick-response gas stove repair and kitchen safety services in Yerwada",
+        responseTime: "18-22 minutes",
+        customers: "270+",
+        landmarks: [
+          "Yerwada Jail",
+          "Golf Course Road",
+          "Shastri Nagar",
+          "Aga Khan Palace"
+        ],
+        specialties: [
+          "Cooktop repair and part replacement",
+          "Gas line modifications for homes",
+          "24/7 emergency support available"
+        ]
+      },
+      {
+        name: "Bhekrai Nagar",
+        slug: "bhekrai-nagar",
+        description: "Gas repair services for affordable homes and growing societies in Bhekrai Nagar",
+        responseTime: "20-25 minutes",
+        customers: "180+",
+        landmarks: [
+          "Shewalewadi",
+          "Pune-Solapur Road",
+          "PMC Boundary",
+          "Jadhavwadi"
+        ],
+        specialties: [
+          "Same-day service in budget apartments",
+          "Gas leak detection & safety audits",
+          "Stove, regulator, and pipe servicing"
+        ]
+      },
+      {
+        name: "NIBM Road",
+        slug: "nibm-road",
+        description: "Certified gas repair and installation services in premium townships around NIBM Road",
+        responseTime: "20-25 minutes",
+        customers: "350+",
+        landmarks: [
+          "Clover Hills",
+          "Bramha Suncity",
+          "Dorabjee Paradise",
+          "Salunkhe Vihar"
+        ],
+        specialties: [
+          "High-rise society pipeline setups",
+          "Certified safety checks",
+          "Annual gas maintenance contracts"
+        ]
+      },
+      {
+        name: "Pisoli",
+        slug: "pisoli",
+        description: "Reliable gas stove and pipeline repair solutions for new apartments and villas in Pisoli",
+        responseTime: "20-25 minutes",
+        customers: "200+",
+        landmarks: [
+          "Pisoli Gaon",
+          "Majestique Magnum",
+          "Cloud 9 Society",
+          "Undri-Pisoli Road"
+        ],
+        specialties: [
+          "New construction gas line setup",
+          "Stove & hob repair with warranty",
+          "Gas safety inspections for families"
+        ]
+      },
+
     ],
     totalCustomers: "3000+",
     avgResponseTime: "20-25 minutes",
