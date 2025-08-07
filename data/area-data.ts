@@ -4484,481 +4484,480 @@ export const areaData = {
   },
   mumbai: {
     "borivali-east-west": {
-      name: "Borivali East West",
-      city: "Mumbai",
-      state: "Maharastra",
-      description:
-        "Premium gas services for IT professionals and families in Borivali East West - Mumbai's Silicon Valley with corporate-grade solutions",
-      heroDescription:
-        "🔥 Expert gas repair services in Borivali East West with 20-minute response time! Serving 600+ customers since 2016. Specialized for HITEC City professionals and premium residential complexes with tech-savvy solutions.",
-      responseTime: "20-25 minutes",
-      customers: "600+",
-      pincode: "500032",
-      establishedYear: "2016",
-      rating: "4.9",
-      completedJobs: "1500+",
-      landmarks: [
-        "HITEC City",
-        "Financial District",
-        "Nanakramguda",
-        "Kokapet",
-        "Manikonda",
-        "Tellapur",
-        "Gopanpally",
-        "Borivali East West Stadium",
+      "name": "Borivali East West",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "description": "Premium gas services for families, professionals, and restaurants in Borivali East West — Mumbai’s fast-growing residential and commercial hub.",
+      "heroDescription": "🔥 Expert gas repair services in Borivali East West with 20-minute response time! Serving 600+ customers since 2016. Trusted by local residents, apartment societies, and restaurants for reliable, safe, and efficient gas solutions.",
+      "responseTime": "20-25 minutes",
+      "customers": "600+",
+      "pincode": "400066",
+      "establishedYear": "2016",
+      "rating": "4.9",
+      "completedJobs": "1500+",
+      "landmarks": [
+        "Borivali Railway Station",
+        "Sanjay Gandhi National Park",
+        "Shimpoli Road",
+        "IC Colony",
+        "Don Bosco School",
+        "Ganjawala Market",
+        "Eskay Resort",
+        "Sailee College"
       ],
-      nearbyAreas: ["Kandivali East West", "Malda East West", "Manikonda", "Nanakramguda", "Shaikpet", "Tolichowki"],
-      localBusinesses: ["IT Companies", "Tech Parks", "Premium Restaurants", "Luxury Apartments", "Corporate Offices"],
-      specialServices: [
-        {
-          title: "Gas Stove Repair",
-          description:
-            "Professional repair and maintenance for all types of gas stoves and cooktops with premium service standards for tech professionals",
-          features: [
-            "Expert burner repair and maintenance",
-            "Advanced ignition system fixing",
-            "Precision gas flow adjustment",
-            "Comprehensive servicing with premium warranty",
-          ],
-        },
-        {
-          title: "Gas Pipeline Services",
-          description:
-            "Expert gas pipeline installation and maintenance for homes and offices with corporate-grade quality and safety standards",
-          features: [
-            "Professional new installations",
-            "Advanced leak detection technology",
-            "Pipeline extensions and modifications",
-            "Complete safety certification and compliance",
-          ],
-        },
-        {
-          title: "Emergency Gas Services",
-          description:
-            "24/7 emergency services for gas leaks and urgent repairs in Borivali East West with priority response for IT professionals",
-          features: [
-            "Immediate emergency response",
-            "Complete safety assessment",
-            "Professional emergency repairs",
-            "Full problem resolution with detailed follow-up",
-          ],
-        },
+      "nearbyAreas": [
+        "Kandivali East West",
+        "Dahisar East West",
+        "Malad East West",
+        "IC Colony",
+        "Shimpoli",
+        "Chikuwadi"
       ],
-      testimonials: [
-        {
-          name: "Srinivas Reddy",
-          profession: "Senior Software Engineer",
-          company: "Microsoft",
-          area: "HITEC City",
-          rating: 5,
-          text: "Outstanding service! We moved to a new apartment in Financial District and needed complete gas pipeline installation from scratch. Gas Repaire Wale team surveyed our 3BHK apartment, designed optimal pipeline layout for modular kitchen, installed concealed pipes with proper ventilation, connected to premium imported gas stove, and provided all safety certifications. The project took 3 days, cost ₹4500 including materials, and they coordinated with apartment management for approvals. Professional team with proper safety measures - perfect for tech professionals in Borivali East West!",
-          service: "Gas Pipeline Installation",
-          date: "December 2024",
-          jobType: "New Installation",
-        },
-        {
-          name: "Kavitha Nair",
-          profession: "Product Manager",
-          company: "Amazon",
-          area: "Nanakramguda",
-          rating: 5,
-          text: "Quick response for gas stove repair on a Sunday when I was hosting a dinner party. My 4-burner gas stove's ignition system completely failed and one burner had very low flame. Called Gas Repaire Wale emergency number at 2 PM and technician Rajesh arrived by 2:30 PM. He quickly diagnosed the issues - faulty ignition electrodes and blocked burner jets. Carried all necessary parts, completed repair in 1 hour, and tested everything thoroughly. Charged ₹950 including premium parts and Sunday service. Excellent customer service and they understand the needs of working professionals. Highly recommended!",
-          service: "Gas Stove Repair",
-          date: "November 2024",
-          jobType: "Weekend Service",
-        },
-        {
-          name: "Rajesh Kumar",
-          profession: "Restaurant Owner",
-          company: "Spice Garden",
-          area: "Borivali East West Main Road",
-          rating: 5,
-          text: "We run a premium restaurant in Borivali East West serving IT professionals and use Gas Repaire Wale for our commercial kitchen maintenance. They service our 6-burner commercial gas system monthly, including deep cleaning, pipeline inspection, safety valve testing, and burner calibration. Their team understands commercial requirements very well - they work during our closed hours, always carry commercial-grade spare parts, and provide detailed service reports. We have annual contract at ₹15000 which includes all maintenance, emergency support, and compliance certificates. Great support for businesses in Borivali East West!",
-          service: "Commercial Kitchen Maintenance",
-          date: "January 2025",
-          jobType: "Commercial Service",
-        },
+      "localBusinesses": [
+        "Restaurants",
+        "Residential Apartments",
+        "Local Bakeries",
+        "Tiffin Services",
+        "Coaching Classes"
       ],
-      advantages: [
+      "specialServices": [
         {
-          icon: "Award",
-          title: "HITEC City Experts",
-          description:
-            "Specialized services for Borivali East West's IT corridor with corporate-grade solutions, tech-savvy approach, and understanding of professional requirements since 2016.",
-          stats: "600+ tech customers",
+          "title": "Gas Stove Repair",
+          "description": "Expert repair and servicing for all types of residential and commercial gas stoves in Borivali.",
+          "features": [
+            "Burner and ignition system repairs",
+            "Jet and valve cleaning",
+            "Flame adjustment and part replacements",
+            "Genuine spare parts with service warranty"
+          ]
         },
         {
-          icon: "Clock",
-          title: "Tech City Speed",
-          description:
-            "Guaranteed 20-25 minute response time across HITEC City, Financial District, and surrounding tech areas with priority support for professionals.",
-          stats: "20-min response",
+          "title": "Gas Pipeline Services",
+          "description": "Safe and certified gas pipeline installation and maintenance for flats, societies, and businesses.",
+          "features": [
+            "New installations with safety certification",
+            "Leak detection and pipe testing",
+            "Pipeline relocation or extension",
+            "Regulatory compliance and approval assistance"
+          ]
         },
         {
-          icon: "Shield",
-          title: "Premium Standards",
-          description:
-            "High-quality service standards for Borivali East West's premium residential and commercial requirements with corporate-grade safety protocols.",
-          stats: "4.9★ rating",
-        },
-        {
-          icon: "Users",
-          title: "Community Leader",
-          description:
-            "Most trusted gas service in Borivali East West with 600+ customers, 1500+ successful completions, and preferred by major IT companies.",
-          stats: "1500+ jobs",
-        },
+          "title": "Emergency Gas Services",
+          "description": "24/7 emergency support for gas leaks and urgent repairs in the Borivali East West area.",
+          "features": [
+            "Immediate technician dispatch",
+            "On-site safety checks",
+            "Emergency pipe and stove repairs",
+            "Follow-up safety inspections"
+          ]
+        }
       ],
-      seoContent: {
-        whyChoose: [
-          "IT Corridor Expertise: Specialized services for Borivali East West's tech professionals and corporate offices since 2016 with tech-savvy solutions",
-          "Quick Response: Guaranteed 20-25 minute response time across HITEC City, Financial District, and tech parks with priority support",
-          "Corporate Solutions: Professional services for IT companies, startups, corporate cafeterias, and business establishments",
-          "Premium Service: High-end solutions for Borivali East West's luxury apartments, gated communities, and upscale residential complexes",
-          "Tech-Savvy Approach: Digital booking, online payments, modern service delivery methods, and tech-friendly customer support",
-          "Local Knowledge: Deep understanding of Borivali East West's unique residential and commercial landscape with IT industry focus",
+      "testimonials": [
+        {
+          "name": "Kunal Mehta",
+          "profession": "Finance Consultant",
+          "company": "HDFC Bank",
+          "area": "Shimpoli Road",
+          "rating": 5,
+          "text": "Quick response during a gas leak in our apartment. Technician came within 30 mins, found the issue with old joints, replaced them safely, and gave us a compliance certificate. Very professional!",
+          "service": "Gas Leak Repair",
+          "date": "March 2025",
+          "jobType": "Emergency Service"
+        },
+        {
+          "name": "Ritika Shah",
+          "profession": "Homemaker",
+          "company": "-",
+          "area": "IC Colony",
+          "rating": 5,
+          "text": "My 3-burner stove had low flame issues. The technician fixed the jets, replaced faulty knobs, and cleaned everything. Cost was ₹800. Excellent service at home!",
+          "service": "Stove Repair",
+          "date": "February 2025",
+          "jobType": "Home Service"
+        },
+        {
+          "name": "Sunil Dsouza",
+          "profession": "Restaurant Owner",
+          "company": "Spice Delight",
+          "area": "Borivali West",
+          "rating": 5,
+          "text": "We use their AMC service for our restaurant kitchen — monthly checkups, deep burner cleaning, and pipeline inspection. Very helpful team and reliable even during rush hours.",
+          "service": "Commercial AMC",
+          "date": "January 2025",
+          "jobType": "Commercial Service"
+        }
+      ],
+      "advantages": [
+        {
+          "icon": "Award",
+          "title": "Local Expertise",
+          "description": "Deep experience in Borivali’s residential and commercial sectors with 1500+ successful jobs completed.",
+          "stats": "1500+ jobs"
+        },
+        {
+          "icon": "Clock",
+          "title": "Fast Response",
+          "description": "Average technician arrival time of 20–25 minutes in Borivali and nearby areas.",
+          "stats": "20-min response"
+        },
+        {
+          "icon": "Shield",
+          "title": "Certified Safety",
+          "description": "Services delivered with proper safety certification, leak checks, and compliance protocols.",
+          "stats": "4.9★ rating"
+        },
+        {
+          "icon": "Users",
+          "title": "Trusted by Residents",
+          "description": "Preferred gas service provider in Borivali East West with 600+ loyal residential and commercial clients.",
+          "stats": "600+ clients"
+        }
+      ],
+      "seoContent": {
+        "whyChoose": [
+          "Certified technicians with experience in Mumbai suburbs since 2016",
+          "20–25 minute arrival across Borivali, Dahisar, and Kandivali",
+          "Specialists in high-rise apartment pipeline installation",
+          "Preferred gas service for tiffin centers and restaurants",
+          "Transparent pricing and digital payments accepted",
+          "Fully insured and government-compliant services"
         ],
-        services: {
-          residential: [
-            "Luxury apartment gas installations with safety certification",
-            "Premium gas stove repair and maintenance with genuine parts",
-            "Gated community gas services with bulk maintenance contracts",
-            "High-end kitchen gas line setup with concealed piping",
-            "Smart home gas appliance integration and automation",
-            "Concierge-level customer service with dedicated account management",
+        "services": {
+          "residential": [
+            "Flat pipeline setup with hidden routing",
+            "2 to 4 burner gas stove repairs with part replacement",
+            "Kitchen upgrades with smart ignition options",
+            "Gated society maintenance contracts",
+            "Post-installation safety audits",
+            "Flexible scheduling including weekends"
           ],
-          commercial: [
-            "IT company cafeteria gas setup with compliance certificates",
-            "Corporate office kitchen services with priority support",
-            "Tech park restaurant installations with safety audits",
-            "Startup office gas solutions with flexible contracts",
-            "Commercial building maintenance with corporate standards",
-            "Corporate compliance and safety audits with detailed documentation",
-          ],
+          "commercial": [
+            "Restaurant kitchen gas system maintenance",
+            "Bakery pipeline setup with safety controls",
+            "Tiffin center annual maintenance contracts",
+            "Fast service during non-working hours",
+            "Multiple unit gas line extension",
+            "Compliance-ready documentation for licenses"
+          ]
         },
-        emergencyInfo:
-          "24/7 emergency gas services in Borivali East West with 20-minute response guarantee. Serving HITEC City, Financial District, and all major tech areas with immediate professional assistance for gas emergencies, safety assessments, and comprehensive problem resolution.",
-      },
+        "emergencyInfo": "Available 24/7 for emergency gas leak repairs and urgent stove/pipeline service in Borivali East West with priority technician dispatch and full safety checks."
+      }
     },
     "kandivali-east-west": {
       name: "Kandivali East West",
       city: "Mumbai",
-      state: "Maharastra",
+      state: "Maharashtra",
       description:
-        "Complete gas repair and maintenance services in Kandivali East West - Heart of Cyberabad's tech ecosystem with comprehensive commercial solutions",
+        "Fast and professional gas stove and pipeline services in Kandivali East & West – covering major societies, shops, and restaurants across Akurli Road, Mahavir Nagar, Thakur Complex, and more.",
       heroDescription:
-        "🔥 Professional gas services in Kandivali East West with 25-minute response time! Trusted by 450+ customers since 2016. Expert solutions for Cyberabad's tech hub and premium residential areas with specialized commercial expertise.",
+        "🔥 Expert gas repair and installation in Kandivali East & West! Trusted by 450+ customers since 2016. Serving flats, housing societies, and restaurants across Mahavir Nagar, Poinsur, and Akurli with 25-minute average response time.",
       responseTime: "25-30 minutes",
       customers: "450+",
-      pincode: "500081",
+      pincode: "400067",
       establishedYear: "2016",
       rating: "4.8",
       completedJobs: "1100+",
       landmarks: [
-        "Cyber Towers",
-        "Inorbit Mall",
-        "Durgam Cheruvu",
-        "Shilparamam",
-        "Cyber Gateway",
-        "Raheja IT Park",
-        "Ayyappa Society",
-        "Mindspace",
+        "Kandivali Railway Station",
+        "Mahavir Nagar",
+        "Akurli Road",
+        "Thakur Complex",
+        "Poinsur Gymkhana",
+        "Lokhandwala Township",
+        "Kora Kendra",
+        "Growel's 101 Mall"
       ],
-      nearbyAreas: ["Borivali East West", "Malda East West", "Jubilee Hills", "Banjara Hills", "Goregaon East West", "Ram Mandir East"],
-      localBusinesses: ["IT Offices", "Shopping Malls", "Fine Dining Restaurants", "Corporate Parks", "Luxury Hotels"],
+      nearbyAreas: ["Borivali East West", "Malad East West", "Goregaon East West", "Dahisar", "Charkop"],
+      localBusinesses: [
+        "Apartment Societies",
+        "Local Restaurants",
+        "Retail Stores",
+        "Food Delivery Kitchens",
+        "Repair Shops"
+      ],
       specialServices: [
         {
           title: "Gas Stove Repair",
           description:
-            "Professional repair and maintenance for all types of gas stoves and cooktops with corporate-grade service standards",
+            "Expert repair for all types of gas stoves – from single to four-burner units, including auto-ignition models.",
           features: [
-            "Expert burner repair and maintenance",
-            "Advanced ignition system fixing",
-            "Precision gas flow adjustment",
-            "Comprehensive servicing with extended warranty",
-          ],
+            "Burner cleaning & jet repair",
+            "Ignition system replacement",
+            "Gas leakage detection",
+            "Parts replacement with warranty"
+          ]
         },
         {
           title: "Gas Pipeline Services",
           description:
-            "Expert gas pipeline installation and maintenance for homes and offices with commercial-grade quality standards",
+            "Safe and certified gas pipeline installation for kitchens, homes, restaurants, and small shops in Kandivali.",
           features: [
-            "Professional new installations",
-            "Advanced leak detection technology",
-            "Pipeline extensions and modifications",
-            "Complete safety certification and compliance",
-          ],
+            "ISI-grade pipe fittings",
+            "Leak detection & safety testing",
+            "Pipeline extensions & rerouting",
+            "Society-level installation"
+          ]
         },
         {
           title: "Emergency Gas Services",
           description:
-            "24/7 emergency services for gas leaks and urgent repairs in Kandivali East West with priority response for commercial establishments",
+            "24/7 emergency gas repair and leakage support in Kandivali East & West with 25-minute response guarantee.",
           features: [
-            "Immediate emergency response",
-            "Complete safety assessment",
-            "Professional emergency repairs",
-            "Full problem resolution with detailed documentation",
-          ],
-        },
+            "Rapid leak resolution",
+            "On-spot inspection & repair",
+            "Emergency shutdown & restart",
+            "Full safety compliance ensured"
+          ]
+        }
       ],
       testimonials: [
         {
-          name: "Arjun Mehta",
-          profession: "Tech Lead",
-          company: "Google",
-          area: "Cyber Towers",
+          name: "Anjali Sharma",
+          profession: "Homemaker",
+          company: "",
+          area: "Mahavir Nagar",
           rating: 5,
-          text: "Excellent corporate service for our office cafeteria serving 150+ employees. Gas Repaire Wale handled the entire gas setup professionally - installed 10-burner commercial gas system, main pipeline from road connection, distribution network, individual cooking stations, and comprehensive safety systems. They coordinated with building management, provided all compliance certificates including fire department clearance, gas safety audit, and environmental clearance. The project was completed in 1 week with minimal disruption to office operations. Perfect for corporate requirements in Kandivali East West IT parks!",
-          service: "Corporate Gas Setup",
-          date: "December 2024",
-          jobType: "Corporate Service",
+          text: "We had a gas leak in our kitchen at night. Gas Repair Wale arrived within 25 minutes, quickly found the leak near the regulator, and replaced the valve. Very polite and efficient team. Highly recommended!",
+          service: "Emergency Gas Leak Fix",
+          date: "April 2025",
+          jobType: "Emergency Repair"
         },
         {
-          name: "Deepika Singh",
-          profession: "Marketing Manager",
-          company: "Facebook",
-          area: "Raheja IT Park",
+          name: "Rajiv Deshmukh",
+          profession: "Café Owner",
+          company: "Thakur Coffee Stop",
+          area: "Thakur Complex",
           rating: 5,
-          text: "Quick and professional service for gas stove repair at our apartment. My premium 5-burner gas stove developed multiple issues - ignition failure, uneven flame distribution, and gas smell. Being a working professional with busy schedule, I needed flexible timing. Gas Repaire Wale accommodated evening appointment, arrived at 7 PM as scheduled, diagnosed all issues systematically, and explained each problem clearly. They replaced faulty ignition system, cleaned all burners, adjusted gas flow, and tested everything thoroughly. Charged ₹1100 including premium parts and provided 1-year warranty. Great customer service and fair pricing!",
-          service: "Gas Stove Repair",
-          date: "November 2024",
-          jobType: "Professional Service",
+          text: "They installed a new gas line for my café kitchen and connected it to our commercial stove. Everything was done as per safety rules, and they gave a completion certificate. Hassle-free and on-time work.",
+          service: "Pipeline Installation",
+          date: "February 2025",
+          jobType: "Commercial Setup"
         },
         {
-          name: "Mohammed Ali",
-          profession: "Restaurant Manager",
-          company: "Inorbit Food Court",
-          area: "Inorbit Mall",
+          name: "Poonam Mehta",
+          profession: "Freelancer",
+          company: "",
+          area: "Akurli Road",
           rating: 5,
-          text: "We rely on Gas Repaire Wale for our food court's gas maintenance covering 8 restaurant outlets. They provide comprehensive monthly service including all gas stoves, pipeline inspections, safety valve testing, burner cleaning, and emergency support. Their team understands commercial food court requirements - they work during mall closed hours, coordinate with multiple vendors, maintain detailed service logs, and provide mall management with safety certificates. We have annual contract at ₹25000 covering all outlets. Very reliable for commercial establishments in Kandivali East West. Highly recommended!",
-          service: "Commercial Maintenance",
+          text: "My 3-burner stove was giving low flame and ignition issues. The technician cleaned the burners, replaced the spark unit, and it works like new now. Reasonable price and 1-year service guarantee.",
+          service: "Stove Repair",
           date: "January 2025",
-          jobType: "Food Court Service",
-        },
+          jobType: "Stove Maintenance"
+        }
       ],
       advantages: [
         {
-          icon: "Building",
-          title: "Cyberabad Specialists",
-          description:
-            "Expert services for Kandivali East West's corporate offices, IT parks, and commercial establishments with deep understanding of business requirements.",
-          stats: "450+ corporate clients",
-        },
-        {
           icon: "Clock",
-          title: "Reliable Response",
+          title: "Quick Local Support",
           description:
-            "Guaranteed 25-30 minute response time across Kandivali East West including Cyber Towers, IT parks, and commercial complexes with priority support.",
-          stats: "25-min response",
+            "We reach homes and shops in Kandivali within 25-30 minutes – from Poinsur to Lokhandwala Township.",
+          stats: "25-min response"
         },
         {
-          icon: "Star",
-          title: "Quality Assured",
+          icon: "Shield",
+          title: "Certified Technicians",
           description:
-            "Consistent quality service for Kandivali East West's diverse residential and commercial needs with corporate-grade standards and protocols.",
-          stats: "4.8★ rating",
+            "Experienced gas repair team trained in safety standards and residential & commercial installations.",
+          stats: "4.8★ rating"
         },
         {
           icon: "Users",
-          title: "Trusted Partner",
+          title: "Trusted in Kandivali",
           description:
-            "Preferred gas service provider in Kandivali East West with 450+ customers, 1100+ completed jobs, and trusted by major corporations.",
-          stats: "1100+ completions",
+            "Over 1100 gas repair and installation jobs completed for 450+ happy customers in Kandivali.",
+          stats: "1100+ jobs done"
         },
+        {
+          icon: "Wrench",
+          title: "All-in-One Services",
+          description:
+            "From pipeline setup to stove repair and emergency support – complete gas solutions under one roof.",
+          stats: "One-stop service"
+        }
       ],
       seoContent: {
         whyChoose: [
-          "Cyberabad Expertise: Specialized services for Kandivali East West's IT corridor and corporate establishments since 2016 with business-focused solutions",
-          "Reliable Response: Guaranteed 25-30 minute response time across Cyber Towers, IT parks, and residential areas with priority support",
-          "Corporate Focus: Professional solutions for IT companies, malls, commercial establishments, and business complexes",
-          "Quality Service: Consistent high-quality standards for Kandivali East West's diverse service requirements with corporate-grade protocols",
-          "Commercial Expertise: Deep experience with restaurants, food courts, retail establishments, and commercial facilities",
-          "Flexible Solutions: Adaptable services for both residential and commercial gas requirements with customized contracts",
+          "Local presence in Kandivali East & West – near Akurli, Mahavir Nagar, and Thakur Complex.",
+          "25-minute guaranteed response time for both residential and commercial customers.",
+          "Certified technicians with 9+ years of experience in Mumbai gas systems.",
+          "Specialists in both ISI-approved home pipelines and commercial kitchen setups.",
+          "Trusted by 450+ families and local businesses with 1100+ completed jobs.",
+          "Affordable, reliable, and safe gas services with free consultation."
         ],
         services: {
           residential: [
-            "Apartment gas stove repair and maintenance with genuine parts",
-            "Residential gas pipeline installation with safety certification",
-            "Kitchen appliance servicing with warranty coverage",
-            "Society maintenance contracts with regular inspections",
-            "Home gas safety inspections with compliance certificates",
-            "24/7 emergency residential gas services with immediate response",
+            "Gas pipeline installation for apartments and standalone homes",
+            "Gas stove burner repair and ignition servicing",
+            "Leak detection and flame adjustment",
+            "New kitchen gas setup with copper or PVC pipe fittings",
+            "Society-level AMC and pipeline audits",
+            "Night-time emergency stove repair"
           ],
           commercial: [
-            "IT office cafeteria gas setup with compliance certificates",
-            "Shopping mall food court services with bulk maintenance",
-            "Restaurant kitchen installations with safety audits",
-            "Corporate building maintenance with priority support",
-            "Retail chain gas solutions with standardized service",
-            "Commercial compliance services with detailed documentation",
-          ],
+            "Gas line and stove setup for cafés and cloud kitchens",
+            "Periodic safety inspections for restaurants",
+            "Burner repair for 3-8 burner commercial stoves",
+            "Pipeline installation for food outlets near Growel's 101 Mall",
+            "Annual maintenance contracts with GST invoice",
+            "Emergency service for restaurant gas issues"
+          ]
         },
         emergencyInfo:
-          "Emergency gas services in Kandivali East West available 24/7 with 25-minute response time. Covering Cyber Towers, Inorbit Mall, IT parks, and all residential areas with immediate professional emergency assistance, safety assessments, and comprehensive problem resolution.",
-      },
+          "Need emergency gas service in Kandivali East or West? We’re available 24/7 with 25-minute response time. Call us for immediate gas leak detection, flame failure, stove issues, or pipeline support. We cover Mahavir Nagar, Poinsur, Thakur Village, Akurli Road, and more with trained technicians and full safety compliance."
+      }
     },
-    "malda-east-west": {
-      name: "Malda East West",
+    "malad-east-west": {
+      name: "Malad East West",
       city: "Mumbai",
-      state: "Maharastra",
-      description:
-        "Professional gas repair services in Malda East West - Mumbai's thriving residential and IT hub with specialized development services",
-      heroDescription:
-        "🔥 Expert gas repair services in Malda East West with 22-minute response time! Serving 400+ customers since 2017. Specialized solutions for Malda East West's IT professionals and growing residential communities with modern service approach.",
+      state: "Maharashtra",
+      description: "Reliable gas repair services in Malad East & West – Mumbai’s diverse residential and business hub, featuring modern societies, tech parks, and coastal charm.",
+      heroDescription: "🔥 Fast gas repair in Malad East & West – 22-minute response time! Trusted by 400+ families and businesses since 2017. Expert stove and pipeline services for modern homes and busy professionals.",
       responseTime: "22-28 minutes",
       customers: "400+",
-      pincode: "500084",
+      pincode: "400064",
       establishedYear: "2017",
       rating: "4.8",
       completedJobs: "950+",
       landmarks: [
-        "Malda East West Main Road",
-        "Botanical Garden",
-        "Kothaguda",
-        "Masjid Banda",
-        "Lanco Hills",
-        "Aparna Cyberzon",
-        "Malda East West X Roads",
-        "Shaikpet Border",
+        "Inorbit Mall",
+        "Infiniti Mall",
+        "Aksa Beach",
+        "Marve Beach",
+        "Madh Fort",
+        "BAPS Swaminarayan Mandir",
+        "Malad Railway Station",
+        "Malad Creek"
       ],
-      nearbyAreas: ["Borivali East West", "Kandivali East West", "Manikonda", "Shaikpet", "Tolichowki", "Jubilee Hills"],
+      nearbyAreas: ["Kandivali", "Borivali", "Andheri", "Goregaon"],
       localBusinesses: [
-        "IT Companies",
-        "Residential Complexes",
-        "Shopping Centers",
+        "IT Parks",
+        "Residential Societies",
+        "Shopping Malls",
         "Restaurants",
-        "Educational Institutes",
+        "Coaching Institutes"
       ],
       specialServices: [
         {
-          title: "Gas Stove Repair",
-          description:
-            "Professional repair and maintenance for all types of gas stoves and cooktops with modern service standards for IT professionals",
-          features: [
-            "Expert burner repair and maintenance",
-            "Advanced ignition system fixing",
-            "Precision gas flow adjustment",
-            "Comprehensive servicing with warranty coverage",
-          ],
+          "title": "Gas Stove Repair",
+          "description": "Expert repairs for all gas stove types – from ignition faults to burner replacement, with warranty-backed service.",
+          "features": [
+            "Burner and ignition repairs",
+            "Gas flow regulation",
+            "Multi-burner stove servicing",
+            "Genuine spare parts and warranty"
+          ]
         },
         {
           title: "Gas Pipeline Services",
-          description:
-            "Expert gas pipeline installation and maintenance for homes and offices with focus on new developments",
+          description: "Safe gas pipeline installation and modification for homes and restaurants in Malad, including compliance certification.",
           features: [
-            "Professional new installations",
-            "Advanced leak detection services",
-            "Pipeline extensions and modifications",
-            "Complete safety certification and compliance",
-          ],
+            "New concealed and open installations",
+            "Leak checks with detectors",
+            "Pipeline expansion/modification",
+            "Gas safety certification"
+          ]
         },
         {
           title: "Emergency Gas Services",
-          description:
-            "24/7 emergency services for gas leaks and urgent repairs in Malda East West with priority response for residential complexes",
+          description: "24/7 gas leak detection and urgent repair with rapid team deployment across Malad East & West.",
           features: [
-            "Immediate emergency response",
-            "Complete safety assessment",
-            "Professional emergency repairs",
-            "Full problem resolution with follow-up support",
-          ],
-        },
+            "Quick emergency response",
+            "On-spot safety checks",
+            "Immediate fixes",
+            "Post-repair verification"
+          ]
+        }
       ],
       testimonials: [
         {
           name: "Venkat Rao",
           profession: "Software Engineer",
           company: "Accenture",
-          area: "Kothaguda",
+          area: "Evershine Nagar",
           rating: 5,
-          text: "Excellent service for gas stove repair in our apartment complex. My 4-burner gas stove suddenly developed ignition problems and one burner had very weak flame. Being an IT professional, I needed weekend service to avoid taking leave. Called Gas Repaire Wale on Saturday morning and technician Suresh arrived within 25 minutes. He diagnosed the issues as faulty ignition electrodes and blocked burner jets, explained everything clearly, and completed the repair in 1 hour using genuine parts. Charged ₹750 including parts and weekend service. Great support for IT professionals in Malda East West!",
+          text: "Called them on Saturday—my stove had ignition issues. Technician arrived in 25 mins, fixed the spark and flame issues, and charged ₹750. Very professional.",
           service: "Gas Stove Repair",
           date: "December 2024",
-          jobType: "Weekend Service",
+          jobType: "Weekend Service"
         },
         {
           name: "Swathi Reddy",
           profession: "Project Manager",
           company: "IBM",
-          area: "Lanco Hills",
+          area: "Malad West",
           rating: 5,
-          text: "Professional gas pipeline installation for our new apartment in a premium complex. We needed complete gas connection from main line to kitchen including concealed piping for modular kitchen setup. Gas Repaire Wale team surveyed the apartment, designed optimal pipeline route avoiding electrical lines, installed high-quality pipes with proper ventilation, and connected to our premium gas stove. They coordinated with complex management for approvals, completed work in 2 days, and provided gas safety certificate. Total cost ₹3500 including materials. Highly recommended for Malda East West residents!",
+          text: "We needed pipeline setup in our new 2BHK flat. The team did the work neatly with concealed piping and gave safety certificate. Total cost ₹3500.",
           service: "Pipeline Installation",
           date: "November 2024",
-          jobType: "New Installation",
+          jobType: "New Installation"
         },
         {
           name: "Ravi Kumar",
           profession: "Restaurant Owner",
           company: "Kumar's Kitchen",
-          area: "Malda East West Main Road",
+          area: "Link Road",
           rating: 5,
-          text: "We use Gas Repaire Wale for our restaurant's commercial kitchen serving local IT professionals. They provide monthly maintenance of our 4-burner commercial gas stove, quarterly pipeline inspections, and emergency support. Their team understands commercial requirements well - they work during our closed hours, always carry commercial spare parts, and provide detailed service reports. We have annual contract at ₹8000 which includes all maintenance, emergency support, and compliance certificates. Great team for businesses in Malda East West with reasonable pricing!",
+          text: "Their AMC plan is great for our kitchen. Regular burner checks and urgent fixes all included in ₹8000 annually. Highly recommended!",
           service: "Commercial Kitchen Service",
           date: "January 2025",
-          jobType: "Commercial Service",
-        },
+          jobType: "Commercial Service"
+        }
       ],
       advantages: [
         {
           icon: "Zap",
-          title: "IT Community Focus",
-          description:
-            "Specialized services for Malda East West's growing IT professional community with flexible solutions, modern approach, and tech-friendly service",
-          stats: "400+ IT customers",
+          title: "IT & Residential Friendly",
+          description: "Tailored services for Malad’s tech parks and premium societies – with weekend and fast-track support.",
+          stats: "400+ regular clients"
         },
         {
           icon: "Clock",
-          title: "Quick Malda East West Response",
-          description:
-            "Guaranteed 22-28 minute response time across all areas of Malda East West including Kothaguda and main road with priority support for residents.",
-          stats: "22-min response",
+          title: "22-Minute Response Time",
+          description: "Technicians arrive within 22–28 mins in most Malad locations including Marve, Evershine, and Malvani.",
+          stats: "22-min avg arrival"
         },
         {
           icon: "Building",
-          title: "Complex Specialists",
-          description:
-            "Expert in serving residential complexes and new development projects in Malda East West with comprehensive solutions and community-focused service.",
-          stats: "4.8★ rating",
+          title: "High-Rise & Society Experts",
+          description: "Skilled at working inside gated communities, towers, and restaurants – from AMC to emergency gas work.",
+          stats: "950+ jobs done"
         },
         {
           icon: "Users",
-          title: "Growing Community",
-          description:
-            "Trusted service provider in Malda East West with 400+ customers and 950+ completed jobs, preferred by IT professionals and families.",
-          stats: "950+ completions",
-        },
+          title: "Trusted Locally",
+          description: "Rated 4.8★ for prompt service, transparent billing, and courteous technicians across East & West Malad.",
+          stats: "4.8★ rating"
+        }
       ],
       seoContent: {
         whyChoose: [
-          "IT Community Focus: Specialized services for Malda East West's growing IT professional community since 2017 with flexible and modern solutions",
-          "Development Expertise: Expert in serving new residential complexes and commercial developments with comprehensive gas planning and installations",
-          "Flexible Service: Weekend and evening appointments for busy IT professionals with digital booking and online payment options",
-          "Complex Specialists: Comprehensive solutions for residential complexes and gated communities with community-focused maintenance",
-          "Quick Response: Guaranteed 22-28 minute response time across all areas of Malda East West with priority support for residents",
-          "Modern Solutions: Digital booking and payment options for tech-savvy customers with transparent pricing and reliable support",
+          "22-minute rapid response across Malad East & West with real-time tracking and technician updates",
+          "Specialized service for high-rise apartments, new societies, and independent homes",
+          "AMC plans for restaurants, hostels, and commercial kitchens",
+          "Digital booking and UPI payment options for convenience",
+          "On-call support during weekends and holidays for working professionals",
+          "Trusted by 400+ residents and business owners in Malad with 950+ service calls closed"
         ],
         services: {
           residential: [
-            "Residential complex gas maintenance with regular inspections and safety audits",
-            "New apartment gas installations with safety certification and compliance documentation",
-            "Gas stove repair and servicing with genuine parts and warranty coverage",
-            "Pipeline installation and maintenance with advanced leak detection technology",
-            "Safety inspections and compliance with official certificates and detailed reports",
-            "24/7 emergency gas leak repairs with immediate response and comprehensive problem resolution",
+            "Gas stove and cooktop servicing with original parts and flame adjustment",
+            "Gas leak detection with advanced sensors and sealing",
+            "New flat pipeline layout and installation with approval support",
+            "Gas regulator and inlet valve replacements",
+            "Routine safety audits and certifications for gated societies",
+            "Emergency visit support within 25 minutes in East & West Malad"
           ],
           commercial: [
-            "IT office kitchen gas setup with compliance certificates and corporate-grade standards",
-            "Restaurant kitchen installations with safety audits and commercial-grade equipment",
-            "Commercial complex gas services with bulk maintenance contracts and priority support",
-            "New development gas planning with detailed project management and safety protocols",
-            "Business maintenance contracts with dedicated service and customized solutions",
-            "Commercial compliance certificates with detailed documentation and regulatory expertise",
-          ],
+            "Pipeline installation and maintenance in commercial kitchens and cafés",
+            "Quarterly inspections for restaurants and caterers with compliance reports",
+            "Custom gas fitting plans for cloud kitchens and food trucks",
+            "Large-scale society AMC for all gas appliances and pipelines",
+            "Emergency response tie-up for malls and restaurants in Malad",
+            "Bulk job handling for builders and developers during possession stage"
+          ]
         },
-        emergencyInfo:
-          "Emergency gas services in Malda East West available 24/7 with 22-minute response guarantee. Serving Kothaguda, Lanco Hills, main road area, and all residential complexes with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
-      },
+        emergencyInfo: "Call us for any gas emergency in Malad East or West – our technician will be on-site within 22–28 minutes. Serving Link Road, Marve, Evershine, and all major societies with expert safety resolution."
+      }
     },
     "goregaon-east-west": {
       name: "Goregaon East West",
@@ -4982,7 +4981,7 @@ export const areaData = {
         "Pragathi Nagar",
         "Nizampet",
         "Goregaon East West Metro Station",
-        "Mallampet",
+        "Mallampet"
       ],
       nearbyAreas: ["Ram Mandir East", "Bachupally", "Nizampet", "Andheri West", "Ameerpet", "Secunderabad"],
       localBusinesses: [
@@ -4990,7 +4989,7 @@ export const areaData = {
         "Shopping Complexes",
         "Restaurants",
         "Small Industries",
-        "Educational Institutes",
+        "Educational Institutes"
       ],
       specialServices: [
         {
@@ -5001,8 +5000,8 @@ export const areaData = {
             "Expert burner repair and maintenance",
             "Advanced ignition system fixing",
             "Precision gas flow adjustment",
-            "Quality parts replacement with warranty",
-          ],
+            "Quality parts replacement with warranty"
+          ]
         },
         {
           title: "Gas Pipeline Services",
@@ -5012,8 +5011,8 @@ export const areaData = {
             "Professional new installations",
             "Advanced leak detection services",
             "Pipeline extensions and modifications",
-            "Complete safety certification and compliance",
-          ],
+            "Complete safety certification and compliance"
+          ]
         },
         {
           title: "Emergency Gas Services",
@@ -5023,9 +5022,9 @@ export const areaData = {
             "Immediate emergency response",
             "Complete safety assessment",
             "Professional emergency repairs",
-            "Full problem resolution with detailed follow-up",
-          ],
-        },
+            "Full problem resolution with detailed follow-up"
+          ]
+        }
       ],
       testimonials: [
         {
@@ -5037,7 +5036,7 @@ export const areaData = {
           text: "Excellent service for our housing board colony. They provide regular maintenance at affordable rates and quick emergency response. Perfect for KPHB residents! Our colony has 200+ houses and Gas Repaire Wale provides monthly inspection of all gas connections, quarterly safety audits, and 24/7 emergency support. Their team is very professional and responsive. We have an annual maintenance contract at a very reasonable price.",
           service: "Colony Maintenance Contract",
           date: "December 2024",
-          jobType: "Colony Service",
+          jobType: "Colony Service"
         },
         {
           name: "Lakshmi Devi",
@@ -5048,7 +5047,7 @@ export const areaData = {
           text: "Quick and reliable gas stove repair service. The technician was very professional and completed the work efficiently. Great service for families in Goregaon East West! My gas stove was not igniting properly and the flame was very low. The technician came on the same day, identified the problem as a clogged burner, cleaned it thoroughly, and adjusted the gas flow. The cost was very reasonable and the service was excellent.",
           service: "Gas Stove Repair",
           date: "November 2024",
-          jobType: "Home Service",
+          jobType: "Home Service"
         },
         {
           name: "Suresh Reddy",
@@ -5059,8 +5058,8 @@ export const areaData = {
           text: "Professional commercial gas service for our restaurant. They understand local business needs and provide flexible solutions. Highly recommended for Goregaon East West businesses! We needed a new gas connection for our restaurant and Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was prompt and the price was competitive.",
           service: "Commercial Gas Setup",
           date: "January 2025",
-          jobType: "Business Service",
-        },
+          jobType: "Business Service"
+        }
       ],
       advantages: [
         {
@@ -5068,29 +5067,29 @@ export const areaData = {
           title: "Colony Specialists",
           description:
             "Expert in serving Goregaon East West's extensive housing board colonies and residential societies with community-focused solutions and affordable pricing.",
-          stats: "500+ colony customers",
+          stats: "500+ colony customers"
         },
         {
           icon: "Clock",
           title: "Reliable Goregaon East West Service",
           description:
             "Guaranteed 25-30 minute response time across KPHB, Pragathi Nagar, and all major areas with priority support for colony residents.",
-          stats: "25-min response",
+          stats: "25-min response"
         },
         {
           icon: "Shield",
           title: "Community Trusted",
           description:
             "Trusted service provider for Goregaon East West's diverse residential and commercial community with reliable service and transparent pricing.",
-          stats: "4.7★ rating",
+          stats: "4.7★ rating"
         },
         {
           icon: "Award",
           title: "Established Service",
           description:
             "Serving Goregaon East West since 2015 with 500+ customers and 1200+ completed jobs, preferred by housing board colonies and local businesses.",
-          stats: "1200+ completions",
-        },
+          stats: "1200+ completions"
+        }
       ],
       seoContent: {
         whyChoose: [
@@ -5099,7 +5098,7 @@ export const areaData = {
           "Affordable Solutions: Competitive pricing designed for housing board colonies and local families with transparent and flexible options",
           "Comprehensive Coverage: Serving KPHB, Pragathi Nagar, and all major areas of Goregaon East West with priority support and quick response",
           "Reliable Service: Consistent quality service with 25-30 minute response time and experienced technicians",
-          "Local Knowledge: Expert understanding of Goregaon East West's infrastructure and community requirements with personalized solutions",
+          "Local Knowledge: Expert understanding of Goregaon East West's infrastructure and community requirements with personalized solutions"
         ],
         services: {
           residential: [
@@ -5108,7 +5107,7 @@ export const areaData = {
             "Family home gas repairs with affordable pricing and transparent billing",
             "Apartment gas installations with safety certification and compliance documentation",
             "Regular safety inspections with detailed reports and official certificates",
-            "24/7 emergency gas leak repairs with immediate response and comprehensive problem resolution",
+            "24/7 emergency gas leak repairs with immediate response and comprehensive problem resolution"
           ],
           commercial: [
             "Shopping complex gas services with bulk maintenance contracts and priority support",
@@ -5116,12 +5115,12 @@ export const areaData = {
             "Commercial building maintenance with regular inspections and compliance certificates",
             "Shop gas connection services with quick setup and affordable pricing",
             "Small business gas solutions with flexible contracts and personalized service",
-            "Commercial compliance certificates with detailed documentation and regulatory expertise",
-          ],
+            "Commercial compliance certificates with detailed documentation and regulatory expertise"
+          ]
         },
         emergencyInfo:
-          "Emergency gas services in Goregaon East West available 24/7 with 25-minute response guarantee. Serving KPHB Colony, Pragathi Nagar, and all residential colonies with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
-      },
+          "Emergency gas services in Goregaon East West available 24/7 with 25-minute response guarantee. Serving KPHB Colony, Pragathi Nagar, and all residential colonies with immediate professional assistance, safety assessments, and comprehensive problem resolution."
+      }
     },
     "ram-mandir-east": {
       name: "Ram Mandir East",
@@ -5145,7 +5144,7 @@ export const areaData = {
         "Nallagandla",
         "Gajularamaram",
         "Ram Mandir East Housing Board",
-        "Kompally",
+        "Kompally"
       ],
       nearbyAreas: ["Goregaon East West", "Bachupally", "Nizampet", "Kompally", "Quthbullapur", "Medchal"],
       localBusinesses: [
@@ -5153,7 +5152,7 @@ export const areaData = {
         "IT Offices",
         "Shopping Centers",
         "Restaurants",
-        "Educational Institutes",
+        "Educational Institutes"
       ],
       specialServices: [
         {
@@ -5164,8 +5163,8 @@ export const areaData = {
             "Expert burner repair and maintenance",
             "Advanced ignition system fixing",
             "Precision gas flow adjustment",
-            "Comprehensive servicing with warranty coverage and genuine parts",
-          ],
+            "Comprehensive servicing with warranty coverage and genuine parts"
+          ]
         },
         {
           title: "Gas Pipeline Services",
@@ -5175,8 +5174,8 @@ export const areaData = {
             "Professional new installations with safety certification",
             "Advanced leak detection services with latest technology",
             "Pipeline extensions and modifications with minimal disruption",
-            "Complete safety certification and compliance with regulatory expertise",
-          ],
+            "Complete safety certification and compliance with regulatory expertise"
+          ]
         },
         {
           title: "Emergency Gas Services",
@@ -5186,9 +5185,9 @@ export const areaData = {
             "Immediate emergency response with experienced technicians and safety protocols",
             "Complete safety assessment with detailed reports and risk analysis",
             "Professional emergency repairs with genuine parts and warranty coverage",
-            "Full problem resolution with detailed follow-up support and customer satisfaction guarantee",
-          ],
-        },
+            "Full problem resolution with detailed follow-up support and customer satisfaction guarantee"
+          ]
+        }
       ],
       testimonials: [
         {
@@ -5200,7 +5199,7 @@ export const areaData = {
           text: "Great service for gas pipeline installation in our new apartment. They handled the entire process professionally and completed all safety checks. Perfect for new residents in Ram Mandir East! We recently moved into a new apartment in Bachupally and needed a complete gas pipeline installation. Gas Repaire Wale provided a detailed quote, completed the installation within the agreed timeframe, and ensured all safety standards were met. The technician was very knowledgeable and helpful.",
           service: "Pipeline Installation",
           date: "December 2024",
-          jobType: "New Installation",
+          jobType: "New Installation"
         },
         {
           name: "Priya Sharma",
@@ -5211,7 +5210,7 @@ export const areaData = {
           text: "Quick response for gas stove repair on weekend. They understand the needs of working professionals and provide flexible timing. Great service for IT professionals in Ram Mandir East! My gas stove stopped working on a Saturday evening and I needed it fixed urgently. Gas Repaire Wale responded quickly and the technician arrived within an hour. He diagnosed the problem as a faulty igniter and replaced it with a new one. The service was prompt and efficient.",
           service: "Gas Stove Repair",
           date: "November 2024",
-          jobType: "Weekend Service",
+          jobType: "Weekend Service"
         },
         {
           name: "Rajesh Goud",
@@ -5222,8 +5221,8 @@ export const areaData = {
           text: "Professional commercial gas service for our new restaurant. They provided complete setup and all compliance certificates. Very reliable for new businesses in Ram Mandir East area! We recently opened a new restaurant in Ram Mandir East and needed a reliable gas service provider. Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was professional and the price was competitive.",
           service: "Commercial Gas Setup",
           date: "January 2025",
-          jobType: "Commercial Service",
-        },
+          jobType: "Commercial Service"
+        }
       ],
       advantages: [
         {
@@ -5231,29 +5230,29 @@ export const areaData = {
           title: "New Development Experts",
           description:
             "Specialized in serving Ram Mandir East's rapidly growing residential and commercial developments with expertise in new construction gas installations and bulk connections.",
-          stats: "350+ new customers",
+          stats: "350+ new customers"
         },
         {
           icon: "Clock",
           title: "Metro Corridor Service",
           description:
             "28-35 minute response time along Ram Mandir East metro corridor and surrounding areas with priority support for new residents and IT professionals.",
-          stats: "28-min response",
+          stats: "28-min response"
         },
         {
           icon: "Zap",
           title: "Modern Solutions",
           description:
             "Tech-friendly service approach for Ram Mandir East's IT professionals and modern families with digital booking, online payments, and transparent communication.",
-          stats: "4.6★ rating",
+          stats: "4.6★ rating"
         },
         {
           icon: "Users",
           title: "Growing Community",
           description:
             "Trusted service provider in Ram Mandir East with 350+ customers and 800+ completed jobs, preferred by new residents and IT professionals.",
-          stats: "800+ completions",
-        },
+          stats: "800+ completions"
+        }
       ],
       seoContent: {
         whyChoose: [
@@ -5262,7 +5261,7 @@ export const areaData = {
           "IT Professional Focus: Flexible scheduling and digital solutions for busy tech professionals with transparent communication and reliable support",
           "Modern Approach: Tech-friendly service delivery matching Ram Mandir East's developing infrastructure with digital booking and online payments",
           "Project Specialists: Expert in new construction gas installations and bulk connections with detailed project management and safety protocols",
-          "Growing Community: Dedicated service for Ram Mandir East's expanding residential and commercial base with personalized solutions and community-focused approach",
+          "Growing Community: Dedicated service for Ram Mandir East's expanding residential and commercial base with personalized solutions and community-focused approach"
         ],
         services: {
           residential: [
@@ -5271,7 +5270,7 @@ export const areaData = {
             "Modern kitchen gas line setup with concealed piping and smart appliance integration",
             "Safety compliance for new constructions with regulatory expertise and official certificates",
             "Metro area residential services with quick response and convenient scheduling",
-            "24/7 emergency gas leak repairs with immediate response and comprehensive problem resolution",
+            "24/7 emergency gas leak repairs with immediate response and comprehensive problem resolution"
           ],
           commercial: [
             "New business gas installations with safety audits and commercial-grade equipment",
@@ -5279,12 +5278,12 @@ export const areaData = {
             "Restaurant kitchen installations with customized solutions and efficient service",
             "IT office kitchen services with corporate standards and reliable support",
             "Shopping center gas services with bulk maintenance contracts and priority response",
-            "Commercial compliance certificates with detailed documentation and regulatory expertise",
-          ],
+            "Commercial compliance certificates with detailed documentation and regulatory expertise"
+          ]
         },
         emergencyInfo:
-          "Emergency gas services in Ram Mandir East available 24/7 with 28-minute response guarantee. Serving metro corridor areas, Bachupally, Nallagandla, and all new developments with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
-      },
+          "Emergency gas services in Ram Mandir East available 24/7 with 28-minute response guarantee. Serving metro corridor areas, Bachupally, Nallagandla, and all new developments with immediate professional assistance, safety assessments, and comprehensive problem resolution."
+      }
     },
     "andheri-west": {
       name: "Andheri West",
@@ -5293,7 +5292,7 @@ export const areaData = {
       description:
         "Professional gas repair services in Andheri West - Mumbai's central business and residential district with specialized hospitality solutions",
       heroDescription:
-        "🔥 Expert gas repair services in Andheri West with 20-minute response time! Serving 400+ customers since 2014. Professional solutions for Andheri West's business district and residential areas with focus on hospitality industry.",
+        "\ud83d\udd25 Expert gas repair services in Andheri West with 20-minute response time! Serving 400+ customers since 2014. Professional solutions for Andheri West's business district and residential areas with focus on hospitality industry.",
       responseTime: "20-25 minutes",
       customers: "400+",
       pincode: "500016",
@@ -5308,7 +5307,7 @@ export const areaData = {
         "Somajiguda",
         "Raj Bhavan Road",
         "Paradise Circle",
-        "Andheri West Railway Station",
+        "Andheri West Railway Station"
       ],
       nearbyAreas: ["Ameerpet", "Somajiguda", "Secunderabad", "Punjagutta", "Goregaon East West", "Panjagutta"],
       localBusinesses: ["Corporate Offices", "Hotels", "Restaurants", "Residential Apartments", "Commercial Complexes"],
@@ -5321,8 +5320,8 @@ export const areaData = {
             "Expert burner repair and maintenance",
             "Advanced ignition system fixing",
             "Precision gas flow adjustment",
-            "Comprehensive servicing with extended warranty and safety checks",
-          ],
+            "Comprehensive servicing with extended warranty and safety checks"
+          ]
         },
         {
           title: "Gas Pipeline Services",
@@ -5332,8 +5331,8 @@ export const areaData = {
             "Professional new installations with safety certification and compliance documentation",
             "Advanced leak detection services with latest technology and experienced technicians",
             "Pipeline extensions and modifications with minimal disruption and safety protocols",
-            "Complete safety certification and compliance with regulatory expertise and official certificates",
-          ],
+            "Complete safety certification and compliance with regulatory expertise and official certificates"
+          ]
         },
         {
           title: "Emergency Gas Services",
@@ -5343,9 +5342,9 @@ export const areaData = {
             "Immediate emergency response with experienced technicians and safety protocols",
             "Complete safety assessment with detailed reports and risk analysis",
             "Professional emergency repairs with genuine parts and warranty coverage",
-            "Full problem resolution with detailed follow-up support and customer satisfaction guarantee",
-          ],
-        },
+            "Full problem resolution with detailed follow-up support and customer satisfaction guarantee"
+          ]
+        }
       ],
       testimonials: [
         {
@@ -5357,7 +5356,7 @@ export const areaData = {
           text: "Excellent corporate gas service for our office cafeteria. They handled the setup professionally and provided all compliance certificates. Perfect for businesses in Andheri West! We needed a new gas connection for our office cafeteria and Gas Repaire Wale provided a complete solution, including pipeline installation, safety checks, and compliance certificates. The service was prompt and the price was competitive. The technician was very knowledgeable and helpful.",
           service: "Corporate Gas Setup",
           date: "December 2024",
-          jobType: "Corporate Service",
+          jobType: "Corporate Service"
         },
         {
           name: "Meera Krishnan",
@@ -5368,7 +5367,7 @@ export const areaData = {
           text: "Professional hotel kitchen gas maintenance service. They understand hospitality industry requirements and provide 24/7 support. Highly recommended for hotels in Andheri West! We rely on Gas Repaire Wale for our hotel kitchen gas maintenance. They provide regular inspections, safety checks, and emergency support. The service is reliable and the technicians are experienced. We have a maintenance contract with them and are very satisfied with their service.",
           service: "Hotel Kitchen Maintenance",
           date: "November 2024",
-          jobType: "Hospitality Service",
+          jobType: "Hospitality Service"
         },
         {
           name: "Ravi Teja",
@@ -5379,8 +5378,8 @@ export const areaData = {
           text: "Quick response for gas stove repair in our apartment. The technician was professional and completed the work efficiently. Great service for Andheri West residents! My gas stove was not working properly and I needed it fixed urgently. Gas Repaire Wale responded quickly and the technician arrived within an hour. He diagnosed the problem as a faulty burner and replaced it with a new one. The service was prompt and efficient.",
           service: "Gas Stove Repair",
           date: "January 2025",
-          jobType: "Residential Service",
-        },
+          jobType: "Residential Service"
+        }
       ],
       advantages: [
         {
@@ -5388,29 +5387,29 @@ export const areaData = {
           title: "Business District Experts",
           description:
             "Specialized services for Andheri West's corporate offices and business establishments with focus on hospitality industry and regulatory compliance.",
-          stats: "400+ business clients",
+          stats: "400+ business clients"
         },
         {
           icon: "Clock",
           title: "Central Location Speed",
           description:
             "20-25 minute response time across Andheri West's central business and residential areas with priority support for commercial establishments.",
-          stats: "20-min response",
+          stats: "20-min response"
         },
         {
           icon: "Award",
           title: "Hospitality Specialists",
           description:
             "Expert in serving hotels, restaurants, and hospitality industry in Andheri West with customized solutions and reliable support.",
-          stats: "4.8★ rating",
+          stats: "4.8\u2605 rating"
         },
         {
           icon: "Users",
           title: "Established Service",
           description:
             "Trusted service provider in Andheri West since 2014 with 400+ customers and 1000+ jobs, preferred by corporate offices and hospitality businesses.",
-          stats: "1000+ completions",
-        },
+          stats: "1000+ completions"
+        }
       ],
       seoContent: {
         whyChoose: [
@@ -5419,7 +5418,7 @@ export const areaData = {
           "Hospitality Focus: Expert in serving hotels, restaurants, and commercial establishments with customized solutions and reliable support",
           "Corporate Solutions: Professional gas services for office cafeterias and business facilities with regulatory compliance and safety protocols",
           "Quick Response: 20-25 minute response time across all areas of Andheri West with experienced technicians and safety measures",
-          "Industry Experience: Deep understanding of commercial and hospitality gas requirements with personalized solutions and transparent communication",
+          "Industry Experience: Deep understanding of commercial and hospitality gas requirements with personalized solutions and transparent communication"
         ],
         services: {
           residential: [
@@ -5428,7 +5427,7 @@ export const areaData = {
             "Home kitchen gas line setup with customized design and safety protocols",
             "Safety inspections and compliance with detailed reports and official certificates",
             "24/7 emergency residential gas services with immediate response and comprehensive problem resolution",
-            "Regular maintenance contracts with priority support and transparent billing",
+            "Regular maintenance contracts with priority support and transparent billing"
           ],
           commercial: [
             "Corporate office cafeteria gas setup with compliance certificates and corporate-grade equipment",
@@ -5436,13 +5435,1626 @@ export const areaData = {
             "Restaurant kitchen maintenance with regular inspections and priority support",
             "Commercial building gas services with bulk maintenance contracts and regulatory compliance",
             "Business compliance certificates with detailed documentation and regulatory expertise",
-            "Hospitality industry gas solutions with customized contracts and reliable support",
-          ],
+            "Hospitality industry gas solutions with customized contracts and reliable support"
+          ]
         },
         emergencyInfo:
-          "Emergency gas services in Andheri West available 24/7 with 20-minute response guarantee. Serving business district, hotels, corporate offices, and residential areas with immediate professional assistance, safety assessments, and comprehensive problem resolution.",
-      },
+          "Emergency gas services in Andheri West available 24/7 with 20-minute response guarantee. Serving business district, hotels, corporate offices, and residential areas with immediate professional assistance, safety assessments, and comprehensive problem resolution."
+      }
     },
+    "vile-parle-east-west": {
+      name: "Vile Parle East & West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Reliable gas repair and installation services in Vile Parle East & West – a vibrant mix of residential, educational, and commercial hubs.",
+      heroDescription:
+        "🔧 Trusted gas stove and pipeline repair in Vile Parle East & West! Fast 20-minute response. 500+ happy customers since 2013. Serving apartments, hostels, restaurants, and PGs with certified service.",
+      responseTime: "20-25 minutes",
+      customers: "500+",
+      pincode: "400057",
+      establishedYear: "2013",
+      rating: "4.7",
+      completedJobs: "1100+",
+      landmarks: [
+        "Vile Parle Railway Station",
+        "Mithibai College",
+        "NMIMS University",
+        "Juhu Circle",
+        "Hanuman Road",
+        "Juhu Beach",
+        "Dixit Road",
+        "Saraswat Colony"
+      ],
+      nearbyAreas: ["Andheri West", "Santacruz", "Juhu", "Ville Parle East", "Ville Parle West"],
+      localBusinesses: [
+        "Colleges & Hostels",
+        "PG Accommodations",
+        "Residential Societies",
+        "Restaurants & Cafes",
+        "Commercial Offices"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description:
+            "Certified repairs for all domestic gas stoves with genuine parts and expert care. Ideal for students, families, and paying guests.",
+          features: [
+            "Burner repair and cleaning",
+            "Knob and pipe replacement",
+            "Gas leak inspection",
+            "Service warranty up to 3 months"
+          ]
+        },
+        {
+          title: "Gas Pipeline Installation",
+          description:
+            "New pipeline installations and extensions for apartments, PGs, and restaurants with safety certification and approvals.",
+          features: [
+            "Secure pipeline fitting",
+            "Government-approved certification",
+            "Flexible designs for kitchens and hostels",
+            "Annual maintenance packages available"
+          ]
+        },
+        {
+          title: "Emergency Gas Leak Support",
+          description:
+            "24/7 emergency gas repair support in Vile Parle – Fast response for leaks or urgent gas issues in apartments or commercial kitchens.",
+          features: [
+            "Immediate on-site response",
+            "Advanced leak detection tools",
+            "Temporary shutdown and repair",
+            "Post-repair safety audit"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Ritika Shah",
+          profession: "Student",
+          company: "NMIMS",
+          area: "Vile Parle East",
+          rating: 5,
+          text: "I live in a PG and my gas stove wasn’t working. Gas Repair Wale came in 25 minutes and fixed it on the spot. Highly professional!",
+          service: "Gas Stove Repair",
+          date: "June 2024",
+          jobType: "Residential PG Service"
+        },
+        {
+          name: "Rahul Mehta",
+          profession: "Cafe Owner",
+          company: "Coffee & Co.",
+          area: "Vile Parle West",
+          rating: 5,
+          text: "Their emergency support saved my kitchen from a major leak. They came immediately and handled everything with expertise.",
+          service: "Emergency Gas Leak Repair",
+          date: "April 2024",
+          jobType: "Commercial Service"
+        },
+        {
+          name: "Sneha Kulkarni",
+          profession: "Housewife",
+          company: "Homemaker",
+          area: "Saraswat Colony",
+          rating: 4.8,
+          text: "Booked a pipeline extension and the technician explained everything patiently. Clean work and reasonable cost.",
+          service: "Pipeline Extension",
+          date: "February 2025",
+          jobType: "Residential Service"
+        }
+      ],
+      advantages: [
+        {
+          icon: "UserCheck",
+          title: "Student & PG Friendly",
+          description:
+            "Custom gas repair and maintenance packages for students and paying guests with same-day service and low-cost options.",
+          stats: "150+ PGs covered"
+        },
+        {
+          icon: "Wrench",
+          title: "Local Technician Network",
+          description:
+            "Skilled local professionals ensure quick visits and easy follow-ups for households and commercial places in Vile Parle.",
+          stats: "20-min response"
+        },
+        {
+          icon: "Briefcase",
+          title: "Trusted by Businesses",
+          description:
+            "Reliable for cafés, restaurants, and commercial kitchens in the area with regular maintenance contracts available.",
+          stats: "200+ business clients"
+        },
+        {
+          icon: "ShieldCheck",
+          title: "Certified Safe Installations",
+          description:
+            "All pipeline installations come with safety certificates, detailed inspection reports, and government compliance.",
+          stats: "1000+ certified jobs"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Fast Gas Repair in Vile Parle: 20-minute average response time with local expert technicians",
+          "PG & Hostel Support: Affordable services tailored for student accommodations and rentals",
+          "Certified Gas Safety: All work comes with government-approved safety certification",
+          "Business-Grade Support: Cafés, restaurants, and offices receive priority and regular service contracts",
+          "24/7 Emergency Help: Get gas leak detection and repair day or night with zero-delay response",
+          "Local Presence: Our Vile Parle team knows the area and reaches you fast with all equipment"
+        ],
+        services: {
+          residential: [
+            "Gas stove repairs in apartments and PGs with warranty",
+            "Leak detection and prevention for homes and hostels",
+            "New pipeline installations for kitchens and balconies",
+            "Gas appliance maintenance for home safety",
+            "Emergency gas support for residents",
+            "Annual maintenance plans with service history tracking"
+          ],
+          commercial: [
+            "Full kitchen pipeline setup for cafés and restaurants",
+            "Commercial gas appliance service with AMC options",
+            "Pipeline extensions for office cafeterias and tiffin centers",
+            "Gas safety audits and reports for FSSAI or compliance needs",
+            "Priority service contracts for businesses",
+            "Emergency leak response for commercial kitchens"
+          ]
+        },
+        emergencyInfo:
+          "Need emergency gas repair in Vile Parle East or West? Call us anytime – we respond within 20 minutes and fix leaks, appliance issues, or pipeline problems with safety checks and documentation. Trusted by 500+ customers since 2013."
+      }
+    },
+    "santacruz-east-west": {
+      name: "Santacruz East & West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Expert gas repair and pipeline installation services in Santacruz East & West — trusted by residents, students, and commercial kitchens.",
+      heroDescription:
+        "⛽ Fast and reliable gas stove & pipeline repair services in Santacruz East & West. 20-minute response, 600+ happy customers. Serving homes, PGs, salons, and restaurants since 2012.",
+      responseTime: "20-25 minutes",
+      customers: "600+",
+      pincode: "400055",
+      establishedYear: "2012",
+      rating: "4.8",
+      completedJobs: "1200+",
+      landmarks: [
+        "Santacruz Railway Station",
+        "Western Express Highway",
+        "Kalina University",
+        "Vakola",
+        "Hasnabad Lane",
+        "LBS Road",
+        "SV Road",
+        "Podar School"
+      ],
+      nearbyAreas: ["Vile Parle", "Bandra", "Khar", "Kalina", "Juhu"],
+      localBusinesses: [
+        "Colleges & PGs",
+        "Beauty Salons",
+        "Residential Societies",
+        "Restaurants",
+        "Offices & Clinics"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair & Maintenance",
+          description:
+            "Complete gas stove and hob repair services for homes, PGs, and small businesses with fast turnaround and branded parts.",
+          features: [
+            "Gas burner replacement",
+            "Auto-ignition repair",
+            "Knob & valve fixes",
+            "Routine cleaning packages"
+          ]
+        },
+        {
+          title: "New Gas Pipeline Installation",
+          description:
+            "Safe and compliant gas pipeline installations with full inspection and documentation. Ideal for salons, clinics, and kitchens.",
+          features: [
+            "Secure internal pipeline setup",
+            "Leak-proof fittings",
+            "Compliance with safety norms",
+            "Custom layouts for tight spaces"
+          ]
+        },
+        {
+          title: "Emergency Gas Repairs",
+          description:
+            "24x7 emergency gas leak detection and repair service in Santacruz with instant technician dispatch.",
+          features: [
+            "Gas leakage troubleshooting",
+            "Rapid technician response",
+            "On-site temporary isolation",
+            "Post-repair safety check"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Aarav Jain",
+          profession: "Student",
+          company: "Mumbai University (Kalina Campus)",
+          area: "Santacruz East",
+          rating: 5,
+          text: "I needed help with my gas stove in the hostel, and they fixed it within 30 minutes. Very efficient and affordable.",
+          service: "Gas Stove Repair",
+          date: "May 2024",
+          jobType: "PG Service"
+        },
+        {
+          name: "Fatima Shaikh",
+          profession: "Salon Owner",
+          company: "Glow Studio",
+          area: "Santacruz West",
+          rating: 5,
+          text: "Gas Repair Wale installed a pipeline for my beauty salon. They explained everything clearly and gave a safety certificate.",
+          service: "Pipeline Installation",
+          date: "March 2024",
+          jobType: "Commercial Service"
+        },
+        {
+          name: "Rakesh Mehta",
+          profession: "Homeowner",
+          company: "Self-employed",
+          area: "Vakola",
+          rating: 4.9,
+          text: "They quickly found and fixed a minor gas leak in our kitchen pipeline. The technician was polite and knowledgeable.",
+          service: "Gas Leak Repair",
+          date: "July 2024",
+          jobType: "Residential Service"
+        }
+      ],
+      advantages: [
+        {
+          icon: "MapPin",
+          title: "Wide Area Coverage",
+          description:
+            "From Kalina to Hasnabad Lane and Vakola to LBS Road, our team covers every pocket of Santacruz East & West.",
+          stats: "10+ sub-areas"
+        },
+        {
+          icon: "Clock",
+          title: "20-Minute Arrival Time",
+          description:
+            "Our locally based technicians ensure you're never left waiting – most jobs start within 20-25 minutes of your call.",
+          stats: "600+ customers"
+        },
+        {
+          icon: "Briefcase",
+          title: "Business-Grade Services",
+          description:
+            "Ideal for salons, hostels, and cafes needing high-reliability service, safety assurance, and maintenance contracts.",
+          stats: "150+ businesses served"
+        },
+        {
+          icon: "Tool",
+          title: "Full-Service Support",
+          description:
+            "Whether it's a loose stove knob or a new commercial pipeline, we provide end-to-end gas service support with full documentation.",
+          stats: "1200+ jobs done"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Rapid gas repair services in Santacruz East and West with expert technicians",
+          "Pipeline installations for beauty salons, cafes, and residential flats",
+          "Emergency leak response 24/7 across Santacruz and nearby areas",
+          "Affordable rates for students, families, and commercial kitchens",
+          "Safety-compliant fittings and certified repairs with documentation",
+          "Local Santacruz team – fast reach, trustworthy service"
+        ],
+        services: {
+          residential: [
+            "Gas stove repair in apartments, PGs, and hostels",
+            "Leak checks and pipeline maintenance",
+            "New installations for family kitchens",
+            "Emergency repairs and servicing",
+            "Stove cleaning and burner replacement",
+            "Annual maintenance packages"
+          ],
+          commercial: [
+            "Pipeline setup for salons and clinics",
+            "Commercial kitchen gas fitting and repair",
+            "AMC plans for regular servicing",
+            "Leak inspection reports for licensing",
+            "Custom pipeline solutions for compact businesses",
+            "Quick-response emergency service"
+          ]
+        },
+        emergencyInfo:
+          "Need gas leak repair or emergency stove service in Santacruz East or West? Our team reaches you in 20 minutes or less. Fully equipped technicians handle leaks, breakdowns, or new setups with safety checks and receipts."
+      }
+    },
+    "bandra-east-west": {
+      name: "Bandra East & West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Trusted gas repair and pipeline services in Bandra East & West — covering residential towers, bungalows, restaurants, salons, and corporate kitchens.",
+      heroDescription:
+        "🔥 Professional gas stove repair and pipeline installation in Bandra East & West. 15-20 minute response time, 750+ happy clients. Serving homes, restaurants, and salons with certified safety solutions since 2011.",
+      responseTime: "15-20 minutes",
+      customers: "750+",
+      pincode: "400050",
+      establishedYear: "2011",
+      rating: "4.9",
+      completedJobs: "1500+",
+      landmarks: [
+        "Bandra Railway Station",
+        "Linking Road",
+        "Bandra Kurla Complex (BKC)",
+        "Hill Road",
+        "Mount Mary Church",
+        "Carter Road",
+        "Bandra Talao",
+        "Kherwadi",
+        "Chapel Road"
+      ],
+      nearbyAreas: ["Khar", "Santacruz", "Mahim", "Sion", "Dharavi", "Vile Parle"],
+      localBusinesses: [
+        "Restaurants",
+        "Corporate Kitchens",
+        "Beauty Salons",
+        "Residential Apartments",
+        "Bungalows",
+        "Boutiques"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repair",
+          description:
+            "Premium repair services for gas stoves and hobs used in homes and high-end kitchens with branded parts and service guarantee.",
+          features: [
+            "Auto ignition repair",
+            "Burner and nozzle replacement",
+            "Control knob and valve servicing",
+            "Premium finish cleaning & inspection"
+          ]
+        },
+        {
+          title: "Pipeline Installation & Repair",
+          description:
+            "Safe, certified gas pipeline installation and upgrades for homes, cafes, and salons with complete documentation and post-installation inspection.",
+          features: [
+            "New LPG/PNG pipelines with copper or MS options",
+            "Leak detection & testing",
+            "Safety compliance certificate",
+            "Customized solutions for flats & bungalows"
+          ]
+        },
+        {
+          title: "Emergency Gas Leak Services",
+          description:
+            "24/7 emergency response for gas leaks in Bandra. Immediate inspection and isolation with expert technicians on-site within 20 minutes.",
+          features: [
+            "Leak detection using gas sensors",
+            "Immediate leak control and safety checks",
+            "Replacement of faulty connectors and joints",
+            "Safety documentation & service report"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Priya Bhosale",
+          profession: "Boutique Owner",
+          company: "Style Threads",
+          area: "Hill Road",
+          rating: 5,
+          text: "Gas Repair Wale installed a safe and discreet pipeline in my boutique kitchen. Quick work and full documentation provided. Highly recommended!",
+          service: "Pipeline Installation",
+          date: "April 2025",
+          jobType: "Commercial Service"
+        },
+        {
+          name: "Rajiv Sinha",
+          profession: "Chef",
+          company: "Bandra Tandoori",
+          area: "Linking Road",
+          rating: 5,
+          text: "Their technician repaired our commercial stove burner just before service hours. Efficient and reliable gas repair service in Bandra.",
+          service: "Stove Repair",
+          date: "June 2024",
+          jobType: "Restaurant Kitchen Service"
+        },
+        {
+          name: "Sarah Fernandes",
+          profession: "Freelancer",
+          company: "Resident",
+          area: "Carter Road",
+          rating: 4.9,
+          text: "My gas stove knobs were jammed. They arrived within 30 minutes and fixed everything neatly. Very professional and courteous.",
+          service: "Gas Stove Repair",
+          date: "August 2024",
+          jobType: "Residential Service"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Map",
+          title: "Elite Service Zone",
+          description:
+            "Bandra East & West coverage including Carter Road, Hill Road, Mount Mary, BKC, and all major commercial & residential hubs.",
+          stats: "15+ areas covered"
+        },
+        {
+          icon: "Clock",
+          title: "Fast Response Team",
+          description:
+            "Technicians stationed locally for immediate dispatch. 15-20 minute arrival time across Bandra.",
+          stats: "750+ clients"
+        },
+        {
+          icon: "ShieldCheck",
+          title: "Certified Safety & Compliance",
+          description:
+            "Every job includes inspection, leak testing, and certification — trusted by salons, restaurants, and residents alike.",
+          stats: "1500+ jobs completed"
+        },
+        {
+          icon: "UserGroup",
+          title: "Diverse Clientele",
+          description:
+            "Serving a wide range of customers — from restaurant chains and PGs to family homes and commercial kitchens.",
+          stats: "4.9★ Rating"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Bandra’s trusted gas service since 2011 with 750+ satisfied clients",
+          "Pipeline installations and repairs with certified safety checks",
+          "Emergency gas services with 20-minute response across Bandra East & West",
+          "Commercial gas support for restaurants, salons, and office kitchens",
+          "Gas stove repair experts for branded stoves, hobs, and cooktops",
+          "Experienced technicians with transparent pricing and warranty support"
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair for apartments and bungalows",
+            "New kitchen gas line installation with safety documentation",
+            "Leak checks and pipe repairs for old fittings",
+            "Emergency response for gas smell and stove breakdowns",
+            "Annual stove servicing for smooth operation",
+            "Premium maintenance for luxury homes"
+          ],
+          commercial: [
+            "Restaurant kitchen pipeline setup and AMC support",
+            "Beauty salon gas line installation and repairs",
+            "Pipeline certification for licensing and inspection",
+            "Bulk stove repairs for PGs and rental units",
+            "Corporate kitchen safety audits and servicing",
+            "Custom installation plans for cafes and food courts"
+          ]
+        },
+        emergencyInfo:
+          "Gas emergency in Bandra East or West? Our on-ground technician network responds in 15-20 minutes. We handle leaks, emergency shutdowns, and critical repairs for homes and businesses — 24/7 support available."
+      }
+    },
+    "mahim-west": {
+      name: "Mahim West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Professional gas repair and pipeline services in Mahim West — covering old societies, coastal homes, hospitals, and commercial kitchens.",
+      heroDescription:
+        "🔥 Trusted gas stove repair and safe pipeline installation services in Mahim West. 20-25 minute response, 400+ happy clients. Coastal zone support with certified technicians.",
+      responseTime: "20-25 minutes",
+      customers: "400+",
+      pincode: "400016",
+      establishedYear: "2013",
+      rating: "4.8",
+      completedJobs: "900+",
+      landmarks: [
+        "Mahim Railway Station",
+        "St. Michael’s Church",
+        "Mahim Beach",
+        "L.J. Road",
+        "Citylight Cinema",
+        "Canossa School",
+        "Sitladevi Temple",
+        "Paradise Cinema",
+        "Senapati Bapat Marg"
+      ],
+      nearbyAreas: ["Dadar", "Matunga", "Sion", "Bandra", "Worli"],
+      localBusinesses: [
+        "Hospitals",
+        "Coastal Homes",
+        "Bakeries",
+        "Tiffin Services",
+        "Commercial Kitchens"
+      ],
+      specialServices: [
+        {
+          title: "Stove & Hob Servicing",
+          description:
+            "Complete repair and servicing for all gas stoves and hobs used in apartments, tiffin services, and traditional households.",
+          features: [
+            "Multi-burner hob repairs",
+            "Knob and ignition fix",
+            "Brass and aluminum burner servicing",
+            "Old stove maintenance"
+          ]
+        },
+        {
+          title: "Gas Pipeline Installation & Leak Repairs",
+          description:
+            "Pipeline setups for kitchens in chawls, societies, and old buildings. Certified leak detection and emergency repairs.",
+          features: [
+            "Custom copper/MS pipe fittings",
+            "Leak testing & repair",
+            "New PNG/LPG pipeline setup",
+            "Compliance certification"
+          ]
+        },
+        {
+          title: "Emergency Coastal Safety Checks",
+          description:
+            "Gas line corrosion and leakage checks for homes near Mahim Beach or sea-facing buildings. 24/7 support with anti-corrosion treatment.",
+          features: [
+            "Moisture & rust impact testing",
+            "Gas leak isolation",
+            "Regulator replacement",
+            "Safety tag with servicing date"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Ayesha Shaikh",
+          profession: "Tiffin Service Owner",
+          company: "Homely Meals",
+          area: "Mahim Bazar",
+          rating: 5,
+          text: "Quick and affordable gas repair. They fixed my 3-burner stove before lunch orders. Always on time!",
+          service: "Gas Stove Repair",
+          date: "Feb 2025",
+          jobType: "Commercial Kitchen"
+        },
+        {
+          name: "Nitin Thakur",
+          profession: "Retired Govt. Officer",
+          area: "L.J. Road",
+          rating: 4.9,
+          text: "Our kitchen pipeline was corroded due to sea air. Their technician replaced it with proper anti-rust fittings. Clean job!",
+          service: "Pipeline Replacement",
+          date: "Nov 2024",
+          jobType: "Residential"
+        },
+        {
+          name: "Dr. Sanjana Iyer",
+          profession: "Pediatrician",
+          company: "Private Clinic",
+          area: "Sitladevi Temple Road",
+          rating: 5,
+          text: "Prompt emergency service. We had a gas smell in our staff kitchen and it was fixed in 30 minutes.",
+          service: "Leak Detection",
+          date: "Jan 2025",
+          jobType: "Clinic Kitchen"
+        }
+      ],
+      advantages: [
+        {
+          icon: "MapPin",
+          title: "Local Mahim Coverage",
+          description:
+            "Servicing all of Mahim West’s residential and commercial hubs — from sea-facing towers to local tiffin businesses.",
+          stats: "15+ micro-locations covered"
+        },
+        {
+          icon: "Tool",
+          title: "Specialist for Old Buildings",
+          description:
+            "Tailored pipeline retrofitting and stove servicing for old apartments and society kitchens.",
+          stats: "900+ jobs completed"
+        },
+        {
+          icon: "Clock",
+          title: "Rapid Emergency Team",
+          description:
+            "Response team trained for emergency leak control within 25 minutes across Mahim West.",
+          stats: "24/7 service"
+        },
+        {
+          icon: "BadgeCheck",
+          title: "Certified Technicians",
+          description:
+            "Trained professionals with ID verification and years of experience in gas pipeline safety.",
+          stats: "4.8★ rating"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Trusted by local Mahim businesses and homeowners since 2013",
+          "Pipeline installation for chawls, societies, and coastal homes",
+          "Rapid response for gas leaks in seaside buildings",
+          "Old stove maintenance and branded gas hob repair",
+          "Certified technicians with safety-first approach",
+          "Support for tiffin services, restaurants, and clinics"
+        ],
+        services: {
+          residential: [
+            "Gas hob servicing for 2 to 4 burner systems",
+            "Leak repairs in old kitchen pipelines",
+            "New installations for home renovations",
+            "Sea-rust-proof pipelines for sea-facing flats",
+            "Emergency gas smell detection and response",
+            "Annual maintenance packages for families"
+          ],
+          commercial: [
+            "Stove repair and maintenance for tiffin kitchens",
+            "Gas pipelines and certification for clinics and offices",
+            "Quick repair support for bakeries and home chefs",
+            "Safety audits and compliance checks",
+            "Gas pipeline planning for commercial kitchens",
+            "Leak-proof fittings for old establishments"
+          ]
+        },
+        emergencyInfo:
+          "Experiencing a gas leak or pipe corrosion in Mahim West? Call our emergency response team — on-site in 20-25 minutes. We serve hospitals, tiffin kitchens, and homes with certified safety and quick resolutions."
+      }
+    },
+    "dadar-east-west": {
+      name: "Dadar East & West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Reliable gas stove repair and pipeline services in Dadar East & West – serving old buildings, chawls, high-rises, and commercial kitchens with prompt response.",
+      heroDescription:
+        "⚙️ Gas stove and pipeline services in Dadar East & West — quick response, certified technicians, and 500+ happy customers. Trusted in Mumbai’s busiest cultural hub.",
+      responseTime: "20-25 minutes",
+      customers: "500+",
+      pincode: "400014",
+      establishedYear: "2013",
+      rating: "4.9",
+      completedJobs: "1100+",
+      landmarks: [
+        "Dadar Railway Station (Western & Central)",
+        "Shivaji Park",
+        "Plaza Cinema",
+        "Kabootar Khana",
+        "Chitra Cinema",
+        "Portuguese Church",
+        "Gokhale Road",
+        "BMC Market",
+        "Siddhivinayak Temple"
+      ],
+      nearbyAreas: ["Mahim", "Matunga", "Wadala", "Prabhadevi", "Parel"],
+      localBusinesses: [
+        "Old Apartments",
+        "Chawls",
+        "Vegetarian Hotels",
+        "Modular Kitchens",
+        "Medical Clinics"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove Repair & Maintenance",
+          description:
+            "Full servicing of single to four-burner gas stoves and hobs for homes, restaurants, and old residential units.",
+          features: [
+            "Repair of auto-ignition systems",
+            "Cleaning of burners & valves",
+            "Spare parts replacement",
+            "Old stove servicing for chawls"
+          ]
+        },
+        {
+          title: "Pipeline Installation & Repair",
+          description:
+            "Safe PNG/LPG gas pipeline installation for flats, clinics, and kitchens. Leak-proof fittings and corrosion resistance.",
+          features: [
+            "Gas inlet and outlet setup",
+            "Pipe welding & routing",
+            "Old building compliance",
+            "Safety audit and certification"
+          ]
+        },
+        {
+          title: "Emergency Leak Detection",
+          description:
+            "Quick emergency gas leak check and repair in densely populated buildings or shared chawl kitchens.",
+          features: [
+            "24x7 availability",
+            "Advanced leak detection tools",
+            "Regulator and hose replacement",
+            "Safety tag after each job"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Ashok Patil",
+          profession: "Retired BMC Staff",
+          area: "Kabootar Khana",
+          rating: 5,
+          text: "They fixed our old gas stove and pipelines the same day. Clean and professional. Highly recommended for chawl homes.",
+          service: "Pipeline & Stove Repair",
+          date: "Jan 2025",
+          jobType: "Residential"
+        },
+        {
+          name: "Rashmi Rao",
+          profession: "Nutritionist",
+          area: "Shivaji Park",
+          rating: 4.8,
+          text: "Our hob stopped working suddenly. Their technician came within 30 minutes and fixed it without replacing the full unit.",
+          service: "Hob Repair",
+          date: "Nov 2024",
+          jobType: "Home Kitchen"
+        },
+        {
+          name: "Imran Shaikh",
+          profession: "Hotel Owner",
+          company: "Biryani Point",
+          area: "Dadar East",
+          rating: 5,
+          text: "Fast and expert gas pipeline setup for our hotel kitchen. Got the safety certificate as well.",
+          service: "Gas Pipeline Installation",
+          date: "Feb 2025",
+          jobType: "Commercial"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Clock",
+          title: "Fast Service in Congested Areas",
+          description:
+            "Specialized in navigating busy streets of Dadar for gas repairs and installations with fast turnaround.",
+          stats: "20-25 min response"
+        },
+        {
+          icon: "MapPin",
+          title: "Complete Area Coverage",
+          description:
+            "Whether you stay near Dadar Station, Shivaji Park, or Gokhale Road — we serve all corners of East & West.",
+          stats: "15+ micro-areas covered"
+        },
+        {
+          icon: "Wrench",
+          title: "Chawl & Old Building Expertise",
+          description:
+            "Tailored pipeline and stove solutions for Dadar’s heritage chawls and old buildings with outdated fittings.",
+          stats: "600+ old unit repairs"
+        },
+        {
+          icon: "BadgeCheck",
+          title: "Trusted by Local Businesses",
+          description:
+            "Restaurants, clinics, and families in Dadar trust us for quick and safe gas services.",
+          stats: "1100+ jobs done"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Gas repair experts serving Dadar since 2013",
+          "Available for both residential flats and commercial kitchens",
+          "Specialists in servicing chawl and old society gas systems",
+          "Emergency service with 20-25 min average response",
+          "Affordable, certified, and professional gas solutions",
+          "Rated 4.9★ by 500+ Dadar customers"
+        ],
+        services: {
+          residential: [
+            "Old gas stove and hob servicing",
+            "Leak detection in kitchen pipelines",
+            "Complete PNG/LPG pipeline installation",
+            "Safety audits for aging buildings",
+            "Emergency regulator and pipe replacement",
+            "Annual maintenance plans for homes"
+          ],
+          commercial: [
+            "Restaurant kitchen gas line setup",
+            "Modular kitchen hob repairs",
+            "Medical clinic pipeline compliance",
+            "Gas stove repair for tiffin services",
+            "Commercial stove burner fitting",
+            "Leak test certification for premises"
+          ]
+        },
+        emergencyInfo:
+          "Smelling gas or facing stove ignition issues in Dadar East or West? Our emergency team is available 24/7. Call now for same-day support and certified safety checks."
+      }
+    },
+    "wadala-west": {
+      name: "Wadala West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Expert gas stove and pipeline services in Wadala West — trusted by residents of high-rise apartments, old colonies, and educational institutions.",
+      heroDescription:
+        "⚒️ Gas repair and installation services in Wadala West — Fast response, certified technicians, and 400+ satisfied customers across residential and institutional zones.",
+      responseTime: "25-30 minutes",
+      customers: "400+",
+      pincode: "400031",
+      establishedYear: "2014",
+      rating: "4.8",
+      completedJobs: "900+",
+      landmarks: [
+        "Wadala Depot",
+        "Five Gardens",
+        "Veermata Jijabai Technological Institute (VJTI)",
+        "Don Bosco High School",
+        "IMAX Dome Wadala",
+        "Bhakti Park Monorail Station"
+      ],
+      nearbyAreas: ["Matunga", "Sion", "Antop Hill", "Dadar", "Wadala East"],
+      localBusinesses: [
+        "High-rise housing societies",
+        "Student hostels",
+        "Old railway colony apartments",
+        "Schools and colleges",
+        "Small eateries"
+      ],
+      specialServices: [
+        {
+          title: "Gas Stove & Hob Repair",
+          description:
+            "Servicing of all types of gas stoves and hobs in compact homes and apartments, ensuring energy-efficient performance.",
+          features: [
+            "Burner and valve cleaning",
+            "Auto ignition repair",
+            "Hob panel servicing",
+            "Parts replacement"
+          ]
+        },
+        {
+          title: "Gas Pipeline Installation & Maintenance",
+          description:
+            "Secure PNG/LPG pipeline fitting for residential colonies and institutional kitchens with full safety compliance.",
+          features: [
+            "Leak-proof pipelines",
+            "Flexible pipe fitting",
+            "Safety valve checks",
+            "Annual inspections"
+          ]
+        },
+        {
+          title: "Emergency Gas Leak Detection",
+          description:
+            "Quick response to suspected gas leaks in apartments, hostels, and shared kitchens, especially near rail colony areas.",
+          features: [
+            "Advanced detection tools",
+            "24x7 availability",
+            "Immediate pipe sealing",
+            "Certified safety check"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Nilesh Kamat",
+          profession: "Bank Employee",
+          area: "Five Gardens",
+          rating: 5,
+          text: "Quick and clean service. They installed a new PNG pipeline in our old building without disturbing the walls.",
+          service: "Pipeline Installation",
+          date: "Mar 2025",
+          jobType: "Residential"
+        },
+        {
+          name: "Sneha Mehta",
+          profession: "Student",
+          area: "VJTI Hostel",
+          rating: 4.7,
+          text: "Our hostel kitchen gas stove had a leak — they came within 30 minutes and fixed it. Very professional team.",
+          service: "Emergency Repair",
+          date: "Feb 2025",
+          jobType: "Institutional"
+        },
+        {
+          name: "Arif Sheikh",
+          profession: "Café Owner",
+          company: "Café Garden View",
+          area: "Wadala West",
+          rating: 5,
+          text: "Hassle-free gas repair service for our café kitchen. Got the work done after hours — great flexibility.",
+          service: "Stove & Hob Repair",
+          date: "Jan 2025",
+          jobType: "Commercial"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Clock",
+          title: "Timely Support for High-Rise Buildings",
+          description:
+            "We handle pipeline and stove servicing even in congested towers and colonies.",
+          stats: "25-30 min response"
+        },
+        {
+          icon: "MapPin",
+          title: "Coverage Around Colleges & Hostels",
+          description:
+            "Special support for student kitchens and PG accommodations across Wadala.",
+          stats: "5+ college zones"
+        },
+        {
+          icon: "Wrench",
+          title: "Old Society Compliance",
+          description:
+            "Experienced with older Wadala societies where pipelines and stoves are outdated.",
+          stats: "300+ old system repairs"
+        },
+        {
+          icon: "BadgeCheck",
+          title: "Certified and Trusted Technicians",
+          description:
+            "Our staff is trained, background-verified, and equipped for institutional and residential service.",
+          stats: "900+ jobs completed"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Wadala West with trusted gas repair since 2014",
+          "Expertise in high-rise towers and railway colony apartments",
+          "Pipeline installation for homes and hostels",
+          "24/7 leak detection and emergency repairs",
+          "Affordable pricing and transparent service",
+          "Rated 4.8★ by 400+ local customers"
+        ],
+        services: {
+          residential: [
+            "Old and new gas stove repairs",
+            "Pipeline installation for society flats",
+            "Hob panel maintenance",
+            "Regulator and pipe checks",
+            "Post-installation safety certification",
+            "Flexible hose and joint fitting"
+          ],
+          commercial: [
+            "Kitchen gas line setup for cafés",
+            "Compliance work for school/college kitchens",
+            "Commercial hob and stove repair",
+            "Annual maintenance contracts (AMC)",
+            "Safety training and inspection for institutions"
+          ]
+        },
+        emergencyInfo:
+          "Suspect a gas leak in your Wadala West apartment or hostel? Call our emergency team 24x7 for prompt leak detection, repair, and safety assurance."
+      }
+    },
+    "mumbai-central-east-west": {
+      name: "Mumbai Central East & West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Fast and professional gas repair services in Mumbai Central — serving residential complexes, hospitals, guest houses, and commercial hubs with certified technicians.",
+      heroDescription:
+        "⚙️ Reliable gas stove and pipeline repair in Mumbai Central East & West. 20–25 min response time, 1000+ jobs completed. Trusted by hospitals, hostels, and apartments across the city center.",
+      responseTime: "20-25 minutes",
+      customers: "500+",
+      pincode: "400008",
+      establishedYear: "2014",
+      rating: "4.9",
+      completedJobs: "1000+",
+      landmarks: [
+        "Mumbai Central Railway Station",
+        "Jaslok Hospital",
+        "Maratha Mandir",
+        "Bhatia Hospital",
+        "Grant Medical College",
+        "Bombay Central Bus Depot",
+        "Mahalaxmi Temple"
+      ],
+      nearbyAreas: ["Byculla", "Mahalaxmi", "Tardeo", "Girgaon", "Marine Lines"],
+      localBusinesses: [
+        "Hospitals and Clinics",
+        "Hostels and PGs",
+        "Old Residential Buildings",
+        "Hotels and Guest Houses",
+        "Cafeterias and Food Courts"
+      ],
+      specialServices: [
+        {
+          title: "Hospital & Institutional Kitchen Gas Setup",
+          description:
+            "Reliable and safe gas pipeline setup and repair for hospital kitchens, canteens, and institutional use with compliance documentation.",
+          features: [
+            "PNG and LPG pipeline installation",
+            "Leak-proof joints and valves",
+            "Annual inspections and maintenance",
+            "Emergency response protocols"
+          ]
+        },
+        {
+          title: "Residential Gas Stove Services",
+          description:
+            "Repair and maintenance of gas stoves, cooktops, and hobs in apartments, hostels, and PGs in Mumbai Central.",
+          features: [
+            "Auto ignition and burner repair",
+            "Hob servicing and deep cleaning",
+            "Spare parts replacement",
+            "Annual maintenance contracts"
+          ]
+        },
+        {
+          title: "Emergency Gas Leak Repair",
+          description:
+            "Round-the-clock emergency services for gas leaks and faulty lines with a 20-minute response guarantee in central Mumbai.",
+          features: [
+            "Advanced leak detection tools",
+            "Immediate technician dispatch",
+            "Full safety assessment",
+            "Post-repair safety certification"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Dr. Sameer Pathak",
+          profession: "Hospital Admin",
+          company: "Jaslok Hospital",
+          area: "Mumbai Central",
+          rating: 5,
+          text: "Gas Repair Wale helped us upgrade our kitchen pipelines safely with full documentation. They understand hospital requirements well.",
+          service: "Hospital Kitchen Pipeline",
+          date: "April 2025",
+          jobType: "Institutional"
+        },
+        {
+          name: "Nina D'Souza",
+          profession: "Resident",
+          area: "Mahalaxmi",
+          rating: 4.9,
+          text: "Our gas stove was leaking slightly. Their technician arrived within 25 minutes and fixed it with genuine parts. Very reliable service.",
+          service: "Gas Stove Repair",
+          date: "March 2025",
+          jobType: "Residential"
+        },
+        {
+          name: "Mohammed Rafi",
+          profession: "PG Owner",
+          area: "Mumbai Central West",
+          rating: 5,
+          text: "They provided complete gas line setup and safety checks for all my PG kitchens. Clean and professional work, and affordable too.",
+          service: "PG Kitchen Pipeline Setup",
+          date: "February 2025",
+          jobType: "Commercial"
+        }
+      ],
+      advantages: [
+        {
+          icon: "ShieldCheck",
+          title: "Hospital-Grade Compliance",
+          description:
+            "We understand medical and institutional gas safety standards and follow full compliance protocols.",
+          stats: "Preferred by 5+ hospitals"
+        },
+        {
+          icon: "MapPin",
+          title: "Central Mumbai Accessibility",
+          description:
+            "Fast service across Mumbai Central East and West with deep coverage of hospitals, PGs, and guest houses.",
+          stats: "20–25 min response"
+        },
+        {
+          icon: "Award",
+          title: "High Customer Trust",
+          description:
+            "Over 500 loyal customers in Mumbai Central with consistent 4.9★ ratings for service, safety, and punctuality.",
+          stats: "4.9★ rating"
+        },
+        {
+          icon: "Wrench",
+          title: "Legacy Building Expertise",
+          description:
+            "Experience with old buildings and legacy kitchen systems with custom fittings and retro-installations.",
+          stats: "1000+ jobs completed"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Mumbai Central since 2014 with 4.9★ customer rating",
+          "Trusted by hospitals, PGs, and hostels for gas safety and compliance",
+          "Fast response across East and West Mumbai Central areas",
+          "24x7 emergency gas repair and leak detection service",
+          "Certified technicians and branded spare parts",
+          "Legacy and modern kitchen gas solutions with complete documentation"
+        ],
+        services: {
+          residential: [
+            "Flat and apartment gas stove repairs",
+            "Hob cleaning and auto ignition fixing",
+            "Gas line installation with safety checks",
+            "Flexible hose and pipe replacement",
+            "Emergency gas leak response",
+            "Annual maintenance packages"
+          ],
+          commercial: [
+            "Hospital kitchen pipeline installations",
+            "Hostel and PG gas system repairs",
+            "Compliance documentation and certifications",
+            "24/7 availability for institutions",
+            "Commercial-grade burner and valve fitting",
+            "Café and food court servicing"
+          ]
+        },
+        emergencyInfo:
+          "Need emergency gas repair in Mumbai Central? We reach in 20–25 minutes across East & West areas — serving hospitals, PGs, apartments, and guest houses with 24/7 certified support and full safety assurance."
+      }
+    },
+    "mahalaxmi-east-west": {
+      name: "Mahalaxmi East & West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Expert gas repair and installation services in Mahalaxmi East & West — serving residential towers, heritage buildings, and commercial kitchens with speed and safety.",
+      heroDescription:
+        "⚒️ Gas stove and pipeline repair in Mahalaxmi East & West — Fast response, experienced technicians, and trusted service for homes and commercial spaces.",
+      responseTime: "25-30 minutes",
+      customers: "350+",
+      pincode: "400011",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "700+",
+      landmarks: [
+        "Mahalaxmi Temple",
+        "Mahalaxmi Racecourse",
+        "Bhau Daji Lad Museum",
+        "Bhau Daji Lad Zoo",
+        "Haji Ali Dargah",
+        "Jijamata Udyan",
+        "Saat Rasta Circle"
+      ],
+      nearbyAreas: ["Mumbai Central", "Worli", "Tardeo", "Byculla", "Haji Ali"],
+      localBusinesses: [
+        "Old residential buildings",
+        "Luxury towers",
+        "Temples and religious kitchens",
+        "Restaurants & cafés",
+        "Boutique hotels"
+      ],
+      specialServices: [
+        {
+          title: "Gas Line Setup for Heritage Homes",
+          description:
+            "Safe and efficient gas pipeline installation for heritage and old buildings with structural safety and leak-proof fittings.",
+          features: [
+            "Custom retrofitting for old structures",
+            "Cast iron and copper options",
+            "Safety-first approach",
+            "Minimal structural disruption"
+          ]
+        },
+        {
+          title: "Temple & Community Kitchen Service",
+          description:
+            "Special gas fitting and maintenance for temple kitchens and charity langar halls. Clean, quick, and efficient.",
+          features: [
+            "Multi-burner setup",
+            "Cylinder room connection",
+            "Regular inspection packages",
+            "Post-event servicing"
+          ]
+        },
+        {
+          title: "Residential & Luxury Tower Repairs",
+          description:
+            "Routine and emergency gas stove repairs, hob servicing, and pipeline safety checks for high-rise buildings in Mahalaxmi.",
+          features: [
+            "All-brands hob repair",
+            "Gas leak detection tools",
+            "Genuine spares",
+            "AMCs available"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Suresh Pujari",
+          profession: "Temple Committee Member",
+          area: "Mahalaxmi East",
+          rating: 5,
+          text: "Gas Repair Wale installed a new multi-burner line in our temple kitchen. They handled everything with care and proper documentation.",
+          service: "Temple Gas Pipeline",
+          date: "May 2025",
+          jobType: "Community"
+        },
+        {
+          name: "Fatima Shaikh",
+          profession: "Café Owner",
+          area: "Mahalaxmi West",
+          rating: 4.9,
+          text: "Their technician came within 30 minutes when our hob stopped working. He fixed it and also cleaned the burner nicely.",
+          service: "Hob Repair",
+          date: "April 2025",
+          jobType: "Commercial"
+        },
+        {
+          name: "Akshay Dama",
+          profession: "Resident",
+          area: "Saat Rasta",
+          rating: 4.8,
+          text: "They replaced the old copper pipe in my apartment with a new leak-proof fitting. Very professional and polite team.",
+          service: "Gas Line Replacement",
+          date: "March 2025",
+          jobType: "Residential"
+        }
+      ],
+      advantages: [
+        {
+          icon: "ShieldCheck",
+          title: "Specialists in Old Buildings",
+          description:
+            "Gas-safe solutions for structurally sensitive and heritage homes across Mahalaxmi East & West.",
+          stats: "100+ old homes served"
+        },
+        {
+          icon: "Bolt",
+          title: "Emergency Support",
+          description:
+            "Quick dispatch for gas leaks and hob failures — we’re available across the neighborhood in under 30 minutes.",
+          stats: "25–30 min service"
+        },
+        {
+          icon: "Wrench",
+          title: "Temple & Community Service",
+          description:
+            "Serving temples and charity kitchens with multi-burner setup, inspections, and safe pipeline fittings.",
+          stats: "5+ temples served"
+        },
+        {
+          icon: "Star",
+          title: "Consistent Ratings",
+          description:
+            "Loved by residents and small businesses for our honesty, punctuality, and lasting repairs.",
+          stats: "4.8★ from 350+ users"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Serving Mahalaxmi since 2015 with 4.8★ rating",
+          "Expertise in old buildings and luxury towers",
+          "Gas services for temple kitchens and cafés",
+          "Emergency gas leak response in 25–30 minutes",
+          "Certified technicians with branded tools",
+          "Flexible AMCs for homes and community halls"
+        ],
+        services: {
+          residential: [
+            "Hob cleaning and servicing",
+            "Gas stove repair with spare part replacement",
+            "Gas pipe leak inspection",
+            "Apartment and society pipeline setup",
+            "Old copper pipe replacement",
+            "Emergency shut-off valve installation"
+          ],
+          commercial: [
+            "Multi-burner installations",
+            "Religious & langar kitchen support",
+            "Café & cloud kitchen gas line service",
+            "Cylinder to burner safety checks",
+            "Annual inspections and repair contracts",
+            "Heritage building consultation"
+          ]
+        },
+        emergencyInfo:
+          "Need urgent gas repair in Mahalaxmi? Whether you stay in a high-rise, old chawl, or manage a temple kitchen — we reach Mahalaxmi East & West in 25–30 minutes. Call us 24/7 for emergency leak repair and inspection."
+      }
+    },
+    "marine-drive-colaba": {
+      name: "Marine Drive & Colaba",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Trusted gas repair and installation services across Marine Drive & Colaba — catering to luxury apartments, heritage homes, and commercial establishments.",
+      heroDescription:
+        "🏠 Expert gas stove and pipeline service in Marine Drive & Colaba — Fast, clean, and professional support for homes, cafés, and colonial buildings.",
+      responseTime: "25-35 minutes",
+      customers: "500+",
+      pincode: "400001",
+      establishedYear: "2015",
+      rating: "4.9",
+      completedJobs: "850+",
+      landmarks: [
+        "Gateway of India",
+        "Taj Mahal Palace Hotel",
+        "Colaba Causeway",
+        "Marine Drive Promenade",
+        "Nariman Point",
+        "Regal Cinema",
+        "Jehangir Art Gallery"
+      ],
+      nearbyAreas: ["Churchgate", "Fort", "Nariman Point", "Cuffe Parade"],
+      localBusinesses: [
+        "Luxury sea-facing apartments",
+        "Old colonial buildings",
+        "Hotels & cafés",
+        "Art galleries",
+        "Government offices"
+      ],
+      specialServices: [
+        {
+          title: "Luxury Apartment Gas Services",
+          description:
+            "Precision gas line installation and hob repair for premium sea-facing apartments and serviced residences.",
+          features: [
+            "Stainless steel & copper options",
+            "Designer hob servicing",
+            "Leak-proof fittings",
+            "Annual maintenance packages"
+          ]
+        },
+        {
+          title: "Commercial Café & Kitchen Setup",
+          description:
+            "Safe and customized gas solutions for cafés, art cafés, and boutique hotels across Colaba and Marine Drive.",
+          features: [
+            "Multi-burner lines",
+            "Pressure regulator setup",
+            "Quick fittings with safety checks",
+            "24x7 emergency service"
+          ]
+        },
+        {
+          title: "Old Building Gas Pipe Replacement",
+          description:
+            "Retrofitting and secure pipe replacement for old colonial and heritage properties in the area.",
+          features: [
+            "Minimal wall tampering",
+            "Old-to-new line migration",
+            "Historic structure-safe methods",
+            "Compliance-ready solutions"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Nina Bhansali",
+          profession: "Artist",
+          area: "Colaba Causeway",
+          rating: 5,
+          text: "I live in an old heritage building, and Gas Repair Wale did a wonderful job upgrading my gas pipeline without damaging anything.",
+          service: "Gas Line Upgrade",
+          date: "May 2025",
+          jobType: "Residential"
+        },
+        {
+          name: "Ryan D’Souza",
+          profession: "Café Owner",
+          area: "Marine Drive",
+          rating: 4.9,
+          text: "They installed a new gas line for our rooftop café and also provided safety training for staff. Very professional and quick.",
+          service: "Commercial Setup",
+          date: "June 2025",
+          jobType: "Commercial"
+        },
+        {
+          name: "Farah Irani",
+          profession: "Hotel Manager",
+          area: "Colaba",
+          rating: 4.8,
+          text: "The technician was well-trained, polite, and equipped. Our gas hob was repaired and cleaned in one visit. Highly recommend them.",
+          service: "Hob Repair",
+          date: "April 2025",
+          jobType: "Hospitality"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Home",
+          title: "Luxury & Heritage Coverage",
+          description:
+            "Whether you stay in a sea-facing tower or a heritage bungalow, we provide gas-safe solutions tailored to the structure.",
+          stats: "850+ jobs done"
+        },
+        {
+          icon: "Bolt",
+          title: "Emergency Response",
+          description:
+            "We reach Marine Drive or Colaba in 25–35 minutes for urgent gas issues, including leaks, flame problems, or smell alerts.",
+          stats: "4.9★ safety rated"
+        },
+        {
+          icon: "Wrench",
+          title: "Hob & Pipe Experts",
+          description:
+            "We service premium brands like Faber, Elica, Glen, Hafele, and more, with genuine parts and expert tools.",
+          stats: "Branded repair tools"
+        },
+        {
+          icon: "Building2",
+          title: "Trusted by Businesses",
+          description:
+            "Restaurants, cafés, and boutique hotels across Colaba and Marine Drive rely on us for their gas safety and setup.",
+          stats: "100+ commercial clients"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Fast gas repair service in Marine Drive & Colaba (25–35 min)",
+          "Certified technicians for luxury and heritage homes",
+          "Trusted by cafés, hotels, and art spaces",
+          "Emergency leak detection and safety fixes",
+          "Genuine parts used for premium hob brands",
+          "Affordable AMC plans for old buildings"
+        ],
+        services: {
+          residential: [
+            "Gas pipe repair & leak detection",
+            "Built-in hob cleaning & servicing",
+            "Stove ignition & burner issue fix",
+            "Gas safety valve installation",
+            "Old pipe removal and retrofitting",
+            "Modular kitchen gas line fitting"
+          ],
+          commercial: [
+            "Commercial burner line setup",
+            "Gas distribution network for cafés",
+            "Cylinders & regulator compliance checks",
+            "Hotel kitchen gas inspections",
+            "Emergency repair during peak hours",
+            "Multi-station pipe layout planning"
+          ]
+        },
+        emergencyInfo:
+          "Located in a high-traffic or tourist area like Colaba or Marine Drive? We’re just a call away. Our technicians can reach you within 25–35 minutes for urgent gas repairs, leak inspections, or commercial emergencies."
+      }
+    },
+    "churchgate": {
+      name: "Churchgate",
+      city: "Mumbai",
+      state: "Maharashtra",
+      description:
+        "Efficient gas repair and installation services in Churchgate – serving residential apartments, corporate buildings, and historic zones with trusted solutions.",
+      heroDescription:
+        "🔥 Trusted gas stove and pipeline services in Churchgate – Fast, professional, and tailored for heritage apartments and offices near Mumbai's business hub.",
+      responseTime: "20-30 minutes",
+      customers: "400+",
+      pincode: "400020",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "700+",
+      landmarks: [
+        "Churchgate Railway Station",
+        "Eros Cinema",
+        "Oval Maidan",
+        "Bombay High Court",
+        "Mumbai University",
+        "Marine Lines",
+        "Flora Fountain"
+      ],
+      nearbyAreas: ["Nariman Point", "Marine Drive", "Fort", "Colaba"],
+      localBusinesses: [
+        "Corporate offices",
+        "Colonial buildings",
+        "Student hostels",
+        "Residential complexes",
+        "Coaching centers"
+      ],
+      specialServices: [
+        {
+          title: "Gas Line Retrofitting for Heritage Buildings",
+          description:
+            "Churchgate has many old residential and office buildings. We provide retrofitting and secure installations to upgrade aging gas infrastructure.",
+          features: [
+            "Zero-damage wall fittings",
+            "Leak-proof joints",
+            "Upgrading GI to copper or SS lines",
+            "Heritage-compliant work"
+          ]
+        },
+        {
+          title: "Commercial Office Kitchen Gas Services",
+          description:
+            "Servicing compact office kitchens and cafeterias with professional stove and pipeline repair in high-rise commercial towers.",
+          features: [
+            "Quick burner fixes",
+            "Regulator setup",
+            "Mini-pantry solutions",
+            "Post-office hours service"
+          ]
+        },
+        {
+          title: "Student Hostel Stove Repair",
+          description:
+            "Quick gas stove and hob repair services for student PGs and hostels located near universities and coaching centers.",
+          features: [
+            "Affordable plans",
+            "Multi-stove support",
+            "Genuine parts used",
+            "Monthly inspection available"
+          ]
+        }
+      ],
+      testimonials: [
+        {
+          name: "Ravi Mehta",
+          profession: "Lawyer",
+          area: "Churchgate",
+          rating: 4.9,
+          text: "Our office pantry had a gas issue. The technician arrived quickly, fixed the problem, and explained everything in detail.",
+          service: "Office Gas Repair",
+          date: "June 2025",
+          jobType: "Commercial"
+        },
+        {
+          name: "Neha Kapoor",
+          profession: "Student",
+          area: "Marine Lines",
+          rating: 5,
+          text: "Fast and affordable repair for my PG stove. It was sparking and they fixed it within 30 minutes.",
+          service: "Gas Stove Repair",
+          date: "May 2025",
+          jobType: "Residential"
+        },
+        {
+          name: "Sunil Rao",
+          profession: "Building Secretary",
+          area: "Churchgate",
+          rating: 4.8,
+          text: "We needed full gas pipe replacement in our old society. These guys handled it professionally and neatly.",
+          service: "Full Pipe Installation",
+          date: "April 2025",
+          jobType: "Society/Building"
+        }
+      ],
+      advantages: [
+        {
+          icon: "Building2",
+          title: "Heritage Building Expertise",
+          description:
+            "Specialized solutions for Churchgate's old residential and commercial buildings – safety without structural impact.",
+          stats: "200+ heritage jobs"
+        },
+        {
+          icon: "Bolt",
+          title: "Fast Downtown Reach",
+          description:
+            "Being centrally located, we reach Churchgate within 20–30 minutes for emergencies and same-day services.",
+          stats: "4.8★ local rating"
+        },
+        {
+          icon: "Wrench",
+          title: "Compact Kitchen Solutions",
+          description:
+            "From hostel stoves to office pantries, our experts handle small-space gas setups and repairs efficiently.",
+          stats: "Mini setups in 50+ sites"
+        },
+        {
+          icon: "Star",
+          title: "Trusted by Students & Offices",
+          description:
+            "Over 700+ repairs done for professionals, students, and tenants living and working in the Churchgate area.",
+          stats: "400+ happy clients"
+        }
+      ],
+      seoContent: {
+        whyChoose: [
+          "Quick gas repair in Churchgate (20–30 min reach)",
+          "Experts in old building gas setups",
+          "Serves both homes and commercial offices",
+          "Emergency leak inspection & stove fixes",
+          "Student PG & hostel gas repair packages",
+          "AMC for offices & small pantries"
+        ],
+        services: {
+          residential: [
+            "Gas stove repair and burner cleaning",
+            "Built-in hob servicing",
+            "Gas pipe retrofitting",
+            "Gas leak detection",
+            "Safety valve setup",
+            "Multi-floor pipeline service"
+          ],
+          commercial: [
+            "Office pantry gas line setup",
+            "Mini kitchen burner installation",
+            "Cafeteria compliance checks",
+            "Monthly safety inspections",
+            "Multi-user gas station setup",
+            "Quick fix for mid-day emergencies"
+          ]
+        },
+        emergencyInfo:
+          "Gas Repair Wale reaches Churchgate in just 20–30 minutes for emergency gas leaks, faulty stoves, or urgent pipe issues. Perfect for offices, hostels, and residential societies looking for quick and safe gas services in the downtown Mumbai area."
+      }
+    },
+
+    
   },
 }
 

@@ -29,7 +29,15 @@ export function Hero() {
       { value: "malda-east-west", label: "Malda East West" },
       { value: "goregaon-east-west", label: "Goregaon East West" },
       { value: "ram-mandir-east", label: "Ram Mandir East" },
-      { value: "andheri-west", label: "Andheri West" },
+      { value: "vile-parle-east-west", label: "Vile Parle East & West" },
+      { value: "santacruz-east-west", label: "Santacruz East & West" },
+      { value: "bandra-east-west", label: "Bandra East & West" },
+      { value: "mahim-west", label: "Mahim West" },
+      { value: "dadar-east-west", label: "Dadar East & West" },
+      { value: "wadala-west", label: "Wadala West" },
+      { value: "mahalaxmi", label: "Mahalaxmi East & West" },
+      { value: "marine-drive-colaba", label: "Marine Drive & Colaba" },
+      { value: "churchgate", label: "Churchgate" },
     ],
   }
 
