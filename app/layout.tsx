@@ -291,6 +291,7 @@ export default function RootLayout({
         <meta name="business:contact_data:country_name" content="India" />
         <meta name="business:contact_data:phone_number" content="+91-83027-13127" />
         <meta name="business:contact_data:website" content="https://gasrepairewale.com" />
+        <meta name="google-site-verification" content="JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE" />
       </head>
       <body className={inter.className}>
         <ScrollToTopWrapper>

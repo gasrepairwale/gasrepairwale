@@ -100,7 +100,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://gasrepairewale.com/locations/${params.city}/${params.area}`,
     },
     other: {
-      "google-site-verification": "your-google-verification-code",
+      "google-site-verification": "JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE",
     },
   }
 }
