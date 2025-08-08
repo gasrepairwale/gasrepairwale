@@ -110,6 +110,17 @@ export function Footer() {
             </div>
           </div>
         </div>
+        {/* Developer Name */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-center items-center">
+            <div className="flex space-x-6 mt-4 md:mt-0 gap-2">
+              <p className="text-gray-400 text-sm">Design and Developed by</p>
+              <Link href="https://pradeep-saran.netlify.app/" className="text-gray-400 hover:text-orange-600 text-sm flex items-center !ml-0" target="_blank">
+                Pradeep Saran
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   )
