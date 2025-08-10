@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: "en_IN",
-      url: `https://gasrepairewale.com/locations/${params.city}/${params.area}`,
+      url: `https://gasrepairwale.com/locations/${params.city}/${params.area}`,
       title,
       description,
       siteName: "Gas Repaire Wale",
@@ -97,7 +97,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: ["/placeholder.svg?height=630&width=1200" + area.name + " " + area.city],
     },
     alternates: {
-      canonical: `https://gasrepairewale.com/locations/${params.city}/${params.area}`,
+      canonical: `https://gasrepairwale.com/locations/${params.city}/${params.area}`,
     },
     other: {
       "google-site-verification": "JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE",

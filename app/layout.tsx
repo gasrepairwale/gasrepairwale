@@ -50,14 +50,14 @@ export const metadata: Metadata = {
     "gas safety certificate",
     "gas appliance maintenance",
   ].join(", "),
-  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairewale.com" }],
+  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairwale.com" }],
   creator: "Gas Repaire Wale",
   publisher: "Gas Repaire Wale",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://gasrepairewale.com",
+    url: "https://gasrepairwale.com",
     title: "Professional Gas Repair Services in Pune & Mumbai | Gas Repaire Wale",
     description:
       "Expert gas stove repair, pipeline installation & emergency gas services across Pune & Mumbai. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://gasrepairewale.com",
+    canonical: "https://gasrepairwale.com",
   },
 }
 
@@ -92,11 +92,11 @@ const structuredData = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://gasrepairewale.com/#business",
+      "@id": "https://gasrepairwale.com/#business",
       name: "Gas Repaire Wale",
       description:
         "Professional gas stove repair, pipeline installation, and emergency gas services in Pune and Mumbai. Licensed technicians with 10+ years experience.",
-      url: "https://gasrepairewale.com",
+      url: "https://gasrepairwale.com",
       telephone: "+91-83027-13127",
       email: "info@gasrepairewale.com",
       priceRange: "₹₹",
@@ -165,7 +165,7 @@ const structuredData = {
               description:
                 "Professional gas stove repair for all brands including burner repair, ignition system repair, and complete servicing",
               provider: {
-                "@id": "https://gasrepairewale.com/#business",
+                "@id": "https://gasrepairwale.com/#business",
               },
             },
             priceSpecification: {
@@ -183,7 +183,7 @@ const structuredData = {
               description:
                 "Complete gas pipeline installation, repair, and maintenance services for residential and commercial properties",
               provider: {
-                "@id": "https://gasrepairewale.com/#business",
+                "@id": "https://gasrepairwale.com/#business",
               },
             },
             priceSpecification: {
@@ -200,7 +200,7 @@ const structuredData = {
               name: "Emergency Gas Repair",
               description: "24/7 emergency gas repair services for gas leaks, safety concerns, and urgent repairs",
               provider: {
-                "@id": "https://gasrepairewale.com/#business",
+                "@id": "https://gasrepairwale.com/#business",
               },
             },
             availability: "https://schema.org/InStock",
@@ -240,19 +240,19 @@ const structuredData = {
 
     {
       "@type": "WebSite",
-      "@id": "https://gasrepairewale.com/#website",
-      url: "https://gasrepairewale.com",
+      "@id": "https://gasrepairwale.com/#website",
+      url: "https://gasrepairwale.com",
       name: "Gas Repaire Wale",
       description: "Professional gas repair services in Pune and Mumbai",
       publisher: {
-        "@id": "https://gasrepairewale.com/#business",
+        "@id": "https://gasrepairwale.com/#business",
       },
       potentialAction: [
         {
           "@type": "SearchAction",
           target: {
             "@type": "EntryPoint",
-            urlTemplate: "https://gasrepairewale.com/search?q={search_term_string}",
+            urlTemplate: "https://gasrepairwale.com/search?q={search_term_string}",
           },
           "query-input": "required name=search_term_string",
         },
@@ -270,7 +270,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-        <link rel="canonical" href="https://gasrepairewale.com" />
+        <link rel="canonical" href="https://gasrepairwale.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ea580c" />
 
@@ -290,7 +290,7 @@ export default function RootLayout({
         <meta name="business:contact_data:postal_code" content="411001, 400001" />
         <meta name="business:contact_data:country_name" content="India" />
         <meta name="business:contact_data:phone_number" content="+91-83027-13127" />
-        <meta name="business:contact_data:website" content="https://gasrepairewale.com" />
+        <meta name="business:contact_data:website" content="https://gasrepairwale.com" />
         <meta name="google-site-verification" content="JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE" />
       </head>
       <body className={inter.className}>

@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { areaData } from "@/data/area-data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://gasrepairewale.com"
+  const baseUrl = "https://gasrepairwale.com"
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

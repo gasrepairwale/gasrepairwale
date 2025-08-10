@@ -40,14 +40,14 @@ export const metadata: Metadata = {
     "licensed gas repair",
     "gas services pune Mumbai",
   ].join(", "),
-  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairewale.com" }],
+  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairwale.com" }],
   creator: "Gas Repaire Wale",
   publisher: "Gas Repaire Wale",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://gasrepairewale.com/services",
+    url: "https://gasrepairwale.com/services",
     title: "Professional Gas Repair Services | Gas Stove Repair | Pipeline Installation",
     description:
       "Complete gas repair services including stove repair, pipeline installation, safety inspections, and emergency service. Licensed technicians serving Pune & Mumbai.",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     images: ["/services-twitter-image.jpg"],
   },
   alternates: {
-    canonical: "https://gasrepairewale.com/services",
+    canonical: "https://gasrepairwale.com/services",
   },
 }
 

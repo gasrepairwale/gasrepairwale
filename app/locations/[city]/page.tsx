@@ -763,7 +763,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `Gas Repair Services in ${city.name} | Gas Repaire Wale`,
       description: `Professional gas repair services in ${city.name} with ${city.totalCustomers} satisfied customers and ${city.avgResponseTime} response time.`,
-      url: `https://gasrepairewale.com/locations/${params.city}`,
+      url: `https://gasrepairwale.com/locations/${params.city}`,
     },
   }
 }

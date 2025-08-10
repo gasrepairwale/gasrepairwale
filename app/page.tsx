@@ -53,14 +53,14 @@ export const metadata: Metadata = {
     "gas safety certificate",
     "gas appliance maintenance",
   ].join(", "),
-  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairewale.com" }],
+  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairwale.com" }],
   creator: "Gas Repaire Wale",
   publisher: "Gas Repaire Wale",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://gasrepairewale.com",
+    url: "https://gasrepairwale.com",
     title: "Professional Gas Repair Services in Pune & Mumbai | Gas Repaire Wale",
     description:
       "Expert gas stove repair, pipeline installation & emergency gas services across Pune & Mumbai. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://gasrepairewale.com",
+    canonical: "https://gasrepairwale.com",
   },
 }
 

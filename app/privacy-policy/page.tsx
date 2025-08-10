@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Privacy Policy | Gas Repaire Wale",
     description: "Learn how we protect your personal information and respect your privacy rights.",
-    url: "https://gasrepairewale.com/privacy-policy",
+    url: "https://gasrepairwale.com/privacy-policy",
     siteName: "Gas Repaire Wale",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  canonical: "https://gasrepairewale.com/privacy-policy",
+  canonical: "https://gasrepairwale.com/privacy-policy",
 }
 
 export default function PrivacyPolicyPage() {

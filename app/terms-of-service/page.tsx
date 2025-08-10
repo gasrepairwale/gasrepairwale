@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms of Service | Gas Repaire Wale",
     description: "Read our terms of service and conditions for gas repair services.",
-    url: "https://gasrepairewale.com/terms-of-service",
+    url: "https://gasrepairwale.com/terms-of-service",
     siteName: "Gas Repaire Wale",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  canonical: "https://gasrepairewale.com/terms-of-service",
+  canonical: "https://gasrepairwale.com/terms-of-service",
 }
 
 export default function TermsOfServicePage() {

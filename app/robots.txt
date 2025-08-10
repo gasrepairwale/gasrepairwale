@@ -8,7 +8,7 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap location
-Sitemap: https://gasrepairewale.com/sitemap.xml
+Sitemap: https://gasrepairwale.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
@@ -53,4 +53,4 @@ User-agent: WhatsApp
 Allow: /
 
 # Additional SEO directives
-# Host: https://gasrepairewale.com
+# Host: https://gasrepairwale.com

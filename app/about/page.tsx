@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     "gas repair team",
     "gas service company background",
   ].join(", "),
-  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairewale.com" }],
+  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairwale.com" }],
   creator: "Gas Repaire Wale",
   publisher: "Gas Repaire Wale",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://gasrepairewale.com/about",
+    url: "https://gasrepairwale.com/about",
     title: "About Gas Repaire Wale | Professional Gas Repair Company Since 2013",
     description:
       "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune & Mumbai. 4.9★ rating, 24/7 emergency service.",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     images: ["/about-twitter-image.jpg"],
   },
   alternates: {
-    canonical: "https://gasrepairewale.com/about",
+    canonical: "https://gasrepairwale.com/about",
   },
 }
 
