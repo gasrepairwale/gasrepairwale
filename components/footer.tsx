@@ -52,8 +52,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-orange-600 transition-colors">
-                  Locations
+                <Link href="/locations/pune" className="text-gray-300 hover:text-orange-600 transition-colors">
+                  Pune
+                </Link>
+              </li>
+              <li>
+                <Link href="/locations/mumbai" className="text-gray-300 hover:text-orange-600 transition-colors">
+                  Mumbai
                 </Link>
               </li>
             </ul>
