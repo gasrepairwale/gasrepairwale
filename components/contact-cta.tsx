@@ -23,16 +23,40 @@ export function ContactCTA() {
     message: "",
   })
   const { toast } = useToast()
+  const [submitting, setSubmitting] = useState(false)
 
   // Handle form submission
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the data to your backend
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 2 hours.",
-    })
-    setFormData({ name: "", phone: "", email: "", service: "", message: "" })
+    try {
+      setSubmitting(true)
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          service: formData.service,
+          message: formData.message,
+        }),
+      })
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error || "Failed to send")
+      }
+
+      toast({
+        title: "Message Sent!",
+        description: "We'll get back to you within 30 minutes.",
+      })
+      setFormData({ name: "", phone: "", email: "", service: "", message: "" })
+    } catch (err: any) {
+      toast({ title: "Failed to send", description: err.message || "Please try again." })
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -158,8 +182,8 @@ export function ContactCTA() {
                     rows={4}
                   />
 
-                  <Button type="submit" className="w-full h-12 text-white bg-orange-600 hover:bg-orange-700 text-lg">
-                    Send Request
+                  <Button type="submit" disabled={submitting} className="w-full h-12 text-white bg-orange-600 hover:bg-orange-700 text-lg">
+                    {submitting ? "Sending..." : "Send Request"}
                   </Button>
                 </form>
 

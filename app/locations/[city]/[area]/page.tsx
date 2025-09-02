@@ -3,9 +3,8 @@ import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { ContactCTA } from "@/components/contact-cta"
+import { QuickBookingForm } from "@/components/quick-booking-form"
 import { areaData } from "@/data/area-data"
 import {
   MapPin,
@@ -117,108 +116,7 @@ export async function generateStaticParams() {
   return params
 }
 
-// Quick Booking Form Component
-function QuickBookingForm({ area, className = "" }: { area: any; className?: string }) {
-  return (
-    <Card className={`shadow-2xl border-0 bg-white/95 backdrop-blur-sm ${className}`}>
-      <CardContent className="p-8">
-        <div className="space-y-6">
-          <div className="text-center">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              <Zap className="h-4 w-4" />
-              <span>INSTANT BOOKING - FREE QUOTE</span>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Book Gas Service in {area.name}</h3>
-            <p className="text-gray-600">Get expert technician at your doorstep in {area.responseTime}</p>
-          </div>
-
-          <form className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Input
-                placeholder="Your Full Name *"
-                className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
-                required
-              />
-              <Input
-                placeholder="Mobile Number *"
-                type="tel"
-                className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
-                required
-              />
-            </div>
-
-            <Input
-              placeholder="Email Address"
-              type="email"
-              className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
-            />
-
-            <Input
-              placeholder={`Complete Address in ${area.name} *`}
-              className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
-              required
-            />
-
-            <select
-              className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:outline-none bg-white"
-              required
-            >
-              <option value="">Select Service Type *</option>
-              <option value="gas-stove-repair">Gas Stove Repair</option>
-              <option value="gas-stove-service">Gas Stove Service</option>
-              <option value="pipeline-installation">Pipeline Installation</option>
-              <option value="pipeline-repair">Pipeline Repair</option>
-              <option value="safety-inspection">Safety Inspection</option>
-              <option value="emergency-repair">Emergency Repair</option>
-              <option value="new-connection">New Gas Connection</option>
-              <option value="maintenance-contract">Maintenance Contract</option>
-            </select>
-
-            <select
-              className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:outline-none bg-white"
-              required
-            >
-              <option value="">Preferred Time Slot *</option>
-              <option value="morning">Morning (8 AM - 12 PM)</option>
-              <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
-              <option value="evening">Evening (4 PM - 8 PM)</option>
-              <option value="emergency">Emergency (Immediate)</option>
-            </select>
-
-            <Textarea
-              placeholder="Describe your gas issue or requirements (Optional)"
-              rows={3}
-              className="border-2 border-gray-200 focus:border-orange-500 rounded-lg"
-            />
-
-            <Button
-              type="submit"
-              className="w-full h-12 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
-            >
-              <Calendar className="h-5 w-5 mr-2" />
-              Book Service Now - FREE Quote
-            </Button>
-          </form>
-
-          <div className="text-center space-y-2">
-            <div className="flex items-center justify-center space-x-2 text-sm text-green-600">
-              <CheckCircle className="h-4 w-4" />
-              <span>No Hidden Charges • Transparent Pricing</span>
-            </div>
-            <div className="flex items-center justify-center space-x-2 text-sm text-blue-600">
-              <Shield className="h-4 w-4" />
-              <span>Licensed Technicians • Insured Service</span>
-            </div>
-            <div className="flex items-center justify-center space-x-2 text-sm text-orange-600">
-              <Clock className="h-4 w-4" />
-              <span>Response Time: {area.responseTime}</span>
-            </div>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
-  )
-}
+// moved to components/quick-booking-form
 
 export default function AreaPage({ params }: Props) {
   const cityAreas = areaData[params.city as keyof typeof areaData]

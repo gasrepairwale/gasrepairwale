@@ -7,10 +7,21 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Phone, MapPin, Clock, Star, CheckCircle, Calendar, Zap } from "lucide-react"
+import { useToast } from "@/hooks/use-toast"
 
 export function Hero() {
   const [selectedLocation, setSelectedLocation] = useState("")
   const [selectedArea, setSelectedArea] = useState("")
+  const { toast } = useToast()
+  const [submitting, setSubmitting] = useState(false)
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    service: "",
+    address: "",
+    message: "",
+  })
 
   // Area options based on selected location
   const areaOptions = {
@@ -44,6 +55,39 @@ export function Hero() {
   const handleLocationChange = (location: string) => {
     setSelectedLocation(location)
     setSelectedArea("") // Reset area when location changes
+  }
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    try {
+      setSubmitting(true)
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          service: form.service,
+          address: form.address,
+          message: form.message,
+          city: selectedLocation,
+          area: selectedArea,
+        }),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error || "Failed to send")
+      }
+      toast({ title: "Request sent", description: "We will contact you within 30 minutes." })
+      setForm({ name: "", phone: "", email: "", service: "", address: "", message: "" })
+      setSelectedLocation("")
+      setSelectedArea("")
+    } catch (err: any) {
+      toast({ title: "Failed to send", description: err.message || "Please try again." })
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -202,18 +246,22 @@ export function Hero() {
                   <p className="text-gray-600">Get expert technician at your doorstep today</p>
                 </div>
 
-                <form className="space-y-4">
+                <form className="space-y-4" onSubmit={onSubmit}>
                   {/* Row 1: Name + Phone */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Input
                       placeholder="Your Full Name *"
                       className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                      value={form.name}
+                      onChange={(e) => setForm({ ...form, name: e.target.value })}
                       required
                     />
                     <Input
                       placeholder="Mobile Number *"
                       type="tel"
                       className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                      value={form.phone}
+                      onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       required
                     />
                   </div>
@@ -223,6 +271,8 @@ export function Hero() {
                     placeholder="Email Address *"
                     type="email"
                     className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
                     required
                   />
 
@@ -231,6 +281,8 @@ export function Hero() {
                     <select
                       className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:outline-none bg-white"
                       required
+                      value={form.service}
+                      onChange={(e) => setForm({ ...form, service: e.target.value })}
                     >
                       <option value="">Select Service Type *</option>
                       <option value="gas-stove-repair">Gas Stove Repair</option>
@@ -274,6 +326,8 @@ export function Hero() {
                   <Input
                     placeholder="Complete Address *"
                     className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                    value={form.address}
+                    onChange={(e) => setForm({ ...form, address: e.target.value })}
                     required
                   />
 
@@ -282,14 +336,17 @@ export function Hero() {
                     placeholder="Describe your gas issue or requirements (Optional)"
                     rows={3}
                     className="border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                    value={form.message}
+                    onChange={(e) => setForm({ ...form, message: e.target.value })}
                   />
 
                   <Button
                     type="submit"
+                    disabled={submitting}
                     className="w-full h-12 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
                   >
                     <Calendar className="h-5 w-5 mr-2" />
-                    Book Service Now - FREE Quote
+                    {submitting ? "Sending..." : "Book Service Now - FREE Quote"}
                   </Button>
                 </form>
 
