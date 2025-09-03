@@ -13,16 +13,27 @@ export function LocationsOverview() {
     {
       city: "Pune",
       href: "/locations/pune",
-      areas: ["Kothrud", "Baner", "Wakad", "Hinjewadi", "Karve Nagar", "Warje"],
-      description: "Comprehensive gas repair services across Pune and surrounding areas.",
-      responseTime: "20-30 minutes",
+      areas: [
+        "Kothrud", "Baner", "Wakad", "Hinjewadi", "Aundh", "Warje", "Karve Nagar",
+        "Hadapsar", "Kharadi", "Fursungi", "Undri", "Mohammadwadi", "Wanwadi",
+        "Kondhwa", "Dhanori", "Lohegaon", "Viman Nagar", "Vishrantwadi", "Koregaon Park",
+        "Keshav Nagar", "Mundhwa", "Magarpatta City", "Amanora Park Town", "Wagholi",
+        "Yerwada", "Bhekrai Nagar", "NIBM Road"
+      ],
+      description: "Comprehensive gas repair services across Pune and surrounding areas with 30+ locations covered.",
+      responseTime: "15-30 minutes",
     },
     {
       city: "Mumbai",
       href: "/locations/mumbai",
-      areas: ["Borivali East West", "Kandivali East West", "Malda East West", "Ram Mandir East", "Goregaon East West", "Andheri West"],
-      description: "Professional gas appliance services throughout Mumbai metro area.",
-      responseTime: "25-35 minutes",
+      areas: [
+        "Borivali East West", "Kandivali East West", "Malad East West", "Goregaon East West",
+        "Ram Mandir East", "Andheri West", "Vile Parle East & West", "Santacruz East & West",
+        "Bandra East & West", "Mahim West", "Dadar East & West", "Wadala West",
+        "Mumbai Central East West", "Mahalaxmi East & West", "Marine Drive & Colaba", "Churchgate"
+      ],
+      description: "Professional gas appliance services throughout Mumbai metro area with 16 major locations covered.",
+      responseTime: "20-35 minutes",
     },
   ]
 
@@ -60,13 +71,16 @@ export function LocationsOverview() {
                 {/* Service areas */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3">Service Areas:</h4>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto">
                     {location.areas.map((area, areaIndex) => (
                       <div key={areaIndex} className="text-sm text-gray-600 bg-gray-50 px-3 py-1 rounded">
                         {area}
                       </div>
                     ))}
                   </div>
+                  <p className="text-xs text-gray-500 mt-2">
+                    {location.areas.length} areas covered
+                  </p>
                 </div>
 
                 {/* Action buttons */}
