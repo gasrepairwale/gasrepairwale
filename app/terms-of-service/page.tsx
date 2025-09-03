@@ -267,7 +267,7 @@ export default function TermsOfServicePage() {
                 <Phone className="h-6 w-6 mr-3" />
                 <div>
                   <div className="font-semibold">Phone</div>
-                  <div className="opacity-90">+91 98765 43210</div>
+                  <div className="opacity-90">+91 83027 13127</div>
                 </div>
               </div>
 
@@ -275,7 +275,7 @@ export default function TermsOfServicePage() {
                 <Mail className="h-6 w-6 mr-3" />
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="opacity-90">legal@gasrepairewale.com</div>
+                  <div className="opacity-90">info@gasrepairewale.com</div>
                 </div>
               </div>
 
