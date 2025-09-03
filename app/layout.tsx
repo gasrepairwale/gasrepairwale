@@ -292,8 +292,32 @@ export default function RootLayout({
         <meta name="business:contact_data:phone_number" content="+91-83027-13127" />
         <meta name="business:contact_data:website" content="https://gasrepairwale.com" />
         <meta name="google-site-verification" content="JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE" />
+
+        {/* Google Analytics 4 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ELBP9XJCKC"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ELBP9XJCKC', {
+                page_title: document.title,
+                page_location: window.location.href,
+                send_page_view: true
+              });
+            `,
+          }}
+        />
+
+
       </head>
       <body className={inter.className}>
+
+
         <ScrollToTopWrapper>
           {/* Main navigation header */}
           <Header />
