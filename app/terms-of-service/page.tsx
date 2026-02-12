@@ -40,7 +40,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  canonical: "https://gasrepairwale.com/terms-of-service",
+  alternates: {
+    canonical: "https://gasrepairwale.com/terms-of-service",
+  },
 }
 
 export default function TermsOfServicePage() {

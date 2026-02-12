@@ -3,7 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ContactCTA } from "@/components/contact-cta"
-import { MapPin, Phone, Clock, Star, Users, Award, Shield } from "lucide-react"
+import { MapPin, Phone, Clock, Star, Users, Award, Shield, ChevronRight, Home } from "lucide-react"
+import { BreadcrumbSchema } from "@/components/json-ld/breadcrumb-schema"
+import { ServiceSchema } from "@/components/json-ld/service-schema"
+import { FAQSchema } from "@/components/json-ld/faq-schema" // Assuming you will create/have this
 
 interface CityData {
   name: string
@@ -68,8 +71,56 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
     return icons[iconName as keyof typeof icons] || MapPin
   }
 
+  // Schema Data Generation
+  const breadcrumbItems = [
+    { name: "Home", item: "https://gasrepairwale.com" },
+    { name: "Locations", item: "https://gasrepairwale.com/locations" },
+    { name: city.name, item: `https://gasrepairwale.com/locations/${citySlug}` },
+  ]
+
+  // Generic FAQs for the city (can be customized per city if data allowed)
+  const cityFaqs = [
+    {
+      question: `Do you provide gas stove repair in ${city.name}?`,
+      answer: `Yes, we provide professional gas stove repair services across all areas of ${city.name} including ${city.areas.slice(0, 3).map(a => a.name).join(", ")}.`,
+    },
+    {
+      question: `How fast can you reach for an emergency in ${city.name}?`,
+      answer: `We guarantee a response time of ${city.avgResponseTime} for gas emergencies in ${city.name}.`,
+    },
+     {
+      question: `Are your technicians in ${city.name} licensed?`,
+      answer: `Absolutely. All our technicians serving ${city.name} are licensed and certified for gas pipeline and appliance work.`,
+    },
+  ]
+
+
   return (
     <main className="min-h-screen">
+      {/* Schema Markup */}
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <ServiceSchema 
+        name={`Gas Repair Services in ${city.name}`}
+        description={city.description}
+        providerName="Gas Repaire Wale"
+        areaServed={city.name}
+        serviceType="Gas Appliance Repair" 
+      />
+      <FAQSchema faqs={cityFaqs} />
+
+      {/* Visual Breadcrumb Navigation */}
+      <div className="bg-gray-50 border-b">
+         <div className="container mx-auto px-4 py-3">
+            <nav className="flex items-center text-sm text-gray-600">
+              <Link href="/" className="hover:text-orange-600 flex items-center">
+                 <Home className="w-4 h-4 mr-1"/> Home
+              </Link>
+              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+              <span className="text-gray-900 font-medium capitalize">{city.name}</span>
+            </nav>
+         </div>
+      </div>
+
       {/* Enhanced hero section */}
       <section className="bg-gradient-to-br from-orange-50 to-orange-100 py-20">
         <div className="container mx-auto px-4">
@@ -390,8 +441,30 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
         </div>
       </section>
 
+      {/* Visual FAQ Section for Users */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div className="container mx-auto px-4">
+             <div className="text-center mb-16">
+                <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Common Questions</Badge>
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">FAQs about Gas Service in {city.name}</h2>
+             </div>
+             
+             <div className="max-w-3xl mx-auto space-y-4">
+                {cityFaqs.map((faq, i) => (
+                  <Card key={i} className="hover:shadow-md transition-shadow">
+                     <CardContent className="p-6">
+                        <h3 className="font-semibold text-lg text-gray-900 mb-2">{faq.question}</h3>
+                        <p className="text-gray-600">{faq.answer}</p>
+                     </CardContent>
+                  </Card>
+                ))}
+             </div>
+        </div>
+      </section>
+
       {/* Contact CTA */}
       <ContactCTA />
     </main>
   )
 }
+

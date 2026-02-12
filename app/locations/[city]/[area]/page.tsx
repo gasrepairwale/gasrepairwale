@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -6,6 +7,9 @@ import { Badge } from "@/components/ui/badge"
 import { ContactCTA } from "@/components/contact-cta"
 import { QuickBookingForm } from "@/components/quick-booking-form"
 import { areaData } from "@/data/area-data"
+import { BreadcrumbSchema } from "@/components/json-ld/breadcrumb-schema"
+import { ServiceSchema } from "@/components/json-ld/service-schema"
+import { FAQSchema } from "@/components/json-ld/faq-schema"
 import {
   MapPin,
   Phone,
@@ -19,21 +23,30 @@ import {
   Zap,
   Wrench,
   Calendar,
+  ChevronRight,
+  Home,
+  HelpCircle,
+  ChevronDown,
+  ChevronUp
 } from "lucide-react"
 
 type Props = {
-  params: { city: string; area: string }
+  params: Promise<{ city: string; area: string }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const cityAreas = areaData[params.city as keyof typeof areaData]
-  const area = cityAreas?.[params.area as keyof typeof cityAreas]
+  const { city, area: areaParam } = await params
+  const cityAreas = (areaData as any)[city]
+  const areaData_temp = cityAreas?.[areaParam]
 
-  if (!area) {
+  if (!areaData_temp) {
     return {
       title: "Area Not Found",
     }
   }
+
+  // Type assertion - TypeScript can't narrow optional chaining types properly
+  const area = areaData_temp as any
 
   const title = `Gas Repair Services in ${area.name}, ${area.city} | ${area.responseTime} Response | Gas Repaire Wale`
   const description = `⭐ #1 Gas Repair Service in ${area.name}, ${area.city} ✅ ${area.customers} Happy Customers ✅ ${area.responseTime} Response Time ✅ ${area.rating}★ Rating ✅ Local Experts Since ${area.establishedYear}. Call +91 83027 13127!`
@@ -75,7 +88,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: "en_IN",
-      url: `https://gasrepairwale.com/locations/${params.city}/${params.area}`,
+      url: `https://gasrepairwale.com/locations/${city}/${areaParam}`,
       title,
       description,
       siteName: "Gas Repaire Wale",
@@ -96,7 +109,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: ["/placeholder.svg?height=630&width=1200" + area.name + " " + area.city],
     },
     alternates: {
-      canonical: `https://gasrepairwale.com/locations/${params.city}/${params.area}`,
+      canonical: `https://gasrepairwale.com/locations/${city}/${areaParam}`,
     },
     other: {
       "google-site-verification": "JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE",
@@ -118,13 +131,17 @@ export async function generateStaticParams() {
 
 // moved to components/quick-booking-form
 
-export default function AreaPage({ params }: Props) {
-  const cityAreas = areaData[params.city as keyof typeof areaData]
-  const area = cityAreas?.[params.area as keyof typeof cityAreas]
+export default async function AreaPage({ params }: Props) {
+  const { city, area: areaParam } = await params
+  const cityAreas = (areaData as any)[city]
+  const areaData_temp = cityAreas?.[areaParam]
 
-  if (!area) {
+  if (!areaData_temp) {
     notFound()
   }
+
+  // Type assertion - TypeScript can't narrow optional chaining types properly
+  const area = areaData_temp as any
 
   // Icon mapping for advantages
   const getIcon = (iconName: string) => {
@@ -141,8 +158,59 @@ export default function AreaPage({ params }: Props) {
     return icons[iconName as keyof typeof icons] || MapPin
   }
 
+  // Schema Generation
+  const breadcrumbItems = [
+    { name: "Home", item: "https://gasrepairwale.com" },
+    { name: "Locations", item: "https://gasrepairwale.com/locations" },
+    { name: area.city, item: `https://gasrepairwale.com/locations/${city}` },
+    { name: area.name, item: `https://gasrepairwale.com/locations/${city}/${areaParam}` },
+  ]
+
+  const areaFaqs = [
+    {
+      question: `Do you provide gas stove repair in ${area.name}?`,
+      answer: `Yes, we provide specialized gas stove repair services in ${area.name}, ${area.city} (${area.pincode}). Our local technicians are stationed nearby for quick service.`,
+    },
+    {
+      question: `How quickly can you reach ${area.name} for an emergency?`,
+      answer: `We guarantee a response time of ${area.responseTime} for gas emergencies in ${area.name}. Our emergency team is available 24/7.`,
+    },
+    {
+      question: `Do you service both residential and commercial properties in ${area.name}?`,
+      answer: `Yes, we offer comprehensive gas pipeline and appliance services for both residential homes and commercial establishments in ${area.name}.`,
+    },
+  ]
+
   return (
     <main className="min-h-screen">
+      {/* Schema Markup */}
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <ServiceSchema 
+        name={`Gas Repair Services in ${area.name}`}
+        description={`Professional gas repair and pipeline services in ${area.name}, ${area.city}.`}
+        providerName="Gas Repaire Wale"
+        areaServed={area.name}
+        serviceType="Gas Appliance Repair" 
+      />
+      <FAQSchema faqs={areaFaqs} />
+
+      {/* Visual Breadcrumb Navigation */}
+      <div className="bg-gray-50 border-b">
+         <div className="container mx-auto px-4 py-3">
+            <nav className="flex items-center text-sm text-gray-600 flex-wrap">
+              <Link href="/" className="hover:text-orange-600 flex items-center">
+                 <Home className="w-4 h-4 mr-1"/> Home
+              </Link>
+              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+              <Link href={`/locations/${city}`} className="hover:text-orange-600 capitalize">
+                {area.city}
+              </Link>
+              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+              <span className="text-gray-900 font-medium capitalize">{area.name}</span>
+            </nav>
+         </div>
+      </div>
+
       {/* Enhanced hero section with form */}
       <section className="relative bg-gradient-to-br from-orange-50 via-white to-red-50 py-20 overflow-hidden">
         {/* Professional background pattern */}
@@ -304,7 +372,7 @@ export default function AreaPage({ params }: Props) {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
-            {area.landmarks.map((landmark, index) => (
+            {area.landmarks.map((landmark: string, index: number) => (
               <div
                 key={index}
                 className="flex items-center space-x-3 bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-lg hover:shadow-md transition-shadow cursor-pointer group"
@@ -336,7 +404,7 @@ export default function AreaPage({ params }: Props) {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {area.specialServices.map((service, index) => (
+            {area.specialServices.map((service: any, index: number) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 group">
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
@@ -349,7 +417,7 @@ export default function AreaPage({ params }: Props) {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Features:</h4>
                     <ul className="space-y-2">
-                      {service.features.map((feature, featureIndex) => (
+                      {service.features.map((feature: string, featureIndex: number) => (
                         <li key={featureIndex} className="flex items-center space-x-2">
                           <CheckCircle className="h-4 w-4 text-green-600" />
                           <span className="text-sm">{feature}</span>
@@ -393,7 +461,7 @@ export default function AreaPage({ params }: Props) {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {area.advantages.map((advantage, index) => {
+            {area.advantages.map((advantage: any, index: number) => {
               const IconComponent = getIcon(advantage.icon)
               const gradients = [
                 "from-orange-100 to-red-100",
@@ -432,11 +500,11 @@ export default function AreaPage({ params }: Props) {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {area.testimonials.map((testimonial, index) => (
+            {area.testimonials.map((testimonial: any, index: number) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 group">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, starIndex) => (
+                    {[...Array(testimonial.rating)].map((_: any, starIndex: number) => (
                       <Star key={starIndex} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
@@ -561,7 +629,7 @@ export default function AreaPage({ params }: Props) {
               </h3>
 
               <ul className="space-y-2">
-                {area.seoContent.whyChoose.map((point, index) => (
+                {area.seoContent.whyChoose.map((point: string, index: number) => (
                   <li key={index}>
                     ✅ <strong>{point.split(":")[0]}:</strong> {point.split(":")[1]}
                   </li>
@@ -574,7 +642,7 @@ export default function AreaPage({ params }: Props) {
                 <div>
                   <h4 className="text-lg font-semibold mb-2">🏠 Residential Services</h4>
                   <ul className="text-sm space-y-1">
-                    {area.seoContent.services.residential.map((service, index) => (
+                    {area.seoContent.services.residential.map((service: string, index: number) => (
                       <li key={index}>• {service}</li>
                     ))}
                   </ul>
@@ -582,7 +650,7 @@ export default function AreaPage({ params }: Props) {
                 <div>
                   <h4 className="text-lg font-semibold mb-2">🏢 Commercial Services</h4>
                   <ul className="text-sm space-y-1">
-                    {area.seoContent.services.commercial.map((service, index) => (
+                    {area.seoContent.services.commercial.map((service: string, index: number) => (
                       <li key={index}>• {service}</li>
                     ))}
                   </ul>
@@ -608,6 +676,27 @@ export default function AreaPage({ params }: Props) {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Visual FAQ Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div className="container mx-auto px-4">
+             <div className="text-center mb-16">
+                <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Common Questions</Badge>
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">FAQs about Gas Service in {area.name}</h2>
+             </div>
+             
+             <div className="max-w-3xl mx-auto space-y-4">
+                {areaFaqs.map((faq, i) => (
+                  <Card key={i} className="hover:shadow-md transition-shadow">
+                     <CardContent className="p-6">
+                        <h3 className="font-semibold text-lg text-gray-900 mb-2">{faq.question}</h3>
+                        <p className="text-gray-600">{faq.answer}</p>
+                     </CardContent>
+                  </Card>
+                ))}
+             </div>
         </div>
       </section>
 

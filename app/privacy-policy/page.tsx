@@ -40,7 +40,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  canonical: "https://gasrepairwale.com/privacy-policy",
+  alternates: {
+    canonical: "https://gasrepairwale.com/privacy-policy",
+  },
 }
 
 export default function PrivacyPolicyPage() {

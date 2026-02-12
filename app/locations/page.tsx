@@ -43,12 +43,14 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  canonical: "https://gasrepairwale.com/locations",
+  alternates: {
+    canonical: "https://gasrepairwale.com/locations",
+  },
 }
 
 export default function LocationsPage() {
   const cities = Object.keys(areaData)
-  const totalAreas = cities.reduce((total, city) => total + Object.keys(areaData[city]).length, 0)
+  const totalAreas = cities.reduce((total, city) => total + Object.keys((areaData as any)[city]).length, 0)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
@@ -106,8 +108,8 @@ export default function LocationsPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {cities.map((city) => {
-              const cityAreas = Object.keys(areaData[city])
-              const cityData = areaData[city][cityAreas[0]] // Get first area data for city info
+              const cityAreas = Object.keys((areaData as any)[city])
+              const cityData = (areaData as any)[city]?.[cityAreas[0]]
               
               return (
                 <div key={city} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
@@ -140,7 +142,7 @@ export default function LocationsPage() {
                             key={area}
                             className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full"
                           >
-                            {areaData[city][area]?.name || area}
+                            {(areaData as any)[city]?.[area]?.name || area}
                           </span>
                         ))}
                         {cityAreas.length > 6 && (

@@ -744,11 +744,12 @@ const cityData = {
 }
 
 type Props = {
-  params: { city: string }
+  params: Promise<{ city: string }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const city = cityData[params.city as keyof typeof cityData]
+  const { city: cityParam } = await params
+  const city = cityData[cityParam as keyof typeof cityData]
 
   if (!city) {
     return {
@@ -763,7 +764,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `Gas Repair Services in ${city.name} | Gas Repaire Wale`,
       description: `Professional gas repair services in ${city.name} with ${city.totalCustomers} satisfied customers and ${city.avgResponseTime} response time.`,
-      url: `https://gasrepairwale.com/locations/${params.city}`,
+      url: `https://gasrepairwale.com/locations/${cityParam}`,
     },
   }
 }
@@ -774,12 +775,13 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function CityPage({ params }: Props) {
-  const city = cityData[params.city as keyof typeof cityData]
+export default async function CityPage({ params }: Props) {
+  const { city: cityParam } = await params
+  const city = cityData[cityParam as keyof typeof cityData]
 
   if (!city) {
     notFound()
   }
 
-  return <LocationPageContent city={city} citySlug={params.city} />
+  return <LocationPageContent city={city} citySlug={cityParam} />
 }
