@@ -108,7 +108,8 @@ export const logActivity = async (action: string, city?: string, area?: string) 
         type: 'activity',
         source: action,
         city: autoCity,
-        area: autoArea
+        area: autoArea,
+        pagePath: typeof window !== 'undefined' ? window.location.pathname : ''
       }),
     })
   } catch (error) {

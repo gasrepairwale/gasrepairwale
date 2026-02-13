@@ -11,7 +11,8 @@ export async function POST(request: Request) {
             name, phone, service, city, area, address, preferredTime,
             message: userMessage,
             source = "Website Form",
-            type = "lead" // 'lead' or 'activity'
+            type = "lead", // 'lead' or 'activity'
+            pagePath = ""
         } = body
 
         // 1. Validate required fields
@@ -33,7 +34,7 @@ export async function POST(request: Request) {
         if (type === "activity") {
             // Short activity notification
             const icon = source.toLowerCase().includes('call') ? '📞' : source.toLowerCase().includes('whatsapp') ? '💬' : '🖱️'
-            message = `${icon} *New Activity:* ${source}\n📍 *Location:* ${area || 'N/A'}, ${city || 'General'}\n🕒 ${new Date().toLocaleTimeString('en-IN')}`
+            message = `${icon} *New Activity:* ${source}\n📍 *Location:* ${area || 'N/A'}, ${city || 'General'}\n📄 *Page:* ${pagePath || '/'}\n🕒 ${new Date().toLocaleTimeString('en-IN')}`
         } else {
             // Full lead notification
             message = `
