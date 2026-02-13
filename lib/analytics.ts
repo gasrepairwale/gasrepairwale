@@ -11,10 +11,30 @@ export const analyticsConfig = {
 
 // Custom event tracking functions
 export const trackEvent = (eventName: string, parameters?: Record<string, any>) => {
-  if (typeof window !== 'undefined' && analyticsConfig.googleAnalytics.enabled) {
-    // Google Analytics 4 event tracking
-    if (window.gtag) {
-      window.gtag('event', eventName, parameters)
+  if (typeof window !== 'undefined') {
+    // Only track in production or if explicitly enabled
+    const isEnabled = analyticsConfig.googleAnalytics.enabled || window.location.hostname === 'localhost';
+
+    if (isEnabled && window.gtag) {
+      // Get city and area from URL if possible
+      const pathParts = window.location.pathname.split('/').filter(Boolean);
+      let autoCity = '';
+      let autoArea = '';
+
+      if (pathParts[0] === 'locations') {
+        autoCity = pathParts[1] || '';
+        autoArea = pathParts[2] || '';
+      }
+
+      const finalParameters = {
+        ...parameters,
+        city: parameters?.city || autoCity,
+        area: parameters?.area || autoArea,
+        page_path: window.location.pathname,
+      };
+
+      window.gtag('event', eventName, finalParameters)
+      console.log(`[Analytics] Tracked ${eventName}:`, finalParameters)
     }
   }
 }
@@ -36,28 +56,34 @@ export const trackConversion = (conversionType: string, value?: number) => {
 }
 
 // Service booking tracking
-export const trackServiceBooking = (serviceType: string, location: string) => {
+export const trackServiceBooking = (data: { serviceType: string; city: string; area: string; phone?: string }) => {
   trackEvent('service_booking', {
-    service_type: serviceType,
-    location: location,
+    service_type: data.serviceType,
+    city: data.city,
+    area: data.area,
+    phone: data.phone,
     event_category: 'engagement',
     event_label: 'service_booking',
   })
 }
 
 // Phone call tracking
-export const trackPhoneCall = (phoneNumber: string) => {
+export const trackPhoneCall = (phoneNumber: string, city?: string, area?: string) => {
   trackEvent('phone_call', {
     phone_number: phoneNumber,
+    city: city,
+    area: area,
     event_category: 'engagement',
     event_label: 'phone_call',
   })
 }
 
 // WhatsApp tracking
-export const trackWhatsApp = (message: string) => {
+export const trackWhatsApp = (message: string, city?: string, area?: string) => {
   trackEvent('whatsapp_contact', {
     message: message,
+    city: city,
+    area: area,
     event_category: 'engagement',
     event_label: 'whatsapp',
   })

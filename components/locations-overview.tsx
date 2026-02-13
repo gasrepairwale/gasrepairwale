@@ -1,7 +1,10 @@
+"use client"
+
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, Phone, Clock } from "lucide-react"
+import { trackPhoneCall } from "@/lib/analytics"
 
 /**
  * Locations Overview Component
@@ -89,10 +92,15 @@ export function LocationsOverview() {
                     <Link href={location.href}>View Details</Link>
                   </Button>
                   <Button
+                    asChild
                     variant="outline"
                     className="flex-1 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
                   >
-                    <a href="tel:+918302713127" className="flex items-center space-x-2">
+                    <a 
+                      href="tel:+918302713127" 
+                      className="flex items-center space-x-2"
+                      onClick={() => trackPhoneCall("+918302713127", location.city)}
+                    >
                       <Phone className="h-4 w-4" />
                       <span>Call Now</span>
                     </a>
@@ -107,7 +115,11 @@ export function LocationsOverview() {
         <div className="text-center mt-12 p-6 bg-orange-50 rounded-lg">
           <p className="text-gray-700">
             <strong>Don't see your area listed?</strong> We're expanding our services! Call us at{" "}
-            <a href="tel:+918302713127" className="text-orange-600 font-semibold">
+            <a 
+              href="tel:+918302713127" 
+              className="text-orange-600 font-semibold"
+              onClick={() => trackPhoneCall("+918302713127", "Locations Detail")}
+            >
               +91 83027 13127
             </a>{" "}
             to check availability in your location.

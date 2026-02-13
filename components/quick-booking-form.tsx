@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Calendar, CheckCircle, Clock, Shield, Zap } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
+import { trackServiceBooking } from "@/lib/analytics"
 
 type QuickBookingFormProps = {
   area: any
@@ -49,6 +50,15 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
         const data = await res.json().catch(() => ({}))
         throw new Error(data.error || "Failed to send")
       }
+
+      // Track successful booking
+      trackServiceBooking({
+        serviceType: form.service,
+        city: area?.city,
+        area: area?.name,
+        phone: form.phone,
+      })
+
       toast({ title: "Request sent", description: "We will contact you within 30 minutes." })
       setForm({ name: "", phone: "", email: "", address: "", service: "", preferredTime: "", message: "" })
     } catch (err: any) {

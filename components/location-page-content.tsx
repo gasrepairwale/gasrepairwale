@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -7,6 +9,7 @@ import { MapPin, Phone, Clock, Star, Users, Award, Shield, ChevronRight, Home } 
 import { BreadcrumbSchema } from "@/components/json-ld/breadcrumb-schema"
 import { ServiceSchema } from "@/components/json-ld/service-schema"
 import { FAQSchema } from "@/components/json-ld/faq-schema" // Assuming you will create/have this
+import { trackPhoneCall } from "@/lib/analytics"
 
 interface CityData {
   name: string
@@ -141,7 +144,11 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                 size="lg"
                 className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold"
               >
-                <a href="tel:+918302713127" className="flex items-center space-x-2">
+                <a 
+                  href="tel:+918302713127" 
+                  className="flex items-center space-x-2"
+                  onClick={() => trackPhoneCall("+918302713127", city.name)}
+                >
                   <Phone className="h-5 w-5" />
                   <span>CALL NOW: +91 83027 13127</span>
                 </a>
@@ -248,7 +255,12 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                       variant="outline"
                       className="flex-1 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
                     >
-                      <a href="tel:+918302713127">Call Now</a>
+                      <a 
+                        href="tel:+918302713127"
+                        onClick={() => trackPhoneCall("+918302713127", city.name, area.name)}
+                      >
+                        Call Now
+                      </a>
                     </Button>
                   </div>
                 </CardContent>

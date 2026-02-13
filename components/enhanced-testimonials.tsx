@@ -1,6 +1,9 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Star, Quote, MapPin, CheckCircle } from "lucide-react"
+import { trackPhoneCall } from "@/lib/analytics"
 
 /**
  * Enhanced Testimonials Component
@@ -229,12 +232,14 @@ export function EnhancedTestimonials() {
               <a
                 href="tel:+918302713127"
                 className="bg-white text-orange-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center justify-center"
+                onClick={() => trackPhoneCall("+918302713127", "Testimonials CTA")}
               >
                 📞 Call Now: +91 83027 13127
               </a>
               <a
-                href="#contact-form"
+                href="#booking-form"
                 className="bg-orange-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-orange-400 transition-colors duration-200"
+                onClick={() => trackPhoneCall("+918302713127", "Testimonials CTA", "Quote Request")}
               >
                 💬 Get Free Quote
               </a>

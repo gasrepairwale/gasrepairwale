@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Phone, MapPin, Clock, Star, CheckCircle, Calendar, Zap } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
+import { trackPhoneCall, trackServiceBooking } from "@/lib/analytics"
 
 export function Hero() {
   const [selectedLocation, setSelectedLocation] = useState("")
@@ -101,6 +102,15 @@ export function Hero() {
         const data = await res.json().catch(() => ({}))
         throw new Error(data.error || "Failed to send")
       }
+
+      // Track successful booking
+      trackServiceBooking({
+        serviceType: form.service,
+        city: selectedLocation,
+        area: selectedArea,
+        phone: form.phone,
+      })
+
       toast({ title: "Request sent", description: "We will contact you within 30 minutes." })
       setForm({ name: "", phone: "", email: "", service: "", address: "", message: "" })
       setSelectedLocation("")
@@ -223,7 +233,11 @@ export function Hero() {
                 size="lg"
                 className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
               >
-                <a href="tel:+918302713127" className="flex items-center space-x-2">
+                <a 
+                  href="tel:+918302713127" 
+                  className="flex items-center space-x-2"
+                  onClick={() => trackPhoneCall("+918302713127")}
+                >
                   <Phone className="h-5 w-5" />
                   <span className="font-bold">Call Now: +91 83027 13127</span>
                 </a>

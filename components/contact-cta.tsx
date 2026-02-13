@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
+import { trackPhoneCall, trackServiceBooking } from "@/lib/analytics"
 
 /**
  * Contact CTA Section Component
@@ -47,6 +48,14 @@ export function ContactCTA() {
         throw new Error(data.error || "Failed to send")
       }
 
+      // Track successful booking
+      trackServiceBooking({
+        serviceType: formData.service,
+        city: "General", // This is a general contact form
+        area: "General",
+        phone: formData.phone,
+      })
+
       toast({
         title: "Message Sent!",
         description: "We'll get back to you within 30 minutes.",
@@ -81,7 +90,11 @@ export function ContactCTA() {
                 </div>
                 <div>
                   <p className="font-semibold">Call Us Now</p>
-                  <a href="tel:+918302713127" className="text-lg hover:underline">
+                  <a 
+                    href="tel:+918302713127" 
+                    className="text-lg hover:underline"
+                    onClick={() => trackPhoneCall("+918302713127")}
+                  >
                     +91 83027 13127
                   </a>
                 </div>

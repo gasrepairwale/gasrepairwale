@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { AlertTriangle, Phone, X } from "lucide-react"
+import { trackPhoneCall } from "@/lib/analytics"
 
 /**
  * Emergency Banner Component
@@ -12,6 +13,10 @@ export function EmergencyBanner() {
   const [isVisible, setIsVisible] = useState(true)
 
   if (!isVisible) return null
+
+  const handleCallClick = () => {
+    trackPhoneCall("+918302713127")
+  }
 
   return (
     <div className="bg-gradient-to-r from-red-600 via-red-500 to-orange-500 text-white py-3 px-4 relative overflow-hidden">
@@ -28,7 +33,11 @@ export function EmergencyBanner() {
 
         <div className="flex items-center space-x-3">
           <Button size="sm" className="bg-white text-red-600 hover:bg-gray-100 font-bold animate-pulse">
-            <a href="tel:+918302713127" className="flex items-center space-x-1">
+            <a 
+              href="tel:+918302713127" 
+              className="flex items-center space-x-1"
+              onClick={handleCallClick}
+            >
               <Phone className="h-4 w-4" />
               <span className="hidden sm:inline">CALL NOW</span>
             </a>

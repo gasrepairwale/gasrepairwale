@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import { Wrench, Phone, Mail, MapPin, Facebook, Twitter, Instagram } from "lucide-react"
+import { trackPhoneCall, trackWhatsApp } from "@/lib/analytics"
 
 /**
  * Footer Component
@@ -17,16 +20,28 @@ export function Footer() {
               <span className="text-xl font-bold">Gas Repaire Wale</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Professional gas repair and maintenance services across Pune and Mumbai. Your safety is our priority.
+               Professional gas repair and maintenance services across Pune and Mumbai. Your safety is our priority.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-orange-600 transition-colors">
+              <a 
+                href="#" 
+                className="text-gray-400 hover:text-orange-600 transition-colors"
+                onClick={() => trackWhatsApp('Social Interest')}
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-orange-600 transition-colors">
+              <a 
+                href="#" 
+                className="text-gray-400 hover:text-orange-600 transition-colors"
+                onClick={() => trackWhatsApp('Social Interest')}
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-orange-600 transition-colors">
+              <a 
+                href="#" 
+                className="text-gray-400 hover:text-orange-600 transition-colors"
+                onClick={() => trackWhatsApp('Social Interest')}
+              >
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -83,7 +98,11 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-orange-600" />
-                <a href="tel:+918302713127" className="text-gray-300 hover:text-orange-600">
+                <a 
+                  href="tel:+918302713127" 
+                  className="text-gray-300 hover:text-orange-600"
+                  onClick={() => trackPhoneCall("+918302713127")}
+                >
                   +91 83027 13127
                 </a>
               </div>

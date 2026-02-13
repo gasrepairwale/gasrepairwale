@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Phone, Wrench } from "lucide-react"
+import { trackPhoneCall } from "@/lib/analytics"
 
 /**
  * Header Component
@@ -27,6 +28,10 @@ export function Header() {
       ],
     },
   ]
+
+  const handleCallClick = () => {
+    trackPhoneCall("+918302713127")
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -65,7 +70,11 @@ export function Header() {
         {/* Contact button and mobile menu */}
         <div className="flex items-center space-x-4">
           <Button asChild className="hidden text-white sm:flex bg-orange-600 hover:bg-orange-700">
-            <a href="tel:+918302713127" className="flex items-center space-x-2">
+            <a 
+              href="tel:+918302713127" 
+              className="flex items-center space-x-2"
+              onClick={handleCallClick}
+            >
               <Phone className="h-4 w-4" />
               <span>Call Now</span>
             </a>
@@ -107,7 +116,11 @@ export function Header() {
                   </div>
                 ))}
                 <Button asChild className="mt-4 bg-orange-600 hover:bg-orange-700">
-                  <a href="tel:+918302713127" className="flex items-center space-x-2">
+                  <a 
+                    href="tel:+918302713127" 
+                    className="flex items-center space-x-2"
+                    onClick={handleCallClick}
+                  >
                     <Phone className="h-4 w-4" />
                     <span>+91 83027 13127</span>
                   </a>

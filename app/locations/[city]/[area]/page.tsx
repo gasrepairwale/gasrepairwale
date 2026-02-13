@@ -29,6 +29,7 @@ import {
   ChevronDown,
   ChevronUp
 } from "lucide-react"
+import { TrackedLink } from "@/components/tracked-link"
 
 type Props = {
   params: Promise<{ city: string; area: string }>
@@ -318,21 +319,36 @@ export default async function AreaPage({ params }: Props) {
               {/* CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
+                  asChild
                   size="lg"
                   className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
                 >
-                  <a href="tel:+918302713127" className="flex items-center space-x-2">
+                  <TrackedLink 
+                    href="tel:+918302713127" 
+                    className="flex items-center space-x-2"
+                    category="phone"
+                    city={area.city}
+                    area={area.name}
+                  >
                     <Phone className="h-5 w-5" />
                     <span className="font-bold">Call Now: +91 83027 13127</span>
-                  </a>
+                  </TrackedLink>
                 </Button>
 
                 <Button
+                  asChild
                   size="lg"
                   variant="outline"
                   className="text-lg px-8 py-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-semibold hover:shadow-lg transition-all duration-200"
                 >
-                  WhatsApp Quote
+                  <TrackedLink 
+                    href="#" 
+                    category="whatsapp"
+                    city={area.city}
+                    area={area.name}
+                  >
+                    WhatsApp Quote
+                  </TrackedLink>
                 </Button>
               </div>
 
@@ -427,14 +443,29 @@ export default async function AreaPage({ params }: Props) {
                   </div>
 
                   <div className="space-y-2">
-                    <Button className="w-full text-white bg-orange-600 hover:bg-orange-700 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600">
-                      <a href="tel:+918302713127">Book This Service</a>
+                    <Button asChild className="w-full text-white bg-orange-600 hover:bg-orange-700 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600">
+                      <TrackedLink 
+                        href="tel:+918302713127"
+                        category="phone"
+                        city={area.city}
+                        area={area.name}
+                      >
+                        Book This Service
+                      </TrackedLink>
                     </Button>
                     <Button
+                      asChild
                       variant="outline"
                       className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
                     >
-                      Get Free Quote
+                      <TrackedLink 
+                        href="tel:+918302713127"
+                        category="phone"
+                        city={area.city}
+                        area={area.name}
+                      >
+                        Get Free Quote
+                      </TrackedLink>
                     </Button>
                   </div>
                 </CardContent>
@@ -552,18 +583,32 @@ export default async function AreaPage({ params }: Props) {
                 Join {area.customers} satisfied customers in {area.name}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 font-bold">
-                  <a href="tel:+918302713127" className="flex items-center space-x-2">
+                <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100 font-bold">
+                  <TrackedLink 
+                    href="tel:+918302713127" 
+                    className="flex items-center space-x-2"
+                    category="phone"
+                    city={area.city}
+                    area={area.name}
+                  >
                     <Phone className="h-5 w-5" />
                     <span>Call Now: +91 83027 13127</span>
-                  </a>
+                  </TrackedLink>
                 </Button>
                 <Button
+                  asChild
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 font-bold bg-transparent"
                 >
-                  Book Online Service
+                  <TrackedLink 
+                    href="tel:+918302713127"
+                    category="phone"
+                    city={area.city}
+                    area={area.name}
+                  >
+                    Book Online Service
+                  </TrackedLink>
                 </Button>
               </div>
             </div>
@@ -597,11 +642,17 @@ export default async function AreaPage({ params }: Props) {
                 <p className="text-red-100">{area.responseTime} emergency response</p>
               </div>
             </div>
-            <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold">
-              <a href="tel:+918302713127" className="flex items-center space-x-2">
+            <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold">
+              <TrackedLink 
+                href="tel:+918302713127" 
+                className="flex items-center space-x-2"
+                category="phone"
+                city={area.city}
+                area={area.name}
+              >
                 <Phone className="h-5 w-5" />
                 <span>Emergency: +91 83027 13127</span>
-              </a>
+              </TrackedLink>
             </Button>
           </div>
         </div>

@@ -1,6 +1,9 @@
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { trackPhoneCall } from "@/lib/analytics"
 import {
   Flame,
   Wrench,
@@ -302,7 +305,10 @@ export function ComprehensiveServices() {
                     </div>
                   </div>
 
-                  <Button className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white">
+                  <Button 
+                    className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white"
+                    onClick={() => trackPhoneCall("+918302713127", "General", service.title)}
+                  >
                     <a href="tel:+918302713127" className="flex items-center space-x-2">
                       <Phone className="h-4 w-4" />
                       <span>Book This Service</span>
@@ -405,7 +411,11 @@ export function ComprehensiveServices() {
               </div>
             </div>
 
-            <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-8 py-4">
+            <Button 
+              size="lg" 
+              className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-8 py-4"
+              onClick={() => trackPhoneCall("+918302713127", "Emergency")}
+            >
               <a href="tel:+918302713127" className="flex items-center space-x-2">
                 <Phone className="h-5 w-5" />
                 <span>Emergency Call: +91 83027 13127</span>

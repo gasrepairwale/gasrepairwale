@@ -1,6 +1,9 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, AlertTriangle, CheckCircle, Phone } from "lucide-react"
+import { trackPhoneCall } from "@/lib/analytics"
 
 /**
  * Before/After Scenarios Component
@@ -122,10 +125,15 @@ export function BeforeAfter() {
             <h3 className="text-3xl font-bold mb-4">🚀 Ready to Transform Your Gas Problems?</h3>
             <p className="text-xl mb-6">Join 5000+ satisfied customers who chose the smart solution!</p>
             <Button
+              asChild
               size="lg"
               className="bg-white text-orange-600 hover:bg-gray-100 font-bold text-lg px-8 py-4 transform hover:scale-105 transition-all duration-200"
             >
-              <a href="tel:+918302713127" className="flex items-center space-x-2">
+              <a 
+                href="tel:+918302713127" 
+                className="flex items-center space-x-2"
+                onClick={() => trackPhoneCall("+918302713127")}
+              >
                 <Phone className="h-5 w-5" />
                 <span>CALL NOW: +91 83027 13127</span>
               </a>
