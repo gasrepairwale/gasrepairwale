@@ -11,6 +11,7 @@ type SendEmailBody = {
   city?: string
   area?: string
   preferredTime?: string
+  source?: string
 }
 
 export async function POST(request: Request) {
@@ -27,6 +28,7 @@ export async function POST(request: Request) {
       city = "",
       area = "",
       preferredTime = "",
+      source = "",
     } = body || {}
 
     if (!name || !phone) {
@@ -57,17 +59,27 @@ export async function POST(request: Request) {
     const subject = `New Service Request: ${service || "General Inquiry"} - ${name}`
 
     const html = `
-      <h2>New Service Request</h2>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Phone:</strong> ${phone}</p>
-      ${email ? `<p><strong>Email:</strong> ${email}</p>` : ""}
-      ${service ? `<p><strong>Service:</strong> ${service}</p>` : ""}
-      ${city || area ? `<p><strong>Location:</strong> ${[area, city].filter(Boolean).join(", ")}</p>` : ""}
-      ${address ? `<p><strong>Address:</strong> ${address}</p>` : ""}
-      ${preferredTime ? `<p><strong>Preferred Time:</strong> ${preferredTime}</p>` : ""}
-      ${message ? `<p><strong>Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>` : ""}
-      <hr/>
-      <p>Submitted at: ${new Date().toLocaleString()}</p>
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 20px; border-radius: 10px;">
+        <h2 style="color: #ea580c; border-bottom: 2px solid #ea580c; padding-bottom: 10px;">New Service Request</h2>
+        <div style="background-color: #fff7ed; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+          <p><strong>👤 Name:</strong> ${name}</p>
+          <p><strong>📞 Phone:</strong> ${phone}</p>
+          ${email ? `<p><strong>📧 Email:</strong> ${email}</p>` : ""}
+          <p><strong>🛠️ Service:</strong> ${service || "General Inquiry"}</p>
+          <hr style="border: 0; border-top: 1px solid #fed7aa; margin: 15px 0;"/>
+          <p><strong>📍 City:</strong> ${city || "General"}</p>
+          <p><strong>🏘️ Area:</strong> ${area || "N/A"}</p>
+          ${address ? `<p><strong>🏠 Address:</strong> ${address}</p>` : ""}
+          ${preferredTime ? `<p><strong>⏰ Preferred Time:</strong> ${preferredTime}</p>` : ""}
+          ${source ? `<p><strong>🌐 Source:</strong> ${source}</p>` : ""}
+        </div>
+        ${message ? `
+        <div style="background-color: #f9fafb; padding: 15px; border-radius: 8px;">
+          <p><strong>📝 Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>
+        </div>` : ""}
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;"/>
+        <p style="font-size: 12px; color: #6b7280; text-align: center;">Submitted at: ${new Date().toLocaleString('en-IN')}</p>
+      </div>
     `
 
     // Send to receiver

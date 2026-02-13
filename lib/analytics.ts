@@ -89,6 +89,59 @@ export const trackWhatsApp = (message: string, city?: string, area?: string) => 
   })
 }
 
+/**
+ * Lead Notification Utilities
+ */
+
+// Format WhatsApp URL with pre-filled message
+export const getWhatsAppRedirectUrl = (data: {
+  serviceType: string;
+  city: string;
+  area: string;
+  phone: string;
+  address?: string;
+  preferredTime?: string;
+  message?: string;
+}) => {
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+918302713127'
+  const messageText = `*Gas Service Booking*\n\n` +
+    `👤 *Service:* ${data.serviceType}\n` +
+    `📍 *City:* ${data.city}\n` +
+    `🏘️ *Area:* ${data.area || 'N/A'}\n` +
+    `🏠 *Address:* ${data.address || 'N/A'}\n` +
+    `⏰ *Slot:* ${data.preferredTime || 'N/A'}\n` +
+    `📞 *Phone:* ${data.phone}\n\n` +
+    `*Message:* ${data.message || 'I am visiting from the website and want to book a service.'}`;
+
+  return `https://wa.me/${waNumber.replace('+', '')}?text=${encodeURIComponent(messageText)}`;
+}
+
+// Send lead data to Telegram via our internal API
+export const sendLeadNotification = async (data: {
+  name?: string;
+  phone: string;
+  service: string;
+  city: string;
+  area?: string;
+  address?: string;
+  preferredTime?: string;
+  message?: string;
+  source?: string
+}) => {
+  try {
+    console.log('[Analytics] Sending lead notification:', data)
+    const response = await fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    return await response.json()
+  } catch (error) {
+    console.error('[Analytics] Failed to send lead notification:', error)
+    return { ok: false, error }
+  }
+}
+
 // Declare global types for analytics
 declare global {
   interface Window {

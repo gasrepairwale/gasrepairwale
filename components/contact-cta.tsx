@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
-import { trackPhoneCall, trackServiceBooking } from "@/lib/analytics"
+import { trackPhoneCall, trackServiceBooking, sendLeadNotification, getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 /**
  * Contact CTA Section Component
@@ -29,9 +29,32 @@ export function ContactCTA() {
   // Handle form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (submitting) return
+
     try {
       setSubmitting(true)
-      const res = await fetch("/api/send-email", {
+
+      // 1. Send Lead Notification to Telegram (Server-side)
+      await sendLeadNotification({
+        name: formData.name,
+        phone: formData.phone,
+        service: formData.service,
+        city: "General",
+        area: "General",
+        message: formData.message,
+        source: "Contact CTA Form"
+      })
+
+      // 2. Track successful booking in GA4
+      trackServiceBooking({
+        serviceType: formData.service,
+        city: "General", 
+        area: "General",
+        phone: formData.phone,
+      })
+
+      // 3. Optional: Send Email/Database (existing logic)
+      await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -40,26 +63,31 @@ export function ContactCTA() {
           email: formData.email,
           service: formData.service,
           message: formData.message,
+          city: "General",
+          area: "General",
+          source: "Contact CTA Form"
         }),
-      })
-
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}))
-        throw new Error(data.error || "Failed to send")
-      }
-
-      // Track successful booking
-      trackServiceBooking({
-        serviceType: formData.service,
-        city: "General", // This is a general contact form
-        area: "General",
-        phone: formData.phone,
       })
 
       toast({
         title: "Message Sent!",
-        description: "We'll get back to you within 30 minutes.",
+        description: "Redirecting to WhatsApp for instant confirmation...",
       })
+
+      // 4. Redirect to WhatsApp
+      const waUrl = getWhatsAppRedirectUrl({
+        serviceType: formData.service,
+        city: "General",
+        area: "General",
+        phone: formData.phone,
+        message: formData.message
+      })
+
+      // Delayed redirect
+      setTimeout(() => {
+        window.location.href = waUrl
+      }, 1500)
+
       setFormData({ name: "", phone: "", email: "", service: "", message: "" })
     } catch (err: any) {
       toast({ title: "Failed to send", description: err.message || "Please try again." })

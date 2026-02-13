@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Calendar, CheckCircle, Clock, Shield, Zap } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
-import { trackServiceBooking } from "@/lib/analytics"
+import { trackServiceBooking, sendLeadNotification, getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 type QuickBookingFormProps = {
   area: any
@@ -29,9 +29,34 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (submitting) return
+
     try {
       setSubmitting(true)
-      const res = await fetch("/api/send-email", {
+
+      // 1. Send Lead Notification to Telegram (Server-side)
+      await sendLeadNotification({
+        name: form.name,
+        phone: form.phone,
+        service: form.service,
+        city: area?.city,
+        area: area?.name,
+        address: form.address,
+        preferredTime: form.preferredTime,
+        message: form.message,
+        source: "Quick Booking Form"
+      })
+
+      // 2. Track successful booking in GA4
+      trackServiceBooking({
+        serviceType: form.service,
+        city: area?.city,
+        area: area?.name,
+        phone: form.phone,
+      })
+
+      // 3. Optional: Send Email/Database (existing logic)
+      await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -44,22 +69,28 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
           message: form.message,
           city: area?.city,
           area: area?.name,
+          source: "Quick Booking Form"
         }),
       })
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}))
-        throw new Error(data.error || "Failed to send")
-      }
 
-      // Track successful booking
-      trackServiceBooking({
+      toast({ title: "Request sent", description: "Redirecting to WhatsApp for instant confirmation..." })
+
+      // 4. Redirect to WhatsApp
+      const waUrl = getWhatsAppRedirectUrl({
         serviceType: form.service,
         city: area?.city,
         area: area?.name,
         phone: form.phone,
+        address: form.address,
+        preferredTime: form.preferredTime,
+        message: form.message
       })
 
-      toast({ title: "Request sent", description: "We will contact you within 30 minutes." })
+      // Delayed redirect
+      setTimeout(() => {
+        window.location.href = waUrl
+      }, 1500)
+
       setForm({ name: "", phone: "", email: "", address: "", service: "", preferredTime: "", message: "" })
     } catch (err: any) {
       toast({ title: "Failed to send", description: err.message || "Please try again." })

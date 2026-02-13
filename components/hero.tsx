@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Phone, MapPin, Clock, Star, CheckCircle, Calendar, Zap } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
-import { trackPhoneCall, trackServiceBooking } from "@/lib/analytics"
+import { trackPhoneCall, trackServiceBooking, sendLeadNotification, getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 export function Hero() {
   const [selectedLocation, setSelectedLocation] = useState("")
@@ -82,9 +82,33 @@ export function Hero() {
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (submitting) return
+
     try {
       setSubmitting(true)
-      const res = await fetch("/api/send-email", {
+      
+      // 1. Send Lead Notification to Telegram (Server-side)
+      await sendLeadNotification({
+        name: form.name,
+        phone: form.phone,
+        service: form.service,
+        city: selectedLocation,
+        area: selectedArea,
+        address: form.address,
+        message: form.message,
+        source: "Hero Form"
+      })
+
+      // 2. Track successful booking in GA4
+      trackServiceBooking({
+        serviceType: form.service,
+        city: selectedLocation,
+        area: selectedArea,
+        phone: form.phone,
+      })
+
+      // 3. Optional: Send Email/Database (existing logic)
+      await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -96,22 +120,27 @@ export function Hero() {
           message: form.message,
           city: selectedLocation,
           area: selectedArea,
+          source: "Hero Form"
         }),
       })
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}))
-        throw new Error(data.error || "Failed to send")
-      }
 
-      // Track successful booking
-      trackServiceBooking({
+      toast({ title: "Request sent", description: "Redirecting to WhatsApp for instant confirmation..." })
+
+      // 4. Redirect to WhatsApp
+      const waUrl = getWhatsAppRedirectUrl({
         serviceType: form.service,
         city: selectedLocation,
         area: selectedArea,
         phone: form.phone,
+        address: form.address,
+        message: form.message
       })
 
-      toast({ title: "Request sent", description: "We will contact you within 30 minutes." })
+      // Delayed redirect to allow GA4 to fire and user to see toast
+      setTimeout(() => {
+        window.location.href = waUrl
+      }, 1500)
+
       setForm({ name: "", phone: "", email: "", service: "", address: "", message: "" })
       setSelectedLocation("")
       setSelectedArea("")
