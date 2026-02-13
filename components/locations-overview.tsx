@@ -3,8 +3,8 @@
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Clock } from "lucide-react"
-import { trackPhoneCall } from "@/lib/analytics"
+import { MapPin, Phone, Clock, MessageSquare } from "lucide-react"
+import { trackPhoneCall, trackWhatsApp, getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 /**
  * Locations Overview Component
@@ -103,6 +103,24 @@ export function LocationsOverview() {
                     >
                       <Phone className="h-4 w-4" />
                       <span>Call Now</span>
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="flex-1 border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
+                  >
+                    <a 
+                      href={getWhatsAppRedirectUrl({
+                        serviceType: "General Inquiry",
+                        city: location.city,
+                        message: `Hi, I am looking for a gas repair service in ${location.city}.`
+                      })}
+                      className="flex items-center space-x-2"
+                      onClick={() => trackWhatsApp(`WhatsApp from ${location.city}`, location.city)}
+                    >
+                      <MessageSquare className="h-4 w-4" />
+                      <span>WhatsApp</span>
                     </a>
                   </Button>
                 </div>

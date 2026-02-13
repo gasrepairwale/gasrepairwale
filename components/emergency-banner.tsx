@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { AlertTriangle, Phone, X } from "lucide-react"
-import { trackPhoneCall } from "@/lib/analytics"
+import { trackPhoneCall, trackWhatsApp, getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 /**
  * Emergency Banner Component
@@ -40,6 +40,20 @@ export function EmergencyBanner() {
             >
               <Phone className="h-4 w-4" />
               <span className="hidden sm:inline">CALL NOW</span>
+            </a>
+          </Button>
+
+          <Button size="sm" className="bg-green-500 text-white hover:bg-green-600 font-bold hidden md:flex border-0">
+            <a 
+              href={getWhatsAppRedirectUrl({
+                serviceType: "Emergency",
+                city: "General",
+                message: "🚨 EMERGENCY: I need immediate help with a gas issue!"
+              })}
+              className="flex items-center space-x-1"
+              onClick={() => trackWhatsApp('Emergency Banner Click')}
+            >
+              <span>WHATSAPP</span>
             </a>
           </Button>
 

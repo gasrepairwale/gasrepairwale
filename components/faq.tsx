@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react"
+import { getWhatsAppRedirectUrl, trackWhatsApp } from "@/lib/analytics"
 
 /**
  * FAQ Component
@@ -142,7 +143,12 @@ export function FAQ() {
                 📞 Call: +91 83027 13127
               </a>
               <a
-                href="https://wa.me/918302713127"
+                href={getWhatsAppRedirectUrl({
+                  serviceType: "FAQ Inquiry",
+                  city: "General",
+                  message: "Hi, I have a question about your gas repair services."
+                })}
+                onClick={() => trackWhatsApp("FAQ Inquiry")}
                 className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors duration-200"
               >
                 💬 WhatsApp Us

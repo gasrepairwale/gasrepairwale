@@ -151,21 +151,35 @@ export const trackWhatsApp = (message: string, city?: string, area?: string) => 
 export const getWhatsAppRedirectUrl = (data: {
   serviceType: string;
   city: string;
-  area: string;
-  phone: string;
+  area?: string;
+  phone?: string;
   address?: string;
   preferredTime?: string;
   message?: string;
 }) => {
   const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+918302713127'
-  const messageText = `*Gas Service Booking*\n\n` +
+
+  let messageText = `*Gas Service Booking*\n\n` +
     `👤 *Service:* ${data.serviceType}\n` +
-    `📍 *City:* ${data.city}\n` +
-    `🏘️ *Area:* ${data.area || 'N/A'}\n` +
-    `🏠 *Address:* ${data.address || 'N/A'}\n` +
-    `⏰ *Slot:* ${data.preferredTime || 'N/A'}\n` +
-    `📞 *Phone:* ${data.phone}\n\n` +
-    `*Message:* ${data.message || 'I am visiting from the website and want to book a service.'}`;
+    `📍 *City:* ${data.city}\n`;
+
+  if (data.area && data.area !== 'N/A' && data.area !== '') {
+    messageText += `🏘️ *Area:* ${data.area}\n`;
+  }
+
+  if (data.address && data.address !== 'N/A' && data.address !== '') {
+    messageText += `🏠 *Address:* ${data.address}\n`;
+  }
+
+  if (data.preferredTime && data.preferredTime !== 'N/A' && data.preferredTime !== '') {
+    messageText += `⏰ *Slot:* ${data.preferredTime}\n`;
+  }
+
+  if (data.phone && data.phone !== 'USER_PHONE' && data.phone !== '') {
+    messageText += `📞 *Phone:* ${data.phone}\n`;
+  }
+
+  messageText += `\n*Message:* ${data.message || 'I am visiting from the website and want to book a service.'}`;
 
   return `https://wa.me/${waNumber.replace('+', '')}?text=${encodeURIComponent(messageText)}`;
 }

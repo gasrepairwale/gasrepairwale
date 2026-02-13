@@ -27,9 +27,12 @@ import {
   Home,
   HelpCircle,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  MessageSquare,
+  PhoneCall
 } from "lucide-react"
 import { TrackedLink } from "@/components/tracked-link"
+import { getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 type Props = {
   params: Promise<{ city: string; area: string }>
@@ -342,7 +345,12 @@ export default async function AreaPage({ params }: Props) {
                   className="text-lg px-8 py-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-semibold hover:shadow-lg transition-all duration-200"
                 >
                   <TrackedLink 
-                    href="#" 
+                    href={getWhatsAppRedirectUrl({
+                      serviceType: "General Inquiry",
+                      city: area.city,
+                      area: area.name,
+                      message: `Hi, I am visiting from the ${area.name} page and want a quote.`
+                    })}
                     category="whatsapp"
                     city={area.city}
                     area={area.name}
@@ -389,13 +397,22 @@ export default async function AreaPage({ params }: Props) {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
             {area.landmarks.map((landmark: string, index: number) => (
-              <div
+              <TrackedLink
                 key={index}
-                className="flex items-center space-x-3 bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-lg hover:shadow-md transition-shadow cursor-pointer group"
+                href={getWhatsAppRedirectUrl({
+                  serviceType: "Area Inquiry",
+                  city: area.city,
+                  area: area.name,
+                  message: `Hi, I am looking for gas service near ${landmark} in ${area.name}.`
+                })}
+                category="whatsapp"
+                city={area.city}
+                area={area.name}
+                className="flex items-center space-x-3 bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-lg hover:shadow-md transition-shadow cursor-pointer group no-underline"
               >
                 <MapPin className="h-5 w-5 text-orange-600 group-hover:scale-110 transition-transform" />
                 <span className="font-medium group-hover:text-orange-600 transition-colors">{landmark}</span>
-              </div>
+              </TrackedLink>
             ))}
           </div>
 
@@ -443,28 +460,37 @@ export default async function AreaPage({ params }: Props) {
                   </div>
 
                   <div className="space-y-2">
-                    <Button asChild className="w-full text-white bg-orange-600 hover:bg-orange-700 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600">
+                    <Button asChild className="w-full text-white bg-orange-600 hover:bg-orange-700 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600 h-10">
                       <TrackedLink 
                         href="tel:+918302713127"
                         category="phone"
                         city={area.city}
                         area={area.name}
+                        className="flex items-center justify-center space-x-2 w-full h-full"
                       >
-                        Book This Service
+                        <PhoneCall className="h-4 w-4" />
+                        <span>Call for Booking</span>
                       </TrackedLink>
                     </Button>
                     <Button
                       asChild
                       variant="outline"
-                      className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
+                      className="w-full border-green-600 text-green-600 hover:bg-green-50 bg-transparent h-10"
                     >
                       <TrackedLink 
-                        href="tel:+918302713127"
-                        category="phone"
+                        href={getWhatsAppRedirectUrl({
+                          serviceType: service.title,
+                          city: area.city,
+                          area: area.name,
+                          message: `Hi, I want to get a quote for ${service.title} in ${area.name}, ${area.city}.`
+                        })}
+                        category="whatsapp"
                         city={area.city}
                         area={area.name}
+                        className="flex items-center justify-center space-x-2 w-full h-full"
                       >
-                        Get Free Quote
+                        <MessageSquare className="h-4 w-4" />
+                        <span>WhatsApp Quote</span>
                       </TrackedLink>
                     </Button>
                   </div>
@@ -602,12 +628,17 @@ export default async function AreaPage({ params }: Props) {
                   className="border-white text-white hover:bg-white/10 font-bold bg-transparent"
                 >
                   <TrackedLink 
-                    href="tel:+918302713127"
-                    category="phone"
+                    href={getWhatsAppRedirectUrl({
+                      serviceType: "Online Booking",
+                      city: area.city,
+                      area: area.name,
+                      message: `Hi, I want to book a service in ${area.name}.`
+                    })}
+                    category="whatsapp"
                     city={area.city}
                     area={area.name}
                   >
-                    Book Online Service
+                    Book via WhatsApp
                   </TrackedLink>
                 </Button>
               </div>
@@ -642,18 +673,37 @@ export default async function AreaPage({ params }: Props) {
                 <p className="text-red-100">{area.responseTime} emergency response</p>
               </div>
             </div>
-            <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold">
-              <TrackedLink 
-                href="tel:+918302713127" 
-                className="flex items-center space-x-2"
-                category="phone"
-                city={area.city}
-                area={area.name}
-              >
-                <Phone className="h-5 w-5" />
-                <span>Emergency: +91 83027 13127</span>
-              </TrackedLink>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold border-0">
+                <TrackedLink 
+                  href="tel:+918302713127" 
+                  className="flex items-center space-x-2"
+                  category="phone"
+                  city={area.city}
+                  area={area.name}
+                >
+                  <Phone className="h-5 w-5" />
+                  <span>Call: +91 83027 13127</span>
+                </TrackedLink>
+              </Button>
+              <Button asChild size="lg" className="bg-green-600 text-white hover:bg-green-700 font-bold border-0">
+                <TrackedLink 
+                  href={getWhatsAppRedirectUrl({
+                    serviceType: "Emergency",
+                    city: area.city,
+                    area: area.name,
+                    message: `🚨 EMERGENCY: I need immediate gas repair in ${area.name}!`
+                  })}
+                  className="flex items-center space-x-2"
+                  category="whatsapp"
+                  city={area.city}
+                  area={area.name}
+                >
+                  <MessageSquare className="h-5 w-5" />
+                  <span>WhatsApp Emergency</span>
+                </TrackedLink>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

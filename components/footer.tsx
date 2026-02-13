@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Wrench, Phone, Mail, MapPin, Facebook, Twitter, Instagram } from "lucide-react"
-import { trackPhoneCall, trackWhatsApp } from "@/lib/analytics"
+import { trackPhoneCall, trackWhatsApp, getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 /**
  * Footer Component
@@ -115,6 +115,19 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-orange-600" />
                 <span className="text-gray-300">Pune & Mumbai</span>
+              </div>
+              <div className="flex items-center space-x-3 pt-2">
+                <a 
+                  href={getWhatsAppRedirectUrl({
+                    serviceType: "General Support",
+                    city: "General",
+                    message: "Hi, I need assistance with a gas repair service."
+                  })}
+                  onClick={() => trackWhatsApp('Footer Contact')}
+                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-bold flex items-center space-x-2 transition-colors"
+                >
+                  <span>💬 WhatsApp Support</span>
+                </a>
               </div>
             </div>
           </div>

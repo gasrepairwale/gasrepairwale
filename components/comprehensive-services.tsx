@@ -3,7 +3,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { trackPhoneCall } from "@/lib/analytics"
 import {
   Flame,
   Wrench,
@@ -16,7 +15,9 @@ import {
   Building,
   Zap,
   Phone,
+  MessageSquare
 } from "lucide-react"
+import { trackPhoneCall, trackWhatsApp, getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 /**
  * Comprehensive Services Section Component
@@ -305,15 +306,34 @@ export function ComprehensiveServices() {
                     </div>
                   </div>
 
-                  <Button 
-                    className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white"
-                    onClick={() => trackPhoneCall("+918302713127", "General", service.title)}
-                  >
-                    <a href="tel:+918302713127" className="flex items-center space-x-2">
-                      <Phone className="h-4 w-4" />
-                      <span>Book This Service</span>
-                    </a>
-                  </Button>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <Button 
+                      className="flex-1 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white shadow-md hover:shadow-lg transition-all"
+                      onClick={() => trackPhoneCall("+918302713127", "General", service.title)}
+                    >
+                      <a href="tel:+918302713127" className="flex items-center space-x-2">
+                        <Phone className="h-4 w-4" />
+                        <span>Book Service</span>
+                      </a>
+                    </Button>
+                    <Button 
+                      variant="outline"
+                      className="flex-1 border-green-600 text-green-600 hover:bg-green-50 shadow-sm hover:shadow-md transition-all"
+                      onClick={() => trackWhatsApp(`WhatsApp inquiry for ${service.title}`)}
+                    >
+                      <a 
+                        href={getWhatsAppRedirectUrl({
+                          serviceType: service.title,
+                          city: "General",
+                          message: `Hi, I am interested in ${service.title}.`
+                        })}
+                        className="flex items-center space-x-2"
+                      >
+                        <MessageSquare className="h-4 w-4" />
+                        <span>WhatsApp</span>
+                      </a>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             )
