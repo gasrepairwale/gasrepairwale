@@ -7,11 +7,16 @@ import { NextResponse } from "next/server"
 export async function POST(request: Request) {
     try {
         const body = await request.json()
-        const { name, phone, service, city, area, address, preferredTime, message: userMessage, source = "Website Form" } = body
+        const {
+            name, phone, service, city, area, address, preferredTime,
+            message: userMessage,
+            source = "Website Form",
+            type = "lead" // 'lead' or 'activity'
+        } = body
 
         // 1. Validate required fields
-        if (!phone) {
-            return NextResponse.json({ error: "Phone number is required" }, { status: 400 })
+        if (type === 'lead' && !phone) {
+            return NextResponse.json({ error: "Phone number is required for leads" }, { status: 400 })
         }
 
         // 2. Format message for Telegram
@@ -20,11 +25,18 @@ export async function POST(request: Request) {
 
         // Check if Telegram is configured
         if (!botToken || !chatId || botToken === 'YOUR_BOT_TOKEN_HERE') {
-            console.warn("[Leads API] Telegram Bot not configured. Skipping notification.")
             return NextResponse.json({ ok: true, warn: "Telegram not configured" })
         }
 
-        const message = `
+        let message = ""
+
+        if (type === "activity") {
+            // Short activity notification
+            const icon = source.toLowerCase().includes('call') ? '📞' : source.toLowerCase().includes('whatsapp') ? '💬' : '🖱️'
+            message = `${icon} *New Activity:* ${source}\n📍 *Location:* ${area || 'N/A'}, ${city || 'General'}\n🕒 ${new Date().toLocaleTimeString('en-IN')}`
+        } else {
+            // Full lead notification
+            message = `
 🔥 *New Lead Received!* 🔥
 ━━━━━━━━━━━━━━━━━━
 👤 *Name:* ${name || 'N/A'}
@@ -41,6 +53,7 @@ ${userMessage || 'No message provided'}
 ━━━━━━━━━━━━━━━━━━
 ⏰ _Time: ${new Date().toLocaleString('en-IN')}_
     `.trim()
+        }
 
         // 3. Send to Telegram
         const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`

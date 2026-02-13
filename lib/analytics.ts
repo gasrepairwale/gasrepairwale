@@ -67,6 +67,55 @@ export const trackServiceBooking = (data: { serviceType: string; city: string; a
   })
 }
 
+// Lead notification sending
+export const sendLeadNotification = async (data: any) => {
+  try {
+    const response = await fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...data, type: 'lead' }),
+    })
+    return await response.json()
+  } catch (error) {
+    console.error('[Analytics] Failed to send lead notification:', error)
+    return { ok: false, error }
+  }
+}
+
+// NEW: Short activity logging for Telegram
+export const logActivity = async (action: string, city?: string, area?: string) => {
+  try {
+    // Only log in production or if explicitly enabled
+    const isEnabled = analyticsConfig.googleAnalytics.enabled || (typeof window !== 'undefined' && window.location.hostname === 'localhost');
+    if (!isEnabled) return;
+
+    // Get city/area from URL if not provided
+    let autoCity = city || '';
+    let autoArea = area || '';
+
+    if (typeof window !== 'undefined' && !city) {
+      const pathParts = window.location.pathname.split('/').filter(Boolean);
+      if (pathParts[0] === 'locations') {
+        autoCity = pathParts[1] || '';
+        autoArea = pathParts[2] || '';
+      }
+    }
+
+    await fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: 'activity',
+        source: action,
+        city: autoCity,
+        area: autoArea
+      }),
+    })
+  } catch (error) {
+    console.error('[Analytics] Failed to log activity:', error)
+  }
+}
+
 // Phone call tracking
 export const trackPhoneCall = (phoneNumber: string, city?: string, area?: string) => {
   trackEvent('phone_call', {
@@ -76,6 +125,8 @@ export const trackPhoneCall = (phoneNumber: string, city?: string, area?: string
     event_category: 'engagement',
     event_label: 'phone_call',
   })
+  // Log real-time activity to Telegram
+  logActivity(`Clicked 'Call' (${phoneNumber})`, city, area)
 }
 
 // WhatsApp tracking
@@ -87,6 +138,8 @@ export const trackWhatsApp = (message: string, city?: string, area?: string) => 
     event_category: 'engagement',
     event_label: 'whatsapp',
   })
+  // Log real-time activity to Telegram
+  logActivity(`Clicked 'WhatsApp' (${message})`, city, area)
 }
 
 /**
@@ -114,32 +167,6 @@ export const getWhatsAppRedirectUrl = (data: {
     `*Message:* ${data.message || 'I am visiting from the website and want to book a service.'}`;
 
   return `https://wa.me/${waNumber.replace('+', '')}?text=${encodeURIComponent(messageText)}`;
-}
-
-// Send lead data to Telegram via our internal API
-export const sendLeadNotification = async (data: {
-  name?: string;
-  phone: string;
-  service: string;
-  city: string;
-  area?: string;
-  address?: string;
-  preferredTime?: string;
-  message?: string;
-  source?: string
-}) => {
-  try {
-    console.log('[Analytics] Sending lead notification:', data)
-    const response = await fetch('/api/leads', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    })
-    return await response.json()
-  } catch (error) {
-    console.error('[Analytics] Failed to send lead notification:', error)
-    return { ok: false, error }
-  }
 }
 
 // Declare global types for analytics
