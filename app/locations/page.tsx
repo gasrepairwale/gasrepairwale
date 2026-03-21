@@ -4,7 +4,7 @@ import { MapPin, Phone, Clock, Star, CheckCircle, ArrowRight } from "lucide-reac
 import { areaData } from "@/data/area-data"
 
 export const metadata: Metadata = {
-  title: "Service Locations | Gas Repair Services in Pune & Mumbai | Gas Repaire Wale",
+  title: "Service Locations | Gas Repair Services in Pune & Mumbai | Gas Repair Wale",
   description:
     "Professional gas repair services across 30+ locations in Pune and 16+ areas in Mumbai. Find your area and get expert gas stove repair, pipeline installation & emergency services. Call +91 83027 13127",
   keywords: [
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     title: "Service Locations | Gas Repair Services in Pune & Mumbai",
     description: "Professional gas repair services across 30+ locations in Pune and 16+ areas in Mumbai. Find your area and get expert service.",
     url: "https://gasrepairwale.com/locations",
-    siteName: "Gas Repaire Wale",
+    siteName: "Gas Repair Wale",
     images: [
       {
         url: "/placeholder.svg?height=630&width=1200&text=Service+Locations",
         width: 1200,
         height: 630,
-        alt: "Gas Repaire Wale Service Locations",
+        alt: "Gas Repair Wale Service Locations",
       },
     ],
     locale: "en_US",

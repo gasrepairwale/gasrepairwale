@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Type assertion - TypeScript can't narrow optional chaining types properly
   const area = areaData_temp as any
 
-  const title = `Gas Repair Services in ${area.name}, ${area.city} | ${area.responseTime} Response | Gas Repaire Wale`
+  const title = `Gas Repair Services in ${area.name}, ${area.city} | ${area.responseTime} Response | Gas Repair Wale`
   const description = `⭐ #1 Gas Repair Service in ${area.name}, ${area.city} ✅ ${area.customers} Happy Customers ✅ ${area.responseTime} Response Time ✅ ${area.rating}★ Rating ✅ Local Experts Since ${area.establishedYear}. Call +91 83027 13127!`
 
   return {
@@ -75,9 +75,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `gas maintenance ${area.city.toLowerCase()}`,
       `gas installation ${area.name.toLowerCase()}`,
     ],
-    authors: [{ name: "Gas Repaire Wale" }],
-    creator: "Gas Repaire Wale",
-    publisher: "Gas Repaire Wale",
+    authors: [{ name: "Gas Repair Wale" }],
+    creator: "Gas Repair Wale",
+    publisher: "Gas Repair Wale",
     robots: {
       index: true,
       follow: true,
@@ -95,7 +95,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://gasrepairwale.com/locations/${city}/${areaParam}`,
       title,
       description,
-      siteName: "Gas Repaire Wale",
+      siteName: "Gas Repair Wale",
       images: [
         {
           url: "/placeholder.svg?height=630&width=1200" + area.name + " " + area.city,
@@ -192,7 +192,7 @@ export default async function AreaPage({ params }: Props) {
       <ServiceSchema 
         name={`Gas Repair Services in ${area.name}`}
         description={`Professional gas repair and pipeline services in ${area.name}, ${area.city}.`}
-        providerName="Gas Repaire Wale"
+        providerName="Gas Repair Wale"
         areaServed={area.name}
         serviceType="Gas Appliance Repair" 
       />
@@ -719,7 +719,7 @@ export default async function AreaPage({ params }: Props) {
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p>
-                <strong>Gas Repaire Wale</strong> has been serving {area.name} since {area.establishedYear}, providing
+                <strong>Gas Repair Wale</strong> has been serving {area.name} since {area.establishedYear}, providing
                 professional gas stove repair, pipeline services, and appliance maintenance. Our team of licensed and
                 certified technicians understands the unique requirements of {area.name} residents and businesses with
                 {area.completedJobs} successfully completed jobs.

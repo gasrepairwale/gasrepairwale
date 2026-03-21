@@ -3,9 +3,9 @@ import Link from "next/link"
 import { Shield, Eye, Lock, Users, FileText, Phone, Mail, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Gas Repaire Wale - Your Data Protection & Privacy Rights",
+  title: "Privacy Policy | Gas Repair Wale - Your Data Protection & Privacy Rights",
   description:
-    "Learn how Gas Repaire Wale protects your personal information, data collection practices, and your privacy rights. We are committed to safeguarding your data.",
+    "Learn how Gas Repair Wale protects your personal information, data collection practices, and your privacy rights. We are committed to safeguarding your data.",
   keywords: [
     "privacy policy",
     "data protection",
@@ -15,16 +15,16 @@ export const metadata: Metadata = {
     "privacy rights",
   ],
   openGraph: {
-    title: "Privacy Policy | Gas Repaire Wale",
+    title: "Privacy Policy | Gas Repair Wale",
     description: "Learn how we protect your personal information and respect your privacy rights.",
     url: "https://gasrepairwale.com/privacy-policy",
-    siteName: "Gas Repaire Wale",
+    siteName: "Gas Repair Wale",
     images: [
       {
         url: "/placeholder.svg?height=630&width=1200&text=Privacy+Policy",
         width: 1200,
         height: 630,
-        alt: "Gas Repaire Wale Privacy Policy",
+        alt: "Gas Repair Wale Privacy Policy",
       },
     ],
     locale: "en_US",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy | Gas Repaire Wale",
+    title: "Privacy Policy | Gas Repair Wale",
     description: "Learn how we protect your personal information and respect your privacy rights.",
     images: ["/placeholder.svg?height=630&width=1200&text=Privacy+Policy"],
   },
@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-2xl font-bold text-gray-800">Introduction</h2>
             </div>
             <p className="text-gray-600 leading-relaxed mb-4">
-              At Gas Repaire Wale, we are committed to protecting your privacy and ensuring the security of your
+              At Gas Repair Wale, we are committed to protecting your privacy and ensuring the security of your
               personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your
               information when you visit our website or use our gas repair services.
             </p>

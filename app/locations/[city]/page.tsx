@@ -758,11 +758,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `Gas Repair Services in ${city.name} | Gas Stove Repair, Pipeline Services | Gas Repaire Wale`,
+    title: `Gas Repair Services in ${city.name} | Gas Stove Repair, Pipeline Services | Gas Repair Wale`,
     description: `⭐ #1 Gas Repair Service in ${city.name}, ${city.state} ✅ ${city.totalCustomers} Happy Customers ✅ ${city.avgResponseTime} Response Time ✅ 24/7 Emergency Service. Call +91 83027 13127 for instant quote!`,
     keywords: `gas repair ${city.name.toLowerCase()}, gas stove repair ${city.name.toLowerCase()}, gas pipeline service ${city.name.toLowerCase()}, gas leak repair ${city.state.toLowerCase()}, emergency gas service ${city.name.toLowerCase()}`,
     openGraph: {
-      title: `Gas Repair Services in ${city.name} | Gas Repaire Wale`,
+      title: `Gas Repair Services in ${city.name} | Gas Repair Wale`,
       description: `Professional gas repair services in ${city.name} with ${city.totalCustomers} satisfied customers and ${city.avgResponseTime} response time.`,
       url: `https://gasrepairwale.com/locations/${cityParam}`,
     },

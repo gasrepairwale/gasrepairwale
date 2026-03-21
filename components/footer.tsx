@@ -17,7 +17,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Wrench className="h-6 w-6 text-orange-600" />
-              <span className="text-xl font-bold">Gas Repaire Wale</span>
+              <span className="text-xl font-bold">Gas Repair Wale</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
                Professional gas repair and maintenance services across Pune and Mumbai. Your safety is our priority.
@@ -136,7 +136,7 @@ export function Footer() {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Gas Repaire Wale. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Gas Repair Wale. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacy-policy" className="text-gray-400 hover:text-orange-600 text-sm">
                 Privacy Policy

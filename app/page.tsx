@@ -14,7 +14,7 @@ import { SEOContentSection } from "@/components/seo-content-section"
 
 export const metadata: Metadata = {
   title:
-    "Gas Repair Services Pune and Mumbai | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repaire Wale",
+    "Gas Repair Services Pune and Mumbai | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repair Wale",
   description:
     "⭐ Professional Gas Repair Services in Pune & Mumbai ✅ Gas Stove Repair ✅ Pipeline Installation ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ 5000+ Happy Customers ✅ Same Day Service. Call +91 83027 13127 for Expert Gas Solutions!",
   keywords: [
@@ -53,30 +53,30 @@ export const metadata: Metadata = {
     "gas safety certificate",
     "gas appliance maintenance",
   ].join(", "),
-  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairwale.com" }],
-  creator: "Gas Repaire Wale",
-  publisher: "Gas Repaire Wale",
+  authors: [{ name: "Gas Repair Wale", url: "https://gasrepairwale.com" }],
+  creator: "Gas Repair Wale",
+  publisher: "Gas Repair Wale",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://gasrepairwale.com",
-    title: "Professional Gas Repair Services in Pune & Mumbai | Gas Repaire Wale",
+    title: "Professional Gas Repair Services in Pune & Mumbai | Gas Repair Wale",
     description:
       "Expert gas stove repair, pipeline installation & emergency gas services across Pune & Mumbai. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
-    siteName: "Gas Repaire Wale",
+    siteName: "Gas Repair Wale",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Gas Repaire Wale - Professional Gas Services",
+        alt: "Gas Repair Wale - Professional Gas Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Gas Repair Services | Gas Repaire Wale",
+    title: "Professional Gas Repair Services | Gas Repair Wale",
     description:
       "Expert gas stove repair & pipeline services in Pune & Mumbai. Licensed technicians, emergency service, 5000+ customers. Call +91 83027 13127",
     images: ["/twitter-image.jpg"],

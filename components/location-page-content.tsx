@@ -105,7 +105,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
       <ServiceSchema 
         name={`Gas Repair Services in ${city.name}`}
         description={city.description}
-        providerName="Gas Repaire Wale"
+        providerName="Gas Repair Wale"
         areaServed={city.name}
         serviceType="Gas Appliance Repair" 
       />
@@ -276,7 +276,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
           <div className="text-center mb-16">
             <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">Local Expertise</Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              🏆 Why {city.name} Residents Choose Gas Repaire Wale?
+              🏆 Why {city.name} Residents Choose Gas Repair Wale?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Local expertise with deep understanding of {city.name}'s unique residential and commercial needs.
@@ -400,7 +400,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p>
-                <strong>Gas Repaire Wale</strong> has been serving {city.name} since {city.establishedYear}, providing
+                <strong>Gas Repair Wale</strong> has been serving {city.name} since {city.establishedYear}, providing
                 professional gas stove repair, pipeline services, and appliance maintenance across all major areas of{" "}
                 {city.name}. Our team of licensed and certified technicians understands the unique requirements of{" "}
                 {city.state} residents and businesses.

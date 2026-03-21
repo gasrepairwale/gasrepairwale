@@ -96,8 +96,8 @@ export function SEOContentSection() {
   ]
 
   const whyChooseUsContent = {
-    title: "Why Gas Repaire Wale is Pune & Mumbai's Most Trusted Gas Service Provider",
-    content: `Since 2013, Gas Repaire Wale has been the leading gas repair and maintenance service provider in Pune and Mumbai. We've built our reputation on three core principles: safety, reliability, and customer satisfaction.
+    title: "Why Gas Repair Wale is Pune & Mumbai's Most Trusted Gas Service Provider",
+    content: `Since 2013, Gas Repair Wale has been the leading gas repair and maintenance service provider in Pune and Mumbai. We've built our reputation on three core principles: safety, reliability, and customer satisfaction.
 
     Our team of certified gas technicians undergoes regular training on the latest safety protocols and repair techniques. We're licensed by local authorities in Maharastra, and our services are approved by major insurance companies.
 
@@ -126,7 +126,7 @@ export function SEOContentSection() {
               Complete Gas Repair & Maintenance Services in Pune & Mumbai
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Gas Repaire Wale is your trusted partner for all gas-related services across Pune and Mumbai. From
+              Gas Repair Wale is your trusted partner for all gas-related services across Pune and Mumbai. From
               emergency gas leak repairs to routine maintenance, our certified technicians ensure your safety with
               professional, reliable, and affordable solutions for homes and businesses.
             </p>

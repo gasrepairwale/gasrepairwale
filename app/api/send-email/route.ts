@@ -78,7 +78,7 @@ export async function POST(request: Request) {
           <p><strong>📝 Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>
         </div>` : ""}
         <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;"/>
-        <p style="font-size: 12px; color: #6b7280; text-align: center;">Submitted at: ${new Date().toLocaleString('en-IN')}</p>
+        <p style="font-size: 12px; color: #6b7280; text-align: center;">Submitted at: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}</p>
       </div>
     `
 
@@ -96,10 +96,10 @@ export async function POST(request: Request) {
       await transporter.sendMail({
         from: fromEmail,
         to: email,
-        subject: "We received your request - Gas Repaire Wale",
+        subject: "We received your request - Gas Repair Wale",
         html: `
           <p>Hi ${name.split(" ")[0] || "there"},</p>
-          <p>Thanks for contacting Gas Repaire Wale. We have received your request and will get back within 30 minutes.</p>
+          <p>Thanks for contacting Gas Repair Wale. We have received your request and will get back within 30 minutes.</p>
           <p><strong>Summary:</strong></p>
           <ul>
             ${service ? `<li>Service: ${service}</li>` : ""}
@@ -108,7 +108,7 @@ export async function POST(request: Request) {
             ${preferredTime ? `<li>Preferred Time: ${preferredTime}</li>` : ""}
           </ul>
           <p>If this is an emergency, please call us directly at <a href="tel:+918302713127">+91 83027 13127</a>.</p>
-          <p>— Gas Repaire Wale</p>
+          <p>— Gas Repair Wale</p>
         `,
       })
     }

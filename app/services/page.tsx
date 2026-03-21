@@ -19,7 +19,7 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Gas Repair Services | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repaire Wale",
+  title: "Gas Repair Services | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repair Wale",
   description:
     "⭐ Complete Gas Repair Services in Pune & Mumbai ✅ Gas Stove Repair ✅ Pipeline Installation ✅ Safety Inspections ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ Residential & Commercial. Call +91 83027 13127",
   keywords: [
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     "licensed gas repair",
     "gas services pune Mumbai",
   ].join(", "),
-  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairwale.com" }],
-  creator: "Gas Repaire Wale",
-  publisher: "Gas Repaire Wale",
+  authors: [{ name: "Gas Repair Wale", url: "https://gasrepairwale.com" }],
+  creator: "Gas Repair Wale",
+  publisher: "Gas Repair Wale",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
     type: "website",
@@ -51,19 +51,19 @@ export const metadata: Metadata = {
     title: "Professional Gas Repair Services | Gas Stove Repair | Pipeline Installation",
     description:
       "Complete gas repair services including stove repair, pipeline installation, safety inspections, and emergency service. Licensed technicians serving Pune & Mumbai.",
-    siteName: "Gas Repaire Wale",
+    siteName: "Gas Repair Wale",
     images: [
       {
         url: "/services-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Gas Repaire Wale - Professional Gas Services",
+        alt: "Gas Repair Wale - Professional Gas Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Gas Repair Services | Gas Repaire Wale",
+    title: "Professional Gas Repair Services | Gas Repair Wale",
     description:
       "Complete gas repair services - stove repair, pipeline installation, safety inspections, emergency service. Licensed technicians in Pune & Mumbai.",
     images: ["/services-twitter-image.jpg"],

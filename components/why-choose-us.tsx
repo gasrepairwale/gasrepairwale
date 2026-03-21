@@ -45,7 +45,7 @@ export function WhyChooseUs() {
       <div className="container mx-auto px-4">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Gas Repaire Wale?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Gas Repair Wale?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We're not just another repair service. We're your trusted partners in maintaining safe and efficient gas
             appliances for your home and business.

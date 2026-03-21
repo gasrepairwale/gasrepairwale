@@ -34,7 +34,7 @@ export async function POST(request: Request) {
         if (type === "activity") {
             // Short activity notification
             const icon = source.toLowerCase().includes('call') ? '📞' : source.toLowerCase().includes('whatsapp') ? '💬' : '🖱️'
-            message = `${icon} *New Activity:* ${source}\n📍 *Location:* ${area || 'N/A'}, ${city || 'General'}\n📄 *Page:* ${pagePath || '/'}\n🕒 ${new Date().toLocaleTimeString('en-IN')}`
+            message = `${icon} *New Activity:* ${source}\n📍 *Location:* ${area || 'N/A'}, ${city || 'General'}\n📄 *Page:* ${pagePath || '/'}\n🕒 ${new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' })}`
         } else {
             // Full lead notification
             message = `
@@ -52,7 +52,7 @@ export async function POST(request: Request) {
 📝 *Message:*
 ${userMessage || 'No message provided'}
 ━━━━━━━━━━━━━━━━━━
-⏰ _Time: ${new Date().toLocaleString('en-IN')}_
+⏰ _Time: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}_
     `.trim()
         }
 

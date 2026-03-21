@@ -39,7 +39,7 @@ export function Header() {
         {/* Logo and company name */}
         <Link href="/" className="flex items-center space-x-2">
           <Wrench className="h-6 w-6 text-orange-600" />
-          <span className="text-xl font-bold text-gray-900">Gas Repaire Wale</span>
+          <span className="text-xl font-bold text-gray-900">Gas Repair Wale</span>
         </Link>
 
         {/* Desktop Navigation */}

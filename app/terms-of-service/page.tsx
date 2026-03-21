@@ -3,7 +3,7 @@ import Link from "next/link"
 import { FileText, Scale, Shield, AlertTriangle, CheckCircle, Phone, Mail, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Gas Repaire Wale - Service Terms & Conditions",
+  title: "Terms of Service | Gas Repair Wale - Service Terms & Conditions",
   description:
     "Read our terms of service and conditions for gas repair services. Understand your rights, responsibilities, and our service commitments.",
   keywords: [
@@ -15,16 +15,16 @@ export const metadata: Metadata = {
     "service policy",
   ],
   openGraph: {
-    title: "Terms of Service | Gas Repaire Wale",
+    title: "Terms of Service | Gas Repair Wale",
     description: "Read our terms of service and conditions for gas repair services.",
     url: "https://gasrepairwale.com/terms-of-service",
-    siteName: "Gas Repaire Wale",
+    siteName: "Gas Repair Wale",
     images: [
       {
         url: "/placeholder.svg?height=630&width=1200&text=Terms+of+Service",
         width: 1200,
         height: 630,
-        alt: "Gas Repaire Wale Terms of Service",
+        alt: "Gas Repair Wale Terms of Service",
       },
     ],
     locale: "en_US",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms of Service | Gas Repaire Wale",
+    title: "Terms of Service | Gas Repair Wale",
     description: "Read our terms of service and conditions for gas repair services.",
     images: ["/placeholder.svg?height=630&width=1200&text=Terms+of+Service"],
   },
@@ -74,7 +74,7 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold text-gray-800">Agreement to Terms</h2>
             </div>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Welcome to Gas Repaire Wale. These Terms of Service ("Terms") govern your use of our gas repair services
+              Welcome to Gas Repair Wale. These Terms of Service ("Terms") govern your use of our gas repair services
               and website. By booking our services or using our website, you agree to be bound by these Terms.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">

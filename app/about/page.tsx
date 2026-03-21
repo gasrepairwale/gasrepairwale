@@ -6,11 +6,11 @@ import { ContactCTA } from "@/components/contact-cta"
 import { Award, Users, Shield, Clock, CheckCircle, Target, Phone } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Gas Repaire Wale | Professional Gas Repair Company | 10+ Years Experience | Pune Mumbai",
+  title: "About Gas Repair Wale | Professional Gas Repair Company | 10+ Years Experience | Pune Mumbai",
   description:
-    "⭐ Learn about Gas Repaire Wale - Leading gas repair company since 2013 ✅ 5000+ Satisfied Customers ✅ Licensed Technicians ✅ 24/7 Emergency Service ✅ Serving Pune & Mumbai ✅ 4.9★ Rating. Call +91 83027 13127",
+    "⭐ Learn about Gas Repair Wale - Leading gas repair company since 2013 ✅ 5000+ Satisfied Customers ✅ Licensed Technicians ✅ 24/7 Emergency Service ✅ Serving Pune & Mumbai ✅ 4.9★ Rating. Call +91 83027 13127",
   keywords: [
-    "about gas repaire wale",
+    "about Gas Repair Wale",
     "gas repair company pune Mumbai",
     "professional gas technicians",
     "licensed gas repair service",
@@ -23,30 +23,30 @@ export const metadata: Metadata = {
     "gas repair team",
     "gas service company background",
   ].join(", "),
-  authors: [{ name: "Gas Repaire Wale", url: "https://gasrepairwale.com" }],
-  creator: "Gas Repaire Wale",
-  publisher: "Gas Repaire Wale",
+  authors: [{ name: "Gas Repair Wale", url: "https://gasrepairwale.com" }],
+  creator: "Gas Repair Wale",
+  publisher: "Gas Repair Wale",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://gasrepairwale.com/about",
-    title: "About Gas Repaire Wale | Professional Gas Repair Company Since 2013",
+    title: "About Gas Repair Wale | Professional Gas Repair Company Since 2013",
     description:
       "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune & Mumbai. 4.9★ rating, 24/7 emergency service.",
-    siteName: "Gas Repaire Wale",
+    siteName: "Gas Repair Wale",
     images: [
       {
         url: "/about-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "About Gas Repaire Wale - Professional Gas Repair Company",
+        alt: "About Gas Repair Wale - Professional Gas Repair Company",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Gas Repaire Wale | Professional Gas Repair Company",
+    title: "About Gas Repair Wale | Professional Gas Repair Company",
     description:
       "Leading gas repair company since 2013 with 5000+ customers, licensed technicians, 24/7 service in Pune & Mumbai. Call +91 83027 13127",
     images: ["/about-twitter-image.jpg"],
@@ -175,9 +175,9 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-orange-50 to-orange-100 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-orange-100 text-orange-800 px-4 py-2 mb-4">About Gas Repaire Wale</Badge>
+            <Badge className="bg-orange-100 text-orange-800 px-4 py-2 mb-4">About Gas Repair Wale</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              About <span className="text-orange-600">Gas Repaire Wale</span>
+              About <span className="text-orange-600">Gas Repair Wale</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
               🔥 With over a decade of experience, we're your trusted partners in gas appliance repair and maintenance.
@@ -215,7 +215,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story - From Vision to Industry Leadership</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  <strong>Gas Repaire Wale</strong> was founded in 2013 with a simple yet powerful mission: to provide
+                  <strong>Gas Repair Wale</strong> was founded in 2013 with a simple yet powerful mission: to provide
                   safe, reliable, and affordable gas appliance services to homes and businesses across India. What
                   started as a small local service in Pune has grown into a trusted name across Maharashtra and
                   Maharastra.
