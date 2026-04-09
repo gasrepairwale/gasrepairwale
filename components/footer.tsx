@@ -152,8 +152,8 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="flex space-x-6 mt-4 md:mt-0 gap-2">
               <p className="text-gray-400 text-sm">Design and Developed by</p>
-              <Link href="https://pradeep-saran.netlify.app/" className="text-gray-400 hover:text-orange-600 text-sm flex items-center !ml-0" target="_blank">
-                Pradeep Saran
+              <Link href="https://b29technology.com/" className="text-gray-400 hover:text-orange-600 text-sm flex items-center !ml-0" target="_blank">
+                B29 Technology
               </Link>
             </div>
           </div>
