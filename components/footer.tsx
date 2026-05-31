@@ -20,7 +20,7 @@ export function Footer() {
               <span className="text-xl font-bold">Gas Repair Wale</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-               Professional gas repair and maintenance services across Pune and Mumbai. Your safety is our priority.
+               Professional gas repair and maintenance services across Pune, Mumbai, and Hyderabad. Your safety is our priority.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -76,6 +76,11 @@ export function Footer() {
                   Mumbai
                 </Link>
               </li>
+              <li>
+                <Link href="/locations/hyderabad" className="text-gray-300 hover:text-orange-600 transition-colors">
+                  Hyderabad
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -114,7 +119,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-orange-600" />
-                <span className="text-gray-300">Pune & Mumbai</span>
+                <span className="text-gray-300">Pune, Mumbai & Hyderabad</span>
               </div>
               <div className="flex items-center space-x-3 pt-2">
                 <a 

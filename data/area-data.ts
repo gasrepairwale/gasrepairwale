@@ -7068,6 +7068,2575 @@ export const areaData = {
 
 
   },
+  hyderabad: {
+    gachibowli: {
+      name: "Gachibowli",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas stove repair, pipeline services, and appliance maintenance in Gachibowli — Hyderabad's premier IT and financial district with fastest response time",
+      heroDescription: "🔥 Expert gas repair services in Gachibowli with 20-minute response time! Serving 450+ happy customers since 2015. Licensed technicians, 24/7 emergency service, and guaranteed satisfaction for all your gas appliance needs in Hyderabad's top IT locality.",
+      responseTime: "20-25 minutes",
+      customers: "450+",
+      pincode: "500032",
+      establishedYear: "2015",
+      rating: "4.9",
+      completedJobs: "1100+",
+      landmarks: ["DLF Cyber City", "Gachibowli Stadium", "ISB Hyderabad", "Google Office", "Microsoft Campus", "Raheja Mindspace", "Verizon Building", "Oakridge School"],
+      nearbyAreas: ["Nanakramguda", "HITEC City", "Kondapur", "Financial District", "Manikonda"],
+      localBusinesses: ["IT Companies", "Tech Parks", "Hotels", "Restaurants", "Gated Residential Societies"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Complete repair and maintenance for all types of gas stoves and cooktops in Gachibowli with same-day service guarantee",
+          features: [
+            "Professional burner repair and deep cleaning for all brands",
+            "Expert ignition system fixing and calibration",
+            "Precise gas flow adjustment and optimization",
+            "Quality parts replacement with 6-month warranty coverage",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Professional gas pipeline installation, repair and maintenance for Gachibowli's high-rise apartments and corporate offices",
+          features: [
+            "New pipeline installation with safety testing and certification",
+            "Advanced leak detection and repair with professional equipment",
+            "Valve replacement and pipeline modifications for high-rises",
+            "Comprehensive safety inspections and official certification",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency response for gas leaks and urgent repairs in Gachibowli with guaranteed 20-minute response time",
+          features: [
+            "Immediate emergency response with experienced technicians",
+            "Complete safety assessments and detailed risk analysis",
+            "Professional emergency gas shutdowns and repairs",
+            "Advanced leak detection with comprehensive problem resolution",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Venkat Reddy",
+          profession: "Software Architect",
+          company: "Microsoft",
+          area: "DLF Cyber City",
+          rating: 5,
+          text: "Excellent service! My gas stove burner stopped working late evening. Gas Repair Wale came within 22 minutes, diagnosed a blocked burner and faulty ignition, and fixed it professionally with genuine parts. Technician was very knowledgeable and the work was done in 40 minutes. Reasonable pricing at ₹500 with 6-month warranty. Highly recommended for Gachibowli residents!",
+          service: "Gas Stove Repair",
+          date: "January 2025",
+          jobType: "Burner Repair",
+        },
+        {
+          name: "Anitha Sharma",
+          profession: "Product Manager",
+          company: "Google",
+          area: "Raheja Mindspace",
+          rating: 5,
+          text: "Had a gas leak emergency in our kitchen at night. Called Gas Repair Wale and they responded within 18 minutes. The technician Ravi was very professional, identified the leak at a loose joint, shut off the gas safely, and repaired it properly. Charged ₹850 for emergency night service. Outstanding emergency service in Gachibowli!",
+          service: "Emergency Gas Leak Repair",
+          date: "December 2024",
+          jobType: "Emergency Service",
+        },
+        {
+          name: "Suresh Babu",
+          profession: "Restaurant Owner",
+          company: "Spice Garden",
+          area: "Gachibowli Main Road",
+          rating: 5,
+          text: "We use Gas Repair Wale for monthly commercial kitchen maintenance. Their team services our 6-burner commercial stove, does quarterly pipeline inspections, and provides 24/7 emergency support. They work during off-hours and always carry commercial spare parts. Annual contract at ₹14000 including all maintenance and emergency calls. Excellent professional service!",
+          service: "Commercial Kitchen Maintenance",
+          date: "February 2025",
+          jobType: "Maintenance Contract",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Local Gachibowli Experts", description: "Serving Gachibowli since 2015 with deep knowledge of IT campuses, gated communities, and commercial establishments. Our technicians know every society and tech park in the area.", stats: "450+ local customers" },
+        { icon: "Clock", title: "Fastest in Gachibowli", description: "Guaranteed 20-25 minute response time anywhere in Gachibowli including DLF, ISB, Microsoft Campus, and surrounding localities.", stats: "20-min response" },
+        { icon: "Users", title: "Gachibowli's Choice", description: "Most trusted gas service in Gachibowli with 450+ satisfied customers, 4.9★ rating, and 1100+ completed jobs. Preferred by IT professionals and families.", stats: "4.9★ rating" },
+        { icon: "Shield", title: "Licensed & Insured", description: "Fully licensed for gas work in Telangana with comprehensive insurance coverage. All technicians are certified, trained, and carry proper identification.", stats: "100% insured" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Deep knowledge of Gachibowli's IT campuses, gated communities, and commercial gas systems since 2015",
+          "Quick Response: Guaranteed 20-25 minute response time anywhere in Gachibowli including DLF Cyber City and ISB",
+          "Licensed Technicians: Certified and trained professionals for all types of gas appliance repairs in Telangana",
+          "Comprehensive Coverage: Serving all areas of Gachibowli including IT parks, residential societies, and commercial establishments",
+          "Customer Satisfaction: 450+ happy customers with 4.9★ rating and 1100+ completed jobs in Gachibowli",
+          "Emergency Service: 24/7 availability for gas emergencies with immediate response guarantee",
+        ],
+        services: {
+          residential: [
+            "Gas stove burner repair and deep cleaning with genuine parts",
+            "Complete gas pipeline installation and maintenance with safety certification",
+            "LPG connection setup with comprehensive safety checks",
+            "Gas appliance servicing with parts replacement and warranty",
+            "Kitchen gas line modifications for high-rise apartments",
+            "Comprehensive safety inspections and compliance certificates",
+          ],
+          commercial: [
+            "Restaurant kitchen gas stove setup and maintenance",
+            "Commercial gas pipeline installation for IT offices and shops",
+            "Bulk LPG connection services with safety audits",
+            "Kitchen equipment maintenance contracts with regular servicing",
+            "Gas safety audits and compliance certificates for businesses",
+            "24/7 emergency commercial gas services with priority response",
+          ],
+        },
+        emergencyInfo: "Gas emergencies in Gachibowli require immediate professional attention. Our local emergency team provides 24/7 service with guaranteed 20-minute response time across DLF Cyber City, ISB, Microsoft Campus, Raheja Mindspace, and all surrounding localities.",
+      },
+    },
+    "hitec-city": {
+      name: "HITEC City",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Expert gas stove repair and pipeline services in HITEC City — Hyderabad's global IT hub with premium service standards for tech professionals and modern families",
+      heroDescription: "🔥 Professional gas services in HITEC City with 20-minute response time! Trusted by 400+ customers since 2015. Specialized services for IT professionals and modern families in Hyderabad's technology capital with flexible scheduling.",
+      responseTime: "20-25 minutes",
+      customers: "400+",
+      pincode: "500081",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "950+",
+      landmarks: ["Cyber Towers", "HITEC City Metro Station", "Inorbit Mall", "Mindspace IT Park", "Westin Hotel", "Shilpakala Vedika", "Cyberabad Police Commissionerate"],
+      nearbyAreas: ["Madhapur", "Kondapur", "Gachibowli", "Jubilee Hills", "Kukatpally"],
+      localBusinesses: ["IT Parks", "Shopping Malls", "Restaurants", "Serviced Apartments", "Corporate Offices"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Professional repair for all gas stoves and hobs used by HITEC City's IT professionals and families with same-day service",
+          features: [
+            "Complete burner repair and deep cleaning for all brands",
+            "Ignition system repair with calibration",
+            "Gas flow adjustment for optimal cooking performance",
+            "Genuine parts replacement with extended warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Pipeline installation and maintenance for HITEC City's high-rise apartments, serviced residences, and corporate kitchens",
+          features: [
+            "New pipeline installation with full safety certification",
+            "Leak detection and repair with professional-grade tools",
+            "Valve replacement and pipeline upgrades",
+            "Safety inspections with compliance documentation",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "Round-the-clock emergency gas repair for HITEC City residents and businesses with 20-minute guaranteed response",
+          features: [
+            "Immediate dispatch with trained emergency technicians",
+            "Full safety assessment and risk mitigation",
+            "Emergency gas supply shutdowns and controlled repairs",
+            "Post-repair safety verification and documentation",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Rajesh Kumar",
+          profession: "Software Engineer",
+          company: "Wipro",
+          area: "Cyber Towers",
+          rating: 5,
+          text: "Gas stove stopped working on a Sunday evening. Gas Repair Wale arrived in 20 minutes, replaced the faulty ignition switch and cleaned the burner thoroughly. Very professional service at ₹480. The technician explained everything clearly. Highly recommended for HITEC City residents!",
+          service: "Gas Stove Repair",
+          date: "January 2025",
+          jobType: "Ignition Repair",
+        },
+        {
+          name: "Kavitha Nair",
+          profession: "HR Manager",
+          company: "TCS",
+          area: "Mindspace IT Park",
+          rating: 5,
+          text: "Called for gas pipeline inspection before moving into our new apartment. The team arrived on time, did a thorough inspection, and certified the pipeline as safe. Very professional and reasonably priced at ₹600. Great service for HITEC City apartment residents!",
+          service: "Pipeline Inspection",
+          date: "December 2024",
+          jobType: "Safety Inspection",
+        },
+        {
+          name: "Arun Prasad",
+          profession: "Cafe Owner",
+          company: "The Grind Cafe",
+          area: "Inorbit Mall Road",
+          rating: 5,
+          text: "Excellent service for our cafe kitchen. Gas Repair Wale handles our monthly maintenance and responds instantly to any emergency. Their technicians understand commercial kitchen requirements perfectly and work during non-business hours. AMC at ₹10000/year — worth every rupee!",
+          service: "Commercial Kitchen Maintenance",
+          date: "November 2024",
+          jobType: "AMC",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "HITEC City Specialists", description: "Serving HITEC City since 2015 with expertise in high-rise apartments, IT campuses, and commercial kitchens. We know every building and society in the area.", stats: "400+ customers" },
+        { icon: "Clock", title: "IT-Friendly Timing", description: "Flexible scheduling including evenings and weekends for IT professionals. Guaranteed 20-25 minute response anywhere in HITEC City.", stats: "20-min response" },
+        { icon: "Users", title: "Tech Community Trusted", description: "Preferred gas service provider for HITEC City's IT professionals with 400+ satisfied customers and 4.8★ rating.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Telangana Certified", description: "Fully licensed and certified for gas work under Telangana regulations. All technicians carry proper identification and safety equipment.", stats: "100% certified" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Tech Hub Expertise: Specialized service for HITEC City's IT professionals and modern high-rise apartments since 2015",
+          "Quick Response: Guaranteed 20-25 minute response across HITEC City including Cyber Towers and Mindspace",
+          "Flexible Scheduling: Evening and weekend appointments for IT professionals",
+          "Licensed Technicians: Certified for gas work under Telangana state regulations",
+          "Customer Satisfaction: 400+ happy customers with 4.8★ rating across HITEC City",
+          "Emergency Service: 24/7 emergency gas service with immediate dispatch",
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair for IT professionals and families",
+            "Pipeline installation for high-rise apartments",
+            "LPG setup with safety certification",
+            "Appliance maintenance with genuine parts",
+            "Kitchen gas line modifications",
+            "Safety inspections and compliance certificates",
+          ],
+          commercial: [
+            "Corporate cafeteria gas setup and maintenance",
+            "Restaurant and cafe kitchen pipeline services",
+            "IT office pantry gas appliance servicing",
+            "Commercial safety audits and compliance",
+            "Maintenance contracts for commercial kitchens",
+            "24/7 emergency commercial gas repair",
+          ],
+        },
+        emergencyInfo: "Gas emergencies in HITEC City are handled by our dedicated local team 24/7 with a guaranteed 20-minute response. We serve Cyber Towers, Mindspace IT Park, Inorbit Mall area, Westin Hotel vicinity, and all HITEC City residential complexes.",
+      },
+    },
+    madhapur: {
+      name: "Madhapur",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas stove repair and pipeline services in Madhapur — Hyderabad's thriving IT and residential hub with premium technicians and fast response",
+      heroDescription: "🔥 Trusted gas repair in Madhapur with 20-minute response! 380+ satisfied customers since 2015. Expert gas stove repair, pipeline services, and 24/7 emergency support for Madhapur's IT professionals and residents.",
+      responseTime: "20-25 minutes",
+      customers: "380+",
+      pincode: "500081",
+      establishedYear: "2015",
+      rating: "4.8",
+      completedJobs: "900+",
+      landmarks: ["Cyber Hub", "Image Hospital", "Madhapur Police Station", "Durgam Cheruvu", "Peddamma Temple", "Road No. 36", "Jubilee Enclave"],
+      nearbyAreas: ["HITEC City", "Kondapur", "Jubilee Hills", "Banjara Hills", "Shaikpet"],
+      localBusinesses: ["IT Companies", "Apartments", "Restaurants", "Gyms", "Supermarkets"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Expert gas stove and hob repair for Madhapur's residential apartments and commercial kitchens with same-day guarantee",
+          features: [
+            "Burner cleaning and repair for all brands including Prestige, Sunflame, Elica",
+            "Ignition system diagnosis and replacement",
+            "Gas pressure and flow calibration",
+            "Warranty-backed parts replacement",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Complete pipeline installation and maintenance services for Madhapur's growing residential towers and offices",
+          features: [
+            "New gas pipeline installation with safety certification",
+            "Leak detection and professional repair",
+            "Regulator and valve servicing",
+            "Compliance inspection for new apartments",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Madhapur with guaranteed 20-minute response for leaks and urgent breakdowns",
+          features: [
+            "Immediate dispatch on emergency calls",
+            "Gas leak detection and safe shutdown",
+            "Emergency pipeline repairs",
+            "Post-service safety clearance certificate",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Priya Reddy",
+          profession: "Data Analyst",
+          company: "Deloitte",
+          area: "Jubilee Enclave",
+          rating: 5,
+          text: "My gas stove burner was not lighting properly. Called Gas Repair Wale — they arrived within 20 minutes, cleaned the burners and fixed the auto-ignition. Total charge was ₹420 with warranty. Very professional and courteous team. Will definitely use again!",
+          service: "Gas Stove Repair",
+          date: "February 2025",
+          jobType: "Burner & Ignition Repair",
+        },
+        {
+          name: "Srinivas Rao",
+          profession: "IT Manager",
+          company: "HCL",
+          area: "Cyber Hub",
+          rating: 5,
+          text: "Got my kitchen gas pipeline inspected before shifting to a new flat. Gas Repair Wale team was thorough, professional, and provided a written safety certificate. Charged ₹550 for inspection and minor valve tightening. Excellent service in Madhapur!",
+          service: "Pipeline Safety Inspection",
+          date: "January 2025",
+          jobType: "Safety Inspection",
+        },
+        {
+          name: "Mohammed Farhan",
+          profession: "Restaurant Manager",
+          company: "Biryani Blues",
+          area: "Madhapur Main Road",
+          rating: 5,
+          text: "We rely on Gas Repair Wale for all our restaurant gas maintenance. Monthly service, emergency response within 15 minutes — they've never let us down. AMC plan at ₹11000/year is excellent value for a busy restaurant kitchen.",
+          service: "Restaurant Gas Maintenance",
+          date: "January 2025",
+          jobType: "Commercial AMC",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Madhapur Local Experts", description: "Deeply familiar with Madhapur's residential societies, IT campuses, and Durgam Cheruvu area. Quick navigation means faster service for you.", stats: "380+ customers" },
+        { icon: "Clock", title: "Rapid Madhapur Response", description: "Guaranteed 20-25 minute response across all parts of Madhapur including Cyber Hub, Jubilee Enclave, and Peddamma Temple area.", stats: "20-min response" },
+        { icon: "Users", title: "Madhapur's Trusted Name", description: "380+ happy customers, 4.8★ rating, and 900+ completed jobs — Madhapur's preferred choice for gas repair.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Safe", description: "Telangana-licensed technicians with full insurance. We carry genuine spares and follow all safety protocols.", stats: "100% insured" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Knowledge: Serving Madhapur since 2015 with expertise in its IT offices, high-rise apartments, and commercial establishments",
+          "Fast Response: 20-25 minutes guaranteed across all Madhapur localities",
+          "Certified Technicians: Trained professionals licensed for Telangana gas work",
+          "All Services: Stove repair, pipeline installation, leak detection, and safety inspections",
+          "Customer Satisfaction: 380+ happy customers with 4.8★ rating",
+          "Emergency Ready: 24/7 emergency gas services with immediate dispatch",
+        ],
+        services: {
+          residential: [
+            "Gas stove burner and ignition repair",
+            "Pipeline installation and leak repair for apartments",
+            "LPG connection and regulator setup",
+            "Annual maintenance contracts for families",
+            "Safety inspections for new tenants",
+            "Kitchen gas line modification",
+          ],
+          commercial: [
+            "Restaurant gas stove and pipeline setup",
+            "Commercial kitchen safety audits",
+            "Office pantry gas appliance servicing",
+            "Bulk LPG connection for commercial units",
+            "Annual maintenance contracts",
+            "24/7 emergency commercial support",
+          ],
+        },
+        emergencyInfo: "Facing a gas emergency in Madhapur? Our team is available 24/7 with a guaranteed 20-minute response to Cyber Hub, Jubilee Enclave, Peddamma Temple area, Durgam Cheruvu Road, and all surrounding localities.",
+      },
+    },
+    kondapur: {
+      name: "Kondapur",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Expert gas repair and pipeline services in Kondapur — one of Hyderabad's fastest growing IT and residential hubs with premium service and fast response",
+      heroDescription: "🔥 Trusted gas services in Kondapur with 20-minute response time! 420+ satisfied customers since 2015. Expert gas stove repair, pipeline services, and 24/7 emergency support for Kondapur's families and IT professionals.",
+      responseTime: "20-25 minutes",
+      customers: "420+",
+      pincode: "500084",
+      establishedYear: "2015",
+      rating: "4.9",
+      completedJobs: "1000+",
+      landmarks: ["Kondapur Metro Station", "IKEA Hyderabad", "Wipro Junction", "Rainbow Children's Hospital", "NSL Nakshatra Mall", "Hafeezpet Road", "Botanical Garden Road"],
+      nearbyAreas: ["Gachibowli", "Madhapur", "Hafeezpet", "Miyapur", "HITEC City"],
+      localBusinesses: ["Residential Complexes", "IT Offices", "Supermarkets", "Hospitals", "Schools"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Complete gas stove and hob repair for Kondapur families and professionals with same-day service guarantee",
+          features: [
+            "All brand burner repair and deep cleaning",
+            "Auto-ignition fixing and replacement",
+            "Gas valve and regulator servicing",
+            "Genuine parts with 6-month warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Pipeline installation, leak detection, and safety certification for Kondapur's high-rise apartments and housing societies",
+          features: [
+            "New pipeline installation with complete safety testing",
+            "Leak detection with professional-grade equipment",
+            "Valve and connector replacement",
+            "Society-level compliance inspections",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency response for all gas emergencies in Kondapur with 20-minute guaranteed arrival",
+          features: [
+            "Immediate emergency dispatch",
+            "Gas leak detection and safe shutdown procedure",
+            "Emergency repairs with comprehensive safety check",
+            "Written safety clearance after every emergency job",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Ramesh Goud",
+          profession: "Software Developer",
+          company: "Wipro",
+          area: "Wipro Junction",
+          rating: 5,
+          text: "Quick and professional service! My gas stove was giving very low flame. Gas Repair Wale technician came in 22 minutes, cleaned the burner jets and adjusted the pressure valve. Charged ₹400 with warranty. Excellent service for Kondapur residents!",
+          service: "Gas Stove Repair",
+          date: "February 2025",
+          jobType: "Burner & Pressure Fix",
+        },
+        {
+          name: "Sunitha Krishnan",
+          profession: "Teacher",
+          company: "Delhi Public School",
+          area: "NSL Nakshatra Mall",
+          rating: 5,
+          text: "Very impressed with Gas Repair Wale! Got the gas pipeline inspected in my new flat near Kondapur Metro. They came on time, checked all connections, tightened loose fittings, and gave a safety certificate. Charged just ₹500. Highly recommend!",
+          service: "Pipeline Safety Inspection",
+          date: "January 2025",
+          jobType: "New Flat Inspection",
+        },
+        {
+          name: "Naresh Babu",
+          profession: "Hotel Manager",
+          company: "Hotel Emerald",
+          area: "IKEA Road",
+          rating: 5,
+          text: "We use Gas Repair Wale for our hotel kitchen maintenance. Reliable, professional, and always available in emergencies. They service our 8-burner commercial range monthly and do quarterly pipeline checks. AMC at ₹15000/year — very competitive pricing.",
+          service: "Commercial Kitchen AMC",
+          date: "December 2024",
+          jobType: "Hotel Maintenance Contract",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Kondapur Local Experts", description: "Serving Kondapur since 2015 with deep knowledge of IKEA area, Metro vicinity, and all major residential societies.", stats: "420+ customers" },
+        { icon: "Clock", title: "Fastest in Kondapur", description: "Guaranteed 20-25 minute response across Kondapur including Wipro Junction, NSL Mall area, and Rainbow Hospital vicinity.", stats: "20-min response" },
+        { icon: "Users", title: "Kondapur's Top Choice", description: "420+ happy customers, 4.9★ rating, and 1000+ completed jobs in Kondapur area.", stats: "4.9★ rating" },
+        { icon: "Shield", title: "Certified & Licensed", description: "Fully licensed for gas work in Telangana. Insured technicians carrying genuine spare parts.", stats: "100% certified" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Kondapur since 2015 with in-depth knowledge of the area's apartments and IT offices",
+          "Quick Response: 20-25 minute guaranteed response anywhere in Kondapur",
+          "Licensed Technicians: Certified for gas work under Telangana regulations",
+          "Broad Coverage: Serving IKEA area, Metro vicinity, Wipro Junction, and all housing societies",
+          "High Satisfaction: 420+ customers with 4.9★ rating and 1000+ completed jobs",
+          "24/7 Emergency: Available round the clock for gas emergencies",
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair for apartments and villas",
+            "Pipeline installation and safety certification",
+            "LPG connection and regulator setup",
+            "Gas appliance annual maintenance",
+            "Safety inspections for new flats",
+            "Kitchen gas line extension and modification",
+          ],
+          commercial: [
+            "Commercial kitchen gas stove setup",
+            "Restaurant and hotel pipeline installation",
+            "Safety audits for FSSAI compliance",
+            "AMC plans for commercial kitchens",
+            "Office cafeteria gas servicing",
+            "24/7 emergency commercial gas repair",
+          ],
+        },
+        emergencyInfo: "Kondapur gas emergencies are handled by our dedicated team 24/7 with a guaranteed 20-minute response. We cover IKEA Hyderabad area, Kondapur Metro, Wipro Junction, Rainbow Hospital vicinity, and all residential societies in Kondapur.",
+      },
+    },
+    nanakramguda: {
+      name: "Nanakramguda",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas repair and pipeline services in Nanakramguda — Hyderabad's premium financial district with luxury apartments and corporate campuses",
+      heroDescription: "🔥 Expert gas services in Nanakramguda with 25-minute response! 300+ customers served since 2016. Professional gas stove repair, pipeline installation, and 24/7 emergency services for Nanakramguda's gated communities and IT professionals.",
+      responseTime: "25-30 minutes",
+      customers: "300+",
+      pincode: "500008",
+      establishedYear: "2016",
+      rating: "4.8",
+      completedJobs: "700+",
+      landmarks: ["WNS Global Services", "Oakridge International School", "Nanakramguda Lake", "Lanco Hills", "Financial District Road", "Aparna Sarovar"],
+      nearbyAreas: ["Gachibowli", "Manikonda", "Financial District", "Puppalaguda", "Rajendra Nagar"],
+      localBusinesses: ["Corporate Offices", "Gated Communities", "Luxury Apartments", "International Schools", "IT Parks"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Premium gas stove and hob repair for Nanakramguda's luxury apartments and gated communities with same-day guarantee",
+          features: [
+            "Expert burner repair for premium brands like Elica, Faber, and Glen",
+            "Ignition system repair and calibration",
+            "Gas pressure optimization for induction-ready setups",
+            "Warranty-backed parts replacement with genuine components",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+            description: "Pipeline installation and maintenance for Nanakramguda's premium high-rise towers and corporate campuses",
+          features: [
+            "New pipeline installation with full safety certification",
+            "Professional leak detection with digital tools",
+            "Society-approved valve and connector replacement",
+            "Compliance inspection and documentation for luxury apartments",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Nanakramguda with 25-minute response for leaks and urgent breakdowns",
+          features: [
+            "Immediate dispatch with experienced emergency technicians",
+            "Full safety assessment and leak containment",
+            "Emergency pipeline repairs with safety clearance",
+            "Post-repair documentation for society records",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Venkateswara Rao",
+          profession: "Finance Manager",
+          company: "WNS Global",
+          area: "Lanco Hills",
+          rating: 5,
+          text: "Very professional service in our premium gated community. Gas Repair Wale technician came well within 28 minutes, was courteous, wore shoe covers, and fixed the gas hob issue neatly. Charged ₹550 with warranty. Perfect for Nanakramguda's premium residents!",
+          service: "Gas Hob Repair",
+          date: "January 2025",
+          jobType: "Hob Repair",
+        },
+        {
+          name: "Deepika Sharma",
+          profession: "Corporate Lawyer",
+          company: "AZB Partners",
+          area: "Aparna Sarovar",
+          rating: 5,
+          text: "Called for gas pipeline inspection in my new apartment. The team was thorough, professional, and provided all necessary documentation. Charged ₹600 for full inspection. Excellent service — highly recommend for Nanakramguda residents!",
+          service: "Pipeline Inspection",
+          date: "December 2024",
+          jobType: "New Apartment Inspection",
+        },
+        {
+          name: "Srikanth Reddy",
+          profession: "IT Director",
+          company: "Capgemini",
+          area: "Financial District Road",
+          rating: 5,
+          text: "Used Gas Repair Wale for emergency gas leak at midnight. The response was swift — 24 minutes to our doorstep. The technician was calm, professional, and resolved the issue safely. Charged ₹900 for emergency night service. Top class emergency service!",
+          service: "Emergency Gas Leak",
+          date: "November 2024",
+          jobType: "Emergency Midnight Service",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Premium Area Specialists", description: "Experienced in serving Nanakramguda's luxury apartments, gated communities, and corporate campuses with premium service standards.", stats: "300+ customers" },
+        { icon: "Clock", title: "Reliable Response", description: "Guaranteed 25-30 minute response across Nanakramguda including Lanco Hills, Aparna Sarovar, and Financial District area.", stats: "25-min response" },
+        { icon: "Users", title: "Trusted by Professionals", description: "Preferred by Nanakramguda's corporate professionals and families with 300+ satisfied customers and 4.8★ rating.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Insured & Certified", description: "Telangana-certified technicians with full insurance. We carry genuine spares and maintain premium service standards.", stats: "100% insured" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Premium Service Standards: Trained for luxury gated communities and corporate campuses in Nanakramguda",
+          "Reliable Response: 25-30 minute guaranteed response across Nanakramguda",
+          "Certified Technicians: Licensed for gas work in Telangana with proper documentation",
+          "Society Compliance: We follow all society rules and provide required documentation for maintenance records",
+          "Customer Satisfaction: 300+ happy customers with 4.8★ rating in Nanakramguda",
+          "24/7 Emergency: Available round the clock for all gas emergencies",
+        ],
+        services: {
+          residential: [
+            "Premium gas hob and stove repair for luxury apartments",
+            "Pipeline installation for high-rise towers",
+            "Safety inspections with documentation for new residents",
+            "LPG connection setup with certification",
+            "Kitchen gas line modifications for renovations",
+            "Annual maintenance plans for gated communities",
+          ],
+          commercial: [
+            "Corporate cafeteria gas setup and maintenance",
+            "Campus kitchen gas appliance servicing",
+            "Commercial safety audits with detailed reports",
+            "Annual maintenance contracts for office kitchens",
+            "Emergency commercial gas repair",
+            "Bulk LPG connection for corporate establishments",
+          ],
+        },
+        emergencyInfo: "Gas emergencies in Nanakramguda are handled 24/7 with a guaranteed 25-minute response covering Lanco Hills, Aparna Sarovar, WNS area, Oakridge School vicinity, and all gated communities in Nanakramguda.",
+      },
+    },
+    "financial-district": {
+      name: "Financial District",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas repair and pipeline services in Financial District — Hyderabad's premium corporate zone with luxury residences and top multinational offices",
+      heroDescription: "🔥 Expert gas services in Financial District Hyderabad with 25-minute response! 280+ customers since 2016. Specialized gas stove repair, pipeline services, and 24/7 emergency support for Financial District's corporate professionals.",
+      responseTime: "25-30 minutes",
+      customers: "280+",
+      pincode: "500032",
+      establishedYear: "2016",
+      rating: "4.8",
+      completedJobs: "650+",
+      landmarks: ["Prestige Tech Park", "Khajaguda Lake", "Neopolis IT Park", "Aparna Cyberzon", "BHEL Township", "My Home Bhooja"],
+      nearbyAreas: ["Nanakramguda", "Gachibowli", "Manikonda", "Puppalaguda", "Narsingi"],
+      localBusinesses: ["Multinational Companies", "Luxury Gated Communities", "IT Parks", "Premium Residences", "Corporate Hotels"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Professional gas stove and hob repair for Financial District's premium residences with same-day service",
+          features: [
+            "Expert repair for premium brands Elica, Faber, Bosch, and Glen",
+            "Advanced ignition system repair",
+            "Precision gas pressure and flow calibration",
+            "Genuine parts replacement with extended warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Pipeline installation and maintenance for Financial District's luxury towers and corporate establishments",
+          features: [
+            "New pipeline installation with digital safety testing",
+            "Professional leak detection for luxury apartments",
+            "Valve and regulator upgrade for high-rise buildings",
+            "Compliance documentation for building management",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Financial District with 25-minute guaranteed response",
+          features: [
+            "Priority emergency dispatch for corporate addresses",
+            "Gas leak detection and immediate safe shutdown",
+            "Emergency repair with building management coordination",
+            "Post-repair safety report and clearance certificate",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Abhishek Gupta",
+          profession: "Investment Banker",
+          company: "Goldman Sachs",
+          area: "Prestige Tech Park",
+          rating: 5,
+          text: "Prompt and professional service. Gas Repair Wale came within 28 minutes for a gas stove issue. The technician was well-groomed, respected our home, and fixed the problem efficiently. Charged ₹520. Excellent service for Financial District residents!",
+          service: "Gas Stove Repair",
+          date: "February 2025",
+          jobType: "Stove Repair",
+        },
+        {
+          name: "Padma Lakshmi",
+          profession: "CFO",
+          company: "Tech Mahindra",
+          area: "My Home Bhooja",
+          rating: 5,
+          text: "Used them for pipeline inspection before moving in. Very systematic, professional, and provided full documentation. The inspection report was detailed and helped with society approval. Charged ₹650. Recommend for all Financial District apartment owners!",
+          service: "Pipeline Inspection",
+          date: "January 2025",
+          jobType: "Move-in Inspection",
+        },
+        {
+          name: "Subramaniam Iyer",
+          profession: "Senior Architect",
+          company: "Deloitte",
+          area: "Neopolis IT Park",
+          rating: 5,
+          text: "Emergency gas leak at 1 AM — called Gas Repair Wale in a panic. They arrived in 26 minutes, handled the situation calmly, and fixed the pipeline leak safely. Charged ₹950 for midnight emergency. Outstanding emergency response for Financial District!",
+          service: "Emergency Gas Leak",
+          date: "November 2024",
+          jobType: "Midnight Emergency",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Financial District Experts", description: "Familiar with every tower, gated community, and corporate campus in Financial District for the fastest possible service.", stats: "280+ customers" },
+        { icon: "Clock", title: "Quick Corporate Response", description: "Guaranteed 25-30 minute response across Financial District including Prestige Tech Park, Neopolis, and My Home Bhooja.", stats: "25-min response" },
+        { icon: "Users", title: "Trusted by Professionals", description: "Preferred by Financial District's top corporate executives with 280+ satisfied customers and 4.8★ rating.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Premium Certified Service", description: "Telangana-certified, fully insured, with premium service standards matching Financial District's expectations.", stats: "100% insured" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Premium Standards: Service trained for Financial District's luxury apartments and corporate campuses",
+          "Reliable Response: 25-30 minute guaranteed response across Financial District",
+          "Certified Technicians: Licensed for Telangana gas work with full documentation capability",
+          "Building Compliance: We coordinate with building management and provide required documentation",
+          "Customer Satisfaction: 280+ happy customers with 4.8★ rating",
+          "24/7 Emergency: Around-the-clock emergency gas repair service",
+        ],
+        services: {
+          residential: [
+            "Premium gas hob and stove repair",
+            "Pipeline installation with full safety certification",
+            "New apartment gas inspection and certification",
+            "Luxury appliance servicing with genuine parts",
+            "Kitchen gas line modifications for renovations",
+            "Society-compliant annual maintenance",
+          ],
+          commercial: [
+            "Corporate office kitchen gas setup",
+            "Commercial kitchen pipeline installation",
+            "Safety audits with detailed compliance reports",
+            "Annual maintenance contracts for offices",
+            "Emergency commercial gas repair",
+            "Gas safety certification for corporate establishments",
+          ],
+        },
+        emergencyInfo: "Financial District gas emergencies are handled 24/7 with guaranteed 25-minute response covering Prestige Tech Park, Neopolis, Khajaguda, My Home Bhooja, BHEL Township area, and all gated communities in Financial District.",
+      },
+    },
+    "banjara-hills": {
+      name: "Banjara Hills",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas stove repair, pipeline services, and appliance maintenance in Banjara Hills — Hyderabad's most prestigious residential and commercial locality",
+      heroDescription: "🔥 Premium gas repair services in Banjara Hills with 15-minute response! Serving 550+ customers since 2014. Trusted by Hyderabad's top families, restaurants, and businesses for all gas stove repair, pipeline, and emergency services.",
+      responseTime: "15-20 minutes",
+      customers: "550+",
+      pincode: "500034",
+      establishedYear: "2014",
+      rating: "4.9",
+      completedJobs: "1300+",
+      landmarks: ["Road No. 12", "GVK One Mall", "Apollo Hospital", "Hyderabad Central", "KBR Park", "Care Hospital", "Taj Deccan Hotel", "Road No. 10"],
+      nearbyAreas: ["Jubilee Hills", "Somajiguda", "Panjagutta", "Ameerpet", "Madhapur"],
+      localBusinesses: ["Hospitals", "Five-Star Hotels", "Luxury Restaurants", "Premium Showrooms", "Upscale Apartments"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Premium gas stove and hob repair for Banjara Hills' upscale residences and restaurants with same-day service guarantee",
+          features: [
+            "Expert repair for premium brands Elica, Faber, Bosch, and all leading brands",
+            "Auto-ignition system repair and calibration",
+            "Precision gas flow adjustment and optimization",
+            "Genuine OEM parts with extended warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Professional pipeline installation and maintenance for Banjara Hills' luxury bungalows, apartments, and commercial establishments",
+          features: [
+            "New pipeline installation with comprehensive safety certification",
+            "Advanced leak detection with digital equipment",
+            "Premium valve and regulator replacement",
+            "Compliance inspections for luxury properties",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Banjara Hills with guaranteed 15-minute response for gas leaks and urgent repairs",
+          features: [
+            "Fastest emergency response in Banjara Hills area",
+            "Complete safety assessment by senior technician",
+            "Emergency pipeline repairs with safety clearance",
+            "Priority service for medical and emergency facilities",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Arjun Reddy",
+          profession: "Business Owner",
+          company: "Reddy Exports",
+          area: "Road No. 12",
+          rating: 5,
+          text: "Outstanding service! Called for gas stove repair at our bungalow. Gas Repair Wale came within 15 minutes, a senior technician handled the job professionally using genuine Elica parts. The entire job was done in under an hour for ₹650 with 6-month warranty. Best gas service in Banjara Hills!",
+          service: "Gas Stove Repair",
+          date: "February 2025",
+          jobType: "Premium Stove Repair",
+        },
+        {
+          name: "Meenakshi Sharma",
+          profession: "Doctor",
+          company: "Apollo Hospital",
+          area: "KBR Park Road",
+          rating: 5,
+          text: "Very professional service. Had a gas leak at night and was worried. Gas Repair Wale responded in 14 minutes — fastest I've seen. The technician was calm, fixed the issue safely, and explained preventive measures. Charged ₹900. Excellent emergency service in Banjara Hills!",
+          service: "Emergency Gas Leak",
+          date: "January 2025",
+          jobType: "Emergency Service",
+        },
+        {
+          name: "Krishnamurthy",
+          profession: "Restaurant Owner",
+          company: "Ohri's Restaurant",
+          area: "Road No. 10",
+          rating: 5,
+          text: "We've been using Gas Repair Wale for our 3 restaurants in Banjara Hills for 4 years. Absolutely reliable — monthly maintenance, instant emergency response, and deep understanding of commercial kitchen requirements. Our annual AMC at ₹45000 covers all three kitchens. Simply the best!",
+          service: "Commercial Restaurant Maintenance",
+          date: "February 2025",
+          jobType: "Multi-Restaurant AMC",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Banjara Hills Specialists", description: "Serving Banjara Hills since 2014 — deeply familiar with every road, society, hospital, and commercial establishment in the area.", stats: "550+ customers" },
+        { icon: "Clock", title: "Hyderabad's Fastest", description: "Guaranteed 15-20 minute response anywhere in Banjara Hills — from Road No. 1 to Road No. 12 and beyond.", stats: "15-min response" },
+        { icon: "Users", title: "Banjara Hills' Choice", description: "Most trusted gas service in Banjara Hills with 550+ satisfied customers, 4.9★ rating, and 1300+ completed jobs.", stats: "4.9★ rating" },
+        { icon: "Shield", title: "Fully Certified & Insured", description: "Telangana-licensed, fully insured technicians with premium service standards. We handle both residential and commercial gas needs.", stats: "100% insured" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Established Presence: Serving Banjara Hills since 2014 with a dedicated local team and deep area knowledge",
+          "Fastest Response: Guaranteed 15-20 minute response anywhere in Banjara Hills",
+          "Premium Service: Senior certified technicians for Hyderabad's most prestigious locality",
+          "All Requirements: Residential bungalows, luxury apartments, restaurants, hospitals — we serve all",
+          "Customer Satisfaction: 550+ happy customers with 4.9★ rating and 1300+ completed jobs",
+          "Emergency Ready: 24/7 emergency service with Hyderabad's fastest response time",
+        ],
+        services: {
+          residential: [
+            "Premium gas stove and hob repair for bungalows and apartments",
+            "Gas pipeline installation and maintenance",
+            "LPG setup with safety certification",
+            "Annual maintenance plans for luxury homes",
+            "Safety inspections and compliance certificates",
+            "Kitchen gas line modification for renovations",
+          ],
+          commercial: [
+            "Restaurant and hotel kitchen gas setup and maintenance",
+            "Commercial pipeline installation with regulatory compliance",
+            "Gas safety audits for hospitals and commercial kitchens",
+            "Multi-location AMC plans for restaurant chains",
+            "Emergency commercial gas repair with priority response",
+            "FSSAI compliance gas safety certification",
+          ],
+        },
+        emergencyInfo: "Banjara Hills gas emergencies get our fastest response — guaranteed 15-minute arrival anywhere across Road No. 1 to 12, GVK One, Apollo Hospital area, KBR Park vicinity, and all residential and commercial properties in Banjara Hills.",
+      },
+    },
+    "jubilee-hills": {
+      name: "Jubilee Hills",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas repair and pipeline services in Jubilee Hills — Hyderabad's celebrity and elite residential hub with premium service standards",
+      heroDescription: "🔥 Premium gas repair in Jubilee Hills with 15-minute response! 500+ happy customers since 2014. Expert gas stove repair, pipeline services, and 24/7 emergency support for Jubilee Hills' elite residences, cafes, and film industry offices.",
+      responseTime: "15-20 minutes",
+      customers: "500+",
+      pincode: "500033",
+      establishedYear: "2014",
+      rating: "4.9",
+      completedJobs: "1200+",
+      landmarks: ["Jubilee Hills Check Post", "Jubilee Hills Club", "Film Nagar", "People's Plaza", "Sri Venkateswara Temple", "Shilparamam Road"],
+      nearbyAreas: ["Banjara Hills", "Madhapur", "Film Nagar", "Yousufguda", "Panjagutta"],
+      localBusinesses: ["Film Industry Offices", "Elite Restaurants", "Luxury Residences", "Boutique Hotels", "Production Houses"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Premium gas stove and hob repair for Jubilee Hills' luxury villas, apartments, and upscale restaurants",
+          features: [
+            "Expert repair for premium brands including Bosch, Elica, and imported brands",
+            "Advanced ignition system repair and calibration",
+            "Precision burner and valve servicing",
+            "Genuine OEM parts with 6-month warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Premium pipeline installation and maintenance for Jubilee Hills' luxury bungalows and gated communities",
+          features: [
+            "Full pipeline installation with certified safety testing",
+            "Digital leak detection for luxury properties",
+            "Premium valve and fitting replacement",
+            "Compliance certification for building management",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Jubilee Hills with 15-minute guaranteed response",
+          features: [
+            "Priority emergency dispatch for Jubilee Hills addresses",
+            "Complete safety assessment by senior technicians",
+            "Emergency repairs with post-service clearance",
+            "Discreet, professional service for high-profile residences",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Prakash Rao",
+          profession: "Film Director",
+          company: "Annapurna Studios",
+          area: "Film Nagar",
+          rating: 5,
+          text: "Excellent service! The team came in under 15 minutes, very professional, and fixed our gas hob issue at the office kitchen without disrupting our shoot schedule. Very discreet and efficient. Charged ₹600. Highly recommended for Jubilee Hills film industry offices!",
+          service: "Gas Hob Repair",
+          date: "February 2025",
+          jobType: "Office Kitchen Repair",
+        },
+        {
+          name: "Lakshmi Devi",
+          profession: "Homemaker",
+          company: "Resident",
+          area: "Jubilee Hills Check Post",
+          rating: 5,
+          text: "Gas Repair Wale has been our go-to for 3 years. Always on time, professional, and trustworthy. Got the annual pipeline inspection done last month — thorough job with full documentation. Charged ₹700. The best gas service in Jubilee Hills!",
+          service: "Annual Pipeline Inspection",
+          date: "January 2025",
+          jobType: "Annual Inspection",
+        },
+        {
+          name: "Ravi Teja",
+          profession: "Restaurant Owner",
+          company: "Purple Basil",
+          area: "People's Plaza",
+          rating: 5,
+          text: "Our restaurant depends on Gas Repair Wale for all kitchen gas maintenance. They service our entire kitchen monthly, respond to emergencies within 15 minutes, and provide proper safety documentation. AMC at ₹13000/year — excellent value for a premium restaurant!",
+          service: "Restaurant Gas Maintenance",
+          date: "December 2024",
+          jobType: "Restaurant AMC",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Jubilee Hills Specialists", description: "Serving Jubilee Hills since 2014 with expertise in luxury villas, film industry offices, and elite restaurants. Discreet, professional service guaranteed.", stats: "500+ customers" },
+        { icon: "Clock", title: "15-Minute Response", description: "Guaranteed 15-20 minute response across all Jubilee Hills including Check Post, Film Nagar, and People's Plaza area.", stats: "15-min response" },
+        { icon: "Users", title: "Elite Community Trusted", description: "Trusted by Jubilee Hills' top residents, film personalities, and business owners with 500+ satisfied customers and 4.9★ rating.", stats: "4.9★ rating" },
+        { icon: "Shield", title: "Premium & Discreet", description: "Telangana-certified technicians trained for premium service standards. Professional, discreet service for high-profile residences.", stats: "100% certified" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Established Since 2014: Trusted gas service provider for Jubilee Hills for over a decade",
+          "Fastest Response: 15-20 minute guaranteed response across all Jubilee Hills",
+          "Premium Standards: Trained for luxury villas, high-profile residences, and upscale restaurants",
+          "Discreet Service: Professional and respectful service for Hyderabad's elite community",
+          "High Satisfaction: 500+ customers with 4.9★ rating and 1200+ completed jobs",
+          "24/7 Emergency: Around-the-clock availability for gas emergencies",
+        ],
+        services: {
+          residential: [
+            "Premium gas stove and hob repair for luxury villas",
+            "Pipeline installation and maintenance with certification",
+            "Safety inspections for new and existing properties",
+            "Annual maintenance plans for luxury homes",
+            "Kitchen gas line modifications for renovations",
+            "LPG setup with comprehensive safety documentation",
+          ],
+          commercial: [
+            "Restaurant and cafe kitchen gas setup and maintenance",
+            "Film industry office kitchen gas servicing",
+            "Commercial pipeline installation with compliance",
+            "AMC plans for restaurants and commercial kitchens",
+            "Gas safety audits with detailed reports",
+            "Emergency commercial gas repair with priority response",
+          ],
+        },
+        emergencyInfo: "Gas emergencies in Jubilee Hills get our priority 15-minute response across Check Post, Film Nagar, People's Plaza, Sri Venkateswara Temple area, Jubilee Hills Club vicinity, and all residential and commercial properties in Jubilee Hills.",
+      },
+    },
+    somajiguda: {
+      name: "Somajiguda",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas stove repair and pipeline services in Somajiguda — one of Hyderabad's prime commercial and residential areas with fast response times",
+      heroDescription: "🔥 Expert gas services in Somajiguda with 15-minute response! 450+ satisfied customers since 2014. Professional gas stove repair, pipeline services, and 24/7 emergency support for Somajiguda's residents and businesses.",
+      responseTime: "15-20 minutes",
+      customers: "450+",
+      pincode: "500082",
+      establishedYear: "2014",
+      rating: "4.8",
+      completedJobs: "1050+",
+      landmarks: ["Somajiguda Circle", "Greenlands Colony", "Raj Bhavan Road", "Hotel Dwaraka", "Somajiguda Flyover", "Rajiv Gandhi International Stadium Road"],
+      nearbyAreas: ["Panjagutta", "Ameerpet", "Begumpet", "Banjara Hills", "Raj Bhavan"],
+      localBusinesses: ["Government Offices", "Hotels", "Restaurants", "Offices", "Residential Apartments"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Complete gas stove and cooktop repair for Somajiguda's apartments, hotels, and restaurants with same-day service",
+          features: [
+            "Burner repair and deep cleaning for all brands",
+            "Auto-ignition system repair",
+            "Gas valve and regulator servicing",
+            "Genuine parts replacement with warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Pipeline installation and maintenance for Somajiguda's apartments, hotels, and commercial buildings",
+          features: [
+            "New pipeline installation with safety certification",
+            "Professional leak detection and repair",
+            "Valve and connector replacement",
+            "Safety inspection and compliance documentation",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Somajiguda with guaranteed 15-minute response for all emergencies",
+          features: [
+            "Immediate emergency dispatch",
+            "Gas leak detection and safe shutdown",
+            "Emergency pipeline repairs",
+            "Post-repair safety clearance",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Santosh Kumar",
+          profession: "Government Officer",
+          company: "Telangana Secretariat",
+          area: "Raj Bhavan Road",
+          rating: 5,
+          text: "Very professional service in our apartment complex. Gas stove repair done perfectly within 18 minutes of calling. Technician was well-mannered, identified the problem quickly, and fixed it with genuine parts. Charged ₹480. Excellent service for Somajiguda residents!",
+          service: "Gas Stove Repair",
+          date: "January 2025",
+          jobType: "Apartment Stove Repair",
+        },
+        {
+          name: "Vijaya Lakshmi",
+          profession: "Homemaker",
+          company: "Resident",
+          area: "Greenlands Colony",
+          rating: 5,
+          text: "Called Gas Repair Wale for gas pipeline inspection in my newly purchased apartment. They came on time, did a thorough job, and gave proper documentation. Very reasonable charges of ₹550. Highly recommend for Somajiguda apartment owners!",
+          service: "Pipeline Inspection",
+          date: "December 2024",
+          jobType: "New Apartment Inspection",
+        },
+        {
+          name: "Ramu Yadav",
+          profession: "Hotel Manager",
+          company: "Hotel Grand Palace",
+          area: "Somajiguda Circle",
+          rating: 5,
+          text: "We use Gas Repair Wale for our hotel kitchen maintenance. Reliable, professional, fast emergency response. Monthly maintenance and quarterly pipeline checks. Very competitive AMC pricing at ₹12000/year. Best gas service in Somajiguda!",
+          service: "Hotel Kitchen Maintenance",
+          date: "November 2024",
+          jobType: "Hotel AMC",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Somajiguda Experts", description: "Serving Somajiguda since 2014 with local knowledge of all apartments, hotels, and offices in the area.", stats: "450+ customers" },
+        { icon: "Clock", title: "15-Minute Response", description: "Guaranteed 15-20 minute response across Somajiguda including Greenlands Colony, Raj Bhavan Road, and Somajiguda Circle.", stats: "15-min response" },
+        { icon: "Users", title: "Area's Top Choice", description: "450+ happy customers, 4.8★ rating, and 1050+ completed jobs in Somajiguda area.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Insured", description: "Telangana-certified and fully insured technicians carrying genuine spare parts.", stats: "100% certified" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Somajiguda since 2014 with deep local knowledge",
+          "Fast Response: 15-20 minute guaranteed response anywhere in Somajiguda",
+          "Certified Technicians: Licensed for gas work in Telangana",
+          "All Segments: Residential apartments, hotels, government offices — we serve all",
+          "High Satisfaction: 450+ customers with 4.8★ rating",
+          "24/7 Emergency: Available around the clock for gas emergencies",
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair for apartments",
+            "Pipeline installation and safety certification",
+            "LPG connection setup",
+            "Annual maintenance plans",
+            "Safety inspections",
+            "Kitchen gas line modifications",
+          ],
+          commercial: [
+            "Hotel kitchen gas setup and maintenance",
+            "Restaurant pipeline installation",
+            "Commercial safety audits",
+            "AMC plans for hotels and restaurants",
+            "Emergency commercial gas repair",
+            "Gas compliance certification",
+          ],
+        },
+        emergencyInfo: "Gas emergencies in Somajiguda handled 24/7 with 15-minute response across Greenlands Colony, Raj Bhavan Road, Somajiguda Circle, Somajiguda Flyover area, and all apartments and commercial properties in the locality.",
+      },
+    },
+    panjagutta: {
+      name: "Panjagutta",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas stove repair, pipeline services, and emergency support in Panjagutta — Hyderabad's thriving commercial and coaching hub with fast response",
+      heroDescription: "🔥 Expert gas repair in Panjagutta with 15-minute response! 480+ customers served since 2014. Professional gas stove repair, pipeline services, and 24/7 emergency support for Panjagutta's residents, coaching institutes, and businesses.",
+      responseTime: "15-20 minutes",
+      customers: "480+",
+      pincode: "500082",
+      establishedYear: "2014",
+      rating: "4.8",
+      completedJobs: "1100+",
+      landmarks: ["Panjagutta Circle", "Nagarjuna Circle", "Crystal Function Hall", "Greenland Guest House", "Cyber Towers Road", "Amrutha Hills"],
+      nearbyAreas: ["Ameerpet", "Somajiguda", "SR Nagar", "Begumpet", "Yellareddy Guda"],
+      localBusinesses: ["Coaching Institutes", "Offices", "Restaurants", "Apartments", "Shopping Centers"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Fast and reliable gas stove repair for Panjagutta's apartments, hostels, and commercial kitchens",
+          features: [
+            "Burner repair and cleaning for all brands",
+            "Ignition system repair and replacement",
+            "Gas valve and regulator servicing",
+            "Genuine parts with warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Complete pipeline installation and safety services for Panjagutta's residential and commercial buildings",
+          features: [
+            "New pipeline installation with safety certification",
+            "Leak detection and professional repair",
+            "Valve and connector replacement",
+            "Compliance inspection and documentation",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Panjagutta with 15-minute response guarantee",
+          features: [
+            "Immediate emergency dispatch",
+            "Gas leak detection and containment",
+            "Emergency repairs with safety clearance",
+            "Priority service for hostels and commercial establishments",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Mohan Reddy",
+          profession: "Coaching Institute Owner",
+          company: "Narayana Coaching",
+          area: "Nagarjuna Circle",
+          rating: 5,
+          text: "Gas Repair Wale handles the kitchen gas maintenance for our student hostel. Quick response, reliable service, and very reasonable pricing. They understand the urgency when 200 students are waiting for meals. AMC at ₹9000/year is very good value!",
+          service: "Hostel Kitchen Maintenance",
+          date: "January 2025",
+          jobType: "Hostel AMC",
+        },
+        {
+          name: "Geeta Sharma",
+          profession: "Homemaker",
+          company: "Resident",
+          area: "Panjagutta Circle",
+          rating: 5,
+          text: "Got gas stove repaired — the team arrived within 17 minutes, very professional and clean in their work. Fixed the burner and ignition for ₹450 with 6-month warranty. Highly recommend Gas Repair Wale for Panjagutta residents!",
+          service: "Gas Stove Repair",
+          date: "December 2024",
+          jobType: "Burner & Ignition Repair",
+        },
+        {
+          name: "Rambabu Rao",
+          profession: "Restaurant Manager",
+          company: "Bawarchi Restaurant",
+          area: "Amrutha Hills",
+          rating: 5,
+          text: "We use Gas Repair Wale for our restaurant kitchen. Excellent emergency response — once they came in 13 minutes during peak lunch hour to fix a gas regulator failure. That saved our service! Monthly maintenance keeps everything running smoothly. Top quality service!",
+          service: "Restaurant Gas Maintenance",
+          date: "November 2024",
+          jobType: "Restaurant Emergency & AMC",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Panjagutta Local Experts", description: "Serving Panjagutta since 2014 with knowledge of all apartments, institutes, and commercial buildings in the area.", stats: "480+ customers" },
+        { icon: "Clock", title: "15-Minute Response", description: "Guaranteed 15-20 minute response across Panjagutta including Nagarjuna Circle, Panjagutta Circle, and Amrutha Hills.", stats: "15-min response" },
+        { icon: "Users", title: "Community Trusted", description: "480+ happy customers, 4.8★ rating, and 1100+ completed jobs across Panjagutta.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Certified", description: "Telangana-certified technicians, fully insured, with genuine spare parts for all gas brands.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Knowledge: Serving Panjagutta since 2014 across residential, commercial, and institutional properties",
+          "Fast Response: 15-20 minute guaranteed response in Panjagutta",
+          "Certified Technicians: Licensed for Telangana gas work with proper identification",
+          "All Segments: Apartments, hostels, restaurants, coaching institutes — we serve all",
+          "High Satisfaction: 480+ customers with 4.8★ rating",
+          "Emergency Ready: 24/7 emergency gas service with immediate response",
+        ],
+        services: {
+          residential: [
+            "Gas stove and cooktop repair for apartments",
+            "Pipeline installation and leak repair",
+            "LPG connection and regulator setup",
+            "Annual maintenance for families",
+            "Safety inspections and certifications",
+            "Gas line modification for renovations",
+          ],
+          commercial: [
+            "Restaurant and hotel kitchen gas maintenance",
+            "Hostel kitchen gas setup and service",
+            "Commercial pipeline installation",
+            "AMC plans for institutes and restaurants",
+            "Gas safety audits and compliance",
+            "Emergency commercial gas repair",
+          ],
+        },
+        emergencyInfo: "Gas emergencies in Panjagutta handled 24/7 with guaranteed 15-minute response across Panjagutta Circle, Nagarjuna Circle, Amrutha Hills, Greenland area, and all apartments and commercial properties in Panjagutta.",
+      },
+    },
+    begumpet: {
+      name: "Begumpet",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas stove repair, pipeline services, and emergency support in Begumpet — Hyderabad's airport district and upscale commercial hub",
+      heroDescription: "🔥 Expert gas repair in Begumpet with 15-minute response! 420+ satisfied customers since 2014. Professional gas stove repair, pipeline services, and 24/7 emergency support for Begumpet's residents, embassies, and commercial establishments.",
+      responseTime: "15-20 minutes",
+      customers: "420+",
+      pincode: "500016",
+      establishedYear: "2014",
+      rating: "4.8",
+      completedJobs: "980+",
+      landmarks: ["Paradise Hotel", "SP Road Electronics Market", "Greenlands Colony", "Begumpet Airport Road", "Hyderabad Public School", "Raj Bhavan Road"],
+      nearbyAreas: ["Secunderabad", "Ameerpet", "Somajiguda", "Marredpally", "Trimulgherry"],
+      localBusinesses: ["Hotels", "Embassies", "Offices", "Restaurants", "Electronics Showrooms"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Professional gas stove and hob repair for Begumpet's apartments, hotels, and commercial kitchens with same-day service",
+          features: [
+            "Expert burner repair and deep cleaning",
+            "Auto-ignition system repair and replacement",
+            "Gas pressure valve servicing",
+            "Genuine parts replacement with warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Pipeline installation and maintenance for Begumpet's residences, hotels, and commercial buildings",
+          features: [
+            "New pipeline installation with safety certification",
+            "Leak detection and professional repair",
+            "Valve and connector replacement",
+            "Compliance inspection documentation",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Begumpet with 15-minute guaranteed response",
+          features: [
+            "Immediate emergency dispatch",
+            "Gas leak detection and safe shutdown",
+            "Emergency pipeline repairs",
+            "Post-service safety clearance",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Ashok Mehta",
+          profession: "Business Executive",
+          company: "Mahindra Finance",
+          area: "Greenlands Colony",
+          rating: 5,
+          text: "Excellent gas stove repair service! The team arrived within 16 minutes, very professionally dressed and equipped. Fixed our 4-burner stove comprehensively for ₹550 with warranty. Highly recommend Gas Repair Wale for Begumpet residents!",
+          service: "Gas Stove Repair",
+          date: "January 2025",
+          jobType: "4-Burner Stove Repair",
+        },
+        {
+          name: "Shalini Rao",
+          profession: "Diplomat",
+          company: "Indian Foreign Service",
+          area: "SP Road",
+          rating: 5,
+          text: "Very professional, discreet, and efficient service. Called for gas pipeline inspection — the team was courteous, thorough, and provided complete documentation. Excellent service standards for Begumpet's diplomatic residences.",
+          service: "Pipeline Inspection",
+          date: "December 2024",
+          jobType: "Diplomatic Residence Inspection",
+        },
+        {
+          name: "Ahmed Khan",
+          profession: "Hotel Owner",
+          company: "Hotel Minerva",
+          area: "Begumpet Main Road",
+          rating: 5,
+          text: "Gas Repair Wale has been servicing our hotel kitchen for 5 years. Reliable, professional, quick on emergencies. Monthly maintenance keeps our commercial kitchen running smoothly. Very competitive AMC pricing. Highly recommended for Begumpet hospitality businesses!",
+          service: "Hotel Kitchen AMC",
+          date: "November 2024",
+          jobType: "Hotel AMC",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Begumpet Specialists", description: "Serving Begumpet since 2014 with expertise in residential, commercial, and diplomatic establishments in the area.", stats: "420+ customers" },
+        { icon: "Clock", title: "15-Minute Response", description: "Guaranteed 15-20 minute response across Begumpet including SP Road, Greenlands Colony, and Airport Road area.", stats: "15-min response" },
+        { icon: "Users", title: "Trusted by All", description: "420+ happy customers, 4.8★ rating, and 980+ completed jobs across diverse Begumpet clientele.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Certified & Professional", description: "Telangana-licensed, fully insured technicians with professional presentation standards.", stats: "100% insured" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Long Presence: Serving Begumpet since 2014 across all types of residential and commercial properties",
+          "Fast Response: 15-20 minute guaranteed response across Begumpet",
+          "Professional Standards: Trained for the diverse requirements of Begumpet's clientele",
+          "Discreet Service: Professional and respectful for diplomatic and high-profile residences",
+          "High Satisfaction: 420+ customers with 4.8★ rating",
+          "24/7 Emergency: Available round the clock for all gas emergencies",
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair for apartments and houses",
+            "Pipeline installation and maintenance",
+            "LPG connection and regulator setup",
+            "Annual maintenance plans",
+            "Safety inspections and certifications",
+            "Kitchen gas line modifications",
+          ],
+          commercial: [
+            "Hotel and restaurant kitchen gas setup",
+            "Commercial pipeline installation",
+            "Safety audits with compliance documentation",
+            "AMC plans for hotels and restaurants",
+            "Emergency commercial gas repair",
+            "Gas certification for commercial kitchens",
+          ],
+        },
+        emergencyInfo: "Gas emergencies in Begumpet are handled 24/7 with guaranteed 15-minute response across Greenlands Colony, SP Road, Paradise Hotel area, Airport Road, Raj Bhavan Road, and all residential and commercial properties in Begumpet.",
+      },
+    },
+    ameerpet: {
+      name: "Ameerpet",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas stove repair, pipeline services, and emergency support in Ameerpet — Hyderabad's IT coaching hub and bustling residential-commercial center",
+      heroDescription: "🔥 Expert gas repair in Ameerpet with 15-minute response! 500+ happy customers since 2013. Professional gas stove repair, pipeline services, and 24/7 emergency support for Ameerpet's IT coaching institutes, residents, and businesses.",
+      responseTime: "15-20 minutes",
+      customers: "500+",
+      pincode: "500016",
+      establishedYear: "2013",
+      rating: "4.9",
+      completedJobs: "1150+",
+      landmarks: ["Ameerpet Metro Station", "Sri Venkateswara Theatre", "Bhavani Theatre", "Satyam Theatre", "Nagarjuna Institute", "SR Nagar Road", "Ameerpet X Roads"],
+      nearbyAreas: ["Panjagutta", "SR Nagar", "Yousufguda", "Begumpet", "Erragadda"],
+      localBusinesses: ["IT Coaching Centers", "Restaurants", "Hostels", "Apartments", "Educational Institutes"],
+      specialServices: [
+        {
+          title: "Gas Stove Repair",
+          description: "Fast and affordable gas stove repair for Ameerpet's apartments, hostels, and restaurants with same-day service",
+          features: [
+            "Burner repair and cleaning for all brands",
+            "Ignition system repair and replacement",
+            "Gas pressure and regulator servicing",
+            "Genuine parts with 6-month warranty",
+          ],
+        },
+        {
+          title: "Gas Pipeline Services",
+          description: "Pipeline installation and maintenance for Ameerpet's dense residential and commercial properties",
+          features: [
+            "New pipeline installation with safety certification",
+            "Leak detection and professional repair",
+            "Valve and connector replacement",
+            "Compliance inspection and documentation",
+          ],
+        },
+        {
+          title: "Emergency Gas Services",
+          description: "24/7 emergency gas repair in Ameerpet with guaranteed 15-minute response — essential for a high-density area",
+          features: [
+            "Fastest emergency response in the area",
+            "Gas leak detection and safe shutdown",
+            "Emergency repairs with full safety verification",
+            "Priority service for hostels and restaurants",
+          ],
+        },
+      ],
+      testimonials: [
+        {
+          name: "Kiran Kumar",
+          profession: "IT Trainer",
+          company: "NIIT Ameerpet",
+          area: "Ameerpet X Roads",
+          rating: 5,
+          text: "Gas Repair Wale fixed our institute canteen gas stove within 16 minutes of calling. Very professional team, resolved the burner issue immediately, and charged only ₹420. Excellent service for the Ameerpet coaching community!",
+          service: "Gas Stove Repair",
+          date: "February 2025",
+          jobType: "Canteen Stove Repair",
+        },
+        {
+          name: "Suma Rao",
+          profession: "Hostel Warden",
+          company: "Sri Saraswathi Ladies Hostel",
+          area: "SR Nagar Road",
+          rating: 5,
+          text: "Gas Repair Wale is our emergency contact for all gas issues. Once at 9 PM our kitchen gas pipeline had a small leak — they arrived in 14 minutes, fixed it safely before any issue. 200 students' safety ensured! Highly reliable service for Ameerpet hostels.",
+          service: "Emergency Gas Leak",
+          date: "January 2025",
+          jobType: "Hostel Emergency",
+        },
+        {
+          name: "Ravi Babu",
+          profession: "Restaurant Owner",
+          company: "Chutneys",
+          area: "Bhavani Theatre Road",
+          rating: 5,
+          text: "Using Gas Repair Wale for 5 years for our Ameerpet outlet. Monthly maintenance, quick emergency response — never had a major issue. AMC at ₹10000/year covers everything. Best gas maintenance for Ameerpet restaurants!",
+          service: "Restaurant Gas AMC",
+          date: "December 2024",
+          jobType: "Restaurant AMC",
+        },
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Ameerpet Local Experts", description: "Serving Ameerpet since 2013 — our longest-standing service area in Hyderabad with deep knowledge of every lane and building.", stats: "500+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 15-20 minute response anywhere in Ameerpet including Metro area, SR Nagar Road, and Bhavani Theatre vicinity.", stats: "15-min response" },
+        { icon: "Users", title: "Ameerpet's #1 Choice", description: "Most trusted gas service in Ameerpet with 500+ satisfied customers, 4.9★ rating, and 1150+ completed jobs.", stats: "4.9★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured, with a proven track record in one of Hyderabad's busiest areas.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Longest Presence: Serving Ameerpet since 2013 — over a decade of trusted gas service",
+          "Fastest Response: 15-20 minute guaranteed response anywhere in Ameerpet",
+          "High Density Expertise: Experienced in serving apartments, hostels, institutes, and restaurants in a dense urban area",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "Customer Satisfaction: 500+ happy customers with 4.9★ rating and 1150+ completed jobs",
+          "24/7 Emergency: Critical emergency service for high-density Ameerpet",
+        ],
+        services: {
+          residential: [
+            "Gas stove and hob repair for apartments",
+            "Pipeline installation and maintenance",
+            "LPG connection and regulator setup",
+            "Annual maintenance for families and hostels",
+            "Safety inspections and certifications",
+            "Kitchen gas line modifications",
+          ],
+          commercial: [
+            "Restaurant and canteen kitchen gas maintenance",
+            "Hostel kitchen gas setup and servicing",
+            "Commercial pipeline installation",
+            "AMC plans for institutes and restaurants",
+            "Gas safety audits and compliance",
+            "Emergency commercial gas repair",
+          ],
+        },
+        emergencyInfo: "Gas emergencies in Ameerpet demand immediate response — our team is available 24/7 with guaranteed 15-minute arrival at Ameerpet Metro, SR Nagar Road, Bhavani Theatre area, Satyam Theatre area, and all residential and commercial properties in Ameerpet.",
+      },
+    },
+    kukatpally: {
+      name: "Kukatpally",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Professional gas stove repair, pipeline services, and appliance maintenance for residential and commercial hubs in Kukatpally, Hyderabad.",
+      heroDescription: "🔥 Professional gas stove repair, pipeline services, and appliance maintenance across Kukatpally and surrounding areas. Fast, reliable, and affordable solutions for your home and business with 480+ satisfied customers and 20-25 minute average response time.",
+      established: "2015",
+      responseTime: "20-25 minutes",
+      customers: "480+",
+      completedJobs: "1200+",
+      rating: "4.9",
+      pincode: "500072",
+      zone: "North",
+      coordinates: { lat: 17.4849, lng: 78.4011 },
+      landmarks: ["Forum Sujana Mall", "JNTU", "Kukatpally Housing Board", "Y Junction"],
+      nearbyAreas: ["KPHB Colony", "Moosapet", "Miyapur"],
+      features: [
+        "Certified Gas Technicians",
+        "20-25 Min Emergency Response",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes and high-rises in Kukatpally.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair for Kukatpally eateries.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Suresh K.", profession: "Resident", company: "", area: "Kukatpally", rating: 5, text: "Very prompt service in Kukatpally. The technician fixed the gas leak within 20 minutes.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" },
+        { name: "Anjali M.", profession: "Homeowner", company: "", area: "Kukatpally", rating: 5, text: "Excellent gas stove repair. Highly recommended for anyone living near JNTU.", service: "Gas Stove Servicing", date: "January 2025", jobType: "Stove Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Kukatpally Local Experts", description: "Serving Kukatpally since 2015 with deep knowledge of local societies and commercial establishments.", stats: "480+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 20-25 minute response anywhere in Kukatpally.", stats: "20-min response" },
+        { icon: "Users", title: "Kukatpally's #1 Choice", description: "Most trusted gas service in Kukatpally with 480+ satisfied customers and 4.9★ rating.", stats: "4.9★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Kukatpally since 2015",
+          "Fastest Response: 20-25 minute guaranteed response anywhere in Kukatpally",
+          "Customer Satisfaction: 480+ happy customers with 4.9★ rating",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Kukatpally demand immediate response — our team is available 24/7 with guaranteed 20-25 minute arrival."
+      }
+    },
+    "kphb-colony": {
+      name: "KPHB Colony",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Expert gas appliance repair and pipeline services tailored for the densely populated KPHB Colony.",
+      heroDescription: "🔥 Expert gas appliance repair and pipeline services tailored for the densely populated KPHB Colony. Safe and reliable solutions for your kitchen with 400+ satisfied customers and 20-25 minute average response time.",
+      established: "2016",
+      responseTime: "20-25 minutes",
+      customers: "400+",
+      completedJobs: "1100+",
+      rating: "4.8",
+      pincode: "500072",
+      zone: "North",
+      coordinates: { lat: 17.4947, lng: 78.3996 },
+      landmarks: ["Manjeera Mall", "Remedy Hospital", "JNTU Road"],
+      nearbyAreas: ["Kukatpally", "Miyapur"],
+      features: [
+        "Certified Gas Technicians",
+        "20-25 Min Emergency Response",
+        "Evening Appointments",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in KPHB Colony.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair in KPHB.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Rahul S.", profession: "Resident", company: "", area: "KPHB Colony", rating: 5, text: "Very prompt service in KPHB. The technician fixed the gas leak quickly.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "KPHB Local Experts", description: "Serving KPHB Colony since 2016 with deep knowledge of local societies.", stats: "400+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 20-25 minute response anywhere in KPHB Colony.", stats: "20-min response" },
+        { icon: "Users", title: "KPHB's #1 Choice", description: "Most trusted gas service in KPHB with 400+ satisfied customers and 4.8★ rating.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving KPHB Colony since 2016",
+          "Fastest Response: 20-25 minute guaranteed response anywhere in KPHB Colony",
+          "Customer Satisfaction: 400+ happy customers with 4.8★ rating",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in KPHB Colony demand immediate response — our team is available 24/7 with guaranteed 20-25 minute arrival."
+      }
+    },
+    miyapur: {
+      name: "Miyapur",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Affordable and fast gas repair services for growing families and modern societies in Miyapur.",
+      heroDescription: "🔥 Affordable and fast gas repair services for growing families and modern societies in Miyapur. Secure and rapid service with 350+ satisfied customers.",
+      established: "2017",
+      responseTime: "25-30 minutes",
+      customers: "350+",
+      completedJobs: "950+",
+      rating: "4.8",
+      pincode: "500049",
+      zone: "North",
+      coordinates: { lat: 17.4968, lng: 78.3614 },
+      landmarks: ["Miyapur Metro Station", "Allwyn X Road", "Ameenpur"],
+      nearbyAreas: ["Chandanagar", "Hafeezpet", "KPHB Colony"],
+      features: [
+        "Certified Gas Technicians",
+        "Affordable Pricing",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Miyapur.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair in Miyapur.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Vikram P.", profession: "Resident", company: "", area: "Miyapur", rating: 5, text: "Very prompt service in Miyapur. Fixed the issue perfectly.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Miyapur Local Experts", description: "Serving Miyapur since 2017 with deep knowledge of local societies.", stats: "350+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response anywhere in Miyapur.", stats: "25-min response" },
+        { icon: "Users", title: "Miyapur's #1 Choice", description: "Most trusted gas service in Miyapur with 350+ satisfied customers.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Miyapur since 2017",
+          "Fastest Response: 25-30 minute guaranteed response anywhere in Miyapur",
+          "Customer Satisfaction: 350+ happy customers with 4.8★ rating",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Miyapur demand immediate response — our team is available 24/7."
+      }
+    },
+    bachupally: {
+      name: "Bachupally",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Reliable gas repair and installation services for the rapidly developing Bachupally area.",
+      heroDescription: "🔥 Reliable gas repair and installation services for the rapidly developing Bachupally area. Expert pipeline and appliance setup.",
+      established: "2018",
+      responseTime: "25-30 minutes",
+      customers: "300+",
+      completedJobs: "800+",
+      rating: "4.8",
+      pincode: "500090",
+      zone: "North",
+      coordinates: { lat: 17.5255, lng: 78.3813 },
+      landmarks: ["VNR VJIET", "Silver Oaks School", "Mallampet Road"],
+      nearbyAreas: ["Miyapur", "Kompally"],
+      features: [
+        "Certified Gas Technicians",
+        "Weekend Service",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Bachupally.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Sneha R.", profession: "Resident", company: "", area: "Bachupally", rating: 5, text: "Very prompt service. Excellent new pipeline installation.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Bachupally Local Experts", description: "Serving Bachupally since 2018.", stats: "300+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response anywhere in Bachupally.", stats: "25-min response" },
+        { icon: "Users", title: "Bachupally's #1 Choice", description: "Most trusted gas service in Bachupally with 300+ satisfied customers.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Bachupally since 2018",
+          "Fastest Response: 25-30 minute guaranteed response",
+          "Customer Satisfaction: 300+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Bachupally demand immediate response — our team is available 24/7."
+      }
+    },
+    kompally: {
+      name: "Kompally",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Premium gas solutions for the spacious villas and gated communities of Kompally.",
+      heroDescription: "🔥 Premium gas solutions for the spacious villas and gated communities of Kompally. Secure, aesthetic pipeline installations and stove repairs.",
+      established: "2017",
+      responseTime: "25-30 minutes",
+      customers: "280+",
+      completedJobs: "750+",
+      rating: "4.7",
+      pincode: "500014",
+      zone: "North",
+      coordinates: { lat: 17.5303, lng: 78.4729 },
+      landmarks: ["CinePlanet", "Dhola-ri-Dhani", "Kompally Highway"],
+      nearbyAreas: ["Bowenpally", "Alwal"],
+      features: [
+        "Certified Gas Technicians",
+        "Villa Specialists",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and concealed pipeline services for villas in Kompally.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Kiran R.", profession: "Resident", company: "", area: "Kompally", rating: 5, text: "Excellent gas pipeline installation for our new villa.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Kompally Local Experts", description: "Serving Kompally since 2017.", stats: "280+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response anywhere in Kompally.", stats: "25-min response" },
+        { icon: "Users", title: "Kompally's #1 Choice", description: "Most trusted gas service in Kompally.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Kompally since 2017",
+          "Fastest Response: 25-30 minute guaranteed response",
+          "Customer Satisfaction: 280+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Kompally demand immediate response — our team is available 24/7."
+      }
+    },
+    bowenpally: {
+      name: "Bowenpally",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Trusted gas stove repair and maintenance serving Bowenpally's established neighborhoods.",
+      heroDescription: "🔥 Trusted gas stove repair and maintenance serving Bowenpally's established neighborhoods. Quick local service for your kitchen.",
+      established: "2016",
+      responseTime: "20-25 minutes",
+      customers: "320+",
+      completedJobs: "850+",
+      rating: "4.8",
+      pincode: "500011",
+      zone: "North",
+      coordinates: { lat: 17.4727, lng: 78.4725 },
+      landmarks: ["Bowenpally Market", "Dairy Farm Road", "Cantonment border"],
+      nearbyAreas: ["Kompally", "Secunderabad"],
+      features: [
+        "Certified Gas Technicians",
+        "Quick Market Area Access",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Bowenpally.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Ramesh T.", profession: "Resident", company: "", area: "Bowenpally", rating: 5, text: "Very prompt service in Bowenpally. Perfect stove repair.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Bowenpally Local Experts", description: "Serving Bowenpally since 2016.", stats: "320+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 20-25 minute response anywhere in Bowenpally.", stats: "20-min response" },
+        { icon: "Users", title: "Bowenpally's #1 Choice", description: "Most trusted gas service in Bowenpally.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Bowenpally since 2016",
+          "Fastest Response: 20-25 minute guaranteed response",
+          "Customer Satisfaction: 320+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Bowenpally demand immediate response — our team is available 24/7."
+      }
+    },
+    uppal: {
+      name: "Uppal",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Reliable gas pipeline and stove repair services for residential and industrial zones in Uppal.",
+      heroDescription: "🔥 Reliable gas pipeline and stove repair services for residential and industrial zones in Uppal. Top quality gas services.",
+      established: "2015",
+      responseTime: "25-30 minutes",
+      customers: "320+",
+      completedJobs: "900+",
+      rating: "4.7",
+      pincode: "500039",
+      zone: "East",
+      coordinates: { lat: 17.4018, lng: 78.5602 },
+      landmarks: ["Uppal Stadium", "Uppal Metro Station", "Ramanthapur"],
+      nearbyAreas: ["LB Nagar", "Boduppal"],
+      features: [
+        "Certified Gas Technicians",
+        "Industrial & Residential",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Uppal.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Krishna M.", profession: "Resident", company: "", area: "Uppal", rating: 5, text: "Fixed our gas leak efficiently.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Uppal Local Experts", description: "Serving Uppal since 2015.", stats: "320+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response anywhere in Uppal.", stats: "25-min response" },
+        { icon: "Users", title: "Uppal's #1 Choice", description: "Most trusted gas service in Uppal.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Uppal since 2015",
+          "Fastest Response: 25-30 minute guaranteed response",
+          "Customer Satisfaction: 320+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Uppal demand immediate response — our team is available 24/7."
+      }
+    },
+    "lb-nagar": {
+      name: "LB Nagar",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Fast and professional gas repair covering LB Nagar's expansive residential sectors.",
+      heroDescription: "🔥 Fast and professional gas repair covering LB Nagar's expansive residential sectors. Safe and reliable gas solutions.",
+      established: "2015",
+      responseTime: "25-30 minutes",
+      customers: "350+",
+      completedJobs: "1000+",
+      rating: "4.7",
+      pincode: "500074",
+      zone: "East",
+      coordinates: { lat: 17.3457, lng: 78.5522 },
+      landmarks: ["LB Nagar Ring Road", "Kamineni Hospital", "Sagar Ring Road"],
+      nearbyAreas: ["Dilsukhnagar", "Uppal"],
+      features: [
+        "Certified Gas Technicians",
+        "Family Service",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in LB Nagar.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Swathi P.", profession: "Resident", company: "", area: "LB Nagar", rating: 5, text: "Excellent stove repair service.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "LB Nagar Local Experts", description: "Serving LB Nagar since 2015.", stats: "350+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response.", stats: "25-min response" },
+        { icon: "Users", title: "LB Nagar's #1 Choice", description: "Most trusted gas service in LB Nagar.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving LB Nagar since 2015",
+          "Fastest Response: 25-30 minute guaranteed response",
+          "Customer Satisfaction: 350+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in LB Nagar demand immediate response — our team is available 24/7."
+      }
+    },
+    dilsukhnagar: {
+      name: "Dilsukhnagar",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Dedicated gas repair services serving the bustling commercial and residential streets of Dilsukhnagar.",
+      heroDescription: "🔥 Dedicated gas repair services serving the bustling commercial and residential streets of Dilsukhnagar.",
+      established: "2014",
+      responseTime: "20-25 minutes",
+      customers: "380+",
+      completedJobs: "1100+",
+      rating: "4.8",
+      pincode: "500060",
+      zone: "East",
+      coordinates: { lat: 17.3685, lng: 78.5316 },
+      landmarks: ["Sai Baba Temple", "Dilsukhnagar Bus Depot", "Chaitanyapuri"],
+      nearbyAreas: ["LB Nagar", "Malakpet"],
+      features: [
+        "Certified Gas Technicians",
+        "Commercial Kitchen Specialists",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Dilsukhnagar.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Prasad K.", profession: "Resident", company: "", area: "Dilsukhnagar", rating: 5, text: "Prompt and reliable.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Dilsukhnagar Local Experts", description: "Serving Dilsukhnagar since 2014.", stats: "380+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 20-25 minute response.", stats: "20-min response" },
+        { icon: "Users", title: "Dilsukhnagar's #1 Choice", description: "Most trusted gas service in Dilsukhnagar.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Dilsukhnagar since 2014",
+          "Fastest Response: 20-25 minute guaranteed response",
+          "Customer Satisfaction: 380+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Dilsukhnagar demand immediate response — our team is available 24/7."
+      }
+    },
+    manikonda: {
+      name: "Manikonda",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Specialized gas services for the dense IT-corridor adjacent residential area of Manikonda.",
+      heroDescription: "🔥 Specialized gas services for the dense IT-corridor adjacent residential area of Manikonda.",
+      established: "2016",
+      responseTime: "20-25 minutes",
+      customers: "380+",
+      completedJobs: "1100+",
+      rating: "4.8",
+      pincode: "500089",
+      zone: "South",
+      coordinates: { lat: 17.3995, lng: 78.3888 },
+      landmarks: ["Lanco Hills", "Puppalaguda", "Khajaguda X Road"],
+      nearbyAreas: ["Gachibowli", "Tolichowki"],
+      features: [
+        "Certified Gas Technicians",
+        "High-rise specialists",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Manikonda.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Anand M.", profession: "Resident", company: "", area: "Manikonda", rating: 5, text: "Great pipeline service.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Manikonda Local Experts", description: "Serving Manikonda since 2016.", stats: "380+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 20-25 minute response.", stats: "20-min response" },
+        { icon: "Users", title: "Manikonda's #1 Choice", description: "Most trusted gas service in Manikonda.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Manikonda since 2016",
+          "Fastest Response: 20-25 minute guaranteed response",
+          "Customer Satisfaction: 380+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Manikonda demand immediate response — our team is available 24/7."
+      }
+    },
+    mehdipatnam: {
+      name: "Mehdipatnam",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Quick-response gas appliance repair for Mehdipatnam's bustling households and eateries.",
+      heroDescription: "🔥 Quick-response gas appliance repair for Mehdipatnam's bustling households and eateries.",
+      established: "2013",
+      responseTime: "15-20 minutes",
+      customers: "420+",
+      completedJobs: "1300+",
+      rating: "4.8",
+      pincode: "500028",
+      zone: "South",
+      coordinates: { lat: 17.3916, lng: 78.4398 },
+      landmarks: ["Rythu Bazar", "Sarojini Naidu Hospital", "Rethibowli"],
+      nearbyAreas: ["Tolichowki", "Masab Tank"],
+      features: [
+        "Certified Gas Technicians",
+        "Local Expertise",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Mehdipatnam.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Ali S.", profession: "Resident", company: "", area: "Mehdipatnam", rating: 5, text: "Very fast service.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Mehdipatnam Local Experts", description: "Serving Mehdipatnam since 2013.", stats: "420+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 15-20 minute response.", stats: "15-min response" },
+        { icon: "Users", title: "Mehdipatnam's #1 Choice", description: "Most trusted gas service in Mehdipatnam.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Mehdipatnam since 2013",
+          "Fastest Response: 15-20 minute guaranteed response",
+          "Customer Satisfaction: 420+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Mehdipatnam demand immediate response — our team is available 24/7."
+      }
+    },
+    tolichowki: {
+      name: "Tolichowki",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Expert gas repair and maintenance catering to Tolichowki's diverse food joints and homes.",
+      heroDescription: "🔥 Expert gas repair and maintenance catering to Tolichowki's diverse food joints and homes. Fast and reliable service for heritage and residential areas.",
+      established: "2013",
+      responseTime: "15-20 minutes",
+      customers: "400+",
+      completedJobs: "1250+",
+      rating: "4.8",
+      pincode: "500008",
+      zone: "South",
+      coordinates: { lat: 17.3984, lng: 78.4144 },
+      landmarks: ["Paramount Colony", "Shaikpet", "Seven Tombs Road"],
+      nearbyAreas: ["Mehdipatnam", "Gachibowli"],
+      features: [
+        "Certified Gas Technicians",
+        "Heritage Area Experts",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Tolichowki.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Imran S.", profession: "Restaurant Owner", company: "", area: "Tolichowki", rating: 5, text: "Best pipeline repair for our kitchen.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Tolichowki Local Experts", description: "Serving Tolichowki since 2013.", stats: "400+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 15-20 minute response.", stats: "15-min response" },
+        { icon: "Users", title: "Tolichowki's #1 Choice", description: "Most trusted gas service in Tolichowki.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Tolichowki since 2013",
+          "Fastest Response: 15-20 minute guaranteed response",
+          "Customer Satisfaction: 400+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Tolichowki demand immediate response — our team is available 24/7."
+      }
+    },
+    "rajendra-nagar": {
+      name: "Rajendra Nagar",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Affordable gas repair and installation services serving Rajendra Nagar and surrounding communities.",
+      heroDescription: "🔥 Affordable gas repair and installation services serving Rajendra Nagar and surrounding communities.",
+      established: "2015",
+      responseTime: "25-30 minutes",
+      customers: "300+",
+      completedJobs: "850+",
+      rating: "4.7",
+      pincode: "500030",
+      zone: "South",
+      coordinates: { lat: 17.3197, lng: 78.4069 },
+      landmarks: ["Agricultural University", "Attapur", "Upperpally"],
+      nearbyAreas: ["Attapur", "Mehdipatnam"],
+      features: [
+        "Certified Gas Technicians",
+        "Community Focus",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Rajendra Nagar.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Pooja V.", profession: "Resident", company: "", area: "Rajendra Nagar", rating: 5, text: "Excellent and quick service.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Rajendra Nagar Local Experts", description: "Serving Rajendra Nagar since 2015.", stats: "300+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response.", stats: "25-min response" },
+        { icon: "Users", title: "Rajendra Nagar's #1 Choice", description: "Most trusted gas service in Rajendra Nagar.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Rajendra Nagar since 2015",
+          "Fastest Response: 25-30 minute guaranteed response",
+          "Customer Satisfaction: 300+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Rajendra Nagar demand immediate response — our team is available 24/7."
+      }
+    },
+    secunderabad: {
+      name: "Secunderabad",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Top-rated gas pipeline and stove repair across the historic and commercial hubs of Secunderabad.",
+      heroDescription: "🔥 Top-rated gas pipeline and stove repair across the historic and commercial hubs of Secunderabad. Dependable local experts.",
+      established: "2013",
+      responseTime: "15-20 minutes",
+      customers: "500+",
+      completedJobs: "1500+",
+      rating: "4.9",
+      pincode: "500003",
+      zone: "Old City",
+      coordinates: { lat: 17.4399, lng: 78.4983 },
+      landmarks: ["Secunderabad Railway Station", "Paradise Circle", "Tarnaka"],
+      nearbyAreas: ["Begumpet", "Tarnaka"],
+      features: [
+        "Certified Gas Technicians",
+        "Historic Area Specialists",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Secunderabad.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Vinay K.", profession: "Resident", company: "", area: "Secunderabad", rating: 5, text: "The best gas service around Secunderabad station.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Secunderabad Local Experts", description: "Serving Secunderabad since 2013.", stats: "500+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 15-20 minute response.", stats: "15-min response" },
+        { icon: "Users", title: "Secunderabad's #1 Choice", description: "Most trusted gas service in Secunderabad.", stats: "4.9★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Secunderabad since 2013",
+          "Fastest Response: 15-20 minute guaranteed response",
+          "Customer Satisfaction: 500+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Secunderabad demand immediate response — our team is available 24/7."
+      }
+    },
+    abids: {
+      name: "Abids",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Specialized commercial and residential gas services for the iconic Abids shopping district.",
+      heroDescription: "🔥 Specialized commercial and residential gas services for the iconic Abids shopping district.",
+      established: "2013",
+      responseTime: "15-20 minutes",
+      customers: "400+",
+      completedJobs: "1150+",
+      rating: "4.8",
+      pincode: "500001",
+      zone: "Old City",
+      coordinates: { lat: 17.3872, lng: 78.4735 },
+      landmarks: ["GPO", "Taj Mahal Hotel", "Jagdish Market"],
+      nearbyAreas: ["Nampally", "Koti"],
+      features: [
+        "Certified Gas Technicians",
+        "Commercial Area Focus",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Abids.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Rizwan", profession: "Shop Owner", company: "", area: "Abids", rating: 5, text: "Quick commercial pipeline repair.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Abids Local Experts", description: "Serving Abids since 2013.", stats: "400+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 15-20 minute response.", stats: "15-min response" },
+        { icon: "Users", title: "Abids #1 Choice", description: "Most trusted gas service in Abids.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Abids since 2013",
+          "Fastest Response: 15-20 minute guaranteed response",
+          "Customer Satisfaction: 400+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Abids demand immediate response — our team is available 24/7."
+      }
+    },
+    himayatnagar: {
+      name: "Himayatnagar",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Premium gas repair solutions for homes and food outlets in bustling Himayatnagar.",
+      heroDescription: "🔥 Premium gas repair solutions for homes and food outlets in bustling Himayatnagar.",
+      established: "2014",
+      responseTime: "15-20 minutes",
+      customers: "420+",
+      completedJobs: "1200+",
+      rating: "4.8",
+      pincode: "500029",
+      zone: "Old City",
+      coordinates: { lat: 17.4011, lng: 78.4828 },
+      landmarks: ["Narayanaguda", "Liberty X Road", "Domalguda"],
+      nearbyAreas: ["Abids", "Nampally"],
+      features: [
+        "Certified Gas Technicians",
+        "Café Kitchen Service",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Himayatnagar.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Varun R.", profession: "Resident", company: "", area: "Himayatnagar", rating: 5, text: "Excellent and fast.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Himayatnagar Local Experts", description: "Serving Himayatnagar since 2014.", stats: "420+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 15-20 minute response.", stats: "15-min response" },
+        { icon: "Users", title: "Himayatnagar's #1 Choice", description: "Most trusted gas service in Himayatnagar.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Himayatnagar since 2014",
+          "Fastest Response: 15-20 minute guaranteed response",
+          "Customer Satisfaction: 420+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Himayatnagar demand immediate response — our team is available 24/7."
+      }
+    },
+    nampally: {
+      name: "Nampally",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Trusted gas repair and emergency services near Nampally station and central exhibition grounds.",
+      heroDescription: "🔥 Trusted gas repair and emergency services near Nampally station and central exhibition grounds.",
+      established: "2013",
+      responseTime: "15-20 minutes",
+      customers: "380+",
+      completedJobs: "1100+",
+      rating: "4.7",
+      pincode: "500001",
+      zone: "Old City",
+      coordinates: { lat: 17.3871, lng: 78.4674 },
+      landmarks: ["Nampally Railway Station", "Exhibition Grounds", "Public Gardens"],
+      nearbyAreas: ["Abids", "Lakdikapul"],
+      features: [
+        "Certified Gas Technicians",
+        "Central Connectivity",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Nampally.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Mahesh B.", profession: "Resident", company: "", area: "Nampally", rating: 5, text: "Prompt service near the station.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Nampally Local Experts", description: "Serving Nampally since 2013.", stats: "380+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 15-20 minute response.", stats: "15-min response" },
+        { icon: "Users", title: "Nampally's #1 Choice", description: "Most trusted gas service in Nampally.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Nampally since 2013",
+          "Fastest Response: 15-20 minute guaranteed response",
+          "Customer Satisfaction: 380+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Nampally demand immediate response — our team is available 24/7."
+      }
+    },
+    moosapet: {
+      name: "Moosapet",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Reliable gas appliance servicing for Moosapet's mixed residential and industrial localities.",
+      heroDescription: "🔥 Reliable gas appliance servicing for Moosapet's mixed residential and industrial localities.",
+      established: "2016",
+      responseTime: "25-30 minutes",
+      customers: "280+",
+      completedJobs: "800+",
+      rating: "4.7",
+      pincode: "500018",
+      zone: "Outer Ring",
+      coordinates: { lat: 17.4667, lng: 78.4285 },
+      landmarks: ["Moosapet Metro", "IDL Lake", "Kukatpally Y Junction"],
+      nearbyAreas: ["Kukatpally", "Erragadda"],
+      features: [
+        "Certified Gas Technicians",
+        "Metro-accessible",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Moosapet.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Ram P.", profession: "Resident", company: "", area: "Moosapet", rating: 5, text: "Good and reliable.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Moosapet Local Experts", description: "Serving Moosapet since 2016.", stats: "280+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response.", stats: "25-min response" },
+        { icon: "Users", title: "Moosapet's #1 Choice", description: "Most trusted gas service in Moosapet.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Moosapet since 2016",
+          "Fastest Response: 25-30 minute guaranteed response",
+          "Customer Satisfaction: 280+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Moosapet demand immediate response — our team is available 24/7."
+      }
+    },
+    erragadda: {
+      name: "Erragadda",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Fast and professional gas stove repair for the busy Erragadda area.",
+      heroDescription: "🔥 Fast and professional gas stove repair for the busy Erragadda area.",
+      established: "2015",
+      responseTime: "20-25 minutes",
+      customers: "300+",
+      completedJobs: "850+",
+      rating: "4.7",
+      pincode: "500018",
+      zone: "Outer Ring",
+      coordinates: { lat: 17.4526, lng: 78.4414 },
+      landmarks: ["Chest Hospital", "Gokul Theatre", "Sanathnagar"],
+      nearbyAreas: ["SR Nagar", "Sanathnagar"],
+      features: [
+        "Certified Gas Technicians",
+        "Quick Response",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Erragadda.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Satish K.", profession: "Resident", company: "", area: "Erragadda", rating: 5, text: "Excellent and quick.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Erragadda Local Experts", description: "Serving Erragadda since 2015.", stats: "300+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 20-25 minute response.", stats: "20-min response" },
+        { icon: "Users", title: "Erragadda's #1 Choice", description: "Most trusted gas service in Erragadda.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Erragadda since 2015",
+          "Fastest Response: 20-25 minute guaranteed response",
+          "Customer Satisfaction: 300+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Erragadda demand immediate response — our team is available 24/7."
+      }
+    },
+    "sr-nagar": {
+      name: "SR Nagar",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Expert gas services in SR Nagar, suitable for student hostels, families, and small eateries.",
+      heroDescription: "🔥 Expert gas services in SR Nagar, suitable for student hostels, families, and small eateries.",
+      established: "2014",
+      responseTime: "20-25 minutes",
+      customers: "320+",
+      completedJobs: "900+",
+      rating: "4.8",
+      pincode: "500038",
+      zone: "Outer Ring",
+      coordinates: { lat: 17.4419, lng: 78.4443 },
+      landmarks: ["SR Nagar X Road", "Umesh Chandra Statue", "Vengal Rao Nagar"],
+      nearbyAreas: ["Ameerpet", "Erragadda"],
+      features: [
+        "Certified Gas Technicians",
+        "Hostel Kitchen Support",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in SR Nagar.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Gopal N.", profession: "Hostel Owner", company: "", area: "SR Nagar", rating: 5, text: "Excellent for hostel kitchen repairs.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "SR Nagar Local Experts", description: "Serving SR Nagar since 2014.", stats: "320+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 20-25 minute response.", stats: "20-min response" },
+        { icon: "Users", title: "SR Nagar's #1 Choice", description: "Most trusted gas service in SR Nagar.", stats: "4.8★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving SR Nagar since 2014",
+          "Fastest Response: 20-25 minute guaranteed response",
+          "Customer Satisfaction: 320+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in SR Nagar demand immediate response — our team is available 24/7."
+      }
+    },
+    chandanagar: {
+      name: "Chandanagar",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Quality gas repair and installation tailored for Chandanagar's modern residential blocks.",
+      heroDescription: "🔥 Quality gas repair and installation tailored for Chandanagar's modern residential blocks.",
+      established: "2017",
+      responseTime: "25-30 minutes",
+      customers: "280+",
+      completedJobs: "700+",
+      rating: "4.7",
+      pincode: "500050",
+      zone: "Outer Ring",
+      coordinates: { lat: 17.4857, lng: 78.3299 },
+      landmarks: ["Chandanagar Railway Station", "BHEL X Road", "Gangaram"],
+      nearbyAreas: ["Miyapur", "BHEL"],
+      features: [
+        "Certified Gas Technicians",
+        "Family-focused service",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Chandanagar.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Prakash C.", profession: "Resident", company: "", area: "Chandanagar", rating: 5, text: "Fast and clean pipeline work.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Chandanagar Local Experts", description: "Serving Chandanagar since 2017.", stats: "280+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response.", stats: "25-min response" },
+        { icon: "Users", title: "Chandanagar's #1 Choice", description: "Most trusted gas service in Chandanagar.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Chandanagar since 2017",
+          "Fastest Response: 25-30 minute guaranteed response",
+          "Customer Satisfaction: 280+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Chandanagar demand immediate response — our team is available 24/7."
+      }
+    },
+    hafeezpet: {
+      name: "Hafeezpet",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Dependable gas repair services serving Hafeezpet's rapidly expanding apartment complexes.",
+      heroDescription: "🔥 Dependable gas repair services serving Hafeezpet's rapidly expanding apartment complexes.",
+      established: "2017",
+      responseTime: "25-30 minutes",
+      customers: "280+",
+      completedJobs: "750+",
+      rating: "4.7",
+      pincode: "500049",
+      zone: "Outer Ring",
+      coordinates: { lat: 17.4816, lng: 78.3582 },
+      landmarks: ["Hafeezpet Flyover", "Marthanda Nagar", "Madeenaguda"],
+      nearbyAreas: ["Miyapur", "Kondapur"],
+      features: [
+        "Certified Gas Technicians",
+        "High-rise Societies",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Hafeezpet.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Kiran R.", profession: "Resident", company: "", area: "Hafeezpet", rating: 5, text: "Excellent pipeline modification.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Hafeezpet Local Experts", description: "Serving Hafeezpet since 2017.", stats: "280+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 25-30 minute response.", stats: "25-min response" },
+        { icon: "Users", title: "Hafeezpet's #1 Choice", description: "Most trusted gas service in Hafeezpet.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Hafeezpet since 2017",
+          "Fastest Response: 25-30 minute guaranteed response",
+          "Customer Satisfaction: 280+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Hafeezpet demand immediate response — our team is available 24/7."
+      }
+    },
+    malakpet: {
+      name: "Malakpet",
+      city: "Hyderabad",
+      state: "Telangana",
+      description: "Comprehensive gas repair and pipeline maintenance for the culturally rich Malakpet area.",
+      heroDescription: "🔥 Comprehensive gas repair and pipeline maintenance for the culturally rich Malakpet area.",
+      established: "2014",
+      responseTime: "20-25 minutes",
+      customers: "320+",
+      completedJobs: "900+",
+      rating: "4.7",
+      pincode: "500036",
+      zone: "Outer Ring",
+      coordinates: { lat: 17.3752, lng: 78.4988 },
+      landmarks: ["Malakpet Metro Station", "TV Tower", "Moosarambagh"],
+      nearbyAreas: ["Dilsukhnagar", "Chaderghat"],
+      features: [
+        "Certified Gas Technicians",
+        "Heritage Area Care",
+        "Transparent Pricing",
+        "100% Satisfaction Guarantee",
+      ],
+      specialServices: [
+        { title: "Residential Gas Repair", description: "Complete gas stove, hob, and pipeline services for homes in Malakpet.", icon: "Home", features: ["Hob Repair", "Pipeline Leak Fix", "Stove Servicing"] },
+        { title: "Commercial Gas Repair", description: "Heavy-duty commercial kitchen gas line and appliance repair.", icon: "Building2", features: ["Restaurant AMC", "Hotel Kitchens", "Commercial Pipelines"] },
+      ],
+      testimonials: [
+        { name: "Anwar M.", profession: "Resident", company: "", area: "Malakpet", rating: 5, text: "Prompt and reliable.", service: "Gas Pipeline Repair", date: "December 2024", jobType: "Pipeline Repair" }
+      ],
+      advantages: [
+        { icon: "MapPin", title: "Malakpet Local Experts", description: "Serving Malakpet since 2014.", stats: "320+ customers" },
+        { icon: "Clock", title: "Fastest Local Response", description: "Guaranteed 20-25 minute response.", stats: "20-min response" },
+        { icon: "Users", title: "Malakpet's #1 Choice", description: "Most trusted gas service in Malakpet.", stats: "4.7★ rating" },
+        { icon: "Shield", title: "Licensed & Trusted", description: "Telangana-licensed, fully insured.", stats: "100% licensed" },
+      ],
+      seoContent: {
+        whyChoose: [
+          "Local Expertise: Serving Malakpet since 2014",
+          "Fastest Response: 20-25 minute guaranteed response",
+          "Customer Satisfaction: 320+ happy customers",
+          "Certified Technicians: Licensed for Telangana gas work",
+          "24/7 Emergency: Critical emergency service available"
+        ],
+        services: {
+          residential: ["Gas stove and hob repair for apartments", "Pipeline installation and maintenance", "LPG connection and regulator setup"],
+          commercial: ["Restaurant and canteen kitchen gas maintenance", "Commercial pipeline installation", "Gas safety audits and compliance"]
+        },
+        emergencyInfo: "Gas emergencies in Malakpet demand immediate response — our team is available 24/7."
+      }
+    }
+  },
 }
 
 // Helper function to get area data

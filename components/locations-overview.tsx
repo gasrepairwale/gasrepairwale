@@ -38,6 +38,17 @@ export function LocationsOverview() {
       description: "Professional gas appliance services throughout Mumbai metro area with 16 major locations covered.",
       responseTime: "20-35 minutes",
     },
+    {
+      city: "Hyderabad",
+      href: "/locations/hyderabad",
+      areas: [
+        "Gachibowli", "HITEC City", "Madhapur", "Kondapur", "Nanakramguda", 
+        "Financial District", "Banjara Hills", "Jubilee Hills", "Somajiguda", 
+        "Panjagutta", "Begumpet", "Ameerpet"
+      ],
+      description: "Expert gas appliance services across Hyderabad's tech corridors and residential areas with 12 major locations covered.",
+      responseTime: "20-30 minutes",
+    },
   ]
 
   return (

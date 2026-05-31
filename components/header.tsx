@@ -25,6 +25,7 @@ export function Header() {
       submenu: [
         { href: "/locations/pune", label: "Pune" },
         { href: "/locations/mumbai", label: "Mumbai" },
+        { href: "/locations/hyderabad", label: "Hyderabad" },
       ],
     },
   ]
