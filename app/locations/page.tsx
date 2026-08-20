@@ -2,42 +2,45 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { MapPin, Phone, Clock, Star, CheckCircle, ArrowRight } from "lucide-react"
 import { areaData } from "@/data/area-data"
+import { TrackedWhatsAppButton } from "@/components/tracked-whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Service Locations | Gas Repair Services in Pune & Mumbai | Gas Repair Wale",
+  title: "Service Locations | Gas Repair in Pune, Mumbai & Hyderabad | Gas Repair Wale",
   description:
-    "Professional gas repair services across 30+ locations in Pune and 16+ areas in Mumbai. Find your area and get expert gas stove repair, pipeline installation & emergency services. Call +91 83027 13127",
+    "Professional gas repair services across 75+ locations in Pune, Mumbai & Hyderabad. Find your area and get expert gas stove repair, pipeline installation & 24/7 emergency service. Call +91 83027 13127",
   keywords: [
     "gas repair locations pune",
-    "gas repair locations Mumbai",
+    "gas repair locations mumbai",
+    "gas repair locations hyderabad",
     "gas service areas pune",
-    "gas service areas Mumbai",
+    "gas service areas mumbai",
+    "gas service areas hyderabad",
     "gas repair near me",
     "gas stove repair locations",
     "pipeline installation areas",
     "emergency gas service locations",
   ].join(", "),
   openGraph: {
-    title: "Service Locations | Gas Repair Services in Pune & Mumbai",
-    description: "Professional gas repair services across 30+ locations in Pune and 16+ areas in Mumbai. Find your area and get expert service.",
+    title: "Service Locations | Gas Repair in Pune, Mumbai & Hyderabad",
+    description: "Professional gas repair services across 75+ locations in Pune, Mumbai and Hyderabad. Find your area for instant service.",
     url: "https://gasrepairwale.com/locations",
     siteName: "Gas Repair Wale",
     images: [
       {
-        url: "/placeholder.svg?height=630&width=1200&text=Service+Locations",
+        url: "https://gasrepairwale.com/api/og?area=All+Locations&city=Pune+Mumbai+Hyderabad&service=Gas+Repair",
         width: 1200,
         height: 630,
-        alt: "Gas Repair Wale Service Locations",
+        alt: "Gas Repair Wale Service Locations in Pune, Mumbai and Hyderabad",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Service Locations | Gas Repair Services in Pune & Mumbai",
-    description: "Professional gas repair services across 30+ locations in Pune and 16+ areas in Mumbai.",
-    images: ["/placeholder.svg?height=630&width=1200&text=Service+Locations"],
+    title: "Service Locations | Gas Repair in Pune, Mumbai & Hyderabad",
+    description: "Professional gas repair services across 75+ locations in Pune, Mumbai and Hyderabad.",
+    images: ["https://gasrepairwale.com/api/og?area=All+Locations&city=Pune+Mumbai+Hyderabad&service=Gas+Repair"],
   },
   robots: {
     index: true,
@@ -236,13 +239,12 @@ export default function LocationsPage() {
               Call Now: +91 83027 13127
             </a>
             
-            <Link
-              href="/"
+            <TrackedWhatsAppButton
+              message="Hi, I want to book a gas repair service. Please help me."
+              source="Locations Page — Book via WhatsApp"
+              label="💬 Book via WhatsApp →"
               className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-semibold text-lg transition-colors flex items-center justify-center"
-            >
-              Book Online
-              <ArrowRight className="h-5 w-5 ml-2" />
-            </Link>
+            />
           </div>
         </div>
       </div>

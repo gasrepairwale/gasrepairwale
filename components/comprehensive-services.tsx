@@ -57,7 +57,7 @@ export function ComprehensiveServices() {
       title: "Gas Pipeline Installation & Repair",
       shortDesc: "Professional gas pipeline services for residential and commercial properties",
       fullDesc:
-        "We provide complete gas pipeline solutions including new installations, repairs, maintenance, and upgrades. Our services comply with all safety standards and local regulations in Maharastra.",
+        "We provide complete gas pipeline solutions including new installations, repairs, maintenance, and upgrades. Our services comply with all safety standards and local regulations in Maharashtra.",
       features: [
         "New pipeline installation",
         "Pipeline leak detection",
@@ -447,3 +447,4 @@ export function ComprehensiveServices() {
     </section>
   )
 }
+

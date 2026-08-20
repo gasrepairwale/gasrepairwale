@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -8,8 +6,8 @@ import { ContactCTA } from "@/components/contact-cta"
 import { MapPin, Phone, Clock, Star, Users, Award, Shield, ChevronRight, Home } from "lucide-react"
 import { BreadcrumbSchema } from "@/components/json-ld/breadcrumb-schema"
 import { ServiceSchema } from "@/components/json-ld/service-schema"
-import { FAQSchema } from "@/components/json-ld/faq-schema" // Assuming you will create/have this
-import { trackPhoneCall } from "@/lib/analytics"
+import { FAQSchema } from "@/components/json-ld/faq-schema"
+import { TrackedLink } from "@/components/tracked-link"
 
 interface CityData {
   name: string
@@ -58,8 +56,9 @@ interface LocationPageContentProps {
 }
 
 /**
- * Dynamic Location Page Content Component
- * SEO-optimized location pages with comprehensive local content
+ * Dynamic Location Page Content Component (Server Component)
+ * SEO-optimized location pages with comprehensive local content.
+ * Interactive elements (phone click tracking) handled by TrackedLink client component.
  */
 export function LocationPageContent({ city, citySlug }: LocationPageContentProps) {
   // Icon mapping for advantages
@@ -81,44 +80,48 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
     { name: city.name, item: `https://gasrepairwale.com/locations/${citySlug}` },
   ]
 
-  // Generic FAQs for the city (can be customized per city if data allowed)
   const cityFaqs = [
     {
       question: `Do you provide gas stove repair in ${city.name}?`,
-      answer: `Yes, we provide professional gas stove repair services across all areas of ${city.name} including ${city.areas.slice(0, 3).map(a => a.name).join(", ")}.`,
+      answer: `Yes, we provide professional gas stove repair services across all areas of ${city.name} including ${city.areas.slice(0, 3).map(a => a.name).join(", ")} and many more. Our local technicians serve every corner of ${city.name}.`,
     },
     {
       question: `How fast can you reach for an emergency in ${city.name}?`,
-      answer: `We guarantee a response time of ${city.avgResponseTime} for gas emergencies in ${city.name}.`,
+      answer: `We guarantee a response time of ${city.avgResponseTime} for gas emergencies in ${city.name}. Our emergency team is stationed across ${city.name} for quick response.`,
     },
-     {
+    {
       question: `Are your technicians in ${city.name} licensed?`,
-      answer: `Absolutely. All our technicians serving ${city.name} are licensed and certified for gas pipeline and appliance work.`,
+      answer: `Absolutely. All our technicians serving ${city.name} are licensed and certified for gas pipeline and appliance work. We carry all necessary documentation and safety equipment.`,
+    },
+    {
+      question: `What is the gas stove repair cost in ${city.name}?`,
+      answer: `Gas stove repair in ${city.name} starts from ₹299 for minor issues. The total cost depends on the type of repair needed. We provide transparent pricing with no hidden charges before starting any work.`,
     },
   ]
 
-
   return (
     <main className="min-h-screen">
-      {/* Schema Markup */}
+      {/* Schema Markup — renders as JSON-LD in <head>, works in server components */}
       <BreadcrumbSchema items={breadcrumbItems} />
-      <ServiceSchema 
+      <ServiceSchema
         name={`Gas Repair Services in ${city.name}`}
         description={city.description}
         providerName="Gas Repair Wale"
         areaServed={city.name}
-        serviceType="Gas Appliance Repair" 
+        serviceType="Gas Appliance Repair"
       />
       <FAQSchema faqs={cityFaqs} />
 
       {/* Visual Breadcrumb Navigation */}
       <div className="bg-gray-50 border-b">
          <div className="container mx-auto px-4 py-3">
-            <nav className="flex items-center text-sm text-gray-600">
+            <nav className="flex items-center text-sm text-gray-600" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-orange-600 flex items-center">
                  <Home className="w-4 h-4 mr-1"/> Home
               </Link>
-              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
+              <Link href="/locations" className="hover:text-orange-600">Locations</Link>
+              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
               <span className="text-gray-900 font-medium capitalize">{city.name}</span>
             </nav>
          </div>
@@ -140,25 +143,31 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
             <p className="text-xl text-gray-600 leading-relaxed mb-8">{city.heroDescription}</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              {/* TrackedLink is a client component used inside server component — valid in Next.js */}
               <Button
+                asChild
                 size="lg"
                 className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold"
               >
-                <a 
-                  href="tel:+918302713127" 
+                <TrackedLink
+                  href="tel:+918302713127"
                   className="flex items-center space-x-2"
-                  onClick={() => trackPhoneCall("+918302713127", city.name)}
+                  category="phone"
+                  city={city.name}
                 >
                   <Phone className="h-5 w-5" />
                   <span>CALL NOW: +91 83027 13127</span>
-                </a>
+                </TrackedLink>
               </Button>
               <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-bold"
               >
-                💰 Get FREE Quote
+                <Link href="#booking-form">
+                  💰 Get FREE Quote
+                </Link>
               </Button>
             </div>
 
@@ -247,21 +256,23 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                     </div>
                   </div>
 
+                  {/* Proper button structure — no button inside anchor */}
                   <div className="flex gap-2">
-                    <Button asChild className="flex-1 text-white bg-orange-600 hover:bg-orange-700">
-                      <Link href={`/locations/${citySlug}/${area.slug}`}>View Details</Link>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="flex-1 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
+                    <Link
+                      href={`/locations/${citySlug}/${area.slug}`}
+                      className="flex-1 text-center py-2 px-4 bg-orange-600 hover:bg-orange-700 text-white rounded-md text-sm font-medium transition-colors"
                     >
-                      <a 
-                        href="tel:+918302713127"
-                        onClick={() => trackPhoneCall("+918302713127", city.name, area.name)}
-                      >
-                        Call Now
-                      </a>
-                    </Button>
+                      View Details
+                    </Link>
+                    <TrackedLink
+                      href="tel:+918302713127"
+                      className="flex-1 text-center py-2 px-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 rounded-md text-sm font-medium transition-colors"
+                      category="phone"
+                      city={city.name}
+                      area={area.name}
+                    >
+                      Call Now
+                    </TrackedLink>
                   </div>
                 </CardContent>
               </Card>
@@ -332,7 +343,6 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                   </div>
                   <p className="text-gray-700 mb-4 leading-relaxed">"{testimonial.text}"</p>
 
-                  {/* Service details */}
                   <div className="bg-orange-50 p-3 rounded-lg mb-4">
                     <div className="flex justify-between items-center text-sm">
                       <span className="text-gray-600">Service:</span>
@@ -393,7 +403,6 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Local SEO Content</Badge>
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               🔧 Professional Gas Services in {city.name}, {city.state}
             </h2>
@@ -453,14 +462,14 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
         </div>
       </section>
 
-      {/* Visual FAQ Section for Users */}
+      {/* Visual FAQ Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="container mx-auto px-4">
              <div className="text-center mb-16">
                 <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Common Questions</Badge>
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">FAQs about Gas Service in {city.name}</h2>
              </div>
-             
+
              <div className="max-w-3xl mx-auto space-y-4">
                 {cityFaqs.map((faq, i) => (
                   <Card key={i} className="hover:shadow-md transition-shadow">
@@ -479,4 +488,3 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
     </main>
   )
 }
-

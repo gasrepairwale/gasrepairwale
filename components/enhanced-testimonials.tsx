@@ -83,13 +83,13 @@ export function EnhancedTestimonials() {
     },
     {
       name: "Kavitha Nair",
-      location: "Malda East West, Mumbai",
+      location: "Gachibowli, Hyderabad",
       profession: "Teacher",
       rating: 5,
       date: "July 2024",
       service: "Gas Stove Service & Cleaning",
       issue: "Poor flame quality and efficiency",
-      text: "My 3-year-old gas stove was giving uneven flames and taking longer to cook. The technician from Gas Repair Wale completely serviced the stove - cleaned all burners, replaced worn parts, and adjusted the gas flow. Now it works like new! The service was thorough, reasonably priced (₹399), and they even gave tips for maintenance.",
+      text: "My 3-year-old gas stove was giving uneven flames and taking longer to cook. The technician from Gas Repair Wale completely serviced the stove in our Gachibowli apartment - cleaned all burners, replaced worn parts, and adjusted the gas flow. Now it works like new! Highly recommended across Hyderabad.",
       beforeImage: "Dirty, inefficient burners",
       afterImage: "Clean, efficient flames",
       verified: true,
@@ -113,7 +113,7 @@ export function EnhancedTestimonials() {
           <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">Real Customer Experiences</Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Customers Say About Our Gas Services</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Don't just take our word for it. Read detailed reviews from real customers across Pune and Mumbai who
+            Don't just take our word for it. Read detailed reviews from real customers across Pune, Mumbai & Hyderabad who
             have experienced our professional gas repair and maintenance services firsthand.
           </p>
         </div>

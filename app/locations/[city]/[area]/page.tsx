@@ -10,6 +10,8 @@ import { areaData } from "@/data/area-data"
 import { BreadcrumbSchema } from "@/components/json-ld/breadcrumb-schema"
 import { ServiceSchema } from "@/components/json-ld/service-schema"
 import { FAQSchema } from "@/components/json-ld/faq-schema"
+import { TrackedLink } from "@/components/tracked-link"
+import { getWhatsAppRedirectUrl } from "@/lib/analytics"
 import {
   MapPin,
   Phone,
@@ -31,8 +33,6 @@ import {
   MessageSquare,
   PhoneCall
 } from "lucide-react"
-import { TrackedLink } from "@/components/tracked-link"
-import { getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 type Props = {
   params: Promise<{ city: string; area: string }>
@@ -49,11 +49,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
-  // Type assertion - TypeScript can't narrow optional chaining types properly
   const area = areaData_temp as any
 
-  const title = `Gas Repair Services in ${area.name}, ${area.city} | ${area.responseTime} Response | Gas Repair Wale`
-  const description = `⭐ #1 Gas Repair Service in ${area.name}, ${area.city} ✅ ${area.customers} Happy Customers ✅ ${area.responseTime} Response Time ✅ ${area.rating}★ Rating ✅ Local Experts Since ${area.establishedYear}. Call +91 83027 13127!`
+  const title = `Gas Repair in ${area.name}, ${area.city} | ${area.responseTime} Response | Licensed Technicians`
+  const description = `⭐ #1 Gas Repair Service in ${area.name}, ${area.city} ✅ ${area.customers} Happy Customers ✅ ${area.responseTime} Response ✅ ${area.rating}★ Rating ✅ 24/7 Emergency. Call +91 83027 13127!`
 
   return {
     title,
@@ -98,7 +97,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "Gas Repair Wale",
       images: [
         {
-          url: "/placeholder.svg?height=630&width=1200" + area.name + " " + area.city,
+          // Dynamic OG image — unique branded image per area page
+          url: `https://gasrepairwale.com/api/og?area=${encodeURIComponent(area.name)}&city=${encodeURIComponent(area.city)}&service=Gas+Repair`,
           width: 1200,
           height: 630,
           alt: `Gas Repair Services in ${area.name}, ${area.city}`,
@@ -109,14 +109,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      creator: "@gasrepairewale",
-      images: ["/placeholder.svg?height=630&width=1200" + area.name + " " + area.city],
+      creator: "@gasrepairwale",
+      images: [`https://gasrepairwale.com/api/og?area=${encodeURIComponent(area.name)}&city=${encodeURIComponent(area.city)}`],
     },
     alternates: {
       canonical: `https://gasrepairwale.com/locations/${city}/${areaParam}`,
-    },
-    other: {
-      "google-site-verification": "JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE",
     },
   }
 }
@@ -133,8 +130,6 @@ export async function generateStaticParams() {
   return params
 }
 
-// moved to components/quick-booking-form
-
 export default async function AreaPage({ params }: Props) {
   const { city, area: areaParam } = await params
   const cityAreas = (areaData as any)[city]
@@ -144,7 +139,6 @@ export default async function AreaPage({ params }: Props) {
     notFound()
   }
 
-  // Type assertion - TypeScript can't narrow optional chaining types properly
   const area = areaData_temp as any
 
   // Icon mapping for advantages
@@ -173,43 +167,60 @@ export default async function AreaPage({ params }: Props) {
   const areaFaqs = [
     {
       question: `Do you provide gas stove repair in ${area.name}?`,
-      answer: `Yes, we provide specialized gas stove repair services in ${area.name}, ${area.city} (${area.pincode}). Our local technicians are stationed nearby for quick service.`,
+      answer: `Yes, we provide specialized gas stove repair services in ${area.name}, ${area.city} (${area.pincode}). Our local technicians are stationed nearby for quick ${area.responseTime} service.`,
     },
     {
       question: `How quickly can you reach ${area.name} for an emergency?`,
-      answer: `We guarantee a response time of ${area.responseTime} for gas emergencies in ${area.name}. Our emergency team is available 24/7.`,
+      answer: `We guarantee a response time of ${area.responseTime} for gas emergencies in ${area.name}. Our emergency team is available 24/7 throughout the year including weekends and holidays.`,
     },
     {
       question: `Do you service both residential and commercial properties in ${area.name}?`,
-      answer: `Yes, we offer comprehensive gas pipeline and appliance services for both residential homes and commercial establishments in ${area.name}.`,
+      answer: `Yes, we offer comprehensive gas pipeline and appliance services for both residential homes and commercial establishments in ${area.name}. This includes restaurants, offices, and housing societies.`,
+    },
+    {
+      question: `What is the cost of gas stove repair in ${area.name}?`,
+      answer: `Gas stove repair in ${area.name} starts from ₹299 for basic issues. Complex repairs cost ₹499–₹1499 depending on parts needed. We provide transparent pricing with no hidden charges.`,
     },
   ]
+
+  // Get nearby areas from same city for internal linking
+  const allCityAreas = Object.keys(cityAreas)
+  const currentAreaIndex = allCityAreas.indexOf(areaParam)
+  const nearbyAreaSlugs = allCityAreas
+    .filter((a) => a !== areaParam)
+    .slice(
+      Math.max(0, currentAreaIndex - 3),
+      Math.min(allCityAreas.length, currentAreaIndex + 4)
+    )
+    .slice(0, 6)
 
   return (
     <main className="min-h-screen">
       {/* Schema Markup */}
       <BreadcrumbSchema items={breadcrumbItems} />
-      <ServiceSchema 
+      <ServiceSchema
         name={`Gas Repair Services in ${area.name}`}
         description={`Professional gas repair and pipeline services in ${area.name}, ${area.city}.`}
         providerName="Gas Repair Wale"
         areaServed={area.name}
-        serviceType="Gas Appliance Repair" 
+        serviceType="Gas Appliance Repair"
       />
       <FAQSchema faqs={areaFaqs} />
 
       {/* Visual Breadcrumb Navigation */}
       <div className="bg-gray-50 border-b">
          <div className="container mx-auto px-4 py-3">
-            <nav className="flex items-center text-sm text-gray-600 flex-wrap">
+            <nav className="flex items-center text-sm text-gray-600 flex-wrap" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-orange-600 flex items-center">
                  <Home className="w-4 h-4 mr-1"/> Home
               </Link>
-              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
+              <Link href="/locations" className="hover:text-orange-600">Locations</Link>
+              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
               <Link href={`/locations/${city}`} className="hover:text-orange-600 capitalize">
                 {area.city}
               </Link>
-              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
               <span className="text-gray-900 font-medium capitalize">{area.name}</span>
             </nav>
          </div>
@@ -229,7 +240,7 @@ export default async function AreaPage({ params }: Props) {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left side - Enhanced Content */}
+            {/* Left side — Enhanced Content */}
             <div className="space-y-8">
               {/* Location badge */}
               <div className="flex flex-wrap gap-3">
@@ -319,15 +330,15 @@ export default async function AreaPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* CTA buttons */}
+              {/* CTA buttons — using TrackedLink (client component) inside Button (valid HTML) */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   asChild
                   size="lg"
                   className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
                 >
-                  <TrackedLink 
-                    href="tel:+918302713127" 
+                  <TrackedLink
+                    href="tel:+918302713127"
                     className="flex items-center space-x-2"
                     category="phone"
                     city={area.city}
@@ -344,24 +355,26 @@ export default async function AreaPage({ params }: Props) {
                   variant="outline"
                   className="text-lg px-8 py-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-semibold hover:shadow-lg transition-all duration-200"
                 >
-                  <TrackedLink 
+                  <TrackedLink
                     href={getWhatsAppRedirectUrl({
                       serviceType: "General Inquiry",
                       city: area.city,
                       area: area.name,
-                      message: `Hi, I am visiting from the ${area.name} page and want a quote.`
+                      message: `Hi, I need gas repair service in ${area.name}, ${area.city}.`,
                     })}
+                    className="flex items-center space-x-2"
                     category="whatsapp"
                     city={area.city}
                     area={area.name}
                   >
-                    WhatsApp Quote
+                    <MessageSquare className="h-5 w-5" />
+                    <span>WhatsApp Quote</span>
                   </TrackedLink>
                 </Button>
               </div>
 
               {/* Trust signals */}
-              <div className="flex items-center space-x-6 text-sm text-gray-600">
+              <div className="flex items-center space-x-6 text-sm text-gray-600 flex-wrap gap-y-2">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-500" />
                   <span>Government Licensed</span>
@@ -372,387 +385,163 @@ export default async function AreaPage({ params }: Props) {
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>Same Day Service</span>
+                  <span>10+ Years Experience</span>
                 </div>
               </div>
             </div>
 
-            {/* Right side - Enhanced Booking Form */}
+            {/* Right side — Quick Booking Form */}
             <QuickBookingForm area={area} />
           </div>
         </div>
       </section>
 
-      {/* Coverage areas with enhanced design */}
+      {/* Special Services Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Service Coverage</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">📍 Areas We Cover in {area.name}</h2>
+            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Our Services</Badge>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Gas Repair Services in {area.name}
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We provide comprehensive gas repair services across all parts of {area.name} and surrounding areas with
-              the fastest response times in the region.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
-            {area.landmarks.map((landmark: string, index: number) => (
-              <TrackedLink
-                key={index}
-                href={getWhatsAppRedirectUrl({
-                  serviceType: "Area Inquiry",
-                  city: area.city,
-                  area: area.name,
-                  message: `Hi, I am looking for gas service near ${landmark} in ${area.name}.`
-                })}
-                category="whatsapp"
-                city={area.city}
-                area={area.name}
-                className="flex items-center space-x-3 bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-lg hover:shadow-md transition-shadow cursor-pointer group no-underline"
-              >
-                <MapPin className="h-5 w-5 text-orange-600 group-hover:scale-110 transition-transform" />
-                <span className="font-medium group-hover:text-orange-600 transition-colors">{landmark}</span>
-              </TrackedLink>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <div className="inline-flex items-center space-x-2 bg-green-50 px-6 py-3 rounded-full">
-              <Clock className="h-5 w-5 text-green-600" />
-              <span className="text-green-600 font-semibold">Average Response Time: {area.responseTime}</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Specialized services with booking forms */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Specialized Services</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">🔧 Our Specialized Services in {area.name}</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Tailored gas services designed specifically for {area.name}'s unique residential and commercial needs.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {area.specialServices.map((service: any, index: number) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 group">
-                <CardHeader>
-                  <CardTitle className="flex items-center justify-between">
-                    <span>{service.title}</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-gray-600">{service.description}</p>
-
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Features:</h4>
-                    <ul className="space-y-2">
-                      {service.features.map((feature: string, featureIndex: number) => (
-                        <li key={featureIndex} className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 text-green-600" />
-                          <span className="text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Button asChild className="w-full text-white bg-orange-600 hover:bg-orange-700 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600 h-10">
-                      <TrackedLink 
-                        href="tel:+918302713127"
-                        category="phone"
-                        city={area.city}
-                        area={area.name}
-                        className="flex items-center justify-center space-x-2 w-full h-full"
-                      >
-                        <PhoneCall className="h-4 w-4" />
-                        <span>Call for Booking</span>
-                      </TrackedLink>
-                    </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="w-full border-green-600 text-green-600 hover:bg-green-50 bg-transparent h-10"
-                    >
-                      <TrackedLink 
-                        href={getWhatsAppRedirectUrl({
-                          serviceType: service.title,
-                          city: area.city,
-                          area: area.name,
-                          message: `Hi, I want to get a quote for ${service.title} in ${area.name}, ${area.city}.`
-                        })}
-                        category="whatsapp"
-                        city={area.city}
-                        area={area.name}
-                        className="flex items-center justify-center space-x-2 w-full h-full"
-                      >
-                        <MessageSquare className="h-4 w-4" />
-                        <span>WhatsApp Quote</span>
-                      </TrackedLink>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Additional booking form */}
-          <div className="max-w-2xl mx-auto">
-            <QuickBookingForm area={area} />
-          </div>
-        </div>
-      </section>
-
-      {/* Why choose us in this area */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">Local Advantages</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">🏆 Why {area.name} Residents Choose Us</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Local expertise with deep understanding of {area.name}'s unique requirements and community needs.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {area.advantages.map((advantage: any, index: number) => {
-              const IconComponent = getIcon(advantage.icon)
-              const gradients = [
-                "from-orange-100 to-red-100",
-                "from-green-100 to-blue-100",
-                "from-yellow-100 to-orange-100",
-                "from-purple-100 to-pink-100",
-              ]
-              const iconColors = ["text-orange-600", "text-green-600", "text-yellow-600", "text-purple-600"]
-
-              return (
-                <div key={index} className="text-center group">
-                  <div
-                    className={`w-16 h-16 bg-gradient-to-r ${gradients[index % gradients.length]} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}
-                  >
-                    <IconComponent className={`h-8 w-8 ${iconColors[index % iconColors.length]}`} />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{advantage.title}</h3>
-                  <p className="text-gray-600 mb-2">{advantage.description}</p>
-                  <Badge className="bg-blue-100 text-blue-800">{advantage.stats}</Badge>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced local testimonials */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-yellow-100 text-yellow-800 px-4 py-2 mb-4">Customer Reviews</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">💬 What {area.name} Customers Say</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real feedback from our satisfied customers in {area.name} area with detailed service experiences.
+              Comprehensive gas repair solutions for homes and businesses in {area.name}, {area.city}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {area.testimonials.map((testimonial: any, index: number) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 group">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_: any, starIndex: number) => (
-                      <Star key={starIndex} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            {area.specialServices?.map((service: any, index: number) => (
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-orange-600">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-3">
+                    <div className="p-2 bg-orange-100 rounded-lg">
+                      <Wrench className="h-6 w-6 text-orange-600" />
+                    </div>
+                    <span className="text-lg">{service.title}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <ul className="space-y-2">
+                    {service.features?.map((feature: string, fi: number) => (
+                      <li key={fi} className="flex items-start space-x-2 text-sm">
+                        <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
                     ))}
-                  </div>
-
-                  <p className="text-gray-700 mb-4 leading-relaxed">"{testimonial.text}"</p>
-
-                  {/* Enhanced service details */}
-                  <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-lg mb-4 space-y-2">
-                    <div className="flex justify-between items-center text-sm">
-                      <span className="text-gray-600">Service:</span>
-                      <span className="font-medium text-orange-600">{testimonial.service}</span>
-                    </div>
-                    <div className="flex justify-between items-center text-sm">
-                      <span className="text-gray-600">Job Type:</span>
-                      <span className="font-medium text-gray-700">{testimonial.jobType}</span>
-                    </div>
-                    <div className="flex justify-between items-center text-sm">
-                      <span className="text-gray-600">Date:</span>
-                      <span className="font-medium text-gray-700">{testimonial.date}</span>
-                    </div>
-                  </div>
-
-                  <div className="border-t pt-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                        <p className="text-sm text-blue-600">{testimonial.profession}</p>
-                        <p className="text-sm text-gray-600">{testimonial.company}</p>
-                        <p className="text-sm text-gray-500">
-                          {testimonial.area}, {area.city}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  </ul>
                 </CardContent>
               </Card>
             ))}
           </div>
-
-          {/* Call to action after testimonials */}
-          <div className="text-center mt-12">
-            <div className="bg-gradient-to-r from-orange-600 to-red-600 p-8 rounded-2xl text-white">
-              <h3 className="text-2xl font-bold mb-4">Ready to Experience Our Service?</h3>
-              <p className="text-xl mb-6">
-                Join {area.customers} satisfied customers in {area.name}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100 font-bold">
-                  <TrackedLink 
-                    href="tel:+918302713127" 
-                    className="flex items-center space-x-2"
-                    category="phone"
-                    city={area.city}
-                    area={area.name}
-                  >
-                    <Phone className="h-5 w-5" />
-                    <span>Call Now: +91 83027 13127</span>
-                  </TrackedLink>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white/10 font-bold bg-transparent"
-                >
-                  <TrackedLink 
-                    href={getWhatsAppRedirectUrl({
-                      serviceType: "Online Booking",
-                      city: area.city,
-                      area: area.name,
-                      message: `Hi, I want to book a service in ${area.name}.`
-                    })}
-                    category="whatsapp"
-                    city={area.city}
-                    area={area.name}
-                  >
-                    Book via WhatsApp
-                  </TrackedLink>
-                </Button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* Emergency service highlight */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600">
-        <div className="container mx-auto px-4">
-          <div className="text-center text-white">
-            <h2 className="text-4xl font-bold mb-6">🚨 Emergency Service in {area.name}</h2>
-            <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
-              Gas emergencies can't wait! Our {area.name}-based team provides 24/7 emergency service with the fastest
-              response time in the area.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-red-500/80 p-6 rounded-lg hover:bg-red-500/90 transition-colors">
-                <Clock className="h-8 w-8 mx-auto mb-3" />
-                <h3 className="font-bold mb-2">24/7 Available</h3>
-                <p className="text-red-100">Round-the-clock emergency service</p>
-              </div>
-              <div className="bg-red-500/80 p-6 rounded-lg hover:bg-red-500/90 transition-colors">
-                <MapPin className="h-8 w-8 mx-auto mb-3" />
-                <h3 className="font-bold mb-2">Local Team</h3>
-                <p className="text-red-100">{area.name}-based technicians</p>
-              </div>
-              <div className="bg-red-500/80 p-6 rounded-lg hover:bg-red-500/90 transition-colors">
-                <Phone className="h-8 w-8 mx-auto mb-3" />
-                <h3 className="font-bold mb-2">Quick Response</h3>
-                <p className="text-red-100">{area.responseTime} emergency response</p>
-              </div>
+      {/* Advantages Section */}
+      {area.advantages && (
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">Why Choose Us</Badge>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Why {area.name} Customers Trust Gas Repair Wale
+              </h2>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-bold border-0">
-                <TrackedLink 
-                  href="tel:+918302713127" 
-                  className="flex items-center space-x-2"
-                  category="phone"
-                  city={area.city}
-                  area={area.name}
-                >
-                  <Phone className="h-5 w-5" />
-                  <span>Call: +91 83027 13127</span>
-                </TrackedLink>
-              </Button>
-              <Button asChild size="lg" className="bg-green-600 text-white hover:bg-green-700 font-bold border-0">
-                <TrackedLink 
-                  href={getWhatsAppRedirectUrl({
-                    serviceType: "Emergency",
-                    city: area.city,
-                    area: area.name,
-                    message: `🚨 EMERGENCY: I need immediate gas repair in ${area.name}!`
-                  })}
-                  className="flex items-center space-x-2"
-                  category="whatsapp"
-                  city={area.city}
-                  area={area.name}
-                >
-                  <MessageSquare className="h-5 w-5" />
-                  <span>WhatsApp Emergency</span>
-                </TrackedLink>
-              </Button>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {area.advantages.map((advantage: any, index: number) => {
+                const IconComponent = getIcon(advantage.icon)
+                return (
+                  <div key={index} className="text-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div className="w-16 h-16 bg-gradient-to-r from-orange-100 to-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <IconComponent className="h-8 w-8 text-orange-600" />
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">{advantage.title}</h3>
+                    <p className="text-gray-600 text-sm">{advantage.description}</p>
+                    {advantage.stats && (
+                      <div className="mt-3 text-orange-600 font-semibold text-sm">{advantage.stats}</div>
+                    )}
+                  </div>
+                )
+              })}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* Enhanced local SEO content */}
-      <section className="py-20 bg-white">
+      {/* Testimonials */}
+      {area.testimonials && area.testimonials.length > 0 && (
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Customer Reviews</Badge>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                What {area.name} Customers Say
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {area.testimonials.map((testimonial: any, index: number) => (
+                <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center space-x-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, starIndex) => (
+                        <Star key={starIndex} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <p className="text-gray-700 mb-4 leading-relaxed text-sm">"{testimonial.text}"</p>
+                    <div className="bg-orange-50 p-3 rounded-lg mb-3 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Service:</span>
+                        <span className="font-medium text-orange-600">{testimonial.service}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Date:</span>
+                        <span className="font-medium text-gray-700">{testimonial.date}</span>
+                      </div>
+                    </div>
+                    <div className="border-t pt-3">
+                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                      <p className="text-sm text-gray-600">{testimonial.profession}</p>
+                      <p className="text-sm text-gray-500">{testimonial.area}, {area.name}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Rich SEO Content Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Local SEO Content</Badge>
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              🔧 Professional Gas Services in {area.name}, {area.city}
+              Professional Gas Services in {area.name}, {area.city} — {area.pincode}
             </h2>
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p>
-                <strong>Gas Repair Wale</strong> has been serving {area.name} since {area.establishedYear}, providing
-                professional gas stove repair, pipeline services, and appliance maintenance. Our team of licensed and
-                certified technicians understands the unique requirements of {area.name} residents and businesses with
-                {area.completedJobs} successfully completed jobs.
+                <strong>Gas Repair Wale</strong> provides comprehensive gas appliance services in{" "}
+                {area.name}, {area.city}. Our certified technicians are locally based in {area.city}{" "}
+                and provide guaranteed <strong>{area.responseTime}</strong> response time across{" "}
+                {area.name} and surrounding areas including{" "}
+                {area.landmarks?.slice(0, 3).join(", ")}.
               </p>
 
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Why Choose Our Gas Repair Services in {area.name}?
-              </h3>
-
-              <ul className="space-y-2">
-                {area.seoContent.whyChoose.map((point: string, index: number) => (
-                  <li key={index}>
-                    ✅ <strong>{point.split(":")[0]}:</strong> {point.split(":")[1]}
-                  </li>
-                ))}
-              </ul>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Our Gas Services in {area.name} Include:</h3>
-
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div>
-                  <h4 className="text-lg font-semibold mb-2">🏠 Residential Services</h4>
-                  <ul className="text-sm space-y-1">
-                    {area.seoContent.services.residential.map((service: string, index: number) => (
-                      <li key={index}>• {service}</li>
+                  <h3 className="text-xl font-semibold mb-3">🏠 Residential Services</h3>
+                  <ul className="space-y-1 text-sm">
+                    {area.seoContent?.services?.residential?.map((s: string, i: number) => (
+                      <li key={i}>• {s}</li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-2">🏢 Commercial Services</h4>
-                  <ul className="text-sm space-y-1">
-                    {area.seoContent.services.commercial.map((service: string, index: number) => (
-                      <li key={index}>• {service}</li>
+                  <h3 className="text-xl font-semibold mb-3">🏢 Commercial Services</h3>
+                  <ul className="space-y-1 text-sm">
+                    {area.seoContent?.services?.commercial?.map((s: string, i: number) => (
+                      <li key={i}>• {s}</li>
                     ))}
                   </ul>
                 </div>
@@ -761,14 +550,14 @@ export default async function AreaPage({ params }: Props) {
               <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mt-8">
                 <h4 className="text-lg font-bold text-blue-900 mb-2">📍 Areas We Cover in {area.name}:</h4>
                 <p className="text-blue-800">
-                  {area.landmarks.join(" • ")} and surrounding areas in {area.name}, {area.city} - {area.pincode}
+                  {area.landmarks?.join(" • ")} and surrounding areas in {area.name}, {area.city} — {area.pincode}
                 </p>
               </div>
 
               <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 mt-6">
                 <h4 className="text-lg font-bold text-red-900 mb-2">🚨 Emergency Gas Service in {area.name}:</h4>
                 <p className="text-red-800">
-                  {area.seoContent.emergencyInfo} Call{" "}
+                  {area.seoContent?.emergencyInfo} Call{" "}
                   <a href="tel:+918302713127" className="font-bold underline">
                     +91 83027 13127
                   </a>{" "}
@@ -787,7 +576,7 @@ export default async function AreaPage({ params }: Props) {
                 <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Common Questions</Badge>
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">FAQs about Gas Service in {area.name}</h2>
              </div>
-             
+
              <div className="max-w-3xl mx-auto space-y-4">
                 {areaFaqs.map((faq, i) => (
                   <Card key={i} className="hover:shadow-md transition-shadow">
@@ -800,6 +589,41 @@ export default async function AreaPage({ params }: Props) {
              </div>
         </div>
       </section>
+
+      {/* Internal Linking — Nearby Areas (critical for Googlebot crawling & PageRank flow) */}
+      {nearbyAreaSlugs.length > 0 && (
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Other Areas We Serve in {area.city}
+              </h2>
+              <div className="flex flex-wrap gap-3">
+                {nearbyAreaSlugs.map((areaSlug) => {
+                  const nearbyArea = (cityAreas as any)[areaSlug]
+                  return (
+                    <Link
+                      key={areaSlug}
+                      href={`/locations/${city}/${areaSlug}`}
+                      className="flex items-center space-x-2 px-4 py-2 bg-orange-50 hover:bg-orange-100 border border-orange-200 rounded-full text-sm text-orange-700 font-medium transition-colors"
+                    >
+                      <MapPin className="h-3 w-3" />
+                      <span>Gas Repair in {nearbyArea?.name || areaSlug}</span>
+                    </Link>
+                  )
+                })}
+                <Link
+                  href={`/locations/${city}`}
+                  className="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 border border-gray-300 rounded-full text-sm text-gray-700 font-medium transition-colors"
+                >
+                  <ChevronRight className="h-3 w-3" />
+                  <span>View All {area.city} Areas</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Final booking section */}
       <section className="py-20 bg-gradient-to-br from-orange-50 to-red-50">

@@ -75,7 +75,7 @@ export function StatsSection() {
       icon: Users,
       number: `${counters.customers.toLocaleString()}+`,
       label: "Happy Customers",
-      description: "Across Pune & Mumbai",
+      description: "Across Pune, Mumbai & Hyderabad",
       color: "from-orange-500 to-red-500",
     },
     {

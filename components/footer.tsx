@@ -24,23 +24,29 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/gasrepairwale" 
                 className="text-gray-400 hover:text-orange-600 transition-colors"
-                onClick={() => trackWhatsApp('Social Interest')}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Gas Repair Wale on Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
+                href="https://twitter.com/gasrepairwale" 
                 className="text-gray-400 hover:text-orange-600 transition-colors"
-                onClick={() => trackWhatsApp('Social Interest')}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Gas Repair Wale on Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/gasrepairwale" 
                 className="text-gray-400 hover:text-orange-600 transition-colors"
-                onClick={() => trackWhatsApp('Social Interest')}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Gas Repair Wale on Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -74,6 +80,11 @@ export function Footer() {
               <li>
                 <Link href="/locations/mumbai" className="text-gray-300 hover:text-orange-600 transition-colors">
                   Mumbai
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-300 hover:text-orange-600 transition-colors">
+                  Contact Us
                 </Link>
               </li>
               <li>
@@ -113,8 +124,8 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-orange-600" />
-                <a href="mailto:info@gasrepairewale.com" className="text-gray-300 hover:text-orange-600">
-                  info@gasrepairewale.com
+                <a href="mailto:info@gasrepairwale.com" className="text-gray-300 hover:text-orange-600">
+                  info@gasrepairwale.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -157,7 +168,12 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="flex space-x-6 mt-4 md:mt-0 gap-2">
               <p className="text-gray-400 text-sm">Design and Developed by</p>
-              <Link href="https://b29technology.com/" className="text-gray-400 hover:text-orange-600 text-sm flex items-center !ml-0" target="_blank">
+              <Link 
+                href="https://b29technology.com/" 
+                className="text-gray-400 hover:text-orange-600 text-sm flex items-center !ml-0" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 B29 Technology
               </Link>
             </div>

@@ -12,8 +12,8 @@ export const analyticsConfig = {
 // Custom event tracking functions
 export const trackEvent = (eventName: string, parameters?: Record<string, any>) => {
   if (typeof window !== 'undefined') {
-    // Only track in production or if explicitly enabled
-    const isEnabled = analyticsConfig.googleAnalytics.enabled || window.location.hostname === 'localhost';
+    // Only track in production
+    const isEnabled = analyticsConfig.googleAnalytics.enabled;
 
     if (isEnabled && window.gtag) {
       // Get city and area from URL if possible
@@ -34,7 +34,6 @@ export const trackEvent = (eventName: string, parameters?: Record<string, any>) 
       };
 
       window.gtag('event', eventName, finalParameters)
-      console.log(`[Analytics] Tracked ${eventName}:`, finalParameters)
     }
   }
 }

@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -11,46 +12,36 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gasrepairwale.com"),
-  title:
-    "Gas Repair Services Pune, Mumbai & Hyderabad | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repair Wale",
+  title: "Gas Repair Wale | Gas Stove Repair in Pune, Mumbai & Hyderabad",
   description:
-    "⭐ Professional Gas Repair Services in Pune, Mumbai & Hyderabad ✅ Gas Stove Repair ✅ Pipeline Installation ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ 5000+ Happy Customers ✅ Same Day Service. Call +91 83027 13127 for Expert Gas Solutions!",
+    "Professional gas repair services in Pune, Mumbai & Hyderabad. Gas stove repair, pipeline installation, 24/7 emergency service. Licensed technicians. 5000+ customers. Call +91 83027 13127",
   keywords: [
-    // Primary keywords
     "gas repair services pune",
-    "gas repair services Mumbai",
-    "gas repair services Hyderabad",
+    "gas repair services mumbai",
+    "gas repair services hyderabad",
     "gas stove repair pune",
-    "gas stove repair Mumbai",
-    "gas stove repair Hyderabad",
+    "gas stove repair mumbai",
+    "gas stove repair hyderabad",
     "gas pipeline installation pune",
-    "gas pipeline installation Mumbai",
-    "gas pipeline installation Hyderabad",
+    "gas pipeline installation mumbai",
+    "gas pipeline installation hyderabad",
     "emergency gas repair pune",
-    "emergency gas repair Mumbai",
-    "emergency gas repair Hyderabad",
-
-    // Long-tail keywords
+    "emergency gas repair mumbai",
+    "emergency gas repair hyderabad",
     "professional gas stove repair services",
-    "licensed gas technician pune Mumbai",
+    "licensed gas technician pune mumbai hyderabad",
     "gas leak repair emergency service",
     "commercial gas pipeline installation",
     "residential gas appliance repair",
     "gas safety inspection services",
     "24/7 emergency gas repair",
     "affordable gas repair services",
-
-    // Location-specific
     "gas repair kothrud pune",
-    "gas repair Borivali East West Mumbai",
     "gas repair baner pune",
-    "gas repair Kandivali East West Mumbai",
+    "gas repair borivali mumbai",
+    "gas repair kandivali mumbai",
     "gas repair hitec city hyderabad",
     "gas repair gachibowli hyderabad",
-    "gas services Maharastra",
-    "gas services Telangana",
-
-    // Service-specific
     "gas burner repair",
     "gas ignition repair",
     "gas valve replacement",
@@ -66,7 +57,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://gasrepairwale.com",
-    title: "Professional Gas Repair Services in Pune, Mumbai & Hyderabad | Gas Repair Wale",
+    title: "Gas Repair Wale | Professional Gas Repair Services in Pune, Mumbai & Hyderabad",
     description:
       "Expert gas stove repair, pipeline installation & emergency gas services across Pune, Mumbai & Hyderabad. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
     siteName: "Gas Repair Wale",
@@ -75,109 +66,75 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Gas Repair Wale - Professional Gas Services",
+        alt: "Gas Repair Wale - Professional Gas Services in Pune, Mumbai & Hyderabad",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Gas Repair Services | Gas Repair Wale",
+    title: "Gas Repair Wale | Professional Gas Repair Services",
     description:
       "Expert gas stove repair & pipeline services in Pune, Mumbai & Hyderabad. Licensed technicians, emergency service, 5000+ customers. Call +91 83027 13127",
-    images: ["/twitter-image.jpg"],
+    images: ["/og-image.jpg"],
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE",
   },
-  alternates: {
-    canonical: "https://gasrepairwale.com",
-  },
+  // NOTE: No global canonical here — each page sets its own via metadata.alternates.canonical
 }
 
-// Enhanced Structured Data for Local Business
+// Enhanced Structured Data for Local Business — Valid Schema.org
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
       "@id": "https://gasrepairwale.com/#business",
       name: "Gas Repair Wale",
       description:
         "Professional gas stove repair, pipeline installation, and emergency gas services in Pune, Mumbai and Hyderabad. Licensed technicians with 10+ years experience.",
       url: "https://gasrepairwale.com",
       telephone: "+91-83027-13127",
-      email: "info@gasrepairewale.com",
+      email: "info@gasrepairwale.com",
       priceRange: "₹₹",
-      foundingDate: "2015",
+      foundingDate: "2013",
 
-      address: [
-        {
-          "@type": "PostalAddress",
-          addressLocality: "Pune",
-          addressRegion: "Maharashtra",
-          addressCountry: "IN",
-          areaServed: ["Kothrud", "Baner", "Wakad", "Hinjewadi", "Karve Nagar", "Warje"],
-        },
-        {
-          "@type": "PostalAddress",
-          addressLocality: "Mumbai",
-          addressRegion: "Maharashtra",
-          addressCountry: "IN",
-          areaServed: ["Borivali East West", "Kandivali East West", "Malad East West", "Ram Mandir East", "Goregaon East West", "Andheri West"],
-        },
-        {
-          "@type": "PostalAddress",
-          addressLocality: "Hyderabad",
-          addressRegion: "Telangana",
-          addressCountry: "IN",
-          areaServed: ["Gachibowli", "HITEC City", "Madhapur", "Kondapur", "Banjara Hills", "Jubilee Hills"],
-        },
-      ],
+      // Primary address (Pune HQ)
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Pune",
+        addressRegion: "Maharashtra",
+        addressCountry: "IN",
+        postalCode: "411001",
+      },
 
-      geo: [
+      // Primary geo coordinates (Pune)
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 18.5204,
+        longitude: 73.8567,
+      },
+
+      // Valid areaServed — replaces invalid GeoCircle array
+      areaServed: [
         {
-          "@type": "GeoCoordinates",
-          latitude: 18.5204,
-          longitude: 73.8567,
-          address: "Pune, Maharashtra, India",
+          "@type": "City",
+          name: "Pune",
+          sameAs: "https://en.wikipedia.org/wiki/Pune",
         },
         {
-          "@type": "GeoCoordinates",
-          latitude: 19.0760,
-          longitude: 72.8777,
-          address: "Mumbai, Maharashtra, India",
+          "@type": "City",
+          name: "Mumbai",
+          sameAs: "https://en.wikipedia.org/wiki/Mumbai",
         },
         {
-          "@type": "GeoCoordinates",
-          latitude: 17.3850,
-          longitude: 78.4867,
-          address: "Hyderabad, Telangana, India",
+          "@type": "City",
+          name: "Hyderabad",
+          sameAs: "https://en.wikipedia.org/wiki/Hyderabad,_India",
         },
       ],
 
       openingHours: "Mo-Su 00:00-23:59",
-
-      serviceArea: {
-        "@type": "GeoCircle",
-        geoMidpoint: [
-          {
-            "@type": "GeoCoordinates",
-            latitude: 18.5204,
-            longitude: 73.8567,
-          },
-          {
-            "@type": "GeoCoordinates",
-            latitude: 19.0760,
-            longitude: 72.8777,
-          },
-          {
-            "@type": "GeoCoordinates",
-            latitude: 17.3850,
-            longitude: 78.4867,
-          },
-        ],
-        geoRadius: "50000",
-      },
 
       hasOfferCatalog: {
         "@type": "OfferCatalog",
@@ -253,14 +210,28 @@ const structuredData = {
             "@type": "Person",
             name: "Rajesh Kumar",
           },
-          reviewBody: "Excellent gas stove repair service. Fixed my burner issue quickly and professionally.",
+          reviewBody:
+            "Excellent gas stove repair service. Fixed my burner issue quickly and professionally. Technician arrived within 20 minutes. Highly recommend Gas Repair Wale in Pune!",
+        },
+        {
+          "@type": "Review",
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: "5",
+          },
+          author: {
+            "@type": "Person",
+            name: "Priya Sharma",
+          },
+          reviewBody:
+            "Called for emergency gas leak at 11 PM in Mumbai. Technician arrived in 15 minutes. Professional service, highly recommended.",
         },
       ],
 
       sameAs: [
-        "https://www.facebook.com/gasrepairewale",
-        "https://www.instagram.com/gasrepairewale",
-        "https://twitter.com/gasrepairewale",
+        "https://www.facebook.com/gasrepairwale",
+        "https://www.instagram.com/gasrepairwale",
+        "https://twitter.com/gasrepairwale",
       ],
     },
 
@@ -273,16 +244,6 @@ const structuredData = {
       publisher: {
         "@id": "https://gasrepairwale.com/#business",
       },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: "https://gasrepairwale.com/search?q={search_term_string}",
-          },
-          "query-input": "required name=search_term_string",
-        },
-      ],
     },
   ],
 }
@@ -295,57 +256,27 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Structured Data — JSON-LD for LocalBusiness */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-        <link rel="canonical" href="https://gasrepairwale.com" />
+
+        {/* NOTE: No hardcoded canonical here — each page sets its own via metadata.alternates.canonical */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ea580c" />
 
-        {/* Additional SEO meta tags */}
+        {/* Geo meta tags — primary location (Pune). Multi-city handled via schema areaServed */}
         <meta name="geo.region" content="IN-MH" />
-        <meta name="geo.region" content="IN-TG" />
         <meta name="geo.placename" content="Pune, Mumbai, Hyderabad" />
         <meta name="geo.position" content="18.5204;73.8567" />
-        <meta name="geo.position" content="19.0760;72.8777" />
-        <meta name="geo.position" content="17.3850;78.4867" />
         <meta name="ICBM" content="18.5204, 73.8567" />
-        <meta name="ICBM" content="19.0760, 72.8777" />
-        <meta name="ICBM" content="17.3850, 78.4867" />
 
-        {/* Business-specific meta tags */}
-        <meta name="business:contact_data:street_address" content="Pune, Mumbai & Hyderabad Service Areas" />
+        {/* Business contact meta tags */}
         <meta name="business:contact_data:locality" content="Pune, Mumbai, Hyderabad" />
         <meta name="business:contact_data:region" content="Maharashtra, Telangana" />
-        <meta name="business:contact_data:postal_code" content="411001, 400001, 500001" />
         <meta name="business:contact_data:country_name" content="India" />
         <meta name="business:contact_data:phone_number" content="+91-83027-13127" />
         <meta name="business:contact_data:website" content="https://gasrepairwale.com" />
-        <meta name="google-site-verification" content="JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE" />
-
-        {/* Google Analytics 4 */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-ELBP9XJCKC"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ELBP9XJCKC', {
-                page_title: document.title,
-                page_location: window.location.href,
-                send_page_view: true
-              });
-            `,
-          }}
-        />
-
-
       </head>
       <body className={inter.className}>
-
-
         <ScrollToTopWrapper>
           {/* Main navigation header */}
           <Header />
@@ -359,6 +290,23 @@ export default function RootLayout({
           {/* Toast notifications */}
           <Toaster />
         </ScrollToTopWrapper>
+
+        {/* Google Analytics 4 — loaded AFTER page is interactive (non-blocking) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ELBP9XJCKC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ELBP9XJCKC', {
+              send_page_view: true,
+              anonymize_ip: true
+            });
+          `}
+        </Script>
       </body>
     </html>
   )

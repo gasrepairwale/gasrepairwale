@@ -55,7 +55,7 @@ export function Hero() {
       { value: "bhekrai-nagar", label: "Bhekrai Nagar" },
       { value: "nibm-road", label: "NIBM Road" },
     ],
-    Mumbai: [
+    mumbai: [
       { value: "borivali-east-west", label: "Borivali East West" },
       { value: "kandivali-east-west", label: "Kandivali East West" },
       { value: "malad-east-west", label: "Malad East West" },
@@ -72,6 +72,23 @@ export function Hero() {
       { value: "mahalaxmi-east-west", label: "Mahalaxmi East & West" },
       { value: "marine-drive-colaba", label: "Marine Drive & Colaba" },
       { value: "churchgate", label: "Churchgate" },
+    ],
+    hyderabad: [
+      { value: "gachibowli", label: "Gachibowli" },
+      { value: "hitec-city", label: "HITEC City" },
+      { value: "madhapur", label: "Madhapur" },
+      { value: "kondapur", label: "Kondapur" },
+      { value: "banjara-hills", label: "Banjara Hills" },
+      { value: "jubilee-hills", label: "Jubilee Hills" },
+      { value: "kukatpally", label: "Kukatpally" },
+      { value: "miyapur", label: "Miyapur" },
+      { value: "bachupally", label: "Bachupally" },
+      { value: "kompally", label: "Kompally" },
+      { value: "secunderabad", label: "Secunderabad" },
+      { value: "dilsukhnagar", label: "Dilsukhnagar" },
+      { value: "lb-nagar", label: "LB Nagar" },
+      { value: "uppal", label: "Uppal" },
+      { value: "manikonda", label: "Manikonda" },
     ],
   }
 
@@ -191,7 +208,7 @@ export function Hero() {
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-red-400 rounded-full"></div>
                 </span>
                 <br />
-                Services in Pune & Mumbai
+                Services in Pune, Mumbai & Hyderabad
               </h1>
 
               <div className="text-xl text-gray-700 leading-relaxed space-y-3">
@@ -200,7 +217,7 @@ export function Hero() {
                   <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full font-semibold">
                     Emergency Service:
                   </span>{" "}
-                  15-30 minute response time across both cities
+                  15-30 minute response time across all 3 cities
                 </p>
               </div>
             </div>
@@ -238,7 +255,7 @@ export function Hero() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">All Areas Covered</p>
-                    <p className="text-sm text-gray-600">Pune & Mumbai regions</p>
+                    <p className="text-sm text-gray-600">Pune, Mumbai & Hyderabad</p>
                   </div>
                 </div>
               </div>
@@ -258,27 +275,31 @@ export function Hero() {
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+              {/* Phone CTA — proper anchor tag, not button-inside-anchor */}
+              <a
+                href="tel:+918302713127"
+                onClick={() => trackPhoneCall("+918302713127")}
+                className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 font-bold"
               >
-                <a 
-                  href="tel:+918302713127" 
-                  className="flex items-center space-x-2"
-                  onClick={() => trackPhoneCall("+918302713127")}
-                >
-                  <Phone className="h-5 w-5" />
-                  <span className="font-bold">Call Now: +91 83027 13127</span>
-                </a>
-              </Button>
+                <Phone className="h-5 w-5" />
+                <span>Call Now: +91 83027 13127</span>
+              </a>
 
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-semibold hover:shadow-lg transition-all duration-200"
+              {/* WhatsApp Quote — functional link */}
+              <a
+                href={getWhatsAppRedirectUrl({
+                  serviceType: "General Inquiry",
+                  city: selectedLocation || "Pune",
+                  area: selectedArea || "",
+                  message: "Hi, I need a gas repair service quote.",
+                })}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackPhoneCall("+918302713127", "WhatsApp CTA")}
+                className="inline-flex items-center justify-center space-x-2 text-lg px-8 py-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-semibold hover:shadow-lg transition-all duration-200 rounded-lg"
               >
-                WhatsApp Quote
-              </Button>
+                💬 WhatsApp Quote
+              </a>
             </div>
 
             {/* Trust signals */}
@@ -366,7 +387,8 @@ export function Hero() {
                     >
                       <option value="">Select City/Location *</option>
                       <option value="pune">Pune</option>
-                      <option value="Mumbai">Mumbai</option>
+                      <option value="mumbai">Mumbai</option>
+                      <option value="hyderabad">Hyderabad</option>
                     </select>
                   </div>
 

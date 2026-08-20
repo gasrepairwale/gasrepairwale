@@ -14,10 +14,10 @@ export function FAQ() {
 
   const faqs = [
     {
-      question: "How quickly can you respond to gas emergencies in Pune and Mumbai?",
+      question: "How quickly can you respond to gas emergencies in Pune, Mumbai and Hyderabad?",
       answer:
-        "We guarantee a 15-minute response time for gas emergencies across Pune and Mumbai. Our technicians are strategically located in key areas like Kothrud, Baner, Borivali East West, and Kandivali East West to ensure the fastest possible response. For non-emergency repairs, we typically arrive within 30-45 minutes.",
-      keywords: "emergency response time, gas leak repair, Pune Mumbai service",
+        "We guarantee a 15-30 minute response time for gas emergencies across Pune, Mumbai and Hyderabad. Our technicians are strategically located in key areas like Kothrud, Baner, Borivali East West, Kandivali East West, Gachibowli, and HITEC City to ensure the fastest possible response. For non-emergency repairs, we typically arrive within 30-45 minutes.",
+      keywords: "emergency response time, gas leak repair, Pune Mumbai Hyderabad service",
     },
     {
       question: "What types of gas stove problems do you repair?",
@@ -44,10 +44,10 @@ export function FAQ() {
       keywords: "repair warranty, parts warranty, service guarantee",
     },
     {
-      question: "Which areas in Pune and Mumbai do you cover?",
+      question: "Which areas in Pune, Mumbai and Hyderabad do you cover?",
       answer:
-        "In Pune: Kothrud, Baner, Wakad, Hinjewadi, Karve Nagar, Warje, Aundh, Viman Nagar, Koregaon Park, and surrounding areas. In Mumbai: Borivali East West, Kandivali East West, Malda East West, Ram Mandir East, Goregaon East West, Andheri West, Secunderabad, and nearby localities. We're expanding to cover more areas regularly.",
-      keywords: "service areas Pune Mumbai, coverage areas, local service",
+        "In Pune: Kothrud, Baner, Wakad, Hinjewadi, Karve Nagar, Warje, Aundh, Viman Nagar, Hadapsar, Kharadi. In Mumbai: Borivali, Kandivali, Malad, Goregaon, Andheri, Bandra, Dadar, Marine Drive. In Hyderabad: Gachibowli, HITEC City, Madhapur, Kondapur, Banjara Hills, Jubilee Hills, Secunderabad, Kukatpally. We cover 75+ locations total.",
+      keywords: "service areas Pune Mumbai Hyderabad, coverage areas, local service",
     },
     {
       question: "Can you install new gas connections and pipelines?",
@@ -160,3 +160,4 @@ export function FAQ() {
     </section>
   )
 }
+

@@ -20,7 +20,7 @@ export function Header() {
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
     {
-      href: "#",
+      href: "/locations",
       label: "Locations",
       submenu: [
         { href: "/locations/pune", label: "Pune" },
@@ -28,6 +28,7 @@ export function Header() {
         { href: "/locations/hyderabad", label: "Hyderabad" },
       ],
     },
+    { href: "/contact", label: "Contact" },
   ]
 
   const handleCallClick = () => {

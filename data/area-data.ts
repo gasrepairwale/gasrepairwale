@@ -4962,7 +4962,7 @@ export const areaData = {
     "goregaon-east-west": {
       name: "Goregaon East West",
       city: "Mumbai",
-      state: "Maharastra",
+      state: "Maharashtra",
       description:
         "Comprehensive gas repair services in Goregaon East West - Mumbai's major residential and commercial center with community-focused solutions",
       heroDescription:
@@ -5125,7 +5125,7 @@ export const areaData = {
     "ram-mandir-east": {
       name: "Ram Mandir East",
       city: "Mumbai",
-      state: "Maharastra",
+      state: "Maharashtra",
       description:
         "Expert gas repair services in Ram Mandir East - Mumbai's rapidly developing residential and IT corridor with specialized new development solutions",
       heroDescription:
@@ -5288,7 +5288,7 @@ export const areaData = {
     "andheri-west": {
       name: "Andheri West",
       city: "Mumbai",
-      state: "Maharastra",
+      state: "Maharashtra",
       description:
         "Professional gas repair services in Andheri West - Mumbai's central business and residential district with specialized hospitality solutions",
       heroDescription:
@@ -9653,3 +9653,4 @@ export function getCityAreas(city: string) {
 export function getAllCities() {
   return Object.keys(areaData)
 }
+

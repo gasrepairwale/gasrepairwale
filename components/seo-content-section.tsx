@@ -25,36 +25,59 @@ export function SEOContentSection() {
     {
       city: "Mumbai",
       areas: [
-        "Borivali East West",
-        "Kandivali East West",
-        "Malda East West",
-        "Ram Mandir East",
-        "Goregaon East West",
-        "Andheri West",
-        "Secunderabad",
-        "Banjara Hills",
+        "Borivali",
+        "Kandivali",
+        "Malad",
+        "Goregaon",
+        "Andheri",
+        "Bandra",
+        "Dadar",
+        "Marine Drive",
       ],
       description:
-        "Expert gas services in Mumbai's IT corridor and residential areas, compliant with Maharastra state gas safety standards.",
+        "Expert gas services across Mumbai's western and central corridors, compliant with Maharashtra state gas safety standards.",
       keyServices: [
-        "IT professional-friendly gas services in Borivali East West",
+        "Gas stove repair in Borivali, Kandivali & Andheri",
         "Restaurant gas system maintenance in Mumbai",
-        "Residential gas pipeline installation across Cyberabad",
+        "Commercial & residential gas pipeline installation",
         "24/7 emergency gas repairs in Mumbai metro",
       ],
       responseTime: "20-30 minutes",
       customers: "2500+",
+    },
+    {
+      city: "Hyderabad",
+      areas: [
+        "Gachibowli",
+        "HITEC City",
+        "Madhapur",
+        "Kondapur",
+        "Banjara Hills",
+        "Jubilee Hills",
+        "Secunderabad",
+        "Kukatpally",
+      ],
+      description:
+        "Expert gas appliance & pipeline services across Hyderabad's tech corridors (Cyberabad) and residential zones with rapid response.",
+      keyServices: [
+        "IT corridor gas repair in HITEC City & Gachibowli",
+        "Gas pipeline installation in Madhapur & Kondapur",
+        "Safety audits & maintenance in Banjara Hills",
+        "24/7 emergency gas leak service across Hyderabad",
+      ],
+      responseTime: "20-30 minutes",
+      customers: "1500+",
     },
   ]
 
   const serviceDetails = [
     {
       title: "Gas Stove Repair Services - Complete Solutions for All Brands",
-      content: `Our certified gas stove repair technicians in Pune and Mumbai specialize in fixing all types of gas cooking appliances. Whether you have a single burner, double burner, triple burner, or four burner gas stove, we provide comprehensive repair services for all major brands including Prestige, Butterfly, Glen, Sunflame, Pigeon, Bajaj, and more.
+      content: `Our certified gas stove repair technicians in Pune, Mumbai & Hyderabad specialize in fixing all types of gas cooking appliances. Whether you have a single burner, double burner, triple burner, or four burner gas stove, we provide comprehensive repair services for all major brands including Prestige, Butterfly, Glen, Sunflame, Pigeon, Bajaj, and more.
 
       Common gas stove problems we fix include ignition issues, uneven flame distribution, gas leakage, burner blockages, auto-ignition failures, and thermostat malfunctions. Our technicians carry genuine spare parts and use professional-grade tools to ensure lasting repairs.
 
-      We understand that a malfunctioning gas stove can disrupt your daily cooking routine, which is why we offer same-day repair services across Pune and Mumbai. Our transparent pricing starts from just ₹299, and we provide a 6-month warranty on all parts and 3-month warranty on labor.`,
+      We understand that a malfunctioning gas stove can disrupt your daily cooking routine, which is why we offer same-day repair services across Pune, Mumbai & Hyderabad. Our transparent pricing starts from just ₹299, and we provide a 6-month warranty on all parts and 3-month warranty on labor.`,
       keywords: [
         "gas stove repair",
         "burner repair",
@@ -65,7 +88,7 @@ export function SEOContentSection() {
     },
     {
       title: "Gas Pipeline Installation & Repair - Safe & Compliant Solutions",
-      content: `Gas pipeline safety is crucial for every home and business. Our licensed gas pipeline technicians provide complete pipeline solutions including new installations, leak repairs, pressure testing, and compliance certifications for residential and commercial properties in Maharastra.
+      content: `Gas pipeline safety is crucial for every home and business. Our licensed gas pipeline technicians provide complete pipeline solutions including new installations, leak repairs, pressure testing, and compliance certifications for residential and commercial properties in Maharashtra and Telangana.
 
       We handle everything from kitchen gas connections to complex commercial gas distribution systems. Our services include pipeline routing, gas meter installations, safety valve setups, and regular maintenance programs. All our installations comply with local safety regulations and building codes.
 
@@ -79,10 +102,10 @@ export function SEOContentSection() {
       ],
     },
     {
-      title: "Emergency Gas Services - 24/7 Response Across Pune & Mumbai",
-      content: `Gas emergencies require immediate professional attention. Our 24/7 emergency gas service team is strategically located across Pune and Mumbai to provide rapid response to gas leaks, safety concerns, and urgent repairs.
+      title: "Emergency Gas Services - 24/7 Response Across Pune, Mumbai & Hyderabad",
+      content: `Gas emergencies require immediate professional attention. Our 24/7 emergency gas service team is strategically located across Pune, Mumbai and Hyderabad to provide rapid response to gas leaks, safety concerns, and urgent repairs.
 
-      We guarantee a 15-minute response time for emergency calls within city limits. Our emergency technicians are equipped with gas detection equipment, safety gear, and tools needed to quickly assess and resolve dangerous situations.
+      We guarantee a 15-30 minute response time for emergency calls within city limits. Our emergency technicians are equipped with gas detection equipment, safety gear, and tools needed to quickly assess and resolve dangerous situations.
 
       Common gas emergencies we handle include gas leaks from stoves or pipelines, gas smell in homes or offices, complete gas system failures, and safety shutdowns. We also provide temporary solutions to ensure your safety while permanent repairs are completed.`,
       keywords: [
@@ -96,15 +119,15 @@ export function SEOContentSection() {
   ]
 
   const whyChooseUsContent = {
-    title: "Why Gas Repair Wale is Pune & Mumbai's Most Trusted Gas Service Provider",
-    content: `Since 2013, Gas Repair Wale has been the leading gas repair and maintenance service provider in Pune and Mumbai. We've built our reputation on three core principles: safety, reliability, and customer satisfaction.
+    title: "Why Gas Repair Wale is Pune, Mumbai & Hyderabad's Most Trusted Gas Service Provider",
+    content: `Since 2013, Gas Repair Wale has been the leading gas repair and maintenance service provider in Pune, Mumbai and Hyderabad. We've built our reputation on three core principles: safety, reliability, and customer satisfaction.
 
-    Our team of certified gas technicians undergoes regular training on the latest safety protocols and repair techniques. We're licensed by local authorities in Maharastra, and our services are approved by major insurance companies.
+    Our team of certified gas technicians undergoes regular training on the latest safety protocols and repair techniques. We're licensed by local authorities in Maharashtra and Telangana, and our services are approved by major insurance companies.
 
     What sets us apart is our commitment to transparency. We provide upfront pricing with no hidden charges, detailed explanations of all work performed, and comprehensive warranties on our services. Our customer-first approach has earned us over 5000 satisfied customers and a 4.9-star rating.`,
     achievements: [
       "10+ years of professional gas service experience",
-      "5000+ satisfied customers across Pune & Mumbai",
+      "5000+ satisfied customers across Pune, Mumbai & Hyderabad",
       "Licensed and certified by local authorities",
       "Insurance-approved service provider",
       "4.9-star customer rating with 500+ reviews",

@@ -17,11 +17,12 @@ import {
   Phone,
   Award,
 } from "lucide-react"
+import { TrackedWhatsAppButton } from "@/components/tracked-whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Gas Repair Services | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repair Wale",
+  title: "Gas Repair Services | Gas Stove Repair & Pipeline Services | Gas Repair Wale",
   description:
-    "⭐ Complete Gas Repair Services in Pune & Mumbai ✅ Gas Stove Repair ✅ Pipeline Installation ✅ Safety Inspections ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ Residential & Commercial. Call +91 83027 13127",
+    "⭐ Complete Gas Repair Services in Pune, Mumbai & Hyderabad ✅ Gas Stove Repair ✅ Pipeline Installation ✅ Safety Inspections ✅ 24/7 Emergency Service ✅ Licensed Technicians. Call +91 83027 13127",
   keywords: [
     "gas repair services",
     "gas stove repair",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     "gas connection services",
     "professional gas technicians",
     "licensed gas repair",
-    "gas services pune Mumbai",
+    "gas services pune mumbai hyderabad",
   ].join(", "),
   authors: [{ name: "Gas Repair Wale", url: "https://gasrepairwale.com" }],
   creator: "Gas Repair Wale",
@@ -50,11 +51,11 @@ export const metadata: Metadata = {
     url: "https://gasrepairwale.com/services",
     title: "Professional Gas Repair Services | Gas Stove Repair | Pipeline Installation",
     description:
-      "Complete gas repair services including stove repair, pipeline installation, safety inspections, and emergency service. Licensed technicians serving Pune & Mumbai.",
+      "Complete gas repair services including stove repair, pipeline installation, safety inspections, and emergency service in Pune, Mumbai & Hyderabad.",
     siteName: "Gas Repair Wale",
     images: [
       {
-        url: "/services-og-image.jpg",
+        url: "https://gasrepairwale.com/api/og?area=All+Services&city=Pune+Mumbai+Hyderabad&service=Gas+Stove+and+Pipeline+Repair",
         width: 1200,
         height: 630,
         alt: "Gas Repair Wale - Professional Gas Services",
@@ -65,8 +66,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Professional Gas Repair Services | Gas Repair Wale",
     description:
-      "Complete gas repair services - stove repair, pipeline installation, safety inspections, emergency service. Licensed technicians in Pune & Mumbai.",
-    images: ["/services-twitter-image.jpg"],
+      "Complete gas repair services in Pune, Mumbai & Hyderabad. Licensed technicians, 24/7 emergency support. Call +91 83027 13127",
+    images: ["https://gasrepairwale.com/api/og?area=All+Services&city=Pune+Mumbai+Hyderabad&service=Gas+Stove+and+Pipeline+Repair"],
   },
   alternates: {
     canonical: "https://gasrepairwale.com/services",
@@ -116,7 +117,7 @@ export default function ServicesPage() {
       description:
         "Professional installation, repair, and maintenance of gas pipelines for residential and commercial properties.",
       detailedDescription:
-        "We provide comprehensive gas pipeline solutions including new installations, leak repairs, pressure testing, and compliance certifications. Our services comply with all safety standards and local regulations in Maharastra, ensuring your gas supply is safe and reliable.",
+        "We provide comprehensive gas pipeline solutions including new installations, leak repairs, pressure testing, and compliance certifications. Our services comply with all safety standards and local regulations in Maharashtra, ensuring your gas supply is safe and reliable.",
       features: [
         "New pipeline installation",
         "Pipeline leak detection & repair",
@@ -312,7 +313,7 @@ export default function ServicesPage() {
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
               🔥 Comprehensive gas repair and maintenance services for your home and business. Professional, safe, and
-              reliable solutions from certified technicians across <strong>Pune and Mumbai</strong> with
+              reliable solutions from certified technicians across <strong>Pune, Mumbai &amp; Hyderabad</strong> with
               <strong> 5000+ satisfied customers</strong> and <strong>4.9-star rating</strong>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -325,13 +326,12 @@ export default function ServicesPage() {
                   <span>Call: +91 83027 13127</span>
                 </a>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
-              >
-                Get Free Quote
-              </Button>
+              <TrackedWhatsAppButton
+                message="Hi, I want a free gas service quote. Please help me."
+                source="Services Page — Get Free Quote"
+                label="💬 Get Free Quote on WhatsApp"
+                className="inline-flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent px-6 py-3 rounded-md font-medium text-sm transition-colors"
+              />
             </div>
           </div>
         </div>
@@ -444,7 +444,7 @@ export default function ServicesPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Residential & Commercial Solutions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We serve both residential and commercial clients with specialized solutions tailored to their unique
-              requirements across Pune and Mumbai.
+              requirements across Pune, Mumbai &amp; Hyderabad.
             </p>
           </div>
 
@@ -519,7 +519,7 @@ export default function ServicesPage() {
             <h2 className="text-4xl font-bold text-white mb-4">🚨 Emergency Gas Services Available 24/7</h2>
             <p className="text-xl text-red-100 mb-8">
               Gas leaks and safety issues can't wait. Our emergency team is available round-the-clock to handle urgent
-              situations and ensure your safety across Pune and Mumbai.
+              situations and ensure your safety across Pune, Mumbai &amp; Hyderabad.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -623,3 +623,4 @@ export default function ServicesPage() {
     </main>
   )
 }
+

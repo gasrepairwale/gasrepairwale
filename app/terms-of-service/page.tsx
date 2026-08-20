@@ -21,20 +21,20 @@ export const metadata: Metadata = {
     siteName: "Gas Repair Wale",
     images: [
       {
-        url: "/placeholder.svg?height=630&width=1200&text=Terms+of+Service",
+        url: "https://gasrepairwale.com/api/og?area=Terms+of+Service&city=Gas+Repair+Wale&service=Service+Terms",
         width: 1200,
         height: 630,
         alt: "Gas Repair Wale Terms of Service",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Terms of Service | Gas Repair Wale",
     description: "Read our terms of service and conditions for gas repair services.",
-    images: ["/placeholder.svg?height=630&width=1200&text=Terms+of+Service"],
+    images: ["https://gasrepairwale.com/api/og?area=Terms+of+Service&city=Gas+Repair+Wale&service=Service+Terms"],
   },
   robots: {
     index: true,
@@ -277,7 +277,7 @@ export default function TermsOfServicePage() {
                 <Mail className="h-6 w-6 mr-3" />
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="opacity-90">info@gasrepairewale.com</div>
+                  <div className="opacity-90">info@gasrepairwale.com</div>
                 </div>
               </div>
 

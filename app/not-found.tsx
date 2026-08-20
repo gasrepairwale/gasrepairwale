@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Home, Search, Phone, ArrowLeft, Wrench, MapPin } from "lucide-react"
+import { TrackedWhatsAppButton } from "@/components/tracked-whatsapp-button"
 
 export default function NotFound() {
   return (
@@ -66,7 +67,7 @@ export default function NotFound() {
           </Link>
 
           <a
-            href="tel:+919876543210"
+            href="tel:+918302713127"
             className="flex items-center justify-center px-6 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 group"
           >
             <Phone className="h-5 w-5 mr-2 group-hover:animate-pulse" />
@@ -127,18 +128,18 @@ export default function NotFound() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="tel:+919876543210"
+              href="tel:+918302713127"
               className="flex items-center px-8 py-3 bg-white text-red-600 font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               <Phone className="h-5 w-5 mr-2" />
-              Emergency: +91 98765 43210
+              Emergency: +91 83027 13127
             </a>
-            <a
-              href="https://wa.me/919876543210"
+            <TrackedWhatsAppButton
+              message="Hi, I have a gas emergency. I need urgent help."
+              source="404 Page — WhatsApp Emergency"
+              label="💬 WhatsApp Emergency"
               className="flex items-center px-8 py-3 bg-green-500 text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-            >
-              WhatsApp Emergency
-            </a>
+            />
           </div>
         </div>
 

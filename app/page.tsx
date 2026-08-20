@@ -11,12 +11,12 @@ import { FAQ } from "@/components/faq"
 import { BeforeAfter } from "@/components/before-after"
 import { TrustSignals } from "@/components/trust-signals"
 import { SEOContentSection } from "@/components/seo-content-section"
+import { WhatsAppFloat } from "@/components/whatsapp-float"
 
 export const metadata: Metadata = {
-  title:
-    "Gas Repair Services Pune, Mumbai and Hyderabad | Gas Stove Repair | Pipeline Installation | Emergency Gas Service | Gas Repair Wale",
+  title: "Gas Repair Wale | Gas Stove Repair Pune, Mumbai & Hyderabad",
   description:
-    "⭐ Professional Gas Repair Services in Pune, Mumbai & Hyderabad ✅ Gas Stove Repair ✅ Pipeline Installation ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ 5000+ Happy Customers ✅ Same Day Service. Call +91 83027 13127 for Expert Gas Solutions!",
+    "⭐ Professional Gas Repair Services in Pune, Mumbai & Hyderabad ✅ Gas Stove Repair ✅ Pipeline Installation ✅ 24/7 Emergency Service ✅ Licensed Technicians ✅ 5000+ Happy Customers. Call +91 83027 13127!",
   keywords: [
     // Primary keywords
     "gas repair services pune",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     "gas repair Kandivali East West Mumbai",
     "gas repair hitec city hyderabad",
     "gas repair gachibowli hyderabad",
-    "gas services Maharastra",
+    "gas services Maharashtra",
     "gas services Telangana",
 
     // Service-specific
@@ -89,11 +89,58 @@ export const metadata: Metadata = {
     images: ["/twitter-image.jpg"],
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE",
   },
   alternates: {
     canonical: "https://gasrepairwale.com",
   },
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How quickly can you respond to gas emergencies in Pune, Mumbai and Hyderabad?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We guarantee a 15-30 minute response time for gas emergencies across Pune, Mumbai and Hyderabad. Our technicians are strategically located in Kothrud, Baner, Borivali, Kandivali, Gachibowli, and HITEC City for the fastest response.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What types of gas stove problems do you repair?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We repair all gas stove issues: ignition problems, burner not lighting, gas smell, uneven flames, auto-ignition failure, gas valve issues. We work with Prestige, Butterfly, Glen, Sunflame, and all other brands.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are your service charges for gas stove repair?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Gas stove repair starts from ₹299 for basic issues. Complex repairs range ₹499-₹1499. Emergency service adds ₹200. Transparent pricing with no hidden charges.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you provide warranty on your repair work?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Parts carry 6-month warranty, labor has 3-month guarantee, and major repairs get up to 1-year warranty. Same issue within warranty period is fixed free of charge.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer 24/7 emergency gas repair services?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, we provide 24/7 emergency gas repair throughout the year including weekends and holidays. Gas emergencies like leaks are treated with highest priority. Call +91 83027 13127 anytime.",
+      },
+    },
+  ],
 }
 
 /**
@@ -103,6 +150,12 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main className="min-h-screen">
+      {/* FAQ Structured Data for Google Rich Snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Emergency banner for immediate attention */}
       <EmergencyBanner />
 
@@ -138,6 +191,10 @@ export default function HomePage() {
 
       {/* Final contact CTA */}
       <ContactCTA />
+
+      {/* Floating WhatsApp button — critical for Indian mobile users */}
+      <WhatsAppFloat />
     </main>
   )
 }
+

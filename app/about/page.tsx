@@ -3,15 +3,16 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ContactCTA } from "@/components/contact-cta"
+import { TrackedWhatsAppButton } from "@/components/tracked-whatsapp-button"
 import { Award, Users, Shield, Clock, CheckCircle, Target, Phone } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Gas Repair Wale | Professional Gas Repair Company | 10+ Years Experience | Pune Mumbai",
+  title: "About Gas Repair Wale | Gas Repair in Pune, Mumbai & Hyderabad",
   description:
-    "⭐ Learn about Gas Repair Wale - Leading gas repair company since 2013 ✅ 5000+ Satisfied Customers ✅ Licensed Technicians ✅ 24/7 Emergency Service ✅ Serving Pune & Mumbai ✅ 4.9★ Rating. Call +91 83027 13127",
+    "⭐ Learn about Gas Repair Wale — Leading gas repair company since 2013 ✅ 5000+ Satisfied Customers ✅ Licensed Technicians ✅ 24/7 Emergency Service in Pune, Mumbai & Hyderabad ✅ 4.9★ Rating. Call +91 83027 13127",
   keywords: [
     "about Gas Repair Wale",
-    "gas repair company pune Mumbai",
+    "gas repair company pune mumbai hyderabad",
     "professional gas technicians",
     "licensed gas repair service",
     "gas repair company history",
@@ -31,13 +32,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://gasrepairwale.com/about",
-    title: "About Gas Repair Wale | Professional Gas Repair Company Since 2013",
+    title: "About Gas Repair Wale | Professional Gas Repair Since 2013",
     description:
-      "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune & Mumbai. 4.9★ rating, 24/7 emergency service.",
+      "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune, Mumbai & Hyderabad. 4.9★ rating, 24/7 emergency service.",
     siteName: "Gas Repair Wale",
     images: [
       {
-        url: "/about-og-image.jpg",
+        url: "https://gasrepairwale.com/api/og?area=Company+Story&city=Pune+Mumbai+Hyderabad&service=About+Gas+Repair+Wale",
         width: 1200,
         height: 630,
         alt: "About Gas Repair Wale - Professional Gas Repair Company",
@@ -48,8 +49,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Gas Repair Wale | Professional Gas Repair Company",
     description:
-      "Leading gas repair company since 2013 with 5000+ customers, licensed technicians, 24/7 service in Pune & Mumbai. Call +91 83027 13127",
-    images: ["/about-twitter-image.jpg"],
+      "Leading gas repair company since 2013 with 5000+ customers, licensed technicians, 24/7 service in Pune, Mumbai & Hyderabad. Call +91 83027 13127",
+    images: ["https://gasrepairwale.com/api/og?area=Company+Story&city=Pune+Mumbai+Hyderabad&service=About+Gas+Repair+Wale"],
   },
   alternates: {
     canonical: "https://gasrepairwale.com/about",
@@ -102,7 +103,7 @@ export default function AboutPage() {
       role: "Founder & Lead Technician",
       experience: "15+ years",
       description:
-        "Certified gas technician with extensive experience in residential and commercial gas systems across Maharastra.",
+        "Certified gas technician with extensive experience in residential and commercial gas systems across Maharashtra.",
       specialties: ["Gas Safety Certification", "Commercial Systems", "Emergency Response", "Team Leadership"],
       achievements: "Founded company in 2013, trained 50+ technicians, 3000+ successful repairs",
     },
@@ -131,7 +132,7 @@ export default function AboutPage() {
       description:
         "Expert in commercial gas systems and pipeline installations for Mumbai's IT corridor and residential areas.",
       specialties: ["Commercial Gas Systems", "Pipeline Services", "IT Sector Solutions", "Compliance Management"],
-      achievements: "500+ commercial installations, Maharastra safety compliance expert, corporate client specialist",
+      achievements: "500+ commercial installations, Maharashtra safety compliance expert, corporate client specialist",
     },
   ]
 
@@ -194,13 +195,12 @@ export default function AboutPage() {
                   <span>Call: +91 83027 13127</span>
                 </a>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
-              >
-                Get Service Quote
-              </Button>
+              <TrackedWhatsAppButton
+                message="Hi, I want a gas repair service quote. Please help me."
+                source="About Page — Get Service Quote"
+                label="💬 Get Service Quote"
+                className="inline-flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent px-6 py-3 rounded-md font-medium text-sm transition-colors"
+              />
             </div>
           </div>
         </div>
@@ -218,7 +218,7 @@ export default function AboutPage() {
                   <strong>Gas Repair Wale</strong> was founded in 2013 with a simple yet powerful mission: to provide
                   safe, reliable, and affordable gas appliance services to homes and businesses across India. What
                   started as a small local service in Pune has grown into a trusted name across Maharashtra and
-                  Maharastra.
+                  Maharashtra.
                 </p>
                 <p>
                   Our founder, <strong>Rajesh Sharma</strong>, recognized the critical need for professional gas
@@ -455,3 +455,4 @@ export default function AboutPage() {
     </main>
   )
 }
+

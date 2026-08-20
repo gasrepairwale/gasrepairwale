@@ -134,8 +134,8 @@ export function ContactCTA() {
                 </div>
                 <div>
                   <p className="font-semibold">Email Us</p>
-                  <a href="mailto:info@gasrepairewale.com" className="text-lg hover:underline">
-                    info@gasrepairewale.com
+                  <a href="mailto:info@gasrepairwale.com" className="text-lg hover:underline">
+                    info@gasrepairwale.com
                   </a>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export function ContactCTA() {
                 </div>
                 <div>
                   <p className="font-semibold">Service Areas</p>
-                  <p className="text-lg">Pune & Mumbai</p>
+                  <p className="text-lg">Pune, Mumbai & Hyderabad</p>
                 </div>
               </div>
 

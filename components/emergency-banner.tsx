@@ -32,7 +32,7 @@ export function EmergencyBanner() {
         </div>
 
         <div className="flex items-center space-x-3">
-          <Button size="sm" className="bg-white text-red-600 hover:bg-gray-100 font-bold animate-pulse">
+          <Button asChild size="sm" className="bg-white text-red-600 hover:bg-gray-100 font-bold animate-pulse">
             <a 
               href="tel:+918302713127" 
               className="flex items-center space-x-1"
@@ -43,7 +43,7 @@ export function EmergencyBanner() {
             </a>
           </Button>
 
-          <Button size="sm" className="bg-green-500 text-white hover:bg-green-600 font-bold hidden md:flex border-0">
+          <Button asChild size="sm" className="bg-green-500 text-white hover:bg-green-600 font-bold hidden md:flex border-0">
             <a 
               href={getWhatsAppRedirectUrl({
                 serviceType: "Emergency",

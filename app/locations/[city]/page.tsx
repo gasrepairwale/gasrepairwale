@@ -510,11 +510,11 @@ const cityData = {
   },
   mumbai: {
     name: "Mumbai",
-    state: "Maharastra",
+    state: "Maharashtra",
     description:
       "Professional gas stove repair, pipeline services, and appliance maintenance across Mumbai and surrounding areas",
     heroDescription:
-      "🔥 Professional gas stove repair, pipeline services, and appliance maintenance across Mumbai and surrounding areas. Serving the tech capital with reliable and efficient gas solutions for 2500+ satisfied customers and 25-30 minute average response time.",
+      "🔥 Professional gas stove repair, pipeline services, and appliance maintenance across Mumbai and surrounding areas. Serving Mumbai with reliable and efficient gas solutions for 2500+ satisfied customers with 20-30 minute average response time.",
     areas: [
       {
         name: "Borivali East & West",
@@ -662,9 +662,9 @@ const cityData = {
       },
     ],
     totalCustomers: "2500+",
-    avgResponseTime: "25-30 minutes",
+    avgResponseTime: "20-30 minutes",
     establishedYear: "2016",
-    coordinates: { lat: 17.385, lng: 78.4867 },
+    coordinates: { lat: 19.0760, lng: 72.8777 },
     testimonials: [
       {
         name: "Srinivas Reddy",
@@ -680,13 +680,13 @@ const cityData = {
         area: "Kandivali East West",
         profession: "Product Manager",
         rating: 5,
-        text: "Quick response for gas stove repair. Fixed the ignition problem efficiently. Highly recommended for IT professionals!",
+        text: "Quick response for gas stove repair. Fixed the ignition problem efficiently. Highly recommended for families!",
         service: "Gas Stove Repair",
         date: "November 2024",
       },
       {
         name: "Rajesh Kumar",
-        area: "Malda East West",
+        area: "Malad East West",
         profession: "Restaurant Owner",
         rating: 5,
         text: "Regular maintenance service for our restaurant. Always punctual and thorough work with competitive pricing.",
@@ -696,38 +696,38 @@ const cityData = {
     ],
     advantages: [
       {
-        title: "Tech City Expertise",
-        description: "Specialized service for Mumbai's tech professionals since 2016",
+        title: "Mumbai Metro Reach",
+        description: "Specialized service across Mumbai's western and central corridors since 2016",
         icon: "MapPin",
       },
       {
-        title: "Tech City Speed",
-        description: "25-30 minute response time across Mumbai's IT corridor",
+        title: "Fast Response",
+        description: "20-30 minute response time across Mumbai localities",
         icon: "Clock",
       },
       {
-        title: "Cyberabad Trusted",
-        description: "2500+ customers in Mumbai and Cyberabad areas",
+        title: "Trusted by Families",
+        description: "2500+ happy customers across Mumbai residential complexes",
         icon: "Users",
       },
       {
-        title: "Maharastra Licensed",
-        description: "Fully licensed and compliant with Maharastra state regulations",
+        title: "Maharashtra Licensed",
+        description: "Fully licensed and compliant with Maharashtra state gas safety regulations",
         icon: "Shield",
       },
     ],
     seoContent: {
       whyChoose: [
-        "Tech City Expertise: Specialized service for Mumbai's IT professionals and modern homes",
-        "Quick Response: Average 25-30 minute response time across Mumbai metro",
-        "Licensed Technicians: Certified for gas work in Maharastra",
-        "Comprehensive Coverage: Serving 6 major areas including Borivali East West, Kandivali East West, Malda East West",
+        "Local Mumbai Expertise: Specialized service for Mumbai's apartments, chawls, and commercial kitchens",
+        "Quick Response: Average 20-30 minute response time across Mumbai metro",
+        "Licensed Technicians: Certified for gas work in Maharashtra",
+        "Comprehensive Coverage: Serving 16 major areas from Borivali to Colaba & Churchgate",
         "Customer Satisfaction: 2500+ happy customers across Mumbai",
-        "Emergency Service: 24/7 availability for gas emergencies",
+        "Emergency Service: 24/7 availability for gas emergencies across Mumbai",
       ],
       services: {
         gasStove: [
-          "IT professional-friendly timing",
+          "Same-day home visits across Mumbai",
           "Weekend service availability",
           "Modern appliance expertise",
           "Quick turnaround time",
@@ -1106,6 +1106,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `Gas Repair Services in ${city.name} | Gas Repair Wale`,
       description: `Professional gas repair services in ${city.name} with ${city.totalCustomers} satisfied customers and ${city.avgResponseTime} response time.`,
       url: `https://gasrepairwale.com/locations/${cityParam}`,
+      images: [
+        {
+          url: `https://gasrepairwale.com/api/og?city=${encodeURIComponent(city.name)}&service=Gas+Repair`,
+          width: 1200,
+          height: 630,
+          alt: `Gas Repair Services in ${city.name}`,
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://gasrepairwale.com/locations/${cityParam}`,
     },
   }
 }

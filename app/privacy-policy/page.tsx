@@ -21,20 +21,20 @@ export const metadata: Metadata = {
     siteName: "Gas Repair Wale",
     images: [
       {
-        url: "/placeholder.svg?height=630&width=1200&text=Privacy+Policy",
+        url: "https://gasrepairwale.com/api/og?area=Privacy+Policy&city=Gas+Repair+Wale&service=Data+Protection",
         width: 1200,
         height: 630,
         alt: "Gas Repair Wale Privacy Policy",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy | Gas Repair Wale",
     description: "Learn how we protect your personal information and respect your privacy rights.",
-    images: ["/placeholder.svg?height=630&width=1200&text=Privacy+Policy"],
+    images: ["https://gasrepairwale.com/api/og?area=Privacy+Policy&city=Gas+Repair+Wale&service=Data+Protection"],
   },
   robots: {
     index: true,
@@ -252,7 +252,7 @@ export default function PrivacyPolicyPage() {
                 <Mail className="h-6 w-6 mr-3" />
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="opacity-90">info@gasrepairewale.com</div>
+                  <div className="opacity-90">info@gasrepairwale.com</div>
                 </div>
               </div>
 

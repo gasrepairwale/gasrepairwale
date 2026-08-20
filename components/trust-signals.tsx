@@ -25,7 +25,7 @@ export function TrustSignals() {
     {
       icon: Users,
       title: "5000+ Happy Customers",
-      description: "Across Pune & Mumbai",
+      description: "Across Pune, Mumbai & Hyderabad",
       badge: "POPULAR",
       color: "purple",
     },
