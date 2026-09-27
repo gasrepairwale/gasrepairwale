@@ -3,13 +3,14 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ContactCTA } from "@/components/contact-cta"
+import { SafetyGuarantees } from "@/components/safety-guarantees"
 import { TrackedWhatsAppButton } from "@/components/tracked-whatsapp-button"
-import { Award, Users, Shield, Clock, CheckCircle, Target, Phone } from "lucide-react"
+import { Award, Users, Shield, Clock, CheckCircle, Target, Phone, MapPin, ExternalLink } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "About Gas Repair Wale | Gas Repair in Pune, Mumbai & Hyderabad",
   description:
-    "⭐ Learn about Gas Repair Wale — Leading gas repair company since 2013 ✅ 5000+ Satisfied Customers ✅ Licensed Technicians ✅ 24/7 Emergency Service in Pune, Mumbai & Hyderabad ✅ 4.9★ Rating. Call +91 83027 13127",
+    "Learn about Gas Repair Wale — Leading gas repair company since 2013 5000+ Satisfied Customers Licensed Technicians 24/7 Emergency Service in Pune, Mumbai & Hyderabad 4.9/5 Rating. Call +91 83027 13127",
   keywords: [
     "about Gas Repair Wale",
     "gas repair company pune mumbai hyderabad",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://gasrepairwale.com/about",
     title: "About Gas Repair Wale | Professional Gas Repair Since 2013",
     description:
-      "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune, Mumbai & Hyderabad. 4.9★ rating, 24/7 emergency service.",
+      "Leading gas repair company with 10+ years experience, 5000+ satisfied customers, licensed technicians serving Pune, Mumbai & Hyderabad. 4.9/5 rating, 24/7 emergency service.",
     siteName: "Gas Repair Wale",
     images: [
       {
@@ -96,43 +97,45 @@ export default function AboutPage() {
     },
   ]
 
-  // Enhanced team members data
+  // Enhanced team members data with physical addresses & verified profiles
   const team = [
     {
-      name: "Rajesh Sharma",
-      role: "Founder & Lead Technician",
-      experience: "15+ years",
+      name: "Mumbai Operations Hub",
+      role: "Western & Central Suburb Units",
+      address: "Dalvi Plazza Shop Number 1 OM Nagar JB Nagar, Andheri East, Maharashtra 400059",
+      googleMapUrl: "https://business.google.com/n/1043319778573770626/profile?fid=4205353585654553093",
+      experience: "Serving Mumbai Metro",
       description:
-        "Certified gas technician with extensive experience in residential and commercial gas systems across Maharashtra.",
-      specialties: ["Gas Safety Certification", "Commercial Systems", "Emergency Response", "Team Leadership"],
-      achievements: "Founded company in 2013, trained 50+ technicians, 3000+ successful repairs",
+        "Fast response technicians covering Borivali, Kandivali, Malad, Goregaon, Andheri, Bandra, Dadar, and Mumbai Central corridors.",
+      specialties: ["Apartment Pipeline Checks", "Burner Flame Calibration", "Commercial Kitchen AMC", "Safety Audits"],
+      achievements: "2,000+ completed repairs across Mumbai high-rises & residences. Direct Helpline: +91 83027 13127",
+      phone: "+91 83027 13127",
+      phoneTel: "tel:+918302713127",
     },
     {
-      name: "Amit Kumar",
-      role: "Senior Technician - Pune",
-      experience: "12+ years",
+      name: "Pune Operations Hub",
+      role: "Lead Field Technicians",
+      address: "Sr no 123 Ganesh Nagar Phursungi, Pune Saswad Rd, Pune, Maharashtra 412308",
+      googleMapUrl: "https://business.google.com/n/16485793595543893042/profile?fid=5310968251242542856",
+      experience: "Serving since 2013",
       description:
-        "Specialist in gas stove repairs and safety inspections with advanced certifications in modern gas appliances.",
-      specialties: ["Gas Stove Repair", "Pipeline Installation", "Safety Inspections", "Customer Training"],
-      achievements: "2000+ stove repairs, 98% customer satisfaction, emergency response specialist",
+        "Dedicated mobile technician fleet serving Kothrud, Baner, Wakad, Hinjewadi, Hadapsar, Kharadi, Fursungi, and all Pune localities.",
+      specialties: ["Gas Stove Repair", "Hob Restoration", "Pipeline Installation", "Emergency Leaks"],
+      achievements: "Over 3,000+ satisfied residential & commercial customers in Pune. Direct Helpline: +91 83027 13127",
+      phone: "+91 83027 13127",
+      phoneTel: "tel:+918302713127",
     },
     {
-      name: "Priya Patel",
-      role: "Customer Service Manager",
-      experience: "8+ years",
+      name: "Hyderabad Operations Hub",
+      role: "West & North Corridor Lead — Vikash Ji & Team",
+      address: "Shop No. 4, Allwyn X Road, Near Miyapur Metro Station, Miyapur, Hyderabad, Telangana 500049",
+      experience: "Serving West & North Hyderabad",
       description:
-        "Ensures excellent customer experience and coordinates service operations across Pune and Mumbai.",
-      specialties: ["Customer Relations", "Service Coordination", "Quality Assurance", "Training Programs"],
-      achievements: "Managed 5000+ customer interactions, 4.9-star service rating, process optimization expert",
-    },
-    {
-      name: "Srinivas Reddy",
-      role: "Senior Technician - Mumbai",
-      experience: "10+ years",
-      description:
-        "Expert in commercial gas systems and pipeline installations for Mumbai's IT corridor and residential areas.",
-      specialties: ["Commercial Gas Systems", "Pipeline Services", "IT Sector Solutions", "Compliance Management"],
-      achievements: "500+ commercial installations, Maharashtra safety compliance expert, corporate client specialist",
+        "Local technician fleet serving Nallagandla, Tellapur, BHEL, Miyapur, Kukatpally, Suchitra, Ameenpur, Patancheru, Kokapet, and surrounding areas.",
+      specialties: ["Same-Day Stove Servicing", "LPG Pipeline Leak Detection", "Hob Glass-Top Repairs", "Direct Hotline"],
+      achievements: "Local doorstep coverage with dedicated 15-25 min dispatch. Direct Hyderabad Helpline: +91 99508 09283",
+      phone: "+91 99508 09283",
+      phoneTel: "tel:+919950809283",
     },
   ]
 
@@ -181,7 +184,7 @@ export default function AboutPage() {
               About <span className="text-orange-600">Gas Repair Wale</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              🔥 With over a decade of experience, we're your trusted partners in gas appliance repair and maintenance.
+              With over a decade of experience, we're your trusted partners in gas appliance repair and maintenance.
               Our commitment to safety, quality, and customer satisfaction has made us the preferred choice across Pune
               and Mumbai with <strong>5000+ satisfied customers</strong> and <strong>4.9-star rating</strong>.
             </p>
@@ -198,7 +201,7 @@ export default function AboutPage() {
               <TrackedWhatsAppButton
                 message="Hi, I want a gas repair service quote. Please help me."
                 source="About Page — Get Service Quote"
-                label="💬 Get Service Quote"
+                label="Get Service Quote"
                 className="inline-flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent px-6 py-3 rounded-md font-medium text-sm transition-colors"
               />
             </div>
@@ -240,8 +243,20 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">🏆 Key Achievements</h3>
+            <div className="space-y-6">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-orange-200">
+                <img
+                  src="/images/technician-hero.jpg"
+                  alt="Gas Repair Wale field technician working on gas stove"
+                  className="w-full h-64 object-cover object-top"
+                />
+                <div className="p-4 bg-white border-t border-gray-100">
+                  <p className="font-bold text-gray-900 text-sm">Professional Doorstep Service</p>
+                  <p className="text-xs text-gray-600">Equipped with specialized tools, genuine brass parts & digital gas leak sniffers.</p>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-2xl">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Key Achievements</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-green-100 rounded-full">
@@ -287,7 +302,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Mission and Vision with enhanced styling */}
       <section className="py-20 bg-gray-50">
@@ -370,51 +386,72 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Enhanced team section */}
+      {/* Enhanced team / Hubs section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Our Expert Team</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Professional Gas Experts</h2>
+            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Our Service Hubs</Badge>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Physical Operations & Dispatch Hubs</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our experienced and certified professionals are dedicated to providing you with the best gas repair
-              services across Pune and Mumbai
+              We operate from verified local dispatch centers across Mumbai, Pune, and Hyderabad with licensed technicians ready to reach your doorstep in 15-25 minutes.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {team.map((member, index) => (
-              <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex items-start space-x-4 mb-6">
-                    <div className="w-20 h-20 bg-gradient-to-r from-orange-100 to-red-100 rounded-full flex items-center justify-center">
-                      <Users className="h-10 w-10 text-orange-600" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                      <p className="text-orange-600 font-semibold mb-1">{member.role}</p>
-                      <p className="text-sm text-gray-500">{member.experience} Experience</p>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-600 leading-relaxed mb-4">{member.description}</p>
-
+              <Card key={index} className="hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between border-t-4 border-t-orange-600">
+                <CardContent className="p-6 flex flex-col justify-between h-full space-y-6">
                   <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-gradient-to-r from-orange-100 to-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-orange-600" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-lg font-bold text-gray-900 leading-snug">{member.name}</h3>
+                        <p className="text-orange-600 font-semibold text-xs">{member.role}</p>
+                        <p className="text-xs text-gray-500">{member.experience}</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-orange-50/60 p-3 rounded-md border border-orange-100">
+                      <p className="text-xs font-semibold text-gray-900 mb-1">Hub Address:</p>
+                      <p className="text-xs text-gray-700 leading-relaxed">{member.address}</p>
+                    </div>
+
+                    <p className="text-xs text-gray-600 leading-relaxed">{member.description}</p>
+
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Specialties:</h4>
-                      <div className="flex flex-wrap gap-2">
+                      <h4 className="font-semibold text-gray-900 text-xs mb-2">Core Services:</h4>
+                      <div className="flex flex-wrap gap-1.5">
                         {member.specialties.map((specialty, specialtyIndex) => (
-                          <Badge key={specialtyIndex} className="bg-blue-100 text-blue-800 text-xs">
+                          <Badge key={specialtyIndex} variant="secondary" className="text-[11px] px-2 py-0.5">
                             {specialty}
                           </Badge>
                         ))}
                       </div>
                     </div>
+                  </div>
 
-                    <div className="bg-green-50 p-3 rounded-lg">
-                      <h4 className="font-semibold text-green-800 mb-1">Key Achievements:</h4>
-                      <p className="text-sm text-green-700">{member.achievements}</p>
-                    </div>
+                  <div className="space-y-3 pt-3 border-t">
+                    <Button asChild className="w-full bg-orange-600 hover:bg-orange-700 text-white text-xs h-9">
+                      <a href={member.phoneTel} className="flex items-center justify-center space-x-2">
+                        <Phone className="h-3.5 w-3.5" />
+                        <span>Call Hub ({member.phone})</span>
+                      </a>
+                    </Button>
+                    {member.googleMapUrl && (
+                      <Button asChild variant="outline" className="w-full text-xs h-9 border-gray-300 hover:bg-gray-100">
+                        <a 
+                          href={member.googleMapUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center space-x-1.5 text-gray-700"
+                        >
+                          <ExternalLink className="h-3.5 w-3.5 text-blue-600" />
+                          <span>Google Business Profile</span>
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -423,11 +460,14 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Safety Guarantees Component */}
+      <SafetyGuarantees />
+
       {/* Service statistics */}
       <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
-            <h2 className="text-4xl font-bold mb-12">📊 Our Impact in Numbers</h2>
+            <h2 className="text-4xl font-bold mb-12"> Our Impact in Numbers</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <div className="text-4xl font-bold mb-2">5000+</div>
@@ -442,7 +482,7 @@ export default function AboutPage() {
                 <div className="text-orange-100">Emergency Service</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">4.9★</div>
+                <div className="text-4xl font-bold mb-2">4.9/5</div>
                 <div className="text-orange-100">Customer Rating</div>
               </div>
             </div>

@@ -10,7 +10,7 @@ import { useToast } from "@/hooks/use-toast"
 import { trackServiceBooking, sendLeadNotification, getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 type QuickBookingFormProps = {
-  area: any
+  area?: any
   className?: string
 }
 

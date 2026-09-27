@@ -164,7 +164,7 @@ export function ContactCTA() {
 
             {/* Emergency notice */}
             <div className="bg-orange-500 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">🚨 Emergency Service Available</h3>
+              <h3 className="font-bold text-lg mb-2">Emergency Service Available</h3>
               <p className="text-orange-100">
                 Gas leaks and safety issues? Don't wait! Call us immediately for 24/7 emergency repairs and safety
                 inspections.
@@ -229,7 +229,7 @@ export function ContactCTA() {
                 </form>
 
                 <div className="text-center text-sm text-gray-500">
-                  <p>🔒 Your information is secure and will not be shared</p>
+                  <p> Your information is secure and will not be shared</p>
                 </div>
               </div>
             </CardContent>

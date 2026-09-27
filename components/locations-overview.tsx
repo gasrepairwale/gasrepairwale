@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, Phone, Clock, MessageSquare } from "lucide-react"
 import { trackPhoneCall, trackWhatsApp, getWhatsAppRedirectUrl } from "@/lib/analytics"
+import { getCityContact } from "@/lib/phone"
 
 /**
  * Locations Overview Component
@@ -42,12 +43,15 @@ export function LocationsOverview() {
       city: "Hyderabad",
       href: "/locations/hyderabad",
       areas: [
-        "Gachibowli", "HITEC City", "Madhapur", "Kondapur", "Nanakramguda", 
-        "Financial District", "Banjara Hills", "Jubilee Hills", "Somajiguda", 
-        "Panjagutta", "Begumpet", "Ameerpet"
+        "Nallagandla", "Tellapur", "BHEL", "Osmanagar", "Kollur", "Patancheruvu",
+        "Khazipally", "Bowrampet", "Pragathi Nagar", "Balanagar", "Bowenpally",
+        "Serilingampally", "Suchitra", "Mallampet", "Kistareddypet", "Ameenpur",
+        "Badam Kommu", "Mayuri Nagar", "Nanakramguda", "Kokapet", "Narsingi",
+        "Dulapally", "Sri Vani Nagar", "Ganesh Nagar", "HMT Miyapur", "Madeenaguda",
+        "Gopal Nagar", "Huda Layout"
       ],
-      description: "Expert gas appliance services across Hyderabad's tech corridors and residential areas with 12 major locations covered.",
-      responseTime: "20-30 minutes",
+      description: "Expert gas appliance & pipeline repairs across Miyapur, Tellapur, Serilingampally & 28 key Hyderabad hubs.",
+      responseTime: "15-25 minutes",
     },
   ]
 
@@ -65,79 +69,83 @@ export function LocationsOverview() {
 
         {/* Locations grid */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {locations.map((location, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3 text-2xl">
-                  <MapPin className="h-6 w-6 text-orange-600" />
-                  <span>{location.city}</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-gray-600">{location.description}</p>
+          {locations.map((location, index) => {
+            const contact = getCityContact(location.city)
+            return (
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-3 text-2xl">
+                    <MapPin className="h-6 w-6 text-orange-600" />
+                    <span>{location.city}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <p className="text-gray-600">{location.description}</p>
 
-                {/* Response time */}
-                <div className="flex items-center space-x-2 text-sm">
-                  <Clock className="h-4 w-4 text-green-600" />
-                  <span className="text-green-600 font-medium">Response Time: {location.responseTime}</span>
-                </div>
-
-                {/* Service areas */}
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">Service Areas:</h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto">
-                    {location.areas.map((area, areaIndex) => (
-                      <div key={areaIndex} className="text-sm text-gray-600 bg-gray-50 px-3 py-1 rounded">
-                        {area}
-                      </div>
-                    ))}
+                  {/* Response time */}
+                  <div className="flex items-center space-x-2 text-sm">
+                    <Clock className="h-4 w-4 text-green-600" />
+                    <span className="text-green-600 font-medium">Response Time: {location.responseTime}</span>
                   </div>
-                  <p className="text-xs text-gray-500 mt-2">
-                    {location.areas.length} areas covered
-                  </p>
-                </div>
 
-                {/* Action buttons */}
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Button asChild className="flex-1 bg-orange-600 hover:bg-orange-700">
-                    <Link href={location.href}>View Details</Link>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="flex-1 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
-                  >
-                    <a 
-                      href="tel:+918302713127" 
-                      className="flex items-center space-x-2"
-                      onClick={() => trackPhoneCall("+918302713127", location.city)}
-                    >
-                      <Phone className="h-4 w-4" />
-                      <span>Call Now</span>
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="flex-1 border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
-                  >
-                    <a 
-                      href={getWhatsAppRedirectUrl({
-                        serviceType: "General Inquiry",
-                        city: location.city,
-                        message: `Hi, I am looking for a gas repair service in ${location.city}.`
-                      })}
-                      className="flex items-center space-x-2"
-                      onClick={() => trackWhatsApp(`WhatsApp from ${location.city}`, location.city)}
-                    >
-                      <MessageSquare className="h-4 w-4" />
-                      <span>WhatsApp</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                  {/* Service areas */}
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-3">Service Areas:</h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto">
+                      {location.areas.map((area, areaIndex) => (
+                        <div key={areaIndex} className="text-sm text-gray-600 bg-gray-50 px-3 py-1 rounded">
+                          {area}
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-xs text-gray-500 mt-2">
+                      {location.areas.length} areas covered
+                    </p>
+                  </div>
+
+                  {/* Action buttons */}
+                  <div className="space-y-2.5 pt-3 border-t">
+                    <div className="grid grid-cols-2 gap-2">
+                      <Button
+                        asChild
+                        className="bg-orange-600 hover:bg-orange-700 text-white font-semibold text-xs h-9"
+                      >
+                        <a 
+                          href={contact.phoneTel} 
+                          className="flex items-center justify-center space-x-1.5"
+                          onClick={() => trackPhoneCall(contact.phoneRaw, location.city)}
+                        >
+                          <Phone className="h-3.5 w-3.5" />
+                          <span>Call Now</span>
+                        </a>
+                      </Button>
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="border-green-600 text-green-700 hover:bg-green-50 bg-white font-semibold text-xs h-9"
+                      >
+                        <a 
+                          href={getWhatsAppRedirectUrl({
+                            serviceType: "General Inquiry",
+                            city: location.city,
+                            message: `Hi, I am looking for a gas repair service in ${location.city}.`
+                          })}
+                          className="flex items-center justify-center space-x-1.5"
+                          onClick={() => trackWhatsApp(`WhatsApp from ${location.city}`, location.city)}
+                        >
+                          <MessageSquare className="h-3.5 w-3.5 text-green-600" />
+                          <span>WhatsApp</span>
+                        </a>
+                      </Button>
+                    </div>
+                    <Button asChild variant="outline" className="w-full text-xs h-9 border-gray-300 hover:bg-gray-50 text-gray-700 font-medium">
+                      <Link href={location.href}>View All {location.areas.length} Areas in {location.city}</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
 
         {/* Additional service note */}

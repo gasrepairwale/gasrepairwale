@@ -7,6 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
 import { ScrollToTopWrapper } from "@/components/scroll-to-top-wrapper"
+import { MobileStickyBar } from "@/components/mobile-sticky-bar"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -286,6 +287,9 @@ export default function RootLayout({
 
           {/* Footer with contact info and links */}
           <Footer />
+
+          {/* Sticky Quick Contact Bar on Mobile Devices */}
+          <MobileStickyBar />
 
           {/* Toast notifications */}
           <Toaster />

@@ -74,21 +74,47 @@ export function Hero() {
       { value: "churchgate", label: "Churchgate" },
     ],
     hyderabad: [
+      { value: "nallagandla", label: "Nallagandla" },
+      { value: "tellapur", label: "Tellapur" },
+      { value: "bhel", label: "BHEL" },
+      { value: "osman-nagar", label: "Osman Nagar" },
+      { value: "kollur", label: "Kollur" },
+      { value: "patancheru", label: "Patancheru" },
+      { value: "khajipally", label: "Khajipally" },
+      { value: "bowrampet", label: "Bowrampet" },
+      { value: "pragathi-nagar", label: "Pragathi Nagar" },
+      { value: "balanagar", label: "Balanagar" },
+      { value: "bowenpally", label: "Bowenpally" },
+      { value: "serilingampally", label: "Serilingampally" },
+      { value: "suchitra", label: "Suchitra" },
+      { value: "mallampet", label: "Mallampet" },
+      { value: "kistareddypet", label: "Kistareddypet" },
+      { value: "ameenpur", label: "Ameenpur" },
+      { value: "badam-kommu", label: "Badam Kommu" },
+      { value: "mayuri-nagar", label: "Mayuri Nagar" },
+      { value: "nanakramguda", label: "Nanakramguda" },
+      { value: "kokapet", label: "Kokapet" },
+      { value: "narsingi", label: "Narsingi" },
+      { value: "dulapally", label: "Dulapally" },
+      { value: "sri-vani-nagar", label: "Sri Vani Nagar" },
+      { value: "ganesh-nagar", label: "Ganesh Nagar" },
+      { value: "hmt-miyapur", label: "HMT Miyapur" },
+      { value: "madinaguda", label: "Madinaguda" },
+      { value: "gopal-nagar", label: "Gopal Nagar" },
+      { value: "huda-layout", label: "Huda Layout" },
       { value: "gachibowli", label: "Gachibowli" },
       { value: "hitec-city", label: "HITEC City" },
       { value: "madhapur", label: "Madhapur" },
       { value: "kondapur", label: "Kondapur" },
-      { value: "banjara-hills", label: "Banjara Hills" },
-      { value: "jubilee-hills", label: "Jubilee Hills" },
       { value: "kukatpally", label: "Kukatpally" },
+      { value: "kphb-colony", label: "KPHB Colony" },
       { value: "miyapur", label: "Miyapur" },
       { value: "bachupally", label: "Bachupally" },
       { value: "kompally", label: "Kompally" },
-      { value: "secunderabad", label: "Secunderabad" },
-      { value: "dilsukhnagar", label: "Dilsukhnagar" },
-      { value: "lb-nagar", label: "LB Nagar" },
-      { value: "uppal", label: "Uppal" },
+      { value: "chandanagar", label: "Chandanagar" },
+      { value: "hafeezpet", label: "Hafeezpet" },
       { value: "manikonda", label: "Manikonda" },
+      { value: "financial-district", label: "Financial District" }
     ],
   }
 
@@ -196,7 +222,7 @@ export function Hero() {
               </Badge>
               <Badge className="bg-yellow-100 text-yellow-800 border border-yellow-200 hover:bg-yellow-200 px-4 py-2 text-sm">
                 <Star className="w-4 h-4 mr-1" />
-                4.9★ Rating
+                4.9/5 Rating
               </Badge>
             </div>
 
@@ -212,7 +238,7 @@ export function Hero() {
               </h1>
 
               <div className="text-xl text-gray-700 leading-relaxed space-y-3">
-                <p className="font-semibold">🔥 Expert Gas Stove Repair, Pipeline Installation & Emergency Services</p>
+                <p className="font-semibold">Expert Gas Stove Repair, Pipeline Installation & Emergency Services</p>
                 <p className="text-lg">
                   <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full font-semibold">
                     Emergency Service:
@@ -277,12 +303,12 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               {/* Phone CTA — proper anchor tag, not button-inside-anchor */}
               <a
-                href="tel:+918302713127"
-                onClick={() => trackPhoneCall("+918302713127")}
+                href={`tel:${selectedLocation === "hyderabad" ? "+919950809283" : "+918302713127"}`}
+                onClick={() => trackPhoneCall(selectedLocation === "hyderabad" ? "+919950809283" : "+918302713127")}
                 className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 font-bold"
               >
                 <Phone className="h-5 w-5" />
-                <span>Call Now: +91 83027 13127</span>
+                <span>Call Now: {selectedLocation === "hyderabad" ? "+91 99508 09283" : "+91 83027 13127"}</span>
               </a>
 
               {/* WhatsApp Quote — functional link */}
@@ -298,12 +324,12 @@ export function Hero() {
                 onClick={() => trackPhoneCall("+918302713127", "WhatsApp CTA")}
                 className="inline-flex items-center justify-center space-x-2 text-lg px-8 py-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-semibold hover:shadow-lg transition-all duration-200 rounded-lg"
               >
-                💬 WhatsApp Quote
+                WhatsApp Quote
               </a>
             </div>
 
             {/* Trust signals */}
-            <div className="flex items-center space-x-6 text-sm text-gray-600">
+            <div className="flex items-center space-x-6 text-sm text-gray-600 flex-wrap gap-y-2">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-4 w-4 text-green-500" />
                 <span>Government Licensed</span>
@@ -315,6 +341,25 @@ export function Hero() {
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-4 w-4 text-green-500" />
                 <span>10+ Years Experience</span>
+              </div>
+            </div>
+
+            {/* Real Technician Showcase */}
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-orange-200 group bg-gray-900 mt-6">
+              <img
+                src="/images/technician-hero.jpg"
+                alt="Gas Repair Wale certified technician on-site repairing gas stove"
+                className="w-full h-52 sm:h-64 object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent flex flex-col justify-end p-4 text-white">
+                <div className="flex items-center space-x-2 text-xs font-bold text-orange-400 mb-1">
+                  <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                  <span>VERIFIED DOORSTEP TECHNICIANS</span>
+                </div>
+                <p className="font-bold text-sm sm:text-base leading-snug">
+                  Equipped with genuine parts, digital gas leak sniffers & pressure gauges.
+                </p>
+                <p className="text-xs text-gray-300 mt-1">Average 20-minute arrival across Pune, Mumbai & Hyderabad.</p>
               </div>
             </div>
           </div>

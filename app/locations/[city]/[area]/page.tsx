@@ -12,6 +12,7 @@ import { ServiceSchema } from "@/components/json-ld/service-schema"
 import { FAQSchema } from "@/components/json-ld/faq-schema"
 import { TrackedLink } from "@/components/tracked-link"
 import { getWhatsAppRedirectUrl } from "@/lib/analytics"
+import { getCityContact } from "@/lib/phone"
 import {
   MapPin,
   Phone,
@@ -50,9 +51,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const area = areaData_temp as any
+  const contact = getCityContact(area.city)
 
   const title = `Gas Repair in ${area.name}, ${area.city} | ${area.responseTime} Response | Licensed Technicians`
-  const description = `⭐ #1 Gas Repair Service in ${area.name}, ${area.city} ✅ ${area.customers} Happy Customers ✅ ${area.responseTime} Response ✅ ${area.rating}★ Rating ✅ 24/7 Emergency. Call +91 83027 13127!`
+  const description = `#1 Gas Repair Service in ${area.name}, ${area.city} ${area.customers} Happy Customers ${area.responseTime} Response ${area.rating} Rating 24/7 Emergency. Call ${contact.phoneDisplay}!`
 
   return {
     title,
@@ -140,6 +142,7 @@ export default async function AreaPage({ params }: Props) {
   }
 
   const area = areaData_temp as any
+  const contact = getCityContact(area.city)
 
   // Icon mapping for advantages
   const getIcon = (iconName: string) => {
@@ -311,7 +314,7 @@ export default async function AreaPage({ params }: Props) {
                       <Star className="h-5 w-5 text-yellow-600" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900">{area.rating}★ Customer Rating</p>
+                      <p className="font-semibold text-gray-900">{area.rating} Customer Rating</p>
                       <p className="text-sm text-gray-600">{area.customers} satisfied customers</p>
                     </div>
                   </div>
@@ -338,14 +341,14 @@ export default async function AreaPage({ params }: Props) {
                   className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
                 >
                   <TrackedLink
-                    href="tel:+918302713127"
+                    href={contact.phoneTel}
                     className="flex items-center space-x-2"
                     category="phone"
                     city={area.city}
                     area={area.name}
                   >
                     <Phone className="h-5 w-5" />
-                    <span className="font-bold">Call Now: +91 83027 13127</span>
+                    <span className="font-bold">Call Now: {contact.phoneDisplay}</span>
                   </TrackedLink>
                 </Button>
 
@@ -530,7 +533,7 @@ export default async function AreaPage({ params }: Props) {
 
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">🏠 Residential Services</h3>
+                  <h3 className="text-xl font-semibold mb-3"> Residential Services</h3>
                   <ul className="space-y-1 text-sm">
                     {area.seoContent?.services?.residential?.map((s: string, i: number) => (
                       <li key={i}>• {s}</li>
@@ -538,7 +541,7 @@ export default async function AreaPage({ params }: Props) {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">🏢 Commercial Services</h3>
+                  <h3 className="text-xl font-semibold mb-3"> Commercial Services</h3>
                   <ul className="space-y-1 text-sm">
                     {area.seoContent?.services?.commercial?.map((s: string, i: number) => (
                       <li key={i}>• {s}</li>
@@ -548,18 +551,18 @@ export default async function AreaPage({ params }: Props) {
               </div>
 
               <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mt-8">
-                <h4 className="text-lg font-bold text-blue-900 mb-2">📍 Areas We Cover in {area.name}:</h4>
+                <h4 className="text-lg font-bold text-blue-900 mb-2">Areas We Cover in {area.name}:</h4>
                 <p className="text-blue-800">
                   {area.landmarks?.join(" • ")} and surrounding areas in {area.name}, {area.city} — {area.pincode}
                 </p>
               </div>
 
               <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 mt-6">
-                <h4 className="text-lg font-bold text-red-900 mb-2">🚨 Emergency Gas Service in {area.name}:</h4>
+                <h4 className="text-lg font-bold text-red-900 mb-2">Emergency Gas Service in {area.name}:</h4>
                 <p className="text-red-800">
                   {area.seoContent?.emergencyInfo} Call{" "}
-                  <a href="tel:+918302713127" className="font-bold underline">
-                    +91 83027 13127
+                  <a href={contact.phoneTel} className="font-bold underline">
+                    {contact.phoneDisplay}
                   </a>{" "}
                   for immediate assistance.
                 </p>

@@ -2,10 +2,12 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet"
 import { Menu, Phone, Wrench } from "lucide-react"
 import { trackPhoneCall } from "@/lib/analytics"
+import { getCityContact } from "@/lib/phone"
 
 /**
  * Header Component
@@ -13,6 +15,8 @@ import { trackPhoneCall } from "@/lib/analytics"
  */
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
+  const contact = getCityContact(pathname?.includes("hyderabad") ? "hyderabad" : "pune")
 
   // Navigation menu items
   const navItems = [
@@ -32,7 +36,7 @@ export function Header() {
   ]
 
   const handleCallClick = () => {
-    trackPhoneCall("+918302713127")
+    trackPhoneCall(contact.phoneRaw, contact.city)
   }
 
   return (
@@ -73,7 +77,7 @@ export function Header() {
         <div className="flex items-center space-x-4">
           <Button asChild className="hidden text-white sm:flex bg-orange-600 hover:bg-orange-700">
             <a 
-              href="tel:+918302713127" 
+              href={contact.phoneTel} 
               className="flex items-center space-x-2"
               onClick={handleCallClick}
             >
@@ -90,6 +94,13 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <div className="flex items-center space-x-2 pb-4 border-b">
+                <Wrench className="h-5 w-5 text-orange-600" />
+                <SheetTitle className="text-lg font-bold text-gray-900">Gas Repair Wale</SheetTitle>
+              </div>
+              <SheetDescription className="sr-only">
+                Doorstep gas stove repair, hob flame restoration, and gas pipeline installation services.
+              </SheetDescription>
               <nav className="flex flex-col space-y-4 mt-6">
                 {navItems.map((item) => (
                   <div key={item.href}>
@@ -119,12 +130,12 @@ export function Header() {
                 ))}
                 <Button asChild className="mt-4 bg-orange-600 hover:bg-orange-700">
                   <a 
-                    href="tel:+918302713127" 
+                    href={contact.phoneTel} 
                     className="flex items-center space-x-2"
                     onClick={handleCallClick}
                   >
                     <Phone className="h-4 w-4" />
-                    <span>+91 83027 13127</span>
+                    <span>{contact.phoneDisplay}</span>
                   </a>
                 </Button>
               </nav>

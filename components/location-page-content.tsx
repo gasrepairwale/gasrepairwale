@@ -8,6 +8,7 @@ import { BreadcrumbSchema } from "@/components/json-ld/breadcrumb-schema"
 import { ServiceSchema } from "@/components/json-ld/service-schema"
 import { FAQSchema } from "@/components/json-ld/faq-schema"
 import { TrackedLink } from "@/components/tracked-link"
+import { getCityContact } from "@/lib/phone"
 
 interface CityData {
   name: string
@@ -61,6 +62,8 @@ interface LocationPageContentProps {
  * Interactive elements (phone click tracking) handled by TrackedLink client component.
  */
 export function LocationPageContent({ city, citySlug }: LocationPageContentProps) {
+  const contact = getCityContact(city.name)
+
   // Icon mapping for advantages
   const getIcon = (iconName: string) => {
     const icons = {
@@ -150,13 +153,13 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                 className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold"
               >
                 <TrackedLink
-                  href="tel:+918302713127"
+                  href={contact.phoneTel}
                   className="flex items-center space-x-2"
                   category="phone"
                   city={city.name}
                 >
                   <Phone className="h-5 w-5" />
-                  <span>CALL NOW: +91 83027 13127</span>
+                  <span>CALL NOW: {contact.phoneDisplay}</span>
                 </TrackedLink>
               </Button>
               <Button
@@ -166,7 +169,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                 className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-bold"
               >
                 <Link href="#booking-form">
-                  💰 Get FREE Quote
+                  Get FREE Quote
                 </Link>
               </Button>
             </div>
@@ -186,7 +189,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                 <div className="text-sm text-gray-600">Emergency Service</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">4.9★</div>
+                <div className="text-2xl font-bold text-purple-600">4.9/5</div>
                 <div className="text-sm text-gray-600">Customer Rating</div>
               </div>
             </div>
@@ -199,7 +202,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Service Coverage</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">📍 Areas We Serve in {city.name}</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Areas We Serve in {city.name}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive gas repair services across all major areas in {city.name} with the fastest response times in{" "}
               {city.state}.
@@ -265,7 +268,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                       View Details
                     </Link>
                     <TrackedLink
-                      href="tel:+918302713127"
+                      href={contact.phoneTel}
                       className="flex-1 text-center py-2 px-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 rounded-md text-sm font-medium transition-colors"
                       category="phone"
                       city={city.name}
@@ -287,7 +290,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
           <div className="text-center mb-16">
             <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">Local Expertise</Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              🏆 Why {city.name} Residents Choose Gas Repair Wale?
+              Why {city.name} Residents Choose Gas Repair Wale?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Local expertise with deep understanding of {city.name}'s unique residential and commercial needs.
@@ -326,7 +329,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Customer Reviews</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">💬 What {city.name} Customers Say</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">What {city.name} Customers Say</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Real feedback from our satisfied customers across {city.name}.
             </p>
@@ -376,7 +379,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
       <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
-            <h2 className="text-4xl font-bold mb-12">📊 Our {city.name} Service Statistics</h2>
+            <h2 className="text-4xl font-bold mb-12"> Our {city.name} Service Statistics</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <div className="text-4xl font-bold mb-2">{city.totalCustomers}</div>
@@ -404,7 +407,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              🔧 Professional Gas Services in {city.name}, {city.state}
+              Professional Gas Services in {city.name}, {city.state}
             </h2>
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
@@ -422,7 +425,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
               <ul className="space-y-2">
                 {city.seoContent.whyChoose.map((point, index) => (
                   <li key={index}>
-                    ✅ <strong>{point.split(":")[0]}:</strong> {point.split(":")[1]}
+                    <strong>{point.split(":")[0]}:</strong> {point.split(":")[1]}
                   </li>
                 ))}
               </ul>
@@ -431,7 +434,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-lg font-semibold mb-2">🔥 Gas Stove Repair Services</h4>
+                  <h4 className="text-lg font-semibold mb-2">Gas Stove Repair Services</h4>
                   <ul className="text-sm space-y-1">
                     {city.seoContent.services.gasStove.map((service, index) => (
                       <li key={index}>• {service}</li>
@@ -439,7 +442,7 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-2">🔧 Pipeline Services</h4>
+                  <h4 className="text-lg font-semibold mb-2">Pipeline Services</h4>
                   <ul className="text-sm space-y-1">
                     {city.seoContent.services.pipeline.map((service, index) => (
                       <li key={index}>• {service}</li>
@@ -452,8 +455,8 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
                 <strong>Emergency Gas Service in {city.name}:</strong> Gas leaks and safety issues require immediate
                 attention. Our emergency team is available 24/7 across {city.name} with guaranteed response within 15
                 minutes. Call{" "}
-                <a href="tel:+918302713127" className="text-blue-600 font-bold">
-                  +91 83027 13127
+                <a href={contact.phoneTel} className="text-blue-600 font-bold">
+                  {contact.phoneDisplay}
                 </a>{" "}
                 for immediate assistance.
               </div>

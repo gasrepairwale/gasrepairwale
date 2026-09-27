@@ -125,7 +125,7 @@ export function EnhancedTestimonials() {
             <div className="text-sm text-gray-600">Total Reviews</div>
           </div>
           <div className="text-center bg-white p-6 rounded-xl shadow-sm">
-            <div className="text-3xl font-bold text-yellow-600 mb-2">{testimonialStats.averageRating}★</div>
+            <div className="text-3xl font-bold text-yellow-600 mb-2">{testimonialStats.averageRating}</div>
             <div className="text-sm text-gray-600">Average Rating</div>
           </div>
           <div className="text-center bg-white p-6 rounded-xl shadow-sm">
@@ -190,11 +190,11 @@ export function EnhancedTestimonials() {
                 <div className="bg-gradient-to-r from-red-50 to-green-50 p-4 rounded-lg mb-4">
                   <div className="grid grid-cols-2 gap-4 text-xs">
                     <div>
-                      <div className="font-semibold text-red-700 mb-1">Before:</div>
+                      <div className="font-semibold text-red-700 mb-1">Issue Reported:</div>
                       <div className="text-red-600">{testimonial.beforeImage}</div>
                     </div>
                     <div>
-                      <div className="font-semibold text-green-700 mb-1">After:</div>
+                      <div className="font-semibold text-green-700 mb-1">Resolution:</div>
                       <div className="text-green-600">{testimonial.afterImage}</div>
                     </div>
                   </div>
@@ -234,14 +234,14 @@ export function EnhancedTestimonials() {
                 className="bg-white text-orange-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center justify-center"
                 onClick={() => trackPhoneCall("+918302713127", "Testimonials CTA")}
               >
-                📞 Call Now: +91 83027 13127
+                Call Now: +91 83027 13127
               </a>
               <a
                 href="#booking-form"
                 className="bg-orange-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-orange-400 transition-colors duration-200"
                 onClick={() => trackPhoneCall("+918302713127", "Testimonials CTA", "Quote Request")}
               >
-                💬 Get Free Quote
+                Get Free Quote
               </a>
             </div>
           </div>

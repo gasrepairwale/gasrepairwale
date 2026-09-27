@@ -31,8 +31,8 @@ export function TrustSignals() {
     },
     {
       icon: Star,
-      title: "4.9★ Google Rating",
-      description: "Based on 500+ Reviews",
+      title: "4.9/5 Verified Rating",
+      description: "Based on Direct Customer Feedback",
       badge: "TOP RATED",
       color: "yellow",
     },
@@ -53,7 +53,7 @@ export function TrustSignals() {
         {/* Trust badges */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            🏆 Why <span className="text-orange-600">5000+ Customers</span> Trust Us?
+            Why <span className="text-orange-600">5000+ Customers</span> Trust Us?
           </h2>
           <p className="text-xl text-gray-600 mb-8">India's most trusted gas repair service with proven track record</p>
         </div>
@@ -97,7 +97,7 @@ export function TrustSignals() {
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
-              🛡️ Our <span className="text-green-600">Certifications</span> &{" "}
+              Our <span className="text-green-600">Certifications</span> &{" "}
               <span className="text-blue-600">Guarantees</span>
             </h3>
             <p className="text-gray-600">Licensed, insured, and certified for your peace of mind</p>
@@ -117,7 +117,7 @@ export function TrustSignals() {
         <div className="mt-8 bg-gradient-to-r from-red-600 to-orange-600 text-white p-6 rounded-2xl text-center">
           <div className="flex items-center justify-center space-x-2 mb-2">
             <Clock className="h-6 w-6 animate-pulse" />
-            <span className="text-2xl font-black">⚡ 15-MINUTE RESPONSE GUARANTEE ⚡</span>
+            <span className="text-2xl font-black"> 15-MINUTE RESPONSE GUARANTEE </span>
           </div>
           <p className="text-lg">Gas Emergency? We guarantee to respond within 15 minutes or your service is FREE!</p>
         </div>

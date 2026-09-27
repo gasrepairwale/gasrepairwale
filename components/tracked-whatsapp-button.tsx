@@ -35,11 +35,13 @@ export function TrackedWhatsAppButton({
   source,
   city = "General",
   area = "",
-  label = "💬 WhatsApp Us",
+  label = "WhatsApp Us",
   className = "inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold transition-colors",
-  phone = "918302713127",
+  phone,
 }: TrackedWhatsAppButtonProps) {
-  const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+  const defaultPhone = city.toLowerCase().includes("hyderabad") ? "919950809283" : "918302713127"
+  const targetPhone = (phone || defaultPhone).replace(/[^0-9]/g, "")
+  const waUrl = `https://wa.me/${targetPhone}?text=${encodeURIComponent(message)}`
 
   const handleClick = async () => {
     try {

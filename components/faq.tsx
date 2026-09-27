@@ -84,7 +84,7 @@ export function FAQ() {
             <span>Frequently Asked Questions</span>
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            🤔 Got <span className="text-blue-600">Questions</span>? We Have{" "}
+             Got <span className="text-blue-600">Questions</span>? We Have{" "}
             <span className="text-green-600">Answers!</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -131,7 +131,7 @@ export function FAQ() {
         {/* Still have questions CTA */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-8 rounded-2xl max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Still Have Questions? 🤷‍♂️</h3>
+            <h3 className="text-2xl font-bold mb-4">Still Have Questions? </h3>
             <p className="text-lg mb-6">
               Our gas experts are available 24/7 to answer all your questions and provide instant solutions!
             </p>
@@ -140,7 +140,7 @@ export function FAQ() {
                 href="tel:+918302713127"
                 className="bg-white text-orange-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200"
               >
-                📞 Call: +91 83027 13127
+                Call: +91 83027 13127
               </a>
               <a
                 href={getWhatsAppRedirectUrl({
@@ -151,7 +151,7 @@ export function FAQ() {
                 onClick={() => trackWhatsApp("FAQ Inquiry")}
                 className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors duration-200"
               >
-                💬 WhatsApp Us
+                WhatsApp Us
               </a>
             </div>
           </div>

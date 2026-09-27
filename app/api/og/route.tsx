@@ -51,7 +51,7 @@ export async function GET(request: Request) {
           }}
         >
           <span style={{ fontSize: 24, fontWeight: "bold", letterSpacing: "1px" }}>
-            🔧 Gas Repair Wale
+            Gas Repair Wale
           </span>
         </div>
 
@@ -78,7 +78,7 @@ export async function GET(request: Request) {
             fontWeight: 600,
           }}
         >
-          📍 {city}
+          {city}
         </p>
 
         {/* Features */}
@@ -103,7 +103,7 @@ export async function GET(request: Request) {
                 border: "1px solid rgba(255,255,255,0.3)",
               }}
             >
-              ✅ {feature}
+              {feature}
             </span>
           ))}
         </div>
@@ -119,7 +119,7 @@ export async function GET(request: Request) {
             fontWeight: "bold",
           }}
         >
-          📞 +91 83027 13127
+          Call: +91 83027 13127
         </div>
       </div>
     ),

@@ -27,7 +27,7 @@ export function EmergencyBanner() {
         <div className="flex items-center space-x-3">
           <AlertTriangle className="h-5 w-5 animate-bounce" />
           <span className="font-bold text-sm md:text-base">
-            🚨 GAS EMERGENCY? Don't Wait! 24/7 Service Available - Response in 15 Minutes!
+            GAS EMERGENCY? Don't Wait! 24/7 Service Available - Response in 15 Minutes!
           </span>
         </div>
 
@@ -48,7 +48,7 @@ export function EmergencyBanner() {
               href={getWhatsAppRedirectUrl({
                 serviceType: "Emergency",
                 city: "General",
-                message: "🚨 EMERGENCY: I need immediate help with a gas issue!"
+                message: "EMERGENCY: I need immediate help with a gas issue!"
               })}
               className="flex items-center space-x-1"
               onClick={() => trackWhatsApp('Emergency Banner Click')}

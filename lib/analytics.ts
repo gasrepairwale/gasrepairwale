@@ -155,32 +155,35 @@ export const getWhatsAppRedirectUrl = (data: {
   address?: string;
   preferredTime?: string;
   message?: string;
+  whatsappNumber?: string;
 }) => {
-  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+918302713127'
+  const isHyd = data.city?.toLowerCase().includes("hyderabad");
+  const defaultNumber = isHyd ? "+919950809283" : (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+918302713127");
+  const waNumber = data.whatsappNumber || defaultNumber;
 
   let messageText = `*Gas Service Booking*\n\n` +
-    `👤 *Service:* ${data.serviceType}\n` +
-    `📍 *City:* ${data.city}\n`;
+    `*Service:* ${data.serviceType}\n` +
+    `*City:* ${data.city}\n`;
 
   if (data.area && data.area !== 'N/A' && data.area !== '') {
-    messageText += `🏘️ *Area:* ${data.area}\n`;
+    messageText += `*Area:* ${data.area}\n`;
   }
 
   if (data.address && data.address !== 'N/A' && data.address !== '') {
-    messageText += `🏠 *Address:* ${data.address}\n`;
+    messageText += `*Address:* ${data.address}\n`;
   }
 
   if (data.preferredTime && data.preferredTime !== 'N/A' && data.preferredTime !== '') {
-    messageText += `⏰ *Slot:* ${data.preferredTime}\n`;
+    messageText += `*Slot:* ${data.preferredTime}\n`;
   }
 
   if (data.phone && data.phone !== 'USER_PHONE' && data.phone !== '') {
-    messageText += `📞 *Phone:* ${data.phone}\n`;
+    messageText += `*Phone:* ${data.phone}\n`;
   }
 
   messageText += `\n*Message:* ${data.message || 'I am visiting from the website and want to book a service.'}`;
 
-  return `https://wa.me/${waNumber.replace('+', '')}?text=${encodeURIComponent(messageText)}`;
+  return `https://wa.me/${waNumber.replace('+', '').replace(/\s+/g, '')}?text=${encodeURIComponent(messageText)}`;
 }
 
 // Declare global types for analytics
