@@ -45,7 +45,7 @@ export function BackToTop() {
 
   return (
     <div
-      className={`fixed bottom-22 sm:bottom-8 right-4 sm:right-8 z-40 transition-all duration-300 ease-out ${
+      className={`fixed bottom-[calc(6.5rem+env(safe-area-inset-bottom,0px))] sm:bottom-8 right-4 sm:right-8 z-50 transition-all duration-300 ease-out ${
         isVisible
           ? "opacity-100 translate-y-0 pointer-events-auto"
           : "opacity-0 translate-y-4 pointer-events-none"
