@@ -11,10 +11,11 @@ import { trackServiceBooking, sendLeadNotification, getWhatsAppRedirectUrl } fro
 
 type QuickBookingFormProps = {
   area?: any
+  defaultService?: string
   className?: string
 }
 
-export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps) {
+export function QuickBookingForm({ area, defaultService = "", className = "" }: QuickBookingFormProps) {
   const { toast } = useToast()
   const [submitting, setSubmitting] = useState(false)
   const [form, setForm] = useState({
@@ -22,7 +23,7 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
     phone: "",
     email: "",
     address: "",
-    service: "",
+    service: defaultService || (area?.name?.includes("Repair") || area?.name?.includes("Service") ? area.name : ""),
     preferredTime: "",
     message: "",
   })
@@ -104,7 +105,7 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
       <CardContent className="p-8">
         <div className="space-y-6">
           <div className="text-center">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
               <Zap className="h-4 w-4" />
               <span>INSTANT BOOKING - FREE QUOTE</span>
             </div>
@@ -116,7 +117,7 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Input
                 placeholder="Your Full Name *"
-                className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                className="h-12 border-2 border-gray-200 focus:border-blue-600 rounded-lg"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 required
@@ -124,7 +125,7 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
               <Input
                 placeholder="Mobile Number *"
                 type="tel"
-                className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+                className="h-12 border-2 border-gray-200 focus:border-blue-600 rounded-lg"
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 required
@@ -134,38 +135,40 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
             <Input
               placeholder="Email Address"
               type="email"
-              className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+              className="h-12 border-2 border-gray-200 focus:border-blue-600 rounded-lg"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
             />
 
             <Input
               placeholder={`Complete Address in ${area?.name} *`}
-              className="h-12 border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+              className="h-12 border-2 border-gray-200 focus:border-blue-600 rounded-lg"
               value={form.address}
               onChange={(e) => setForm({ ...form, address: e.target.value })}
               required
             />
 
             <select
-              className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:outline-none bg-white"
+              className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none bg-white text-slate-800 font-medium text-sm"
               value={form.service}
               onChange={(e) => setForm({ ...form, service: e.target.value })}
               required
             >
               <option value="">Select Service Type *</option>
-              <option value="gas-stove-repair">Gas Stove Repair</option>
-              <option value="gas-stove-service">Gas Stove Service</option>
-              <option value="pipeline-installation">Pipeline Installation</option>
-              <option value="pipeline-repair">Pipeline Repair</option>
-              <option value="safety-inspection">Safety Inspection</option>
-              <option value="emergency-repair">Emergency Repair</option>
-              <option value="new-connection">New Gas Connection</option>
-              <option value="maintenance-contract">Maintenance Contract</option>
+              <option value="Gas Stove Repair & Blue Flame Tuning">Gas Stove Repair &amp; Blue Flame Tuning</option>
+              <option value="Built-In Glass Hob & Cooktop Repair">Built-In Glass Hob &amp; Cooktop Repair</option>
+              <option value="Auto-Ignition Pulse & Spark Repair">Auto-Ignition Pulse &amp; Spark Repair</option>
+              <option value="Copper Gas Pipeline Installation">Copper Gas Pipeline Installation &amp; Fitting</option>
+              <option value="24/7 Emergency Gas Leak Detection">24/7 Emergency Gas Leak Detection &amp; Sealing</option>
+              <option value="Ultrasonic Deep Burner Cleaning">Ultrasonic Deep Burner Cleaning &amp; Descaling</option>
+              <option value="Commercial Kitchen Bhatti & Stove Service">Commercial Bhatti &amp; Restaurant Cooking Range</option>
+              <option value="LPG Cylinder to PNG Conversion">LPG Cylinder to PNG Pipeline Conversion</option>
+              <option value="Gas Safety Inspection & Pressure Test">Gas Safety Inspection &amp; Pressure Drop Test</option>
+              <option value="Annual Maintenance Contract (AMC)">Annual Maintenance Contract (AMC)</option>
             </select>
 
             <select
-              className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-orange-500 focus:outline-none bg-white"
+              className="w-full h-12 px-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none bg-white"
               value={form.preferredTime}
               onChange={(e) => setForm({ ...form, preferredTime: e.target.value })}
               required
@@ -180,7 +183,7 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
             <Textarea
               placeholder="Describe your gas issue or requirements (Optional)"
               rows={3}
-              className="border-2 border-gray-200 focus:border-orange-500 rounded-lg"
+              className="border-2 border-gray-200 focus:border-blue-600 rounded-lg"
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
             />
@@ -188,7 +191,7 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
             <Button
               type="submit"
               disabled={submitting}
-              className="w-full h-12 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+              className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white text-base font-bold rounded-xl shadow-none transition-colors"
             >
               <Calendar className="h-5 w-5 mr-2" />
               {submitting ? "Sending..." : "Book Service Now - FREE Quote"}
@@ -204,8 +207,8 @@ export function QuickBookingForm({ area, className = "" }: QuickBookingFormProps
               <Shield className="h-4 w-4" />
               <span>Licensed Technicians • Insured Service</span>
             </div>
-            <div className="flex items-center justify-center space-x-2 text-sm text-orange-600">
-              <Clock className="h-4 w-4" />
+            <div className="flex items-center justify-center space-x-2 text-sm text-slate-700">
+              <Clock className="h-4 w-4 text-blue-600" />
               <span>Response Time: {area?.responseTime}</span>
             </div>
           </div>

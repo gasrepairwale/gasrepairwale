@@ -1,7 +1,8 @@
 "use client"
 
 import { usePathname } from "next/navigation"
-import { Phone, MessageSquare, ShieldCheck, Zap } from "lucide-react"
+import { Phone, ShieldCheck, Zap } from "lucide-react"
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 import { trackPhoneCall, trackWhatsApp, getWhatsAppRedirectUrl } from "@/lib/analytics"
 import { getCityContact } from "@/lib/phone"
 
@@ -75,8 +76,8 @@ export function MobileStickyBar() {
     >
       {/* Micro Trust Banner */}
       <div className="flex items-center justify-between px-1 pb-1.5 text-[11px] text-gray-500 font-medium">
-        <span className="flex items-center space-x-1 text-orange-600 font-semibold truncate max-w-[60%]">
-          <Zap className="w-3 h-3 text-orange-600 flex-shrink-0 animate-pulse" />
+        <span className="flex items-center space-x-1 text-blue-600 font-semibold truncate max-w-[60%]">
+          <Zap className="w-3 h-3 text-blue-600 flex-shrink-0 animate-pulse" />
           <span className="truncate">
             {areaName ? `${areaName} Hub` : `${cityName} Fast Dispatch`}
           </span>
@@ -93,14 +94,14 @@ export function MobileStickyBar() {
         <a
           href={contact.phoneTel}
           onClick={handleCall}
-          className="flex items-center justify-center space-x-2 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 active:scale-[0.98] text-white font-bold py-2.5 px-3 rounded-xl shadow-sm transition-all"
+          className="flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-3 rounded-xl shadow-none transition-colors"
         >
           <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
             <Phone className="w-4 h-4 text-white" />
           </div>
           <div className="text-left leading-tight">
             <div className="text-xs font-extrabold uppercase tracking-wide">Call Now</div>
-            <div className="text-[10px] text-orange-100 font-medium truncate max-w-[95px]">
+            <div className="text-[10px] text-blue-100 font-medium truncate max-w-[95px]">
               {contact.phoneDisplay}
             </div>
           </div>
@@ -112,10 +113,10 @@ export function MobileStickyBar() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={handleWhatsApp}
-          className="flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 active:scale-[0.98] text-white font-bold py-2.5 px-3 rounded-xl shadow-sm transition-all"
+          className="flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-3 rounded-xl shadow-none transition-colors"
         >
           <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-            <MessageSquare className="w-4 h-4 text-white" />
+            <WhatsAppIcon className="w-4 h-4 fill-white" />
           </div>
           <div className="text-left leading-tight">
             <div className="text-xs font-extrabold uppercase tracking-wide">WhatsApp</div>

@@ -1,203 +1,153 @@
 import type { Metadata } from "next"
 import { Hero } from "@/components/hero"
+import { AboutSolution } from "@/components/about-solution"
 import { ComprehensiveServices } from "@/components/comprehensive-services"
 import { WhyChooseUs } from "@/components/why-choose-us"
-import { LocationsOverview } from "@/components/locations-overview"
-import { EnhancedTestimonials } from "@/components/enhanced-testimonials"
-import { ContactCTA } from "@/components/contact-cta"
-import { EmergencyBanner } from "@/components/emergency-banner"
-import { StatsSection } from "@/components/stats-section"
-import { FAQ } from "@/components/faq"
+import { VerifiedTechnicians } from "@/components/verified-technicians"
+import { ProcessFlow } from "@/components/process-flow"
 import { BeforeAfter } from "@/components/before-after"
-import { TrustSignals } from "@/components/trust-signals"
-import { SafetyGuarantees } from "@/components/safety-guarantees"
+import { EnhancedTestimonials } from "@/components/enhanced-testimonials"
+import { LocationsOverview } from "@/components/locations-overview"
 import { BrandShowcase } from "@/components/brand-showcase"
-import { SEOContentSection } from "@/components/seo-content-section"
+import { FAQ } from "@/components/faq"
 
 export const metadata: Metadata = {
- title: "Gas Repair Wale | Gas Stove Repair Pune, Mumbai & Hyderabad",
- description:
- "Professional Gas Repair Services in Pune, Mumbai & Hyderabad Gas Stove Repair Pipeline Installation 24/7 Emergency Service Licensed Technicians 5000+ Happy Customers. Call +91 83027 13127!",
- keywords: [
- // Primary keywords
- "gas repair services pune",
- "gas repair services Mumbai",
- "gas repair services Hyderabad",
- "gas stove repair pune",
- "gas stove repair Mumbai",
- "gas stove repair Hyderabad",
- "gas pipeline installation pune",
- "gas pipeline installation Mumbai",
- "gas pipeline installation Hyderabad",
- "emergency gas repair pune",
- "emergency gas repair Mumbai",
- "emergency gas repair Hyderabad",
-
- // Long-tail keywords
- "professional gas stove repair services",
- "licensed gas technician pune Mumbai",
- "gas leak repair emergency service",
- "commercial gas pipeline installation",
- "residential gas appliance repair",
- "gas safety inspection services",
- "24/7 emergency gas repair",
- "affordable gas repair services",
-
- // Location-specific
- "gas repair kothrud pune",
- "gas repair Borivali East West Mumbai",
- "gas repair baner pune",
- "gas repair Kandivali East West Mumbai",
- "gas repair hitec city hyderabad",
- "gas repair gachibowli hyderabad",
- "gas services Maharashtra",
- "gas services Telangana",
-
- // Service-specific
- "gas burner repair",
- "gas ignition repair",
- "gas valve replacement",
- "gas meter installation",
- "gas safety certificate",
- "gas appliance maintenance",
- ].join(", "),
- authors: [{ name: "Gas Repair Wale", url: "https://gasrepairwale.com" }],
- creator: "Gas Repair Wale",
- publisher: "Gas Repair Wale",
- robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
- openGraph: {
- type: "website",
- locale: "en_IN",
- url: "https://gasrepairwale.com",
- title: "Professional Gas Repair Services in Pune, Mumbai & Hyderabad | Gas Repair Wale",
- description:
- "Expert gas stove repair, pipeline installation & emergency gas services across Pune, Mumbai & Hyderabad. Licensed technicians, 24/7 service, 5000+ satisfied customers. Call +91 83027 13127",
- siteName: "Gas Repair Wale",
- images: [
- {
- url: "/og-image.jpg",
- width: 1200,
- height: 630,
- alt: "Gas Repair Wale - Professional Gas Services",
- },
- ],
- },
- twitter: {
- card: "summary_large_image",
- title: "Professional Gas Repair Services | Gas Repair Wale",
- description:
- "Expert gas stove repair & pipeline services in Pune, Mumbai & Hyderabad. Licensed technicians, emergency service, 5000+ customers. Call +91 83027 13127",
- images: ["/twitter-image.jpg"],
- },
- verification: {
- google: "JUBZp6IFOyJ98MiNTifWjKfFF5Fanxoleua8AQ4lZSE",
- },
- alternates: {
- canonical: "https://gasrepairwale.com",
- },
+  title: "Gas Repair Wale | Gas Stove Repair & Pipeline Services in Pune, Mumbai & Hyderabad",
+  description:
+    "Expert doorstep gas stove repair, hob auto-ignition tuning, and copper pipeline installation across Pune, Mumbai, and Hyderabad. 15-25 min arrival, genuine brass parts, and transparent upfront estimates. Call +91 83027 13127!",
+  keywords: [
+    "gas repair services pune",
+    "gas repair services mumbai",
+    "gas repair services hyderabad",
+    "gas stove repair pune",
+    "gas stove repair mumbai",
+    "gas stove repair hyderabad",
+    "gas pipeline installation pune",
+    "gas pipeline installation mumbai",
+    "gas pipeline installation hyderabad",
+    "emergency gas leak repair",
+    "hob repair near me",
+  ].join(", "),
+  authors: [{ name: "Gas Repair Wale", url: "https://gasrepairwale.com" }],
+  creator: "Gas Repair Wale",
+  publisher: "Gas Repair Wale",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://gasrepairwale.com",
+    title: "Gas Repair Wale | Gas Stove Repair & Pipeline Experts",
+    description:
+      "Expert gas stove repair, hob restoration & copper pipeline services in Pune, Mumbai & Hyderabad. 15-25 min arrival, certified technicians.",
+    siteName: "Gas Repair Wale",
+    images: [
+      {
+        url: "/images/stove-flame-test.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gas Repair Wale Technician Testing Blue Flame",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gas Repair Wale | Gas Stove Repair & Pipeline Services",
+    description:
+      "Expert gas stove repair & pipeline services in Pune, Mumbai & Hyderabad. Certified technicians, emergency service.",
+    images: ["/images/stove-flame-test.jpg"],
+  },
+  alternates: {
+    canonical: "https://gasrepairwale.com",
+  },
 }
 
 const faqSchema = {
- "@context": "https://schema.org",
- "@type": "FAQPage",
- mainEntity: [
- {
- "@type": "Question",
- name: "How quickly can you respond to gas emergencies in Pune, Mumbai and Hyderabad?",
- acceptedAnswer: {
- "@type": "Answer",
- text: "We guarantee a 15-30 minute response time for gas emergencies across Pune, Mumbai and Hyderabad. Our technicians are strategically located in Kothrud, Baner, Borivali, Kandivali, Gachibowli, and HITEC City for the fastest response.",
- },
- },
- {
- "@type": "Question",
- name: "What types of gas stove problems do you repair?",
- acceptedAnswer: {
- "@type": "Answer",
- text: "We repair all gas stove issues: ignition problems, burner not lighting, gas smell, uneven flames, auto-ignition failure, gas valve issues. We work with Prestige, Butterfly, Glen, Sunflame, and all other brands.",
- },
- },
- {
- "@type": "Question",
- name: "What are your service charges for gas stove repair?",
- acceptedAnswer: {
- "@type": "Answer",
- text: "Gas stove repair starts from ₹299 for basic issues. Complex repairs range ₹499-₹1499. Emergency service adds ₹200. Transparent pricing with no hidden charges.",
- },
- },
- {
- "@type": "Question",
- name: "Do you provide warranty on your repair work?",
- acceptedAnswer: {
- "@type": "Answer",
- text: "Yes. Parts carry 6-month warranty, labor has 3-month guarantee, and major repairs get up to 1-year warranty. Same issue within warranty period is fixed free of charge.",
- },
- },
- {
- "@type": "Question",
- name: "Do you offer 24/7 emergency gas repair services?",
- acceptedAnswer: {
- "@type": "Answer",
- text: "Yes, we provide 24/7 emergency gas repair throughout the year including weekends and holidays. Gas emergencies like leaks are treated with highest priority. Call +91 83027 13127 anytime.",
- },
- },
- ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How quickly can your technician arrive in Pune, Mumbai, or Hyderabad?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our technicians are stationed locally across Pune, Mumbai, and Hyderabad with an average doorstep arrival time of 15 to 25 minutes for emergency repairs.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What types of gas stove and hob issues do you fix at home?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We fix low flame, burner clogging, yellow soot flames, clicking auto-ignition spark failure, loose or stiff knobs, gas smell near regulator/pipeline, and glass cooktop valve replacements.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are your inspection and repair charges?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our certified technician inspects your gas stove or pipeline first and provides an upfront, transparent estimate before starting any repair. There are zero hidden fees, and you only pay after testing the blue flame.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you provide warranty on parts and repair workmanship?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. All repairs come with a standard 30 to 90-day service warranty. Genuine spare parts like brass burners, forged valves, and ISI Suraksha hoses carry manufacturer warranties.",
+      },
+    },
+  ],
 }
 
 /**
- * Home Page Component - SEO Optimized Landing Page
- * Comprehensive landing page with rich content for maximum SEO impact
+ * Home Page Component - Redesigned to match premium reference layout
+ * Features curved royal blue hero, 4-card service grid, and verified hubs
  */
 export default function HomePage() {
- return (
- <main className="min-h-screen">
- {/* FAQ Structured Data for Google Rich Snippets */}
- <script
- type="application/ld+json"
- dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
- />
+  return (
+    <main className="min-h-screen bg-white">
+      {/* FAQ Structured Data for Google Rich Snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
- {/* Emergency banner for immediate attention */}
- <EmergencyBanner />
+      {/* 1. Hero Section (Curved Royal Blue Canvas with Arched Photo & Booking) */}
+      <Hero />
 
- {/* Hero section with main CTA and value proposition */}
- <Hero />
+      {/* 2. Section 2: Delivering Quality Gas Solutions (About / 15+ Yrs Credibility) */}
+      <AboutSolution />
 
- {/* Trust signals and social proof */}
- <TrustSignals />
+      {/* 3. Section 3: Provides Professional Gas Services for Every Need (4-Card Squircle Grid) */}
+      <ComprehensiveServices />
 
- 
-  <SafetyGuarantees />
+      {/* 4. Section 4: Committed to Your Comfort & Safety (Why Choose Us) */}
+      <WhyChooseUs />
 
-  {/* Comprehensive services with detailed descriptions */}
- <ComprehensiveServices />
+      {/* 5. Section 5: Verified Doorstep Technicians & Safety Standards */}
+      <VerifiedTechnicians />
 
-  <BrandShowcase />
+      {/* 6. Section 6: How Our Simple & Reliable Process Works (5-Step Stepper) */}
+      <ProcessFlow />
 
- {/* SEO-rich content section */}
- <SEOContentSection />
+      {/* 6. Section 6: Real Repairs. Real Results. Done Right. (Before / After Showcase) */}
+      <BeforeAfter />
 
- {/* Before/After scenarios for engagement */}
- <BeforeAfter />
+      {/* 7. Section 7: Trusted Reviews from Homeowners & Businesses */}
+      <EnhancedTestimonials />
 
- {/* Why choose us with competitive advantages */}
- <WhyChooseUs />
+      {/* 8. Section 8: Check Service Availability in Your Area (Coverage Network) */}
+      <LocationsOverview />
 
- {/* Statistics and achievements */}
- <StatsSection />
+      {/* 9. Supported Brands */}
+      <BrandShowcase />
 
- {/* Locations we serve with local SEO */}
- <LocationsOverview />
-
- {/* Customer testimonials and reviews */}
- <EnhancedTestimonials />
-
- {/* FAQ section for long-tail keywords */}
- <FAQ />
-
- {/* Final contact CTA */}
- <ContactCTA />
- </main>
- )
+      {/* 10. Section 9: Answers to Your Frequently Asked Questions (FAQ) */}
+      <FAQ />
+    </main>
+  )
 }
+
+
 

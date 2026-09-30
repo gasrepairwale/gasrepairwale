@@ -7074,7 +7074,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Nallagandla, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Nallagandla, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Nallagandla, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500019",
@@ -7112,7 +7112,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -7158,7 +7158,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Nallagandla: Fast 20-minute response across Aparna Sarovar and Citizen Hospital.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -7175,7 +7175,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Nallagandla require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Nallagandla require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "tellapur": {
@@ -7183,7 +7183,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Tellapur, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Tellapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Tellapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "502032",
@@ -7221,7 +7221,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -7267,7 +7267,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Tellapur: Fast 20-minute response across My Home Ankura and Tellapur Techno School.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -7284,7 +7284,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Tellapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Tellapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "bhel": {
@@ -7292,7 +7292,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in BHEL, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in BHEL, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in BHEL, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "502032",
@@ -7330,7 +7330,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -7376,7 +7376,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in BHEL: Fast 20-minute response across BHEL Township and BHEL Hospital.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -7393,7 +7393,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in BHEL require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in BHEL require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "osman-nagar": {
@@ -7401,7 +7401,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Osman Nagar, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Osman Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Osman Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500019",
@@ -7439,7 +7439,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -7485,7 +7485,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Osman Nagar: Fast 20-minute response across Aparna CyberLife and Aparna CyberZon.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -7502,7 +7502,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Osman Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Osman Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "kollur": {
@@ -7510,7 +7510,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Kollur, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Kollur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Kollur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "502300",
@@ -7548,7 +7548,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -7594,7 +7594,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Kollur: Fast 20-minute response across Kollur ORR Junction and Anvita High9.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -7611,7 +7611,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Kollur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Kollur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "patancheru": {
@@ -7619,7 +7619,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Patancheru, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Patancheru, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Patancheru, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "502319",
@@ -7657,7 +7657,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -7703,7 +7703,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Patancheru: Fast 20-minute response across Patancheru Bus Station and Gitam University.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -7720,7 +7720,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Patancheru require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Patancheru require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "khajipally": {
@@ -7728,7 +7728,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Khajipally, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Khajipally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Khajipally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "502325",
@@ -7766,7 +7766,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -7812,7 +7812,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Khajipally: Fast 20-minute response across Khajipally Industrial Area and Jinnaram Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -7829,7 +7829,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Khajipally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Khajipally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "bowrampet": {
@@ -7837,7 +7837,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Bowrampet, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Bowrampet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Bowrampet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500043",
@@ -7875,7 +7875,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -7921,7 +7921,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Bowrampet: Fast 20-minute response across Oakridge International and Ambitus World School.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -7938,7 +7938,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Bowrampet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Bowrampet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "pragathi-nagar": {
@@ -7946,7 +7946,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Pragathi Nagar, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Pragathi Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Pragathi Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500090",
@@ -7984,7 +7984,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8030,7 +8030,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Pragathi Nagar: Fast 20-minute response across Pragathi Nagar Lake and JNTU Back Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8047,7 +8047,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Pragathi Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Pragathi Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "balanagar": {
@@ -8055,7 +8055,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Balanagar, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Balanagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Balanagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500037",
@@ -8093,7 +8093,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8139,7 +8139,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Balanagar: Fast 20-minute response across Balanagar X Roads and HAL Hyderabad.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8156,7 +8156,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Balanagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Balanagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "bowenpally": {
@@ -8164,7 +8164,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Bowenpally, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Bowenpally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Bowenpally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500011",
@@ -8202,7 +8202,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8248,7 +8248,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Bowenpally: Fast 20-minute response across Bowenpally Market and Dairy Farm Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8265,7 +8265,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Bowenpally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Bowenpally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "serilingampally": {
@@ -8273,7 +8273,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Serilingampally, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Serilingampally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Serilingampally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500019",
@@ -8311,7 +8311,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8357,7 +8357,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Serilingampally: Fast 20-minute response across Lingampally Railway Station and Tara Nagar.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8374,7 +8374,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Serilingampally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Serilingampally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "suchitra": {
@@ -8382,7 +8382,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Suchitra, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Suchitra, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Suchitra, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500067",
@@ -8420,7 +8420,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8466,7 +8466,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Suchitra: Fast 20-minute response across Suchitra Junction and Dairy Farm Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8483,7 +8483,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Suchitra require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Suchitra require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "mallampet": {
@@ -8491,7 +8491,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Mallampet, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Mallampet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Mallampet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500090",
@@ -8529,7 +8529,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8575,7 +8575,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Mallampet: Fast 20-minute response across Mallampet Road and Kranthi Nagar.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8592,7 +8592,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Mallampet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Mallampet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "kistareddypet": {
@@ -8600,7 +8600,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Kistareddypet, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Kistareddypet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Kistareddypet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "502319",
@@ -8638,7 +8638,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8684,7 +8684,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Kistareddypet: Fast 20-minute response across Kistareddypet Village and Ameenpur Link Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8701,7 +8701,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Kistareddypet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Kistareddypet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "ameenpur": {
@@ -8709,7 +8709,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Ameenpur, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Ameenpur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Ameenpur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "502032",
@@ -8747,7 +8747,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8793,7 +8793,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Ameenpur: Fast 20-minute response across Ameenpur Lake and Pedda Cheruvu.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8810,7 +8810,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Ameenpur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Ameenpur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "badam-kommu": {
@@ -8818,7 +8818,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Badam Kommu, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Badam Kommu, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Badam Kommu, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "502032",
@@ -8856,7 +8856,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -8902,7 +8902,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Badam Kommu: Fast 20-minute response across Badam Kommu Junction and Ameenpur Gram Panchayat.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -8919,7 +8919,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Badam Kommu require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Badam Kommu require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "mayuri-nagar": {
@@ -8927,7 +8927,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Mayuri Nagar, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Mayuri Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Mayuri Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500049",
@@ -8965,7 +8965,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9011,7 +9011,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Mayuri Nagar: Fast 20-minute response across Mayuri Nagar Park and Miyapur Allwyn Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9028,7 +9028,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Mayuri Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Mayuri Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "nanakramguda": {
@@ -9036,7 +9036,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Nanakramguda, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Nanakramguda, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Nanakramguda, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500032",
@@ -9074,7 +9074,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9120,7 +9120,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Nanakramguda: Fast 20-minute response across Financial District and WaveRock.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9137,7 +9137,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Nanakramguda require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Nanakramguda require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "kokapet": {
@@ -9145,7 +9145,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Kokapet, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Kokapet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Kokapet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500075",
@@ -9183,7 +9183,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9229,7 +9229,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Kokapet: Fast 20-minute response across Kokapet SEZ and Neopolis.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9246,7 +9246,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Kokapet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Kokapet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "narsingi": {
@@ -9254,7 +9254,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Narsingi, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Narsingi, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Narsingi, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500075",
@@ -9292,7 +9292,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9338,7 +9338,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Narsingi: Fast 20-minute response across Narsingi Junction and ORR Toll Gate.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9355,7 +9355,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Narsingi require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Narsingi require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "dulapally": {
@@ -9363,7 +9363,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Dulapally, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Dulapally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Dulapally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500014",
@@ -9401,7 +9401,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9447,7 +9447,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Dulapally: Fast 20-minute response across Dulapally Forest Academy and Kompally Link Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9464,7 +9464,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Dulapally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Dulapally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "sri-vani-nagar": {
@@ -9472,7 +9472,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Sri Vani Nagar, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Sri Vani Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Sri Vani Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500049",
@@ -9510,7 +9510,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9556,7 +9556,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Sri Vani Nagar: Fast 20-minute response across Sri Vani Nagar Colony and Ameenpur Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9573,7 +9573,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Sri Vani Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Sri Vani Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "ganesh-nagar": {
@@ -9581,7 +9581,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Ganesh Nagar, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Ganesh Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Ganesh Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500055",
@@ -9619,7 +9619,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9665,7 +9665,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Ganesh Nagar: Fast 20-minute response across Ganesh Nagar Chintal and Quthbullapur.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9682,7 +9682,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Ganesh Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Ganesh Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "hmt-miyapur": {
@@ -9690,7 +9690,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in HMT Miyapur, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in HMT Miyapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in HMT Miyapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500049",
@@ -9728,7 +9728,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9774,7 +9774,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in HMT Miyapur: Fast 20-minute response across HMT Swarnapuri Colony and Miyapur Metro Station.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9791,7 +9791,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in HMT Miyapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in HMT Miyapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "madinaguda": {
@@ -9799,7 +9799,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Madinaguda, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Madinaguda, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Madinaguda, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500049",
@@ -9837,7 +9837,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9883,7 +9883,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Madinaguda: Fast 20-minute response across GSM Mall and Madinaguda Bus Stop.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -9900,7 +9900,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Madinaguda require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Madinaguda require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "gopal-nagar": {
@@ -9908,7 +9908,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Gopal Nagar, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Gopal Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Gopal Nagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500085",
@@ -9946,7 +9946,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -9992,7 +9992,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Gopal Nagar: Fast 20-minute response across Gopal Nagar Society and Hafeezpet Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10009,7 +10009,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Gopal Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Gopal Nagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "huda-layout": {
@@ -10017,7 +10017,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Huda Layout, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Huda Layout, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Huda Layout, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500049",
@@ -10055,7 +10055,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10101,7 +10101,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Huda Layout: Fast 20-minute response across HUDA Colony Chanda Nagar and Miyapur Cross Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10118,7 +10118,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Huda Layout require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Huda Layout require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "gachibowli": {
@@ -10126,7 +10126,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Gachibowli, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Gachibowli, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Gachibowli, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500032",
@@ -10164,7 +10164,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10210,7 +10210,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Gachibowli: Fast 20-minute response across DLF Cyber City and Gachibowli Stadium.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10227,7 +10227,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Gachibowli require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Gachibowli require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "hitec-city": {
@@ -10235,7 +10235,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in HITEC City, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in HITEC City, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in HITEC City, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500081",
@@ -10273,7 +10273,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10319,7 +10319,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in HITEC City: Fast 20-minute response across Cyber Towers and Inorbit Mall.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10336,7 +10336,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in HITEC City require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in HITEC City require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "madhapur": {
@@ -10344,7 +10344,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Madhapur, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Madhapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Madhapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500081",
@@ -10382,7 +10382,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10428,7 +10428,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Madhapur: Fast 20-minute response across Ayyappa Society and Image Hospitals.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10445,7 +10445,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Madhapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Madhapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "kondapur": {
@@ -10453,7 +10453,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Kondapur, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Kondapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Kondapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500084",
@@ -10491,7 +10491,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10537,7 +10537,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Kondapur: Fast 20-minute response across Sarath City Capital Mall and Botanical Garden.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10554,7 +10554,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Kondapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Kondapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "kukatpally": {
@@ -10562,7 +10562,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Kukatpally, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Kukatpally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Kukatpally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500072",
@@ -10600,7 +10600,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10646,7 +10646,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Kukatpally: Fast 20-minute response across Forum Sujana Mall and JNTU Hyderabad.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10663,7 +10663,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Kukatpally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Kukatpally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "kphb-colony": {
@@ -10671,7 +10671,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in KPHB Colony, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in KPHB Colony, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in KPHB Colony, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500072",
@@ -10709,7 +10709,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10755,7 +10755,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in KPHB Colony: Fast 20-minute response across Manjeera Mall and Remedy Hospital.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10772,7 +10772,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in KPHB Colony require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in KPHB Colony require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "miyapur": {
@@ -10780,7 +10780,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Miyapur, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Miyapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Miyapur, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500049",
@@ -10818,7 +10818,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10864,7 +10864,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Miyapur: Fast 20-minute response across Miyapur Metro Station and Allwyn X Road.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10881,7 +10881,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Miyapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Miyapur require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "bachupally": {
@@ -10889,7 +10889,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Bachupally, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Bachupally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Bachupally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500090",
@@ -10927,7 +10927,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -10973,7 +10973,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Bachupally: Fast 20-minute response across VNR VJIET and Silver Oaks School.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -10990,7 +10990,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Bachupally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Bachupally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "kompally": {
@@ -10998,7 +10998,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Kompally, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Kompally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Kompally, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500014",
@@ -11036,7 +11036,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -11082,7 +11082,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Kompally: Fast 20-minute response across CinePlanet and Dhola-ri-Dhani.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -11099,7 +11099,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Kompally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Kompally require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "chandanagar": {
@@ -11107,7 +11107,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Chandanagar, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Chandanagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Chandanagar, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500050",
@@ -11145,7 +11145,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -11191,7 +11191,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Chandanagar: Fast 20-minute response across Chanda Nagar Railway Station and GSM Mall.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -11208,7 +11208,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Chandanagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Chandanagar require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "hafeezpet": {
@@ -11216,7 +11216,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Hafeezpet, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Hafeezpet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Hafeezpet, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500049",
@@ -11254,7 +11254,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -11300,7 +11300,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Hafeezpet: Fast 20-minute response across Hafeezpet Flyover and Hafeezpet MMTS Station.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -11317,7 +11317,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Hafeezpet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Hafeezpet require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "manikonda": {
@@ -11325,7 +11325,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Manikonda, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Manikonda, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Manikonda, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500089",
@@ -11363,7 +11363,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -11409,7 +11409,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Manikonda: Fast 20-minute response across Lanco Hills and Puppalaguda.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -11426,7 +11426,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Manikonda require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Manikonda require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     },
     "financial-district": {
@@ -11434,7 +11434,7 @@ export const areaData = {
       city: "Hyderabad",
       state: "Telangana",
       description: "Professional gas stove repair, pipeline installation, and emergency service in Financial District, Hyderabad with fast 20-25 minute response time.",
-      heroDescription: "Expert gas repair services in Financial District, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 99508 09283 for immediate support.",
+      heroDescription: "Expert gas repair services in Financial District, Hyderabad with 20-minute response time! Certified technicians, genuine parts, and 24/7 emergency service. Call +91 63047 39440 for immediate support.",
       responseTime: "15-25 minutes",
       customers: "350+",
       pincode: "500032",
@@ -11472,7 +11472,7 @@ export const areaData = {
             "Guaranteed 15-20 min emergency arrival",
             "Safe shutdown and leak sealing",
             "Complete kitchen safety verification",
-            "Direct Hyderabad Helpline: +91 99508 09283"
+            "Direct Hyderabad Helpline: +91 63047 39440"
           ]
         }
       ],
@@ -11518,7 +11518,7 @@ export const areaData = {
       seoContent: {
         whyChoose: [
           "Local Technician in Financial District: Fast 20-minute response across Wipro Circle and WaveRock.",
-          "Direct Support: Direct call with Vikash Ji's Hyderabad team at +91 99508 09283.",
+          "Direct Support: Direct call with Gas Repair Wale Hyderabad team at +91 63047 39440.",
           "Safety First: Digital leak testing and genuine replacement parts.",
           "Transparent Pricing: Clear quotation before work starts with no hidden charges."
         ],
@@ -11535,7 +11535,7 @@ export const areaData = {
             "Commercial kitchen safety compliance check"
           ]
         },
-        emergencyInfo: "Gas emergencies in Financial District require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 99508 09283 for immediate 15-20 min dispatch."
+        emergencyInfo: "Gas emergencies in Financial District require immediate action. Turn off your regulator and call our local Hyderabad helpline +91 63047 39440 for immediate 15-20 min dispatch."
       }
     }
   },

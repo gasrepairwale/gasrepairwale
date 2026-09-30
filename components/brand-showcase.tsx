@@ -13,14 +13,14 @@ export function BrandShowcase() {
   ]
 
   return (
-    <section className="py-14 bg-gradient-to-br from-gray-50 to-orange-50/40">
+    <section className="py-14 bg-slate-50/60 border-t border-slate-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <span className="text-xs font-bold text-orange-600 uppercase tracking-wider bg-orange-100 px-3 py-1 rounded-full">
+          <span className="text-xs font-bold text-blue-700 uppercase tracking-wider bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-100">
             Genuine Spare Parts
           </span>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mt-2">
-            Gas Stove & Hob Brands We Service
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mt-3">
+            Gas Stove &amp; Hob Brands We Service
           </h2>
           <p className="text-sm text-gray-600 max-w-xl mx-auto mt-1">
             Our technicians carry certified replacement burners, knobs, spark plugs, and copper tubes for all major brands.
@@ -31,7 +31,7 @@ export function BrandShowcase() {
           {brands.map((b, i) => (
             <div
               key={i}
-              className="bg-white p-4 rounded-xl border border-gray-200/80 hover:border-orange-500 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-24"
+              className="bg-white p-4 rounded-xl border border-slate-200 hover:border-blue-500 text-center flex flex-col justify-center items-center h-24 transition-colors shadow-none"
             >
               <span className="font-extrabold text-gray-900 text-lg tracking-tight">{b.name}</span>
               <span className="text-[11px] text-gray-500 mt-0.5 leading-tight">{b.desc}</span>

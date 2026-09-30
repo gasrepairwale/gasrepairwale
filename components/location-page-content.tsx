@@ -3,12 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ContactCTA } from "@/components/contact-cta"
-import { MapPin, Phone, Clock, Star, Users, Award, Shield, ChevronRight, Home } from "lucide-react"
+import { MapPin, Phone, Clock, Star, Users, Award, Shield, ChevronRight, Home, PhoneCall, Check } from "lucide-react"
 import { BreadcrumbSchema } from "@/components/json-ld/breadcrumb-schema"
 import { ServiceSchema } from "@/components/json-ld/service-schema"
 import { FAQSchema } from "@/components/json-ld/faq-schema"
 import { TrackedLink } from "@/components/tracked-link"
 import { getCityContact } from "@/lib/phone"
+import { getWhatsAppRedirectUrl } from "@/lib/analytics"
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 interface CityData {
   name: string
@@ -85,26 +87,26 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
 
   const cityFaqs = [
     {
-      question: `Do you provide gas stove repair in ${city.name}?`,
-      answer: `Yes, we provide professional gas stove repair services across all areas of ${city.name} including ${city.areas.slice(0, 3).map(a => a.name).join(", ")} and many more. Our local technicians serve every corner of ${city.name}.`,
+      question: `Do you provide gas stove repair across all of ${city.name}?`,
+      answer: `Yes, we provide professional doorstep gas stove repair and pipe services across all areas of ${city.name} including ${city.areas.slice(0, 4).map(a => a.name).join(", ")} and surrounding localities. Our mobile vans are stationed across ${city.name}.`,
     },
     {
       question: `How fast can you reach for an emergency in ${city.name}?`,
-      answer: `We guarantee a response time of ${city.avgResponseTime} for gas emergencies in ${city.name}. Our emergency team is stationed across ${city.name} for quick response.`,
+      answer: `We guarantee an average response time of ${city.avgResponseTime} for emergency gas leakages and urgent repairs across ${city.name}. Our emergency team is on duty 24/7.`,
     },
     {
-      question: `Are your technicians in ${city.name} licensed?`,
-      answer: `Absolutely. All our technicians serving ${city.name} are licensed and certified for gas pipeline and appliance work. We carry all necessary documentation and safety equipment.`,
+      question: `Are your technicians in ${city.name} certified and verified?`,
+      answer: `Yes, all our gas technicians serving ${city.name} are licensed and background-verified. They carry digital gas leak sniffers, 100% genuine brass spare parts, and full safety gear.`,
     },
     {
-      question: `What is the gas stove repair cost in ${city.name}?`,
-      answer: `Gas stove repair in ${city.name} starts from ₹299 for minor issues. The total cost depends on the type of repair needed. We provide transparent pricing with no hidden charges before starting any work.`,
+      question: `What is the cost of gas stove repair in ${city.name}?`,
+      answer: `We maintain 100% transparent upfront pricing. Our technician inspects the appliance on-site and provides an honest estimate before touching any part. No hidden charges, and you pay only after complete testing and satisfaction.`,
     },
   ]
 
   return (
-    <main className="min-h-screen">
-      {/* Schema Markup — renders as JSON-LD in <head>, works in server components */}
+    <main className="min-h-screen bg-white">
+      {/* Schema Markup */}
       <BreadcrumbSchema items={breadcrumbItems} />
       <ServiceSchema
         name={`Gas Repair Services in ${city.name}`}
@@ -116,165 +118,192 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
       <FAQSchema faqs={cityFaqs} />
 
       {/* Visual Breadcrumb Navigation */}
-      <div className="bg-gray-50 border-b">
-         <div className="container mx-auto px-4 py-3">
-            <nav className="flex items-center text-sm text-gray-600" aria-label="Breadcrumb">
-              <Link href="/" className="hover:text-orange-600 flex items-center">
-                 <Home className="w-4 h-4 mr-1"/> Home
-              </Link>
-              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
-              <Link href="/locations" className="hover:text-orange-600">Locations</Link>
-              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
-              <span className="text-gray-900 font-medium capitalize">{city.name}</span>
-            </nav>
-         </div>
+      <div className="bg-[#0b1730] border-b border-slate-800">
+        <div className="container mx-auto px-4 py-3">
+          <nav className="flex items-center text-xs sm:text-sm text-slate-400 flex-wrap gap-1" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-sky-400 flex items-center transition-colors">
+              <Home className="w-3.5 h-3.5 mr-1" /> Home
+            </Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-600" aria-hidden="true" />
+            <Link href="/locations" className="hover:text-sky-400 transition-colors">
+              Locations
+            </Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-600" aria-hidden="true" />
+            <span className="text-white font-medium capitalize">{city.name}</span>
+          </nav>
+        </div>
       </div>
 
-      {/* Enhanced hero section */}
-      <section className="bg-gradient-to-br from-orange-50 to-orange-100 py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">
-              <MapPin className="w-4 h-4 mr-1" />
-              Serving {city.name}, {city.state}
-            </Badge>
+      {/* Premium Midnight Navy Hero Section */}
+      <section className="relative bg-[#071126] text-white py-16 sm:py-20 overflow-hidden">
+        {/* Ambient Gradient Glow */}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-25"
+          style={{
+            backgroundImage: "radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.35) 0%, transparent 45%), radial-gradient(circle at 80% 80%, rgba(14, 165, 233, 0.2) 0%, transparent 40%)",
+          }}
+        />
 
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              #1 Gas Repair Services in <span className="text-orange-600">{city.name}</span>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                <MapPin className="w-3.5 h-3.5" />
+                Serving {city.name}, {city.state}
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30">
+                <Clock className="w-3.5 h-3.5" />
+                {city.avgResponseTime} Rapid Response
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                <Star className="w-3.5 h-3.5 fill-amber-300" />
+                4.9 ★ Rated ({city.totalCustomers})
+              </span>
+            </div>
+
+            {/* Headline: Blue text on the same line */}
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+              #1 Gas Repair Services in <span className="text-sky-400">{city.name}</span>
             </h1>
 
-            <p className="text-xl text-gray-600 leading-relaxed mb-8">{city.heroDescription}</p>
+            <p className="text-base sm:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
+              {city.heroDescription}
+            </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              {/* TrackedLink is a client component used inside server component — valid in Next.js */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-none px-7 py-3.5 text-base transition-colors"
               >
                 <TrackedLink
                   href={contact.phoneTel}
-                  className="flex items-center space-x-2"
+                  className="flex items-center justify-center space-x-2"
                   category="phone"
                   city={city.name}
                 >
-                  <Phone className="h-5 w-5" />
-                  <span>CALL NOW: {contact.phoneDisplay}</span>
+                  <PhoneCall className="h-5 w-5" />
+                  <span>Call Now: {contact.phoneDisplay}</span>
                 </TrackedLink>
               </Button>
+
               <Button
                 asChild
                 size="lg"
-                variant="outline"
-                className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-bold"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-none px-7 py-3.5 text-base transition-colors"
               >
-                <Link href="#booking-form">
-                  Get FREE Quote
-                </Link>
+                <TrackedLink
+                  href={getWhatsAppRedirectUrl({
+                    serviceType: "General Inquiry",
+                    city: city.name,
+                    message: `Hi Gas Repair Wale, I need gas stove or pipeline service in ${city.name}.`,
+                  })}
+                  className="flex items-center justify-center space-x-2"
+                  category="whatsapp"
+                  city={city.name}
+                >
+                  <WhatsAppIcon className="h-5 w-5 fill-white" />
+                  <span>WhatsApp Quote</span>
+                </TrackedLink>
               </Button>
             </div>
 
-            {/* Quick stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-orange-600">{city.totalCustomers}</div>
-                <div className="text-sm text-gray-600">Happy Customers</div>
+            {/* Quick stats bar */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
+              <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-4 text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-sky-400">{city.totalCustomers}</div>
+                <div className="text-xs sm:text-sm text-slate-400 mt-1">Happy Households</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-green-600">{city.avgResponseTime}</div>
-                <div className="text-sm text-gray-600">Response Time</div>
+              <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-4 text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-emerald-400">{city.avgResponseTime}</div>
+                <div className="text-xs sm:text-sm text-slate-400 mt-1">Average Response</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">24/7</div>
-                <div className="text-sm text-gray-600">Emergency Service</div>
+              <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-4 text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-sky-400">24/7</div>
+                <div className="text-xs sm:text-sm text-slate-400 mt-1">Emergency Dispatch</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">4.9/5</div>
-                <div className="text-sm text-gray-600">Customer Rating</div>
+              <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-4 text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-amber-400">4.9 ★</div>
+                <div className="text-xs sm:text-sm text-slate-400 mt-1">Customer Rating</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Enhanced service areas */}
-      <section className="py-20 bg-white">
+      {/* Enhanced Service Areas Directory */}
+      <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Service Coverage</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Areas We Serve in {city.name}</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive gas repair services across all major areas in {city.name} with the fastest response times in{" "}
-              {city.state}.
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <Badge className="bg-blue-50 text-blue-700 border border-blue-200 px-3.5 py-1 text-xs font-semibold mb-3">
+              LOCAL HUBS
+            </Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+              Localities We Serve in <span className="text-blue-600">{city.name}</span>
+            </h2>
+            <p className="text-slate-600 mt-3 text-base sm:text-lg">
+              Dedicated mobile service vans stationed across all major sectors of {city.name}.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {city.areas.map((area, index) => (
               <Card
                 key={index}
-                className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-orange-600 group"
+                className="bg-white border border-slate-200 hover:border-blue-400 rounded-2xl shadow-none hover:shadow-lg transition-all flex flex-col justify-between"
               >
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-orange-600" />
+                <CardHeader className="pb-3">
+                  <CardTitle className="flex items-center space-x-2.5 text-lg font-bold text-slate-900">
+                    <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+                      <MapPin className="h-4 w-4" />
+                    </div>
                     <span>{area.name}</span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-gray-600">{area.description}</p>
+                <CardContent className="space-y-4 pt-0">
+                  <p className="text-slate-600 text-sm leading-relaxed">{area.description}</p>
 
                   {/* Local landmarks */}
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Key Areas:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {area.landmarks.map((landmark, landmarkIndex) => (
-                        <Badge key={landmarkIndex} variant="outline" className="text-xs">
-                          {landmark}
-                        </Badge>
-                      ))}
+                  {area.landmarks && area.landmarks.length > 0 && (
+                    <div>
+                      <h4 className="font-semibold text-slate-800 text-xs uppercase tracking-wider mb-2">Key Landmarks:</h4>
+                      <div className="flex flex-wrap gap-1.5">
+                        {area.landmarks.slice(0, 4).map((landmark, landmarkIndex) => (
+                          <span key={landmarkIndex} className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-xs">
+                            {landmark}
+                          </span>
+                        ))}
+                      </div>
                     </div>
+                  )}
+
+                  <div className="flex items-center justify-between text-xs text-slate-500 pt-1 border-t border-slate-100">
+                    <span className="flex items-center gap-1 text-emerald-700 font-semibold">
+                      <Clock className="h-3.5 w-3.5 text-emerald-600" />
+                      {area.responseTime}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                      {area.customers} jobs done
+                    </span>
                   </div>
 
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center space-x-2">
-                      <Clock className="h-4 w-4 text-green-600" />
-                      <span className="text-green-600 font-medium">Response: {area.responseTime}</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Star className="h-4 w-4 text-yellow-500" />
-                      <span>{area.customers} satisfied customers</span>
-                    </div>
-                  </div>
-
-                  {/* Area specialties */}
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Specialties:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {area.specialties.map((specialty, specialtyIndex) => (
-                        <Badge key={specialtyIndex} className="bg-blue-100 text-blue-800 text-xs">
-                          {specialty}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Proper button structure — no button inside anchor */}
-                  <div className="flex gap-2">
+                  {/* Action buttons */}
+                  <div className="flex gap-2 pt-2">
                     <Link
                       href={`/locations/${citySlug}/${area.slug}`}
-                      className="flex-1 text-center py-2 px-4 bg-orange-600 hover:bg-orange-700 text-white rounded-md text-sm font-medium transition-colors"
+                      className="flex-1 text-center py-2.5 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold transition-colors"
                     >
                       View Details
                     </Link>
                     <TrackedLink
                       href={contact.phoneTel}
-                      className="flex-1 text-center py-2 px-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 rounded-md text-sm font-medium transition-colors"
+                      className="flex-1 text-center py-2.5 px-3 border border-slate-300 hover:border-blue-600 hover:text-blue-600 text-slate-700 rounded-xl text-xs font-semibold transition-colors"
                       category="phone"
                       city={city.name}
                       area={area.name}
                     >
-                      Call Now
+                      Direct Call
                     </TrackedLink>
                   </div>
                 </CardContent>
@@ -284,39 +313,31 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
         </div>
       </section>
 
-      {/* Why choose us in this city */}
-      <section className="py-20 bg-gray-50">
+      {/* Why Choose Us in This City */}
+      <section className="py-16 sm:py-20 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">Local Expertise</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why {city.name} Residents Choose Gas Repair Wale?
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <Badge className="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3.5 py-1 text-xs font-semibold mb-3">
+              LOCAL EXPERTISE
+            </Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+              Why {city.name} Residents Choose Gas Repair Wale
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Local expertise with deep understanding of {city.name}'s unique residential and commercial needs.
+            <p className="text-slate-600 mt-3 text-base">
+              Local knowledge with full compliance to safety standards in {city.name}.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {city.advantages.map((advantage, index) => {
               const IconComponent = getIcon(advantage.icon)
-              const gradients = [
-                "from-orange-100 to-red-100",
-                "from-green-100 to-blue-100",
-                "from-yellow-100 to-orange-100",
-                "from-purple-100 to-pink-100",
-              ]
-              const iconColors = ["text-orange-600", "text-green-600", "text-yellow-600", "text-purple-600"]
-
               return (
-                <div key={index} className="text-center">
-                  <div
-                    className={`w-16 h-16 bg-gradient-to-r ${gradients[index % gradients.length]} rounded-full flex items-center justify-center mx-auto mb-4`}
-                  >
-                    <IconComponent className={`h-8 w-8 ${iconColors[index % iconColors.length]}`} />
+                <div key={index} className="bg-white border border-slate-200 rounded-2xl p-6 text-center hover:border-blue-300 transition-colors shadow-none">
+                  <div className="w-14 h-14 bg-blue-50 border border-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4 text-blue-600">
+                    <IconComponent className="h-7 w-7" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{advantage.title}</h3>
-                  <p className="text-gray-600">{advantage.description}</p>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">{advantage.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{advantage.description}</p>
                 </div>
               )
             })}
@@ -324,49 +345,46 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
         </div>
       </section>
 
-      {/* Local testimonials */}
-      <section className="py-20 bg-white">
+      {/* Local Testimonials */}
+      <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Customer Reviews</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">What {city.name} Customers Say</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real feedback from our satisfied customers across {city.name}.
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <Badge className="bg-sky-50 text-sky-700 border border-sky-200 px-3.5 py-1 text-xs font-semibold mb-3">
+              VERIFIED FEEDBACK
+            </Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+              What {city.name} Customers Say
+            </h2>
+            <p className="text-slate-600 mt-3 text-base">
+              Real feedback from homeowners and commercial kitchens across {city.name}.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {city.testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
+              <Card key={index} className="bg-white border border-slate-200 rounded-2xl shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
-                  <div className="flex items-center space-x-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, starIndex) => (
-                      <Star key={starIndex} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  <div className="flex items-center space-x-1 mb-3">
+                    {[...Array(testimonial.rating || 5)].map((_, starIndex) => (
+                      <Star key={starIndex} className="h-4 w-4 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <p className="text-gray-700 mb-4 leading-relaxed">"{testimonial.text}"</p>
-
-                  <div className="bg-orange-50 p-3 rounded-lg mb-4">
-                    <div className="flex justify-between items-center text-sm">
-                      <span className="text-gray-600">Service:</span>
-                      <span className="font-medium text-orange-600">{testimonial.service}</span>
+                  <p className="text-slate-700 mb-4 leading-relaxed text-sm italic">
+                    "{testimonial.text}"
+                  </p>
+                  <div className="bg-slate-50 border border-slate-100 p-3 rounded-xl mb-4 text-xs">
+                    <div className="flex justify-between py-0.5">
+                      <span className="text-slate-500">Service:</span>
+                      <span className="font-semibold text-blue-600">{testimonial.service}</span>
                     </div>
-                    <div className="flex justify-between items-center text-sm">
-                      <span className="text-gray-600">Date:</span>
-                      <span className="font-medium text-gray-700">{testimonial.date}</span>
+                    <div className="flex justify-between py-0.5">
+                      <span className="text-slate-500">Date:</span>
+                      <span className="font-medium text-slate-700">{testimonial.date}</span>
                     </div>
                   </div>
-
-                  <div className="border-t pt-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                        <p className="text-sm text-gray-600">{testimonial.profession}</p>
-                        <p className="text-sm text-gray-500">
-                          {testimonial.area}, {city.name}
-                        </p>
-                      </div>
-                    </div>
+                  <div className="border-t border-slate-100 pt-3">
+                    <p className="font-bold text-slate-900 text-sm">{testimonial.name}</p>
+                    <p className="text-xs text-slate-500">{testimonial.profession} • {testimonial.area}, {city.name}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -375,90 +393,27 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
         </div>
       </section>
 
-      {/* Service statistics for city */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+      {/* Service Statistics Bar */}
+      <section className="py-16 bg-[#071126] text-white">
         <div className="container mx-auto px-4">
-          <div className="text-center text-white">
-            <h2 className="text-4xl font-bold mb-12"> Our {city.name} Service Statistics</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div>
-                <div className="text-4xl font-bold mb-2">{city.totalCustomers}</div>
-                <div className="text-orange-100">Customers Served</div>
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-10">Our {city.name} Operational Metrics</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="border-r last:border-r-0 border-slate-800">
+                <div className="text-3xl sm:text-4xl font-extrabold text-sky-400 mb-1">{city.totalCustomers}</div>
+                <div className="text-slate-400 text-xs sm:text-sm">Households Served</div>
+              </div>
+              <div className="border-r last:border-r-0 border-slate-800">
+                <div className="text-3xl sm:text-4xl font-extrabold text-white mb-1">{city.areas.length}+</div>
+                <div className="text-slate-400 text-xs sm:text-sm">Neighborhoods</div>
+              </div>
+              <div className="border-r last:border-r-0 border-slate-800">
+                <div className="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">{city.avgResponseTime}</div>
+                <div className="text-slate-400 text-xs sm:text-sm">Avg Arrival Speed</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">{city.areas.length}</div>
-                <div className="text-orange-100">Areas Covered</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">{city.avgResponseTime}</div>
-                <div className="text-orange-100">Avg Response Time</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">99%</div>
-                <div className="text-orange-100">Customer Satisfaction</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Local SEO content */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Professional Gas Services in {city.name}, {city.state}
-            </h2>
-
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-              <p>
-                <strong>Gas Repair Wale</strong> has been serving {city.name} since {city.establishedYear}, providing
-                professional gas stove repair, pipeline services, and appliance maintenance across all major areas of{" "}
-                {city.name}. Our team of licensed and certified technicians understands the unique requirements of{" "}
-                {city.state} residents and businesses.
-              </p>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Why Choose Our Gas Repair Services in {city.name}?
-              </h3>
-
-              <ul className="space-y-2">
-                {city.seoContent.whyChoose.map((point, index) => (
-                  <li key={index}>
-                    <strong>{point.split(":")[0]}:</strong> {point.split(":")[1]}
-                  </li>
-                ))}
-              </ul>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Our Gas Services in {city.name} Include:</h3>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-lg font-semibold mb-2">Gas Stove Repair Services</h4>
-                  <ul className="text-sm space-y-1">
-                    {city.seoContent.services.gasStove.map((service, index) => (
-                      <li key={index}>• {service}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold mb-2">Pipeline Services</h4>
-                  <ul className="text-sm space-y-1">
-                    {city.seoContent.services.pipeline.map((service, index) => (
-                      <li key={index}>• {service}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 mt-6">
-                <strong>Emergency Gas Service in {city.name}:</strong> Gas leaks and safety issues require immediate
-                attention. Our emergency team is available 24/7 across {city.name} with guaranteed response within 15
-                minutes. Call{" "}
-                <a href={contact.phoneTel} className="text-blue-600 font-bold">
-                  {contact.phoneDisplay}
-                </a>{" "}
-                for immediate assistance.
+                <div className="text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">99%</div>
+                <div className="text-slate-400 text-xs sm:text-sm">Issue Resolution Rate</div>
               </div>
             </div>
           </div>
@@ -466,23 +421,28 @@ export function LocationPageContent({ city, citySlug }: LocationPageContentProps
       </section>
 
       {/* Visual FAQ Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4">
-             <div className="text-center mb-16">
-                <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Common Questions</Badge>
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">FAQs about Gas Service in {city.name}</h2>
-             </div>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <Badge className="bg-blue-50 text-blue-700 border border-blue-200 px-3.5 py-1 text-xs font-semibold mb-3">
+              FREQUENTLY ASKED QUESTIONS
+            </Badge>
+            <h2 className="text-3xl font-bold text-slate-900">
+              FAQs about Gas Services in {city.name}
+            </h2>
+          </div>
 
-             <div className="max-w-3xl mx-auto space-y-4">
-                {cityFaqs.map((faq, i) => (
-                  <Card key={i} className="hover:shadow-md transition-shadow">
-                     <CardContent className="p-6">
-                        <h3 className="font-semibold text-lg text-gray-900 mb-2">{faq.question}</h3>
-                        <p className="text-gray-600">{faq.answer}</p>
-                     </CardContent>
-                  </Card>
-                ))}
-             </div>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {cityFaqs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-none">
+                <h3 className="font-bold text-base sm:text-lg text-slate-900 mb-2 flex items-start gap-2">
+                  <span className="text-blue-600 font-extrabold">Q.</span>
+                  <span>{faq.question}</span>
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed pl-6">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

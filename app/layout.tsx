@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Plus_Jakarta_Sans } from "next/font/google"
 import Script from "next/script"
 import "./globals.css"
 import { Header } from "@/components/header"
@@ -9,7 +9,11 @@ import { Toaster } from "@/components/ui/toaster"
 import { ScrollToTopWrapper } from "@/components/scroll-to-top-wrapper"
 import { MobileStickyBar } from "@/components/mobile-sticky-bar"
 
-const inter = Inter({ subsets: ["latin"] })
+const fontSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gasrepairwale.com"),
@@ -262,7 +266,7 @@ export default function RootLayout({
 
         {/* NOTE: No hardcoded canonical here — each page sets its own via metadata.alternates.canonical */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#ea580c" />
+        <meta name="theme-color" content="#2563eb" />
 
         {/* Geo meta tags — primary location (Pune). Multi-city handled via schema areaServed */}
         <meta name="geo.region" content="IN-MH" />
@@ -277,7 +281,7 @@ export default function RootLayout({
         <meta name="business:contact_data:phone_number" content="+91-83027-13127" />
         <meta name="business:contact_data:website" content="https://gasrepairwale.com" />
       </head>
-      <body className={inter.className}>
+      <body className={fontSans.className}>
         <ScrollToTopWrapper>
           {/* Main navigation header */}
           <Header />

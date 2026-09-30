@@ -148,8 +148,8 @@ export const trackWhatsApp = (message: string, city?: string, area?: string) => 
 
 // Format WhatsApp URL with pre-filled message
 export const getWhatsAppRedirectUrl = (data: {
-  serviceType: string;
-  city: string;
+  serviceType?: string;
+  city?: string;
   area?: string;
   phone?: string;
   address?: string;
@@ -157,13 +157,15 @@ export const getWhatsAppRedirectUrl = (data: {
   message?: string;
   whatsappNumber?: string;
 }) => {
-  const isHyd = data.city?.toLowerCase().includes("hyderabad");
-  const defaultNumber = isHyd ? "+919950809283" : (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+918302713127");
+  const service = data.serviceType || "Gas Stove Repair";
+  const city = data.city || "Pune";
+  const isHyd = city.toLowerCase().includes("hyderabad");
+  const defaultNumber = isHyd ? "+916304739440" : (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+918302713127");
   const waNumber = data.whatsappNumber || defaultNumber;
 
   let messageText = `*Gas Service Booking*\n\n` +
-    `*Service:* ${data.serviceType}\n` +
-    `*City:* ${data.city}\n`;
+    `*Service:* ${service}\n` +
+    `*City:* ${city}\n`;
 
   if (data.area && data.area !== 'N/A' && data.area !== '') {
     messageText += `*Area:* ${data.area}\n`;

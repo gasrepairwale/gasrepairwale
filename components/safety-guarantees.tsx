@@ -55,9 +55,9 @@ export function SafetyGuarantees() {
             return (
               <div
                 key={idx}
-                className="bg-gray-50/80 hover:bg-white p-6 rounded-2xl border border-gray-200/80 hover:border-orange-300 hover:shadow-lg transition-all duration-200"
+                className="bg-gray-50/80 hover:bg-white p-6 rounded-2xl border border-gray-200/80 hover:border-blue-300 transition-all duration-200 shadow-none"
               >
-                <div className="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="font-bold text-lg text-gray-900 mb-2">{item.title}</h3>

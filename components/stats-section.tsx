@@ -76,28 +76,28 @@ export function StatsSection() {
       number: `${counters.customers.toLocaleString()}+`,
       label: "Happy Customers",
       description: "Across Pune, Mumbai & Hyderabad",
-      color: "from-orange-500 to-red-500",
+      color: "from-blue-600 to-indigo-600",
     },
     {
       icon: Award,
       number: `${counters.years}+`,
       label: "Years Experience",
       description: "Industry expertise",
-      color: "from-orange-600 to-red-600",
+      color: "from-blue-500 to-sky-500",
     },
     {
       icon: Star,
       number: `${counters.rating.toFixed(1)}`,
       label: "Google Rating",
       description: "Based on 500+ reviews",
-      color: "from-orange-500 to-yellow-500",
+      color: "from-sky-500 to-blue-600",
     },
     {
       icon: Clock,
       number: `${counters.response} Min`,
       label: "Response Time",
       description: "Emergency service",
-      color: "from-red-500 to-orange-500",
+      color: "from-indigo-600 to-blue-600",
     },
   ]
 
@@ -109,15 +109,15 @@ export function StatsSection() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 via-orange-900 to-red-900 text-white relative overflow-hidden">
-      {/* Background animation */}
-      <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20 animate-pulse"></div>
+    <section className="py-20 bg-[#071126] text-white relative overflow-hidden">
+      {/* Background glow */}
+      <div className="absolute inset-0 bg-blue-600/5"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
              Our{" "}
-            <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="text-sky-400">
               Impressive
             </span>{" "}
             Track Record
@@ -134,7 +134,7 @@ export function StatsSection() {
             return (
               <Card
                 key={index}
-                className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+                className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-colors shadow-none"
               >
                 <CardContent className="p-8 text-center">
                   <div
@@ -154,14 +154,14 @@ export function StatsSection() {
         {/* Achievements */}
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
           <h3 className="text-3xl font-bold text-center mb-8">
-            Our <span className="text-orange-400">Achievements</span>
+            Our <span className="text-sky-400">Achievements</span>
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {achievements.map((achievement, index) => {
               const IconComponent = achievement.icon
               return (
                 <div key={index} className="flex items-center space-x-3 bg-white/5 p-4 rounded-lg">
-                  <div className="p-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg">
+                  <div className="p-2 bg-blue-600 rounded-lg">
                     <IconComponent className="h-5 w-5 text-white" />
                   </div>
                   <span className="font-semibold">{achievement.text}</span>
@@ -173,7 +173,7 @@ export function StatsSection() {
 
         {/* Call to action */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 rounded-full text-lg font-bold">
+          <div className="inline-flex items-center space-x-2 bg-blue-600 px-6 py-3 rounded-full text-lg font-bold shadow-none">
             <CheckCircle className="h-5 w-5" />
             <span>Join 5000+ Satisfied Customers Today!</span>
           </div>

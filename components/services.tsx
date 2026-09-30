@@ -68,12 +68,12 @@ export function Services() {
             return (
               <Card
                 key={index}
-                className="hover:shadow-lg transition-shadow duration-300 border-l-4 border-l-orange-600"
+                className="hover:shadow-md transition-shadow duration-300 border-l-4 border-l-blue-600"
               >
                 <CardHeader>
                   <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-orange-100 rounded-lg">
-                      <IconComponent className="h-8 w-8 text-orange-600" />
+                    <div className="p-3 bg-blue-100 rounded-lg">
+                      <IconComponent className="h-8 w-8 text-blue-600" />
                     </div>
                     <CardTitle className="text-xl text-gray-900">{service.title}</CardTitle>
                   </div>
@@ -93,7 +93,7 @@ export function Services() {
 
                   <Button
                     variant="outline"
-                    className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
+                    className="w-full border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent shadow-none"
                   >
                     Learn More
                   </Button>
@@ -105,7 +105,7 @@ export function Services() {
 
         {/* Call to action */}
         <div className="text-center mt-16">
-          <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-8 py-3 rounded-xl shadow-none">
             <a href="tel:+918302713127">Book Service Now</a>
           </Button>
         </div>

@@ -1,17 +1,17 @@
 /**
  * City-wise Contact Configuration
  * Pune & Mumbai: +91 83027 13127
- * Hyderabad: +91 99508 09283 (Managed by Vikash Ji)
+ * Hyderabad: +91 63047 39440 (Hyderabad Hub)
  */
 
 export function getCityContact(city?: string) {
   const isHyd = city?.toLowerCase().includes("hyderabad");
   if (isHyd) {
     return {
-      phoneDisplay: "+91 99508 09283",
-      phoneRaw: "+919950809283",
-      phoneTel: "tel:+919950809283",
-      whatsappRaw: "919950809283",
+      phoneDisplay: "+91 63047 39440",
+      phoneRaw: "+916304739440",
+      phoneTel: "tel:+916304739440",
+      whatsappRaw: "916304739440",
       city: "Hyderabad",
     };
   }

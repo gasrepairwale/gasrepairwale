@@ -1,163 +1,99 @@
 "use client"
 
 import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react"
-import { getWhatsAppRedirectUrl, trackWhatsApp } from "@/lib/analytics"
+import { ChevronDown } from "lucide-react"
+import { getWhatsAppRedirectUrl } from "@/lib/analytics"
 
 /**
- * FAQ Component
- * Comprehensive FAQ section for SEO and user engagement
+ * FAQ Component - "Answers to Your Frequently Asked Questions"
+ * Clean, modern accordion matching Section 10 of the reference design
  */
 export function FAQ() {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(0)
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const faqs = [
     {
-      question: "How quickly can you respond to gas emergencies in Pune, Mumbai and Hyderabad?",
-      answer:
-        "We guarantee a 15-30 minute response time for gas emergencies across Pune, Mumbai and Hyderabad. Our technicians are strategically located in key areas like Kothrud, Baner, Borivali East West, Kandivali East West, Gachibowli, and HITEC City to ensure the fastest possible response. For non-emergency repairs, we typically arrive within 30-45 minutes.",
-      keywords: "emergency response time, gas leak repair, Pune Mumbai Hyderabad service",
+      q: "How quickly can your technician arrive in Pune, Mumbai, or Hyderabad?",
+      a: "Our mobile technicians are stationed locally across Pune (Kothrud, Baner, Wakad, Hadapsar), Mumbai (Andheri, Borivali, Bandra), and Hyderabad (Miyapur, Gachibowli, Kukatpally). Average arrival time is 15 to 25 minutes for emergency repairs.",
     },
     {
-      question: "What types of gas stove problems do you repair?",
-      answer:
-        "We repair all types of gas stove issues including: ignition problems, burner not lighting, gas smell, uneven flames, auto-ignition failure, gas valve issues, thermostat problems, and complete stove servicing. We work with all brands including Prestige, Butterfly, Glen, Sunflame, and more.",
-      keywords: "gas stove repair, burner repair, ignition problems, all brands",
+      q: "What types of gas stove and hob issues do you fix at home?",
+      a: "We repair low flame, burner clogging, carbon build-up, clicking auto-ignition spark failure, loose or stiff knobs, gas smell near regulator/pipeline, and glass cooktop valve replacements.",
     },
     {
-      question: "Are your technicians licensed and insured for gas work?",
-      answer:
-        "Yes, all our technicians are fully licensed, certified, and insured for gas appliance work. They undergo regular training on safety protocols and are certified by recognized gas safety authorities. We carry comprehensive insurance coverage for your peace of mind.",
-      keywords: "licensed technicians, certified gas repair, insured service",
+      q: "Do you provide a warranty on parts and repair workmanship?",
+      a: "Yes. All repairs come with a standard 30 to 90-day service warranty. Genuine spare parts like brass burners, forged valves, and ISI Suraksha hoses carry manufacturer warranties up to 1 year.",
     },
     {
-      question: "What are your service charges for gas stove repair?",
-      answer:
-        "Our gas stove repair starts from ₹299 for basic issues like cleaning and minor adjustments. Complex repairs range from ₹499-₹1499 depending on the problem and parts required. We provide transparent pricing with no hidden charges. Emergency service carries a premium of ₹200 extra.",
-      keywords: "gas stove repair cost, service charges, transparent pricing",
+      q: "What are your inspection and repair charges?",
+      a: "Our certified technician inspects your gas stove or pipeline first and provides an upfront, transparent estimate before starting any repair. There are zero hidden fees, and you only pay after testing the blue flame.",
     },
     {
-      question: "Do you provide warranty on your repair work?",
-      answer:
-        "Yes, we provide a comprehensive warranty on all our repair work. Parts carry a 6-month warranty, and labor comes with a 3-month guarantee. For major repairs and installations, we offer up to 1-year warranty. If the same problem occurs within the warranty period, we fix it free of charge.",
-      keywords: "repair warranty, parts warranty, service guarantee",
-    },
-    {
-      question: "Which areas in Pune, Mumbai and Hyderabad do you cover?",
-      answer:
-        "In Pune: Kothrud, Baner, Wakad, Hinjewadi, Karve Nagar, Warje, Aundh, Viman Nagar, Hadapsar, Kharadi. In Mumbai: Borivali, Kandivali, Malad, Goregaon, Andheri, Bandra, Dadar, Marine Drive. In Hyderabad: Gachibowli, HITEC City, Madhapur, Kondapur, Banjara Hills, Jubilee Hills, Secunderabad, Kukatpally. We cover 75+ locations total.",
-      keywords: "service areas Pune Mumbai Hyderabad, coverage areas, local service",
-    },
-    {
-      question: "Can you install new gas connections and pipelines?",
-      answer:
-        "Yes, we provide complete gas pipeline installation services for both residential and commercial properties. This includes new gas connections, pipeline routing, safety testing, compliance certification, and connection to gas appliances. All installations meet safety standards and local regulations.",
-      keywords: "gas pipeline installation, new gas connection, commercial residential",
-    },
-    {
-      question: "What safety measures do you follow during gas repairs?",
-      answer:
-        "Safety is our top priority. We follow strict protocols including: gas leak detection before starting work, proper ventilation, use of certified tools, pressure testing after repairs, safety inspections, and compliance with all safety standards. We also provide safety certificates for major work.",
-      keywords: "gas safety measures, safety protocols, leak detection, compliance",
-    },
-    {
-      question: "Do you offer 24/7 emergency gas repair services?",
-      answer:
-        "Yes, we provide 24/7 emergency gas repair services throughout the year, including weekends and holidays. Gas emergencies like leaks, smell, or safety concerns are treated with highest priority. Our emergency team is always ready to respond within 15 minutes of your call.",
-      keywords: "24/7 emergency service, weekend service, holiday service, gas emergency",
-    },
-    {
-      question: "How do I know if I have a gas leak and what should I do?",
-      answer:
-        "Signs of gas leak include: gas smell (like rotten eggs), hissing sounds near gas lines, dead vegetation near gas lines, or physical symptoms like dizziness. If you suspect a leak: don't use electrical switches, open windows for ventilation, turn off gas supply if safe to do so, evacuate the area, and call us immediately at +91 83027 13127.",
-      keywords: "gas leak detection, gas leak signs, emergency procedures, safety tips",
+      q: "Do you service commercial restaurant bhattis and bulk gas pipelines?",
+      a: "Yes. We maintain commercial multi-burner ranges, Chinese wok burners, tandoor burners, and industrial copper/GI manifold piping with safety certificates.",
     },
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-blue-100 px-4 py-2 rounded-full text-blue-800 font-semibold mb-4">
-            <HelpCircle className="h-5 w-5" />
-            <span>Frequently Asked Questions</span>
-          </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-             Got <span className="text-blue-600">Questions</span>? We Have{" "}
-            <span className="text-green-600">Answers!</span>
+    <section className="py-16 sm:py-20 bg-slate-50/60">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-blue-100 text-blue-800 mb-2">
+            Clear Answers
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+            Answers to Your <br />
+            <span className="text-blue-600">Frequently Asked Questions</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to know about our gas repair services in Pune and Mumbai. Can't find your answer?
-            Call us!
+          <p className="text-xs sm:text-sm text-slate-500 mt-2">
+            Everything you need to know about our doorstep services, transparent pricing, and safety standards.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
-            <Card key={index} className="border-2 border-gray-200 hover:border-blue-300 transition-all duration-300">
-              <CardContent className="p-0">
+        <div className="space-y-3">
+          {faqs.map((faq, idx) => {
+            const isOpen = openIndex === idx
+            return (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm transition-all"
+              >
                 <button
-                  onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                  className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : idx)}
+                  className="w-full p-5 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors"
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 pr-4">{faq.question}</h3>
-                  {openFAQ === index ? (
-                    <ChevronUp className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                  )}
+                  <span className="text-sm sm:text-base font-bold text-slate-900">{faq.q}</span>
+                  <ChevronDown
+                    className={`w-4 h-4 text-blue-600 flex-shrink-0 transition-transform duration-200 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
 
-                {openFAQ === index && (
-                  <div className="px-6 pb-6">
-                    <div className="border-t pt-4">
-                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        {faq.keywords.split(", ").map((keyword, keywordIndex) => (
-                          <span key={keywordIndex} className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                            {keyword}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
+                {isOpen && (
+                  <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                    {faq.a}
                   </div>
                 )}
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            )
+          })}
         </div>
 
-        {/* Still have questions CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-8 rounded-2xl max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Still Have Questions? </h3>
-            <p className="text-lg mb-6">
-              Our gas experts are available 24/7 to answer all your questions and provide instant solutions!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+918302713127"
-                className="bg-white text-orange-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200"
-              >
-                Call: +91 83027 13127
-              </a>
-              <a
-                href={getWhatsAppRedirectUrl({
-                  serviceType: "FAQ Inquiry",
-                  city: "General",
-                  message: "Hi, I have a question about your gas repair services."
-                })}
-                onClick={() => trackWhatsApp("FAQ Inquiry")}
-                className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors duration-200"
-              >
-                WhatsApp Us
-              </a>
-            </div>
-          </div>
+        {/* Still have questions link */}
+        <div className="text-center mt-8">
+          <p className="text-xs text-slate-500">
+            Have a specific gas issue not listed here?{" "}
+            <a
+              href="tel:+918302713127"
+              className="text-blue-600 font-bold hover:underline"
+            >
+              Call our Helpline: +91 83027 13127
+            </a>
+          </p>
         </div>
       </div>
     </section>
   )
 }
-

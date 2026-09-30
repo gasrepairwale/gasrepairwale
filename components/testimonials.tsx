@@ -70,7 +70,7 @@ export function Testimonials() {
               <CardContent className="p-6">
                 {/* Quote icon */}
                 <div className="mb-4">
-                  <Quote className="h-8 w-8 text-orange-600" />
+                  <Quote className="h-8 w-8 text-blue-600" />
                 </div>
 
                 {/* Rating stars */}
@@ -91,7 +91,7 @@ export function Testimonials() {
                       <p className="text-sm text-gray-600">{testimonial.location}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-sm font-medium text-orange-600">{testimonial.service}</p>
+                      <p className="text-sm font-medium text-blue-600">{testimonial.service}</p>
                     </div>
                   </div>
                 </div>

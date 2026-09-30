@@ -1,322 +1,142 @@
+"use client"
+
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Clock, Shield, Award, CheckCircle, Wrench, Phone } from "lucide-react"
+import { ShieldCheck, CheckCircle, Wrench, Sparkles, Flame, Phone } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { trackPhoneCall } from "@/lib/analytics"
 
 /**
- * SEO Content Section Component
- * Rich, keyword-optimized content for better search rankings
+ * SEO Content & Work Gallery Component
+ * Image-driven quality standard and field work showcase across Pune, Mumbai & Hyderabad.
+ * Retains essential SEO semantic keywords without ugly text walls.
  */
 export function SEOContentSection() {
-  const locationContent = [
+  const qualityPillars = [
     {
-      city: "Pune",
-      areas: ["Kothrud", "Baner", "Wakad", "Hinjewadi", "Karve Nagar", "Warje", "Aundh", "Viman Nagar"],
-      description:
-        "Professional gas repair services across Pune with specialized expertise in Maharashtra's gas safety regulations and local requirements.",
-      keyServices: [
-        "Gas stove repair in Pune residential areas",
-        "Commercial gas pipeline services for Pune businesses",
-        "Emergency gas leak repairs across Pune metro",
-        "Gas safety inspections for Pune properties",
-      ],
-      responseTime: "15-25 minutes",
-      customers: "3000+",
-    },
-    {
-      city: "Mumbai",
-      areas: [
-        "Borivali",
-        "Kandivali",
-        "Malad",
-        "Goregaon",
-        "Andheri",
-        "Bandra",
-        "Dadar",
-        "Marine Drive",
-      ],
-      description:
-        "Expert gas services across Mumbai's western and central corridors, compliant with Maharashtra state gas safety standards.",
-      keyServices: [
-        "Gas stove repair in Borivali, Kandivali & Andheri",
-        "Restaurant gas system maintenance in Mumbai",
-        "Commercial & residential gas pipeline installation",
-        "24/7 emergency gas repairs in Mumbai metro",
-      ],
-      responseTime: "20-30 minutes",
-      customers: "2500+",
-    },
-    {
-      city: "Hyderabad",
-      areas: [
-        "Gachibowli",
-        "HITEC City",
-        "Madhapur",
-        "Kondapur",
-        "Banjara Hills",
-        "Jubilee Hills",
-        "Secunderabad",
-        "Kukatpally",
-      ],
-      description:
-        "Expert gas appliance & pipeline services across Hyderabad's tech corridors (Cyberabad) and residential zones with rapid response.",
-      keyServices: [
-        "IT corridor gas repair in HITEC City & Gachibowli",
-        "Gas pipeline installation in Madhapur & Kondapur",
-        "Safety audits & maintenance in Banjara Hills",
-        "24/7 emergency gas leak service across Hyderabad",
-      ],
-      responseTime: "20-30 minutes",
-      customers: "1500+",
-    },
-  ]
-
-  const serviceDetails = [
-    {
-      title: "Gas Stove Repair Services - Complete Solutions for All Brands",
-      content: `Our certified gas stove repair technicians in Pune, Mumbai & Hyderabad specialize in fixing all types of gas cooking appliances. Whether you have a single burner, double burner, triple burner, or four burner gas stove, we provide comprehensive repair services for all major brands including Prestige, Butterfly, Glen, Sunflame, Pigeon, Bajaj, and more.
-
-      Common gas stove problems we fix include ignition issues, uneven flame distribution, gas leakage, burner blockages, auto-ignition failures, and thermostat malfunctions. Our technicians carry genuine spare parts and use professional-grade tools to ensure lasting repairs.
-
-      We understand that a malfunctioning gas stove can disrupt your daily cooking routine, which is why we offer same-day repair services across Pune, Mumbai & Hyderabad. Our transparent pricing starts from just ₹299, and we provide a 6-month warranty on all parts and 3-month warranty on labor.`,
-      keywords: [
-        "gas stove repair",
-        "burner repair",
-        "ignition repair",
-        "gas stove service",
-        "cooking appliance repair",
+      title: "100% Solid Brass Burners & Spares",
+      image: "/images/gas-brass-parts.jpg",
+      badge: "Quality Components",
+      heading: "Why We Use Heavy-Gauge Brass Exclusively",
+      points: [
+        "Cheap duplicate iron/zinc burners rust, clog quickly, and cause hazardous yellow soot.",
+        "We install factory-calibrated heavy brass burners that distribute heat evenly and maximize LPG thermal efficiency.",
+        "Steel wire-braided Suraksha safety hoses (ISI marked) prevent rat bites and high-pressure blowouts.",
+        "Genuine factory-matched brass gas control valves and spindles ensure leak-free knob operation.",
       ],
     },
     {
-      title: "Gas Pipeline Installation & Repair - Safe & Compliant Solutions",
-      content: `Gas pipeline safety is crucial for every home and business. Our licensed gas pipeline technicians provide complete pipeline solutions including new installations, leak repairs, pressure testing, and compliance certifications for residential and commercial properties in Maharashtra and Telangana.
-
-      We handle everything from kitchen gas connections to complex commercial gas distribution systems. Our services include pipeline routing, gas meter installations, safety valve setups, and regular maintenance programs. All our installations comply with local safety regulations and building codes.
-
-      Emergency pipeline repairs are available 24/7 because we understand that gas leaks pose serious safety risks. Our emergency response team carries specialized leak detection equipment and can quickly isolate and repair pipeline issues to ensure your safety.`,
-      keywords: [
-        "gas pipeline installation",
-        "gas leak repair",
-        "pipeline maintenance",
-        "gas connection",
-        "pipeline safety",
+      title: "Digital Combustible Gas Sniffer Audits",
+      image: "/images/gas-leak-detector.jpg",
+      badge: "Safety Verification",
+      heading: "Electronic Leak Detection on Every Visit",
+      points: [
+        "Traditional soap water tests miss micro-leaks behind cooktop panels and inside cabinet joints.",
+        "Our technicians use calibrated digital combustible gas detectors with flexible sniffer wands.",
+        "Thorough testing across cylinder regulator, O-ring seal, manifold joints, and rubber hose connectors.",
+        "Safe blue-flame test burn performed before technician hand-off and payment.",
       ],
     },
     {
-      title: "Emergency Gas Services - 24/7 Response Across Pune, Mumbai & Hyderabad",
-      content: `Gas emergencies require immediate professional attention. Our 24/7 emergency gas service team is strategically located across Pune, Mumbai and Hyderabad to provide rapid response to gas leaks, safety concerns, and urgent repairs.
-
-      We guarantee a 15-30 minute response time for emergency calls within city limits. Our emergency technicians are equipped with gas detection equipment, safety gear, and tools needed to quickly assess and resolve dangerous situations.
-
-      Common gas emergencies we handle include gas leaks from stoves or pipelines, gas smell in homes or offices, complete gas system failures, and safety shutdowns. We also provide temporary solutions to ensure your safety while permanent repairs are completed.`,
-      keywords: [
-        "emergency gas repair",
-        "gas leak emergency",
-        "24/7 gas service",
-        "urgent gas repair",
-        "gas safety emergency",
+      title: "Heavy-Duty Copper Pipeline Installations",
+      image: "/images/copper-pipeline.jpg",
+      badge: "Pipeline Experts",
+      heading: "Seamless Kitchen Copper Pipeline Routing",
+      points: [
+        "Seamless copper pipe routing compliant with Indian residential safety standards.",
+        "Heavy-duty forged brass ball valves for instantaneous emergency gas shut-off.",
+        "Digital pressure gauge testing conducted before pipeline commissioning in apartments & societies.",
+        "Pipeline relocation and neat concealed routing during modular kitchen renovations in Pune, Mumbai & Hyderabad.",
+      ],
+    },
+    {
+      title: "Commercial Multi-Burner Range & Bhatti AMC",
+      image: "/images/commercial-stove.jpg",
+      badge: "Commercial Solutions",
+      heading: "Zero-Downtime Kitchen Maintenance for Food Businesses",
+      points: [
+        "Heavy-duty high-pressure bhattis, tandoor burners, and multi-burner commercial cooking ranges.",
+        "Quarterly & annual preventive AMC plans for restaurants, cafes, hotels, and cloud kitchens.",
+        "On-call rapid technician dispatch to ensure food prep orders never stop during rush hours.",
+        "FSSAI & fire compliance kitchen safety inspection reports provided with every commercial service.",
       ],
     },
   ]
-
-  const whyChooseUsContent = {
-    title: "Why Gas Repair Wale is Pune, Mumbai & Hyderabad's Most Trusted Gas Service Provider",
-    content: `Since 2013, Gas Repair Wale has been the leading gas repair and maintenance service provider in Pune, Mumbai and Hyderabad. We've built our reputation on three core principles: safety, reliability, and customer satisfaction.
-
-    Our team of certified gas technicians undergoes regular training on the latest safety protocols and repair techniques. We're licensed by local authorities in Maharashtra and Telangana, and our services are approved by major insurance companies.
-
-    What sets us apart is our commitment to transparency. We provide upfront pricing with no hidden charges, detailed explanations of all work performed, and comprehensive warranties on our services. Our customer-first approach has earned us over 5000 satisfied customers and a 4.9-star rating.`,
-    achievements: [
-      "10+ years of professional gas service experience",
-      "5000+ satisfied customers across Pune, Mumbai & Hyderabad",
-      "Licensed and certified by local authorities",
-      "Insurance-approved service provider",
-      "4.9-star customer rating with 500+ reviews",
-      "24/7 emergency response capability",
-      "Transparent pricing with no hidden charges",
-      "Comprehensive warranty on all services",
-    ],
-  }
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 border-t border-gray-100">
       <div className="container mx-auto px-4">
-        {/* Main SEO content */}
-        <div className="max-w-6xl mx-auto">
-          {/* Introduction */}
-          <div className="text-center mb-16">
-            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Professional Gas Services Since 2013</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Complete Gas Repair & Maintenance Services in Pune & Mumbai
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Gas Repair Wale is your trusted partner for all gas-related services across Pune and Mumbai. From
-              emergency gas leak repairs to routine maintenance, our certified technicians ensure your safety with
-              professional, reliable, and affordable solutions for homes and businesses.
-            </p>
-          </div>
+        {/* Section Header */}
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <Badge className="bg-blue-100 text-blue-800 px-3.5 py-1 text-xs font-semibold mb-3">
+            Our Quality &amp; Safety Standard
+          </Badge>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+            How We Deliver <span className="text-blue-600">Uncompromising Safety</span>
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            See the tools, genuine brass components, and certified safety testing protocols our technicians bring to your kitchen in Pune, Mumbai, and Hyderabad.
+          </p>
+        </div>
 
-          {/* Location-specific content */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {locationContent.map((location, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex items-center space-x-3 mb-6">
-                    <div className="p-3 bg-gradient-to-r from-orange-100 to-red-100 rounded-lg">
-                      <MapPin className="h-8 w-8 text-orange-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900">Gas Services in {location.city}</h3>
-                      <p className="text-orange-600 font-medium">{location.customers} Happy Customers</p>
-                    </div>
+        {/* 2x2 Image-Led Quality Showcase */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
+          {qualityPillars.map((pillar, index) => (
+            <Card
+              key={index}
+              className="overflow-hidden border border-gray-200/80 rounded-2xl bg-white flex flex-col justify-between group shadow-none"
+            >
+              <div>
+                {/* Photo with Overlay Badge */}
+                <div className="relative h-64 w-full overflow-hidden bg-gray-100">
+                  <Image
+                    src={pillar.image}
+                    alt={pillar.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute top-3 left-3 bg-gray-900/80 backdrop-blur-md text-white text-[11px] font-semibold px-3 py-1 rounded-full shadow-sm">
+                    {pillar.badge}
                   </div>
-
-                  <p className="text-gray-700 mb-6 leading-relaxed">{location.description}</p>
-
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-3">Service Areas in {location.city}:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {location.areas.map((area, areaIndex) => (
-                          <Badge key={areaIndex} variant="outline" className="text-xs">
-                            {area}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-3">Specialized Services:</h4>
-                      <div className="space-y-2">
-                        {location.keyServices.map((service, serviceIndex) => (
-                          <div key={serviceIndex} className="flex items-start space-x-2">
-                            <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                            <span className="text-sm text-gray-700">{service}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="bg-orange-50 p-4 rounded-lg">
-                      <div className="flex items-center space-x-2 mb-2">
-                        <Clock className="h-5 w-5 text-orange-600" />
-                        <span className="font-semibold text-gray-900">Response Time: {location.responseTime}</span>
-                      </div>
-                      <p className="text-sm text-gray-600">Average response time across all areas in {location.city}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Detailed service content */}
-          <div className="space-y-12 mb-16">
-            {serviceDetails.map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">{service.title}</h3>
-                <div className="prose prose-lg max-w-none text-gray-700">
-                  {service.content.split("\n\n").map((paragraph, pIndex) => (
-                    <p key={pIndex} className="mb-4 leading-relaxed">
-                      {paragraph.trim()}
-                    </p>
-                  ))}
                 </div>
-                <div className="mt-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">Related Keywords:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {service.keywords.map((keyword, keywordIndex) => (
-                      <Badge key={keywordIndex} className="bg-blue-100 text-blue-800 text-xs">
-                        {keyword}
-                      </Badge>
+
+                <div className="p-6 pb-2">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 leading-snug">
+                    {pillar.title}
+                  </h3>
+                  <p className="text-xs font-semibold text-blue-600 mb-4">{pillar.heading}</p>
+
+                  <div className="space-y-2.5">
+                    {pillar.points.map((point, pIndex) => (
+                      <div key={pIndex} className="flex items-start space-x-2.5 text-xs text-gray-700 leading-relaxed">
+                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <span>{point}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
 
-          {/* Why choose us section */}
-          <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-8 rounded-2xl mb-16">
-            <div className="max-w-4xl mx-auto">
-              <h3 className="text-3xl font-bold mb-6 text-center">{whyChooseUsContent.title}</h3>
-              <div className="prose prose-lg max-w-none text-orange-100 mb-8">
-                {whyChooseUsContent.content.split("\n\n").map((paragraph, pIndex) => (
-                  <p key={pIndex} className="mb-4 leading-relaxed">
-                    {paragraph.trim()}
-                  </p>
-                ))}
+              <div className="p-6 pt-4 border-t border-gray-100 mt-4">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full text-xs h-9 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold shadow-none"
+                >
+                  <a
+                    href="tel:+918302713127"
+                    className="flex items-center justify-center space-x-2"
+                    onClick={() => trackPhoneCall("+918302713127", "Quality Pillar", pillar.title)}
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>Inquire About {pillar.badge}</span>
+                  </a>
+                </Button>
               </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {whyChooseUsContent.achievements.map((achievement, achievementIndex) => (
-                  <div key={achievementIndex} className="flex items-center space-x-3">
-                    <div className="p-1 bg-white/20 rounded-full">
-                      <CheckCircle className="h-4 w-4 text-white" />
-                    </div>
-                    <span className="text-orange-100">{achievement}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Service process */}
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Professional Gas Service Process</h3>
-            <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-              We follow a systematic approach to ensure quality service delivery and customer satisfaction. Here's how
-              we handle every gas service request from start to finish.
-            </p>
-
-            <div className="grid md:grid-cols-4 gap-8">
-              {[
-                {
-                  step: "1",
-                  title: "Initial Contact & Assessment",
-                  description:
-                    "Call us or submit online request. We gather details about your gas issue and schedule service visit.",
-                  icon: Phone,
-                },
-                {
-                  step: "2",
-                  title: "Professional Diagnosis",
-                  description:
-                    "Our certified technician arrives on time, diagnoses the problem, and provides transparent pricing.",
-                  icon: Wrench,
-                },
-                {
-                  step: "3",
-                  title: "Expert Repair & Testing",
-                  description:
-                    "We perform the repair using genuine parts, conduct safety tests, and ensure everything works perfectly.",
-                  icon: Shield,
-                },
-                {
-                  step: "4",
-                  title: "Quality Assurance & Follow-up",
-                  description:
-                    "Final inspection, cleanup, warranty documentation, and follow-up to ensure your satisfaction.",
-                  icon: Award,
-                },
-              ].map((process, index) => {
-                const IconComponent = process.icon
-                return (
-                  <div key={index} className="text-center">
-                    <div className="relative mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        {process.step}
-                      </div>
-                      <div className="p-3 bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mx-auto">
-                        <IconComponent className="h-6 w-6 text-orange-600" />
-                      </div>
-                    </div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-3">{process.title}</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">{process.description}</p>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

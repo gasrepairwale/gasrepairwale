@@ -12,6 +12,7 @@ import { ServiceSchema } from "@/components/json-ld/service-schema"
 import { FAQSchema } from "@/components/json-ld/faq-schema"
 import { TrackedLink } from "@/components/tracked-link"
 import { getWhatsAppRedirectUrl } from "@/lib/analytics"
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 import { getCityContact } from "@/lib/phone"
 import {
   MapPin,
@@ -29,10 +30,10 @@ import {
   ChevronRight,
   Home,
   HelpCircle,
-  ChevronDown,
-  ChevronUp,
-  MessageSquare,
-  PhoneCall
+  PhoneCall,
+  Flame,
+  ShieldCheck,
+  Check
 } from "lucide-react"
 
 type Props = {
@@ -99,7 +100,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "Gas Repair Wale",
       images: [
         {
-          // Dynamic OG image — unique branded image per area page
           url: `https://gasrepairwale.com/api/og?area=${encodeURIComponent(area.name)}&city=${encodeURIComponent(area.city)}&service=Gas+Repair`,
           width: 1200,
           height: 630,
@@ -169,20 +169,24 @@ export default async function AreaPage({ params }: Props) {
 
   const areaFaqs = [
     {
-      question: `Do you provide gas stove repair in ${area.name}?`,
-      answer: `Yes, we provide specialized gas stove repair services in ${area.name}, ${area.city} (${area.pincode}). Our local technicians are stationed nearby for quick ${area.responseTime} service.`,
+      question: `Do you provide doorstep gas stove repair in ${area.name}?`,
+      answer: `Yes, we provide specialized doorstep gas stove, cooktop, and hob repair services in ${area.name}, ${area.city} (${area.pincode}). Our local technicians are stationed locally for quick ${area.responseTime} response.`,
     },
     {
-      question: `How quickly can you reach ${area.name} for an emergency?`,
-      answer: `We guarantee a response time of ${area.responseTime} for gas emergencies in ${area.name}. Our emergency team is available 24/7 throughout the year including weekends and holidays.`,
+      question: `How quickly can you reach ${area.name} for an emergency gas leak?`,
+      answer: `We guarantee a response time of ${area.responseTime} for urgent gas leaks and repairs in ${area.name}. Our emergency dispatch team is active 24/7 across the locality with electronic sniffer equipment.`,
     },
     {
-      question: `Do you service both residential and commercial properties in ${area.name}?`,
-      answer: `Yes, we offer comprehensive gas pipeline and appliance services for both residential homes and commercial establishments in ${area.name}. This includes restaurants, offices, and housing societies.`,
+      question: `Do you service residential apartments and commercial kitchens in ${area.name}?`,
+      answer: `Yes, we offer comprehensive gas pipeline installations, stove maintenance, and commercial manifold services for both residential high-rises and commercial restaurants in ${area.name}.`,
     },
     {
-      question: `What is the cost of gas stove repair in ${area.name}?`,
-      answer: `Gas stove repair in ${area.name} starts from ₹299 for basic issues. Complex repairs cost ₹499–₹1499 depending on parts needed. We provide transparent pricing with no hidden charges.`,
+      question: `How does pricing work for gas stove repair in ${area.name}?`,
+      answer: `We follow 100% transparent upfront pricing. Our technician inspects the appliance on-site and provides a clear quote before touching any part. No hidden fees, and you pay only after complete testing and satisfaction.`,
+    },
+    {
+      question: `Do you provide warranty on spare parts in ${area.name}?`,
+      answer: `Yes, all replacement components (brass burners, valves, copper pipes, auto-ignition units) are 100% genuine and backed by our standard 90-day hassle-free service warranty.`,
     },
   ]
 
@@ -195,10 +199,10 @@ export default async function AreaPage({ params }: Props) {
       Math.max(0, currentAreaIndex - 3),
       Math.min(allCityAreas.length, currentAreaIndex + 4)
     )
-    .slice(0, 6)
+    .slice(0, 8)
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       {/* Schema Markup */}
       <BreadcrumbSchema items={breadcrumbItems} />
       <ServiceSchema
@@ -211,228 +215,204 @@ export default async function AreaPage({ params }: Props) {
       <FAQSchema faqs={areaFaqs} />
 
       {/* Visual Breadcrumb Navigation */}
-      <div className="bg-gray-50 border-b">
-         <div className="container mx-auto px-4 py-3">
-            <nav className="flex items-center text-sm text-gray-600 flex-wrap" aria-label="Breadcrumb">
-              <Link href="/" className="hover:text-orange-600 flex items-center">
-                 <Home className="w-4 h-4 mr-1"/> Home
-              </Link>
-              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
-              <Link href="/locations" className="hover:text-orange-600">Locations</Link>
-              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
-              <Link href={`/locations/${city}`} className="hover:text-orange-600 capitalize">
-                {area.city}
-              </Link>
-              <ChevronRight className="w-4 h-4 mx-2 text-gray-400" aria-hidden="true" />
-              <span className="text-gray-900 font-medium capitalize">{area.name}</span>
-            </nav>
-         </div>
+      <div className="bg-[#0b1730] border-b border-slate-800">
+        <div className="container mx-auto px-4 py-3">
+          <nav className="flex items-center text-xs sm:text-sm text-slate-400 flex-wrap gap-1" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-sky-400 flex items-center transition-colors">
+              <Home className="w-3.5 h-3.5 mr-1" /> Home
+            </Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-600" aria-hidden="true" />
+            <Link href="/locations" className="hover:text-sky-400 transition-colors">
+              Locations
+            </Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-600" aria-hidden="true" />
+            <Link href={`/locations/${city}`} className="hover:text-sky-400 capitalize transition-colors">
+              {area.city}
+            </Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-600" aria-hidden="true" />
+            <span className="text-white font-medium capitalize">{area.name}</span>
+          </nav>
+        </div>
       </div>
 
-      {/* Enhanced hero section with form */}
-      <section className="relative bg-gradient-to-br from-orange-50 via-white to-red-50 py-20 overflow-hidden">
-        {/* Professional background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23f97316' fillOpacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            }}
-          />
-        </div>
+      {/* Premium Executive Hero Section with Integrated Booking Form */}
+      <section className="relative bg-[#071126] text-white py-12 lg:py-16 overflow-hidden">
+        {/* Subtle Ambient Background Lighting */}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-25"
+          style={{
+            backgroundImage: "radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.35) 0%, transparent 45%), radial-gradient(circle at 85% 80%, rgba(14, 165, 233, 0.2) 0%, transparent 40%)",
+          }}
+        />
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left side — Enhanced Content */}
-            <div className="space-y-8">
-              {/* Location badge */}
-              <div className="flex flex-wrap gap-3">
-                <Badge className="bg-green-100 text-green-800 border border-green-200 hover:bg-green-200 px-4 py-2 text-sm">
-                  <MapPin className="w-4 h-4 mr-1" />
-                  Serving {area.name}, {area.city} - {area.pincode}
-                </Badge>
-                <Badge className="bg-blue-100 text-blue-800 border border-blue-200 hover:bg-blue-200 px-4 py-2 text-sm">
-                  <Clock className="w-4 h-4 mr-1" />
-                  {area.responseTime} Response Time
-                </Badge>
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            {/* Left side: Area Context & Value Proposition */}
+            <div className="lg:col-span-7 space-y-6">
+              {/* Badges */}
+              <div className="flex flex-wrap items-center gap-2.5">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                  <MapPin className="w-3.5 h-3.5" />
+                  Serving {area.name}, {area.city} — {area.pincode}
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30">
+                  <Clock className="w-3.5 h-3.5" />
+                  {area.responseTime} Rapid Response
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                  <Star className="w-3.5 h-3.5 fill-amber-300" />
+                  {area.rating} ★ Rated ({area.customers})
+                </span>
               </div>
 
-              <div className="space-y-6">
-                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Professional{" "}
-                  <span className="text-orange-600 relative">
-                    Gas Repair
-                    <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-red-400 rounded-full"></div>
-                  </span>
-                  <br />
-                  Services in {area.name}
-                </h1>
+              {/* Headline: Blue text on the same line */}
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+                Gas Stove & Pipeline Repair in <span className="text-sky-400">{area.name}, {area.city}</span>
+              </h1>
 
-                <div className="text-xl text-gray-700 leading-relaxed space-y-3">
-                  <p className="font-semibold flex items-center">
-                    <Wrench className="w-6 h-6 text-orange-600 mr-2" />
-                    Expert Gas Stove Repair, Pipeline Installation & Safety Inspections
-                  </p>
-                  <p className="text-lg">
-                    <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full font-semibold">
-                      Emergency Service:
-                    </span>{" "}
-                    {area.responseTime} response time for gas leaks and urgent repairs
-                  </p>
-                </div>
+              {/* Sub-copy */}
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
+                Certified doorstep repair services across <strong className="text-white">{area.name}</strong>. Certified technicians carrying 100% genuine brass burners, valves, electronic leak sniffer detectors & 90-day service warranty.
+              </p>
+
+              {/* Emergency Callout Bar */}
+              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-slate-800/70 border border-slate-700/80">
+                <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                <p className="text-xs sm:text-sm text-slate-200">
+                  <span className="font-bold text-white">Local Vans On Duty:</span> Technicians physically stationed near {area.landmarks?.[0] || area.name}. Guaranteed arrival in {area.responseTime}.
+                </p>
               </div>
 
-              {/* Enhanced service highlights */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                  <div className="flex items-center space-x-3">
-                    <div className="p-2 bg-green-100 rounded-lg">
-                      <Clock className="h-5 w-5 text-green-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">24/7 Emergency Service</p>
-                      <p className="text-sm text-gray-600">Gas leaks & urgent repairs</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                  <div className="flex items-center space-x-3">
-                    <div className="p-2 bg-blue-100 rounded-lg">
-                      <Shield className="h-5 w-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">Licensed Technicians</p>
-                      <p className="text-sm text-gray-600">Certified gas professionals</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                  <div className="flex items-center space-x-3">
-                    <div className="p-2 bg-yellow-100 rounded-lg">
-                      <Star className="h-5 w-5 text-yellow-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">{area.rating} Customer Rating</p>
-                      <p className="text-sm text-gray-600">{area.customers} satisfied customers</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                  <div className="flex items-center space-x-3">
-                    <div className="p-2 bg-purple-100 rounded-lg">
-                      <Users className="h-5 w-5 text-purple-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">Local Experts</p>
-                      <p className="text-sm text-gray-600">{area.completedJobs} jobs completed</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* CTA buttons — using TrackedLink (client component) inside Button (valid HTML) */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* Primary Direct CTAs */}
+              <div className="flex flex-col sm:flex-row gap-3 pt-1">
                 <Button
                   asChild
                   size="lg"
-                  className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-none px-6 py-3.5 text-base transition-colors"
                 >
                   <TrackedLink
                     href={contact.phoneTel}
-                    className="flex items-center space-x-2"
+                    className="flex items-center justify-center space-x-2"
                     category="phone"
                     city={area.city}
                     area={area.name}
                   >
-                    <Phone className="h-5 w-5" />
-                    <span className="font-bold">Call Now: {contact.phoneDisplay}</span>
+                    <PhoneCall className="h-5 w-5" />
+                    <span>Call Now: {contact.phoneDisplay}</span>
                   </TrackedLink>
                 </Button>
 
                 <Button
                   asChild
                   size="lg"
-                  variant="outline"
-                  className="text-lg px-8 py-4 border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-white font-semibold hover:shadow-lg transition-all duration-200"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-none px-6 py-3.5 text-base transition-colors"
                 >
                   <TrackedLink
                     href={getWhatsAppRedirectUrl({
                       serviceType: "General Inquiry",
                       city: area.city,
                       area: area.name,
-                      message: `Hi, I need gas repair service in ${area.name}, ${area.city}.`,
+                      message: `Hi Gas Repair Wale, I need gas stove/pipeline service in ${area.name}, ${area.city}.`,
                     })}
-                    className="flex items-center space-x-2"
+                    className="flex items-center justify-center space-x-2"
                     category="whatsapp"
                     city={area.city}
                     area={area.name}
                   >
-                    <MessageSquare className="h-5 w-5" />
+                    <WhatsAppIcon className="h-5 w-5 fill-white" />
                     <span>WhatsApp Quote</span>
                   </TrackedLink>
                 </Button>
               </div>
 
-              {/* Trust signals */}
-              <div className="flex items-center space-x-6 text-sm text-gray-600 flex-wrap gap-y-2">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>Government Licensed</span>
+              {/* 4 Micro Trust Highlights */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-center">
+                  <div className="text-sky-400 font-bold text-lg sm:text-xl">{area.responseTime}</div>
+                  <div className="text-slate-400 text-xs mt-0.5">Average Arrival</div>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>Insurance Approved</span>
+                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-center">
+                  <div className="text-emerald-400 font-bold text-lg sm:text-xl">100%</div>
+                  <div className="text-slate-400 text-xs mt-0.5">Genuine Spares</div>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>10+ Years Experience</span>
+                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-center">
+                  <div className="text-sky-400 font-bold text-lg sm:text-xl">90 Days</div>
+                  <div className="text-slate-400 text-xs mt-0.5">Service Warranty</div>
+                </div>
+                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-center">
+                  <div className="text-amber-400 font-bold text-lg sm:text-xl">{area.completedJobs}+</div>
+                  <div className="text-slate-400 text-xs mt-0.5">Repairs Done</div>
                 </div>
               </div>
             </div>
 
-            {/* Right side — Quick Booking Form */}
-            <QuickBookingForm area={area} />
+            {/* Right side: Quick Booking Form */}
+            <div className="lg:col-span-5">
+              <QuickBookingForm area={area} />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Special Services Section */}
-      <section className="py-20 bg-white">
+      {/* Localized Specialized Services Section */}
+      <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">Our Services</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Gas Repair Services in {area.name}
+          <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+            <Badge className="bg-blue-50 text-blue-700 border border-blue-200 px-3.5 py-1 text-xs font-semibold mb-3">
+              LOCAL DOORSTEP SERVICES
+            </Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+              Gas Repair Solutions in <span className="text-blue-600">{area.name}</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive gas repair solutions for homes and businesses in {area.name}, {area.city}
+            <p className="text-slate-600 mt-3 text-base sm:text-lg">
+              Every job is performed on-site by certified gas technicians with calibrated safety checks.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {area.specialServices?.map((service: any, index: number) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-orange-600">
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-3">
-                    <div className="p-2 bg-orange-100 rounded-lg">
-                      <Wrench className="h-6 w-6 text-orange-600" />
-                    </div>
-                    <span className="text-lg">{service.title}</span>
+              <Card
+                key={index}
+                className="bg-white border border-slate-200 hover:border-blue-400 rounded-2xl shadow-none hover:shadow-lg transition-all flex flex-col justify-between"
+              >
+                <CardHeader className="pb-4">
+                  <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                    <Wrench className="h-6 w-6" />
+                  </div>
+                  <CardTitle className="text-xl font-bold text-slate-900">
+                    {service.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <ul className="space-y-2">
+                <CardContent className="space-y-4 pt-0">
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                  <div className="border-t border-slate-100 pt-4 space-y-2.5">
                     {service.features?.map((feature: string, fi: number) => (
-                      <li key={fi} className="flex items-start space-x-2 text-sm">
-                        <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
+                      <div key={fi} className="flex items-start space-x-2 text-sm">
+                        <Check className="h-4 w-4 text-emerald-600 mt-0.5 shrink-0" />
+                        <span className="text-slate-700">{feature}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
+
+                  <div className="pt-4">
+                    <Button
+                      asChild
+                      className="w-full bg-slate-900 hover:bg-blue-600 text-white font-semibold rounded-xl text-sm shadow-none transition-colors"
+                    >
+                      <TrackedLink
+                        href={contact.phoneTel}
+                        category="phone"
+                        city={area.city}
+                        area={area.name}
+                        className="flex items-center justify-center gap-2"
+                      >
+                        <Phone className="w-4 h-4" />
+                        <span>Book for {area.name}</span>
+                      </TrackedLink>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -440,28 +420,39 @@ export default async function AreaPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Advantages Section */}
+      {/* Why Choose Us Section */}
       {area.advantages && (
-        <section className="py-20 bg-gray-50">
+        <section className="py-16 sm:py-20 bg-slate-50 border-y border-slate-200/80">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <Badge className="bg-green-100 text-green-800 px-4 py-2 mb-4">Why Choose Us</Badge>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Why {area.name} Customers Trust Gas Repair Wale
+            <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+              <Badge className="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3.5 py-1 text-xs font-semibold mb-3">
+                WHY LOCAL RESIDENTS TRUST US
+              </Badge>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+                Why {area.name} Chooses Gas Repair Wale
               </h2>
+              <p className="text-slate-600 mt-3 text-base">
+                Trusted by {area.customers} households and businesses in {area.name}, {area.city}.
+              </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {area.advantages.map((advantage: any, index: number) => {
                 const IconComponent = getIcon(advantage.icon)
                 return (
-                  <div key={index} className="text-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div className="w-16 h-16 bg-gradient-to-r from-orange-100 to-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <IconComponent className="h-8 w-8 text-orange-600" />
+                  <div
+                    key={index}
+                    className="bg-white border border-slate-200 rounded-2xl p-6 text-center hover:border-blue-300 transition-colors shadow-none"
+                  >
+                    <div className="w-14 h-14 bg-blue-50 border border-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4 text-blue-600">
+                      <IconComponent className="h-7 w-7" />
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{advantage.title}</h3>
-                    <p className="text-gray-600 text-sm">{advantage.description}</p>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">{advantage.title}</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">{advantage.description}</p>
                     {advantage.stats && (
-                      <div className="mt-3 text-orange-600 font-semibold text-sm">{advantage.stats}</div>
+                      <div className="mt-4 pt-3 border-t border-slate-100 text-blue-600 font-semibold text-xs">
+                        {advantage.stats}
+                      </div>
                     )}
                   </div>
                 )
@@ -471,40 +462,81 @@ export default async function AreaPage({ params }: Props) {
         </section>
       )}
 
-      {/* Testimonials */}
-      {area.testimonials && area.testimonials.length > 0 && (
-        <section className="py-20 bg-white">
+      {/* Local Landmarks & Society Coverage */}
+      {area.landmarks && area.landmarks.length > 0 && (
+        <section className="py-16 bg-white border-b border-slate-100">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Customer Reviews</Badge>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                What {area.name} Customers Say
-              </h2>
+            <div className="max-w-4xl mx-auto bg-blue-50/60 border border-blue-100 rounded-2xl p-8">
+              <div className="flex items-center gap-2 mb-3 text-blue-700 font-semibold text-sm">
+                <Building className="w-5 h-5 text-blue-600" />
+                <span>LOCAL SOCIEITY & LANDMARK COVERAGE</span>
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                Doorstep Reach Across {area.name}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                Our technicians provide direct on-site servicing throughout {area.name} ({area.pincode}) including all prominent societies, residential towers, markets, and main roads:
+              </p>
+              <div className="flex flex-wrap gap-2.5">
+                {area.landmarks.map((landmark: string, li: number) => (
+                  <span
+                    key={li}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 text-xs sm:text-sm font-medium shadow-none"
+                  >
+                    <MapPin className="w-3.5 h-3.5 text-blue-600" />
+                    {landmark}
+                  </span>
+                ))}
+              </div>
+              <p className="text-xs text-slate-500 mt-4">
+                *Don't see your specific apartment or street? We cover 100% of addresses in {area.name} and surrounding radius.
+              </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+          </div>
+        </section>
+      )}
+
+      {/* Customer Reviews in Area */}
+      {area.testimonials && area.testimonials.length > 0 && (
+        <section className="py-16 sm:py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+              <Badge className="bg-sky-50 text-sky-700 border border-sky-200 px-3.5 py-1 text-xs font-semibold mb-3">
+                LOCAL FEEDBACK
+              </Badge>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+                Real Customer Reviews in {area.name}
+              </h2>
+              <p className="text-slate-600 mt-3 text-base">
+                Verified reviews from homeowners and commercial kitchens right here in {area.name}.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
               {area.testimonials.map((testimonial: any, index: number) => (
-                <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
+                <Card key={index} className="bg-white border border-slate-200 rounded-2xl shadow-none hover:shadow-md transition-shadow">
                   <CardContent className="p-6">
-                    <div className="flex items-center space-x-1 mb-4">
-                      {[...Array(testimonial.rating)].map((_, starIndex) => (
-                        <Star key={starIndex} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <div className="flex items-center space-x-1 mb-3">
+                      {[...Array(testimonial.rating || 5)].map((_, starIndex) => (
+                        <Star key={starIndex} className="h-4 w-4 fill-amber-400 text-amber-400" />
                       ))}
                     </div>
-                    <p className="text-gray-700 mb-4 leading-relaxed text-sm">"{testimonial.text}"</p>
-                    <div className="bg-orange-50 p-3 rounded-lg mb-3 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Service:</span>
-                        <span className="font-medium text-orange-600">{testimonial.service}</span>
+                    <p className="text-slate-700 mb-4 leading-relaxed text-sm italic">
+                      "{testimonial.text}"
+                    </p>
+                    <div className="bg-slate-50 border border-slate-100 p-3 rounded-xl mb-4 text-xs">
+                      <div className="flex justify-between py-0.5">
+                        <span className="text-slate-500">Service:</span>
+                        <span className="font-semibold text-blue-600">{testimonial.service}</span>
                       </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Date:</span>
-                        <span className="font-medium text-gray-700">{testimonial.date}</span>
+                      <div className="flex justify-between py-0.5">
+                        <span className="text-slate-500">Date:</span>
+                        <span className="font-medium text-slate-700">{testimonial.date}</span>
                       </div>
                     </div>
-                    <div className="border-t pt-3">
-                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                      <p className="text-sm text-gray-600">{testimonial.profession}</p>
-                      <p className="text-sm text-gray-500">{testimonial.area}, {area.name}</p>
+                    <div className="border-t border-slate-100 pt-3">
+                      <p className="font-bold text-slate-900 text-sm">{testimonial.name}</p>
+                      <p className="text-xs text-slate-500">{testimonial.profession} • {testimonial.area || area.name}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -514,136 +546,114 @@ export default async function AreaPage({ params }: Props) {
         </section>
       )}
 
-      {/* Rich SEO Content Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Safety & Transparent Estimate Promise */}
+      <section className="py-12 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Professional Gas Services in {area.name}, {area.city} — {area.pincode}
-            </h2>
-
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-              <p>
-                <strong>Gas Repair Wale</strong> provides comprehensive gas appliance services in{" "}
-                {area.name}, {area.city}. Our certified technicians are locally based in {area.city}{" "}
-                and provide guaranteed <strong>{area.responseTime}</strong> response time across{" "}
-                {area.name} and surrounding areas including{" "}
-                {area.landmarks?.slice(0, 3).join(", ")}.
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="space-y-2 text-center md:text-left">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
+                <ShieldCheck className="w-4 h-4" />
+                <span>100% TRANSPARENT PRICING</span>
+              </div>
+              <h3 className="text-2xl font-bold">No Hidden Fees. Pay Only After Testing.</h3>
+              <p className="text-slate-300 text-sm">
+                Our technician provides an upfront quote after on-site diagnosis. You pay only when you are 100% satisfied.
               </p>
-
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3"> Residential Services</h3>
-                  <ul className="space-y-1 text-sm">
-                    {area.seoContent?.services?.residential?.map((s: string, i: number) => (
-                      <li key={i}>• {s}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3"> Commercial Services</h3>
-                  <ul className="space-y-1 text-sm">
-                    {area.seoContent?.services?.commercial?.map((s: string, i: number) => (
-                      <li key={i}>• {s}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mt-8">
-                <h4 className="text-lg font-bold text-blue-900 mb-2">Areas We Cover in {area.name}:</h4>
-                <p className="text-blue-800">
-                  {area.landmarks?.join(" • ")} and surrounding areas in {area.name}, {area.city} — {area.pincode}
-                </p>
-              </div>
-
-              <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 mt-6">
-                <h4 className="text-lg font-bold text-red-900 mb-2">Emergency Gas Service in {area.name}:</h4>
-                <p className="text-red-800">
-                  {area.seoContent?.emergencyInfo} Call{" "}
-                  <a href={contact.phoneTel} className="font-bold underline">
-                    {contact.phoneDisplay}
-                  </a>{" "}
-                  for immediate assistance.
-                </p>
-              </div>
+            </div>
+            <div className="flex gap-3 shrink-0">
+              <Button
+                asChild
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-none px-6"
+              >
+                <TrackedLink
+                  href={contact.phoneTel}
+                  category="phone"
+                  city={area.city}
+                  area={area.name}
+                  className="flex items-center gap-2"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>Call {contact.phoneDisplay}</span>
+                </TrackedLink>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Visual FAQ Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+      {/* Local SEO Details & FAQ Section */}
+      <section className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4">
-             <div className="text-center mb-16">
-                <Badge className="bg-purple-100 text-purple-800 px-4 py-2 mb-4">Common Questions</Badge>
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">FAQs about Gas Service in {area.name}</h2>
-             </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-blue-50 text-blue-700 border border-blue-200 px-3.5 py-1 text-xs font-semibold mb-3">
+                FREQUENTLY ASKED QUESTIONS
+              </Badge>
+              <h2 className="text-3xl font-bold text-slate-900">
+                Gas Service in {area.name} — FAQs
+              </h2>
+            </div>
 
-             <div className="max-w-3xl mx-auto space-y-4">
-                {areaFaqs.map((faq, i) => (
-                  <Card key={i} className="hover:shadow-md transition-shadow">
-                     <CardContent className="p-6">
-                        <h3 className="font-semibold text-lg text-gray-900 mb-2">{faq.question}</h3>
-                        <p className="text-gray-600">{faq.answer}</p>
-                     </CardContent>
-                  </Card>
-                ))}
-             </div>
+            <div className="space-y-4">
+              {areaFaqs.map((faq, i) => (
+                <div key={i} className="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-none">
+                  <h3 className="font-bold text-base sm:text-lg text-slate-900 mb-2 flex items-start gap-2">
+                    <span className="text-blue-600 font-extrabold">Q.</span>
+                    <span>{faq.question}</span>
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed pl-6">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Internal Linking — Nearby Areas (critical for Googlebot crawling & PageRank flow) */}
+      {/* Internal Linking — Other Areas in the Same City */}
       {nearbyAreaSlugs.length > 0 && (
-        <section className="py-16 bg-white">
+        <section className="py-14 bg-white border-t border-slate-100">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                Other Areas We Serve in {area.city}
-              </h2>
-              <div className="flex flex-wrap gap-3">
+            <div className="max-w-5xl mx-auto">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900">
+                    Other Neighborhoods We Serve in {area.city}
+                  </h2>
+                  <p className="text-slate-500 text-xs sm:text-sm mt-0.5">
+                    Fast mobile dispatch available across all sectors of {area.city}.
+                  </p>
+                </div>
+                <Link
+                  href={`/locations/${city}`}
+                  className="inline-flex items-center text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  <span>Explore all {area.city} zones</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </Link>
+              </div>
+
+              <div className="flex flex-wrap gap-2.5">
                 {nearbyAreaSlugs.map((areaSlug) => {
                   const nearbyArea = (cityAreas as any)[areaSlug]
                   return (
                     <Link
                       key={areaSlug}
                       href={`/locations/${city}/${areaSlug}`}
-                      className="flex items-center space-x-2 px-4 py-2 bg-orange-50 hover:bg-orange-100 border border-orange-200 rounded-full text-sm text-orange-700 font-medium transition-colors"
+                      className="inline-flex items-center space-x-1.5 px-3.5 py-2 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-xl text-xs sm:text-sm text-slate-700 hover:text-blue-700 font-medium transition-colors"
                     >
-                      <MapPin className="h-3 w-3" />
-                      <span>Gas Repair in {nearbyArea?.name || areaSlug}</span>
+                      <MapPin className="h-3 w-3 text-slate-400 group-hover:text-blue-600" />
+                      <span>{nearbyArea?.name || areaSlug}</span>
                     </Link>
                   )
                 })}
-                <Link
-                  href={`/locations/${city}`}
-                  className="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 border border-gray-300 rounded-full text-sm text-gray-700 font-medium transition-colors"
-                >
-                  <ChevronRight className="h-3 w-3" />
-                  <span>View All {area.city} Areas</span>
-                </Link>
               </div>
             </div>
           </div>
         </section>
       )}
 
-      {/* Final booking section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 to-red-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Book Your Gas Service?</h2>
-              <p className="text-xl text-gray-600">
-                Get professional gas repair service in {area.name} with {area.responseTime} response time
-              </p>
-            </div>
-            <QuickBookingForm area={area} />
-          </div>
-        </div>
-      </section>
-
-      {/* Contact CTA */}
+      {/* Clean Global Contact CTA */}
       <ContactCTA />
     </main>
   )
